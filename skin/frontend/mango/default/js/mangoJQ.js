@@ -256,7 +256,7 @@ jq(function () {
 });
 
 // DROPDOWN
-
+/*
 jq(function(){
   jq('nav').find('ul > li > ul').hide(); // hide all dropdown menus on page load
     jq('nav').find('ul > li').hover(function(){
@@ -267,7 +267,7 @@ jq(function(){
         }
     });
 });
-
+*/
 // CART PRICE
 jq(function(){
     jq('#cart-free-delivery').show();

@@ -1,0 +1,13 @@
+@mixin m-box-sizing($sizing){
+ 		 box-sizing:$sizing;
+  	-moz-box-sizing:$sizing;
+ -webkit-box-sizing:$sizing;
+}
+
+@mixin m-transition($attr, $duration, $easing){
+    -webkit-transition: $attr $duration $ease;
+       -moz-transition: $attr $duration $ease;
+        -ms-transition: $attr $duration $ease;
+         -o-transition: $attr $duration $ease;
+            transition: $attr $duration $ease;
+        }

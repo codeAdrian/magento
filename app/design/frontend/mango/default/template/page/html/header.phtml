@@ -32,24 +32,24 @@
  <div class="smartphoneOnly smartphoneLogo"><h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1></div>
 
 <div id="header_wrapper">
-        <div class="header_search">
-        <?php echo $this->getChildHtml('topSearch') ?>
+        <div class="header_search"><?php echo $this->getChildHtml('topSearch') ?></div>
+        
+        <div class="header_logo">
         <?php if ($this->getIsHomePage()):?>
-            </div>
             
-            <div class="header_logo">
         <h1 class="logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-        </div>
         
 
         <?php else:?>
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
+        </div>
+
         <div class="header_menus">
             <?php echo $this->getChildHtml('topLinks') ?>
             <!-- CART MINI MENU -->
 
-<div class="mini-menu" id="mini-menu-cart">
+            <div class="mini-menu" id="mini-menu-cart">
     <div class="content-cart">
             <?php echo $this->getChildHtml('topcart'); ?>
     </div>
@@ -62,7 +62,8 @@
         <?php echo $this->getChildHtml('header_customer_form_login');?>
     </div>
 </div>
-            </div>
+
+        </div>
 </div>
 
 
@@ -75,6 +76,7 @@
         <?php echo $this->getChildHtml('topContainer'); ?>
 
 <?php echo $this->getChildHtml('topMenu') ?>
+
 
 
 </header>

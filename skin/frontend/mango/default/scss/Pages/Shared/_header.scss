@@ -13,6 +13,7 @@ header
 	}
 }
 
+
 .messages li ul{
 	list-style: none;
 	margin: 0px;
@@ -44,8 +45,7 @@ header
 	}
 }
 
-.logo, .logo a, .logo a img
-{
+.header_logo img{
 text-align: center;
 margin:0px auto;
 }
@@ -144,12 +144,11 @@ margin:0px auto;
 		background-color: white;
 		border:1px solid black;
 		border-radius: 50%;
-		width:65%;
 		padding:6% 0px;
 		vertical-align: middle;
 		text-align:center;
 		font-weight: 300;
 		font-size: 1em;
-		min-width: 69%;
+		min-width: 60%;
 	}
 }
