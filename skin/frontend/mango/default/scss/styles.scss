@@ -1,5 +1,12 @@
+// REQUIRED IMPORTS
 @import "susy";
 @import "breakpoint";
 @import "compass";
-@import "normalize";
+
+// BASE IMPORTS
+@import "Base/normalize";
+@import "Base/reset";
+@import "Base/typography";
+
+// PAGE IMPORTS
 @import "base";
