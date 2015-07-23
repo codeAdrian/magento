@@ -1,0 +1,95 @@
+# General web stuff
+088E3534164D1854DB77382EC8A963B7.txt
+GoogleShopping_men.xml
+GoogleShopping_women.xml
+/sitemaps/mens/sitemap.xml
+/sitemaps/women/sitemap.xml
+
+/.htaccess
+/.svnignore
+/robots.txt
+/sitemap.xml
+# Dynamic Magento data that doesn't need to be in the repo
+/var/*
+/media/*
+/downloader/pearlib/cache/*
+/downloader/pearlib/download/*
+/app/etc/use_cache.ser
+/app/etc/local.xml
+# Various IDE & OS files that should never be committed
+*.lock
+*.swp
+*~
+.DS_Store
+.buildpath
+.buildpath
+.idea
+.project
+.project
+.settings
+.thumbs
+/_notes/*
+/includes/*
+/nbproject/*
+Thumbs.db
+__MACOSX
+build.properties
+# Explicitly mark as "do not exclude/ignore these from GIT repository"
+#!/includes/config.php
+!/includes/.htaccess
+!/app/.htaccess
+!/downloader/.htaccess
+!/downloader/template/.htaccess
+!/errors/.htaccess
+!/includes/.htaccess
+!/lib/.htaccess
+!/media/.htaccess
+!/media/customer/.htaccess
+!/media/downloadable/.htaccess
+!/pkginfo/.htaccess
+!/var/.htaccess
+!var/package/
+.svn
+._.DS_Store
+#wb specific
+._markup
+includes/config.php
+.phpstorm.meta.php
+
+#My magento gitignore
+/api.php
+/app/code/
+/app/etc/
+/app/locale/
+/cron.php
+/cron.sh
+/downloader/
+/errors/
+/favicon.ico
+/get.php
+/includes/
+/index.php
+/index.php.sample
+/install.php
+/js/
+/lib/
+/LICENSE_AFL.txt
+/LICENSE.html
+/LICENSE.txt
+/mage
+/media/
+/php.ini.sample
+/pkginfo/
+/RELEASE_NOTES.txt
+/shell/
+/skin/adminhtml
+/skin/install
+/var/
+
+# Sass cache
+/skin/frontend/mango/default/.sass-cache/
+/skin/frontend/mango/default/sass/.sass-cache/
+
+# Sass map files
+/skin/frontend/mango/default/css/default.css.map
+/skin/frontend/mango/default/css/default.css.map
