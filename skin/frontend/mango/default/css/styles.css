@@ -510,7 +510,7 @@ header #navMenuButton {
   display: none;
 }
 
-/* line 17, ../scss/Pages/Shared/_header.scss */
+/* line 16, ../scss/Pages/Shared/_header.scss */
 .messages li ul {
   list-style: none;
   margin: 0px;
@@ -518,23 +518,23 @@ header #navMenuButton {
   vertical-align: middle;
 }
 
-/* line 24, ../scss/Pages/Shared/_header.scss */
+/* line 23, ../scss/Pages/Shared/_header.scss */
 .form-search-mini .mangoIcon {
   font-size: 1.25em;
 }
 
-/* line 28, ../scss/Pages/Shared/_header.scss */
+/* line 27, ../scss/Pages/Shared/_header.scss */
 .mangoIcon {
   font-family: mango-font-icons;
   padding: 0px 5px;
 }
 
-/* line 33, ../scss/Pages/Shared/_header.scss */
+/* line 32, ../scss/Pages/Shared/_header.scss */
 #header_wrapper {
   text-align: center;
 }
 @media (min-width: 900px) {
-  /* line 33, ../scss/Pages/Shared/_header.scss */
+  /* line 32, ../scss/Pages/Shared/_header.scss */
   #header_wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -547,13 +547,13 @@ header #navMenuButton {
     clear: both;
   }
 }
-/* line 39, ../scss/Pages/Shared/_header.scss */
+/* line 38, ../scss/Pages/Shared/_header.scss */
 #header_wrapper .header_search, #header_wrapper .header_logo {
   width: 28.57143%;
   float: left;
   margin-right: 7.14286%;
 }
-/* line 42, ../scss/Pages/Shared/_header.scss */
+/* line 41, ../scss/Pages/Shared/_header.scss */
 #header_wrapper .header_menus {
   width: 28.57143%;
   float: right;
@@ -561,38 +561,38 @@ header #navMenuButton {
   position: relative;
 }
 
-/* line 48, ../scss/Pages/Shared/_header.scss */
+/* line 47, ../scss/Pages/Shared/_header.scss */
 .header_logo img {
   text-align: center;
   margin: 0px auto;
 }
 
-/* line 54, ../scss/Pages/Shared/_header.scss */
+/* line 53, ../scss/Pages/Shared/_header.scss */
 #search_mini_form {
   display: inline-block;
   margin: 0 auto;
   width: 100%;
 }
 
-/* line 60, ../scss/Pages/Shared/_header.scss */
+/* line 59, ../scss/Pages/Shared/_header.scss */
 .form-search {
   border: 2px solid #474444;
   padding: 0px 2px 2px 2px;
   width: 60%;
   margin: 0px auto;
 }
-/* line 67, ../scss/Pages/Shared/_header.scss */
+/* line 66, ../scss/Pages/Shared/_header.scss */
 .form-search .mangoIcon {
   display: inline-block;
   width: 5%;
   padding: 0px;
 }
-/* line 73, ../scss/Pages/Shared/_header.scss */
+/* line 72, ../scss/Pages/Shared/_header.scss */
 .form-search button[title="Search"] {
   display: none;
 }
 
-/* line 78, ../scss/Pages/Shared/_header.scss */
+/* line 77, ../scss/Pages/Shared/_header.scss */
 #search {
   font-size: 0.8em;
   text-align: center;
@@ -603,7 +603,7 @@ header #navMenuButton {
   border: 0px solid;
   width: 90%;
 }
-/* line 88, ../scss/Pages/Shared/_header.scss */
+/* line 87, ../scss/Pages/Shared/_header.scss */
 #search:focus {
   border-color: white;
   outline: none;
@@ -611,37 +611,37 @@ header #navMenuButton {
   border: 0px solid;
 }
 
-/* line 96, ../scss/Pages/Shared/_header.scss */
+/* line 95, ../scss/Pages/Shared/_header.scss */
 .links {
   list-style: none;
   text-transform: uppercase;
   padding: 0px;
 }
-/* line 102, ../scss/Pages/Shared/_header.scss */
+/* line 101, ../scss/Pages/Shared/_header.scss */
 .links .first {
   display: inline-block;
 }
-/* line 106, ../scss/Pages/Shared/_header.scss */
+/* line 105, ../scss/Pages/Shared/_header.scss */
 .links li {
   display: inline-block;
   margin-left: 15px;
   padding: 0px;
 }
-/* line 111, ../scss/Pages/Shared/_header.scss */
+/* line 110, ../scss/Pages/Shared/_header.scss */
 .links li:nth-child(3) {
   margin: 0px;
 }
-/* line 115, ../scss/Pages/Shared/_header.scss */
+/* line 114, ../scss/Pages/Shared/_header.scss */
 .links li a {
   text-decoration: none;
   color: black;
 }
-/* line 119, ../scss/Pages/Shared/_header.scss */
+/* line 118, ../scss/Pages/Shared/_header.scss */
 .links li a:hover {
   cursor: pointer;
 }
 
-/* line 127, ../scss/Pages/Shared/_header.scss */
+/* line 125, ../scss/Pages/Shared/_header.scss */
 .top-link-cart {
   background: url("../images/shopping_bag.png");
   background-repeat: no-repeat;
@@ -649,11 +649,11 @@ header #navMenuButton {
   background-position: right bottom;
   padding: 5px 25px 15px 0px;
 }
-/* line 135, ../scss/Pages/Shared/_header.scss */
+/* line 133, ../scss/Pages/Shared/_header.scss */
 .top-link-cart:hover {
   cursor: pointer;
 }
-/* line 139, ../scss/Pages/Shared/_header.scss */
+/* line 137, ../scss/Pages/Shared/_header.scss */
 .top-link-cart span {
   display: inline-block;
   position: relative;
@@ -784,31 +784,59 @@ nav ul li ul li a {
   font-size: 0.75em;
   width: 250px;
 }
+/* line 10, ../scss/Pages/Shared/_mini-menus.scss */
+#mini-menu-account .content-account:before {
+  z-index: -10;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 25px solid #555151;
+  border-top: 0 solid rgba(60, 0, 0, 0) !important;
+  border-right: 13px solid transparent !important;
+  border-left: 13px solid rgba(80, 0, 0, 0);
+  left: 160px;
+  top: -10px;
+  position: absolute;
+}
+/* line 24, ../scss/Pages/Shared/_mini-menus.scss */
+#mini-menu-account .content-cart:before {
+  z-index: -10;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 25px solid #555151;
+  border-top: 0 solid rgba(60, 0, 0, 0) !important;
+  border-right: 13px solid transparent !important;
+  border-left: 13px solid rgba(80, 0, 0, 0);
+  right: 10px;
+  top: -10px;
+  position: absolute;
+}
 
-/* line 11, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 40, ../scss/Pages/Shared/_mini-menus.scss */
 #mini-menu-cart {
   position: absolute;
   right: 24%;
   top: 50px;
   width: 370px;
 }
-/* line 17, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 46, ../scss/Pages/Shared/_mini-menus.scss */
 #mini-menu-cart .product-image {
   display: inline-block !important;
 }
 
-/* line 22, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 51, ../scss/Pages/Shared/_mini-menus.scss */
 .mini-menu {
   display: none;
   z-index: 999;
   color: black;
 }
-/* line 27, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 56, ../scss/Pages/Shared/_mini-menus.scss */
 .mini-menu p {
   padding: 10px 0px;
 }
 
-/* line 32, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 61, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account, .content-cart {
   border: 1px solid #969696;
   position: relative;
@@ -816,12 +844,12 @@ nav ul li ul li a {
   padding: 0.5em 2em 0.5em 2em;
 }
 
-/* line 39, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 68, ../scss/Pages/Shared/_mini-menus.scss */
 #cart-free-delivery p {
   margin: 8px 0px;
 }
 
-/* line 43, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 72, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-outline {
   box-sizing: box;
   -moz-box-sizing: box;
@@ -836,7 +864,7 @@ nav ul li ul li a {
   padding: 0px;
 }
 
-/* line 55, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 84, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-inside {
   margin: 0px;
   padding: 0px;
@@ -846,67 +874,37 @@ nav ul li ul li a {
   border-radius: 5px;
 }
 
-/* line 64, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 93, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-subtext {
   font-size: 0.8em;
 }
 
-/* line 68, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 97, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-text {
   text-transform: uppercase;
   font-size: 0.9em;
 }
 
-/* line 73, ../scss/Pages/Shared/_mini-menus.scss */
-.content-account:before {
-  z-index: -10;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 25px solid #555151;
-  border-top: 0 solid rgba(60, 0, 0, 0) !important;
-  border-right: 13px solid transparent !important;
-  border-left: 13px solid rgba(80, 0, 0, 0);
-  left: 160px;
-  top: -10px;
-  position: absolute;
-}
-
-/* line 87, ../scss/Pages/Shared/_mini-menus.scss */
-.content-cart:before {
-  z-index: -10;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 25px solid #555151;
-  border-top: 0 solid rgba(60, 0, 0, 0) !important;
-  border-right: 13px solid transparent !important;
-  border-left: 13px solid rgba(80, 0, 0, 0);
-  right: 10px;
-  top: -10px;
-  position: absolute;
-}
-
-/* line 101, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 103, ../scss/Pages/Shared/_mini-menus.scss */
 form span {
   color: black;
 }
 
 /* MINI MENU END */
 /* LOGIN MINI-MENU*/
-/* line 110, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 112, ../scss/Pages/Shared/_mini-menus.scss */
 ul, ol {
   list-style: none;
   padding: 0px;
 }
 
-/* line 115, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 117, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account .form-list {
   padding: 0;
   list-style: none;
   margin: 0;
 }
-/* line 120, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 122, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account .form-list li {
   padding: 0px 0px 15px 0px;
   text-transform: uppercase;
@@ -915,7 +913,7 @@ ul, ol {
   color: #bdbbbb;
 }
 
-/* line 129, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 131, ../scss/Pages/Shared/_mini-menus.scss */
 .input-box {
   text-align: center;
   width: 100%;
@@ -923,33 +921,33 @@ ul, ol {
   text-align: left;
   font-size: 1em;
 }
-/* line 136, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 138, ../scss/Pages/Shared/_mini-menus.scss */
 .input-box input {
   color: black;
   text-align: left;
   width: 90%;
 }
 
-/* line 143, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 145, ../scss/Pages/Shared/_mini-menus.scss */
 label.required {
   color: blacK;
   font-weight: 300;
 }
 
-/* line 148, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 150, ../scss/Pages/Shared/_mini-menus.scss */
 .cart .shipping-form .buttons-set button {
   margin: 10px;
   padding: 10px;
   background-color: #474444;
 }
 
-/* line 154, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 156, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account #send2 {
   color: white;
   background-color: #474444;
 }
 
-/* line 160, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 162, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a {
   background-color: #474444;
   color: white;
@@ -962,28 +960,28 @@ label.required {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 172, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 174, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a:hover {
   background-color: black;
 }
-/* line 176, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 178, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a:active {
   background-color: #9b9a9a;
 }
 
 /* CART MINI MENU */
-/* line 183, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 185, ../scss/Pages/Shared/_mini-menus.scss */
 #cart-sidebar {
   list-style: none;
   padding: 0px;
 }
 
-/* line 188, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 190, ../scss/Pages/Shared/_mini-menus.scss */
 .amount {
   font-size: 0.8em;
 }
 
-/* line 192, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 194, ../scss/Pages/Shared/_mini-menus.scss */
 .red-button, .btn-checkout {
   margin: 10px 0px;
   font-weight: bold;
@@ -991,30 +989,30 @@ label.required {
   text-align: center;
 }
 
-/* line 201, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 203, ../scss/Pages/Shared/_mini-menus.scss */
 #mini_cart_checkout {
   color: white;
   background-color: #ad0202;
   text-align: center;
 }
 
-/* line 207, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 209, ../scss/Pages/Shared/_mini-menus.scss */
 #mini_cart_edit {
   color: white;
   background-color: #474444;
 }
 
-/* line 212, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 214, ../scss/Pages/Shared/_mini-menus.scss */
 .product-image {
   vertical-align: middle;
   width: 30%;
 }
-/* line 216, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 218, ../scss/Pages/Shared/_mini-menus.scss */
 .product-image img {
   margin: 0px auto;
 }
 
-/* line 221, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 223, ../scss/Pages/Shared/_mini-menus.scss */
 .product-details {
   display: inline-block;
   width: 50%;
@@ -1023,7 +1021,7 @@ label.required {
   font-size: 0.8em;
 }
 
-/* line 229, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 231, ../scss/Pages/Shared/_mini-menus.scss */
 .btn-remove {
   text-decoration: none;
   text-align: center;
@@ -1035,11 +1033,11 @@ label.required {
   margin: 5px 0px auto 0px;
 }
 
-/* line 240, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 242, ../scss/Pages/Shared/_mini-menus.scss */
 .product-name {
   margin: 7px 0px;
 }
-/* line 242, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 244, ../scss/Pages/Shared/_mini-menus.scss */
 .product-name a {
   text-decoration: none;
   color: black;
@@ -1047,19 +1045,19 @@ label.required {
   text-transform: uppercase;
 }
 
-/* line 250, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 252, ../scss/Pages/Shared/_mini-menus.scss */
 .content-cart hr {
   border: 0;
   border-top: 1px solid #b0b0b0;
   color: #b0b0b0;
 }
 
-/* line 255, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 257, ../scss/Pages/Shared/_mini-menus.scss */
 .subtotal {
   font-weight: bold;
 }
 
-/* line 259, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 261, ../scss/Pages/Shared/_mini-menus.scss */
 a.f-left {
   margin: 10px 0px;
   display: block;
@@ -1067,7 +1065,7 @@ a.f-left {
   color: black;
 }
 
-/* line 266, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 268, ../scss/Pages/Shared/_mini-menus.scss */
 .registered-users hr {
   margin: 10px 0px 0px;
 }
