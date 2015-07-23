@@ -1,11 +1,14 @@
+
 var jq = $.noConflict();
 
 // FIX NAV AND SEARCH ON MEDIA WIDTH CHANGE
 
 jq(function(){
       jq('<span class="mobile-opened-closed"> &nbsp;</span>').prependTo("header nav ul .level0 > a");
+      jq(".top-account>.textLink").removeAttr("href").css("cursor","pointer"); // temp fix - remove href on load
+      jq(".top-link-cart").removeAttr("href"); // temp fix
 });
-
+/*
 jq(window).on('resize', function(){
       if (jq(window).width()>= 900){
       jq("#faq_block").find("ul").show();
@@ -15,18 +18,13 @@ jq(window).on('resize', function(){
       jq(".desktopOnly").show();
       jq(".filterList dl dd").show();
       jq("nav").show();
-      jq("#header_wrapper").css("margin","15px 7%");
-      jq("#header_wrapper").css("padding","0");
       jq(".smartphoneLogo").hide();
-      jq('#search_mini_form').css("width","auto").css("display","block").css("float","left");
       jq('.form-search>button').css("display","none");
-      jq('.search-wrapper').css('float','left').css("width","auto");
       jq("nav ul li ul").hide();
       jq('.form-search').show();
 
       if (jq(window).scrollTop() > 75){
       jq('#search').css("width","auto");
-      jq('.search-wrapper').css('display','block').css("width","auto").css("float","left");
       jq('#search_mini_form').css("width","auto");
       jq('.form-search>button').css("display","none");
       jq(".form-search-mini").addClass("form-search").removeClass("form-search-mini");
@@ -43,7 +41,6 @@ jq(window).on('resize', function(){
   else if(jq(window).width() >= 625 && jq(window).width() < 900){
     jq("header #header_wrapper").css("margin","0px");
     jq(".smartphoneLogo").hide();
-    jq("header #header_wrapper").css("padding","0px");   
       jq("#faq_block").find("ul").show();
       jq("#aboutUs_block").find("ul").show();
       jq("#locations_block").find("ul").show();
@@ -99,7 +96,6 @@ jq(window).on('resize', function(){
           jq('.form-search-mini').show();
           jq(".smartphoneLogo").hide();
           jq('header').addClass('nav-fixed');
-          jq("header #header_wrapper").css("padding","0");
           jq('#mini-menu-account').css("top","60px");
           jq('#mini-menu-cart').css("top","60px");
           jq("header .searchMiniIcon").css("float","left");
@@ -211,7 +207,6 @@ jq(function() {
         if (jq(window).scrollTop() > 75) {
           jq(".smartphoneLogo").hide();
           jq('header').addClass('nav-fixed');
-          jq("header #header_wrapper").css("padding","0");
           jq('#mini-menu-account').css("top","60px");
           jq('#mini-menu-cart').css("top","60px");
           jq('.main-container').css("margin-top","120px");
@@ -235,7 +230,7 @@ jq(function() {
   }
 });
 });
-
+*/
 
 // MINI MENU
 
@@ -441,3 +436,4 @@ jq(function(){
     }
   }
 });
+

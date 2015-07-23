@@ -1,0 +1,155 @@
+
+header
+{
+	.TopNavIcon{
+		span{
+			font-family: mango-font-icons;
+			display: none;			
+		}
+	}
+
+	#navMenuButton{
+	display: none;
+	}
+}
+
+.messages li ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px 0px;
+	vertical-align: middle;
+}
+
+.form-search-mini .mangoIcon{
+	font-size:1.25em;
+}
+
+.mangoIcon{
+	font-family: mango-font-icons;
+	padding:0px 5px;
+}
+
+#header_wrapper
+{
+	text-align: center;
+	@include susy-breakpoint($desktop_min-width, $header-layout-desktop){
+		@include container();
+	}
+	.header_search, .header_logo{
+		@include span(1 of 3);
+	}
+	.header_menus{
+		@include span(last 1 of 3);
+		position:relative;
+	}
+}
+
+.logo, .logo a, .logo a img
+{
+text-align: center;
+margin:0px auto;
+}
+
+
+#search_mini_form{
+	display:inline-block;
+	margin:0 auto;
+	width:100%;
+}
+
+.form-search
+{
+	border: 2px solid #474444;
+	padding:0px 2px 2px 2px;
+	width:60%;
+	margin:0px auto;
+
+	.mangoIcon{
+		display:inline-block;
+		width:5%;
+		padding:0px;
+	}
+
+	button[title="Search"]{
+		display:none;
+	}
+}
+
+#search{
+	font-size: 0.8em;
+	text-align: center;
+	text-transform: uppercase;
+	outline:none;
+    border-color: white;
+    background-color:transparent;
+    border: 0px solid;
+    width:90%;
+
+    &:focus{
+	  	border-color: white;
+	  	outline:none;
+	   	background-color:transparent;
+	    border: 0px solid;    	
+    }
+}
+
+.links
+{
+	list-style: none;
+	text-transform: uppercase;
+	padding:0px;
+
+	.first{
+		display: inline-block;
+	}
+
+	li{
+		display: inline-block;
+		margin-left: 15px;
+		padding:0px;
+
+		&:nth-child(3){
+			margin:0px;
+		}
+
+		a{
+			text-decoration: none;
+			color:black;
+
+			&:hover{
+				cursor:pointer;
+			}
+		}
+	}
+}
+
+
+.top-link-cart 
+{ 
+	background: url('../images/shopping_bag.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+	padding:5px 25px 15px 0px;
+
+	&:hover{
+		cursor:pointer;
+	}
+
+	span{
+		display:inline-block;
+		position:relative;
+		top:17px;
+		left:5px;
+		background-color: white;
+		border:1px solid black;
+		border-radius: 50%;
+		width:65%;
+		padding:6% 0px;
+		vertical-align: middle;
+		text-align:center;
+		font-weight: 300;
+		font-size: 1em;
+		min-width: 69%;
+	}
+}

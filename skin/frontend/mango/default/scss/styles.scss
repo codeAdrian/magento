@@ -8,5 +8,11 @@
 @import "Base/reset";
 @import "Base/typography";
 
+//HELPERS IMPORTS
+@import "Helpers/variables";
+
 // PAGE IMPORTS
+@import "Pages/Shared/header";
+@import "Pages/Shared/nav";
+@import "Pages/Shared/mini-menus";
 @import "base";

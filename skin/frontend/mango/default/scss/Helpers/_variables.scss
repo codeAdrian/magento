@@ -1,0 +1,18 @@
+// SUSY VARIABLES
+
+$susy:(
+		global-box-sizing:border-box,
+		//debug: (image: show),
+);
+
+
+
+$header-layout-desktop: (
+        columns: 3,
+        gutters: 24px/37px,
+        container-position: center
+);
+
+// VARIABLES
+$desktop_min-width:900px;
+$tablet_min-width:625px;
