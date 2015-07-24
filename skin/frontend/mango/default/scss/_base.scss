@@ -1840,6 +1840,7 @@ img{
 
 @media(max-width:1049px){
 
+
 	.mobileOnly{
 		display: block;
 	}
@@ -1873,7 +1874,21 @@ img{
 	header .searchMiniIcon span{
 	font-size: 2.25em;
 	}
+/*
+	header nav ul li ul li:not(:last-child){
+		border-bottom:1px solid #B4B4B4;
+	}
+	header nav ul li ul li:not(:last-child):hover{
+		border-bottom:1px solid #B4B4B4;
+	}
 
+	header nav ul li ul li:last-child{
+		border:0 !important;
+	}
+	header nav ul li ul li:last-child:hover{
+		border:0 !important;
+	}
+	*/
 	.top-account, .top-help-a{
 		display: none;
 	}

@@ -1,4 +1,6 @@
 
+// HEADER JE U KAOSU JER SAM KORISTIO mobile-first kod desktop-first koda.
+
 header
 {
 	margin:0px auto;
@@ -71,7 +73,6 @@ header
 	display: none;
 }
 
-	// MOBILE
 	$susy: (
 		columns:4,
 		gutters: 24px/37px,
@@ -312,5 +313,119 @@ margin:0px auto;
 
 	.nav-element-opened:hover{
 	border-bottom:1px solid #B4B4B4
+	}
+
+	header .TopNavIcon span{
+		display: block;
+		font-size: 2.5em;
+	}
+
+	header .searchMiniIcon span{
+	font-size: 2.25em;
+	}
+
+	.top-account, .top-help-a{
+		display: none;
+	}
+
+		header .top-link-cart 
+	{ 
+		background-size: contain;
+		background-position: top;
+		padding:20px 0px 0px 20px;
+	}
+
+	header .links li{
+		margin-right:10px;
+	}
+
+	.links > li:nth-child(1){
+		display: none;
+	}
+
+	.level0 > a span:hover{
+		border-bottom: 0;
+	}
+
+	.nav-fixed
+	{
+		padding-top:10px;
+	    top: 0;
+	    z-index: 100;
+	    position: fixed;
+	    width: 100%;
+	    background-color: white;
+	    height:50px;
+	}
+
+	.form-search-mini
+	{
+		display: block;
+		border: 2px solid #474444;
+		padding:2px;
+		width:100%;
+	}
+
+	.form-search-mini #search{
+		width:80%;
+		font-size: 0.8em;
+		text-align: center;
+		font-family: arial;
+		text-transform: uppercase;
+		outline:none;
+	    border-color: white;
+	    background-color:transparent;
+	    border: 0px solid;
+	    margin-top:5px;
+	}
+	.form-search-mini button{
+		display: none;
+	}
+
+		header .TopNavIcon span{
+		display: block;
+		font-size: 2.5em;
+	}
+
+	header .searchMiniIcon span{
+	font-size: 2.25em;
+	}
 }
+
+@media-query(max-width:$media-smartphone-width){
+	header .form-search #search{
+		width:85%;
+	}
+
+	header #header_wrapper .logo{
+		display: none;
+	}
+
+	header nav ul{
+		width:80%;
+	}
+
+	#search{
+		width:80%;
+	}
+
+	.form-search > span.mangoIcon{
+	font-size: 1.75em;
+	float:left;
+	}
+
+	#mini-menu-cart .product-image{
+		width:30%;
+		display: inline-block;
+	}
+
+	.content-cart{
+			padding:5px 0px;
+		}
+
+	.links li{
+		margin-left: 0;
+	}
+
+
 }
