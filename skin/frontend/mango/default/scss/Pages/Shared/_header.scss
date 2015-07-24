@@ -9,8 +9,19 @@ header
 	}
 
 	#navMenuButton{
-	display: none;
-	}
+			display: inline-block;
+			padding:8px 20px;
+			background-color: black;
+			color:white;
+			float:left;
+			text-transform: uppercase;
+			margin:0px 20px 0px 5px;
+			font-weight: bold;
+
+			&:hover{
+				cursor: pointer;
+			}
+		}
 }
 
 .messages li ul{
@@ -32,16 +43,58 @@ header
 #header_wrapper
 {
 	text-align: center;
-	@include susy-breakpoint($desktop_min-width, $header-layout-desktop){
-		@include container();
-	}
-	.header_search, .header_logo{
+
+	// MOBILE
+	$susy: (
+		columns:4,
+		gutters: 24px/37px,
+        container-position: center
+	);
+
+
+
+.header_search, #navMenuButton{
 		@include span(1 of 3);
-	}
-	.header_menus{
+		display:inline-block;
+}
+
+.header_search{width:auto;}
+		
+.header_menus{
 		@include span(last 1 of 3);
 		position:relative;
+}
+
+	@include susy-breakpoint($tablet_min-width, $header-layout-tablet){
+			@include container();
+		
+		.header_search, #navMenuButton{
+			@include span(1 of 6);
+		}
+		.header_logo{
+			@include span(2 of 6);
+		}
+		.header_menus{
+			@include span(last 2 of 6);
+			width:auto;
+			position:relative;
+		}
 	}
+
+	@include susy-breakpoint($desktop_min-width, $header-layout-desktop){
+		@include container();
+
+		#navMenuButton{display:none;}
+
+		.header_search, .header_logo{
+			@include span(1 of 3);
+		}
+		.header_menus{
+			@include span(last 1 of 3);
+			position:relative;
+		}
+	}
+
 }
 
 .header_logo img{

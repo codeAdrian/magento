@@ -233,7 +233,7 @@ jq(function() {
 */
 
 // MINI MENU
-
+/*
 jq(function () {
     jq(".top-account>.textLink,#mini-menu-account,.top-account-a").click(function (e) {
         jq('#mini-menu-cart').hide();
@@ -254,6 +254,8 @@ jq(function () {
         jq('#mini-menu-cart').hide();
     });
 });
+*/
+
 
 // DROPDOWN
 /*
@@ -354,8 +356,6 @@ jq(function(){
       }
     });
   }
-
-
 });
 
 // IPAD CATEGORIES ON CLICK (DROPDOWN)

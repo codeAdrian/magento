@@ -1855,7 +1855,7 @@ img{
 
 /* RESPONSIVE DESIGN IPAD */
 
-@media(max-width:900px){
+@media(max-width:1024px){
 
 	li.level0 a:hover{
 		cursor:pointer;
@@ -2032,10 +2032,6 @@ img{
 		padding:20px 0px 0px 20px;
 	}
 
-	header .links{
-		margin:-10px 15px 0px 0px;
-	}
-
 	header .links li{
 		margin-right:10px;
 	}
@@ -2085,21 +2081,6 @@ img{
 		font-size: 1.25em;
 	}
 
-	header #navMenuButton{
-		display: inline-block;
-		padding:8px 20px;
-		background-color: black;
-		color:white;
-		float:left;
-		text-transform: uppercase;
-		margin:0px 20px 0px 5px;
-		font-weight: bold;
-	}
-
-	header #navMenuButton:hover{
-		cursor: pointer;
-	}
-
 	header nav ul li{
 		padding:10px 0px;
 		border-bottom:1px solid #b4b4b4;
@@ -2147,10 +2128,6 @@ img{
 	}
 	.form-search-mini button{
 		display: none;
-	}
-
-header .TopNavIcon span{
-	margin-right:25%;
 	}
 
 	footer .footer{
@@ -2615,14 +2592,6 @@ header .TopNavIcon span{
 		  top: -10px;
 		  position: absolute;
 		}
-
-	header #header_wrapper{
-		padding:10px 5px 5px 5px;
-	}
-
-	header .links{
-		margin:-6px 15px 0px 5px;
-	}
 
 	header #header_wrapper .logo{
 		display: none;

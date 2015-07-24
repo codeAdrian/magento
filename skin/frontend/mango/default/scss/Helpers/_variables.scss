@@ -5,6 +5,11 @@ $susy:(
 		//debug: (image: show),
 );
 
+$header-layout-tablet: (
+        columns: 6,
+        gutters: 36px/57px,
+        container-position: center
+);
 
 
 $header-layout-desktop: (
@@ -14,5 +19,5 @@ $header-layout-desktop: (
 );
 
 // VARIABLES
-$desktop_min-width:900px;
+$desktop_min-width:1024px;
 $tablet_min-width:625px;
