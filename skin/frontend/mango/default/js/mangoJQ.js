@@ -186,16 +186,10 @@ jq(function(){
   }
     });
   jq("#navMenuButton, #header_wrapper > nav:nth-child(7) > ul:nth-child(1)").click(function (e) {
-        if(jq(document).width()<900){
         jq('nav').addClass("offcanvas");
         jq("li.level0 > a").removeAttr("href"); 
         e.stopPropagation();
-      }
       });
-  jq(document).click(function (e) {
-          if(jq(document).width()<900){
-      }
-    });
 });
 
 // IPAD SHOW SEARCH
