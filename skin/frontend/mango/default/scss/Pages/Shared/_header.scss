@@ -1,6 +1,9 @@
 
 header
 {
+	margin:0px auto;
+	max-width:$desktop_max-width;
+
 	.TopNavIcon{
 		span{
 			font-family: mango-font-icons;
@@ -22,6 +25,16 @@ header
 				cursor: pointer;
 			}
 		}
+
+ 	.smartphoneLogo{
+		text-align: center;
+		width:100%;
+		clear:both;
+
+		img{
+			margin:0px auto 10px auto;
+		}
+	}
 }
 
 .messages li ul{
@@ -42,7 +55,12 @@ header
 
 #header_wrapper
 {
+	max-width:$desktop_max-width;
 	text-align: center;
+
+	.top-link-checkout {
+	display: none;
+}
 
 	// MOBILE
 	$susy: (
@@ -51,19 +69,17 @@ header
         container-position: center
 	);
 
+	.header_search, #navMenuButton{
+			@include span(1 of 3);
+			display:inline-block;
+	}
 
-
-.header_search, #navMenuButton{
-		@include span(1 of 3);
-		display:inline-block;
-}
-
-.header_search{width:auto;}
-		
-.header_menus{
-		@include span(last 1 of 3);
-		position:relative;
-}
+	.header_search{width:auto;}
+			
+	.header_menus{
+			@include span(last 1 of 3);
+			position:relative;
+	}
 
 	@include susy-breakpoint($tablet_min-width, $header-layout-tablet){
 			@include container();
@@ -76,7 +92,7 @@ header
 		}
 		.header_menus{
 			@include span(last 2 of 6);
-			width:auto;
+			width:20%;
 			position:relative;
 		}
 	}
@@ -109,12 +125,68 @@ margin:0px auto;
 	width:100%;
 }
 
-.form-search
-{
+.form-search{
 	border: 2px solid #474444;
-	padding:0px 2px 2px 2px;
-	width:60%;
+	top:90px;
+	left:2%;
+	top:140px;
+	display: none;
+	position:absolute;
+	background-color: white;
+	z-index:5;
+	width:96%;
+	float:none;
+
+	button[title="Search"]{
+		display:none;
+	}
+
+	&:before{
+	  z-index: -10;
+	  content: '';
+	  width: 0;
+	  height: 0;
+	  border: 10px solid #555151;
+	  border-top: 0 solid rgba(60, 0, 0, 0)!important;
+	  border-right: 5px solid rgba(0, 0, 0, 0)!important;
+	  border-left: 5px solid rgba(80, 0, 0, 0);
+	  left: 50%;
+	  top: -10px;
+	  position: absolute;
+	}
+
+	#search{
+		width:90%;
+		padding:10px 0px;
+	}
+
+	.mangoIcon{
+		font-size: 1.25em;
+	}
+
+	@include breakpoint($tablet_min-width){
+		top:90px;
+		left:2%;
+
+		&:before{
+			top:-10px;
+			left:28%;
+		}
+	}
+
+	@include breakpoint($desktop_min-width){
+	border: 2px solid #474444;
+	padding:3px;
+	width:80%;
 	margin:0px auto;
+	position:initial;
+	display:block !important;
+
+	 #search{
+	 	padding:0px;
+	 }
+
+	&:before{display:none;}
 
 	.mangoIcon{
 		display:inline-block;
@@ -122,8 +194,6 @@ margin:0px auto;
 		padding:0px;
 	}
 
-	button[title="Search"]{
-		display:none;
 	}
 }
 
@@ -186,20 +256,28 @@ margin:0px auto;
 	&:hover{
 		cursor:pointer;
 	}
-
 	span{
 		display:inline-block;
 		position:relative;
-		top:17px;
-		left:5px;
 		background-color: white;
 		border:1px solid black;
 		border-radius: 50%;
-		padding:6% 0px;
 		vertical-align: middle;
 		text-align:center;
 		font-weight: 300;
-		font-size: 1em;
-		min-width: 60%;
+		font-size: 0.75rem;
+   	 	width: 1.5em;
+    	vertical-align: bottom;
+    	padding: 0.3em 0em;
+		top: 10px;
+	    left: -24px;
 	}
+
+@include breakpoint($desktop_min-width){
+	span{
+		top:22px;
+		left:5px;
+	}
+}
+
 }

@@ -2,7 +2,7 @@
 
 $susy:(
 		global-box-sizing:border-box,
-		//debug: (image: show),
+		//debug: (image: show)
 );
 
 $header-layout-tablet: (
@@ -21,3 +21,5 @@ $header-layout-desktop: (
 // VARIABLES
 $desktop_min-width:1024px;
 $tablet_min-width:625px;
+
+$desktop_max-width:1280px;

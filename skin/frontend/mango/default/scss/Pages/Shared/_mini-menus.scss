@@ -2,7 +2,7 @@
 
 #mini-menu-account {
 	position: absolute;
-	right:31%;
+	right:0%;
 	top: 50px;
 	font-size: 0.75em;
 	width: 250px;
@@ -21,6 +21,27 @@
 		position: absolute;
 	}
 
+	@include breakpoint($tablet_min-width){
+		right:14%;
+		top: 50px;
+	}
+
+	@include breakpoint($desktop_min-width){
+		right:10%;
+		top: 50px;
+	}
+}
+
+#mini-menu-cart {
+	position: absolute;
+	width:370px;
+	top:50px;
+	right:12%;
+
+	.product-image{
+		display:inline-block !important;
+	}
+
 	.content-cart:before {
 	  z-index: -10;
 	  content: '';
@@ -35,16 +56,14 @@
 	  position: absolute;
 	}
 
-}
+	@include breakpoint($tablet_min-width){
+		right:14%;
+		top: 50px;
+	}
 
-#mini-menu-cart {
-	position: absolute;
-	right:24%;
-	top: 50px;
-	width:370px;
-
-	.product-image{
-		display: inline-block !important;
+	@include breakpoint($desktop_min-width){
+		right:3%;
+		top: 50px;
 	}
 }
 
