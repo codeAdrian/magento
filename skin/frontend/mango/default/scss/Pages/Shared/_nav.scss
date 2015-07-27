@@ -1,29 +1,22 @@
-.mobile-opened-closed{
-	display: none;
-}
-
+// ----- NAV - DESKTOP ----- 
 nav
 {
-	display:none;
-	@include breakpoint($desktop_min-width){display:block;}
 	width:100%;
-	margin:15px 0px 5px 0px;
+	margin:0 auto;
 	text-align: center;
-	padding:0;
+	padding:10px 0px 0px;
 
 	ul{
 		list-style: none;
-		padding:0px;
+		padding:0px;	
+
 		li{
 			display:inline-block;
 			margin-right:40px;
-			@include breakpoint($desktop_min-width){
-				&:hover > ul{
-					display: block;
-					height:0px;
-				}
+
+			.last{
+				margin-right:0px;
 			}
-			
 
 			a{
 				text-decoration: none;
@@ -32,21 +25,25 @@ nav
 				font-size: 0.8em;
 			}
 
-			&>a:hover:not(:last-child){
+			& > a:hover:not(:last-child){
 				border-bottom:1px solid #b4b4b4;
-
 			}
 		}
 	}
 }
+
+.mobile-opened-closed{
+	display: none;
+}
+
 
 .level0 > a span:hover
 {
 	border-bottom:2px solid #646060;
 }
 
-/* DROPDOWN */
-@include breakpoint($desktop_min-width){
+/* DROPDOWN MENU */
+
 nav ul li ul
 {
 	display: none;
@@ -57,12 +54,12 @@ nav ul li ul
 	&>li:hover{
 		background-color: #e4e3e3;
 		border: 0px;
-		z-index:200;
+		z-index:200;		
 	}
 
-	li>a{
-		border:0px;
-		z-index:200;
+	li > a{
+	border:0px;
+	z-index:200;
 	}
 
 	li{
@@ -74,21 +71,13 @@ nav ul li ul
 		background-color: white;
 		padding:10px 0px;
 		z-index:200;
-
+		
 		a{
 			padding:15px 10px;
 			text-transform: initial;
 		}
 	}
 }
-}
-
-
-
-.links > li:nth-child(1){ /* HELP TOPMENU LINK */
-		display: inline-block;
-	}
-
 
 .dropdown
 {
@@ -105,83 +94,33 @@ nav ul li ul
     top: 0;
     z-index: 100;
     position: fixed;
-    width: 100%;
+    margin:0 auto;
     background-color: white;
-    height:50px;
-    padding-top:15px;
-    max-width:100%;
+    padding-top:10px;
+    height:45px;
+    max-width:$desktop-page-width;
+    width:100%;
+    text-align: center;
 
-    .offcanvas{
-    	padding:0;
-    	margin:0;
-    }
-
-    .header_logo{
+    .logo_column{
     	display: none;
     }
 
-    nav{
-    	position:fixed;
-    	top:0px;
-    	padding:0 1em;
+    nav {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    margin:0 auto;
+    padding-top:20px;
+    max-width:$desktop-page-width;
+    width:100%;
     }
 
-    @include breakpoint($desktop_min-width){
-    	display:block !important;
-    }
 
-    .smartphoneLogo{
-    	display: none;
-    }
-
-    .form-search{
-    	top:60px;
-    }
-
-    #header_wrapper{
-    	max-width:$desktop_max-width;
-    }
 }
-/* NAV FIXED END*/
 
-
-/* OFFCANVAS MENU */
-.offcanvas{
-		display: block;
-		position: fixed;
-		left:0px;
-		top:0px;
-		width:100%;
-		background-color: rgba(0,0,0,0.5);
-		height:100%;
-		padding:0px;
-		margin:0px;
-		z-index:999;
-
-	ul{
-		background-color: white;
-		width:70%;
-		height:100%;
-		opacity: 1.0;
-		margin:0px;
-	}
-
-	@include breakpoint($tablet_min-width){
-		ul{width:40%;}
-	}
-
-	ul li ul{
-		position:relative;
-		width:93%;
-		text-align: left;
-		display: none;
-	}
-	ul li ul li{
-		margin-left:15px;
-	}
-	ul li.mobileOnlyAddition a{
-		margin-left:25px;
-	}
+// ----- NAV - TABLET -----
+@include breakpoint($tablet-breakpoint){
 
 	.nav-element-opened{
 		display: block;
@@ -189,15 +128,27 @@ nav ul li ul
 		border-bottom:1px solid #B4B4B4;
 		padding:7px 0px 10px 0px;
 
+		&:hover{
+			border-bottom:1px solid #B4B4B4;
+		}
+
 	}
 
-	ul li ul li{
+	nav ul li .has-children:hover{
+		border:0 !important;
+	}
+	nav ul li ul li{
 		font-size: 0.75em;
 		width:100%;
 		font-weight: normal;
+
+		&:hover{
+			background-color:white;
+			border:0;			
+		}
 	}
 
-	.navTitle, .navClose{
+	nav .navTitle{
 		border:0;
 		display: inline-block;
 		width:40%;
@@ -206,49 +157,68 @@ nav ul li ul
 		font-weight: 300;
 	}
 
-	.navClose{
+	nav .navClose{
+		@extend .navTitle;
 		text-align: right;
-	}
 
-	.navClose span{
-		background-color: black;
-		color:white;
-		font-size: 0.5em;
-		padding:0px 7px;
-		border-radius: 50%;
-		vertical-align: middle;
+		span{
+			background-color: black;
+			color:white;
+			border-radius: 50%;
+			display: inline-block;
+			padding: 0.1em 0em;
+			vertical-align: middle;
+			text-align: center;
+			font-size: 0.5em;
+			max-width: 1.5em;
+			width: 1.25em;		
+
+			&:hover{
+				cursor: pointer;
+			}
 		}
+	}
 
-	.navClose span:hover{
-		cursor: pointer;
+	nav{
+		display: none;
+		position: fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		background-color: rgba(0,0,0,0.5);
+		height:100%;
+		padding:0px;
+		z-index:999;
+
+		ul {
+			background-color: white;
+			width:40%;
+			height:100%;
+			opacity: 1.0;
+			margin:0px;
+
+			li{
+				display:block;
+
+				a{
+					font-weight: 400;
+					font-size: 0.75em;
+				}
+
+				ul{
+					position:relative;
+					width:93%;
+					text-align: left;	
+					
+					li{
+						margin-left:15px;
+					}		
+				}
+			}
 		}
-
-	ul li{
-		display:block;
 	}
 
-	ul li a{
-		font-weight: 400;
-		font-size: 0.75em;
-	}
-
-	.TopNavIcon span{
-		display: block;
-		font-size: 2.5em;
-	}
-
-	.searchMiniIcon span{
-	font-size: 2.25em;
-	}
-
-	ul li ul li:last-child{
-		border:0 !important;
-	}
-	ul li ul li:last-child:hover{
-		border:0 !important;
-	}
-
-	ul li{
+	nav ul li{
 		padding:10px 0px;
 		border-bottom:1px solid #b4b4b4;
 		width:90%;
@@ -256,8 +226,99 @@ nav ul li ul
 		text-align: left;
 		font-size: 1.5em;
 		margin:0px auto;
+
+		ul li:last-child{
+			border:0 !important;
+
+			&:hover{
+				border:0 !important;
+			}
+		}
+		ul li:not(:last-child){
+			border-bottom:1px solid #B4B4B4;
+			&:hover{
+				border-bottom:1px solid #B4B4B4;
+			}
+		}
+	}
+
+	header nav ul li.mobileOnlyAddition a{
+		margin-left:25px;
+	}
+
+	.level0 > a span:hover{
+		border-bottom: 0;
+	}
+
+	.nav-fixed
+	{
+		padding-top:10px;
+	    top: 0;
+	    z-index: 100;
+	    position: fixed;
+	    width: 100%;
+	    background-color: white;
+	    height:50px;
+	
+	     #header_wrapper .search_column{
+	    	width: 100%;
+			position:fixed;
+			margin-right: 3.44828%;
+			text-align: center;
+			margin: 0px auto;
+    	}
+
+    	.form-search-mini{
+    		display: block;
+    	}
+
+    	.searchMiniIcon{
+    		display: none;
+    	}
+
+    	nav{
+    		padding:0px;
+    		margin:0px;
+    	}
 	}
 }
 
+// ----- NAV - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+	nav ul{
+		width:80%;
+	}
 
+	#header_wrapper .search_column .form-search-mini{
+		display: none;
+	}
+
+	#header_wrapper .searchMiniIcon{
+		display: block;
+	}
+
+	.nav-fixed{
+		#header_wrapper{
+			background-color:white;
+			padding-top:5px;
+		}
+
+		.search_column .form-search-mini{
+			display: none;
+		}
+
+		.searchMiniIcon{
+				display: block;
+		}
+
+		.smartphoneLogo{
+			display:none;
+		}
+
+		.search_column{
+			width:auto !important; 
+			position:initial !important;
+		}
+	}
+}
 

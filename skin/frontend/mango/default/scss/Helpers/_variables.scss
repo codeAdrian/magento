@@ -1,27 +1,19 @@
 // SUSY VARIABLES
-
 $susy:(
 		global-box-sizing:border-box,
 		//debug: (image: show)
 );
 
-$header-layout-tablet: (
-        columns: 6,
-        gutters: 36px/57px,
-        container-position: center
-);
-
-
-$header-layout-desktop: (
-        columns: 3,
-        gutters: 24px/37px,
-        container-position: center
-);
+// SUSY BREAKPOINTS
+$susy-desktop-header-columns:3;
+$susy-tablet-header-columns:6;
+$susy-smartphone-header-columns:6;
+$susy-tablet-breakpoint:900px;
+$susy-smartphone-breakpoint:625px;
 
 // VARIABLES
-$desktop_min-width:1050px;
-$media-tablet-width:1049px;
-$media-smartphone-width:625px;
-$tablet_min-width:625px;
+$tablet-breakpoint:max-width $susy-tablet-breakpoint;
+$smartphone-breakpoint:max-width $susy-smartphone-breakpoint;
 
-$desktop_max-width:1280px;
+// PAGE MAX WIDTH
+$desktop-page-width:1024px;

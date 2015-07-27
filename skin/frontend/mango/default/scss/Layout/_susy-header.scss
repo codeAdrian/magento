@@ -1,0 +1,71 @@
+$susy:(
+	columns:$susy-desktop-header-columns,
+	//debug: (image: show),
+	global-box-sizing:border-box
+);
+
+#header_wrapper{
+	// HEADER GRID - DESKTOP
+	@include container();
+	.search_column{
+		@include span(1 of $susy-desktop-header-columns);
+		padding-top:7px;
+	}
+
+	.logo_column{
+		@include span(1 of $susy-desktop-header-columns);
+	}
+
+	.topLinks_column{
+		@include span(last 1 of $susy-desktop-header-columns);
+		padding-top:10px;
+	}
+	
+	// HEADER GRID - TABLET
+	@include breakpoint($tablet-breakpoint){
+		@include container($susy-tablet-header-columns);
+
+		#navMenuButton{
+			@include span(1 of $susy-tablet-header-columns);
+		}
+
+		.search_column{
+			@include span(1 of $susy-tablet-header-columns);
+			padding-top:0px;
+		}
+
+		.logo_column{
+			//display:none;
+			@include span(2 of $susy-tablet-header-columns);
+		}
+
+		.topLinks_column{
+			@include span(last 2 of $susy-tablet-header-columns);
+			padding-top:0px;
+			width:25%;
+		}			
+
+	}
+
+	// HEADER GRID - SMARTPHONE
+	@include breakpoint($smartphone-breakpoint){
+		@include container($susy-smartphone-header-columns);
+
+		#navMenuButton{
+			@include span(1 of $susy-smartphone-header-columns);
+		}
+
+		.search_column{
+			@include span(1 of $susy-smartphone-header-columns);
+			display:block;
+		}
+
+		.logo_column{
+			display:none;
+		}
+
+		.topLinks_column{
+			@include span(last 3 of $susy-smartphone-header-columns);
+		}	
+	}
+}

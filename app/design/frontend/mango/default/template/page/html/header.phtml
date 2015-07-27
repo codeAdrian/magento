@@ -28,41 +28,28 @@
  */
 ?>
 <header>
-<div class="smartphoneLogo smartphoneOnly">
-        <?php if ($this->getIsHomePage()):?>
-            
-        <h1 class="logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-        
 
-        <?php else:?>
-        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-        <?php endif?>
-        </div>
+ <div class="smartphoneOnly smartphoneLogo"><h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1></div>
+
 <div id="header_wrapper">
         <div id="navMenuButton"><span><?php echo $this->__('Menu') ?></span></div>
-        <div class="header_search"><?php echo $this->getChildHtml('topSearch') ?></div>
-        
-        <div class="header_logo">
+        <div class="search_column">
+        <?php echo $this->getChildHtml('topSearch') ?>
+        </div>
+
+        <div class="logo_column">
         <?php if ($this->getIsHomePage()):?>
-            
         <h1 class="logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-        
+
 
         <?php else:?>
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
         </div>
-
-        <div class="header_menus">
+        <div class="topLinks_column">
             <?php echo $this->getChildHtml('topLinks') ?>
-            <!-- CART MINI MENU -->
-
-            <div class="mini-menu" id="mini-menu-cart">
-    <div class="content-cart">
-            <?php echo $this->getChildHtml('topcart'); ?>
-    </div>
-</div> 
-
+        </div>
+</div>
 <!-- PROFILE MINI MENU -->
 
 <div class="mini-menu" id="mini-menu-account">
@@ -71,11 +58,15 @@
     </div>
 </div>
 
-        </div>
-</div>
-
-
 <!-- END -->
+
+<!-- CART MINI MENU -->
+
+<div class="mini-menu" id="mini-menu-cart">
+    <div class="content-cart">
+            <?php echo $this->getChildHtml('topcart'); ?>
+    </div>
+</div> 
 
 <!-- CART END -->
 
@@ -84,7 +75,6 @@
         <?php echo $this->getChildHtml('topContainer'); ?>
 
 <?php echo $this->getChildHtml('topMenu') ?>
-
 
 
 </header>

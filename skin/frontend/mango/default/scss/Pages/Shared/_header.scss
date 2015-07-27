@@ -1,24 +1,255 @@
-
-// HEADER JE U KAOSU JER SAM KORISTIO mobile-first kod desktop-first koda.
-
-header
-{
+// ----- HEADER - DESKTOP -----  */
+header{
+	text-align:center;
 	margin:0px auto;
-	max-width:$desktop_max-width;
+	padding:0px;
 
-	.TopNavIcon{
-		span{
-			font-family: mango-font-icons;
-			display: none;			
-		}
+	.messages li ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px 0px;
+	vertical-align: middle;
 	}
 
 	#navMenuButton{
+		display: none;
+	}
+
+	.TopNavIcon{
+		span{
+		font-family: mango-font-icons;
+		display: none;			
+		}
+	}
+
+	 #header_wrapper .top-link-checkout {
+	 	display: none;
+	 }
+
+	 .logo a img{
+		display:inline-block;
+		text-align: center;
+		margin:0 auto;
+	}
+
+	.top-help-a{
+		margin-right:10px;
+	}
+
+	.form-search-mini .mangoIcon{
+		float:left;
+		font-size:1.25em;
+	}
+
+	.form-search{
+		border: 2px solid #474444;
+		padding:2px;
+	}
+
+	#search{
+		width:15em;
+		font-size: 0.8em;
+		text-align: center;
+		font-family: arial;
+		text-transform: uppercase;
+		outline:none;
+	    border-color: white;
+	    background-color:transparent;
+	    border: 0px solid;
+
+	    &:focus {
+		border-color: white;
+		outline:none;
+		background-color:transparent;
+		border: 0px solid;	
+	    }
+	}
+
+	.form-search button[title="Search"]{
+		display:none;
+	}
+
+	#search_mini_form{
+		text-align:center;
+		margin:0px auto;
+		max-width:15em;
+	}
+
+	.links{
+		display:block;
+		list-style: none;
+		text-align:center;
+		text-transform: uppercase;
+		padding:0px;
+		width:100%;
+		float:right;
+
+		.first{
+			display: inline-block;
+		}
+
+		& > li:nth-child(1){ /* HELP TOPMENU LINK */
+			display: inline-block;
+		}
+
+		li{
+			display: inline-block;
+			padding:0px;
+
+			a{
+				text-decoration: none;
+				color:black;
+
+				&:hover{
+					cursor: pointer;
+				}
+			}
+
+			&:nth-child(3){
+				margin: 0px;
+			}
+		}
+	}
+
+	.top-link-cart 
+	{ 
+		background: url('../images/shopping_bag.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right bottom;
+		padding:10px 20px 5px 0px;
+
+		&:hover{
+			cursor:pointer;
+		}
+
+		span{
+			display: inline-block;
+			position: relative;
+			top: 10px;
+			left: 5px;
+			background-color: white;
+			border: 1px solid black;
+			border-radius: 50%;
+			padding: 0.25em 0em;
+			vertical-align: middle;
+			text-align: center;
+			font-weight: 300;
+			font-size: 0.75em;
+			max-width: 1.5em;
+			width: 1.5em;
+		}
+	}
+
+}
+
+
+// ----- HEADER - TABLET -----  */
+@include breakpoint($tablet-breakpoint){
+	header{
+		.searchMiniIcon span{
+			font-size: 2.25em;
+
+			&:hover{
+				cursor: pointer;
+			}
+		}
+
+		.mobile-opened-closed{
+			display: inline-block;
+			font-family: mango-font-icons;
+		}
+
+		.search-wrapper{
+			float:none;
+			margin:0px auto;
+		}
+
+		#header_wrapper{
+			margin:0px;
+		}
+
+		.TopNavIcon span{
+			display: block;
+			font-size: 2.75em;
+			margin-right:25%;
+		}
+
+		.searchMiniIcon span{
+		font-size: 2.25em;
+		}
+
+		.textLink, .top-help-a{
+			display: none;
+		}
+
+		.top-link-cart 
+		{ 
+			background-size: contain;
+			background-position: top;
+			padding:20px 0px 0px 20px;
+
+			span{
+				top: 2px;
+				left: -25px;
+			}
+		}
+
+		.links{
+			margin:0px 15px 0px 0px;
+			text-align: right;
+
+			li{
+				margin-right:10px;
+
+				&:nth-child(1){
+					display: none;
+				}
+			}
+		}
+
+		.form-search{
+			display: none;
+			position:absolute;
+			top:50px;
+			left:5px;
+			background-color: white;
+			z-index:5;
+			width:98%;
+			float:none;
+
+			&:before{
+				z-index: -10;
+				content: '';
+				width: 0;
+				height: 0;
+				border: 10px solid #555151;
+				border-top: 0 solid rgba(60, 0, 0, 0)!important;
+				border-right: 5px solid rgba(0, 0, 0, 0)!important;
+				border-left: 5px solid rgba(80, 0, 0, 0);
+				left: 125px;
+				top: -10px;
+				position: absolute;
+			}
+
+			#search{
+			width:90%;
+			padding:10px 0px;
+			}
+
+			.form-search .mangoIcon{
+				font-size: 1.25em;
+			}
+
+		}
+
+		#navMenuButton{
 			display: inline-block;
 			padding:8px 20px;
 			background-color: black;
+			text-align: center;
+			max-width:70px;
 			color:white;
-			float:left;
 			text-transform: uppercase;
 			margin:0px 20px 0px 5px;
 			font-weight: bold;
@@ -28,404 +259,100 @@ header
 			}
 		}
 
- 	.smartphoneLogo{
-		text-align: center;
-		width:100%;
-		clear:both;
+		.form-search-mini
+		{
+			display: block;
+			border: 2px solid #474444;
+			padding:2px;
+			width:100%;
 
-		img{
-			margin:0px auto 10px auto;
-		}
-	}
-}
+			button{
+				display: none;
+			}
 
-	.links > li:nth-child(1){
-		display: none;
-	}
+			#search{
+				width:80%;
+				font-size: 0.8em;
+				text-align: center;
+				font-family: arial;
+				text-transform: uppercase;
+				outline:none;
+			    border-color: white;
+			    background-color:transparent;
+			    border: 0px solid;
+			    margin-top:5px;
+			}
 
-
-	.level0 > a span:hover{
-		border-bottom: 0;
-	}
-
-.messages li ul{
-	list-style: none;
-	margin: 0px;
-	padding: 0px 0px;
-	vertical-align: middle;
-}
-
-.form-search-mini .mangoIcon{
-	font-size:1.25em;
-}
-
-.mangoIcon{
-	font-family: mango-font-icons;
-	padding:0px 5px;
-}
-
-#header_wrapper
-{
-	max-width:$desktop_max-width;
-	text-align: center;
-
-	.top-link-checkout {
-	display: none;
-}
-
-	$susy: (
-		columns:4,
-		gutters: 24px/37px,
-        container-position: center
-	);
-
-	.header_search, #navMenuButton{
-			@include span(1 of 3);
-			display:inline-block;
-	}
-
-	.header_search{width:auto;}
-			
-	.header_menus{
-			@include span(last 1 of 3);
-			position:relative;
-	}
-
-	@include susy-breakpoint($tablet_min-width, $header-layout-tablet){
-			@include container();
-		
-		.header_search, #navMenuButton{
-			@include span(1 of 6);
-		}
-		.header_logo{
-			@include span(2 of 6);
-		}
-		.header_menus{
-			@include span(last 2 of 6);
-			width:20%;
-			position:relative;
-		}
-	}
-
-	@include susy-breakpoint($desktop_min-width, $header-layout-desktop){
-		@include container();
-
-		#navMenuButton{display:none;}
-
-		.header_search, .header_logo{
-			@include span(1 of 3);
-		}
-		.header_menus{
-			@include span(last 1 of 3);
-			position:relative;
-		}
-	}
-
-}
-
-.header_logo img{
-text-align: center;
-margin:0px auto;
-}
-
-
-#search_mini_form{
-	display:inline-block;
-	margin:0 auto;
-	width:100%;
-}
-
-.form-search{
-	border: 2px solid #474444;
-	top:90px;
-	left:2%;
-	top:140px;
-	display: none;
-	position:absolute;
-	background-color: white;
-	z-index:5;
-	width:96%;
-	float:none;
-
-	button[title="Search"]{
-		display:none;
-	}
-
-	&:before{
-	  z-index: -10;
-	  content: '';
-	  width: 0;
-	  height: 0;
-	  border: 10px solid #555151;
-	  border-top: 0 solid rgba(60, 0, 0, 0)!important;
-	  border-right: 5px solid rgba(0, 0, 0, 0)!important;
-	  border-left: 5px solid rgba(80, 0, 0, 0);
-	  left: 50%;
-	  top: -10px;
-	  position: absolute;
-	}
-
-	#search{
-		width:90%;
-		padding:10px 0px;
-	}
-
-	.mangoIcon{
-		font-size: 1.25em;
-	}
-
-	@include breakpoint($tablet_min-width){
-		top:90px;
-		left:2%;
-
-		&:before{
-			top:-10px;
-			left:28%;
-		}
-	}
-
-	@include breakpoint($desktop_min-width){
-	border: 2px solid #474444;
-	padding:3px;
-	width:80%;
-	margin:0px auto;
-	position:initial;
-	display:block !important;
-
-	 #search{
-	 	padding:0px;
-	 }
-
-	&:before{display:none;}
-
-	.mangoIcon{
-		display:inline-block;
-		width:5%;
-		padding:0px;
-	}
-
-	}
-}
-
-#search{
-	font-size: 0.8em;
-	text-align: center;
-	text-transform: uppercase;
-	outline:none;
-    border-color: white;
-    background-color:transparent;
-    border: 0px solid;
-    width:90%;
-
-    &:focus{
-	  	border-color: white;
-	  	outline:none;
-	   	background-color:transparent;
-	    border: 0px solid;    	
-    }
-}
-
-.links
-{
-	list-style: none;
-	text-transform: uppercase;
-	padding:0px;
-
-	.first{
-		display: inline-block;
-	}
-
-	li{
-		display: inline-block;
-		margin-left: 15px;
-		padding:0px;
-
-		&:nth-child(3){
-			margin:0px;
 		}
 
-		a{
-			text-decoration: none;
-			color:black;
+	}
 
-			&:hover{
-				cursor:pointer;
+}
+
+// ----- HEADER - MOBILE -----  */
+@include breakpoint($smartphone-breakpoint){
+	header{
+		.smartphoneLogo{
+			text-align: center;
+			display: block;
+			width:100%;
+			clear:both;
+		}
+
+		#header_wrapper {
+
+			padding-top:10px;
+			background-color:white;		
+
+			.search_column{
+				display: block;
+			}
+
+			.logo{
+				display: none;
+			}
+
+		}
+
+		.form-search #search{
+			width:85%;
+		}	
+
+		.form-search{
+			width:95%;
+			top:60px;
+
+			&:before{
+		 		z-index: -10;
+				content: '';
+				width: 0;
+				height: 0;
+				border: 10px solid #555151;
+				border-top: 0 solid rgba(60, 0, 0, 0)!important;
+				border-right: 5px solid rgba(0, 0, 0, 0)!important;
+				border-left: 5px solid rgba(80, 0, 0, 0);
+				left: 135px;
+				top: -10px;
+				position: absolute;			
 			}
 		}
-	}
-}
 
-.top-link-cart 
-{ 
-	background: url('../images/shopping_bag.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: right bottom;
-	padding:5px 25px 15px 0px;
-
-	&:hover{
-		cursor:pointer;
-	}
-	span{
-		display:inline-block;
-		position:relative;
-		background-color: white;
-		border:1px solid black;
-		border-radius: 50%;
-		vertical-align: middle;
-		text-align:center;
-		font-weight: 300;
-		font-size: 0.75rem;
-   	 	width: 1.5em;
-    	vertical-align: bottom;
-    	padding: 0.3em 0em;
-		top: 10px;
-	    left: -24px;
-	}
-
-@include breakpoint($desktop_min-width){
-	span{
-		top:22px;
-		left:5px;
-	}
-}
-}
-
-@media-query(max-width:$desktop_max-width){
-
-
-	li.level0 a:hover{
-		cursor:pointer;
-	}
-
-	.search-wrapper{
-		float:none;
-		margin:0px auto;
-	}
-
-	header .searchMiniIcon span:hover{
-		cursor: pointer;
-	}
-
-	header nav ul li .has-children:hover{
-		border:0 !important;
-	}
-
-	.nav-element-opened:hover{
-	border-bottom:1px solid #B4B4B4
-	}
-
-	header .TopNavIcon span{
-		display: block;
-		font-size: 2.5em;
-	}
-
-	header .searchMiniIcon span{
-	font-size: 2.25em;
-	}
-
-	.top-account, .top-help-a{
-		display: none;
-	}
-
-		header .top-link-cart 
-	{ 
-		background-size: contain;
-		background-position: top;
-		padding:20px 0px 0px 20px;
-	}
-
-	header .links li{
-		margin-right:10px;
-	}
-
-	.links > li:nth-child(1){
-		display: none;
-	}
-
-	.level0 > a span:hover{
-		border-bottom: 0;
-	}
-
-	.nav-fixed
-	{
-		padding-top:10px;
-	    top: 0;
-	    z-index: 100;
-	    position: fixed;
-	    width: 100%;
-	    background-color: white;
-	    height:50px;
-	}
-
-	.form-search-mini
-	{
-		display: block;
-		border: 2px solid #474444;
-		padding:2px;
-		width:100%;
-	}
-
-	.form-search-mini #search{
-		width:80%;
-		font-size: 0.8em;
-		text-align: center;
-		font-family: arial;
-		text-transform: uppercase;
-		outline:none;
-	    border-color: white;
-	    background-color:transparent;
-	    border: 0px solid;
-	    margin-top:5px;
-	}
-	.form-search-mini button{
-		display: none;
-	}
-
-		header .TopNavIcon span{
-		display: block;
-		font-size: 2.5em;
-	}
-
-	header .searchMiniIcon span{
-	font-size: 2.25em;
-	}
-}
-
-@media-query(max-width:$media-smartphone-width){
-	header .form-search #search{
-		width:85%;
-	}
-
-	header #header_wrapper .logo{
-		display: none;
-	}
-
-	header nav ul{
-		width:80%;
-	}
-
-	#search{
-		width:80%;
-	}
-
-	.form-search > span.mangoIcon{
-	font-size: 1.75em;
-	float:left;
-	}
-
-	#mini-menu-cart .product-image{
-		width:30%;
-		display: inline-block;
-	}
-
-	.content-cart{
-			padding:5px 0px;
+		.links{
+			margin:-6px 15px 0px 5px;
 		}
 
-	.links li{
-		margin-left: 0;
+		#search{
+			width:80%;
+		}
+
+		.form-search > span.mangoIcon{
+			font-size: 1.75em;
+			float:left;
+		}
+
+		.links li{
+			margin-left: 0;
+		}
+
 	}
-
-
 }
