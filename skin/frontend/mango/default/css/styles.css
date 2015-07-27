@@ -3810,7 +3810,7 @@ header #search_mini_form {
 header .links {
   display: block;
   list-style: none;
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
   padding: 0px;
   width: 100%;
@@ -4403,7 +4403,7 @@ nav ul li ul li a {
 /* line 3, ../scss/Pages/Shared/_mini-menus.scss */
 #mini-menu-account, #mini-menu-cart {
   position: absolute;
-  right: 20%;
+  right: 0%;
   top: 50px;
   font-size: 0.75em;
   width: 250px;
@@ -4412,7 +4412,7 @@ nav ul li ul li a {
 /* line 11, ../scss/Pages/Shared/_mini-menus.scss */
 #mini-menu-cart {
   font-size: 1em;
-  right: 17%;
+  right: 0%;
   top: 50px;
   width: 370px;
 }
@@ -4749,10 +4749,11 @@ a.f-left {
 
 /* line 9, ../scss/Pages/Homepage/_homepage.scss */
 .image-container img {
+  width: 100%;
   margin: 0px auto;
 }
 
-/* line 14, ../scss/Pages/Homepage/_homepage.scss */
+/* line 15, ../scss/Pages/Homepage/_homepage.scss */
 .image-container .grid2 .img-top {
   padding-bottom: 4.2%;
   vertical-align: top;
@@ -4761,7 +4762,7 @@ a.f-left {
   height: 100%;
 }
 
-/* line 23, ../scss/Pages/Homepage/_homepage.scss */
+/* line 24, ../scss/Pages/Homepage/_homepage.scss */
 .image-container .grid2 .img-bottom {
   vertical-align: bottom;
   padding-bototm: 0px;
@@ -4770,7 +4771,7 @@ a.f-left {
 }
 
 @media (max-width: 625px) {
-  /* line 33, ../scss/Pages/Homepage/_homepage.scss */
+  /* line 34, ../scss/Pages/Homepage/_homepage.scss */
   .border-container {
     border: 0;
   }
