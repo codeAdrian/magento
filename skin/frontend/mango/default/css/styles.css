@@ -680,7 +680,7 @@ button span span {
   }
 }
 
-/* line 8, ../scss/Layout/_susy-footer.scss */
+/* line 9, ../scss/Layout/_susy-footer.scss */
 footer .footer {
   max-width: 100%;
   margin-left: auto;
@@ -692,13 +692,13 @@ footer .footer:after {
   display: block;
   clear: both;
 }
-/* line 12, ../scss/Layout/_susy-footer.scss */
+/* line 13, ../scss/Layout/_susy-footer.scss */
 footer .grid4 {
   width: 21.05263%;
   float: left;
   margin-right: 5.26316%;
 }
-/* line 15, ../scss/Layout/_susy-footer.scss */
+/* line 16, ../scss/Layout/_susy-footer.scss */
 footer .grid4:last-child {
   width: 21.05263%;
   float: right;
@@ -706,7 +706,7 @@ footer .grid4:last-child {
 }
 
 @media (max-width: 625px) {
-  /* line 23, ../scss/Layout/_susy-footer.scss */
+  /* line 26, ../scss/Layout/_susy-footer.scss */
   .footer {
     max-width: 100%;
     margin-left: auto;
@@ -719,12 +719,12 @@ footer .grid4:last-child {
     clear: both;
   }
 
-  /* line 26, ../scss/Layout/_susy-footer.scss */
+  /* line 29, ../scss/Layout/_susy-footer.scss */
   .grid4 {
     width: 100% !important;
   }
 }
-/* line 7, ../scss/Layout/_susy-newsletter.scss */
+/* line 8, ../scss/Layout/_susy-newsletter.scss */
 footer .border-container {
   max-width: 100%;
   margin-left: auto;
@@ -736,13 +736,13 @@ footer .border-container:after {
   display: block;
   clear: both;
 }
-/* line 10, ../scss/Layout/_susy-newsletter.scss */
+/* line 11, ../scss/Layout/_susy-newsletter.scss */
 footer .border-container .grid2 {
   width: 44.44444%;
   float: left;
   margin-right: 11.11111%;
 }
-/* line 13, ../scss/Layout/_susy-newsletter.scss */
+/* line 14, ../scss/Layout/_susy-newsletter.scss */
 footer .border-container .grid2:last-child {
   width: 44.44444%;
   float: right;
@@ -750,7 +750,7 @@ footer .border-container .grid2:last-child {
 }
 
 @media (max-width: 625px) {
-  /* line 20, ../scss/Layout/_susy-newsletter.scss */
+  /* line 22, ../scss/Layout/_susy-newsletter.scss */
   footer .border-container {
     max-width: 100%;
     margin-left: auto;
@@ -762,28 +762,189 @@ footer .border-container .grid2:last-child {
     display: block;
     clear: both;
   }
-  /* line 23, ../scss/Layout/_susy-newsletter.scss */
+  /* line 25, ../scss/Layout/_susy-newsletter.scss */
   footer .border-container .grid2 {
-    width: 44.44444%;
+    width: 100%;
     float: left;
-    margin-right: 11.11111%;
+    margin-left: 0;
+    margin-right: 0;
     width: 100% !important;
     text-align: center;
   }
 }
-/* line 1, ../scss/Layout/_page.scss */
+/* line 9, ../scss/Layout/_susy-homepage.scss */
+.homepage-product-grid {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.homepage-product-grid:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 12, ../scss/Layout/_susy-homepage.scss */
+.homepage-product-grid .grid3 {
+  width: 28.57143%;
+  float: left;
+  margin-right: 7.14286%;
+}
+/* line 14, ../scss/Layout/_susy-homepage.scss */
+.homepage-product-grid .grid3:last-child {
+  width: 28.57143%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 625px) {
+  /* line 23, ../scss/Layout/_susy-homepage.scss */
+  .homepage-product-grid {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .homepage-product-grid:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 26, ../scss/Layout/_susy-homepage.scss */
+  .homepage-product-grid .grid3 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 28, ../scss/Layout/_susy-homepage.scss */
+  .homepage-product-grid .grid3:last-child {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 44, ../scss/Layout/_susy-homepage.scss */
+.border-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.border-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 47, ../scss/Layout/_susy-homepage.scss */
+.border-container .grid2 {
+  width: 44.44444%;
+  float: left;
+  margin-right: 11.11111%;
+}
+/* line 49, ../scss/Layout/_susy-homepage.scss */
+.border-container .grid2:last-child {
+  width: 44.44444%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 625px) {
+  /* line 57, ../scss/Layout/_susy-homepage.scss */
+  .border-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .border-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 60, ../scss/Layout/_susy-homepage.scss */
+  .border-container .grid2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  /* line 63, ../scss/Layout/_susy-homepage.scss */
+  .border-container .grid2:last-child {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    float: none;
+  }
+}
+/* line 80, ../scss/Layout/_susy-homepage.scss */
+.image-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  margin: 30px auto;
+}
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.image-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 84, ../scss/Layout/_susy-homepage.scss */
+.image-container .grid2 {
+  width: 49.50495%;
+  float: left;
+  margin-right: 0.9901%;
+}
+/* line 86, ../scss/Layout/_susy-homepage.scss */
+.image-container .grid2:last-child {
+  width: 49.50495%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 625px) {
+  /* line 93, ../scss/Layout/_susy-homepage.scss */
+  .image-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .image-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 95, ../scss/Layout/_susy-homepage.scss */
+  .image-container .grid2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 97, ../scss/Layout/_susy-homepage.scss */
+  .image-container .grid2:last-child {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 2, ../scss/Layout/_page.scss */
 .page {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-/* line 6, ../scss/Layout/_page.scss */
+/* line 7, ../scss/Layout/_page.scss */
 .grid2 {
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
 }
-/* line 12, ../scss/Layout/_page.scss */
+/* line 13, ../scss/Layout/_page.scss */
 .grid2 p {
   margin-left: 20%;
   margin-right: auto;
@@ -791,25 +952,22 @@ footer .border-container .grid2:last-child {
   text-align: left;
 }
 
-/* line 20, ../scss/Layout/_page.scss */
-.image-container .grid2 .img-top {
-  padding-bottom: 4.8%;
-  vertical-align: top;
-  padding-top: 0px;
-  padding-bottom: auto;
-  height: 100%;
+/* line 21, ../scss/Layout/_page.scss */
+.grid3 {
+  width: 32.5%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
 }
-
 /* line 29, ../scss/Layout/_page.scss */
-.image-container .grid2 .img-bottom {
-  vertical-align: bottom;
-  padding-bototm: 0px;
-  padding-top: auto;
-  height: 100%;
+.grid3 h2 {
+  margin: 0px;
+  padding: 5px 0px;
 }
 
 @media (max-width: 900px) {
-  /* line 38, ../scss/Layout/_page.scss */
+  /* line 37, ../scss/Layout/_page.scss */
   .grid2 p {
     margin: 10px 0%;
     text-align: center;
@@ -842,6 +1000,22 @@ footer .border-container .grid2:last-child {
   .border-container-black .grid2 {
     margin: 20px 0px 0px 0px;
     border: 1px solid black;
+  }
+
+  /* line 70, ../scss/Layout/_page.scss */
+  .grid3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  /* line 75, ../scss/Layout/_page.scss */
+  .grid3 h2 {
+    padding: 10px 0px;
+  }
+  /* line 79, ../scss/Layout/_page.scss */
+  .grid3 img {
+    text-align: center;
+    margin: 0px auto;
   }
 }
 /* CSS RESET FOR TABLE*/
@@ -1088,29 +1262,6 @@ div.buttons-set:nth-child(5) {
 }
 
 /* line 239, ../scss/_base.scss */
-.image-container {
-  vertical-align: top;
-  text-align: center;
-  margin: 30px 0px;
-  text-align: center;
-}
-
-/* line 248, ../scss/_base.scss */
-.grid3 {
-  width: 32.5%;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* line 257, ../scss/_base.scss */
-.grid3 h2 {
-  margin: 0px;
-  padding: 5px 0px;
-}
-
-/* line 263, ../scss/_base.scss */
 .form-container {
   vertical-align: middle;
   margin-bottom: 25px;
@@ -1118,84 +1269,84 @@ div.buttons-set:nth-child(5) {
 
 /* PRODUCT CATEGORIES */
 /* COLOR SWATCHES */
-/* line 274, ../scss/_base.scss */
+/* line 250, ../scss/_base.scss */
 .colorSwatches {
   text-align: center;
 }
 
-/* line 278, ../scss/_base.scss */
+/* line 254, ../scss/_base.scss */
 .colorSwatches span {
   padding: 1px 10px;
   font-size: 5px;
   margin: 0px 3px;
 }
 
-/* line 284, ../scss/_base.scss */
+/* line 260, ../scss/_base.scss */
 .Black {
   background-color: black;
 }
 
-/* line 288, ../scss/_base.scss */
+/* line 264, ../scss/_base.scss */
 .Blue {
   background-color: blue;
 }
 
-/* line 292, ../scss/_base.scss */
+/* line 268, ../scss/_base.scss */
 .Brown {
   background-color: #8B4513;
 }
 
-/* line 296, ../scss/_base.scss */
+/* line 272, ../scss/_base.scss */
 .Green {
   background-color: green;
 }
 
-/* line 300, ../scss/_base.scss */
+/* line 276, ../scss/_base.scss */
 .Grey {
   background-color: gray;
 }
 
-/* line 304, ../scss/_base.scss */
+/* line 280, ../scss/_base.scss */
 .Indigo {
   background-color: #4B0082;
 }
 
-/* line 308, ../scss/_base.scss */
+/* line 284, ../scss/_base.scss */
 .Khaki {
   background-color: #bdb76b;
 }
 
-/* line 312, ../scss/_base.scss */
+/* line 288, ../scss/_base.scss */
 .Oatmeal {
   background-color: #fff8dc;
 }
 
-/* line 316, ../scss/_base.scss */
+/* line 292, ../scss/_base.scss */
 .Orange {
   background-color: orange;
 }
 
-/* line 320, ../scss/_base.scss */
+/* line 296, ../scss/_base.scss */
 .Pink {
   background-color: #FF69B4;
 }
 
-/* line 324, ../scss/_base.scss */
+/* line 300, ../scss/_base.scss */
 .Purple {
   background-color: purple;
 }
 
-/* line 328, ../scss/_base.scss */
+/* line 304, ../scss/_base.scss */
 .Red {
   background-color: red;
 }
 
-/* line 332, ../scss/_base.scss */
+/* line 308, ../scss/_base.scss */
 .Silver {
   background-color: silver;
 }
 
-/* line 336, ../scss/_base.scss */
+/* line 312, ../scss/_base.scss */
 .White {
   background-color: white;
   box-sizing: border-box;
@@ -1204,27 +1355,27 @@ div.buttons-set:nth-child(5) {
   border: 1px solid black;
 }
 
-/* line 344, ../scss/_base.scss */
+/* line 320, ../scss/_base.scss */
 .Yellow {
   background-color: yellow;
 }
 
 /* SWATCHES END */
 /* CATEGORIES PAGE */
-/* line 356, ../scss/_base.scss */
+/* line 332, ../scss/_base.scss */
 .col2-left-layout .col-main {
   float: right;
   width: 75%;
 }
 
-/* line 361, ../scss/_base.scss */
+/* line 337, ../scss/_base.scss */
 .col2-left-layout .col-left {
   float: left;
   width: 25%;
   padding-top: 30px;
 }
 
-/* line 367, ../scss/_base.scss */
+/* line 343, ../scss/_base.scss */
 .products-grid {
   list-style: none;
   margin-bottom: 50px;
@@ -1232,21 +1383,21 @@ div.buttons-set:nth-child(5) {
   padding-left: 2%;
 }
 
-/* line 374, ../scss/_base.scss */
+/* line 350, ../scss/_base.scss */
 .products-grid li {
   display: inline-block;
   width: 30%;
   margin: 0px 1.2%;
 }
 
-/* line 380, ../scss/_base.scss */
+/* line 356, ../scss/_base.scss */
 .products-grid li h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 0.9em;
 }
 
-/* line 386, ../scss/_base.scss */
+/* line 362, ../scss/_base.scss */
 .products-grid .item {
   text-align: center;
   vertical-align: top;
@@ -1254,19 +1405,19 @@ div.buttons-set:nth-child(5) {
   position: relative;
 }
 
-/* line 393, ../scss/_base.scss */
+/* line 369, ../scss/_base.scss */
 .products-grid .item .product-image {
   width: 100%;
 }
 
-/* line 397, ../scss/_base.scss */
+/* line 373, ../scss/_base.scss */
 .category-products .actions, .product .actions {
   position: absolute;
   top: 4px;
   left: 4px;
 }
 
-/* line 403, ../scss/_base.scss */
+/* line 379, ../scss/_base.scss */
 .actions .availability {
   margin: 0px;
   padding: 5px;
@@ -1275,41 +1426,41 @@ div.buttons-set:nth-child(5) {
   background-color: white;
 }
 
-/* line 411, ../scss/_base.scss */
+/* line 387, ../scss/_base.scss */
 .actions .out-of-stock {
   border: 1px solid #cfcfcf;
 }
 
-/* line 415, ../scss/_base.scss */
+/* line 391, ../scss/_base.scss */
 .actions .discounted-price {
   border: 1px solid #ed1c24;
 }
 
-/* line 419, ../scss/_base.scss */
+/* line 395, ../scss/_base.scss */
 .actions .new-product {
   border: 1px solid black;
 }
 
-/* line 423, ../scss/_base.scss */
+/* line 399, ../scss/_base.scss */
 .breadcrumbs ul {
   list-style: none;
   margin: 0px;
   font-size: 0.8em;
 }
 
-/* line 429, ../scss/_base.scss */
+/* line 405, ../scss/_base.scss */
 .breadcrumbs ul li {
   display: inline-block;
 }
 
-/* line 433, ../scss/_base.scss */
+/* line 409, ../scss/_base.scss */
 .breadcrumbs ul li a {
   text-decoration: none;
   color: black;
   font-weight: normal;
 }
 
-/* line 439, ../scss/_base.scss */
+/* line 415, ../scss/_base.scss */
 #narrow-by-list dt {
   background-color: black;
   color: white;
@@ -1319,49 +1470,49 @@ div.buttons-set:nth-child(5) {
   font-size: 0.8em;
 }
 
-/* line 448, ../scss/_base.scss */
+/* line 424, ../scss/_base.scss */
 #narrow-by-list dd {
   border: 1px solid #b4b4b4;
   margin: 0px;
   margin-bottom: 25px;
 }
 
-/* line 454, ../scss/_base.scss */
+/* line 430, ../scss/_base.scss */
 .old-price, .special-price {
   margin: 0;
   display: inline-block;
 }
 
-/* line 459, ../scss/_base.scss */
+/* line 435, ../scss/_base.scss */
 .price-box {
   margin: 5px 0px;
 }
 
-/* line 463, ../scss/_base.scss */
+/* line 439, ../scss/_base.scss */
 .old-price {
   margin: 0px;
   text-decoration: line-through;
   margin-right: 15px;
 }
 
-/* line 469, ../scss/_base.scss */
+/* line 445, ../scss/_base.scss */
 #size {
   text-align: center;
 }
 
-/* line 472, ../scss/_base.scss */
+/* line 448, ../scss/_base.scss */
 #size ol {
   list-style: none;
   padding: 2px;
 }
 
-/* line 477, ../scss/_base.scss */
+/* line 453, ../scss/_base.scss */
 #size ol li {
   display: inline-block;
   margin: 10px 8%;
 }
 
-/* line 482, ../scss/_base.scss */
+/* line 458, ../scss/_base.scss */
 #size ol li a {
   text-decoration: none;
   font-size: 1em;
@@ -1373,24 +1524,24 @@ div.buttons-set:nth-child(5) {
   padding: 2px 3px;
 }
 
-/* line 494, ../scss/_base.scss */
+/* line 470, ../scss/_base.scss */
 #size ol li a:hover {
   color: white;
   background-color: black;
 }
 
-/* line 499, ../scss/_base.scss */
+/* line 475, ../scss/_base.scss */
 .pages {
   text-align: center;
   margin: 0px auto;
 }
 
-/* line 504, ../scss/_base.scss */
+/* line 480, ../scss/_base.scss */
 .pages ol {
   list-style: none;
 }
 
-/* line 508, ../scss/_base.scss */
+/* line 484, ../scss/_base.scss */
 .pages ol li {
   display: inline;
   margin: 0px;
@@ -1398,25 +1549,25 @@ div.buttons-set:nth-child(5) {
   border: 1px solid black;
 }
 
-/* line 515, ../scss/_base.scss */
+/* line 491, ../scss/_base.scss */
 .pages ol li a {
   text-decoration: none;
   background-color: white;
   color: black;
 }
 
-/* line 521, ../scss/_base.scss */
+/* line 497, ../scss/_base.scss */
 .pages ol .current {
   background-color: black;
   color: white;
 }
 
-/* line 526, ../scss/_base.scss */
+/* line 502, ../scss/_base.scss */
 .product-short-description {
   font-size: 0.8em;
 }
 
-/* line 530, ../scss/_base.scss */
+/* line 506, ../scss/_base.scss */
 .category-title h1, .dashboard-page-title h1, .my-account .page-title h1, .checkout-wrapper .page-title h1 {
   text-align: center;
   text-transform: uppercase;
@@ -1425,7 +1576,7 @@ div.buttons-set:nth-child(5) {
   line-height: 1.5;
 }
 
-/* line 538, ../scss/_base.scss */
+/* line 514, ../scss/_base.scss */
 .category-divider, .my-account-divider {
   margin: 0px;
   padding: 0px;
@@ -1435,29 +1586,29 @@ div.buttons-set:nth-child(5) {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 547, ../scss/_base.scss */
+/* line 523, ../scss/_base.scss */
 .my-account .fieldset {
   width: 75%;
   margin: 10px auto;
 }
 
-/* line 552, ../scss/_base.scss */
+/* line 528, ../scss/_base.scss */
 .my-account .buttons-set {
   text-align: center;
 }
 
-/* line 556, ../scss/_base.scss */
+/* line 532, ../scss/_base.scss */
 dd#apparel_type ol, dd#price ol, dd#color ol, dd#bed_bath_type ol, dd#decor_type ol, dd#home_decor_type ol, dd#material ol {
   list-style: none;
   padding-left: 40px;
 }
 
-/* line 562, ../scss/_base.scss */
+/* line 538, ../scss/_base.scss */
 dd#apparel_type ol li, dd#price ol li, dd#color ol li, dd#bed_bath_type ol li, dd#decor_type ol li, dd#home_decor_type ol li, dd#material ol li {
   padding: 5px 0px;
 }
 
-/* line 566, ../scss/_base.scss */
+/* line 542, ../scss/_base.scss */
 dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd#decor_type ol li a, dd#home_decor_type ol li a, dd#material ol li a {
   text-decoration: none;
   color: black;
@@ -1465,13 +1616,13 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   font-size: 0.8em;
 }
 
-/* line 573, ../scss/_base.scss */
+/* line 549, ../scss/_base.scss */
 #category-sort-by {
   text-align: right;
   padding: 15px 0px;
 }
 
-/* line 578, ../scss/_base.scss */
+/* line 554, ../scss/_base.scss */
 #category-sort-by select {
   border: 1px solid black;
   text-transform: uppercase;
@@ -1480,41 +1631,41 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   font-size: 0.9em;
 }
 
-/* line 586, ../scss/_base.scss */
+/* line 562, ../scss/_base.scss */
 .toolbar-bottom {
   margin: 30px auto;
 }
 
-/* line 590, ../scss/_base.scss */
+/* line 566, ../scss/_base.scss */
 .toolbar-bottom .toolbar #category-sort-by {
   display: none;
 }
 
-/* line 595, ../scss/_base.scss */
+/* line 571, ../scss/_base.scss */
 .toolbar-top .pager .pages {
   display: none;
 }
 
-/* line 599, ../scss/_base.scss */
+/* line 575, ../scss/_base.scss */
 .toolbar-top .link-return-to-top, .toolbar-bottom .link-return-to-top {
   display: none;
 }
 
 /* CATEGORIES PAGE END */
 /* PRODUCT PAGE */
-/* line 608, ../scss/_base.scss */
+/* line 584, ../scss/_base.scss */
 .product-view {
   margin-top: 30px;
 }
 
-/* line 612, ../scss/_base.scss */
+/* line 588, ../scss/_base.scss */
 #product-info-wrapper {
   text-transform: none;
   text-align: left;
   vertical-align: top;
 }
 
-/* line 618, ../scss/_base.scss */
+/* line 594, ../scss/_base.scss */
 #product-info-wrapper h1 {
   margin: 0px 0px 20px 0px;
   text-transform: uppercase;
@@ -1522,49 +1673,49 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   font-size: 1.75em;
 }
 
-/* line 625, ../scss/_base.scss */
+/* line 601, ../scss/_base.scss */
 #image-box-wrapper {
   text-transform: none;
   vertical-align: top;
   text-align: center;
 }
 
-/* line 632, ../scss/_base.scss */
+/* line 608, ../scss/_base.scss */
 #product-info-wrapper p {
   margin: 10px 0px;
 }
 
-/* line 636, ../scss/_base.scss */
+/* line 612, ../scss/_base.scss */
 #image-box-wrapper .product-img-box p {
   margin: 0px auto;
 }
 
-/* line 640, ../scss/_base.scss */
+/* line 616, ../scss/_base.scss */
 .more-views ul {
   list-style: none;
   text-align: center;
   padding: 0px;
 }
 
-/* line 646, ../scss/_base.scss */
+/* line 622, ../scss/_base.scss */
 .more-views ul li {
   display: inline-block;
   margin: 0px 10px;
   border: 1px solid #969696;
 }
 
-/* line 652, ../scss/_base.scss */
+/* line 628, ../scss/_base.scss */
 .product-image {
   width: 35%;
   height: auto;
 }
 
-/* line 657, ../scss/_base.scss */
+/* line 633, ../scss/_base.scss */
 .price-qty-wrapper {
   margin: 10px 0px;
 }
 
-/* line 661, ../scss/_base.scss */
+/* line 637, ../scss/_base.scss */
 .price-qty-wrapper .price-box {
   display: inline-block;
   vertical-align: middle;
@@ -1572,30 +1723,30 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   float: left;
 }
 
-/* line 667, ../scss/_base.scss */
+/* line 643, ../scss/_base.scss */
 .price-qty-wrapper .price-box p {
   padding-right: 40px;
   vertical-align: middle;
 }
 
-/* line 672, ../scss/_base.scss */
+/* line 648, ../scss/_base.scss */
 .price-qty-wrapper .price-box .old-price {
   font-size: 0.75em;
   vertical-align: middle;
 }
 
-/* line 677, ../scss/_base.scss */
+/* line 653, ../scss/_base.scss */
 .price-qty-wrapper .price-box .special-price, .price {
   font-weight: 500;
 }
 
-/* line 681, ../scss/_base.scss */
+/* line 657, ../scss/_base.scss */
 .qty-control-wrapper {
   display: inline-block;
   float: right;
 }
 
-/* line 686, ../scss/_base.scss */
+/* line 662, ../scss/_base.scss */
 .qty-control {
   text-decoration: none;
   color: #5e5e5e;
@@ -1618,12 +1769,12 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   /* IE10+ - select text on double click fix  */
 }
 
-/* line 705, ../scss/_base.scss */
+/* line 681, ../scss/_base.scss */
 .product-shop {
   clear: both;
 }
 
-/* line 709, ../scss/_base.scss */
+/* line 685, ../scss/_base.scss */
 #qty {
   width: 2em;
   font-size: 1em;
@@ -1633,34 +1784,34 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   margin: 0px 5px;
 }
 
-/* line 718, ../scss/_base.scss */
+/* line 694, ../scss/_base.scss */
 .add-to-cart {
   text-align: left;
 }
 
-/* line 722, ../scss/_base.scss */
+/* line 698, ../scss/_base.scss */
 #product-options-wrapper dl dt, #product-options-wrapper dl dd {
   display: inline-block;
   margin-right: 20px;
 }
 
-/* line 727, ../scss/_base.scss */
+/* line 703, ../scss/_base.scss */
 #product-options-wrapper dl dd select {
   font-size: 1em;
 }
 
-/* line 731, ../scss/_base.scss */
+/* line 707, ../scss/_base.scss */
 #product-options-wrapper dl div {
   margin: 5px 0px;
   padding: 0px 0px 0px 10px;
 }
 
-/* line 736, ../scss/_base.scss */
+/* line 712, ../scss/_base.scss */
 .border-container-black {
   border: 1px solid black;
 }
 
-/* line 740, ../scss/_base.scss */
+/* line 716, ../scss/_base.scss */
 .main-text {
   text-transform: uppercase;
   text-align: left;
@@ -1668,24 +1819,24 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   font-size: 0.5em;
 }
 
-/* line 747, ../scss/_base.scss */
+/* line 723, ../scss/_base.scss */
 .sub-text {
   text-transform: none;
   font-size: 0.5em;
   margin-top: 0px;
 }
 
-/* line 753, ../scss/_base.scss */
+/* line 729, ../scss/_base.scss */
 .product-details-container, .product-image-container {
   vertical-align: top;
 }
 
-/* line 757, ../scss/_base.scss */
+/* line 733, ../scss/_base.scss */
 .product-details-container {
   text-align: left;
 }
 
-/* line 761, ../scss/_base.scss */
+/* line 737, ../scss/_base.scss */
 .product-essential .product-name2 h1 {
   font-weight: 300;
   text-align: left;
@@ -1693,43 +1844,43 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   margin-left: 5%;
 }
 
-/* line 768, ../scss/_base.scss */
+/* line 744, ../scss/_base.scss */
 .box-additional {
   margin-top: 30px;
 }
 
-/* line 772, ../scss/_base.scss */
+/* line 748, ../scss/_base.scss */
 .box-collateral h2 {
   font-size: 1.25em;
 }
 
-/* line 776, ../scss/_base.scss */
+/* line 752, ../scss/_base.scss */
 .box-collateral .std {
   text-transform: none;
 }
 
-/* line 780, ../scss/_base.scss */
+/* line 756, ../scss/_base.scss */
 #product-attribute-specs-table {
   font-size: 1em;
   text-transform: none;
 }
 
-/* line 785, ../scss/_base.scss */
+/* line 761, ../scss/_base.scss */
 .product-collateral {
   margin-left: 5%;
 }
 
-/* line 789, ../scss/_base.scss */
+/* line 765, ../scss/_base.scss */
 .product-image-container img {
   margin: 0px auto;
 }
 
-/* line 793, ../scss/_base.scss */
+/* line 769, ../scss/_base.scss */
 .block-related {
   margin: 40px auto;
 }
 
-/* line 797, ../scss/_base.scss */
+/* line 773, ../scss/_base.scss */
 .block-related .block-title {
   text-align: center;
   text-transform: uppercase;
@@ -1737,13 +1888,13 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   font-weight: 300;
 }
 
-/* line 805, ../scss/_base.scss */
+/* line 781, ../scss/_base.scss */
 .block-related .block-content ol {
   list-style: none;
   text-align: center;
 }
 
-/* line 810, ../scss/_base.scss */
+/* line 786, ../scss/_base.scss */
 .block-related .block-content ol li {
   display: inline-block;
   position: relative;
@@ -1752,12 +1903,12 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   vertical-align: top;
 }
 
-/* line 818, ../scss/_base.scss */
+/* line 794, ../scss/_base.scss */
 .block-related .block-content .product-image, .block-related .block-content .product-details {
   display: block;
 }
 
-/* line 822, ../scss/_base.scss */
+/* line 798, ../scss/_base.scss */
 .block-related .block-content .product-image {
   text-align: center;
   margin: 0px auto;
@@ -1765,7 +1916,7 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   height: auto;
 }
 
-/* line 829, ../scss/_base.scss */
+/* line 805, ../scss/_base.scss */
 .block-related .block-content .product-details {
   width: 100%;
   text-align: center;
@@ -1773,27 +1924,27 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   margin: 0px auto;
 }
 
-/* line 836, ../scss/_base.scss */
+/* line 812, ../scss/_base.scss */
 #product-attribute-specs-table th {
   padding-right: 8px;
   padding-bottom: 5px;
   font-weight: normal;
 }
 
-/* line 842, ../scss/_base.scss */
+/* line 818, ../scss/_base.scss */
 #product-attribute-specs-table th:after {
   content: ":";
 }
 
 /* PRODUCT PAGE END */
 /* MY CART PAGE */
-/* line 850, ../scss/_base.scss */
+/* line 826, ../scss/_base.scss */
 .sidebar .block-account, div.block:nth-child(2), .sidebar .block-reorder, div.block:nth-child(2) {
   border: 1px solid #B4B4B4;
   margin: 20px 20px 10px 0px;
 }
 
-/* line 855, ../scss/_base.scss */
+/* line 831, ../scss/_base.scss */
 .block-account .block-title, .block-reorder .block-title {
   text-transform: uppercase;
   color: white;
@@ -1802,54 +1953,54 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   padding: 5px 0px;
 }
 
-/* line 863, ../scss/_base.scss */
+/* line 839, ../scss/_base.scss */
 .block-account .block-content ul, .block-reorder .block-content ol {
   list-style: none;
   padding: 0px 0px 0px 10px;
   margin: 10px 0px;
 }
 
-/* line 869, ../scss/_base.scss */
+/* line 845, ../scss/_base.scss */
 .block-account .block-content ul li, .block-reorder .block-content ol li {
   padding: 5px 0px;
 }
 
-/* line 874, ../scss/_base.scss */
+/* line 850, ../scss/_base.scss */
 .block-account .block-content ul li a, .block-reorder .block-content ol li a {
   text-decoration: none;
   color: black;
 }
 
-/* line 879, ../scss/_base.scss */
+/* line 855, ../scss/_base.scss */
 .block-reorder .block-content ol li a {
   font-size: 0.8em;
 }
 
-/* line 883, ../scss/_base.scss */
+/* line 859, ../scss/_base.scss */
 .block-reorder .block-content .block-subtitle {
   padding: 0px 20px;
   margin: 5px 0px;
   font-weight: bold;
 }
 
-/* line 889, ../scss/_base.scss */
+/* line 865, ../scss/_base.scss */
 .block-reorder .block-content #cart-sidebar-reorder li {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 894, ../scss/_base.scss */
+/* line 870, ../scss/_base.scss */
 .my-account .box-recent .view-all-link, .block-reorder .view-all-link {
   display: block;
 }
 
-/* line 898, ../scss/_base.scss */
+/* line 874, ../scss/_base.scss */
 .my-account .box-head h2 {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 903, ../scss/_base.scss */
+/* line 879, ../scss/_base.scss */
 .my-account .box-head a, .block-reorder .view-all-link a {
   text-decoration: none;
   display: block;
@@ -1864,14 +2015,14 @@ dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd
   font-weight: bold;
 }
 
-/* line 917, ../scss/_base.scss */
+/* line 893, ../scss/_base.scss */
 div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   float: right;
   width: 15%;
   padding: 2px 10px;
 }
 
-/* line 923, ../scss/_base.scss */
+/* line 899, ../scss/_base.scss */
 .block-reorder .actions .btn-cart {
   background-color: #ad0202;
   border: 0;
@@ -1880,26 +2031,26 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   font-size: 0.75em;
 }
 
-/* line 931, ../scss/_base.scss */
+/* line 907, ../scss/_base.scss */
 .block-reorder .actions .btn-cart:hover {
   cursor: pointer;
   background-color: #790000;
 }
 
-/* line 936, ../scss/_base.scss */
+/* line 912, ../scss/_base.scss */
 .block-reorder .actions .btn-cart span span {
   color: white;
   text-transform: uppercase;
   padding: 3px 5px;
 }
 
-/* line 942, ../scss/_base.scss */
+/* line 918, ../scss/_base.scss */
 .my-account .box-head .view-all-link a:hover, .block-reorder .view-all-link a:hover {
   background-color: black;
   cursor: pointer;
 }
 
-/* line 947, ../scss/_base.scss */
+/* line 923, ../scss/_base.scss */
 .block-reorder .block-content #cart-sidebar-reorder p {
   display: inline-block;
   padding: 0px;
@@ -1907,63 +2058,63 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   font-size: 0.75em;
 }
 
-/* line 954, ../scss/_base.scss */
+/* line 930, ../scss/_base.scss */
 .my-account {
   margin-top: 15px;
   margin-bottom: 20px;
 }
 
-/* line 959, ../scss/_base.scss */
+/* line 935, ../scss/_base.scss */
 .my-account .box-recent {
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 965, ../scss/_base.scss */
+/* line 941, ../scss/_base.scss */
 .my-account #my-orders-table {
   width: 100%;
   text-align: center;
 }
 
-/* line 970, ../scss/_base.scss */
+/* line 946, ../scss/_base.scss */
 .my-account #my-orders-table thead tr {
   border-bottom: 1px solid black;
 }
 
-/* line 974, ../scss/_base.scss */
+/* line 950, ../scss/_base.scss */
 .my-account #my-orders-table thead tr th {
   width: 15%;
 }
 
-/* line 978, ../scss/_base.scss */
+/* line 954, ../scss/_base.scss */
 .my-account #my-orders-table thead tr th:last-child {
   width: 20%;
 }
 
-/* line 982, ../scss/_base.scss */
+/* line 958, ../scss/_base.scss */
 .my-account #my-orders-table tbody tr td {
   padding: 10px 0px;
 }
 
-/* line 986, ../scss/_base.scss */
+/* line 962, ../scss/_base.scss */
 .my-account #my-orders-table tbody tr td a {
   color: black;
   text-transform: uppercase;
   font-size: 0.75em;
 }
 
-/* line 992, ../scss/_base.scss */
+/* line 968, ../scss/_base.scss */
 .dashboard .welcome-msg, .dashboard .box-info {
   padding-left: 30px;
 }
 
-/* line 996, ../scss/_base.scss */
+/* line 972, ../scss/_base.scss */
 .my-account .buttons-wrapper a {
   color: black;
 }
 
-/* line 1001, ../scss/_base.scss */
+/* line 977, ../scss/_base.scss */
 .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
   padding: 0px 5px 0px 10px;
   width: 45%;
@@ -1973,7 +2124,7 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   border-left: 2px solid #B4B4B4;
 }
 
-/* line 1010, ../scss/_base.scss */
+/* line 986, ../scss/_base.scss */
 .box-info a {
   text-decoration: none;
   text-transform: uppercase;
@@ -1987,14 +2138,14 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   font-size: 0.75em;
 }
 
-/* line 1023, ../scss/_base.scss */
+/* line 999, ../scss/_base.scss */
 .box-title h3 {
   display: inline-block;
   margin-right: 3px;
   margin-bottom: 0px;
 }
 
-/* line 1028, ../scss/_base.scss */
+/* line 1004, ../scss/_base.scss */
 .box-title a {
   display: inline-block;
   text-decoration: underline;
@@ -2006,22 +2157,22 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   width: 50px;
 }
 
-/* line 1039, ../scss/_base.scss */
+/* line 1015, ../scss/_base.scss */
 .box-title a:hover {
   font-weight: bold;
 }
 
-/* line 1043, ../scss/_base.scss */
+/* line 1019, ../scss/_base.scss */
 .box .box-content .col-1, .box .box-content .col-2 {
   padding-left: 10px;
 }
 
-/* line 1047, ../scss/_base.scss */
+/* line 1023, ../scss/_base.scss */
 .box-info .box-head h2 {
   margin: 5px 0px;
 }
 
-/* line 1052, ../scss/_base.scss */
+/* line 1028, ../scss/_base.scss */
 .box-head h2 {
   text-transform: uppercase;
   font-weight: 300;
@@ -2029,33 +2180,33 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
 
 /* MY CART PAGE END */
 /* MY ORDERS PAGE */
-/* line 1063, ../scss/_base.scss */
+/* line 1039, ../scss/_base.scss */
 .my-account .pager .amount, .my-account .pager .limiter {
   display: inline-block;
   width: 49%;
   text-align: left;
 }
 
-/* line 1069, ../scss/_base.scss */
+/* line 1045, ../scss/_base.scss */
 .my-account .buttons-wrapper {
   text-align: center;
 }
 
-/* line 1073, ../scss/_base.scss */
+/* line 1049, ../scss/_base.scss */
 .my-account .pager .limiter {
   text-align: right;
 }
 
 /* MY ORDERS PAGE END */
 /* SEARCH RESULTS PAGE */
-/* line 1081, ../scss/_base.scss */
+/* line 1057, ../scss/_base.scss */
 .catalogsearch-result-index .col-right-sidebar {
   float: left;
   display: inline-block;
   width: 25%;
 }
 
-/* line 1087, ../scss/_base.scss */
+/* line 1063, ../scss/_base.scss */
 .catalogsearch-results-index .col-wrapper {
   float: right;
   display: inline-block;
@@ -2063,49 +2214,49 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
 }
 
 /* ACCOUNT INFORMATION */
-/* line 1096, ../scss/_base.scss */
+/* line 1072, ../scss/_base.scss */
 .my-account-edit {
   width: 90%;
   margin: 0px auto;
 }
 
-/* line 1101, ../scss/_base.scss */
+/* line 1077, ../scss/_base.scss */
 li.control input {
   display: inline-block;
   width: 20px;
 }
 
-/* line 1106, ../scss/_base.scss */
+/* line 1082, ../scss/_base.scss */
 li.control label {
   display: inline-block;
 }
 
-/* line 1110, ../scss/_base.scss */
+/* line 1086, ../scss/_base.scss */
 .no-display {
   display: none;
 }
 
-/* line 1114, ../scss/_base.scss */
+/* line 1090, ../scss/_base.scss */
 .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
   width: 40%;
   display: inline-block;
 }
 
-/* line 1119, ../scss/_base.scss */
+/* line 1095, ../scss/_base.scss */
 .my-account-edit .customer-name .field div {
   display: inline-block;
 }
 
 /* ACCOUNT INFORMATION END */
 /* ADDRESSES */
-/* line 1127, ../scss/_base.scss */
+/* line 1103, ../scss/_base.scss */
 .my-account .addresses-primary ol, .my-account .addresses-additional ol {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-/* line 1133, ../scss/_base.scss */
+/* line 1109, ../scss/_base.scss */
 .my-account .addresses-primary ol li, .my-account .addresses-additional ol li {
   display: inline-block;
   width: 45%;
@@ -2114,13 +2265,13 @@ li.control label {
   padding-left: 10px;
 }
 
-/* line 1140, ../scss/_base.scss */
+/* line 1116, ../scss/_base.scss */
 .my-account .addresses-additional ol .empty {
   width: 100%;
   display: block;
 }
 
-/* line 1145, ../scss/_base.scss */
+/* line 1121, ../scss/_base.scss */
 .my-account .addresses-primary ol li a, .my-account .addresses-additional ol li a {
   text-decoration: none;
   color: white;
@@ -2128,7 +2279,7 @@ li.control label {
   padding: 5px 10px;
 }
 
-/* line 1152, ../scss/_base.scss */
+/* line 1128, ../scss/_base.scss */
 .my-account .addresses-primary ol li a:hover, .my-account .addresses-additional ol li a:hover {
   background-color: black;
   cursor: pointer;
@@ -2136,7 +2287,7 @@ li.control label {
 
 /* ADDRESSES END */
 /* EDIT CART */
-/* line 1162, ../scss/_base.scss */
+/* line 1138, ../scss/_base.scss */
 .cart-view-size-label {
   padding: 5px 7px;
   border: 1px solid black;
@@ -2144,19 +2295,19 @@ li.control label {
   background-color: white;
 }
 
-/* line 1169, ../scss/_base.scss */
+/* line 1145, ../scss/_base.scss */
 #shopping-cart-table {
   width: 100%;
   border: 0;
 }
 
-/* line 1174, ../scss/_base.scss */
+/* line 1150, ../scss/_base.scss */
 #shopping-cart-table .product-image {
   width: 100%;
   height: auto;
 }
 
-/* line 1179, ../scss/_base.scss */
+/* line 1155, ../scss/_base.scss */
 .itemAttribute-wrapper {
   width: 70px;
   height: 70px;
@@ -2165,17 +2316,17 @@ li.control label {
   text-align: center;
 }
 
-/* line 1187, ../scss/_base.scss */
+/* line 1163, ../scss/_base.scss */
 .itemAttribute-wrapper div {
   margin: 7px;
 }
 
-/* line 1191, ../scss/_base.scss */
+/* line 1167, ../scss/_base.scss */
 .cart-fieldset {
   border: 0;
 }
 
-/* line 1195, ../scss/_base.scss */
+/* line 1171, ../scss/_base.scss */
 .cart-fieldset .btn-remove {
   text-decoration: none;
   text-align: center;
@@ -2186,19 +2337,19 @@ li.control label {
   border-radius: 70%;
 }
 
-/* line 1205, ../scss/_base.scss */
+/* line 1181, ../scss/_base.scss */
 #shopping-cart-table thead .first th {
   width: 25%;
   text-align: center;
   font-weight: 300;
 }
 
-/* line 1211, ../scss/_base.scss */
+/* line 1187, ../scss/_base.scss */
 #shopping-cart-table > thead:nth-child(2) > tr:nth-child(1) > th:nth-child(3) {
   width: 15%;
 }
 
-/* line 1215, ../scss/_base.scss */
+/* line 1191, ../scss/_base.scss */
 #shopping-cart-table > thead:nth-child(2) > tr:nth-child(1) {
   background-color: black;
   color: white;
@@ -2207,46 +2358,46 @@ li.control label {
   font-weight: 300;
 }
 
-/* line 1223, ../scss/_base.scss */
+/* line 1199, ../scss/_base.scss */
 #shopping-cart-table > thead:nth-child(2) > tr:nth-child(1) > th:nth-child(1) {
   width: 15%;
   vertical-align: center;
 }
 
-/* line 1228, ../scss/_base.scss */
+/* line 1204, ../scss/_base.scss */
 #shopping-cart-table th.a-center:nth-child(5) {
   width: 10%;
 }
 
-/* line 1232, ../scss/_base.scss */
+/* line 1208, ../scss/_base.scss */
 #shopping-cart-table th.a-center:nth-child(4) {
   width: 20%;
 }
 
-/* line 1236, ../scss/_base.scss */
+/* line 1212, ../scss/_base.scss */
 #shopping-cart-table > thead:nth-child(2) > tr:nth-child(1) > th:nth-child(2) {
   width: 35%;
   vertical-align: top;
 }
 
-/* line 1241, ../scss/_base.scss */
+/* line 1217, ../scss/_base.scss */
 #shopping-cart-table > thead:nth-child(2) > tr:nth-child(1) span {
   color: white;
   font-weight: 300;
 }
 
-/* line 1246, ../scss/_base.scss */
+/* line 1222, ../scss/_base.scss */
 #shopping-cart-table tr {
   text-align: center;
 }
 
-/* line 1250, ../scss/_base.scss */
+/* line 1226, ../scss/_base.scss */
 #shopping-cart-table tbody tr td {
   padding: 10px 0px;
   border-bottom: 1px solid #b0b0b0;
 }
 
-/* line 1255, ../scss/_base.scss */
+/* line 1231, ../scss/_base.scss */
 .cart-edit-item {
   padding: 5px 10px;
   background-color: #474444;
@@ -2257,12 +2408,12 @@ li.control label {
   font-weight: 400;
 }
 
-/* line 1265, ../scss/_base.scss */
+/* line 1241, ../scss/_base.scss */
 .cart-edit-item:hover {
   background-color: black;
 }
 
-/* line 1269, ../scss/_base.scss */
+/* line 1245, ../scss/_base.scss */
 #shopping-cart-table .qty {
   text-align: center;
   font-size: 1em;
@@ -2271,19 +2422,19 @@ li.control label {
   padding: 5px 2px;
 }
 
-/* line 1277, ../scss/_base.scss */
+/* line 1253, ../scss/_base.scss */
 .cart .page-title {
   text-align: left;
 }
 
-/* line 1281, ../scss/_base.scss */
+/* line 1257, ../scss/_base.scss */
 .cart .page-title h1 {
   margin: 30px 0px 0px 0px;
   padding: 0px;
   text-align: center;
 }
 
-/* line 1287, ../scss/_base.scss */
+/* line 1263, ../scss/_base.scss */
 #shopping-cart-table .product-name {
   font-size: 1.25em;
   text-transform: uppercase;
@@ -2291,45 +2442,45 @@ li.control label {
   margin-bottom: 15px;
 }
 
-/* line 1294, ../scss/_base.scss */
+/* line 1270, ../scss/_base.scss */
 #shopping-cart-table .product-name:hover {
   font-weight: 400;
 }
 
-/* line 1298, ../scss/_base.scss */
+/* line 1274, ../scss/_base.scss */
 #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1) {
   text-align: right;
 }
 
-/* line 1302, ../scss/_base.scss */
+/* line 1278, ../scss/_base.scss */
 .cart .cart-collaterals .input-box {
   display: block;
   width: 100%;
 }
 
-/* line 1307, ../scss/_base.scss */
+/* line 1283, ../scss/_base.scss */
 .cart .shipping-form select {
   width: 75%;
   font-size: 1.5em;
 }
 
-/* line 1312, ../scss/_base.scss */
+/* line 1288, ../scss/_base.scss */
 .shipping-form .form-list li {
   padding: 5px 0px;
 }
 
-/* line 1316, ../scss/_base.scss */
+/* line 1292, ../scss/_base.scss */
 .shipping-form .form-list input {
   font-size: 1.5em;
 }
 
-/* line 1320, ../scss/_base.scss */
+/* line 1296, ../scss/_base.scss */
 .cart-totals-wrapper {
   text-align: center;
   margin: 10px auto;
 }
 
-/* line 1325, ../scss/_base.scss */
+/* line 1301, ../scss/_base.scss */
 .cart .totals, .cart .cart-collaterals, .cart .shipping {
   text-transform: none;
   font-size: 0.75em;
@@ -2341,32 +2492,32 @@ li.control label {
   margin: 10px 10px;
 }
 
-/* line 1336, ../scss/_base.scss */
+/* line 1312, ../scss/_base.scss */
 .cart-totals-wrapper .discount-form, .cart-totals-wrapper .shipping-form, .cart-totals-wrapper .totals > div {
   padding: 10px;
 }
 
-/* line 1340, ../scss/_base.scss */
+/* line 1316, ../scss/_base.scss */
 .cart .page-title button {
   margin-left: 15px;
 }
 
-/* line 1343, ../scss/_base.scss */
+/* line 1319, ../scss/_base.scss */
 .cart .totals {
   text-align: right;
 }
 
-/* line 1347, ../scss/_base.scss */
+/* line 1323, ../scss/_base.scss */
 .cart .totals table {
   float: right;
 }
 
-/* line 1351, ../scss/_base.scss */
+/* line 1327, ../scss/_base.scss */
 .cart .totals button, .cart .discount-form .buttons-set button {
   margin: 5px 15px 5px 0px;
 }
 
-/* line 1355, ../scss/_base.scss */
+/* line 1331, ../scss/_base.scss */
 .cart .discount h2, .cart .shipping h2, .cart .totals h2 {
   margin: 0px;
   padding: 3px;
@@ -2378,42 +2529,42 @@ li.control label {
   background-color: black;
 }
 
-/* line 1366, ../scss/_base.scss */
+/* line 1342, ../scss/_base.scss */
 .cart #shopping-cart-totals-table tr td {
   padding: 5px 20px 5px 0px;
   font-size: 1.25em;
 }
 
-/* line 1371, ../scss/_base.scss */
+/* line 1347, ../scss/_base.scss */
 .cart .totals .btn-checkout {
   font-size: 1em;
 }
 
-/* line 1375, ../scss/_base.scss */
+/* line 1351, ../scss/_base.scss */
 .cart .cart-total-wrapper {
   margin: 0px auto;
   text-align: center;
 }
 
-/* line 1380, ../scss/_base.scss */
+/* line 1356, ../scss/_base.scss */
 .cart #coupon_code {
   font-size: 1em;
   padding: 2px;
 }
 
-/* line 1385, ../scss/_base.scss */
+/* line 1361, ../scss/_base.scss */
 .cart #advice-required-entry-coupon_code {
   font-size: 1.3em;
 }
 
-/* line 1389, ../scss/_base.scss */
+/* line 1365, ../scss/_base.scss */
 .cart .sp-methods dt {
   font-weight: bold;
   padding-right: 10px;
   margin-top: 5px;
 }
 
-/* line 1395, ../scss/_base.scss */
+/* line 1371, ../scss/_base.scss */
 .cart .sp-methods dd {
   padding-right: 10px;
   margin: 0px;
@@ -2421,12 +2572,12 @@ li.control label {
 
 /* EDIT CART END */
 /* EDIT ADDRESS */
-/* line 1406, ../scss/_base.scss */
+/* line 1382, ../scss/_base.scss */
 .my-account #form-validate {
   padding: 0px 30px;
 }
 
-/* line 1410, ../scss/_base.scss */
+/* line 1386, ../scss/_base.scss */
 .my-account #form-validate .customer-name > div, .my-account ul.form-list:nth-child(5) > li:nth-child(3) > div,
 .my-account ul.form-list:nth-child(2) > li:nth-child(3) > div, ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(1),
 ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2), li.fields:nth-child(4) > div:nth-child(1), li.fields:nth-child(4) > div:nth-child(2) {
@@ -2438,49 +2589,49 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2), li.fields:nth-ch
   text-transform: none;
 }
 
-/* line 1421, ../scss/_base.scss */
+/* line 1397, ../scss/_base.scss */
 .my-account #form-validate .customer-name > div input, ul.form-list:nth-child(5) > li:nth-child(3) > div input,
 ul.form-list:nth-child(2) > li:nth-child(3) > div input, ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(1) input,
 ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   width: 82%;
 }
 
-/* line 1427, ../scss/_base.scss */
+/* line 1403, ../scss/_base.scss */
 .my-account #form-validate .customer-name div:first {
   margin-right: 30px;
 }
 
-/* line 1431, ../scss/_base.scss */
+/* line 1407, ../scss/_base.scss */
 .my-account #form-validate input {
   font-size: 1.25em;
 }
 
-/* line 1435, ../scss/_base.scss */
+/* line 1411, ../scss/_base.scss */
 .my-account .input-box > div {
   font-size: 1.75em !important;
 }
 
-/* line 1439, ../scss/_base.scss */
+/* line 1415, ../scss/_base.scss */
 .my-account .company label {
   color: black;
   text-transform: none;
 }
 
-/* line 1444, ../scss/_base.scss */
+/* line 1420, ../scss/_base.scss */
 .wide-divider {
   border-top: 1px solid #e5e5e5;
   margin: 0px;
   width: 90%;
 }
 
-/* line 1450, ../scss/_base.scss */
+/* line 1426, ../scss/_base.scss */
 .my-account .fieldset h2 {
   margin: 5px 0px;
 }
 
 /* ADD ADDRESS END */
 /* FORGOT PASSWORD */
-/* line 1458, ../scss/_base.scss */
+/* line 1434, ../scss/_base.scss */
 .forgot-pass-wrapper .buttons-set p, .forgot-pass-wrapper .buttons-set button {
   /*display: inline-block;
   width:45%;
@@ -2491,32 +2642,32 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
 
 /* FORGOT PASSWORD END */
 /* CHECKOUT */
-/* line 1470, ../scss/_base.scss */
+/* line 1446, ../scss/_base.scss */
 #checkoutSteps {
   border: 1px solid #b4b4b4;
   width: 75%;
   margin: 10px auto;
 }
 
-/* line 1476, ../scss/_base.scss */
+/* line 1452, ../scss/_base.scss */
 #billing\:country_id {
   display: block;
   width: 100%;
 }
 
-/* line 1481, ../scss/_base.scss */
+/* line 1457, ../scss/_base.scss */
 #checkoutSteps fieldset {
   border: 0;
   padding: 0px 20px;
 }
 
-/* line 1486, ../scss/_base.scss */
+/* line 1462, ../scss/_base.scss */
 #checkoutSteps fieldset fieldset, #checkoutSteps #co-shipping-form {
   width: 95%;
   margin: 20px auto;
 }
 
-/* line 1490, ../scss/_base.scss */
+/* line 1466, ../scss/_base.scss */
 #checkoutSteps .step-title h2 {
   background-color: black;
   color: white;
@@ -2527,12 +2678,12 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   font-weight: 300;
 }
 
-/* line 1500, ../scss/_base.scss */
+/* line 1476, ../scss/_base.scss */
 #checkoutSteps li:not(:last-child) .step-title h2 {
   border-bottom: 1px solid white;
 }
 
-/* line 1504, ../scss/_base.scss */
+/* line 1480, ../scss/_base.scss */
 #checkoutSteps li #billing-buttons-container {
   /*
   width:20%;
@@ -2541,27 +2692,27 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   display: inline-block;*/
 }
 
-/* line 1512, ../scss/_base.scss */
+/* line 1488, ../scss/_base.scss */
 .checkout-wrapper .please-wait {
   display: none;
 }
 
-/* line 1516, ../scss/_base.scss */
+/* line 1492, ../scss/_base.scss */
 #checkoutSteps .form-list li {
   padding: 3px 0px;
 }
 
-/* line 1520, ../scss/_base.scss */
+/* line 1496, ../scss/_base.scss */
 #checkoutSteps fieldset .input-box div {
   font-size: 1.25em;
 }
 
-/* line 1524, ../scss/_base.scss */
+/* line 1500, ../scss/_base.scss */
 #checkoutSteps #billing-address-select, #checkoutSteps #shipping-address-select {
   width: 80%;
 }
 
-/* line 1528, ../scss/_base.scss */
+/* line 1504, ../scss/_base.scss */
 .red-continue-button {
   margin: 0px auto;
   border: 0;
@@ -2569,7 +2720,7 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   text-align: center;
 }
 
-/* line 1534, ../scss/_base.scss */
+/* line 1510, ../scss/_base.scss */
 .red-continue-button span span {
   color: white;
   text-align: center;
@@ -2578,39 +2729,39 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
 
 /* CHECKOUT END */
 /* VIEW ORDER */
-/* line 1544, ../scss/_base.scss */
+/* line 1520, ../scss/_base.scss */
 .my-account .order-info-box, .my-account .order-info, .my-account .order-date {
   width: 46%;
   display: inline-block;
   margin-left: 10px;
 }
 
-/* line 1550, ../scss/_base.scss */
+/* line 1526, ../scss/_base.scss */
 .my-account .order-details #my-orders-table h3 {
   font-size: 1em;
   font-weight: 300;
 }
 
-/* line 1555, ../scss/_base.scss */
+/* line 1531, ../scss/_base.scss */
 .my-account .order-details #my-orders-table .item-options dt, .my-account .order-details #my-orders-table .item-options dd {
   display: block;
   float: left;
   margin-left: 15px;
 }
 
-/* line 1561, ../scss/_base.scss */
+/* line 1537, ../scss/_base.scss */
 .my-account .order-details #my-orders-table tfoot {
   border-top: 1px solid black;
   text-align: right;
 }
 
-/* line 1566, ../scss/_base.scss */
+/* line 1542, ../scss/_base.scss */
 .my-account .order-details #my-orders-table .item-options dt {
   font-weight: bold;
   clear: both;
 }
 
-/* line 1571, ../scss/_base.scss */
+/* line 1547, ../scss/_base.scss */
 .my-account .order-details #my-orders-table .item-options dd {
   margin-left: 5px;
   margin-right: auto;
@@ -2618,7 +2769,7 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
 
 /* VIEW ORDER END */
 /* REGISTRATION INPUT VALIDATION FAILED */
-/* line 1580, ../scss/_base.scss */
+/* line 1556, ../scss/_base.scss */
 #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
 #advice-required-entry-email_address, #advice-required-entry-password,
 #advice-required-entry-confirmation, #advice-validate-password-password,
@@ -2636,7 +2787,7 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   font-weight: 600;
 }
 
-/* line 1597, ../scss/_base.scss */
+/* line 1573, ../scss/_base.scss */
 #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
 #advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
 #advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
@@ -2653,14 +2804,14 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   font-weight: 600;
 }
 
-/* line 1613, ../scss/_base.scss */
+/* line 1589, ../scss/_base.scss */
 input.validation-failed select.validation-failed, .validation-failed {
   border: 2px solid #a51313 !important;
 }
 
 /* VALIDATION FAILED END */
 /* RESPONSIVE DESIGN - GENERAL */
-/* line 1621, ../scss/_base.scss */
+/* line 1597, ../scss/_base.scss */
 img {
   max-width: 100% !important;
   height: auto;
@@ -2670,69 +2821,69 @@ img {
 /* RESPONSIVE DESIGN END */
 /* RESPONSIVE DESIGN IPAD */
 @media (max-width: 900px) {
-  /* line 1633, ../scss/_base.scss */
+  /* line 1609, ../scss/_base.scss */
   li.level0 a:hover {
     cursor: pointer;
   }
 
-  /* line 1637, ../scss/_base.scss */
+  /* line 1613, ../scss/_base.scss */
   .mobileOnly {
     display: block;
   }
 
-  /* line 1641, ../scss/_base.scss */
+  /* line 1617, ../scss/_base.scss */
   .main-container {
     margin: 0px 1%;
   }
 
-  /* line 1645, ../scss/_base.scss */
+  /* line 1621, ../scss/_base.scss */
   .col2-left-layout {
     margin: 0px 1%;
   }
 
-  /* line 1649, ../scss/_base.scss */
+  /* line 1625, ../scss/_base.scss */
   .main-container {
     margin-top: 20px;
   }
 
   /* CATEGORIES PAGE*/
-  /* line 1655, ../scss/_base.scss */
+  /* line 1631, ../scss/_base.scss */
   .products-grid {
     display: inline;
   }
 
-  /* line 1659, ../scss/_base.scss */
+  /* line 1635, ../scss/_base.scss */
   .col2-left-layout .col-left {
     padding-top: 10px;
   }
 
-  /* line 1663, ../scss/_base.scss */
+  /* line 1639, ../scss/_base.scss */
   dd#apparel_type ol li, dd#price ol li, dd#color ol li, dd#bed_bath_type ol li, dd#decor_type ol li, dd#home_decor_type ol li, dd#material ol li {
     padding: 10px 0px;
   }
 
-  /* line 1667, ../scss/_base.scss */
+  /* line 1643, ../scss/_base.scss */
   dd#apparel_type ol, dd#price ol, dd#color ol, dd#bed_bath_type ol, dd#decor_type ol, dd#home_decor_type ol, dd#material ol {
     padding: 5px 0px 5px 5px;
   }
 
-  /* line 1671, ../scss/_base.scss */
+  /* line 1647, ../scss/_base.scss */
   .products-grid li.item {
     width: 45%;
     margin: 10px 1.5%;
   }
 
-  /* line 1676, ../scss/_base.scss */
+  /* line 1652, ../scss/_base.scss */
   .breadcrumbs {
     margin: 40px 0px 10px 0px;
   }
 
-  /* line 1680, ../scss/_base.scss */
+  /* line 1656, ../scss/_base.scss */
   #size ol li {
     margin: 10px 4%;
   }
 
-  /* line 1684, ../scss/_base.scss */
+  /* line 1660, ../scss/_base.scss */
   .toolbar-bottom .link-return-to-top {
     display: block;
     width: 100%;
@@ -2740,7 +2891,7 @@ img {
     margin: 0px 0px 25px 0px;
   }
 
-  /* line 1691, ../scss/_base.scss */
+  /* line 1667, ../scss/_base.scss */
   .toolbar-bottom .link-return-to-top a {
     text-decoration: none;
     color: black;
@@ -2751,117 +2902,117 @@ img {
   }
 
   /* PRODUCT PAGE */
-  /* line 1702, ../scss/_base.scss */
+  /* line 1678, ../scss/_base.scss */
   .more-views ul li {
     margin: 0px 1%;
   }
 
-  /* line 1706, ../scss/_base.scss */
+  /* line 1682, ../scss/_base.scss */
   .price-qty-wrapper .price-box, .price-qty-wrapper .qty-control-wrapper {
     display: block;
     width: 100%;
     padding: 10px 0px;
   }
 
-  /* line 1712, ../scss/_base.scss */
+  /* line 1688, ../scss/_base.scss */
   .border-container {
     width: 95%;
   }
 
   /* EDIT CART */
-  /* line 1718, ../scss/_base.scss */
+  /* line 1694, ../scss/_base.scss */
   .cart .totals, .cart .cart-collaterals, .cart .shipping {
     display: block;
     width: 80%;
     margin: 10px auto;
   }
 
-  /* line 1724, ../scss/_base.scss */
+  /* line 1700, ../scss/_base.scss */
   .cart .totals table {
     width: 100%;
   }
 
-  /* line 1728, ../scss/_base.scss */
+  /* line 1704, ../scss/_base.scss */
   .cart-fieldset .btn-remove {
     padding: 6% 20%;
   }
 
   /* MY ACCOUNT */
-  /* line 1734, ../scss/_base.scss */
+  /* line 1710, ../scss/_base.scss */
   .my-account .addresses-primary ol li, .my-account .addresses-additional ol li {
     display: block;
     width: 100%;
   }
 
-  /* line 1739, ../scss/_base.scss */
+  /* line 1715, ../scss/_base.scss */
   .my-account .order-info-box, .my-account .order-info, .my-account .order-date {
     width: 45%;
   }
 
-  /* line 1743, ../scss/_base.scss */
+  /* line 1719, ../scss/_base.scss */
   .my-account {
     margin-left: 2%;
   }
 
-  /* line 1747, ../scss/_base.scss */
+  /* line 1723, ../scss/_base.scss */
   .customer-account-index .col2-left-layout {
     margin: 0px 4%;
   }
 
-  /* line 1751, ../scss/_base.scss */
+  /* line 1727, ../scss/_base.scss */
   .col2-left-layout .col-left {
     width: 28%;
   }
 
-  /* line 1755, ../scss/_base.scss */
+  /* line 1731, ../scss/_base.scss */
   .col2-left-layout .col-main {
     width: 72%;
   }
 
-  /* line 1759, ../scss/_base.scss */
+  /* line 1735, ../scss/_base.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding-left: 10px;
   }
 
-  /* line 1763, ../scss/_base.scss */
+  /* line 1739, ../scss/_base.scss */
   .my-account #my-orders-table {
     font-size: 0.8em;
   }
 
-  /* line 1766, ../scss/_base.scss */
+  /* line 1742, ../scss/_base.scss */
   .my-account #form-validate {
     padding: 0px 10px;
   }
 
-  /* line 1770, ../scss/_base.scss */
+  /* line 1746, ../scss/_base.scss */
   .box-info a {
     min-width: 80px;
     width: auto;
   }
 
-  /* line 1775, ../scss/_base.scss */
+  /* line 1751, ../scss/_base.scss */
   .sidebar .block-account, div.block:nth-child(2), .sidebar .block-reorder, div.block:nth-child(2) {
     margin: 10px 0px 10px 0px;
   }
 
-  /* line 1779, ../scss/_base.scss */
+  /* line 1755, ../scss/_base.scss */
   .block-reorder .block-content ol {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 1784, ../scss/_base.scss */
+  /* line 1760, ../scss/_base.scss */
   .block-reorder .block-content #cart-sidebar-reorder li {
     padding: 5px 0px;
   }
 
-  /* line 1788, ../scss/_base.scss */
+  /* line 1764, ../scss/_base.scss */
   .block-reorder .block-content .block-subtitle {
     font-size: 1em;
     padding: 0px 0px 0px 10px;
   }
 
-  /* line 1793, ../scss/_base.scss */
+  /* line 1769, ../scss/_base.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: inline-block;
     width: 45%;
@@ -2869,36 +3020,36 @@ img {
   }
 
   /* FORGOT PASSWORD */
-  /* line 1800, ../scss/_base.scss */
+  /* line 1776, ../scss/_base.scss */
   .account-create, .account-login-page, .forgot-pass-wrapper {
     width: 70%;
     padding: 25px 50px;
   }
 
-  /* line 1806, ../scss/_base.scss */
+  /* line 1782, ../scss/_base.scss */
   .account-login-page {
     width: 80%;
     padding: 25px;
   }
 
-  /* line 1811, ../scss/_base.scss */
+  /* line 1787, ../scss/_base.scss */
   .account-login-page .gray-button, .account-login-page .red-button {
     width: 100%;
     margin: 0px;
   }
 
-  /* line 1815, ../scss/_base.scss */
+  /* line 1791, ../scss/_base.scss */
   .account-login-page .content, .forgot-pass-wrapper .fieldset, #form-validate .fieldset, #mini-menu-account, #mini-menu-cart {
     font-size: 0.8em;
   }
 
-  /* line 1819, ../scss/_base.scss */
+  /* line 1795, ../scss/_base.scss */
   #mini-menu-account .content-account, #mini-menu-cart .content-account {
     padding: 10px 20px;
   }
 
   /* PAGE NOT FOUND */
-  /* line 1827, ../scss/_base.scss */
+  /* line 1803, ../scss/_base.scss */
   .page-not-found-wrapper .products-grid .item {
     width: 100%;
     display: block;
@@ -2906,42 +3057,42 @@ img {
   }
 
   /* PRODUCT PAGE */
-  /* line 1835, ../scss/_base.scss */
+  /* line 1811, ../scss/_base.scss */
   .old-price {
     font-size: 0.75em;
     margin: 0px 5px 0px 0px;
   }
 
-  /* line 1840, ../scss/_base.scss */
+  /* line 1816, ../scss/_base.scss */
   .desktopTabletOnly {
     display: block;
   }
 
   /* RESPONSIVE MYPAGE TABLE */
-  /* line 1845, ../scss/_base.scss */
+  /* line 1821, ../scss/_base.scss */
   table#my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 1849, ../scss/_base.scss */
+  /* line 1825, ../scss/_base.scss */
   table#my-orders-table thead {
     display: none;
   }
 
-  /* line 1852, ../scss/_base.scss */
+  /* line 1828, ../scss/_base.scss */
   table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 1856, ../scss/_base.scss */
+  /* line 1832, ../scss/_base.scss */
   table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
     padding: 10px 0px;
   }
 
-  /* line 1862, ../scss/_base.scss */
+  /* line 1838, ../scss/_base.scss */
   table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -2949,12 +3100,12 @@ img {
     width: 100%;
   }
 
-  /* line 1869, ../scss/_base.scss */
+  /* line 1845, ../scss/_base.scss */
   table#my-orders-table tbody tr td:last-child {
     text-align: center;
   }
 
-  /* line 1872, ../scss/_base.scss */
+  /* line 1848, ../scss/_base.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -2964,77 +3115,77 @@ img {
     text-align: right;
   }
 
-  /* line 1881, ../scss/_base.scss */
+  /* line 1857, ../scss/_base.scss */
   .product-name a {
     font-size: 0.8em;
   }
 
-  /* line 1884, ../scss/_base.scss */
+  /* line 1860, ../scss/_base.scss */
   .my-account #my-orders-table {
     text-align: center;
     font-size: 1em;
   }
 
-  /* line 1889, ../scss/_base.scss */
+  /* line 1865, ../scss/_base.scss */
   .cart-fieldset .btn-remove {
     padding: 2px 6px;
   }
 
-  /* line 1893, ../scss/_base.scss */
+  /* line 1869, ../scss/_base.scss */
   #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1) {
     text-align: center;
     padding: 0px;
   }
 
-  /* line 1898, ../scss/_base.scss */
+  /* line 1874, ../scss/_base.scss */
   #shopping-cart-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 1902, ../scss/_base.scss */
+  /* line 1878, ../scss/_base.scss */
   .cart-fieldset {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 1906, ../scss/_base.scss */
+  /* line 1882, ../scss/_base.scss */
   .cart .page-title {
     text-align: center;
   }
 
-  /* line 1910, ../scss/_base.scss */
+  /* line 1886, ../scss/_base.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 30%;
   }
 
   /* VIEW ORDER */
-  /* line 1915, ../scss/_base.scss */
+  /* line 1891, ../scss/_base.scss */
   .sales-order-view #my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 1919, ../scss/_base.scss */
+  /* line 1895, ../scss/_base.scss */
   .sales-order-view #my-orders-table colgroup {
     width: 100%;
   }
 
-  /* line 1923, ../scss/_base.scss */
+  /* line 1899, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td {
     width: 100%;
   }
 
-  /* line 1929, ../scss/_base.scss */
+  /* line 1905, ../scss/_base.scss */
   .sales-order-view table#my-orders-table thead {
     display: none;
   }
 
-  /* line 1932, ../scss/_base.scss */
+  /* line 1908, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 1936, ../scss/_base.scss */
+  /* line 1912, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -3042,7 +3193,7 @@ img {
     margin: 0px;
   }
 
-  /* line 1943, ../scss/_base.scss */
+  /* line 1919, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -3050,7 +3201,7 @@ img {
     width: 100%;
   }
 
-  /* line 1950, ../scss/_base.scss */
+  /* line 1926, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .item-options {
     margin: 0px;
     padding: 0px;
@@ -3060,12 +3211,12 @@ img {
     margin: 0px 0px 70px 0px;
   }
 
-  /* line 1959, ../scss/_base.scss */
+  /* line 1935, ../scss/_base.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     width: 30%;
   }
 
-  /* line 1963, ../scss/_base.scss */
+  /* line 1939, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .item-options dt, .sales-order-view table#my-orders-table .item-options dd {
     width: 45%;
     margin: 0px;
@@ -3074,13 +3225,13 @@ img {
     color: black;
   }
 
-  /* line 1971, ../scss/_base.scss */
+  /* line 1947, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:last-child {
     text-align: center;
     background-color: #b4b4b4;
   }
 
-  /* line 1975, ../scss/_base.scss */
+  /* line 1951, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -3088,20 +3239,20 @@ img {
     padding: 0px;
   }
 
-  /* line 1981, ../scss/_base.scss */
+  /* line 1957, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .product-name {
     margin: 0;
     padding: 0;
   }
 
-  /* line 1986, ../scss/_base.scss */
+  /* line 1962, ../scss/_base.scss */
   table#shopping-cart-table tbody td:nth-child(2):before {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1991, ../scss/_base.scss */
+  /* line 1967, ../scss/_base.scss */
   #shopping-cart-table tbody tr td {
     border: 0;
   }
@@ -3109,22 +3260,22 @@ img {
 /* RESPONSIVE DESIGN IPAD END */
 /* RESPONSIVE DESIGN MOBILE */
 @media (max-width: 625px) {
-  /* line 2003, ../scss/_base.scss */
+  /* line 1979, ../scss/_base.scss */
   .main-container {
     margin: 0px 2%;
   }
 
-  /* line 2007, ../scss/_base.scss */
+  /* line 1983, ../scss/_base.scss */
   .block-subscribe {
     padding: 10px 0px;
   }
 
-  /* line 2011, ../scss/_base.scss */
+  /* line 1987, ../scss/_base.scss */
   #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
   }
 
-  /* line 2015, ../scss/_base.scss */
+  /* line 1991, ../scss/_base.scss */
   .subscribe-button {
     border: 1px solid black;
     margin: 0px;
@@ -3134,13 +3285,13 @@ img {
     height: 30px;
   }
 
-  /* line 2025, ../scss/_base.scss */
+  /* line 2001, ../scss/_base.scss */
   #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
 
-  /* line 2030, ../scss/_base.scss */
+  /* line 2006, ../scss/_base.scss */
   .back-link-button a {
     font-size: 1em;
     margin: 0px;
@@ -3148,66 +3299,48 @@ img {
     width: 100%;
   }
 
-  /* line 2037, ../scss/_base.scss */
+  /* line 2013, ../scss/_base.scss */
   .red-button {
     width: 100%;
   }
 
-  /* line 2041, ../scss/_base.scss */
+  /* line 2017, ../scss/_base.scss */
   .smartphoneOnly {
     display: block;
   }
 
-  /* line 2045, ../scss/_base.scss */
+  /* line 2021, ../scss/_base.scss */
   .inlineSmartphoneOnly {
     display: inline-block;
   }
 
-  /* line 2049, ../scss/_base.scss */
+  /* line 2025, ../scss/_base.scss */
   .desktopOnly {
     display: none;
   }
 
-  /* line 2053, ../scss/_base.scss */
+  /* line 2029, ../scss/_base.scss */
   .desktopTabletOnly {
     display: none;
   }
 
-  /* line 2057, ../scss/_base.scss */
+  /* line 2033, ../scss/_base.scss */
   button {
     min-width: 200px;
   }
 
-  /* line 2061, ../scss/_base.scss */
-  .grid3 {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-
-  /* line 2067, ../scss/_base.scss */
-  .grid3 h2 {
-    padding: 0px;
-  }
-
-  /* line 2071, ../scss/_base.scss */
-  .grid3 img {
-    text-align: center;
-    margin: 0px auto;
-  }
-
-  /* line 2076, ../scss/_base.scss */
+  /* line 2037, ../scss/_base.scss */
   .forgot-pass-wrapper .page-title h1 {
     text-align: center;
   }
 
-  /* line 2080, ../scss/_base.scss */
+  /* line 2041, ../scss/_base.scss */
   .forgot-pass-wrapper {
     width: 90%;
     padding: 20px;
   }
 
-  /* line 2085, ../scss/_base.scss */
+  /* line 2046, ../scss/_base.scss */
   .gray-button, .red-button, #mini_cart_edit, #mini_cart_checkout {
     font-size: 1em;
     margin: 2px;
@@ -3215,18 +3348,18 @@ img {
   }
 
   /* CATEGORY VIEW */
-  /* line 2093, ../scss/_base.scss */
+  /* line 2054, ../scss/_base.scss */
   .col2-left-layout .col-left, .col2-left-layout .col-main {
     width: 100%;
     display: block;
   }
 
-  /* line 2098, ../scss/_base.scss */
+  /* line 2059, ../scss/_base.scss */
   .category-divider, .my-account-divider {
     margin: 2px;
   }
 
-  /* line 2102, ../scss/_base.scss */
+  /* line 2063, ../scss/_base.scss */
   #showFilters {
     margin: 10px 2px 10px 20px;
     font-size: 1.2em;
@@ -3234,39 +3367,39 @@ img {
     display: inline-block;
   }
 
-  /* line 2109, ../scss/_base.scss */
+  /* line 2070, ../scss/_base.scss */
   #showFilters:hover {
     cursor: pointer;
   }
 
-  /* line 2113, ../scss/_base.scss */
+  /* line 2074, ../scss/_base.scss */
   #narrow-by-list {
     margin: 0px;
   }
 
-  /* line 2117, ../scss/_base.scss */
+  /* line 2078, ../scss/_base.scss */
   #narrow-by-list dd {
     margin-left: 70px;
     border: 0px;
   }
 
-  /* line 2122, ../scss/_base.scss */
+  /* line 2083, ../scss/_base.scss */
   #size ol {
     text-align: left;
   }
 
-  /* line 2126, ../scss/_base.scss */
+  /* line 2087, ../scss/_base.scss */
   #narrow-by-list dd {
     display: none;
   }
 
-  /* line 2130, ../scss/_base.scss */
+  /* line 2091, ../scss/_base.scss */
   dd#apparel_type ol li, dd#price ol li, dd#color ol li, dd#bed_bath_type ol li, dd#decor_type ol li, dd#home_decor_type ol li, dd#material ol li {
     margin: 0px;
     padding: 5px 0px;
   }
 
-  /* line 2135, ../scss/_base.scss */
+  /* line 2096, ../scss/_base.scss */
   dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd#decor_type ol li a, dd#home_decor_type ol li a, dd#material ol li a {
     margin: 0px;
     padding: 0px;
@@ -3274,18 +3407,18 @@ img {
     text-transform: none;
   }
 
-  /* line 2142, ../scss/_base.scss */
+  /* line 2103, ../scss/_base.scss */
   #size ol li a {
     font-size: 1.2em;
     padding: 5px;
   }
 
-  /* line 2147, ../scss/_base.scss */
+  /* line 2108, ../scss/_base.scss */
   #showFilters span, .filterList #narrow-by-list dt span {
     font-family: mango-font-icons;
   }
 
-  /* line 2151, ../scss/_base.scss */
+  /* line 2112, ../scss/_base.scss */
   #narrow-by-list dt {
     background-color: white;
     font-weight: normal;
@@ -3295,57 +3428,57 @@ img {
     margin: 0px 0px 5px 40px;
   }
 
-  /* line 2160, ../scss/_base.scss */
+  /* line 2121, ../scss/_base.scss */
   #narrow-by-list dt:hover {
     cursor: pointer;
   }
 
   /* PRODUCT PAGE */
-  /* line 2166, ../scss/_base.scss */
+  /* line 2127, ../scss/_base.scss */
   .product-image {
     width: 80%;
   }
 
-  /* line 2169, ../scss/_base.scss */
+  /* line 2130, ../scss/_base.scss */
   .price-qty-wrapper .price-box, .price-qty-wrapper .qty-control-wrapper {
     display: inline-block;
     width: 45%;
   }
 
-  /* line 2173, ../scss/_base.scss */
+  /* line 2134, ../scss/_base.scss */
   .price-qty-wrapper .price-box {
     text-align: center;
   }
 
-  /* line 2177, ../scss/_base.scss */
+  /* line 2138, ../scss/_base.scss */
   .price-qty-wrapper .qty-control-wrapper {
     text-align: right;
   }
 
-  /* line 2181, ../scss/_base.scss */
+  /* line 2142, ../scss/_base.scss */
   .block-related .block-content ol li {
     width: 45%;
     margin-bottom: 20px;
   }
 
-  /* line 2186, ../scss/_base.scss */
+  /* line 2147, ../scss/_base.scss */
   .block-related {
     margin: 10px auto;
   }
 
-  /* line 2190, ../scss/_base.scss */
+  /* line 2151, ../scss/_base.scss */
   #product-addtocart-button {
     width: 100%;
     padding: 10px 0px;
   }
 
-  /* line 2195, ../scss/_base.scss */
+  /* line 2156, ../scss/_base.scss */
   .old-price {
     font-size: 0.75em;
     margin: 0px 5px 0px 0px;
   }
 
-  /* line 2199, ../scss/_base.scss */
+  /* line 2160, ../scss/_base.scss */
   .product-name h1 {
     margin: 10px 0px 5px;
     text-transform: uppercase;
@@ -3353,52 +3486,52 @@ img {
     font-size: 1.25em;
   }
 
-  /* line 2206, ../scss/_base.scss */
+  /* line 2167, ../scss/_base.scss */
   .price-qty-wrapper .price-box p {
     padding: 0;
   }
 
-  /* line 2210, ../scss/_base.scss */
+  /* line 2171, ../scss/_base.scss */
   #product-info-wrapper p {
     margin: 2px 0px;
   }
 
-  /* line 2214, ../scss/_base.scss */
+  /* line 2175, ../scss/_base.scss */
   .price-qty-wrapper .price-box .special-price, .price {
     padding-right: 10px;
   }
 
   /* PRODUCT PAGE END */
   /* MY ACCOUNT */
-  /* line 2223, ../scss/_base.scss */
+  /* line 2184, ../scss/_base.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding: 0px;
   }
 
-  /* line 2227, ../scss/_base.scss */
+  /* line 2188, ../scss/_base.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: block;
     width: 95%;
   }
 
-  /* line 2232, ../scss/_base.scss */
+  /* line 2193, ../scss/_base.scss */
   .block-reorder .actions .btn-cart {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 2237, ../scss/_base.scss */
+  /* line 2198, ../scss/_base.scss */
   .my-account .box-head a, .block-reorder .view-all-link a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 2242, ../scss/_base.scss */
+  /* line 2203, ../scss/_base.scss */
   .block-reorder .block-content ol li a {
     font-size: 1em;
   }
 
-  /* line 2246, ../scss/_base.scss */
+  /* line 2207, ../scss/_base.scss */
   div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     width: 100%;
     padding: 5px 0px;
@@ -3406,43 +3539,43 @@ img {
     text-align: center;
   }
 
-  /* line 2253, ../scss/_base.scss */
+  /* line 2214, ../scss/_base.scss */
   .my-account .pager .amount {
     width: 25%;
     display: inline-block;
   }
 
-  /* line 2258, ../scss/_base.scss */
+  /* line 2219, ../scss/_base.scss */
   .my-account .pager .limiter {
     width: 70%;
   }
 
-  /* line 2262, ../scss/_base.scss */
+  /* line 2223, ../scss/_base.scss */
   .box-info a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 2267, ../scss/_base.scss */
+  /* line 2228, ../scss/_base.scss */
   .my-account-edit {
     width: 100%;
   }
 
-  /* line 2271, ../scss/_base.scss */
+  /* line 2232, ../scss/_base.scss */
   .cart .page-title button {
     margin: 10px 0px;
     width: 100%;
     font-size: 0.75em;
   }
 
-  /* line 2277, ../scss/_base.scss */
+  /* line 2238, ../scss/_base.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 100%;
     font-size: 0.75em;
     margin: 5px 0px;
   }
 
-  /* line 2283, ../scss/_base.scss */
+  /* line 2244, ../scss/_base.scss */
   table#shopping-cart-table tbody td:not(:last-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -3452,18 +3585,18 @@ img {
     text-align: right;
   }
 
-  /* line 2292, ../scss/_base.scss */
+  /* line 2253, ../scss/_base.scss */
   table#shopping-cart-table thead {
     display: none;
   }
 
-  /* line 2295, ../scss/_base.scss */
+  /* line 2256, ../scss/_base.scss */
   table#shopping-cart-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 2299, ../scss/_base.scss */
+  /* line 2260, ../scss/_base.scss */
   table#shopping-cart-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -3471,7 +3604,7 @@ img {
     margin: 0px;
   }
 
-  /* line 2306, ../scss/_base.scss */
+  /* line 2267, ../scss/_base.scss */
   table#shopping-cart-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -3479,37 +3612,37 @@ img {
     width: 100%;
   }
 
-  /* line 2313, ../scss/_base.scss */
+  /* line 2274, ../scss/_base.scss */
   table#shopping-cart-table tbody tr td:last-child {
     text-align: center;
     background-color: #b4b4b4;
   }
 
-  /* line 2317, ../scss/_base.scss */
+  /* line 2278, ../scss/_base.scss */
   table#shopping-cart-table tbody tr td:first-child {
     display: none;
   }
 
-  /* line 2320, ../scss/_base.scss */
+  /* line 2281, ../scss/_base.scss */
   #shopping-cart-table .product-name {
     margin: 0;
     padding: 0;
   }
 
-  /* line 2325, ../scss/_base.scss */
+  /* line 2286, ../scss/_base.scss */
   table#shopping-cart-table tbody td:nth-child(2):before {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  /* line 2330, ../scss/_base.scss */
+  /* line 2291, ../scss/_base.scss */
   #shopping-cart-table tbody tr td {
     border: 0;
     padding: 5px 0px;
   }
 
-  /* line 2335, ../scss/_base.scss */
+  /* line 2296, ../scss/_base.scss */
   #shopping-cart-table .qty {
     font-size: 0.8em;
     width: 1.5em;
@@ -3517,30 +3650,30 @@ img {
     padding: 2px;
   }
 
-  /* line 2342, ../scss/_base.scss */
+  /* line 2303, ../scss/_base.scss */
   .cart .totals, .cart .cart-collaterals, .cart .shipping {
     width: 100%;
   }
 
-  /* line 2346, ../scss/_base.scss */
+  /* line 2307, ../scss/_base.scss */
   .cart .totals, .cart .cart-collaterals, .cart .shipping {
     font-size: 0.8em;
   }
 
   /* ADD NEW ADDRESS */
-  /* line 2351, ../scss/_base.scss */
+  /* line 2312, ../scss/_base.scss */
   li.fields:nth-child(4) > div:nth-child(2) {
     width: 100%;
     display: block;
   }
 
-  /* line 2356, ../scss/_base.scss */
+  /* line 2317, ../scss/_base.scss */
   .my-account #form-validate {
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 2361, ../scss/_base.scss */
+  /* line 2322, ../scss/_base.scss */
   #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
   #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
   #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
@@ -3556,13 +3689,13 @@ img {
     display: none;
   }
 
-  /* line 2376, ../scss/_base.scss */
+  /* line 2337, ../scss/_base.scss */
   #newsletter-validate-detail .block-content .button {
     min-width: 25%;
   }
 
   /* CHECKOUT */
-  /* line 2381, ../scss/_base.scss */
+  /* line 2342, ../scss/_base.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -3570,29 +3703,29 @@ img {
     margin: 5px 2px;
   }
 
-  /* line 2388, ../scss/_base.scss */
+  /* line 2349, ../scss/_base.scss */
   #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
 
-  /* line 2392, ../scss/_base.scss */
+  /* line 2353, ../scss/_base.scss */
   #checkoutSteps {
     width: 100%;
   }
 
-  /* line 2395, ../scss/_base.scss */
+  /* line 2356, ../scss/_base.scss */
   #billing\:country_id {
     display: block;
     width: 100%;
   }
 
-  /* line 2400, ../scss/_base.scss */
+  /* line 2361, ../scss/_base.scss */
   #checkoutSteps fieldset, #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
 
-  /* line 2406, ../scss/_base.scss */
+  /* line 2367, ../scss/_base.scss */
   .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
     display: block;
     width: 100%;
@@ -4608,6 +4741,40 @@ a.f-left {
     padding: 5px 0px;
   }
 }
+/* line 3, ../scss/Pages/Homepage/_homepage.scss */
+.border-container {
+  padding: 10px 0px;
+  width: 95%;
+}
+
+/* line 9, ../scss/Pages/Homepage/_homepage.scss */
+.image-container img {
+  margin: 0px auto;
+}
+
+/* line 14, ../scss/Pages/Homepage/_homepage.scss */
+.image-container .grid2 .img-top {
+  padding-bottom: 4.2%;
+  vertical-align: top;
+  padding-top: 0px;
+  padding-bottom: auto;
+  height: 100%;
+}
+
+/* line 23, ../scss/Pages/Homepage/_homepage.scss */
+.image-container .grid2 .img-bottom {
+  vertical-align: bottom;
+  padding-bototm: 0px;
+  padding-top: auto;
+  height: 100%;
+}
+
+@media (max-width: 625px) {
+  /* line 33, ../scss/Pages/Homepage/_homepage.scss */
+  .border-container {
+    border: 0;
+  }
+}
 /* line 3, ../scss/Pages/Shared/_footer.scss */
 footer {
   clear: both;
@@ -4626,7 +4793,7 @@ footer .form-container {
 footer .border-container {
   margin: 15px auto;
   width: 98%;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 /* line 22, ../scss/Pages/Shared/_footer.scss */
 footer #newsletter-validate-detail {
