@@ -4770,7 +4770,7 @@ a.f-left {
 }
 
 @media (max-width: 625px) {
-  /* line 38, ../scss/Pages/Homepage/_homepage.scss */
+  /* line 33, ../scss/Pages/Homepage/_homepage.scss */
   .border-container {
     border: 0;
   }
