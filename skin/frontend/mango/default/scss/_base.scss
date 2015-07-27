@@ -73,71 +73,7 @@ body
 
 
 
-#newsletter_banner
-{
-	background-color: black;
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
-	margin: 0 auto;
-	margin:0px;
-	margin-bottom: 15px;
-	padding:5px 10px;
-}
 
-#newsletter_banner p
-{
-padding:2px 0px;
-}
-
-#newsletter-validate-detail .block-content{
-	width:350px;
-}
-
-#newsletter-validate-detail {
-	text-align: center;
-	margin:0px auto;
-}
-
-#newsletter-validate-detail .block-content #newsletter, #newsletter-validate-detail .block-content .button{
-float:right;
-min-width: 30%;
-}
-
-#newsletter-validate-detail .block-content #newsletter{
-	width:60%;
-	border:1px solid black;
-	font-size: 1em;
-	text-align: center;
-	height:18px;
-}
-
-.block-subscribe{
-	width:90%;
-}
-
-.block-subscribe #newsletter-validate-detail, .block-subscribe #newsletter-validate-detail .block-content{
-	width:100%;
-}
-
-.subscribe-button{
-	
-	border:1px solid black;
-	margin:0px;
-	background-color: black;
-	padding:3px;
-	min-width:100px;
-	height:22px;
-}
-
-.subscribe-button span{
-	color:white;
-	font-weight: bold;
-}
-
-#newsletter-validate-detail .block-content {
-margin:0px auto;
-}
 
 
 /* NAV FIXED END*/
@@ -2068,29 +2004,7 @@ img{
 		margin:0px 2%;
 	}
 
-	.block-subscribe{
-		padding:10px 0px;
-	}
-
-	#newsletter-validate-detail .block-content #newsletter{
-		padding:5px;
-	}
-
-	.subscribe-button{
-		
-		border:1px solid black;
-		margin:0px;
-		background-color: black;
-		padding:3px;
-		min-width:100px;
-		height:30px;
-	}
-
-	#newsletter_banner{
-		padding:8px 0px;
-		font-size:0.75em;
-	}
-
+	
 	.back-link-button a{
 		font-size: 1em;
 		margin: 0px;
@@ -2436,10 +2350,6 @@ img{
 	#advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id{
 		display: none;
 	}	
-
-	#newsletter-validate-detail .block-content .button {
-		min-width:25%;
-	}
 
 	/* CHECKOUT */
 	.red-continue-button{

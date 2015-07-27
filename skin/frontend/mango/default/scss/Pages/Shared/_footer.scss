@@ -7,6 +7,65 @@ footer{
 		font-weight: bold;
 		padding-bottom:5px;
 	}
+
+	.form-container{
+		margin:0px;
+		padding:5px 0px;
+	}
+
+	.border-container{
+		margin:10px auto;
+		width:98%;
+	}
+
+	#newsletter-validate-detail .block-content{
+		width:350px;
+	}
+
+	#newsletter-validate-detail {
+		text-align: center;
+		margin:0px auto;
+	}
+
+	#newsletter-validate-detail .block-content #newsletter, #newsletter-validate-detail .block-content .button{
+	float:right;
+	min-width: 30%;
+	}
+
+	#newsletter-validate-detail .block-content #newsletter{
+		width:60%;
+		border:1px solid black;
+		font-size: 1em;
+		text-align: center;
+		height:18px;
+	}
+
+	.block-subscribe{
+		width:90%;
+	}
+
+	.block-subscribe #newsletter-validate-detail, .block-subscribe #newsletter-validate-detail .block-content{
+		width:100%;
+	}
+
+	.subscribe-button{
+		
+		border:1px solid black;
+		margin:0px;
+		background-color: black;
+		padding:0px;
+		min-width:100px;
+		height:22px;
+	}
+
+	.subscribe-button span{
+		color:white;
+		font-weight: bold;
+	}
+
+	#newsletter-validate-detail .block-content {
+	margin:0px auto;
+	}
 }
 
 footer .footer{
@@ -85,6 +144,7 @@ footer .footer .grid4 ul li a:visited{
 
 	footer .footer .border-container {
 			border:3px solid #8A8A8A;
+			margin:2px auto;
 	}
 
 	footer .footer .border-container .grid2{
@@ -95,6 +155,32 @@ footer .footer .grid4 ul li a:visited{
 		display: inline-block;
 	}
 
+.block-subscribe{
+		padding:10px 0px;
+	}
+
+	#newsletter-validate-detail .block-content #newsletter{
+		padding:5px;
+	}
+
+	.subscribe-button{
+		
+		border:1px solid black;
+		margin:0px;
+		background-color: black;
+		padding:3px;
+		min-width:100px;
+		height:30px !important;
+	}
+
+	#newsletter_banner{
+		padding:8px 0px;
+		font-size:0.75em;
+	}
+	
+	#newsletter-validate-detail .block-content .button {
+		min-width:25%;
+	}
 }
 
 

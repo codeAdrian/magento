@@ -27,9 +27,3 @@ footer {
 		width:100% !important;
 	}
 }
-
-$susy:(
-	columns:$susy-desktop-grid2-columns,
-	//debug: (image: show),
-	global-box-sizing:border-box
-);

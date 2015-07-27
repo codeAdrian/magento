@@ -66,3 +66,20 @@ button{
 	margin:10px 5px;
 	@include m-mango-buttons(#474444);
 }
+
+// ----------- NEWSLETTER BANNER ---------
+
+#newsletter_banner{
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+	margin:0px;
+	margin-bottom: 15px;
+	padding:5px 10px;
+
+	p{
+		padding:2px 0px;
+	}
+}
