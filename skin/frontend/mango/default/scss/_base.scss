@@ -2004,7 +2004,29 @@ img{
 		margin:0px 2%;
 	}
 
-	
+	.block-subscribe{
+		padding:10px 0px;
+	}
+
+	#newsletter-validate-detail .block-content #newsletter{
+		padding:5px;
+	}
+
+	.subscribe-button{
+		
+		border:1px solid black;
+		margin:0px;
+		background-color: black;
+		padding:3px;
+		min-width:100px;
+		height:30px;
+	}
+
+	#newsletter_banner{
+		padding:8px 0px;
+		font-size:0.75em;
+	}
+
 	.back-link-button a{
 		font-size: 1em;
 		margin: 0px;
@@ -2350,6 +2372,10 @@ img{
 	#advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id{
 		display: none;
 	}	
+
+	#newsletter-validate-detail .block-content .button {
+		min-width:25%;
+	}
 
 	/* CHECKOUT */
 	.red-continue-button{

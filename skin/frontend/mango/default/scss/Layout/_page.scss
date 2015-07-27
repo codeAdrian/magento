@@ -8,13 +8,13 @@
 	text-align: center;
 	text-transform: uppercase;
 	margin:0 auto;
-}
 
-.grid2 p{
-	margin-left:20%;
-	margin-right:auto;
-	font-size: 1em;
-	text-align: left;
+	p{
+		margin-left:20%;
+		margin-right:auto;
+		font-size: 1em;
+		text-align: left;		
+	}
 }
 
 .image-container .grid2 .img-top
@@ -51,17 +51,19 @@
 
 	.border-container{
 		border:0px;
+
+		.grid2{
+			margin:20px 0px 0px 0px;
+			border:3px solid #8A8A8A;			
+		}
 	}
 
-	.border-container .grid2{
-		margin:20px 0px 0px 0px;
-		border:3px solid #8A8A8A;
-	}
 	.border-container-black{
 		border:0;
-	}
-	.border-container-black .grid2{
-		margin:20px 0px 0px 0px;
-		border:1px solid black;
+
+		.grid2{
+			margin:20px 0px 0px 0px;
+			border:1px solid black;			
+		}
 	}
 }
