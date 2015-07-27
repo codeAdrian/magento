@@ -11,3 +11,9 @@
          -o-transition: $attr $duration $ease;
             transition: $attr $duration $ease;
         }
+
+@mixin m-border-radius($radius){
+	-webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
+}

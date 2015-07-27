@@ -38,16 +38,14 @@
 }
 
 #free-delivery-outline{
-	        box-sizing:border-box;
-       -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
+    @include m-box-sizing(border-box);
 	background-color: #e3e3e3;
 	width:90%;
 	height: 10px;
 	border:1px solid #b2b2b2;
 	text-align: center;
 	margin: 0px auto;
-	border-radius: 5px;
+	@include m-border-radius(5px);
 	padding:0px;
 }
 
@@ -57,7 +55,7 @@
 	width:10%;
 	background-color: black;
 	height:100%;
-	border-radius:5px;
+	@include m-border-radius(5px);
 }
 
 #free-delivery-subtext{
@@ -70,31 +68,15 @@
 }
 
 .content-account:before {
-	z-index: -10;
-	content: '';
-	width: 0;
-	height: 0;
-	border: 25px solid #555151;
-	border-top: 0 solid rgba(60, 0, 0, 0)!important;
-	border-right: 13px solid rgba(0, 0, 0, 0)!important;
-	border-left: 13px solid rgba(80, 0, 0, 0);
+	@include m-mini-menu-box();
 	left: 160px;
 	top: -10px;
-	position: absolute;
 }
 
 .content-cart:before {
-	z-index: -10;
-	content: '';
-	width: 0;
-	height: 0;
-	border: 25px solid #555151;
-	border-top: 0 solid rgba(60, 0, 0, 0)!important;
-	border-right: 13px solid rgba(0, 0, 0, 0)!important;
-	border-left: 13px solid rgba(80, 0, 0, 0);
+	@include m-mini-menu-box();
 	right: 10px;
 	top: -10px;
-	position: absolute;
 }
 
 form span {
@@ -245,7 +227,7 @@ a.f-left{
 	background-color:#474444; 
 	color:white;
 	padding:0.5% 2%;
-	border-radius: 70%;
+	@include m-border-radius(70%);
 	margin:5px 0px auto 0px;
 }
 

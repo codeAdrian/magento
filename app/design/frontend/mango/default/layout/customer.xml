@@ -75,14 +75,13 @@ Default layout, loads most of the pages
                     </liParams>
                     <aParams>
                         <class>top-account-a</class>
-                        <class>top-account</class>
+                        <class>textLink</class>
                     </aParams>
                     <beforeText>top-account-a</beforeText>
                     <afterText></afterText>
                 </action>
                 <block type="checkout/links" name="checkout_cart_link_custom">
-                    <action method="addCartLink">
-                    </action>
+                    <action method="addCartLink"></action>
                 </block>
             </reference>
     </default>

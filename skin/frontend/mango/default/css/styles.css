@@ -1,11 +1,10 @@
-/* TEST */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 11, ../scss/Base/_normalize.scss */
+/* line 9, ../scss/Base/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -18,7 +17,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 21, ../scss/Base/_normalize.scss */
+/* line 19, ../scss/Base/_normalize.scss */
 body {
   margin: 0;
 }
@@ -31,7 +30,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 35, ../scss/Base/_normalize.scss */
+/* line 33, ../scss/Base/_normalize.scss */
 article,
 aside,
 details,
@@ -52,7 +51,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 56, ../scss/Base/_normalize.scss */
+/* line 54, ../scss/Base/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -67,7 +66,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 69, ../scss/Base/_normalize.scss */
+/* line 67, ../scss/Base/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -77,7 +76,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-/* line 79, ../scss/Base/_normalize.scss */
+/* line 77, ../scss/Base/_normalize.scss */
 [hidden],
 template {
   display: none;
@@ -88,7 +87,7 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 91, ../scss/Base/_normalize.scss */
+/* line 89, ../scss/Base/_normalize.scss */
 a {
   background-color: transparent;
 }
@@ -96,7 +95,7 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 99, ../scss/Base/_normalize.scss */
+/* line 97, ../scss/Base/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -107,7 +106,7 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 111, ../scss/Base/_normalize.scss */
+/* line 109, ../scss/Base/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -115,7 +114,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 119, ../scss/Base/_normalize.scss */
+/* line 117, ../scss/Base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -124,7 +123,7 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 128, ../scss/Base/_normalize.scss */
+/* line 126, ../scss/Base/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -133,7 +132,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 137, ../scss/Base/_normalize.scss */
+/* line 135, ../scss/Base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -142,7 +141,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 146, ../scss/Base/_normalize.scss */
+/* line 144, ../scss/Base/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -151,7 +150,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 155, ../scss/Base/_normalize.scss */
+/* line 153, ../scss/Base/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -159,7 +158,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 163, ../scss/Base/_normalize.scss */
+/* line 161, ../scss/Base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -168,12 +167,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 171, ../scss/Base/_normalize.scss */
+/* line 169, ../scss/Base/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 175, ../scss/Base/_normalize.scss */
+/* line 173, ../scss/Base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -183,7 +182,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 186, ../scss/Base/_normalize.scss */
+/* line 184, ../scss/Base/_normalize.scss */
 img {
   border: 0;
 }
@@ -191,7 +190,7 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 194, ../scss/Base/_normalize.scss */
+/* line 192, ../scss/Base/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -201,7 +200,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 205, ../scss/Base/_normalize.scss */
+/* line 203, ../scss/Base/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
@@ -209,7 +208,7 @@ figure {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 213, ../scss/Base/_normalize.scss */
+/* line 211, ../scss/Base/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -219,7 +218,7 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-/* line 223, ../scss/Base/_normalize.scss */
+/* line 221, ../scss/Base/_normalize.scss */
 pre {
   overflow: auto;
 }
@@ -227,7 +226,7 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 231, ../scss/Base/_normalize.scss */
+/* line 229, ../scss/Base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -248,7 +247,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 254, ../scss/Base/_normalize.scss */
+/* line 252, ../scss/Base/_normalize.scss */
 button,
 input,
 optgroup,
@@ -265,7 +264,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 268, ../scss/Base/_normalize.scss */
+/* line 266, ../scss/Base/_normalize.scss */
 button {
   overflow: visible;
 }
@@ -276,7 +275,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 279, ../scss/Base/_normalize.scss */
+/* line 277, ../scss/Base/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -289,7 +288,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 292, ../scss/Base/_normalize.scss */
+/* line 290, ../scss/Base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -303,7 +302,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 304, ../scss/Base/_normalize.scss */
+/* line 302, ../scss/Base/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -312,7 +311,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 313, ../scss/Base/_normalize.scss */
+/* line 311, ../scss/Base/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -323,7 +322,7 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 324, ../scss/Base/_normalize.scss */
+/* line 322, ../scss/Base/_normalize.scss */
 input {
   line-height: normal;
 }
@@ -335,7 +334,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 336, ../scss/Base/_normalize.scss */
+/* line 334, ../scss/Base/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -349,7 +348,7 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 348, ../scss/Base/_normalize.scss */
+/* line 346, ../scss/Base/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -360,7 +359,7 @@ input[type="number"]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 359, ../scss/Base/_normalize.scss */
+/* line 357, ../scss/Base/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -375,7 +374,7 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 372, ../scss/Base/_normalize.scss */
+/* line 370, ../scss/Base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -384,7 +383,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 381, ../scss/Base/_normalize.scss */
+/* line 379, ../scss/Base/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -395,7 +394,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 392, ../scss/Base/_normalize.scss */
+/* line 390, ../scss/Base/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -406,7 +405,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 401, ../scss/Base/_normalize.scss */
+/* line 399, ../scss/Base/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -415,7 +414,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 410, ../scss/Base/_normalize.scss */
+/* line 408, ../scss/Base/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
@@ -425,13 +424,13 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 421, ../scss/Base/_normalize.scss */
+/* line 419, ../scss/Base/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 426, ../scss/Base/_normalize.scss */
+/* line 424, ../scss/Base/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -620,7 +619,7 @@ table {
 
 /* line 1, ../scss/Layout/_page.scss */
 .page {
-  max-width: 1024px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -3776,7 +3775,7 @@ header .form-search {
 }
 /* line 49, ../scss/Pages/Shared/_header.scss */
 header #search {
-  width: 15em;
+  width: 75%;
   font-size: 0.8em;
   text-align: center;
   font-family: arial;
@@ -3860,6 +3859,8 @@ header .top-link-cart span {
   left: 5px;
   background-color: white;
   border: 1px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   padding: 0.25em 0em;
   vertical-align: middle;
@@ -4164,7 +4165,7 @@ nav ul li ul li a {
   background-color: white;
   padding-top: 10px;
   height: 45px;
-  max-width: 1024px;
+  max-width: 1280px;
   width: 100%;
   text-align: center;
 }
@@ -4179,7 +4180,7 @@ nav ul li ul li a {
   position: fixed;
   margin: 0 auto;
   padding-top: 20px;
-  max-width: 1024px;
+  max-width: 1280px;
   width: 100%;
 }
 
@@ -4231,6 +4232,8 @@ nav ul li ul li a {
   nav .navClose span {
     background-color: black;
     color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
     display: inline-block;
     padding: 0.1em 0em;
@@ -4445,32 +4448,36 @@ nav ul li ul li a {
   border: 1px solid #b2b2b2;
   text-align: center;
   margin: 0px auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   padding: 0px;
 }
 
-/* line 54, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 52, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-inside {
   margin: 0px;
   padding: 0px;
   width: 10%;
   background-color: black;
   height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
-/* line 63, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 61, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-subtext {
   font-size: 0.8em;
 }
 
-/* line 67, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 65, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-text {
   text-transform: uppercase;
   font-size: 0.9em;
 }
 
-/* line 72, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 70, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account:before {
   z-index: -10;
   content: '';
@@ -4480,12 +4487,12 @@ nav ul li ul li a {
   border-top: 0 solid rgba(60, 0, 0, 0) !important;
   border-right: 13px solid transparent !important;
   border-left: 13px solid rgba(80, 0, 0, 0);
+  position: absolute;
   left: 160px;
   top: -10px;
-  position: absolute;
 }
 
-/* line 86, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 76, ../scss/Pages/Shared/_mini-menus.scss */
 .content-cart:before {
   z-index: -10;
   content: '';
@@ -4495,25 +4502,25 @@ nav ul li ul li a {
   border-top: 0 solid rgba(60, 0, 0, 0) !important;
   border-right: 13px solid transparent !important;
   border-left: 13px solid rgba(80, 0, 0, 0);
+  position: absolute;
   right: 10px;
   top: -10px;
-  position: absolute;
 }
 
-/* line 100, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 82, ../scss/Pages/Shared/_mini-menus.scss */
 form span {
   color: black;
 }
 
 /* MINI MENU END */
 /* LOGIN MINI-MENU*/
-/* line 109, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 91, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account .form-list {
   padding: 0;
   list-style: none;
   margin: 0;
 }
-/* line 114, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 96, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account .form-list li {
   padding: 0px 0px 15px 0px;
   text-transform: uppercase;
@@ -4522,7 +4529,7 @@ form span {
   color: #bdbbbb;
 }
 
-/* line 123, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 105, ../scss/Pages/Shared/_mini-menus.scss */
 .input-box {
   text-align: center;
   width: 100%;
@@ -4530,33 +4537,33 @@ form span {
   text-align: left;
   font-size: 0.8em;
 }
-/* line 130, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 112, ../scss/Pages/Shared/_mini-menus.scss */
 .input-box input {
   color: black;
   text-align: left;
   width: 90%;
 }
 
-/* line 137, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 119, ../scss/Pages/Shared/_mini-menus.scss */
 label.required {
   color: blacK;
   font-weight: 300;
 }
 
-/* line 143, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 125, ../scss/Pages/Shared/_mini-menus.scss */
 .cart .shipping-form .buttons-set button {
   margin: 10px;
   padding: 10px;
   background-color: #474444;
 }
 
-/* line 150, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 132, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account #send2 {
   color: white;
   background-color: #474444;
 }
 
-/* line 156, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 138, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a {
   background-color: #474444;
   color: white;
@@ -4569,16 +4576,16 @@ label.required {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 168, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 150, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a:hover {
   background-color: black;
 }
-/* line 172, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 154, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a:active {
   background-color: #9b9a9a;
 }
 
-/* line 178, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 160, ../scss/Pages/Shared/_mini-menus.scss */
 a.f-left {
   margin: 5px 0px;
   display: block;
@@ -4586,17 +4593,17 @@ a.f-left {
   color: black;
 }
 
-/* line 185, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 167, ../scss/Pages/Shared/_mini-menus.scss */
 .registered-users hr {
   margin: 12px 0px;
 }
 
-/* line 189, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 171, ../scss/Pages/Shared/_mini-menus.scss */
 #button_register {
   background-color: #ad0202;
   font-weight: bold;
 }
-/* line 193, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 175, ../scss/Pages/Shared/_mini-menus.scss */
 #button_register span span {
   color: white;
   text-transform: uppercase;
@@ -4604,41 +4611,41 @@ a.f-left {
 
 /* LOGIN MINI MENU END */
 /* CART MINI MENU */
-/* line 203, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 185, ../scss/Pages/Shared/_mini-menus.scss */
 #cart-sidebar {
   list-style: none;
   padding: 0px;
 }
 
-/* line 208, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 190, ../scss/Pages/Shared/_mini-menus.scss */
 .amount {
   font-size: 0.8em;
 }
 
-/* line 213, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 195, ../scss/Pages/Shared/_mini-menus.scss */
 #mini_cart_checkout {
   color: white;
   background-color: #ad0202;
   text-align: center;
 }
 
-/* line 219, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 201, ../scss/Pages/Shared/_mini-menus.scss */
 #mini_cart_edit {
   color: white;
   background-color: #474444;
 }
 
-/* line 224, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 206, ../scss/Pages/Shared/_mini-menus.scss */
 .product-image {
   vertical-align: middle;
   width: 30%;
 }
-/* line 228, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 210, ../scss/Pages/Shared/_mini-menus.scss */
 .product-image img {
   margin: 0px auto;
 }
 
-/* line 233, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 215, ../scss/Pages/Shared/_mini-menus.scss */
 .product-details {
   display: inline-block;
   width: 50%;
@@ -4647,7 +4654,7 @@ a.f-left {
   font-size: 0.8em;
 }
 
-/* line 241, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 223, ../scss/Pages/Shared/_mini-menus.scss */
 .btn-remove {
   text-decoration: none;
   text-align: center;
@@ -4655,15 +4662,17 @@ a.f-left {
   background-color: #474444;
   color: white;
   padding: 0.5% 2%;
+  -webkit-border-radius: 70%;
+  -moz-border-radius: 70%;
   border-radius: 70%;
   margin: 5px 0px auto 0px;
 }
 
-/* line 252, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 234, ../scss/Pages/Shared/_mini-menus.scss */
 .product-name {
   margin: 7px 0px;
 }
-/* line 255, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 237, ../scss/Pages/Shared/_mini-menus.scss */
 .product-name a {
   text-decoration: none;
   color: black;
@@ -4671,66 +4680,51 @@ a.f-left {
   text-transform: uppercase;
 }
 
-/* line 263, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 245, ../scss/Pages/Shared/_mini-menus.scss */
 .content-cart hr {
   border: 0;
   border-top: 1px solid #b0b0b0;
   color: #b0b0b0;
 }
 
-/* line 268, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 250, ../scss/Pages/Shared/_mini-menus.scss */
 .subtotal {
   font-weight: bold;
 }
 
 /* CART MINI MENU END */
 @media (max-width: 900px) {
-  /* line 277, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 259, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
   }
 
-  /* line 281, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 263, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     right: 2%;
   }
 }
 @media (max-width 625px) {
-  /* line 287, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 269, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     top: 150px;
     right: 4%;
   }
 
-  /* line 292, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 274, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
     top: 150px;
     width: 310px;
   }
-  /* line 297, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 279, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart .product-image {
     width: 30%;
     display: inline-block;
   }
 
-  /* line 303, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 285, ../scss/Pages/Shared/_mini-menus.scss */
   .content-cart {
     padding: 5px 0px;
   }
 }
-/* ------------------------------------------- TEMPLATE
-
-// ----- HEADER - DESKTOP ----- 
-
-
-
-// ----- HEADER - TABLET -----
-@include breakpoint($tablet-breakpoint){
-
-}
-// ----- HEADER - MOBILE -----
-@include breakpoint($mobile-breakpoint){
-}
-
-------------------------------------------- TEMPLATE END */

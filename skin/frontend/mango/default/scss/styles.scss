@@ -11,6 +11,7 @@
 //HELPERS IMPORTS
 @import "Helpers/variables";
 @import "Helpers/vendor-prefixes";
+@import "components";
 
 // LAYOUT IMPORTS
 @import "Layout/susy-header";
@@ -20,10 +21,9 @@
 @import "base";
 @import "Pages/Shared/header";
 @import "Pages/Shared/nav";
-@import "Pages/Shared/mini-menus";
+@import "Pages/Shared/mini-menus"
 
-// RESPONSIVE OVERRIDES //
-@import "Helpers/responsive-show-hide";
+
 
 
 
