@@ -19,6 +19,7 @@ $susy:(
 	.topLinks_column{
 		@include span(last 1 of $susy-desktop-header-columns);
 		padding-top:10px;
+		position:relative;
 	}
 	
 	// HEADER GRID - TABLET

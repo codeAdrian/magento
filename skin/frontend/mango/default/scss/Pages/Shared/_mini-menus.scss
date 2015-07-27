@@ -1,9 +1,9 @@
 // ----- MINI MENU - DESKTOP ----- 
 
 #mini-menu-account {
-	position: fixed;
-	right:8%;
-	top: 100px;
+	position: absolute;
+	right:20%;
+	top: 50px;
 	font-size: 0.75em;
 	width: 250px;
 }
@@ -11,8 +11,8 @@
 #mini-menu-cart {
 	@extend #mini-menu-account;
 	font-size:1em;
-	right:5%;
-	top: 100px;
+	right:17%;
+	top: 50px;
 	width:370px;
 
 	.product-image{
@@ -194,13 +194,13 @@ a.f-left{
 
 #mini_cart_checkout{
 	color:white;
-	background-color:#ad0202;
+	@include m-mango-buttons(#ad0202);
 	text-align: center;
 }
 
 #mini_cart_edit{
 	color:white;
-	background-color:#474444;
+	@include m-mango-buttons(#474444);
 }
 
 .product-image{

@@ -4,7 +4,7 @@
  -webkit-box-sizing:$sizing;
 }
 
-@mixin m-transition($attr, $duration, $easing){
+@mixin m-transition($attr, $duration, $ease){
     -webkit-transition: $attr $duration $ease;
        -moz-transition: $attr $duration $ease;
         -ms-transition: $attr $duration $ease;

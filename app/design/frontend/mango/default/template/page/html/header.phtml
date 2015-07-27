@@ -48,28 +48,29 @@
         </div>
         <div class="topLinks_column">
             <?php echo $this->getChildHtml('topLinks') ?>
+
+            <!-- PROFILE MINI MENU -->
+
+            <div class="mini-menu" id="mini-menu-account">
+                <div class="content-account">
+                    <?php echo $this->getChildHtml('header_customer_form_login');?>
+                </div>
+            </div>
+
+            <!-- END -->
+
+            <!-- CART MINI MENU -->
+
+            <div class="mini-menu" id="mini-menu-cart">
+                <div class="content-cart">
+                        <?php echo $this->getChildHtml('topcart'); ?>
+                </div>
+            </div> 
+
+            <!-- CART END -->
+    
         </div>
 </div>
-<!-- PROFILE MINI MENU -->
-
-<div class="mini-menu" id="mini-menu-account">
-    <div class="content-account">
-        <?php echo $this->getChildHtml('header_customer_form_login');?>
-    </div>
-</div>
-
-<!-- END -->
-
-<!-- CART MINI MENU -->
-
-<div class="mini-menu" id="mini-menu-cart">
-    <div class="content-cart">
-            <?php echo $this->getChildHtml('topcart'); ?>
-    </div>
-</div> 
-
-<!-- CART END -->
-
             
         <?php echo $this->getChildHtml('store_language') ?>
         <?php echo $this->getChildHtml('topContainer'); ?>

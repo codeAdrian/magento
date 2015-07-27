@@ -1,3 +1,5 @@
+// ---------- MINI MENU BOX BORDERS ----------
+
 @mixin m-mini-menu-box(){
 	z-index: -10;
 	content: '';
@@ -8,4 +10,58 @@
 	border-right: 13px solid rgba(0, 0, 0, 0)!important;
 	border-left: 13px solid rgba(80, 0, 0, 0);
 	position: absolute;
+}
+
+@mixin m-mini-search-box(){
+	z-index: -10;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 10px solid #555151;
+	border-top: 0 solid rgba(60, 0, 0, 0)!important;
+	border-right: 5px solid rgba(0, 0, 0, 0)!important;
+	border-left: 5px solid rgba(80, 0, 0, 0);
+	position:absolute;
+}
+
+
+// ----------- BUTTONS -----------
+button{
+	border: 0;
+	padding:10px 10px;
+	min-width:150px;
+
+	span span{
+		font-size: 0.75rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		color:white;
+	}
+}
+
+@mixin m-mango-buttons($bg-color){
+	background-color:$bg-color;
+
+	&:hover{
+		background-color:darken($bg-color,50%);
+		cursor: pointer;
+	}
+
+	&:active{
+		background-color:lighten($bg-color,30%);
+	}
+}
+
+.red-button, .btn-checkout{
+	
+	margin:10px 0px;
+	@include m-mango-buttons(#ad0202);
+	
+}
+
+#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button{
+	width:20%;
+	margin:10px 5px;
+	@include m-mango-buttons(#474444);
 }

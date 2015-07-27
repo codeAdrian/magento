@@ -1,17 +1,4 @@
 
-button{
-	border: 0;
-	padding:10px 10px;
-	min-width:150px;
-}
-
-button span span{
-	font-size: 1em;
-	font-weight: bold;
-	text-transform: uppercase;
-	color:white;
-}
-
 /* CSS RESET FOR TABLE*/
 
 .mobileOnly, .smartphoneOnly, .inlineSmartphoneOnly{
@@ -161,52 +148,12 @@ margin:0px auto;
 
 /* GRAY BUTTON HOVER AND ACTIVE */
 
-#send2:hover, #mini_cart_edit:hover, .newsletter-form input[type="submit"]:hover, .btn-remove:hover, .gray-button:hover{
-	
-	background-color: black;
-	cursor: pointer;
-	
-}
 
-#send2:active, #mini_cart_edit:active, .newsletter-form input[type="submit"]:active, .btn-remove:active, .gray-button:active{
-	
-	background-color: #9b9a9a;
-	cursor: pointer;
-	
-}
 
 /* GRAY BUTTON HOVER AND ACTIVE END */
 
 /* RED BUTTON HOVER AND ACTIVE */
 
-#send2 span span, .login-page-buttons .red-button span span, .red-button span
-{
-	
-	color:white;
-	text-transform: uppercase;
-	text-align: center;
-	
-}
-
-.red-button, .btn-checkout{
-	
-	margin:10px 0px;
-	font-weight: bold;
-	background-color:#ad0202;
-	text-align: center;
-	
-}
-
-
-#mini_cart_checkout:hover, #button_register:hover, .buttons-set button[title="Submit"]:hover, .red-button:hover, .btn-checkout:hover{
-cursor: pointer;
-background-color: #790000;
-}
-
-#mini_cart_checkout:active, #button_register:active, .buttons-set button[title="Submit"]:active, .red-button:active, .btn-checkout:active{
-cursor: pointer;
-background-color: #cf6c6c;
-}
 
 /* RED BUTTON HOVER AND ACTIVE END */
 
@@ -1493,32 +1440,7 @@ text-align: left;
 #shopping-cart-table .product-name:hover{
 font-weight: 400;
 }
-
-#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button{
-	width:20%;
-	background-color: #474444;
-	margin:10px 5px;
-}
-
-#shopping-cart-table .btn-continue:hover, #shopping-cart-table .btn-update:hover, #shopping-cart-table #empty_cart_button:hover, .cart .cart-collaterals .buttons-set button:hover{
-
-background-color: black;
-cursor: pointer;
-
-}
-
-#shopping-cart-table .btn-continue:active, #shopping-cart-table .btn-update:active, #shopping-cart-table #empty_cart_button:active, .cart .cart-collaterals .buttons-set button:active{
-
-background-color: #9b9a9a;
-cursor: pointer;
-
-}
-
-#shopping-cart-table .btn-continue span, #shopping-cart-table .btn-update span, #shopping-cart-table #empty_cart_button span, .cart .cart-collaterals .buttons-set button span{
-	color:white;
-	text-align: center;
-}
-
+ 
 #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1){
 	text-align: right;
 }
