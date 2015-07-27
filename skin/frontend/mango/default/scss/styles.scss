@@ -15,13 +15,16 @@
 
 // LAYOUT IMPORTS
 @import "Layout/susy-header";
+@import "Layout/susy-footer";
+@import "Layout/susy-newsletter";
 @import "Layout/page";
 
 // PAGE IMPORTS //
 @import "base";
 @import "Pages/Shared/header";
 @import "Pages/Shared/nav";
-@import "Pages/Shared/mini-menus"
+@import "Pages/Shared/mini-menus";
+@import "Pages/Shared/footer";
 
 
 
@@ -40,7 +43,7 @@
 
 }
 // ----- HEADER - MOBILE -----
-@include breakpoint($mobile-breakpoint){
+@include breakpoint($smartphone-breakpoint){
 }
 
 ------------------------------------------- TEMPLATE END */

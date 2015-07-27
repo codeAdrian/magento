@@ -1,0 +1,29 @@
+$susy:(
+	columns:$susy-desktop-grid2-columns,
+	//debug: (image: show),
+	global-box-sizing:border-box
+);
+
+footer .border-container{
+	@include container();
+
+	.grid2{
+		@include span(1 of $susy-desktop-grid2-columns);
+
+	&:last-child{
+		@include span(last 1 of $susy-desktop-grid2-columns);
+		}
+	}
+}
+
+@include breakpoint($smartphone-breakpoint){
+footer .border-container{
+		@include container();
+
+		.grid2{
+			@include span(1 of $susy-smartphone-grid2-columns);
+			width:100% !important;
+			text-align: center;
+		}
+	}
+}
