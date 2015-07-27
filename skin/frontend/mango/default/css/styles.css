@@ -4846,7 +4846,7 @@ footer #newsletter-validate-detail .block-content {
 }
 /* line 70, ../scss/Pages/Shared/_footer.scss */
 footer .footer {
-  margin: 30px 0 0;
+  margin: 30px 0 20px;
   text-align: center;
 }
 /* line 75, ../scss/Pages/Shared/_footer.scss */
