@@ -309,39 +309,6 @@ text-transform: uppercase;
 
 }
 
-.grid2
-{
-	display:inline-block;
-	width:49%;
-	text-align: center;
-	text-transform: uppercase;
-	margin:0 auto;
-}
-
-.grid2 p{
-	margin-left:20%;
-	margin-right:auto;
-	font-size: 1em;
-	text-align: left;
-}
-
-.image-container .grid2 .img-top
-{
-	padding-bottom:4.8%;
-	vertical-align: top;
-	padding-top:0px;
-	padding-bottom:auto;
-	height:100%;
-}
-
-.image-container .grid2 .img-bottom
-{
-	vertical-align:bottom;
-	padding-bototm:0px;
-	padding-top:auto;
-	height:100%;
-}
-
 .grid3
 {
 	width:32.5%;
@@ -362,51 +329,6 @@ text-transform: uppercase;
 	vertical-align: middle;
 	margin-bottom:25px;
 }
-
-/* FOOTER */
-
-footer{
-	clear:both;
-}
-
-footer .footer{
-	//margin:30px 7% 0px 7%;
-	margin:30px 0 0;
-	text-align: center;
-}
-
-.grid4{
-	display: inline-block;
-	margin:10px 3%;
-	vertical-align: top;
-	text-align: left;
-}
-
-footer .footer .grid4 ul{
-list-style: none;
-padding:0px;
-}
-
-footer .footer .grid4 ul li {
-	padding:3px 0px;
-}
-
-footer .footer .grid4 ul li a{
-	text-decoration: none;
-	color:black;
-	font-size:0.9em;
-}
-
-footer .footer .grid4 ul li a:hover{
-font-weight: bold;
-}
-
-footer .footer .grid4 ul li a:visited{
-	color:#969696;
-}
-
-/* FOOTER END */
-
 
 
 /* PRODUCT CATEGORIES */
@@ -693,10 +615,6 @@ color:white;
 
 .my-account .buttons-set{
 	text-align: center;
-}
-
-.my-account .buttons-set .grid2 p{
-	margin:0px;
 }
 
 dd#apparel_type ol, dd#price ol, dd#color ol, dd#bed_bath_type ol, dd#decor_type ol, dd#home_decor_type ol, dd#material ol{
@@ -1791,21 +1709,7 @@ img{
 	.col2-left-layout {
 		margin:0px 1%;
 	}
-
-	footer .footer{
-		margin:30px 0px;
-	}
-
-	footer .grid4{
-		margin:10px 1.5%;
-		display: inline-block;
-	}
 	
-	.grid2 p{
-		margin:10px 0%;
-		text-align: center;
-	}
-
 	.main-container{
 		margin-top:20px;
 	}
@@ -1954,10 +1858,6 @@ img{
 		display: inline-block;
 		width:45%;
 		margin:5px 0px;
-	}
-
-	.grid4{
-	margin:10px 1%;
 	}
 
 	/* FORGOT PASSWORD */
@@ -2218,36 +2118,8 @@ img{
 		display: none;
 	}
 
-	.grid4-wrapper{
-		text-align: center;
-		width:45%;
-		margin:0px auto;
-		font-size: 1.25em;
-	}
-
-
 	button{
 	min-width: 200px;
-	}
-
-	.grid4-wrapper div, .grid4-wrapper ul{
-		text-align: left;
-	}
-	footer .footer .grid4 ul{
-			display: none;
-	}
-
-	footer .footer .grid4 ul li{
-		padding:8px 0px 8px 30px;
-	}
-
-	footer .footer .grid4 ul li a:hover{
-		font-weight: normal;
-	}
-
-	.footer-mango-icon{
-		display: inline-block;
-		font-family: mango-font-icons;
 	}
 
 	.grid3{
@@ -2264,47 +2136,6 @@ img{
 		text-align: center;
 		margin:0px auto;
 	}
-
-	.image-container .grid2 .img-top, .grid2{
-		width:100%;
-		display: block;
-		margin:10px auto;
-		padding:0px;
-	}
-
-	.border-container{
-		border:0px;
-	}
-
-	.border-container .grid2{
-		margin:20px 0px 0px 0px;
-		border:3px solid #8A8A8A;
-	}
-	.border-container-black{
-		border:0;
-	}
-	.border-container-black .grid2{
-		margin:20px 0px 0px 0px;
-		border:1px solid black;
-	}
-
-	footer .footer .border-container {
-			border:3px solid #8A8A8A;
-	}
-
-	footer .footer .border-container .grid2{
-		border:0px;
-	}
-
-	footer .footer .border-container .grid2 #newsletter-validate-detail{
-		display: inline-block;
-	}
-
-	footer .grid4{
-		width:100%;
-		display: inline-block;
-		margin:10px 0px;
-		}
 
 		.forgot-pass-wrapper .page-title h1{
 			text-align: center;

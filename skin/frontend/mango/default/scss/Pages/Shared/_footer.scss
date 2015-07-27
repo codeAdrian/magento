@@ -1,0 +1,100 @@
+// ----- FOOTER - DESKTOP ----- 
+
+footer{
+	clear:both;
+
+	strong{
+		font-weight: bold;
+		padding-bottom:5px;
+	}
+}
+
+footer .footer{
+	margin:30px 0 0;
+	text-align: center;
+}
+
+.grid4{
+	vertical-align: top;
+	text-align: left;
+	text-align:center;
+}
+
+.grid4 .grid4-wrapper{
+	display:inline-block;
+	margin:0px auto;
+	text-align:left;
+}
+
+
+footer .footer .grid4 ul{
+list-style: none;
+padding:0px;
+}
+
+footer .footer .grid4 ul li{
+	padding:5px 0px;
+}
+
+footer .footer .grid4 ul li a{
+	text-decoration: none;
+	color:black;
+	font-size:0.9em;
+}
+
+footer .footer .grid4 ul li a:hover{
+font-weight: bold;
+}
+
+footer .footer .grid4 ul li a:visited{
+	color:#969696;
+}
+
+// ----- FOOTER - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+	.grid4-wrapper{
+		text-align: center;
+		width:45%;
+		margin:0px auto;
+		font-size: 1.25em;
+	}
+		.grid4-wrapper div, .grid4-wrapper ul{
+		text-align: left;
+	}
+	footer .footer .grid4 ul{
+			display: none;
+	}
+
+	footer .footer .grid4 ul li{
+		padding:8px 0px 8px 30px;
+	}
+
+	footer .footer .grid4 ul li a:hover{
+		font-weight: normal;
+	}
+	footer .grid4{
+		width:100%;
+		display: inline-block;
+		margin:10px 0px;
+		}
+
+			.footer-mango-icon{
+		display: inline-block;
+		font-family: mango-font-icons;
+	}
+
+	footer .footer .border-container {
+			border:3px solid #8A8A8A;
+	}
+
+	footer .footer .border-container .grid2{
+		border:0px;
+	}
+
+	footer .footer .border-container .grid2 #newsletter-validate-detail{
+		display: inline-block;
+	}
+
+}
+
+
