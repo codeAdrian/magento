@@ -1,0 +1,72 @@
+.colorSwatches{
+	text-align: center;
+
+	span{
+		padding:1px 10px;
+		font-size: 5px;
+		margin:0px 3px;		
+	}
+
+	.Black{
+		background-color:black;
+	}
+
+	.Blue{
+		background-color: blue;
+	}
+
+	.Brown{
+		background-color: #8B4513;
+	}
+
+	.Green{
+		background-color: green;
+	}
+
+	.Grey{
+		background-color: gray;
+	}
+
+	.Indigo{
+		background-color: #4B0082;
+	}
+
+	.Khaki{
+		background-color: #bdb76b;
+	}
+
+	.Oatmeal{
+		background-color: #fff8dc;
+	}
+
+	.Orange{
+		background-color: orange;
+	}
+
+	.Pink{
+		background-color: #FF69B4;
+	}
+
+	.Purple{
+		background-color: purple;
+	}
+
+	.Red{
+		background-color: red;
+	}
+
+	.Silver{
+		background-color: silver;
+	}
+
+	.White{
+		background-color: white;
+		@include m-box-sizing(border-box);
+		border:1px solid black;
+	}
+
+	.Yellow{
+		background-color:yellow; 
+	}
+
+}
