@@ -83,3 +83,58 @@ button{
 		padding:2px 0px;
 	}
 }
+
+// --------- PAGE TITLES ----------
+
+.category-title h1, .dashboard-page-title h1, .my-account .page-title h1, .checkout-wrapper .page-title h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin:0px;
+	line-height: 1.5;
+	font-size:2.5rem;
+}
+
+// --------- DIVIDERS ----------
+// ----- DESKTOP
+.category-divider, .my-account-divider{
+	margin:0px;
+	padding:0px;
+	height:1px;
+	margin-left:35px;
+ 	border: 0; 
+ 	border-top: 1px solid #e5e5e5;
+}
+
+// ----- SMARTPHONES
+@include breakpoint($smartphone-breakpoint){
+	.category-divider, .my-account-divider{
+		margin:2px;
+	}
+}
+
+// ---------- BREADCRUMBS ---------
+
+// ----- DESKTOP
+.breadcrumbs ul{
+	list-style: none;
+	margin:0px 0px 0px 10px;
+	font-size:0.8em;
+
+	li {
+	display: inline-block;
+
+		a {
+			text-decoration: none;
+			color:black;
+			font-weight: normal;
+		}
+	}
+}
+
+// ----- TABLET
+@include breakpoint($tablet-breakpoint){
+	.breadcrumbs{
+		margin:40px 0px 10px 10px;
+	}	
+}
