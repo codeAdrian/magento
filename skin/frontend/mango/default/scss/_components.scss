@@ -1,0 +1,140 @@
+// ---------- MINI MENU BOX BORDERS ----------
+
+@mixin m-mini-menu-box(){
+	z-index: -10;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 25px solid #555151;
+	border-top: 0 solid rgba(60, 0, 0, 0)!important;
+	border-right: 13px solid rgba(0, 0, 0, 0)!important;
+	border-left: 13px solid rgba(80, 0, 0, 0);
+	position: absolute;
+}
+
+@mixin m-mini-search-box(){
+	z-index: -10;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 10px solid #555151;
+	border-top: 0 solid rgba(60, 0, 0, 0)!important;
+	border-right: 5px solid rgba(0, 0, 0, 0)!important;
+	border-left: 5px solid rgba(80, 0, 0, 0);
+	position:absolute;
+}
+
+
+// ----------- BUTTONS -----------
+
+button{
+	border: 0;
+	padding:10px 10px;
+	min-width:150px;
+
+	span span{
+		font-size: 0.75rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		color:white;
+	}
+}
+
+@mixin m-mango-buttons($bg-color){
+	background-color:$bg-color;
+
+	&:hover{
+		background-color:darken($bg-color,50%);
+		cursor: pointer;
+	}
+
+	&:active{
+		background-color:lighten($bg-color,30%);
+	}
+}
+
+.red-button, .btn-checkout, #button_register{
+	
+	margin:10px 0px;
+	@include m-mango-buttons(#ad0202);
+	
+}
+
+#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, .checkout-wrapper .buttons-set button, #send2{
+	width:20%;
+	margin:10px 5px;
+	@include m-mango-buttons(#474444);
+}
+
+// ----------- NEWSLETTER BANNER ---------
+
+#newsletter_banner{
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+	margin:0px;
+	margin-bottom: 15px;
+	padding:5px 10px;
+
+	p{
+		padding:2px 0px;
+	}
+}
+
+// --------- PAGE TITLES ----------
+
+.category-title h1, .dashboard-page-title h1, .my-account .page-title h1, .checkout-wrapper .page-title h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin:0px;
+	line-height: 1.5;
+	font-size:2.5rem;
+}
+
+// --------- DIVIDERS ----------
+// ----- DESKTOP
+.category-divider, .my-account-divider{
+	margin:0px;
+	padding:0px;
+	height:1px;
+	margin-left:35px;
+ 	border: 0; 
+ 	border-top: 1px solid #e5e5e5;
+}
+
+// ----- SMARTPHONES
+@include breakpoint($smartphone-breakpoint){
+	.category-divider, .my-account-divider{
+		margin:2px;
+	}
+}
+
+// ---------- BREADCRUMBS ---------
+
+// ----- DESKTOP
+.breadcrumbs ul{
+	list-style: none;
+	margin:0px 0px 0px 10px;
+	font-size:0.8em;
+
+	li {
+	display: inline-block;
+
+		a {
+			text-decoration: none;
+			color:black;
+			font-weight: normal;
+		}
+	}
+}
+
+// ----- TABLET
+@include breakpoint($tablet-breakpoint){
+	.breadcrumbs{
+		margin:40px 0px 10px 10px;
+	}	
+}

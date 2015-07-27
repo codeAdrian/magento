@@ -1,0 +1,51 @@
+// REQUIRED IMPORTS
+@import "susy";
+@import "breakpoint";
+@import "compass";
+
+// BASE IMPORTS
+@import "Base/normalize";
+@import "Base/reset";
+@import "Base/typography";
+
+//HELPERS IMPORTS
+@import "Helpers/variables";
+@import "Helpers/vendor-prefixes";
+@import "components";
+
+// LAYOUT IMPORTS
+@import "Layout/susy-header";
+@import "Layout/susy-footer";
+@import "Layout/susy-newsletter";
+@import "Layout/susy-homepage";
+@import "Layout/page";
+
+// PAGE IMPORTS //
+@import "base";
+@import "Pages/Shared/header";
+@import "Pages/Shared/nav";
+@import "Pages/Shared/mini-menus";
+@import "Pages/Homepage/homepage";
+@import "Pages/Shared/footer";
+@import "Pages/Category/category";
+
+
+
+
+
+
+/* ------------------------------------------- TEMPLATE
+
+// ----- HEADER - DESKTOP ----- 
+
+
+
+// ----- HEADER - TABLET -----
+@include breakpoint($tablet-breakpoint){
+
+}
+// ----- HEADER - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+}
+
+------------------------------------------- TEMPLATE END */

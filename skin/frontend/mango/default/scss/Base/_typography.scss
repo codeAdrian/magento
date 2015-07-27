@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "mango-font-icons";
+    src: url("fonts/mango-font-icons.woff") format('woff');
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.mangoIcon{
+	font-family: mango-font-icons;
+	padding:0px 5px;
+}

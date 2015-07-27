@@ -1,0 +1,29 @@
+// SUSY VARIABLES
+$susy:(
+		global-box-sizing:border-box,
+		//debug: (image: show)
+);
+
+// SUSY BREAKPOINTS AND COLUMNS 
+$susy-desktop-header-columns:3;
+$susy-tablet-header-columns:6;
+$susy-smartphone-header-columns:6;
+
+$susy-desktop-footer-columns:4;
+$susy-smartphone-footer-columns:1;
+
+$susy-desktop-grid2-columns:2;
+$susy-smartphone-grid2-columns:1;
+
+$susy-desktop-grid3-columns:3;
+$susy-smartphone-grid3-columns:1;
+
+$susy-tablet-breakpoint:900px;
+$susy-smartphone-breakpoint:625px;
+
+// VARIABLES
+$tablet-breakpoint:max-width $susy-tablet-breakpoint;
+$smartphone-breakpoint:max-width $susy-smartphone-breakpoint;
+
+// PAGE MAX WIDTH
+$desktop-page-width:1280px;

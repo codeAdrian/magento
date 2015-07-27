@@ -1,0 +1,32 @@
+// ----- DESKTOP
+$susy:(
+	columns:$susy-desktop-footer-columns,
+	//debug: (image: show),
+	global-box-sizing:border-box
+);
+
+footer {
+	.footer{
+		@include container($susy-desktop-footer-columns);
+	}
+
+	.grid4{
+		@include span (1 of $susy-desktop-footer-columns);
+
+		&:last-child{
+			@include span (last 1 of $susy-desktop-footer-columns);
+		}
+	}
+}
+
+
+// ----- SMARTPHONE
+@include breakpoint($smartphone-breakpoint){
+
+	.footer{
+		@include container($susy-smartphone-footer-columns);
+	}
+	.grid4{
+		width:100% !important;
+	}
+}
