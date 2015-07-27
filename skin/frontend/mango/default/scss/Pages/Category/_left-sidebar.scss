@@ -1,3 +1,5 @@
+// ----- LEFT SIDEBAR - DESKTOP -----
+
 .col2-left-layout .col-left{
 	float:left;
 	width:25%;
@@ -71,7 +73,7 @@
 
 }
 
-
+// ----- LEFT SIDEBAR - TABLET -----
 @include breakpoint($tablet-breakpoint){
 	.col2-left-layout .col-left{
 		padding-top:10px;
@@ -103,6 +105,7 @@
 	}
 }
 
+// ----- LEFT SIDEBAR - SMARTPHONE -----
 @include breakpoint($smartphone-breakpoint){
 .col2-left-layout {
 	.sidebar{
