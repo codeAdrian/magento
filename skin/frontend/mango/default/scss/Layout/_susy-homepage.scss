@@ -1,0 +1,90 @@
+// ----- GRID3 -----
+// ----- DESKTOP
+$susy:(
+	columns:$susy-desktop-grid3-columns,
+	//debug: (image: show),
+	global-box-sizing:border-box
+);
+
+.homepage-product-grid{
+	@include container();
+
+	.grid3{
+		@include span(1 of $susy-desktop-grid3-columns);
+		&:last-child{
+			@include span(last 1 of $susy-desktop-grid3-columns);
+		}
+	}
+}
+
+// ----- SMARTPHONE
+@include breakpoint($smartphone-breakpoint){
+
+.homepage-product-grid{
+	@include container(1);
+
+	.grid3{
+		@include span(1 of 1);
+		&:last-child{
+			@include span(last 1 of 1);
+		}
+	}
+}
+
+}
+
+// ------ BANNER GRID2 ------
+//----- DESKTOP
+$susy:(
+	columns:$susy-desktop-grid2-columns,
+	//debug: (image: show),
+	global-box-sizing:border-box
+);
+
+.border-container{
+	@include container();
+
+	.grid2{
+			@include span(1 of $susy-desktop-grid2-columns);
+			&:last-child{
+				@include span(last 1 of $susy-desktop-grid2-columns);
+			}		
+	}
+}
+
+// ----- SMARTPHONE
+@include breakpoint($smartphone-breakpoint){
+	.border-container{
+		@include container(1);
+
+		.grid2{
+				@include span(1 of 1);
+				float:none;
+				&:last-child{
+					@include span(last 1 of 1);
+					float:none;
+				}		
+		}
+	}
+}
+
+// ------ IMAGE CONTAINER GRID2 -----
+
+$susy:(
+	columns:$susy-desktop-grid2-columns,
+	//debug: (image: show),
+	gutters:1%/50%,
+	global-box-sizing:border-box
+);
+
+.image-container{
+	@include container();
+	max-width:95%;
+	margin:30px auto;
+	.grid2{
+			@include span(1 of $susy-desktop-grid2-columns);
+			&:last-child{
+				@include span(last 1 of $susy-desktop-grid2-columns);
+			}		
+	}
+}

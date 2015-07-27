@@ -1,0 +1,41 @@
+// ----- HOMEPAGE - DESKTOP ----- 
+
+.border-container{
+	padding:10px 0px;
+	width:95%;
+}
+
+.image-container{
+	img{
+		margin:0px auto;
+	}
+}
+
+.image-container .grid2 .img-top
+{
+	padding-bottom:4.2%;
+	vertical-align: top;
+	padding-top:0px;
+	padding-bottom:auto;
+	height:100%;
+}
+
+.image-container .grid2 .img-bottom
+{
+	vertical-align:bottom;
+	padding-bototm:0px;
+	padding-top:auto;
+	height:100%;
+}
+
+
+// ----- HOMEPAGE- TABLET -----
+@include breakpoint($tablet-breakpoint){
+
+}
+// ----- HOMEPAGE - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+	.border-container{
+		border: 0;
+	}
+}
