@@ -905,6 +905,33 @@ footer .border-container .grid2:last-child {
   margin-right: 0;
 }
 
+@media (max-width: 625px) {
+  /* line 93, ../scss/Layout/_susy-homepage.scss */
+  .image-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .image-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 95, ../scss/Layout/_susy-homepage.scss */
+  .image-container .grid2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 97, ../scss/Layout/_susy-homepage.scss */
+  .image-container .grid2:last-child {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
 /* line 2, ../scss/Layout/_page.scss */
 .page {
   max-width: 1280px;

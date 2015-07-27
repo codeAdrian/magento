@@ -21,12 +21,12 @@ $susy:(
 @include breakpoint($smartphone-breakpoint){
 
 .homepage-product-grid{
-	@include container(1);
+	@include container($susy-smartphone-grid3-columns);
 
 	.grid3{
-		@include span(1 of 1);
+		@include span(1 of $susy-smartphone-grid3-columns);
 		&:last-child{
-			@include span(last 1 of 1);
+			@include span(last 1 of $susy-smartphone-grid3-columns);
 		}
 	}
 }
@@ -55,13 +55,13 @@ $susy:(
 // ----- SMARTPHONE
 @include breakpoint($smartphone-breakpoint){
 	.border-container{
-		@include container(1);
+		@include container($susy-smartphone-grid2-columns);
 
 		.grid2{
-				@include span(1 of 1);
+				@include span(1 of $susy-smartphone-grid2-columns);
 				float:none;
 				&:last-child{
-					@include span(last 1 of 1);
+					@include span(last 1 of $susy-smartphone-grid2-columns);
 					float:none;
 				}		
 		}
@@ -87,4 +87,17 @@ $susy:(
 				@include span(last 1 of $susy-desktop-grid2-columns);
 			}		
 	}
+}
+
+@include breakpoint($smartphone-breakpoint){
+	.image-container{
+	@include container(1);
+	.grid2{
+			@include span(1 of $susy-smartphone-grid2-columns);
+			&:last-child{
+				@include span(last 1 of $susy-smartphone-grid2-columns);
+			}		
+	}
+}
+
 }
