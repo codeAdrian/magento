@@ -8,5 +8,39 @@
 @import "Base/reset";
 @import "Base/typography";
 
-// PAGE IMPORTS
+//HELPERS IMPORTS
+@import "Helpers/variables";
+@import "Helpers/vendor-prefixes";
+@import "components";
+
+// LAYOUT IMPORTS
+@import "Layout/susy-header";
+@import "Layout/page";
+
+// PAGE IMPORTS //
 @import "base";
+@import "Pages/Shared/header";
+@import "Pages/Shared/nav";
+@import "Pages/Shared/mini-menus"
+
+
+
+
+
+
+
+/* ------------------------------------------- TEMPLATE
+
+// ----- HEADER - DESKTOP ----- 
+
+
+
+// ----- HEADER - TABLET -----
+@include breakpoint($tablet-breakpoint){
+
+}
+// ----- HEADER - MOBILE -----
+@include breakpoint($mobile-breakpoint){
+}
+
+------------------------------------------- TEMPLATE END */

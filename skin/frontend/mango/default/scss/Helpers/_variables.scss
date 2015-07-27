@@ -1,0 +1,19 @@
+// SUSY VARIABLES
+$susy:(
+		global-box-sizing:border-box,
+		//debug: (image: show)
+);
+
+// SUSY BREAKPOINTS
+$susy-desktop-header-columns:3;
+$susy-tablet-header-columns:6;
+$susy-smartphone-header-columns:6;
+$susy-tablet-breakpoint:900px;
+$susy-smartphone-breakpoint:625px;
+
+// VARIABLES
+$tablet-breakpoint:max-width $susy-tablet-breakpoint;
+$smartphone-breakpoint:max-width $susy-smartphone-breakpoint;
+
+// PAGE MAX WIDTH
+$desktop-page-width:1280px;
