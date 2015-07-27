@@ -214,7 +214,7 @@ header{
 		.form-search{
 			display: none;
 			position:absolute;
-			top:50px;
+			top:90px;
 			left:5px;
 			background-color: white;
 			z-index:5;
@@ -223,7 +223,7 @@ header{
 
 			&:before{
 				@include m-mini-search-box();
-				left: 125px;
+				left: 180px;
 				top: -10px;
 			}
 
@@ -315,7 +315,7 @@ header{
 
 		.form-search{
 			width:95%;
-			top:60px;
+			top:140px;
 
 			&:before{
 		 		@include m-mini-search-box();

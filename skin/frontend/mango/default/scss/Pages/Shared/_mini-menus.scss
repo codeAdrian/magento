@@ -24,6 +24,10 @@
 	display: none;
 	z-index: 999;
 	color: black;
+
+	p{
+		padding:5px 0px;
+	}
 }
 
 .content-account, .content-cart {
@@ -121,19 +125,6 @@ label.required
 	color:blacK;
 	font-weight: 300;
 }
-
-.cart .shipping-form .buttons-set button
-{
-	margin:10px;
-	padding:10px;
-	background-color:#474444;
-}
-
-.content-account #send2{
-	color:white;
-	background-color:#474444;
-}
-
 
 .back-link-button a{
 	background-color: #474444;;

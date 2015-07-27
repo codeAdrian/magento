@@ -506,13 +506,13 @@ table {
   padding: 0px 5px;
 }
 
-/* line 29, ../scss/_components.scss */
+/* line 30, ../scss/_components.scss */
 button {
   border: 0;
   padding: 10px 10px;
   min-width: 150px;
 }
-/* line 34, ../scss/_components.scss */
+/* line 35, ../scss/_components.scss */
 button span span {
   font-size: 0.75rem;
   font-weight: bold;
@@ -521,34 +521,34 @@ button span span {
   color: white;
 }
 
-/* line 56, ../scss/_components.scss */
-.red-button, .btn-checkout {
+/* line 57, ../scss/_components.scss */
+.red-button, .btn-checkout, #button_register {
   margin: 10px 0px;
   background-color: #ad0202;
 }
-/* line 46, ../scss/_components.scss */
-.red-button:hover, .btn-checkout:hover {
+/* line 47, ../scss/_components.scss */
+.red-button:hover, .btn-checkout:hover, #button_register:hover {
   background-color: black;
   cursor: pointer;
 }
-/* line 51, ../scss/_components.scss */
-.red-button:active, .btn-checkout:active {
+/* line 52, ../scss/_components.scss */
+.red-button:active, .btn-checkout:active, #button_register:active {
   background-color: #fd4b4b;
 }
 
-/* line 63, ../scss/_components.scss */
-#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button {
+/* line 64, ../scss/_components.scss */
+#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, .checkout-wrapper .buttons-set button, #send2 {
   width: 20%;
   margin: 10px 5px;
   background-color: #474444;
 }
-/* line 46, ../scss/_components.scss */
-#shopping-cart-table .btn-continue:hover, #shopping-cart-table .btn-update:hover, #shopping-cart-table #empty_cart_button:hover, .cart .cart-collaterals .buttons-set button:hover, .gray-button:hover {
+/* line 47, ../scss/_components.scss */
+#shopping-cart-table .btn-continue:hover, #shopping-cart-table .btn-update:hover, #shopping-cart-table #empty_cart_button:hover, .cart .cart-collaterals .buttons-set button:hover, .gray-button:hover, .checkout-wrapper .buttons-set button:hover, #send2:hover {
   background-color: black;
   cursor: pointer;
 }
-/* line 51, ../scss/_components.scss */
-#shopping-cart-table .btn-continue:active, #shopping-cart-table .btn-update:active, #shopping-cart-table #empty_cart_button:active, .cart .cart-collaterals .buttons-set button:active, .gray-button:active {
+/* line 52, ../scss/_components.scss */
+#shopping-cart-table .btn-continue:active, #shopping-cart-table .btn-update:active, #shopping-cart-table #empty_cart_button:active, .cart .cart-collaterals .buttons-set button:active, .gray-button:active, .checkout-wrapper .buttons-set button:active, #send2:active {
   background-color: #949090;
 }
 
@@ -3903,7 +3903,7 @@ header .top-link-cart span {
   header .form-search {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 90px;
     left: 5px;
     background-color: white;
     z-index: 5;
@@ -3921,7 +3921,7 @@ header .top-link-cart span {
     border-right: 5px solid transparent !important;
     border-left: 5px solid rgba(80, 0, 0, 0);
     position: absolute;
-    left: 125px;
+    left: 180px;
     top: -10px;
   }
   /* line 230, ../scss/Pages/Shared/_header.scss */
@@ -4002,7 +4002,7 @@ header .top-link-cart span {
   /* line 316, ../scss/Pages/Shared/_header.scss */
   header .form-search {
     width: 95%;
-    top: 60px;
+    top: 140px;
   }
   /* line 320, ../scss/Pages/Shared/_header.scss */
   header .form-search:before {
@@ -4390,8 +4390,12 @@ nav ul li ul li a {
   z-index: 999;
   color: black;
 }
+/* line 28, ../scss/Pages/Shared/_mini-menus.scss */
+.mini-menu p {
+  padding: 5px 0px;
+}
 
-/* line 29, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 33, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account, .content-cart {
   border: 1px solid #969696;
   position: relative;
@@ -4399,12 +4403,12 @@ nav ul li ul li a {
   padding: 0.5em 2em 1em 2em;
 }
 
-/* line 36, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 40, ../scss/Pages/Shared/_mini-menus.scss */
 #cart-free-delivery p {
   margin: 8px 0px;
 }
 
-/* line 40, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 44, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-outline {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4421,7 +4425,7 @@ nav ul li ul li a {
   padding: 0px;
 }
 
-/* line 52, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 56, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-inside {
   margin: 0px;
   padding: 0px;
@@ -4433,18 +4437,18 @@ nav ul li ul li a {
   border-radius: 5px;
 }
 
-/* line 61, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 65, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-subtext {
   font-size: 0.8em;
 }
 
-/* line 65, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 69, ../scss/Pages/Shared/_mini-menus.scss */
 #free-delivery-text {
   text-transform: uppercase;
   font-size: 0.9em;
 }
 
-/* line 70, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 74, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account:before {
   z-index: -10;
   content: '';
@@ -4459,7 +4463,7 @@ nav ul li ul li a {
   top: -10px;
 }
 
-/* line 76, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 80, ../scss/Pages/Shared/_mini-menus.scss */
 .content-cart:before {
   z-index: -10;
   content: '';
@@ -4474,20 +4478,20 @@ nav ul li ul li a {
   top: -10px;
 }
 
-/* line 82, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 86, ../scss/Pages/Shared/_mini-menus.scss */
 form span {
   color: black;
 }
 
 /* MINI MENU END */
 /* LOGIN MINI-MENU*/
-/* line 91, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 95, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account .form-list {
   padding: 0;
   list-style: none;
   margin: 0;
 }
-/* line 96, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 100, ../scss/Pages/Shared/_mini-menus.scss */
 .content-account .form-list li {
   padding: 0px 0px 15px 0px;
   text-transform: uppercase;
@@ -4496,7 +4500,7 @@ form span {
   color: #bdbbbb;
 }
 
-/* line 105, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 109, ../scss/Pages/Shared/_mini-menus.scss */
 .input-box {
   text-align: center;
   width: 100%;
@@ -4504,33 +4508,20 @@ form span {
   text-align: left;
   font-size: 0.8em;
 }
-/* line 112, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 116, ../scss/Pages/Shared/_mini-menus.scss */
 .input-box input {
   color: black;
   text-align: left;
   width: 90%;
 }
 
-/* line 119, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 123, ../scss/Pages/Shared/_mini-menus.scss */
 label.required {
   color: blacK;
   font-weight: 300;
 }
 
-/* line 125, ../scss/Pages/Shared/_mini-menus.scss */
-.cart .shipping-form .buttons-set button {
-  margin: 10px;
-  padding: 10px;
-  background-color: #474444;
-}
-
-/* line 132, ../scss/Pages/Shared/_mini-menus.scss */
-.content-account #send2 {
-  color: white;
-  background-color: #474444;
-}
-
-/* line 138, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 129, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a {
   background-color: #474444;
   color: white;
@@ -4543,16 +4534,16 @@ label.required {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 150, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 141, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a:hover {
   background-color: black;
 }
-/* line 154, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 145, ../scss/Pages/Shared/_mini-menus.scss */
 .back-link-button a:active {
   background-color: #9b9a9a;
 }
 
-/* line 160, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 151, ../scss/Pages/Shared/_mini-menus.scss */
 a.f-left {
   margin: 5px 0px;
   display: block;
@@ -4560,17 +4551,17 @@ a.f-left {
   color: black;
 }
 
-/* line 167, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 158, ../scss/Pages/Shared/_mini-menus.scss */
 .registered-users hr {
   margin: 12px 0px;
 }
 
-/* line 171, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 162, ../scss/Pages/Shared/_mini-menus.scss */
 #button_register {
   background-color: #ad0202;
   font-weight: bold;
 }
-/* line 175, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 166, ../scss/Pages/Shared/_mini-menus.scss */
 #button_register span span {
   color: white;
   text-transform: uppercase;
@@ -4578,59 +4569,59 @@ a.f-left {
 
 /* LOGIN MINI MENU END */
 /* CART MINI MENU */
-/* line 185, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 176, ../scss/Pages/Shared/_mini-menus.scss */
 #cart-sidebar {
   list-style: none;
   padding: 0px;
 }
 
-/* line 190, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 181, ../scss/Pages/Shared/_mini-menus.scss */
 .amount {
   font-size: 0.8em;
 }
 
-/* line 195, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 186, ../scss/Pages/Shared/_mini-menus.scss */
 #mini_cart_checkout {
   color: white;
   background-color: #ad0202;
   text-align: center;
 }
-/* line 46, ../scss/_components.scss */
+/* line 47, ../scss/_components.scss */
 #mini_cart_checkout:hover {
   background-color: black;
   cursor: pointer;
 }
-/* line 51, ../scss/_components.scss */
+/* line 52, ../scss/_components.scss */
 #mini_cart_checkout:active {
   background-color: #fd4b4b;
 }
 
-/* line 201, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 192, ../scss/Pages/Shared/_mini-menus.scss */
 #mini_cart_edit {
   color: white;
   background-color: #474444;
 }
-/* line 46, ../scss/_components.scss */
+/* line 47, ../scss/_components.scss */
 #mini_cart_edit:hover {
   background-color: black;
   cursor: pointer;
 }
-/* line 51, ../scss/_components.scss */
+/* line 52, ../scss/_components.scss */
 #mini_cart_edit:active {
   background-color: #949090;
 }
 
-/* line 206, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 197, ../scss/Pages/Shared/_mini-menus.scss */
 .product-image {
   vertical-align: middle;
   width: 30%;
 }
-/* line 210, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 201, ../scss/Pages/Shared/_mini-menus.scss */
 .product-image img {
   margin: 0px auto;
 }
 
-/* line 215, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 206, ../scss/Pages/Shared/_mini-menus.scss */
 .product-details {
   display: inline-block;
   width: 50%;
@@ -4639,7 +4630,7 @@ a.f-left {
   font-size: 0.8em;
 }
 
-/* line 223, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 214, ../scss/Pages/Shared/_mini-menus.scss */
 .btn-remove {
   text-decoration: none;
   text-align: center;
@@ -4653,11 +4644,11 @@ a.f-left {
   margin: 5px 0px auto 0px;
 }
 
-/* line 234, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 225, ../scss/Pages/Shared/_mini-menus.scss */
 .product-name {
   margin: 7px 0px;
 }
-/* line 237, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 228, ../scss/Pages/Shared/_mini-menus.scss */
 .product-name a {
   text-decoration: none;
   color: black;
@@ -4665,50 +4656,50 @@ a.f-left {
   text-transform: uppercase;
 }
 
-/* line 245, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 236, ../scss/Pages/Shared/_mini-menus.scss */
 .content-cart hr {
   border: 0;
   border-top: 1px solid #b0b0b0;
   color: #b0b0b0;
 }
 
-/* line 250, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 241, ../scss/Pages/Shared/_mini-menus.scss */
 .subtotal {
   font-weight: bold;
 }
 
 /* CART MINI MENU END */
 @media (max-width: 900px) {
-  /* line 259, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 250, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
   }
 
-  /* line 263, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 254, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     right: 2%;
   }
 }
 @media (max-width 625px) {
-  /* line 269, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 260, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     top: 150px;
     right: 4%;
   }
 
-  /* line 274, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 265, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
     top: 150px;
     width: 310px;
   }
-  /* line 279, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 270, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart .product-image {
     width: 30%;
     display: inline-block;
   }
 
-  /* line 285, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 276, ../scss/Pages/Shared/_mini-menus.scss */
   .content-cart {
     padding: 5px 0px;
   }

@@ -26,6 +26,7 @@
 
 
 // ----------- BUTTONS -----------
+
 button{
 	border: 0;
 	padding:10px 10px;
@@ -53,14 +54,14 @@ button{
 	}
 }
 
-.red-button, .btn-checkout{
+.red-button, .btn-checkout, #button_register{
 	
 	margin:10px 0px;
 	@include m-mango-buttons(#ad0202);
 	
 }
 
-#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button{
+#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, .checkout-wrapper .buttons-set button, #send2{
 	width:20%;
 	margin:10px 5px;
 	@include m-mango-buttons(#474444);
