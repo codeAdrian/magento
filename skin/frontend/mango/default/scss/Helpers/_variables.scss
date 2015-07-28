@@ -1,10 +1,10 @@
-// SUSY VARIABLES
+// ----- SUSY VARIABLES ----- 
 $susy:(
 		global-box-sizing:border-box,
 		//debug: (image: show)
 );
 
-// SUSY BREAKPOINTS AND COLUMNS 
+// ----- SUSY BREAKPOINTS AND COLUMNS ----- 
 $susy-desktop-header-columns:3;
 $susy-tablet-header-columns:6;
 $susy-smartphone-header-columns:6;
@@ -21,9 +21,27 @@ $susy-smartphone-grid3-columns:1;
 $susy-tablet-breakpoint:900px;
 $susy-smartphone-breakpoint:625px;
 
-// VARIABLES
+// ----- VARIABLES ----- 
 $tablet-breakpoint:max-width $susy-tablet-breakpoint;
 $smartphone-breakpoint:max-width $susy-smartphone-breakpoint;
 
-// PAGE MAX WIDTH
+// ----- PAGE MAX WIDTH ----- 
 $desktop-page-width:1280px;
+
+// ----- SWATCHES COLOR VARIABLES ----- 
+
+$c-black:#000;
+$c-blue:blue;
+$c-brown:#8B4513;
+$c-green:green;
+$c-gray:gray;
+$c-indigo:#4B0082;
+$c-khaki:#bdb76b;
+$c-oatmeal:#fff8dc;
+$c-orange:orange;
+$c-pink:#FF69B4;
+$c-purple:purple;
+$c-silver:silver;
+$c-red:red;
+$c-white:white;
+$c-yellow:yellow;
