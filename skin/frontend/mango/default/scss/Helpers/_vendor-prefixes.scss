@@ -1,7 +1,7 @@
 @mixin m-box-sizing($sizing){
- 		     box-sizing:$sizing;
-  	-moz-box-sizing:$sizing;
  -webkit-box-sizing:$sizing;
+    -moz-box-sizing:$sizing;
+         box-sizing:$sizing;
 }
 
 @mixin m-transition($attr, $duration, $ease){
