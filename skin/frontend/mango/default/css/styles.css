@@ -4209,8 +4209,8 @@ footer #newsletter-validate-detail .block-content {
 }
 /* line 74, ../scss/Pages/Shared/_footer.scss */
 footer .footer {
-  margin: 30px 0 20px;
-  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 /* line 79, ../scss/Pages/Shared/_footer.scss */
 footer .grid4 {
