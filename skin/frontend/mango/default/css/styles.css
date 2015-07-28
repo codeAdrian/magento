@@ -614,7 +614,7 @@ button span span {
 @media (max-width: 900px) {
   /* line 124, ../scss/_components.scss */
   .breadcrumbs {
-    margin: 40px 0px 10px 10px;
+    margin: 20px 0px 20px 0px;
   }
 }
 /* line 7, ../scss/Layout/_susy-header.scss */
@@ -5135,11 +5135,6 @@ footer .footer .grid4 ul li a:visited {
   .product-name h1 {
     font-size: 1.25em;
     font-weight: bold;
-  }
-
-  /* line 433, ../scss/Pages/Product/_product.scss */
-  .breadcrumbs {
-    margin: 20px 0px;
   }
 }
 /* ------------------------------------------- TEMPLATE

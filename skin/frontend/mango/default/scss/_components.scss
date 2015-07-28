@@ -122,6 +122,6 @@ button{
 // ----- TABLET
 @include breakpoint($tablet-breakpoint){
 	.breadcrumbs{
-		margin:40px 0px 10px 10px;
+		margin:20px 0px 20px 0px;
 	}	
 }
