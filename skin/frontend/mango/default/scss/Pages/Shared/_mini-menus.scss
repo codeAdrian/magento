@@ -2,7 +2,7 @@
 
 #mini-menu-account {
 	position: absolute;
-	right:20%;
+	right:0%;
 	top: 50px;
 	font-size: 0.75em;
 	width: 250px;
@@ -11,7 +11,7 @@
 #mini-menu-cart {
 	@extend #mini-menu-account;
 	font-size:1em;
-	right:17%;
+	right:0%;
 	top: 50px;
 	width:370px;
 
@@ -72,13 +72,13 @@
 }
 
 .content-account:before {
-	@include m-mini-menu-box();
+	@include m-mini-menu-box(25px, 0px, 13px, 13px);
 	left: 160px;
 	top: -10px;
 }
 
 .content-cart:before {
-	@include m-mini-menu-box();
+	@include m-mini-menu-box(25px, 0px, 13px, 13px);
 	right: 10px;
 	top: -10px;
 }
@@ -176,6 +176,7 @@ a.f-left{
 #cart-sidebar{
 	list-style: none;
 	padding:0px;
+	margin:10px auto;
 }
 
 .amount{
@@ -256,20 +257,24 @@ a.f-left{
 	}
 }
 // ----- MINI MENU - MOBILE -----
-@media($smartphone-breakpoint){
+@include breakpoint($smartphone-breakpoint){
 	#mini-menu-account{
-		top:150px;
+		top:50px;
 		right:4%;
 	}
 
 	#mini-menu-cart{
 		right:0%;
-		top:150px;
-		width:310px;
+		top:50px;
+		width:300px;
 
 		.product-image{
 			width:30%;
 			display: inline-block;
+		}
+
+		.grid2{
+			margin:5px auto;
 		}
 	}
 

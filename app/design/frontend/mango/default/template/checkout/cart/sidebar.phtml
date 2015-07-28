@@ -73,15 +73,14 @@
             </p>
             <hr/>
 
-<div class="grid2">
+<div class="buttons-container">
+                    <div class="grid2">
                     <button id="mini_cart_edit" type="button" title="<?php echo $this->__('Checkout') ?>" class="button" onclick="setLocation('<?php echo Mage::helper('checkout/cart')->getCartUrl() ?>')"><span><span><?php echo $this->__('Edit cart') ?></span></span></button>
+                    </div>
 
-</div>
-
-<div class="grid2">
-
+                    <div class="grid2">
                     <button id="mini_cart_checkout" type="button" title="<?php echo $this->__('Checkout') ?>" class="button" onclick="setLocation('<?php echo $this->getCheckoutUrl() ?>')"><span><span><?php echo $this->__('Checkout') ?></span></span></button>
-
+                    </div>
 </div>
 
         <script type="text/javascript">decorateList('cart-sidebar', 'none-recursive')</script>

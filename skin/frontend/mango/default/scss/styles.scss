@@ -17,6 +17,8 @@
 @import "Layout/susy-header";
 @import "Layout/susy-footer";
 @import "Layout/susy-newsletter";
+@import "Layout/susy-homepage";
+@import "Layout/susy-mini-menu";
 @import "Layout/page";
 
 // PAGE IMPORTS //
@@ -24,8 +26,9 @@
 @import "Pages/Shared/header";
 @import "Pages/Shared/nav";
 @import "Pages/Shared/mini-menus";
+@import "Pages/Homepage/homepage";
 @import "Pages/Shared/footer";
-
+@import "Pages/Category/category";
 
 
 

@@ -1,3 +1,4 @@
+// ----- DESKTOP
 $susy:(
 	columns:$susy-desktop-grid2-columns,
 	//debug: (image: show),
@@ -16,6 +17,7 @@ footer .border-container{
 	}
 }
 
+// ----- SMARTPHONE
 @include breakpoint($smartphone-breakpoint){
 footer .border-container{
 		@include container();
