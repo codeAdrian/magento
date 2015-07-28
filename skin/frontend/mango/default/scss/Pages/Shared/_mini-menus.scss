@@ -176,6 +176,7 @@ a.f-left{
 #cart-sidebar{
 	list-style: none;
 	padding:0px;
+	margin:10px auto;
 }
 
 .amount{
@@ -256,20 +257,24 @@ a.f-left{
 	}
 }
 // ----- MINI MENU - MOBILE -----
-@media($smartphone-breakpoint){
+@include breakpoint($smartphone-breakpoint){
 	#mini-menu-account{
-		top:150px;
+		top:50px;
 		right:4%;
 	}
 
 	#mini-menu-cart{
 		right:0%;
-		top:150px;
-		width:310px;
+		top:50px;
+		width:300px;
 
 		.product-image{
 			width:30%;
 			display: inline-block;
+		}
+
+		.grid2{
+			margin:5px auto;
 		}
 	}
 

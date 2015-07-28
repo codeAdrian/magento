@@ -981,6 +981,58 @@ footer .border-container .grid2:last-child {
     margin-right: 0;
   }
 }
+/* line 9, ../scss/Layout/_susy-mini-menu.scss */
+#mini-menu-cart .buttons-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#mini-menu-cart .buttons-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 13, ../scss/Layout/_susy-mini-menu.scss */
+#mini-menu-cart .grid2 {
+  width: 44.44444%;
+  float: left;
+  margin-right: 11.11111%;
+}
+/* line 16, ../scss/Layout/_susy-mini-menu.scss */
+#mini-menu-cart .grid2:last-child {
+  width: 44.44444%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 625px) {
+  /* line 25, ../scss/Layout/_susy-mini-menu.scss */
+  #mini-menu-cart .buttons-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  #mini-menu-cart .buttons-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 29, ../scss/Layout/_susy-mini-menu.scss */
+  #mini-menu-cart .grid2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 32, ../scss/Layout/_susy-mini-menu.scss */
+  #mini-menu-cart .grid2:last-child {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
 /* line 2, ../scss/Layout/_page.scss */
 .page {
   max-width: 1280px;
@@ -3629,7 +3681,7 @@ nav ul li {
   margin-right: 40px;
 }
 /* line 17, ../scss/Pages/Shared/_nav.scss */
-nav ul li .last {
+nav ul li.last {
   margin-right: 0px;
 }
 /* line 21, ../scss/Pages/Shared/_nav.scss */
@@ -4148,14 +4200,15 @@ a.f-left {
 #cart-sidebar {
   list-style: none;
   padding: 0px;
+  margin: 10px auto;
 }
 
-/* line 181, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 182, ../scss/Pages/Shared/_mini-menus.scss */
 .amount {
   font-size: 0.8em;
 }
 
-/* line 186, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 187, ../scss/Pages/Shared/_mini-menus.scss */
 #mini_cart_checkout {
   color: white;
   background-color: #ad0202;
@@ -4171,7 +4224,7 @@ a.f-left {
   background-color: #fd4b4b;
 }
 
-/* line 192, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 193, ../scss/Pages/Shared/_mini-menus.scss */
 #mini_cart_edit {
   color: white;
   background-color: #474444;
@@ -4186,17 +4239,17 @@ a.f-left {
   background-color: #949090;
 }
 
-/* line 197, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 198, ../scss/Pages/Shared/_mini-menus.scss */
 .product-image {
   vertical-align: middle;
   width: 30%;
 }
-/* line 201, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 202, ../scss/Pages/Shared/_mini-menus.scss */
 .product-image img {
   margin: 0px auto;
 }
 
-/* line 206, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 207, ../scss/Pages/Shared/_mini-menus.scss */
 .product-details {
   display: inline-block;
   width: 50%;
@@ -4205,7 +4258,7 @@ a.f-left {
   font-size: 0.8em;
 }
 
-/* line 214, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 215, ../scss/Pages/Shared/_mini-menus.scss */
 .btn-remove {
   text-decoration: none;
   text-align: center;
@@ -4219,11 +4272,11 @@ a.f-left {
   margin: 5px 0px auto 0px;
 }
 
-/* line 225, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 226, ../scss/Pages/Shared/_mini-menus.scss */
 .product-name {
   margin: 7px 0px;
 }
-/* line 228, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 229, ../scss/Pages/Shared/_mini-menus.scss */
 .product-name a {
   text-decoration: none;
   color: black;
@@ -4231,50 +4284,54 @@ a.f-left {
   text-transform: uppercase;
 }
 
-/* line 236, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 237, ../scss/Pages/Shared/_mini-menus.scss */
 .content-cart hr {
   border: 0;
   border-top: 1px solid #b0b0b0;
   color: #b0b0b0;
 }
 
-/* line 241, ../scss/Pages/Shared/_mini-menus.scss */
+/* line 242, ../scss/Pages/Shared/_mini-menus.scss */
 .subtotal {
   font-weight: bold;
 }
 
 /* CART MINI MENU END */
 @media (max-width: 900px) {
-  /* line 250, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 251, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
   }
 
-  /* line 254, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 255, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     right: 2%;
   }
 }
-@media (max-width 625px) {
-  /* line 260, ../scss/Pages/Shared/_mini-menus.scss */
+@media (max-width: 625px) {
+  /* line 261, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
-    top: 150px;
+    top: 50px;
     right: 4%;
   }
 
-  /* line 265, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 266, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
-    top: 150px;
-    width: 310px;
+    top: 50px;
+    width: 300px;
   }
-  /* line 270, ../scss/Pages/Shared/_mini-menus.scss */
+  /* line 271, ../scss/Pages/Shared/_mini-menus.scss */
   #mini-menu-cart .product-image {
     width: 30%;
     display: inline-block;
   }
-
   /* line 276, ../scss/Pages/Shared/_mini-menus.scss */
+  #mini-menu-cart .grid2 {
+    margin: 5px auto;
+  }
+
+  /* line 281, ../scss/Pages/Shared/_mini-menus.scss */
   .content-cart {
     padding: 5px 0px;
   }
