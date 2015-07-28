@@ -506,13 +506,13 @@ table {
   padding: 0px 5px;
 }
 
-/* line 30, ../scss/_components.scss */
+/* line 17, ../scss/_components.scss */
 button {
   border: 0;
   padding: 10px 10px;
   min-width: 150px;
 }
-/* line 35, ../scss/_components.scss */
+/* line 22, ../scss/_components.scss */
 button span span {
   font-size: 0.75rem;
   font-weight: bold;
@@ -521,38 +521,38 @@ button span span {
   color: white;
 }
 
-/* line 57, ../scss/_components.scss */
+/* line 44, ../scss/_components.scss */
 .red-button, .btn-checkout, #button_register {
   margin: 10px 0px;
   background-color: #ad0202;
 }
-/* line 47, ../scss/_components.scss */
+/* line 34, ../scss/_components.scss */
 .red-button:hover, .btn-checkout:hover, #button_register:hover {
   background-color: black;
   cursor: pointer;
 }
-/* line 52, ../scss/_components.scss */
+/* line 39, ../scss/_components.scss */
 .red-button:active, .btn-checkout:active, #button_register:active {
   background-color: #fd4b4b;
 }
 
-/* line 64, ../scss/_components.scss */
+/* line 51, ../scss/_components.scss */
 #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, .checkout-wrapper .buttons-set button, #send2 {
   width: 20%;
   margin: 10px 5px;
   background-color: #474444;
 }
-/* line 47, ../scss/_components.scss */
+/* line 34, ../scss/_components.scss */
 #shopping-cart-table .btn-continue:hover, #shopping-cart-table .btn-update:hover, #shopping-cart-table #empty_cart_button:hover, .cart .cart-collaterals .buttons-set button:hover, .gray-button:hover, .checkout-wrapper .buttons-set button:hover, #send2:hover {
   background-color: black;
   cursor: pointer;
 }
-/* line 52, ../scss/_components.scss */
+/* line 39, ../scss/_components.scss */
 #shopping-cart-table .btn-continue:active, #shopping-cart-table .btn-update:active, #shopping-cart-table #empty_cart_button:active, .cart .cart-collaterals .buttons-set button:active, .gray-button:active, .checkout-wrapper .buttons-set button:active, #send2:active {
   background-color: #949090;
 }
 
-/* line 72, ../scss/_components.scss */
+/* line 59, ../scss/_components.scss */
 #newsletter_banner {
   background-color: black;
   color: white;
@@ -563,12 +563,12 @@ button span span {
   margin-bottom: 15px;
   padding: 5px 10px;
 }
-/* line 82, ../scss/_components.scss */
+/* line 69, ../scss/_components.scss */
 #newsletter_banner p {
   padding: 2px 0px;
 }
 
-/* line 89, ../scss/_components.scss */
+/* line 76, ../scss/_components.scss */
 .category-title h1, .dashboard-page-title h1, .my-account .page-title h1, .checkout-wrapper .page-title h1 {
   text-align: center;
   text-transform: uppercase;
@@ -578,7 +578,7 @@ button span span {
   font-size: 2.5rem;
 }
 
-/* line 100, ../scss/_components.scss */
+/* line 87, ../scss/_components.scss */
 .category-divider, .my-account-divider {
   margin: 0px;
   padding: 0px;
@@ -589,22 +589,22 @@ button span span {
 }
 
 @media (max-width: 625px) {
-  /* line 111, ../scss/_components.scss */
+  /* line 98, ../scss/_components.scss */
   .category-divider, .my-account-divider {
     margin: 2px;
   }
 }
-/* line 119, ../scss/_components.scss */
+/* line 106, ../scss/_components.scss */
 .breadcrumbs ul {
   list-style: none;
   margin: 0px 0px 0px 10px;
   font-size: 0.8em;
 }
-/* line 124, ../scss/_components.scss */
+/* line 111, ../scss/_components.scss */
 .breadcrumbs ul li {
   display: inline-block;
 }
-/* line 127, ../scss/_components.scss */
+/* line 114, ../scss/_components.scss */
 .breadcrumbs ul li a {
   text-decoration: none;
   color: black;
@@ -612,7 +612,7 @@ button span span {
 }
 
 @media (max-width: 900px) {
-  /* line 137, ../scss/_components.scss */
+  /* line 124, ../scss/_components.scss */
   .breadcrumbs {
     margin: 40px 0px 10px 10px;
   }
@@ -3492,7 +3492,7 @@ header .top-link-cart span {
     width: 0;
     height: 0;
     border: 10px solid #555151;
-    border-top: 0 solid rgba(60, 0, 0, 0) !important;
+    border-top: 0px solid rgba(60, 0, 0, 0) !important;
     border-right: 5px solid transparent !important;
     border-left: 5px solid rgba(80, 0, 0, 0);
     position: absolute;
@@ -3586,7 +3586,7 @@ header .top-link-cart span {
     width: 0;
     height: 0;
     border: 10px solid #555151;
-    border-top: 0 solid rgba(60, 0, 0, 0) !important;
+    border-top: 0px solid rgba(60, 0, 0, 0) !important;
     border-right: 5px solid transparent !important;
     border-left: 5px solid rgba(80, 0, 0, 0);
     position: absolute;
@@ -4030,7 +4030,7 @@ nav ul li ul li a {
   width: 0;
   height: 0;
   border: 25px solid #555151;
-  border-top: 0 solid rgba(60, 0, 0, 0) !important;
+  border-top: 0px solid rgba(60, 0, 0, 0) !important;
   border-right: 13px solid transparent !important;
   border-left: 13px solid rgba(80, 0, 0, 0);
   position: absolute;
@@ -4045,7 +4045,7 @@ nav ul li ul li a {
   width: 0;
   height: 0;
   border: 25px solid #555151;
-  border-top: 0 solid rgba(60, 0, 0, 0) !important;
+  border-top: 0px solid rgba(60, 0, 0, 0) !important;
   border-right: 13px solid transparent !important;
   border-left: 13px solid rgba(80, 0, 0, 0);
   position: absolute;
@@ -4161,12 +4161,12 @@ a.f-left {
   background-color: #ad0202;
   text-align: center;
 }
-/* line 47, ../scss/_components.scss */
+/* line 34, ../scss/_components.scss */
 #mini_cart_checkout:hover {
   background-color: black;
   cursor: pointer;
 }
-/* line 52, ../scss/_components.scss */
+/* line 39, ../scss/_components.scss */
 #mini_cart_checkout:active {
   background-color: #fd4b4b;
 }
@@ -4176,12 +4176,12 @@ a.f-left {
   color: white;
   background-color: #474444;
 }
-/* line 47, ../scss/_components.scss */
+/* line 34, ../scss/_components.scss */
 #mini_cart_edit:hover {
   background-color: black;
   cursor: pointer;
 }
-/* line 52, ../scss/_components.scss */
+/* line 39, ../scss/_components.scss */
 #mini_cart_edit:active {
   background-color: #949090;
 }
