@@ -5,6 +5,22 @@
 	margin:10px;
 	line-height:1.5em;
 }
+
+.product-details-container{
+	margin:20px 10px;
+
+	.grid2{
+		h2{
+			padding-bottom:10px;
+			font-weight: bold;
+		}
+
+		h1{
+			@extend h2;
+			font-weight: normal;
+		}
+	}
+}
 .product-view{
 	margin-top:30px;
 }
