@@ -45,6 +45,10 @@
 		text-transform: uppercase;
 		font-size: 0.75em;
 		background-color: white;
+
+		&:hover{
+			cursor:default;
+		}
 	}	
 
 	.out-of-stock{

@@ -1,29 +1,16 @@
 // ---------- MINI MENU BOX BORDERS ----------
 
-@mixin m-mini-menu-box(){
+@mixin m-mini-menu-box($main-border, $top-border, $left-border, $right-border){
 	z-index: -10;
 	content: '';
 	width: 0;
 	height: 0;
-	border: 25px solid #555151;
-	border-top: 0 solid rgba(60, 0, 0, 0)!important;
-	border-right: 13px solid rgba(0, 0, 0, 0)!important;
-	border-left: 13px solid rgba(80, 0, 0, 0);
+	border: $main-border solid #555151;
+	border-top: $top-border solid rgba(60, 0, 0, 0)!important;
+	border-right: $right-border solid rgba(0, 0, 0, 0)!important;
+	border-left: $left-border solid rgba(80, 0, 0, 0);
 	position: absolute;
 }
-
-@mixin m-mini-search-box(){
-	z-index: -10;
-	content: '';
-	width: 0;
-	height: 0;
-	border: 10px solid #555151;
-	border-top: 0 solid rgba(60, 0, 0, 0)!important;
-	border-right: 5px solid rgba(0, 0, 0, 0)!important;
-	border-left: 5px solid rgba(80, 0, 0, 0);
-	position:absolute;
-}
-
 
 // ----------- BUTTONS -----------
 
@@ -135,6 +122,6 @@ button{
 // ----- TABLET
 @include breakpoint($tablet-breakpoint){
 	.breadcrumbs{
-		margin:40px 0px 10px 10px;
+		margin:20px 0px 20px 0px;
 	}	
 }

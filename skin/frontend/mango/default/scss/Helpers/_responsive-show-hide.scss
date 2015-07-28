@@ -1,0 +1,13 @@
+.desktopTabletOnly{
+	display: block;
+}
+
+@include breakpoint($tablet-breakpoint){
+	.desktopTabletOnly{
+	display: block;
+	}
+}
+
+@include breakpoint($smartphone-breakpoint){
+	
+}

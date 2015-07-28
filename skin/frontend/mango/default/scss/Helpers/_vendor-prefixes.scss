@@ -1,7 +1,7 @@
 @mixin m-box-sizing($sizing){
- 		 box-sizing:$sizing;
-  	-moz-box-sizing:$sizing;
  -webkit-box-sizing:$sizing;
+    -moz-box-sizing:$sizing;
+         box-sizing:$sizing;
 }
 
 @mixin m-transition($attr, $duration, $ease){
@@ -16,4 +16,10 @@
 	-webkit-border-radius: $radius;
        -moz-border-radius: $radius;
             border-radius: $radius;
+}
+
+@mixin m-user-select($property){
+    -webkit-user-select: $property;      
+       -moz-user-select: $property; 
+        -ms-user-select: $property;  
 }
