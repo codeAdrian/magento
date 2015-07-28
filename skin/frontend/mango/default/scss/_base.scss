@@ -73,71 +73,7 @@ body
 
 
 
-#newsletter_banner
-{
-	background-color: black;
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
-	margin: 0 auto;
-	margin:0px;
-	margin-bottom: 15px;
-	padding:5px 10px;
-}
 
-#newsletter_banner p
-{
-padding:2px 0px;
-}
-
-#newsletter-validate-detail .block-content{
-	width:350px;
-}
-
-#newsletter-validate-detail {
-	text-align: center;
-	margin:0px auto;
-}
-
-#newsletter-validate-detail .block-content #newsletter, #newsletter-validate-detail .block-content .button{
-float:right;
-min-width: 30%;
-}
-
-#newsletter-validate-detail .block-content #newsletter{
-	width:60%;
-	border:1px solid black;
-	font-size: 1em;
-	text-align: center;
-	height:18px;
-}
-
-.block-subscribe{
-	width:90%;
-}
-
-.block-subscribe #newsletter-validate-detail, .block-subscribe #newsletter-validate-detail .block-content{
-	width:100%;
-}
-
-.subscribe-button{
-	
-	border:1px solid black;
-	margin:0px;
-	background-color: black;
-	padding:3px;
-	min-width:100px;
-	height:22px;
-}
-
-.subscribe-button span{
-	color:white;
-	font-weight: bold;
-}
-
-#newsletter-validate-detail .block-content {
-margin:0px auto;
-}
 
 
 /* NAV FIXED END*/
@@ -300,451 +236,20 @@ text-transform: uppercase;
 	text-align: center;
 }
 
-.image-container
-{
-	vertical-align: top;
-	text-align: center;
-	margin:30px 0px;
-	text-align: center;
-
-}
-
-.grid2
-{
-	display:inline-block;
-	width:49%;
-	text-align: center;
-	text-transform: uppercase;
-	margin:0 auto;
-}
-
-.grid2 p{
-	margin-left:20%;
-	margin-right:auto;
-	font-size: 1em;
-	text-align: left;
-}
-
-.image-container .grid2 .img-top
-{
-	padding-bottom:4.8%;
-	vertical-align: top;
-	padding-top:0px;
-	padding-bottom:auto;
-	height:100%;
-}
-
-.image-container .grid2 .img-bottom
-{
-	vertical-align:bottom;
-	padding-bototm:0px;
-	padding-top:auto;
-	height:100%;
-}
-
-.grid3
-{
-	width:32.5%;
-	display: inline-block;
-	margin:0 auto;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.grid3 h2
-{
-	margin:0px;
-	padding:5px 0px;
-}
-
 .form-container
 {
 	vertical-align: middle;
 	margin-bottom:25px;
 }
 
-/* FOOTER */
-
-footer{
-	clear:both;
-}
-
-footer .footer{
-	//margin:30px 7% 0px 7%;
-	margin:30px 0 0;
-	text-align: center;
-}
-
-.grid4{
-	display: inline-block;
-	margin:10px 3%;
-	vertical-align: top;
-	text-align: left;
-}
-
-footer .footer .grid4 ul{
-list-style: none;
-padding:0px;
-}
-
-footer .footer .grid4 ul li {
-	padding:3px 0px;
-}
-
-footer .footer .grid4 ul li a{
-	text-decoration: none;
-	color:black;
-	font-size:0.9em;
-}
-
-footer .footer .grid4 ul li a:hover{
-font-weight: bold;
-}
-
-footer .footer .grid4 ul li a:visited{
-	color:#969696;
-}
-
-/* FOOTER END */
-
-
 
 /* PRODUCT CATEGORIES */
 
-/* COLOR SWATCHES */
-
-.colorSwatches{
-	text-align: center;
-}
-
-.colorSwatches span{
-	padding:1px 10px;
-	font-size: 5px;
-	margin:0px 3px;
-}
-
-.Black{
-	background-color:black;
-}
-
-.Blue{
-	background-color: blue;
-}
-
-.Brown{
-	background-color: #8B4513;
-}
-
-.Green{
-	background-color: green;
-}
-
-.Grey{
-	background-color: gray;
-}
-
-.Indigo{
-	background-color: #4B0082;
-}
-
-.Khaki{
-	background-color: #bdb76b;
-}
-
-.Oatmeal{
-	background-color: #fff8dc;
-}
-
-.Orange{
-background-color: orange;
-}
-
-.Pink{
-background-color: #FF69B4;
-}
-
-.Purple{
-background-color: purple;
-}
-
-.Red{
-background-color: red;
-}
-
-.Silver{
-background-color: silver;
-}
-
-.White{
-background-color: white;
-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  border:1px solid black;
-}
-
-.Yellow{
-background-color:yellow; 
-}
-/* SWATCHES END */
 
 
 
 /* CATEGORIES PAGE */
-.col2-left-layout {
-	//margin:0px 7%;
-}
 
-.col2-left-layout .col-main{
-	float:right;
-	width:75%;
-}
-
-.col2-left-layout .col-left{
-	float:left;
-	width:25%;
-	padding-top:30px;
-}
-
-.products-grid{
-	list-style: none;
-	margin-bottom: 50px;
-	text-align: center;
-	padding-left:2%;
-}
-
-.products-grid li{
-display:inline-block;
-width:30%;
-margin:0px 1.2%;
-}
-
-.products-grid li h2{
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 0.9em;
-}
-
-.products-grid .item{
-	text-align: center;
-	vertical-align: top;
-	margin:10px 5x;
-	position:relative;
-}
-
-.products-grid .item .product-image{
-	width:100%;
-}
-
-.category-products .actions, .product .actions{
-		position:absolute;
-		top:4px;
-	    left:4px;
-}
-
-.actions .availability{
-	margin:0px;
-	padding:5px;
-	text-transform: uppercase;
-	font-size: 0.75em;
-	background-color: white;
-}
-
-.actions .out-of-stock{
-	border:1px solid #cfcfcf;
-}
-
-.actions .discounted-price{
-	border:1px solid #ed1c24;
-}
-
-.actions .new-product{
-	border:1px solid black;
-}
-
-.breadcrumbs ul{
-	list-style: none;
-	margin:0px;
-	font-size:0.8em;
-}
-
-.breadcrumbs ul li {
-	display: inline-block;
-}
-
-.breadcrumbs ul li a {
-	text-decoration: none;
-	color:black;
-	font-weight: normal;
-}
-
-#narrow-by-list dt{
-	background-color:black;
-	color:white;
-	text-transform: uppercase;
-	font-weight: bold;
-	padding:10px 10px 10px 40px;
-	font-size: 0.8em;
-}
-
-#narrow-by-list dd{
-	border:1px solid #b4b4b4;
-	margin:0px;
-	margin-bottom:25px;
-}
-
-.old-price,.special-price{
-	margin:0;
-	display: inline-block;
-}
-
-.price-box{
-	margin:5px 0px;
-}
-
-.old-price{
-	margin:0px;
-	text-decoration: line-through;
-	margin-right:15px;
-}
-
-#size{
-	text-align: center;
-}
-#size ol{
-	list-style: none;
-	padding:2px;
-}
-
-#size ol li{
-display: inline-block;
-margin: 10px 8%;
-}
-
-#size ol li a {
-	text-decoration: none;
-	font-size: 1em;
-	color:black;
-	background-color: white;
-	border:1px solid black;
-	width:30px;
-	height:20px;
-	padding:2px 3px;
-
-}
-
-#size ol li a:hover{
-	color:white;
-	background-color: black;
-}
-
-.pages{
-	text-align: center;
-	margin:0px auto;
-}
-
-.pages ol{
-	list-style: none;
-}
-
-.pages ol li{
-	display: inline;
-	margin:0px;
-	padding:5px 10px;
-	border: 1px solid black;
-}
-
-.pages ol li a {
-text-decoration: none;
-background-color:white;
-color:black;
-}
-
-.pages ol .current{
-background-color:black;
-color:white;
-}
-
-.product-short-description{
-	font-size: 0.8em;
-}
-
-.category-title h1, .dashboard-page-title h1, .my-account .page-title h1, .checkout-wrapper .page-title h1{
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 200;
-	margin:0px;
-	line-height: 1.5;
-}
-
-.category-divider, .my-account-divider{
-	margin:0px;
-	padding:0px;
-	height:1px;
-	margin-left:35px;
- 	border: 0; 
- 	border-top: 1px solid #e5e5e5;
-}
-
-.my-account .fieldset{
-	width:75%;
-	margin:10px auto;
-}
-
-.my-account .buttons-set{
-	text-align: center;
-}
-
-.my-account .buttons-set .grid2 p{
-	margin:0px;
-}
-
-dd#apparel_type ol, dd#price ol, dd#color ol, dd#bed_bath_type ol, dd#decor_type ol, dd#home_decor_type ol, dd#material ol{
-	list-style: none;
-	padding-left:40px;
-
-}
-
-dd#apparel_type ol li, dd#price ol li, dd#color ol li, dd#bed_bath_type ol li, dd#decor_type ol li, dd#home_decor_type ol li, dd#material ol li{
-	padding:5px 0px;
-}
-
-dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd#decor_type ol li a, dd#home_decor_type ol li a, dd#material ol li a{
-	text-decoration: none;
-	color:black;
-	text-transform: uppercase;
-	font-size: 0.8em;
-}
-
-#category-sort-by{
-text-align: right;
-padding:15px 0px; 	
-}
-
-#category-sort-by select{
-	border:1px solid black;
-	text-transform: uppercase;
-	margin-left:10px;
-	width:100px;
-	font-size: 0.9em;
-}
-
-.toolbar-bottom{
-	margin:30px auto;
-}
-
-.toolbar-bottom .toolbar #category-sort-by
-{
-	display: none;
-}
-
-.toolbar-top .pager .pages{
-	display: none;
-}
-
-.toolbar-top .link-return-to-top, .toolbar-bottom .link-return-to-top{
-	display: none;
-}
 
 /* CATEGORIES PAGE END */
 
@@ -1791,71 +1296,14 @@ img{
 	.col2-left-layout {
 		margin:0px 1%;
 	}
-
-	footer .footer{
-		margin:30px 0px;
-	}
-
-	footer .grid4{
-		margin:10px 1.5%;
-		display: inline-block;
-	}
 	
-	.grid2 p{
-		margin:10px 0%;
-		text-align: center;
-	}
-
 	.main-container{
 		margin-top:20px;
 	}
 
 	/* CATEGORIES PAGE*/
 
-	.products-grid{
-		display: inline;
-	}
 
-	.col2-left-layout .col-left{
-		padding-top:10px;
-	}
-
-	dd#apparel_type ol li, dd#price ol li, dd#color ol li, dd#bed_bath_type ol li, dd#decor_type ol li, dd#home_decor_type ol li, dd#material ol li{
-		padding:10px 0px;
-	}
-
-	dd#apparel_type ol, dd#price ol, dd#color ol, dd#bed_bath_type ol, dd#decor_type ol, dd#home_decor_type ol, dd#material ol{
-		padding:5px 0px 5px 5px;
-	}
-
-	.products-grid li.item{
-		width:45%;
-		margin:10px 1.5%;
-	}
-
-	.breadcrumbs{
-		margin:40px 0px 10px 0px;
-	}
-
-	#size ol li{
-		margin:10px 4%;
-	}
-
-	.toolbar-bottom .link-return-to-top{
-		display: block;
-		width:100%;
-		text-align: center;
-		margin:0px 0px 25px 0px;
-	}
-
-	.toolbar-bottom .link-return-to-top a {
-		text-decoration: none;
-		color:black;
-		padding:5px 20px;
-		border:1px solid black;
-		text-transform: uppercase;
-		font-weight: 300;
-	}
 
 	/* PRODUCT PAGE */
 
@@ -1954,10 +1402,6 @@ img{
 		display: inline-block;
 		width:45%;
 		margin:5px 0px;
-	}
-
-	.grid4{
-	margin:10px 1%;
 	}
 
 	/* FORGOT PASSWORD */
@@ -2218,93 +1662,9 @@ img{
 		display: none;
 	}
 
-	.grid4-wrapper{
-		text-align: center;
-		width:45%;
-		margin:0px auto;
-		font-size: 1.25em;
-	}
-
-
 	button{
 	min-width: 200px;
 	}
-
-	.grid4-wrapper div, .grid4-wrapper ul{
-		text-align: left;
-	}
-	footer .footer .grid4 ul{
-			display: none;
-	}
-
-	footer .footer .grid4 ul li{
-		padding:8px 0px 8px 30px;
-	}
-
-	footer .footer .grid4 ul li a:hover{
-		font-weight: normal;
-	}
-
-	.footer-mango-icon{
-		display: inline-block;
-		font-family: mango-font-icons;
-	}
-
-	.grid3{
-		width:100%;
-		display: block;
-		text-align: center;
-	}
-
-	.grid3 h2{
-		padding:0px;
-	}
-
-	.grid3 img{
-		text-align: center;
-		margin:0px auto;
-	}
-
-	.image-container .grid2 .img-top, .grid2{
-		width:100%;
-		display: block;
-		margin:10px auto;
-		padding:0px;
-	}
-
-	.border-container{
-		border:0px;
-	}
-
-	.border-container .grid2{
-		margin:20px 0px 0px 0px;
-		border:3px solid #8A8A8A;
-	}
-	.border-container-black{
-		border:0;
-	}
-	.border-container-black .grid2{
-		margin:20px 0px 0px 0px;
-		border:1px solid black;
-	}
-
-	footer .footer .border-container {
-			border:3px solid #8A8A8A;
-	}
-
-	footer .footer .border-container .grid2{
-		border:0px;
-	}
-
-	footer .footer .border-container .grid2 #newsletter-validate-detail{
-		display: inline-block;
-	}
-
-	footer .grid4{
-		width:100%;
-		display: inline-block;
-		margin:10px 0px;
-		}
 
 		.forgot-pass-wrapper .page-title h1{
 			text-align: center;
@@ -2322,77 +1682,6 @@ img{
 	}
 
 	/* CATEGORY VIEW */
-
-	.col2-left-layout .col-left, .col2-left-layout .col-main{
-		width:100%;
-		display: block;
-	}
-
-	.category-divider, .my-account-divider{
-		margin:2px;
-	}
-
-	#showFilters{
-		margin:10px 2px 10px 20px;
-		font-size: 1.2em;
-		text-transform: uppercase;
-		display: inline-block;
-	}
-
-	#showFilters:hover{
-		cursor: pointer;
-	}
-
-	#narrow-by-list{
-		margin:0px;
-	}
-
-	#narrow-by-list dd{
-		margin-left:70px;
-		border:0px;
-	}
-
-	#size ol{
-		text-align: left;
-	}
-
-	#narrow-by-list dd{
-		display: none;
-	}
-
-	dd#apparel_type ol li, dd#price ol li, dd#color ol li, dd#bed_bath_type ol li, dd#decor_type ol li, dd#home_decor_type ol li, dd#material ol li{
-		margin:0px;
-		padding:5px 0px;
-	}
-
-	dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd#decor_type ol li a, dd#home_decor_type ol li a, dd#material ol li a{
-		margin:0px;
-		padding:0px;
-		font-size: 1.2em;
-		text-transform: none;
-	}
-
-	#size ol li a {
-		font-size: 1.2em;
-		padding:5px;
-	}
-
-	#showFilters span, .filterList #narrow-by-list dt span{
-	font-family: mango-font-icons;
-	}
-
-	#narrow-by-list dt{
-		background-color: white;
-		font-weight: normal;
-		font-size: 1.2em;
-		color:black;
-		padding:0px;
-		margin:0px 0px 5px 40px;
-	}
-
-	#narrow-by-list dt:hover{
-		cursor: pointer;
-	}
 
 	/* PRODUCT PAGE */
 
@@ -2452,6 +1741,18 @@ img{
 
 
 	/* MY ACCOUNT */
+	.my-account{
+		
+		.fieldset{
+		width:75%;
+		margin:10px auto;
+		}
+
+		.buttons-set{
+		text-align: center;
+		}
+	}
+
 
 	.dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent{
 		padding:0px;

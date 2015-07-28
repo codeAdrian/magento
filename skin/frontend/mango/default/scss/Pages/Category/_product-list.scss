@@ -1,0 +1,171 @@
+// ----- PRODUCT LIST - DESKTOP -----
+
+.col2-left-layout .col-main{
+	float:right;
+	width:75%;
+
+	.products-grid{
+		list-style: none;
+		margin-bottom: 50px;
+		text-align: center;
+		padding-left:2%;
+		li{
+			display:inline-block;
+			width:30%;
+			margin:0px 1.2%;		
+
+			h2{
+				text-transform: uppercase;
+				font-weight: 300;
+				font-size: 0.9em;			
+			}
+		}
+
+		.item{
+			text-align: center;
+			vertical-align: top;
+			margin:10px 5x;
+			position:relative;		
+
+			.product-image{
+				width:100%;
+			}
+		}
+	}
+}
+
+.category-products .actions, .product .actions{
+	position:absolute;
+	top:4px;
+	left:4px;
+
+	.availability{
+		margin:0px;
+		padding:5px;
+		text-transform: uppercase;
+		font-size: 0.75em;
+		background-color: white;
+	}	
+
+	.out-of-stock{
+		border:1px solid #cfcfcf;
+	}
+	.discounted-price{
+		border:1px solid #ed1c24;
+	}	
+
+	.new-product{
+		border:1px solid black;
+	}
+}
+
+.old-price,.special-price{
+	margin:0;
+	display: inline-block;
+}
+
+.price-box{
+	margin:5px 0px;
+}
+
+.old-price{
+	text-decoration: line-through;
+	margin-right:15px;
+}
+
+.pages{
+	text-align: center;
+	margin:0px auto;
+		ol{
+		list-style: none;
+			li{
+				display: inline;
+				margin:0px;
+				padding:5px 10px;
+				border: 1px solid black;
+
+				a {
+				text-decoration: none;
+				background-color:white;
+				color:black;
+				}
+			}
+
+			.current{
+			background-color:black;
+			color:white;
+			}
+		}
+}
+
+.product-short-description{
+	font-size: 0.8em;
+}
+
+#category-sort-by{
+text-align: right;
+margin-right:10px;
+padding:15px 0px; 	
+	select{
+		border:1px solid black;
+		text-transform: uppercase;
+		margin-left:10px;
+		width:100px;
+		font-size: 0.9em;		
+	}
+}
+
+.toolbar-bottom{
+	margin:30px auto;
+	
+	.toolbar #category-sort-by{
+		display: none;
+	}
+}
+
+.toolbar-top .pager .pages{
+	display: none;
+}
+
+.toolbar-top .link-return-to-top, .toolbar-bottom .link-return-to-top{
+	display: none;
+}
+
+// ----- PRODUCT LIST - TABLET -----
+@include breakpoint($tablet-breakpoint){
+
+.col2-left-layout .col-main{
+
+	.products-grid{
+			display: inline;
+			.item{
+			width:45%;
+			margin:10px 1.5%;
+			}
+		}
+	}
+
+	.toolbar-bottom .link-return-to-top{
+		display: block;
+		width:100%;
+		text-align: center;
+		margin:0px 0px 25px 0px;
+
+		a{
+			text-decoration: none;
+			color:black;
+			padding:5px 20px;
+			border:1px solid black;
+			text-transform: uppercase;
+			font-weight: 300;		
+		}
+	}
+}
+
+// ----- PRODUCT LIST - SMARTPHONE -----
+@include breakpoint($smartphone-breakpoint){
+	.col2-left-layout .col-left, .col2-left-layout .col-main{
+		width:100%;
+		display: block;
+	}
+}

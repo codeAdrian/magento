@@ -21,7 +21,7 @@ header{
 		display: none;			
 		}
 	}
-
+	
 	 #header_wrapper .top-link-checkout {
 	 	display: none;
 	 }
@@ -81,7 +81,7 @@ header{
 	.links{
 		display:block;
 		list-style: none;
-		text-align:center;
+		text-align:right;
 		text-transform: uppercase;
 		padding:0px;
 		width:100%;
@@ -222,7 +222,7 @@ header{
 			float:none;
 
 			&:before{
-				@include m-mini-search-box();
+				@include m-mini-menu-box(10px, 0px, 5px, 5px);
 				left: 180px;
 				top: -10px;
 			}
@@ -318,7 +318,7 @@ header{
 			top:140px;
 
 			&:before{
-		 		@include m-mini-search-box();
+		 		@include m-mini-menu-box(10px, 0px, 5px, 5px);
 				left: 135px;
 				top: -10px;		
 			}
