@@ -4502,65 +4502,65 @@ footer .footer .grid4 ul li a:visited {
 .colorSwatches {
   text-align: center;
 }
-/* line 4, ../scss/Pages/Category/_color-swatches.scss */
+/* line 21, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches span {
   padding: 1px 10px;
   font-size: 5px;
   margin: 0px 3px;
 }
-/* line 10, ../scss/Pages/Category/_color-swatches.scss */
+/* line 27, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Black {
-  background-color: black;
+  background-color: #000;
 }
-/* line 14, ../scss/Pages/Category/_color-swatches.scss */
+/* line 31, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Blue {
   background-color: blue;
 }
-/* line 18, ../scss/Pages/Category/_color-swatches.scss */
+/* line 35, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Brown {
   background-color: #8B4513;
 }
-/* line 22, ../scss/Pages/Category/_color-swatches.scss */
+/* line 39, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Green {
   background-color: green;
 }
-/* line 26, ../scss/Pages/Category/_color-swatches.scss */
+/* line 43, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Grey {
   background-color: gray;
 }
-/* line 30, ../scss/Pages/Category/_color-swatches.scss */
+/* line 47, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Indigo {
   background-color: #4B0082;
 }
-/* line 34, ../scss/Pages/Category/_color-swatches.scss */
+/* line 51, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Khaki {
   background-color: #bdb76b;
 }
-/* line 38, ../scss/Pages/Category/_color-swatches.scss */
+/* line 55, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Oatmeal {
   background-color: #fff8dc;
 }
-/* line 42, ../scss/Pages/Category/_color-swatches.scss */
+/* line 59, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Orange {
   background-color: orange;
 }
-/* line 46, ../scss/Pages/Category/_color-swatches.scss */
+/* line 63, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Pink {
   background-color: #FF69B4;
 }
-/* line 50, ../scss/Pages/Category/_color-swatches.scss */
+/* line 67, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Purple {
   background-color: purple;
 }
-/* line 54, ../scss/Pages/Category/_color-swatches.scss */
+/* line 71, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Red {
   background-color: red;
 }
-/* line 58, ../scss/Pages/Category/_color-swatches.scss */
+/* line 75, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Silver {
   background-color: silver;
 }
-/* line 62, ../scss/Pages/Category/_color-swatches.scss */
+/* line 79, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .White {
   background-color: white;
   box-sizing: border-box;
@@ -4568,7 +4568,7 @@ footer .footer .grid4 ul li a:visited {
   -webkit-box-sizing: border-box;
   border: 1px solid black;
 }
-/* line 68, ../scss/Pages/Category/_color-swatches.scss */
+/* line 85, ../scss/Pages/Category/_color-swatches.scss */
 .colorSwatches .Yellow {
   background-color: yellow;
 }

@@ -1,6 +1,23 @@
 .colorSwatches{
 	text-align: center;
 
+	$c-black:#000;
+	$c-blue:blue;
+	$c-brown:#8B4513;
+	$c-green:green;
+	$c-gray:gray;
+	$c-indigo:#4B0082;
+	$c-khaki:#bdb76b;
+	$c-oatmeal:#fff8dc;
+	$c-orange:orange;
+	$c-pink:#FF69B4;
+	$c-purple:purple;
+	$c-silver:silver;
+	$c-red:red;
+	$c-white:white;
+	$c-yellow:yellow;
+
+
 	span{
 		padding:1px 10px;
 		font-size: 5px;
@@ -8,65 +25,65 @@
 	}
 
 	.Black{
-		background-color:black;
+		background-color:$c-black;
 	}
 
 	.Blue{
-		background-color: blue;
+		background-color: $c-blue;
 	}
 
 	.Brown{
-		background-color: #8B4513;
+		background-color: $c-brown;
 	}
 
 	.Green{
-		background-color: green;
+		background-color: $c-green;
 	}
 
 	.Grey{
-		background-color: gray;
+		background-color: $c-gray;
 	}
 
 	.Indigo{
-		background-color: #4B0082;
+		background-color: $c-indigo;
 	}
 
 	.Khaki{
-		background-color: #bdb76b;
+		background-color: $c-khaki;
 	}
 
 	.Oatmeal{
-		background-color: #fff8dc;
+		background-color: $c-oatmeal;
 	}
 
 	.Orange{
-		background-color: orange;
+		background-color: $c-orange;
 	}
 
 	.Pink{
-		background-color: #FF69B4;
+		background-color: $c-pink;
 	}
 
 	.Purple{
-		background-color: purple;
+		background-color: $c-purple;
 	}
 
 	.Red{
-		background-color: red;
+		background-color: $c-red;
 	}
 
 	.Silver{
-		background-color: silver;
+		background-color: $c-silver;
 	}
 
 	.White{
-		background-color: white;
+		background-color: $c-white;
 		@include m-box-sizing(border-box);
 		border:1px solid black;
 	}
 
 	.Yellow{
-		background-color:yellow; 
+		background-color:$c-yellow; 
 	}
 
 }
