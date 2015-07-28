@@ -3157,7 +3157,7 @@ header .form-search button[title="Search"] {
 /* line 75, ../scss/Pages/Shared/_header.scss */
 header #search_mini_form {
   text-align: center;
-  margin: 0px auto;
+  margin: 0px auto 0px 10px;
   max-width: 15em;
 }
 /* line 81, ../scss/Pages/Shared/_header.scss */
