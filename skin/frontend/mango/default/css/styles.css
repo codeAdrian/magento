@@ -4389,23 +4389,24 @@ footer .form-container {
 footer .border-container {
   margin: 15px auto;
   width: 98%;
-  padding: 10px 0px;
+  padding: 30px 0px;
+  line-height: 1.5em;
 }
-/* line 22, ../scss/Pages/Shared/_footer.scss */
+/* line 23, ../scss/Pages/Shared/_footer.scss */
 footer #newsletter-validate-detail {
   text-align: center;
   margin: 0px auto;
 }
-/* line 26, ../scss/Pages/Shared/_footer.scss */
+/* line 27, ../scss/Pages/Shared/_footer.scss */
 footer #newsletter-validate-detail .block-content {
   width: 350px;
 }
-/* line 31, ../scss/Pages/Shared/_footer.scss */
+/* line 32, ../scss/Pages/Shared/_footer.scss */
 footer #newsletter-validate-detail .block-content #newsletter, footer #newsletter-validate-detail .block-content .button {
   float: right;
   min-width: 30%;
 }
-/* line 36, ../scss/Pages/Shared/_footer.scss */
+/* line 37, ../scss/Pages/Shared/_footer.scss */
 footer #newsletter-validate-detail .block-content #newsletter {
   width: 60%;
   border: 1px solid black;
@@ -4413,15 +4414,17 @@ footer #newsletter-validate-detail .block-content #newsletter {
   text-align: center;
   height: 18px;
 }
-/* line 44, ../scss/Pages/Shared/_footer.scss */
+/* line 45, ../scss/Pages/Shared/_footer.scss */
 footer .block-subscribe {
   width: 90%;
+  display: inline-block;
+  vertical-align: middle;
 }
-/* line 46, ../scss/Pages/Shared/_footer.scss */
+/* line 49, ../scss/Pages/Shared/_footer.scss */
 footer .block-subscribe #newsletter-validate-detail, footer .block-subscribe #newsletter-validate-detail .block-content {
   width: 100%;
 }
-/* line 51, ../scss/Pages/Shared/_footer.scss */
+/* line 54, ../scss/Pages/Shared/_footer.scss */
 footer .subscribe-button {
   border: 1px solid black;
   margin: 0px;
@@ -4430,127 +4433,135 @@ footer .subscribe-button {
   min-width: 100px;
   height: 22px;
 }
-/* line 60, ../scss/Pages/Shared/_footer.scss */
+/* line 63, ../scss/Pages/Shared/_footer.scss */
 footer .subscribe-button span {
   color: white;
   font-weight: bold;
+  vertical-align: top;
 }
-/* line 66, ../scss/Pages/Shared/_footer.scss */
+/* line 70, ../scss/Pages/Shared/_footer.scss */
 footer #newsletter-validate-detail .block-content {
   margin: 0px auto;
 }
-/* line 70, ../scss/Pages/Shared/_footer.scss */
+/* line 74, ../scss/Pages/Shared/_footer.scss */
 footer .footer {
   margin: 30px 0 20px;
   text-align: center;
 }
-/* line 75, ../scss/Pages/Shared/_footer.scss */
+/* line 79, ../scss/Pages/Shared/_footer.scss */
 footer .grid4 {
   vertical-align: top;
   text-align: left;
   text-align: center;
 }
-/* line 80, ../scss/Pages/Shared/_footer.scss */
+/* line 84, ../scss/Pages/Shared/_footer.scss */
 footer .grid4 .grid4-wrapper {
   display: inline-block;
   margin: 0px auto;
   text-align: left;
 }
-/* line 86, ../scss/Pages/Shared/_footer.scss */
+/* line 90, ../scss/Pages/Shared/_footer.scss */
 footer .grid4 ul {
   list-style: none;
   padding: 0px;
 }
-/* line 89, ../scss/Pages/Shared/_footer.scss */
+/* line 93, ../scss/Pages/Shared/_footer.scss */
 footer .grid4 ul li {
   padding: 5px 0px;
 }
-/* line 96, ../scss/Pages/Shared/_footer.scss */
+/* line 100, ../scss/Pages/Shared/_footer.scss */
 footer .footer .grid4 ul li a {
   text-decoration: none;
   color: black;
   font-size: 0.9em;
 }
-/* line 101, ../scss/Pages/Shared/_footer.scss */
+/* line 105, ../scss/Pages/Shared/_footer.scss */
 footer .footer .grid4 ul li a:hover {
   font-weight: bold;
 }
-/* line 105, ../scss/Pages/Shared/_footer.scss */
+/* line 109, ../scss/Pages/Shared/_footer.scss */
 footer .footer .grid4 ul li a:visited {
   color: #969696;
 }
 
 @media (max-width: 625px) {
-  /* line 116, ../scss/Pages/Shared/_footer.scss */
+  /* line 120, ../scss/Pages/Shared/_footer.scss */
   footer .grid4-wrapper {
     text-align: center;
     width: 45%;
     margin: 0px auto;
     font-size: 1.25em;
   }
-  /* line 122, ../scss/Pages/Shared/_footer.scss */
+  /* line 126, ../scss/Pages/Shared/_footer.scss */
   footer .grid4-wrapper div, footer .grid4-wrapper ul {
     text-align: left;
   }
-  /* line 127, ../scss/Pages/Shared/_footer.scss */
+  /* line 131, ../scss/Pages/Shared/_footer.scss */
   footer .footer-mango-icon {
     display: inline-block;
     font-family: mango-font-icons;
   }
-  /* line 133, ../scss/Pages/Shared/_footer.scss */
+  /* line 137, ../scss/Pages/Shared/_footer.scss */
   footer .footer .border-container {
     border: 3px solid #8A8A8A;
     margin: 2px auto;
   }
-  /* line 137, ../scss/Pages/Shared/_footer.scss */
+  /* line 141, ../scss/Pages/Shared/_footer.scss */
   footer .footer .border-container .grid2 {
     border: 0px;
   }
-  /* line 140, ../scss/Pages/Shared/_footer.scss */
+  /* line 144, ../scss/Pages/Shared/_footer.scss */
   footer .footer .border-container .grid2 #newsletter-validate-detail {
     display: inline-block;
   }
-  /* line 145, ../scss/Pages/Shared/_footer.scss */
+  /* line 149, ../scss/Pages/Shared/_footer.scss */
   footer .footer .grid4 {
     width: 100%;
     display: inline-block;
     margin: 10px 0px;
   }
-  /* line 150, ../scss/Pages/Shared/_footer.scss */
+  /* line 154, ../scss/Pages/Shared/_footer.scss */
   footer .footer .grid4 ul {
     display: none;
   }
-  /* line 152, ../scss/Pages/Shared/_footer.scss */
+  /* line 156, ../scss/Pages/Shared/_footer.scss */
   footer .footer .grid4 ul li {
     padding: 8px 0px 8px 30px;
   }
-  /* line 154, ../scss/Pages/Shared/_footer.scss */
+  /* line 158, ../scss/Pages/Shared/_footer.scss */
   footer .footer .grid4 ul li a:hover {
     font-weight: normal;
   }
-  /* line 160, ../scss/Pages/Shared/_footer.scss */
+  /* line 163, ../scss/Pages/Shared/_footer.scss */
+  footer .footer .form-container {
+    padding: 5px 0px;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  /* line 170, ../scss/Pages/Shared/_footer.scss */
   footer .block-subscribe {
     padding: 10px 0px;
   }
-  /* line 164, ../scss/Pages/Shared/_footer.scss */
+  /* line 174, ../scss/Pages/Shared/_footer.scss */
   footer #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
+    width: 70%;
   }
-  /* line 168, ../scss/Pages/Shared/_footer.scss */
+  /* line 179, ../scss/Pages/Shared/_footer.scss */
   footer .subscribe-button {
     border: 1px solid black;
     margin: 0px;
     background-color: black;
     padding: 3px;
-    min-width: 100px;
+    min-width: 30%;
     height: 30px !important;
   }
-  /* line 178, ../scss/Pages/Shared/_footer.scss */
+  /* line 190, ../scss/Pages/Shared/_footer.scss */
   footer #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
-  /* line 183, ../scss/Pages/Shared/_footer.scss */
+  /* line 195, ../scss/Pages/Shared/_footer.scss */
   footer #newsletter-validate-detail .block-content .button {
     min-width: 25%;
   }
