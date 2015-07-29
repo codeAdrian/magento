@@ -636,6 +636,13 @@ button {
     margin: 20px 0px 20px 0px;
   }
 }
+/* line 111, ../scss/_components.scss */
+img {
+  max-width: 100% !important;
+  height: auto;
+  display: block;
+}
+
 /* line 6, ../scss/layout/_susy-header.scss */
 .header_wrapper {
   max-width: 100%;
@@ -2143,63 +2150,54 @@ input.validation-failed select.validation-failed, .validation-failed {
 }
 
 /* VALIDATION FAILED END */
-/* RESPONSIVE DESIGN - GENERAL */
-/* line 731, ../scss/_base.scss */
-img {
-  max-width: 100% !important;
-  height: auto;
-  display: block;
-}
-
-/* RESPONSIVE DESIGN END */
 /* RESPONSIVE DESIGN IPAD */
 @media (max-width: 900px) {
-  /* line 743, ../scss/_base.scss */
+  /* line 732, ../scss/_base.scss */
   li.level0 a:hover {
     cursor: pointer;
   }
 
-  /* line 747, ../scss/_base.scss */
+  /* line 736, ../scss/_base.scss */
   .mobileOnly {
     display: block;
   }
 
-  /* line 751, ../scss/_base.scss */
+  /* line 740, ../scss/_base.scss */
   .main-container {
     margin: 0px 1%;
   }
 
-  /* line 755, ../scss/_base.scss */
+  /* line 744, ../scss/_base.scss */
   .col2-left-layout {
     margin: 0px 1%;
   }
 
-  /* line 759, ../scss/_base.scss */
+  /* line 748, ../scss/_base.scss */
   .main-container {
     margin-top: 20px;
   }
 
   /* FORGOT PASSWORD */
-  /* line 764, ../scss/_base.scss */
+  /* line 753, ../scss/_base.scss */
   .account-create, .account-login-page, .forgot-pass-wrapper {
     width: 70%;
     padding: 25px 50px;
   }
 
-  /* line 770, ../scss/_base.scss */
+  /* line 759, ../scss/_base.scss */
   .account-login-page {
     width: 80%;
     padding: 25px;
   }
 
-  /* line 775, ../scss/_base.scss */
+  /* line 764, ../scss/_base.scss */
   .account-login-page .gray-button, .account-login-page .red-button {
     width: 100%;
     margin: 0px;
   }
 
   /* PAGE NOT FOUND */
-  /* line 782, ../scss/_base.scss */
+  /* line 771, ../scss/_base.scss */
   .page-not-found-wrapper .products-grid .item {
     width: 100%;
     display: block;
@@ -2207,81 +2205,81 @@ img {
   }
 
   /* MY ACCOUNT */
-  /* line 791, ../scss/_base.scss */
+  /* line 780, ../scss/_base.scss */
   .my-account .addresses-primary ol li, .my-account .addresses-additional ol li {
     display: block;
     width: 100%;
   }
 
-  /* line 796, ../scss/_base.scss */
+  /* line 785, ../scss/_base.scss */
   .my-account .order-info-box, .my-account .order-info, .my-account .order-date {
     width: 45%;
   }
 
-  /* line 800, ../scss/_base.scss */
+  /* line 789, ../scss/_base.scss */
   .my-account {
     margin-left: 2%;
   }
 
-  /* line 804, ../scss/_base.scss */
+  /* line 793, ../scss/_base.scss */
   .customer-account-index .col2-left-layout {
     margin: 0px 4%;
   }
 
-  /* line 808, ../scss/_base.scss */
+  /* line 797, ../scss/_base.scss */
   .col2-left-layout .col-left {
     width: 28%;
   }
 
-  /* line 812, ../scss/_base.scss */
+  /* line 801, ../scss/_base.scss */
   .col2-left-layout .col-main {
     width: 72%;
   }
 
-  /* line 816, ../scss/_base.scss */
+  /* line 805, ../scss/_base.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding-left: 10px;
   }
 
-  /* line 820, ../scss/_base.scss */
+  /* line 809, ../scss/_base.scss */
   .my-account #my-orders-table {
     font-size: 0.8em;
   }
 
-  /* line 823, ../scss/_base.scss */
+  /* line 812, ../scss/_base.scss */
   .my-account #form-validate {
     padding: 0px 10px;
   }
 
-  /* line 827, ../scss/_base.scss */
+  /* line 816, ../scss/_base.scss */
   .box-info a {
     min-width: 80px;
     width: auto;
   }
 
-  /* line 832, ../scss/_base.scss */
+  /* line 821, ../scss/_base.scss */
   .sidebar .block-account, div.block:nth-child(2), .sidebar .block-reorder, div.block:nth-child(2) {
     margin: 10px 0px 10px 0px;
   }
 
-  /* line 836, ../scss/_base.scss */
+  /* line 825, ../scss/_base.scss */
   .block-reorder .block-content ol {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 841, ../scss/_base.scss */
+  /* line 830, ../scss/_base.scss */
   .block-reorder .block-content #cart-sidebar-reorder li {
     padding: 5px 0px;
   }
 
-  /* line 845, ../scss/_base.scss */
+  /* line 834, ../scss/_base.scss */
   .block-reorder .block-content .block-subtitle {
     font-size: 1em;
     padding: 0px 0px 0px 10px;
   }
 
-  /* line 850, ../scss/_base.scss */
+  /* line 839, ../scss/_base.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: inline-block;
     width: 45%;
@@ -2289,30 +2287,30 @@ img {
   }
 
   /* RESPONSIVE MYPAGE TABLE */
-  /* line 858, ../scss/_base.scss */
+  /* line 847, ../scss/_base.scss */
   table#my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 862, ../scss/_base.scss */
+  /* line 851, ../scss/_base.scss */
   table#my-orders-table thead {
     display: none;
   }
 
-  /* line 865, ../scss/_base.scss */
+  /* line 854, ../scss/_base.scss */
   table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 869, ../scss/_base.scss */
+  /* line 858, ../scss/_base.scss */
   table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
     padding: 10px 0px;
   }
 
-  /* line 875, ../scss/_base.scss */
+  /* line 864, ../scss/_base.scss */
   table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -2320,12 +2318,12 @@ img {
     width: 100%;
   }
 
-  /* line 882, ../scss/_base.scss */
+  /* line 871, ../scss/_base.scss */
   table#my-orders-table tbody tr td:last-child {
     text-align: center;
   }
 
-  /* line 885, ../scss/_base.scss */
+  /* line 874, ../scss/_base.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -2335,77 +2333,77 @@ img {
     text-align: right;
   }
 
-  /* line 894, ../scss/_base.scss */
+  /* line 883, ../scss/_base.scss */
   .product-name a {
     font-size: 0.8em;
   }
 
-  /* line 897, ../scss/_base.scss */
+  /* line 886, ../scss/_base.scss */
   .my-account #my-orders-table {
     text-align: center;
     font-size: 1em;
   }
 
-  /* line 902, ../scss/_base.scss */
+  /* line 891, ../scss/_base.scss */
   .cart-fieldset .btn-remove {
     padding: 2px 6px;
   }
 
-  /* line 906, ../scss/_base.scss */
+  /* line 895, ../scss/_base.scss */
   #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1) {
     text-align: center;
     padding: 0px;
   }
 
-  /* line 911, ../scss/_base.scss */
+  /* line 900, ../scss/_base.scss */
   #shopping-cart-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 915, ../scss/_base.scss */
+  /* line 904, ../scss/_base.scss */
   .cart-fieldset {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 919, ../scss/_base.scss */
+  /* line 908, ../scss/_base.scss */
   .cart .page-title {
     text-align: center;
   }
 
-  /* line 923, ../scss/_base.scss */
+  /* line 912, ../scss/_base.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 30%;
   }
 
   /* VIEW ORDER */
-  /* line 928, ../scss/_base.scss */
+  /* line 917, ../scss/_base.scss */
   .sales-order-view #my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 932, ../scss/_base.scss */
+  /* line 921, ../scss/_base.scss */
   .sales-order-view #my-orders-table colgroup {
     width: 100%;
   }
 
-  /* line 936, ../scss/_base.scss */
+  /* line 925, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td {
     width: 100%;
   }
 
-  /* line 942, ../scss/_base.scss */
+  /* line 931, ../scss/_base.scss */
   .sales-order-view table#my-orders-table thead {
     display: none;
   }
 
-  /* line 945, ../scss/_base.scss */
+  /* line 934, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 949, ../scss/_base.scss */
+  /* line 938, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -2413,7 +2411,7 @@ img {
     margin: 0px;
   }
 
-  /* line 956, ../scss/_base.scss */
+  /* line 945, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -2421,7 +2419,7 @@ img {
     width: 100%;
   }
 
-  /* line 963, ../scss/_base.scss */
+  /* line 952, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .item-options {
     margin: 0px;
     padding: 0px;
@@ -2431,12 +2429,12 @@ img {
     margin: 0px 0px 70px 0px;
   }
 
-  /* line 972, ../scss/_base.scss */
+  /* line 961, ../scss/_base.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     width: 30%;
   }
 
-  /* line 976, ../scss/_base.scss */
+  /* line 965, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .item-options dt, .sales-order-view table#my-orders-table .item-options #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .sales-order-view table#my-orders-table .item-options dd, .sales-order-view table#my-orders-table .item-options dd {
     width: 45%;
     margin: 0px;
@@ -2445,13 +2443,13 @@ img {
     color: black;
   }
 
-  /* line 984, ../scss/_base.scss */
+  /* line 973, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:last-child {
     text-align: center;
     background-color: #b4b4b4;
   }
 
-  /* line 988, ../scss/_base.scss */
+  /* line 977, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -2459,20 +2457,20 @@ img {
     padding: 0px;
   }
 
-  /* line 994, ../scss/_base.scss */
+  /* line 983, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .product-name {
     margin: 0;
     padding: 0;
   }
 
-  /* line 999, ../scss/_base.scss */
+  /* line 988, ../scss/_base.scss */
   table#shopping-cart-table tbody td:nth-child(2):before {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1004, ../scss/_base.scss */
+  /* line 993, ../scss/_base.scss */
   #shopping-cart-table tbody tr td {
     border: 0;
   }
@@ -2480,22 +2478,22 @@ img {
 /* RESPONSIVE DESIGN IPAD END */
 /* RESPONSIVE DESIGN MOBILE */
 @media (max-width: 625px) {
-  /* line 1016, ../scss/_base.scss */
+  /* line 1005, ../scss/_base.scss */
   .main-container {
     margin: 0px 2%;
   }
 
-  /* line 1020, ../scss/_base.scss */
+  /* line 1009, ../scss/_base.scss */
   .block-subscribe {
     padding: 10px 0px;
   }
 
-  /* line 1024, ../scss/_base.scss */
+  /* line 1013, ../scss/_base.scss */
   #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
   }
 
-  /* line 1028, ../scss/_base.scss */
+  /* line 1017, ../scss/_base.scss */
   .subscribe-button {
     border: 1px solid black;
     margin: 0px;
@@ -2505,13 +2503,13 @@ img {
     height: 30px;
   }
 
-  /* line 1038, ../scss/_base.scss */
+  /* line 1027, ../scss/_base.scss */
   #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
 
-  /* line 1043, ../scss/_base.scss */
+  /* line 1032, ../scss/_base.scss */
   .back-link-button a {
     font-size: 1em;
     margin: 0px;
@@ -2519,77 +2517,77 @@ img {
     width: 100%;
   }
 
-  /* line 1050, ../scss/_base.scss */
+  /* line 1039, ../scss/_base.scss */
   .smartphoneOnly {
     display: block;
   }
 
-  /* line 1054, ../scss/_base.scss */
+  /* line 1043, ../scss/_base.scss */
   .inlineSmartphoneOnly {
     display: inline-block;
   }
 
-  /* line 1058, ../scss/_base.scss */
+  /* line 1047, ../scss/_base.scss */
   .desktopOnly {
     display: none;
   }
 
-  /* line 1062, ../scss/_base.scss */
+  /* line 1051, ../scss/_base.scss */
   .desktopTabletOnly {
     display: none;
   }
 
-  /* line 1066, ../scss/_base.scss */
+  /* line 1055, ../scss/_base.scss */
   .forgot-pass-wrapper .page-title h1 {
     text-align: center;
   }
 
-  /* line 1070, ../scss/_base.scss */
+  /* line 1059, ../scss/_base.scss */
   .forgot-pass-wrapper {
     width: 90%;
     padding: 20px;
   }
 
   /* MY ACCOUNT */
-  /* line 1078, ../scss/_base.scss */
+  /* line 1067, ../scss/_base.scss */
   .my-account .fieldset {
     width: 75%;
     margin: 10px auto;
   }
-  /* line 1083, ../scss/_base.scss */
+  /* line 1072, ../scss/_base.scss */
   .my-account .buttons-set {
     text-align: center;
   }
 
-  /* line 1089, ../scss/_base.scss */
+  /* line 1078, ../scss/_base.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding: 0px;
   }
 
-  /* line 1093, ../scss/_base.scss */
+  /* line 1082, ../scss/_base.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: block;
     width: 95%;
   }
 
-  /* line 1098, ../scss/_base.scss */
+  /* line 1087, ../scss/_base.scss */
   .block-reorder .actions .btn-cart {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 1103, ../scss/_base.scss */
+  /* line 1092, ../scss/_base.scss */
   .my-account .box-head a, .block-reorder .view-all-link a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 1108, ../scss/_base.scss */
+  /* line 1097, ../scss/_base.scss */
   .block-reorder .block-content ol li a {
     font-size: 1em;
   }
 
-  /* line 1112, ../scss/_base.scss */
+  /* line 1101, ../scss/_base.scss */
   div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     width: 100%;
     padding: 5px 0px;
@@ -2597,42 +2595,42 @@ img {
     text-align: center;
   }
 
-  /* line 1119, ../scss/_base.scss */
+  /* line 1108, ../scss/_base.scss */
   .my-account .pager .amount {
     width: 25%;
     display: inline-block;
   }
 
-  /* line 1124, ../scss/_base.scss */
+  /* line 1113, ../scss/_base.scss */
   .my-account .pager .limiter {
     width: 70%;
   }
 
-  /* line 1128, ../scss/_base.scss */
+  /* line 1117, ../scss/_base.scss */
   .box-info a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 1133, ../scss/_base.scss */
+  /* line 1122, ../scss/_base.scss */
   .my-account-edit {
     width: 100%;
   }
 
   /* ADD NEW ADDRESS */
-  /* line 1138, ../scss/_base.scss */
+  /* line 1127, ../scss/_base.scss */
   li.fields:nth-child(4) > div:nth-child(2) {
     width: 100%;
     display: block;
   }
 
-  /* line 1143, ../scss/_base.scss */
+  /* line 1132, ../scss/_base.scss */
   .my-account #form-validate {
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 1148, ../scss/_base.scss */
+  /* line 1137, ../scss/_base.scss */
   #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
   #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
   #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
@@ -2648,13 +2646,13 @@ img {
     display: none;
   }
 
-  /* line 1163, ../scss/_base.scss */
+  /* line 1152, ../scss/_base.scss */
   #newsletter-validate-detail .block-content .button {
     min-width: 25%;
   }
 
   /* CHECKOUT */
-  /* line 1168, ../scss/_base.scss */
+  /* line 1157, ../scss/_base.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -2662,29 +2660,29 @@ img {
     margin: 5px 2px;
   }
 
-  /* line 1175, ../scss/_base.scss */
+  /* line 1164, ../scss/_base.scss */
   #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
 
-  /* line 1179, ../scss/_base.scss */
+  /* line 1168, ../scss/_base.scss */
   #checkoutSteps {
     width: 100%;
   }
 
-  /* line 1182, ../scss/_base.scss */
+  /* line 1171, ../scss/_base.scss */
   #billing\:country_id {
     display: block;
     width: 100%;
   }
 
-  /* line 1187, ../scss/_base.scss */
+  /* line 1176, ../scss/_base.scss */
   #checkoutSteps fieldset, #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
 
-  /* line 1193, ../scss/_base.scss */
+  /* line 1182, ../scss/_base.scss */
   .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
     display: block;
     width: 100%;

@@ -104,3 +104,12 @@ button{
 		margin:20px 0px 20px 0px;
 	}	
 }
+
+
+// --------- RESPONSIVE IMAGES -----------
+
+img{
+    max-width:100% !important;
+    height:auto;
+    display:block;
+}

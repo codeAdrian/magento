@@ -725,17 +725,6 @@ input.validation-failed select.validation-failed, .validation-failed{
 /* VALIDATION FAILED END */
 
 
-/* RESPONSIVE DESIGN - GENERAL */
-
-
-img{
-    max-width:100% !important;
-    height:auto;
-    display:block;
-}
-
-/* RESPONSIVE DESIGN END */
-
 /* RESPONSIVE DESIGN IPAD */
 
 @include breakpoint($tablet-breakpoint){
