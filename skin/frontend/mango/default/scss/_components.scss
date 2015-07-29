@@ -12,16 +12,25 @@ button{
 }
 
 .red-button, .btn-checkout, #button_register{
-	
 	margin:10px 0px;
 	@include m-mango-buttons(#ad0202);
 	
 }
 
 #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, .checkout-wrapper .buttons-set button, #send2{
-	width:20%;
-	margin:10px 5px;
+	margin:10px 0px;
 	@include m-mango-buttons(#474444);
+}
+
+@include breakpoint($smartphone-breakpoint){
+	.red-button, .btn-checkout, #button_register{
+		width:100%;
+		
+	}
+
+	#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, .checkout-wrapper .buttons-set button, #send2{
+		width:100%;
+	}
 }
 
 // ----------- NEWSLETTER BANNER ---------

@@ -76,11 +76,13 @@
         </div>
         <?php if ($this->helper('customer')->isLoggedIn()): ?> 
 <hr/>
-
+<div class="col2 registered-users">
+ <div class="content">
                 <p><?php echo $this->__('Do you want to sign out? Click here') ?></p>
 
 <button type="button" title="<?php echo $this->__('Log out') ?>" class="gray-button" onclick="window.location='<?php echo Mage::helper('customer')->getLogoutUrl();?>';"><span><span><?php echo $this->__('Log out') ?></span></span></button>    
-
+</div>
+</div>
 
             <?php else: ?>
         <div class="col2-set">
