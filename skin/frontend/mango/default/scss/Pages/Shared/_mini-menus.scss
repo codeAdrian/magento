@@ -25,6 +25,10 @@
 	.product-image{
 	display: inline-block !important;
 	}
+
+	.subtotal{
+		font-size:1em;
+	}
 }
 
 .mini-menu {
@@ -114,7 +118,6 @@
 	width:100%;
 	margin:0px;
 	text-align: left;
-	font-size:0.8em;
 
 	input{
 		color:black;
@@ -264,6 +267,18 @@ a.f-left{
 	#mini-menu-account{
 		top:50px;
 		right:4%;
+		.content-account{
+			padding:0.5em 0em;
+		}
+		
+		.input-box{
+			input{
+				width:100%;
+			}
+		}
+		.registered-users{
+			padding:0em 1em;
+		}
 	}
 
 	#mini-menu-cart{
@@ -278,6 +293,10 @@ a.f-left{
 
 		.grid2{
 			margin:5px auto;
+		}
+
+		.btn-remove{
+			padding:1% 2.25%;
 		}
 	}
 

@@ -2554,18 +2554,8 @@ img {
     margin: 0px;
   }
 
-  /* line 1174, ../scss/_base.scss */
-  .account-login-page .content, .forgot-pass-wrapper .fieldset, #form-validate .fieldset, #mini-menu-account, #mini-menu-cart {
-    font-size: 0.8em;
-  }
-
-  /* line 1178, ../scss/_base.scss */
-  #mini-menu-account .content-account, #mini-menu-cart .content-account {
-    padding: 10px 20px;
-  }
-
   /* PAGE NOT FOUND */
-  /* line 1186, ../scss/_base.scss */
+  /* line 1178, ../scss/_base.scss */
   .page-not-found-wrapper .products-grid .item {
     width: 100%;
     display: block;
@@ -2574,30 +2564,30 @@ img {
 
   /* PRODUCT PAGE */
   /* RESPONSIVE MYPAGE TABLE */
-  /* line 1196, ../scss/_base.scss */
+  /* line 1188, ../scss/_base.scss */
   table#my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 1200, ../scss/_base.scss */
+  /* line 1192, ../scss/_base.scss */
   table#my-orders-table thead {
     display: none;
   }
 
-  /* line 1203, ../scss/_base.scss */
+  /* line 1195, ../scss/_base.scss */
   table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 1207, ../scss/_base.scss */
+  /* line 1199, ../scss/_base.scss */
   table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
     padding: 10px 0px;
   }
 
-  /* line 1213, ../scss/_base.scss */
+  /* line 1205, ../scss/_base.scss */
   table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -2605,12 +2595,12 @@ img {
     width: 100%;
   }
 
-  /* line 1220, ../scss/_base.scss */
+  /* line 1212, ../scss/_base.scss */
   table#my-orders-table tbody tr td:last-child {
     text-align: center;
   }
 
-  /* line 1223, ../scss/_base.scss */
+  /* line 1215, ../scss/_base.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -2620,77 +2610,77 @@ img {
     text-align: right;
   }
 
-  /* line 1232, ../scss/_base.scss */
+  /* line 1224, ../scss/_base.scss */
   .product-name a {
     font-size: 0.8em;
   }
 
-  /* line 1235, ../scss/_base.scss */
+  /* line 1227, ../scss/_base.scss */
   .my-account #my-orders-table {
     text-align: center;
     font-size: 1em;
   }
 
-  /* line 1240, ../scss/_base.scss */
+  /* line 1232, ../scss/_base.scss */
   .cart-fieldset .btn-remove {
     padding: 2px 6px;
   }
 
-  /* line 1244, ../scss/_base.scss */
+  /* line 1236, ../scss/_base.scss */
   #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1) {
     text-align: center;
     padding: 0px;
   }
 
-  /* line 1249, ../scss/_base.scss */
+  /* line 1241, ../scss/_base.scss */
   #shopping-cart-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 1253, ../scss/_base.scss */
+  /* line 1245, ../scss/_base.scss */
   .cart-fieldset {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 1257, ../scss/_base.scss */
+  /* line 1249, ../scss/_base.scss */
   .cart .page-title {
     text-align: center;
   }
 
-  /* line 1261, ../scss/_base.scss */
+  /* line 1253, ../scss/_base.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 30%;
   }
 
   /* VIEW ORDER */
-  /* line 1266, ../scss/_base.scss */
+  /* line 1258, ../scss/_base.scss */
   .sales-order-view #my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 1270, ../scss/_base.scss */
+  /* line 1262, ../scss/_base.scss */
   .sales-order-view #my-orders-table colgroup {
     width: 100%;
   }
 
-  /* line 1274, ../scss/_base.scss */
+  /* line 1266, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td {
     width: 100%;
   }
 
-  /* line 1280, ../scss/_base.scss */
+  /* line 1272, ../scss/_base.scss */
   .sales-order-view table#my-orders-table thead {
     display: none;
   }
 
-  /* line 1283, ../scss/_base.scss */
+  /* line 1275, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 1287, ../scss/_base.scss */
+  /* line 1279, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -2698,7 +2688,7 @@ img {
     margin: 0px;
   }
 
-  /* line 1294, ../scss/_base.scss */
+  /* line 1286, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -2706,7 +2696,7 @@ img {
     width: 100%;
   }
 
-  /* line 1301, ../scss/_base.scss */
+  /* line 1293, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .item-options {
     margin: 0px;
     padding: 0px;
@@ -2716,12 +2706,12 @@ img {
     margin: 0px 0px 70px 0px;
   }
 
-  /* line 1310, ../scss/_base.scss */
+  /* line 1302, ../scss/_base.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     width: 30%;
   }
 
-  /* line 1314, ../scss/_base.scss */
+  /* line 1306, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .item-options dt, .sales-order-view table#my-orders-table .item-options #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .sales-order-view table#my-orders-table .item-options dd, .sales-order-view table#my-orders-table .item-options dd {
     width: 45%;
     margin: 0px;
@@ -2730,13 +2720,13 @@ img {
     color: black;
   }
 
-  /* line 1322, ../scss/_base.scss */
+  /* line 1314, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:last-child {
     text-align: center;
     background-color: #b4b4b4;
   }
 
-  /* line 1326, ../scss/_base.scss */
+  /* line 1318, ../scss/_base.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -2744,20 +2734,20 @@ img {
     padding: 0px;
   }
 
-  /* line 1332, ../scss/_base.scss */
+  /* line 1324, ../scss/_base.scss */
   .sales-order-view table#my-orders-table .product-name {
     margin: 0;
     padding: 0;
   }
 
-  /* line 1337, ../scss/_base.scss */
+  /* line 1329, ../scss/_base.scss */
   table#shopping-cart-table tbody td:nth-child(2):before {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1342, ../scss/_base.scss */
+  /* line 1334, ../scss/_base.scss */
   #shopping-cart-table tbody tr td {
     border: 0;
   }
@@ -2765,22 +2755,22 @@ img {
 /* RESPONSIVE DESIGN IPAD END */
 /* RESPONSIVE DESIGN MOBILE */
 @media (max-width: 625px) {
-  /* line 1354, ../scss/_base.scss */
+  /* line 1346, ../scss/_base.scss */
   .main-container {
     margin: 0px 2%;
   }
 
-  /* line 1358, ../scss/_base.scss */
+  /* line 1350, ../scss/_base.scss */
   .block-subscribe {
     padding: 10px 0px;
   }
 
-  /* line 1362, ../scss/_base.scss */
+  /* line 1354, ../scss/_base.scss */
   #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
   }
 
-  /* line 1366, ../scss/_base.scss */
+  /* line 1358, ../scss/_base.scss */
   .subscribe-button {
     border: 1px solid black;
     margin: 0px;
@@ -2790,13 +2780,13 @@ img {
     height: 30px;
   }
 
-  /* line 1376, ../scss/_base.scss */
+  /* line 1368, ../scss/_base.scss */
   #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
 
-  /* line 1381, ../scss/_base.scss */
+  /* line 1373, ../scss/_base.scss */
   .back-link-button a {
     font-size: 1em;
     margin: 0px;
@@ -2804,97 +2794,85 @@ img {
     width: 100%;
   }
 
-  /* line 1388, ../scss/_base.scss */
+  /* line 1380, ../scss/_base.scss */
   .red-button {
     width: 100%;
   }
 
-  /* line 1392, ../scss/_base.scss */
+  /* line 1384, ../scss/_base.scss */
   .smartphoneOnly {
     display: block;
   }
 
-  /* line 1396, ../scss/_base.scss */
+  /* line 1388, ../scss/_base.scss */
   .inlineSmartphoneOnly {
     display: inline-block;
   }
 
-  /* line 1400, ../scss/_base.scss */
+  /* line 1392, ../scss/_base.scss */
   .desktopOnly {
     display: none;
   }
 
-  /* line 1404, ../scss/_base.scss */
+  /* line 1396, ../scss/_base.scss */
   .desktopTabletOnly {
     display: none;
   }
 
-  /* line 1408, ../scss/_base.scss */
-  button {
-    min-width: 200px;
-  }
-
-  /* line 1412, ../scss/_base.scss */
+  /* line 1400, ../scss/_base.scss */
   .forgot-pass-wrapper .page-title h1 {
     text-align: center;
   }
 
-  /* line 1416, ../scss/_base.scss */
+  /* line 1404, ../scss/_base.scss */
   .forgot-pass-wrapper {
     width: 90%;
     padding: 20px;
-  }
-
-  /* line 1421, ../scss/_base.scss */
-  .gray-button, .red-button, #mini_cart_edit, #mini_cart_checkout {
-    font-size: 1em;
-    margin: 2px;
-    padding: 5px 0px;
   }
 
   /* CATEGORY VIEW */
   /* PRODUCT PAGE */
   /* PRODUCT PAGE END */
   /* MY ACCOUNT */
-  /* line 1438, ../scss/_base.scss */
+  /* line 1420, ../scss/_base.scss */
   .my-account .fieldset {
     width: 75%;
     margin: 10px auto;
   }
-  /* line 1443, ../scss/_base.scss */
+  /* line 1425, ../scss/_base.scss */
   .my-account .buttons-set {
     text-align: center;
   }
 
-  /* line 1449, ../scss/_base.scss */
+  /* line 1431, ../scss/_base.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding: 0px;
   }
 
-  /* line 1453, ../scss/_base.scss */
+  /* line 1435, ../scss/_base.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: block;
     width: 95%;
   }
 
-  /* line 1458, ../scss/_base.scss */
+  /* line 1440, ../scss/_base.scss */
   .block-reorder .actions .btn-cart {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 1463, ../scss/_base.scss */
+  /* line 1445, ../scss/_base.scss */
   .my-account .box-head a, .block-reorder .view-all-link a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 1468, ../scss/_base.scss */
+  /* line 1450, ../scss/_base.scss */
   .block-reorder .block-content ol li a {
     font-size: 1em;
   }
 
-  /* line 1472, ../scss/_base.scss */
+  /* line 1454, ../scss/_base.scss */
   div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     width: 100%;
     padding: 5px 0px;
@@ -2902,43 +2880,43 @@ img {
     text-align: center;
   }
 
-  /* line 1479, ../scss/_base.scss */
+  /* line 1461, ../scss/_base.scss */
   .my-account .pager .amount {
     width: 25%;
     display: inline-block;
   }
 
-  /* line 1484, ../scss/_base.scss */
+  /* line 1466, ../scss/_base.scss */
   .my-account .pager .limiter {
     width: 70%;
   }
 
-  /* line 1488, ../scss/_base.scss */
+  /* line 1470, ../scss/_base.scss */
   .box-info a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 1493, ../scss/_base.scss */
+  /* line 1475, ../scss/_base.scss */
   .my-account-edit {
     width: 100%;
   }
 
-  /* line 1497, ../scss/_base.scss */
+  /* line 1479, ../scss/_base.scss */
   .cart .page-title button {
     margin: 10px 0px;
     width: 100%;
     font-size: 0.75em;
   }
 
-  /* line 1503, ../scss/_base.scss */
+  /* line 1485, ../scss/_base.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 100%;
     font-size: 0.75em;
     margin: 5px 0px;
   }
 
-  /* line 1509, ../scss/_base.scss */
+  /* line 1491, ../scss/_base.scss */
   table#shopping-cart-table tbody td:not(:last-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -2948,18 +2926,18 @@ img {
     text-align: right;
   }
 
-  /* line 1518, ../scss/_base.scss */
+  /* line 1500, ../scss/_base.scss */
   table#shopping-cart-table thead {
     display: none;
   }
 
-  /* line 1521, ../scss/_base.scss */
+  /* line 1503, ../scss/_base.scss */
   table#shopping-cart-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 1525, ../scss/_base.scss */
+  /* line 1507, ../scss/_base.scss */
   table#shopping-cart-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -2967,7 +2945,7 @@ img {
     margin: 0px;
   }
 
-  /* line 1532, ../scss/_base.scss */
+  /* line 1514, ../scss/_base.scss */
   table#shopping-cart-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -2975,37 +2953,37 @@ img {
     width: 100%;
   }
 
-  /* line 1539, ../scss/_base.scss */
+  /* line 1521, ../scss/_base.scss */
   table#shopping-cart-table tbody tr td:last-child {
     text-align: center;
     background-color: #b4b4b4;
   }
 
-  /* line 1543, ../scss/_base.scss */
+  /* line 1525, ../scss/_base.scss */
   table#shopping-cart-table tbody tr td:first-child {
     display: none;
   }
 
-  /* line 1546, ../scss/_base.scss */
+  /* line 1528, ../scss/_base.scss */
   #shopping-cart-table .product-name {
     margin: 0;
     padding: 0;
   }
 
-  /* line 1551, ../scss/_base.scss */
+  /* line 1533, ../scss/_base.scss */
   table#shopping-cart-table tbody td:nth-child(2):before {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  /* line 1556, ../scss/_base.scss */
+  /* line 1538, ../scss/_base.scss */
   #shopping-cart-table tbody tr td {
     border: 0;
     padding: 5px 0px;
   }
 
-  /* line 1561, ../scss/_base.scss */
+  /* line 1543, ../scss/_base.scss */
   #shopping-cart-table .qty {
     font-size: 0.8em;
     width: 1.5em;
@@ -3013,30 +2991,30 @@ img {
     padding: 2px;
   }
 
-  /* line 1568, ../scss/_base.scss */
+  /* line 1550, ../scss/_base.scss */
   .cart .totals, .cart .cart-collaterals, .cart .shipping {
     width: 100%;
   }
 
-  /* line 1572, ../scss/_base.scss */
+  /* line 1554, ../scss/_base.scss */
   .cart .totals, .cart .cart-collaterals, .cart .shipping {
     font-size: 0.8em;
   }
 
   /* ADD NEW ADDRESS */
-  /* line 1577, ../scss/_base.scss */
+  /* line 1559, ../scss/_base.scss */
   li.fields:nth-child(4) > div:nth-child(2) {
     width: 100%;
     display: block;
   }
 
-  /* line 1582, ../scss/_base.scss */
+  /* line 1564, ../scss/_base.scss */
   .my-account #form-validate {
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 1587, ../scss/_base.scss */
+  /* line 1569, ../scss/_base.scss */
   #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
   #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
   #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
@@ -3052,13 +3030,13 @@ img {
     display: none;
   }
 
-  /* line 1602, ../scss/_base.scss */
+  /* line 1584, ../scss/_base.scss */
   #newsletter-validate-detail .block-content .button {
     min-width: 25%;
   }
 
   /* CHECKOUT */
-  /* line 1607, ../scss/_base.scss */
+  /* line 1589, ../scss/_base.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -3066,29 +3044,29 @@ img {
     margin: 5px 2px;
   }
 
-  /* line 1614, ../scss/_base.scss */
+  /* line 1596, ../scss/_base.scss */
   #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
 
-  /* line 1618, ../scss/_base.scss */
+  /* line 1600, ../scss/_base.scss */
   #checkoutSteps {
     width: 100%;
   }
 
-  /* line 1621, ../scss/_base.scss */
+  /* line 1603, ../scss/_base.scss */
   #billing\:country_id {
     display: block;
     width: 100%;
   }
 
-  /* line 1626, ../scss/_base.scss */
+  /* line 1608, ../scss/_base.scss */
   #checkoutSteps fieldset, #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
 
-  /* line 1632, ../scss/_base.scss */
+  /* line 1614, ../scss/_base.scss */
   .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
     display: block;
     width: 100%;
@@ -3803,19 +3781,23 @@ nav ul li ul li a {
 #mini-menu-cart .product-image {
   display: inline-block !important;
 }
+/* line 29, ../scss/pages/shared/_mini-menus.scss */
+#mini-menu-cart .subtotal {
+  font-size: 1em;
+}
 
-/* line 30, ../scss/pages/shared/_mini-menus.scss */
+/* line 34, ../scss/pages/shared/_mini-menus.scss */
 .mini-menu {
   display: none;
   z-index: 999;
   color: black;
 }
-/* line 35, ../scss/pages/shared/_mini-menus.scss */
+/* line 39, ../scss/pages/shared/_mini-menus.scss */
 .mini-menu p {
   padding: 5px 0px;
 }
 
-/* line 40, ../scss/pages/shared/_mini-menus.scss */
+/* line 44, ../scss/pages/shared/_mini-menus.scss */
 .content-account, .content-cart {
   border: 1px solid #969696;
   position: relative;
@@ -3823,12 +3805,12 @@ nav ul li ul li a {
   padding: 0.5em 2em 1em 2em;
 }
 
-/* line 47, ../scss/pages/shared/_mini-menus.scss */
+/* line 51, ../scss/pages/shared/_mini-menus.scss */
 #cart-free-delivery p {
   margin: 8px 0px;
 }
 
-/* line 51, ../scss/pages/shared/_mini-menus.scss */
+/* line 55, ../scss/pages/shared/_mini-menus.scss */
 #free-delivery-outline {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3845,7 +3827,7 @@ nav ul li ul li a {
   padding: 0px;
 }
 
-/* line 63, ../scss/pages/shared/_mini-menus.scss */
+/* line 67, ../scss/pages/shared/_mini-menus.scss */
 #free-delivery-inside {
   margin: 0px;
   padding: 0px;
@@ -3857,18 +3839,18 @@ nav ul li ul li a {
   border-radius: 5px;
 }
 
-/* line 72, ../scss/pages/shared/_mini-menus.scss */
+/* line 76, ../scss/pages/shared/_mini-menus.scss */
 #free-delivery-subtext {
   font-size: 0.8em;
 }
 
-/* line 76, ../scss/pages/shared/_mini-menus.scss */
+/* line 80, ../scss/pages/shared/_mini-menus.scss */
 #free-delivery-text {
   text-transform: uppercase;
   font-size: 0.9em;
 }
 
-/* line 81, ../scss/pages/shared/_mini-menus.scss */
+/* line 85, ../scss/pages/shared/_mini-menus.scss */
 .content-account:before {
   z-index: -10;
   content: '';
@@ -3883,7 +3865,7 @@ nav ul li ul li a {
   top: -10px;
 }
 
-/* line 87, ../scss/pages/shared/_mini-menus.scss */
+/* line 91, ../scss/pages/shared/_mini-menus.scss */
 .content-cart:before {
   z-index: -10;
   content: '';
@@ -3900,13 +3882,13 @@ nav ul li ul li a {
 
 /* MINI MENU END */
 /* LOGIN MINI-MENU*/
-/* line 98, ../scss/pages/shared/_mini-menus.scss */
+/* line 102, ../scss/pages/shared/_mini-menus.scss */
 .content-account .form-list {
   padding: 0;
   list-style: none;
   margin: 0;
 }
-/* line 103, ../scss/pages/shared/_mini-menus.scss */
+/* line 107, ../scss/pages/shared/_mini-menus.scss */
 .content-account .form-list li {
   padding: 0px 0px 15px 0px;
   text-transform: uppercase;
@@ -3915,28 +3897,27 @@ nav ul li ul li a {
   color: #bdbbbb;
 }
 
-/* line 112, ../scss/pages/shared/_mini-menus.scss */
+/* line 116, ../scss/pages/shared/_mini-menus.scss */
 .input-box {
   text-align: center;
   width: 100%;
   margin: 0px;
   text-align: left;
-  font-size: 0.8em;
 }
-/* line 119, ../scss/pages/shared/_mini-menus.scss */
+/* line 122, ../scss/pages/shared/_mini-menus.scss */
 .input-box input {
   color: black;
   text-align: left;
   width: 90%;
 }
 
-/* line 126, ../scss/pages/shared/_mini-menus.scss */
+/* line 129, ../scss/pages/shared/_mini-menus.scss */
 label.required {
   color: blacK;
   font-weight: 300;
 }
 
-/* line 132, ../scss/pages/shared/_mini-menus.scss */
+/* line 135, ../scss/pages/shared/_mini-menus.scss */
 .back-link-button a {
   background-color: #474444;
   color: white;
@@ -3949,16 +3930,16 @@ label.required {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 144, ../scss/pages/shared/_mini-menus.scss */
+/* line 147, ../scss/pages/shared/_mini-menus.scss */
 .back-link-button a:hover {
   background-color: black;
 }
-/* line 148, ../scss/pages/shared/_mini-menus.scss */
+/* line 151, ../scss/pages/shared/_mini-menus.scss */
 .back-link-button a:active {
   background-color: #9b9a9a;
 }
 
-/* line 154, ../scss/pages/shared/_mini-menus.scss */
+/* line 157, ../scss/pages/shared/_mini-menus.scss */
 a.f-left {
   margin: 5px 0px;
   display: block;
@@ -3966,17 +3947,17 @@ a.f-left {
   color: black;
 }
 
-/* line 161, ../scss/pages/shared/_mini-menus.scss */
+/* line 164, ../scss/pages/shared/_mini-menus.scss */
 .registered-users hr {
   margin: 12px 0px;
 }
 
-/* line 165, ../scss/pages/shared/_mini-menus.scss */
+/* line 168, ../scss/pages/shared/_mini-menus.scss */
 #button_register {
   background-color: #ad0202;
   font-weight: bold;
 }
-/* line 169, ../scss/pages/shared/_mini-menus.scss */
+/* line 172, ../scss/pages/shared/_mini-menus.scss */
 #button_register span span {
   color: white;
   text-transform: uppercase;
@@ -3984,19 +3965,19 @@ a.f-left {
 
 /* LOGIN MINI MENU END */
 /* CART MINI MENU */
-/* line 179, ../scss/pages/shared/_mini-menus.scss */
+/* line 182, ../scss/pages/shared/_mini-menus.scss */
 #cart-sidebar {
   list-style: none;
   padding: 0px;
   margin: 10px auto;
 }
 
-/* line 185, ../scss/pages/shared/_mini-menus.scss */
+/* line 188, ../scss/pages/shared/_mini-menus.scss */
 .amount {
   font-size: 0.8em;
 }
 
-/* line 190, ../scss/pages/shared/_mini-menus.scss */
+/* line 193, ../scss/pages/shared/_mini-menus.scss */
 #mini_cart_checkout {
   color: white;
   background-color: #ad0202;
@@ -4012,7 +3993,7 @@ a.f-left {
   background-color: #fd4b4b;
 }
 
-/* line 196, ../scss/pages/shared/_mini-menus.scss */
+/* line 199, ../scss/pages/shared/_mini-menus.scss */
 #mini_cart_edit {
   color: white;
   background-color: #474444;
@@ -4027,17 +4008,17 @@ a.f-left {
   background-color: #949090;
 }
 
-/* line 201, ../scss/pages/shared/_mini-menus.scss */
+/* line 204, ../scss/pages/shared/_mini-menus.scss */
 .product-image {
   vertical-align: middle;
   width: 30%;
 }
-/* line 205, ../scss/pages/shared/_mini-menus.scss */
+/* line 208, ../scss/pages/shared/_mini-menus.scss */
 .product-image img {
   margin: 0px auto;
 }
 
-/* line 210, ../scss/pages/shared/_mini-menus.scss */
+/* line 213, ../scss/pages/shared/_mini-menus.scss */
 .product-details, .block-related .block-content .product-image {
   display: inline-block;
   width: 50%;
@@ -4046,7 +4027,7 @@ a.f-left {
   font-size: 0.8em;
 }
 
-/* line 218, ../scss/pages/shared/_mini-menus.scss */
+/* line 221, ../scss/pages/shared/_mini-menus.scss */
 .btn-remove {
   text-decoration: none;
   text-align: center;
@@ -4060,11 +4041,11 @@ a.f-left {
   margin: 5px 0px auto 0px;
 }
 
-/* line 229, ../scss/pages/shared/_mini-menus.scss */
+/* line 232, ../scss/pages/shared/_mini-menus.scss */
 .product-name {
   margin: 7px 0px;
 }
-/* line 232, ../scss/pages/shared/_mini-menus.scss */
+/* line 235, ../scss/pages/shared/_mini-menus.scss */
 .product-name a {
   text-decoration: none;
   color: black;
@@ -4072,54 +4053,70 @@ a.f-left {
   text-transform: uppercase;
 }
 
-/* line 240, ../scss/pages/shared/_mini-menus.scss */
+/* line 243, ../scss/pages/shared/_mini-menus.scss */
 .content-cart hr {
   border: 0;
   border-top: 1px solid #b0b0b0;
   color: #b0b0b0;
 }
 
-/* line 245, ../scss/pages/shared/_mini-menus.scss */
+/* line 248, ../scss/pages/shared/_mini-menus.scss */
 .subtotal {
   font-weight: bold;
 }
 
 /* CART MINI MENU END */
 @media (max-width: 900px) {
-  /* line 254, ../scss/pages/shared/_mini-menus.scss */
+  /* line 257, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
   }
 
-  /* line 258, ../scss/pages/shared/_mini-menus.scss */
+  /* line 261, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     right: 2%;
   }
 }
 @media (max-width: 625px) {
-  /* line 264, ../scss/pages/shared/_mini-menus.scss */
+  /* line 267, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     top: 50px;
     right: 4%;
   }
+  /* line 270, ../scss/pages/shared/_mini-menus.scss */
+  #mini-menu-account .content-account, #mini-menu-cart .content-account {
+    padding: 0.5em 0em;
+  }
+  /* line 275, ../scss/pages/shared/_mini-menus.scss */
+  #mini-menu-account .input-box input, #mini-menu-cart .input-box input {
+    width: 100%;
+  }
+  /* line 279, ../scss/pages/shared/_mini-menus.scss */
+  #mini-menu-account .registered-users, #mini-menu-cart .registered-users {
+    padding: 0em 1em;
+  }
 
-  /* line 269, ../scss/pages/shared/_mini-menus.scss */
+  /* line 284, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
     top: 50px;
     width: 300px;
   }
-  /* line 274, ../scss/pages/shared/_mini-menus.scss */
+  /* line 289, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart .product-image {
     width: 30%;
     display: inline-block;
   }
-  /* line 279, ../scss/pages/shared/_mini-menus.scss */
+  /* line 294, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart .grid2 {
     margin: 5px auto;
   }
+  /* line 298, ../scss/pages/shared/_mini-menus.scss */
+  #mini-menu-cart .btn-remove {
+    padding: 1% 2.25%;
+  }
 
-  /* line 284, ../scss/pages/shared/_mini-menus.scss */
+  /* line 303, ../scss/pages/shared/_mini-menus.scss */
   .content-cart {
     padding: 5px 0px;
   }
