@@ -1,0 +1,33 @@
+// ----- DESKTOP
+$susy:(
+	columns:$susy-desktop-cart-columns,
+	//debug: (image: show),
+);
+
+	.cart{
+		.cart-totals-wrapper{
+			@include container($susy-desktop-cart-columns);
+			.shipping, .cart-collaterals{
+				@include span(1 of $susy-desktop-cart-columns);
+			}
+			.totals{
+				@include span(last 1 of $susy-desktop-cart-columns);			
+			}
+		}
+}
+
+
+// ----- SMARTPHONE
+@include breakpoint($smartphone-breakpoint){
+	.cart{
+		.cart-totals-wrapper{
+			@include container($susy-smartphone-cart-columns);
+			.shipping, .cart-collaterals{
+				@include span(1 of $susy-smartphone-cart-columns);
+			}
+			.totals{
+				@include span(last 1 of $susy-smartphone-cart-columns);			
+			}
+		}
+	}
+}
