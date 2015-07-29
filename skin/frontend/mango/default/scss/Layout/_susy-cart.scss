@@ -1,6 +1,7 @@
 // ----- DESKTOP
 $susy:(
 	columns:$susy-desktop-cart-columns,
+	gutters:5%/33%,
 	//debug: (image: show),
 );
 
@@ -18,15 +19,15 @@ $susy:(
 
 
 // ----- SMARTPHONE
-@include breakpoint($smartphone-breakpoint){
+@include breakpoint($tablet-breakpoint){
 	.cart{
 		.cart-totals-wrapper{
-			@include container($susy-smartphone-cart-columns);
+			@include container($susy-tablet-cart-columns);
 			.shipping, .cart-collaterals{
-				@include span(1 of $susy-smartphone-cart-columns);
+				@include span(1 of $susy-tablet-cart-columns);
 			}
 			.totals{
-				@include span(last 1 of $susy-smartphone-cart-columns);			
+				@include span(last 1 of $susy-tablet-cart-columns);			
 			}
 		}
 	}

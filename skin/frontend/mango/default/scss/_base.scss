@@ -864,6 +864,73 @@ img{
 
 	/* PRODUCT PAGE */
 
+	/* MY ACCOUNT */
+
+	.my-account .addresses-primary ol li, .my-account .addresses-additional ol li{
+		display: block;
+		width:100%;
+	}
+
+	.my-account .order-info-box, .my-account .order-info, .my-account .order-date{
+		width:45%;
+	}
+
+	.my-account{
+		margin-left:2%;
+	}
+
+	.customer-account-index .col2-left-layout{
+		margin:0px 4%;
+	}
+
+	.col2-left-layout .col-left{
+		width:28%;
+	}
+
+	.col2-left-layout .col-main{
+		width:72%;
+	}
+
+	.dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent{
+		padding-left:10px;
+	}
+
+	.my-account #my-orders-table{
+		font-size: 0.8em;
+	}
+	.my-account #form-validate{
+		padding:0px 10px;
+	}
+
+	.box-info a{
+		min-width:80px;
+		width:auto;
+	}
+
+	.sidebar .block-account, div.block:nth-child(2), .sidebar .block-reorder, div.block:nth-child(2){
+		margin:10px 0px 10px 0px;
+	}
+
+	.block-reorder .block-content ol{
+		margin:0px;
+		padding:0px;
+	}
+
+	.block-reorder .block-content #cart-sidebar-reorder li{
+		padding:5px 0px;
+	}
+
+	.block-reorder .block-content .block-subtitle{
+		font-size: 1em;
+		padding:0px 0px 0px 10px;
+	}
+
+	.box-info .col2-set .col-1, .box-info .col2-set .col-2{
+		display: inline-block;
+		width:45%;
+		margin:5px 0px;
+	}
+
 
 /* RESPONSIVE MYPAGE TABLE */
 	table#my-orders-table colgroup col:not(:first-child){
