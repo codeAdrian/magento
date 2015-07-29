@@ -260,7 +260,7 @@ text-transform: uppercase;
 
 /* PRODUCT PAGE END */
 
-/* MY CART PAGE */
+/* MY ACCOUNT */
 
 .sidebar .block-account, .sidebar .block-reorder {
 	border:1px solid #B4B4B4;
@@ -677,14 +677,6 @@ font-weight: 300;
 
 #checkoutSteps li:not(:last-child) .step-title h2{
 border-bottom:1px solid white;
-}
-
-#checkoutSteps li #billing-buttons-container{
-	/*
-	width:20%;
-	margin:0px 10px;
-	text-align: center;
-	display: inline-block;*/
 }
 
 .checkout-wrapper .please-wait{
