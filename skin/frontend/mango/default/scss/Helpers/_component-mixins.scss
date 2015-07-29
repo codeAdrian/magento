@@ -1,0 +1,28 @@
+// ---------- MINI MENU BOX BORDERS ----------
+
+@mixin m-mini-menu-box($main-border, $top-border, $left-border, $right-border){
+	z-index: -10;
+	content: '';
+	width: 0;
+	height: 0;
+	border: $main-border solid #555151;
+	border-top: $top-border solid rgba(60, 0, 0, 0)!important;
+	border-right: $right-border solid rgba(0, 0, 0, 0)!important;
+	border-left: $left-border solid rgba(80, 0, 0, 0);
+	position: absolute;
+}
+
+// --------- BUTTON MIXIN ----------
+
+@mixin m-mango-buttons($bg-color){
+	background-color:$bg-color;
+
+	&:hover{
+		background-color:darken($bg-color,50%);
+		cursor: pointer;
+	}
+
+	&:active{
+		background-color:lighten($bg-color,30%);
+	}
+}

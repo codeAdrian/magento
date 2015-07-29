@@ -214,6 +214,10 @@ nav ul li ul
 						margin-left:15px;
 					}		
 				}
+
+				&.last{
+					margin:0px auto;
+				}
 			}
 		}
 	}
@@ -260,7 +264,7 @@ nav ul li ul
 	    background-color: white;
 	    height:50px;
 	
-	     #header_wrapper .search_column{
+	     .header_wrapper .search_column{
 	    	width: 100%;
 			position:fixed;
 			margin-right: 3.44828%;
@@ -289,16 +293,16 @@ nav ul li ul
 		width:80%;
 	}
 
-	#header_wrapper .search_column .form-search-mini{
+	.header_wrapper .search_column .form-search-mini{
 		display: none;
 	}
 
-	#header_wrapper .searchMiniIcon{
+	.header_wrapper .searchMiniIcon{
 		display: block;
 	}
 
 	.nav-fixed{
-		#header_wrapper{
+		.header_wrapper{
 			background-color:white;
 			padding-top:5px;
 		}

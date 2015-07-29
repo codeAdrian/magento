@@ -4,8 +4,10 @@
 	position: absolute;
 	right:0%;
 	top: 50px;
-	font-size: 0.75em;
 	width: 250px;
+	p,ul,a{
+		font-size:0.75em;
+	}
 }
 
 #mini-menu-cart {
@@ -14,6 +16,11 @@
 	right:0%;
 	top: 50px;
 	width:370px;
+
+	.product-details p,.product-details a{
+		font-size: 1em;
+		padding:0px 0px 5px;
+	}
 
 	.product-image{
 	display: inline-block !important;
@@ -81,10 +88,6 @@
 	@include m-mini-menu-box(25px, 0px, 13px, 13px);
 	right: 10px;
 	top: -10px;
-}
-
-form span {
-  color: black;
 }
 
 /* MINI MENU END */
@@ -218,7 +221,7 @@ a.f-left{
 	vertical-align: top;
 	background-color:#474444; 
 	color:white;
-	padding:0.5% 2%;
+	padding:1% 2%;
 	@include m-border-radius(70%);
 	margin:5px 0px auto 0px;
 }

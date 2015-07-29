@@ -22,7 +22,7 @@ header{
 		}
 	}
 	
-	 #header_wrapper .top-link-checkout {
+	 .header_wrapper .top-link-checkout {
 	 	display: none;
 	 }
 
@@ -30,10 +30,6 @@ header{
 		text-align: center;
 		margin:0 auto;	 	
 	 }
-
-	#smartphoneLogo{
-
-	}
 
 	.top-help-a{
 		margin-right:10px;
@@ -76,6 +72,10 @@ header{
 		text-align:center;
 		margin: 0px auto 0px 10px;
 		max-width:15em;
+	}
+
+	.logo_column h1{
+		margin:5px auto;
 	}
 
 	.links{
@@ -168,7 +168,7 @@ header{
 			margin:0px auto;
 		}
 
-		#header_wrapper{
+		.header_wrapper{
 			margin:0px;
 		}
 
@@ -292,9 +292,13 @@ header{
 			display: block;
 			width:100%;
 			clear:both;
+
+			h1{
+				margin:3px auto;
+			}
 		}
 
-		#header_wrapper {
+		.header_wrapper {
 
 			padding-top:10px;
 			background-color:white;		
