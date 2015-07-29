@@ -9,13 +9,21 @@
 	}
 
 	.shipping-form{
+		p{
+			margin:10px 0px;
+		}
 		select{
 		 	width:75%;
-	 		font-size: 1.5em;			
+	 		font-size: 1.5em;	
+	 		margin:5px 0px 10px;		
 		}
 
 		.form-list li{
 			padding:5px 0px;
+		}
+
+		input{
+			margin:5px 0px 10px;
 		}
 	}
 
@@ -39,7 +47,16 @@
 
 		table{
 			margin-left:auto;
-			margin-right:0px;			
+			margin-right:0px;	
+
+			tr td{
+				padding:5px 20px 10px 0px;
+			}
+
+			tfoot tr td{
+				padding:10px 0px 10px;
+				border-top:1px solid #B4B4B4;
+			}		
 		}
 	}
 
@@ -55,10 +72,6 @@
 		font-weight: 300;
 		color:white;
 		background-color: black;
-	}
-
-	 #shopping-cart-totals-table tr td{
-		padding:5px 20px 5px 0px;
 	}
 
 	#coupon_code{
@@ -77,9 +90,9 @@
 	margin-top:5px;
 	}
 
-	.sp-methods dd{
-		padding-right: 10px;
-		margin:0px;
+	.sp-methods{
+		text-align: left;
+		padding-left:1em;
 	}
 }
 
@@ -93,6 +106,12 @@
 
 		.input-box input{
 				width:98%;
+		}
+
+		.sp-methods{
+			text-align: center;
+	    	border: 1px solid black;
+	    	margin-left:0;
 		}
 	}
 }

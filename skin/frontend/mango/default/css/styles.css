@@ -2659,118 +2659,20 @@ img {
     width: 100%;
   }
 
-  /* line 1223, ../scss/_base.scss */
-  .cart .page-title button {
-    margin: 10px 0px;
-    width: 100%;
-    font-size: 0.75em;
-  }
-
-  /* line 1229, ../scss/_base.scss */
-  #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
-    width: 100%;
-    font-size: 0.75em;
-    margin: 5px 0px;
-  }
-
-  /* line 1235, ../scss/_base.scss */
-  table#shopping-cart-table tbody td:not(:last-child):before {
-    content: attr(data-th);
-    font-weight: bold;
-    display: inline-block;
-    text-align: right;
-    margin-right: 11%;
-  }
-
-  /* line 1243, ../scss/_base.scss */
-  table#shopping-cart-table thead {
-    display: none;
-  }
-
-  /* line 1246, ../scss/_base.scss */
-  table#shopping-cart-table tbody td {
-    display: block;
-    padding-top: 10px;
-  }
-
-  /* line 1250, ../scss/_base.scss */
-  table#shopping-cart-table tbody tr td:first-child {
-    background-color: black;
-    color: white;
-    padding: 10px 0px;
-    margin: 0px;
-  }
-
-  /* line 1257, ../scss/_base.scss */
-  table#shopping-cart-table tbody tr {
-    border: 1px solid #b4b4b4;
-    margin-top: 10px;
-    display: table-cell;
-    width: 100%;
-  }
-
-  /* line 1264, ../scss/_base.scss */
-  table#shopping-cart-table tbody tr td:last-child {
-    text-align: center;
-    background-color: #b4b4b4;
-  }
-
-  /* line 1268, ../scss/_base.scss */
-  table#shopping-cart-table tbody tr td:first-child {
-    display: none;
-  }
-
-  /* line 1271, ../scss/_base.scss */
-  #shopping-cart-table .product-name {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* line 1276, ../scss/_base.scss */
-  table#shopping-cart-table tbody td:nth-child(2):before {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* line 1281, ../scss/_base.scss */
-  #shopping-cart-table tbody tr td {
-    border: 0;
-    padding: 5px 0px;
-  }
-
-  /* line 1286, ../scss/_base.scss */
-  #shopping-cart-table .qty {
-    font-size: 0.8em;
-    width: 1.5em;
-    border: 1px solid #B5B5B5;
-    padding: 2px;
-  }
-
-  /* line 1293, ../scss/_base.scss */
-  .cart .totals, .cart .cart-collaterals, .cart .shipping {
-    width: 100%;
-  }
-
-  /* line 1297, ../scss/_base.scss */
-  .cart .totals, .cart .cart-collaterals, .cart .shipping {
-    font-size: 0.8em;
-  }
-
   /* ADD NEW ADDRESS */
-  /* line 1302, ../scss/_base.scss */
+  /* line 1224, ../scss/_base.scss */
   li.fields:nth-child(4) > div:nth-child(2) {
     width: 100%;
     display: block;
   }
 
-  /* line 1307, ../scss/_base.scss */
+  /* line 1229, ../scss/_base.scss */
   .my-account #form-validate {
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 1312, ../scss/_base.scss */
+  /* line 1234, ../scss/_base.scss */
   #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
   #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
   #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
@@ -2786,13 +2688,13 @@ img {
     display: none;
   }
 
-  /* line 1327, ../scss/_base.scss */
+  /* line 1249, ../scss/_base.scss */
   #newsletter-validate-detail .block-content .button {
     min-width: 25%;
   }
 
   /* CHECKOUT */
-  /* line 1332, ../scss/_base.scss */
+  /* line 1254, ../scss/_base.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -2800,29 +2702,29 @@ img {
     margin: 5px 2px;
   }
 
-  /* line 1339, ../scss/_base.scss */
+  /* line 1261, ../scss/_base.scss */
   #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
 
-  /* line 1343, ../scss/_base.scss */
+  /* line 1265, ../scss/_base.scss */
   #checkoutSteps {
     width: 100%;
   }
 
-  /* line 1346, ../scss/_base.scss */
+  /* line 1268, ../scss/_base.scss */
   #billing\:country_id {
     display: block;
     width: 100%;
   }
 
-  /* line 1351, ../scss/_base.scss */
+  /* line 1273, ../scss/_base.scss */
   #checkoutSteps fieldset, #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
 
-  /* line 1357, ../scss/_base.scss */
+  /* line 1279, ../scss/_base.scss */
   .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
     display: block;
     width: 100%;
@@ -4940,15 +4842,24 @@ footer .footer .grid4 ul li a:visited {
   width: 100%;
 }
 /* line 12, ../scss/pages/cart/_cart-totals.scss */
+.cart-totals-wrapper .shipping-form p {
+  margin: 10px 0px;
+}
+/* line 15, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .shipping-form select {
   width: 75%;
   font-size: 1.5em;
+  margin: 5px 0px 10px;
 }
-/* line 17, ../scss/pages/cart/_cart-totals.scss */
+/* line 21, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .shipping-form .form-list li {
   padding: 5px 0px;
 }
-/* line 22, ../scss/pages/cart/_cart-totals.scss */
+/* line 25, ../scss/pages/cart/_cart-totals.scss */
+.cart-totals-wrapper .shipping-form input {
+  margin: 5px 0px 10px;
+}
+/* line 30, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .totals, .cart-totals-wrapper .cart-collaterals, .cart-totals-wrapper .shipping {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4958,28 +4869,37 @@ footer .footer .grid4 ul li a:visited {
   text-align: left;
   border: 1px solid #B4B4B4;
 }
-/* line 30, ../scss/pages/cart/_cart-totals.scss */
+/* line 38, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .discount-form, .cart-totals-wrapper .shipping-form, .cart-totals-wrapper .totals > div {
   padding: 10px;
 }
-/* line 34, ../scss/pages/cart/_cart-totals.scss */
+/* line 42, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .page-title button {
   margin-left: 15px;
 }
-/* line 37, ../scss/pages/cart/_cart-totals.scss */
+/* line 45, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .totals {
   text-align: right;
 }
-/* line 40, ../scss/pages/cart/_cart-totals.scss */
+/* line 48, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .totals table {
   margin-left: auto;
   margin-right: 0px;
 }
-/* line 46, ../scss/pages/cart/_cart-totals.scss */
+/* line 52, ../scss/pages/cart/_cart-totals.scss */
+.cart-totals-wrapper .totals table tr td {
+  padding: 5px 20px 10px 0px;
+}
+/* line 56, ../scss/pages/cart/_cart-totals.scss */
+.cart-totals-wrapper .totals table tfoot tr td {
+  padding: 10px 0px 10px;
+  border-top: 1px solid #B4B4B4;
+}
+/* line 63, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .totals button, .cart-totals-wrapper .discount-form .buttons-set button {
   margin: 5px 15px 5px 0px;
 }
-/* line 50, ../scss/pages/cart/_cart-totals.scss */
+/* line 67, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .discount h2, .cart-totals-wrapper .discount .product-details-container .grid2 h1, .product-details-container .grid2 .cart-totals-wrapper .discount h1, .cart-totals-wrapper .shipping h2, .cart-totals-wrapper .shipping .product-details-container .grid2 h1, .product-details-container .grid2 .cart-totals-wrapper .shipping h1, .cart-totals-wrapper .totals h2, .cart-totals-wrapper .totals .product-details-container .grid2 h1, .product-details-container .grid2 .cart-totals-wrapper .totals h1 {
   margin: 0px;
   padding: 3px;
@@ -4989,40 +4909,42 @@ footer .footer .grid4 ul li a:visited {
   color: white;
   background-color: black;
 }
-/* line 60, ../scss/pages/cart/_cart-totals.scss */
-.cart-totals-wrapper #shopping-cart-totals-table tr td {
-  padding: 5px 20px 5px 0px;
-}
-/* line 64, ../scss/pages/cart/_cart-totals.scss */
+/* line 77, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper #coupon_code {
   font-size: 1em;
   padding: 2px;
   margin: 10px 0px;
 }
-/* line 70, ../scss/pages/cart/_cart-totals.scss */
+/* line 83, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper #advice-required-entry-coupon_code {
   font-size: 1.3em;
 }
-/* line 74, ../scss/pages/cart/_cart-totals.scss */
+/* line 87, ../scss/pages/cart/_cart-totals.scss */
 .cart-totals-wrapper .sp-methods dt, .cart-totals-wrapper .sp-methods #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .cart-totals-wrapper .sp-methods dd {
   font-weight: bold;
   padding-right: 10px;
   margin-top: 5px;
 }
-/* line 80, ../scss/pages/cart/_cart-totals.scss */
-.cart-totals-wrapper .sp-methods dd {
-  padding-right: 10px;
-  margin: 0px;
+/* line 93, ../scss/pages/cart/_cart-totals.scss */
+.cart-totals-wrapper .sp-methods {
+  text-align: left;
+  padding-left: 1em;
 }
 
 @media (max-width: 900px) {
-  /* line 90, ../scss/pages/cart/_cart-totals.scss */
+  /* line 103, ../scss/pages/cart/_cart-totals.scss */
   .cart-totals-wrapper .totals table {
     width: 100%;
   }
-  /* line 94, ../scss/pages/cart/_cart-totals.scss */
+  /* line 107, ../scss/pages/cart/_cart-totals.scss */
   .cart-totals-wrapper .input-box input {
     width: 98%;
+  }
+  /* line 111, ../scss/pages/cart/_cart-totals.scss */
+  .cart-totals-wrapper .sp-methods {
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 0;
   }
 }
 /* line 4, ../scss/pages/cart/_products-in-cart.scss */
@@ -5175,6 +5097,83 @@ footer .footer .grid4 ul li a:visited {
   /* line 153, ../scss/pages/cart/_products-in-cart.scss */
   .cart .cart-fieldset .btn-remove {
     padding: 0.25em 0.5em;
+  }
+}
+@media (max-width: 625px) {
+  /* line 163, ../scss/pages/cart/_products-in-cart.scss */
+  .cart .page-title button {
+    margin: 10px 0px;
+    width: 100%;
+    font-size: 0.75em;
+  }
+  /* line 169, ../scss/pages/cart/_products-in-cart.scss */
+  .cart #shopping-cart-table .btn-continue, .cart #shopping-cart-table .btn-update, .cart #shopping-cart-table #empty_cart_button {
+    width: 100%;
+    font-size: 0.75em;
+    margin: 5px 0px;
+  }
+  /* line 175, ../scss/pages/cart/_products-in-cart.scss */
+  .cart table#shopping-cart-table tbody td:not(:last-child):before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    margin-right: 11%;
+  }
+  /* line 183, ../scss/pages/cart/_products-in-cart.scss */
+  .cart table#shopping-cart-table thead {
+    display: none;
+  }
+  /* line 187, ../scss/pages/cart/_products-in-cart.scss */
+  .cart table#shopping-cart-table tbody td {
+    display: block;
+    padding-top: 10px;
+  }
+  /* line 192, ../scss/pages/cart/_products-in-cart.scss */
+  .cart table#shopping-cart-table tbody tr td:first-child {
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    margin: 0px;
+  }
+  /* line 199, ../scss/pages/cart/_products-in-cart.scss */
+  .cart table#shopping-cart-table tbody tr {
+    border: 1px solid #b4b4b4;
+    margin-top: 10px;
+    display: table-cell;
+    width: 100%;
+  }
+  /* line 206, ../scss/pages/cart/_products-in-cart.scss */
+  .cart table#shopping-cart-table tbody tr td:last-child {
+    text-align: center;
+    background-color: #b4b4b4;
+  }
+  /* line 210, ../scss/pages/cart/_products-in-cart.scss */
+  .cart table#shopping-cart-table tbody tr td:first-child {
+    display: none;
+  }
+  /* line 214, ../scss/pages/cart/_products-in-cart.scss */
+  .cart #shopping-cart-table .product-name {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 219, ../scss/pages/cart/_products-in-cart.scss */
+  .cart table#shopping-cart-table tbody td:nth-child(2):before {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 225, ../scss/pages/cart/_products-in-cart.scss */
+  .cart #shopping-cart-table tbody tr td {
+    border: 0;
+    padding: 5px 0px;
+  }
+  /* line 230, ../scss/pages/cart/_products-in-cart.scss */
+  .cart #shopping-cart-table .qty {
+    font-size: 0.8em;
+    width: 1.5em;
+    border: 1px solid #B5B5B5;
+    padding: 2px;
   }
 }
 /* ------------------------------------------- TEMPLATE

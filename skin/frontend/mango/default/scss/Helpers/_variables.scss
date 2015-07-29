@@ -5,29 +5,37 @@ $susy:(
 );
 
 // ----- SUSY BREAKPOINTS AND COLUMNS ----- 
+
+// ----- HEADER
 $susy-desktop-header-columns: 3;
 $susy-tablet-header-columns: 6;
 $susy-smartphone-header-columns: 6;
 
+// ----- FOOTER
 $susy-desktop-footer-columns: 4;
 $susy-smartphone-footer-columns: 1;
 
+// ----- GRID2
 $susy-desktop-grid2-columns: 2;
 $susy-smartphone-grid2-columns: 1;
 
+// ----- GRID3
 $susy-desktop-grid3-columns: 3;
 $susy-smartphone-grid3-columns: 1;
 
+// ----- BUTTONS
 $susy-desktop-buttons-columns: 2;
 $susy-smartphone-buttons-columns: 1;
 
+// ------ CART
 $susy-desktop-cart-columns: 3;
 $susy-tablet-cart-columns: 1;
+
+// ----- BREAKPOINT VARIABLES ----- 
 
 $susy-tablet-breakpoint: 900px;
 $susy-smartphone-breakpoint: 625px;
 
-// ----- VARIABLES ----- 
 $tablet-breakpoint: max-width $susy-tablet-breakpoint;
 $smartphone-breakpoint: max-width $susy-smartphone-breakpoint;
 
