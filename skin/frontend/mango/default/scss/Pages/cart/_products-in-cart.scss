@@ -12,6 +12,10 @@
 		width:100%;
 		border:0;
 
+		.btn-remove{
+			padding:0.25em 0.5em;
+		}
+
 		.product-image{
 			width:100%;
 			height:auto;
@@ -71,6 +75,33 @@
 		   text-align:center;
 		 }	
 
+		 tfoot tr td{
+		 	text-align: right;
+		 }
+
+		.qty{
+			text-align: center;
+			font-size: 1em;
+			width:2em;
+			border:1px solid #b5b5b5;
+			padding:5px 2px;
+		}
+
+		.product-name{
+			font-size: 1.25em;
+			text-transform: uppercase;
+			font-weight: 300;
+			margin-bottom:15px;
+
+			&:hover{
+				font-weight: 400;
+			}
+		}
+		 
+		&> tfoot:nth-child(3) > tr:nth-child(1){
+			text-align: right;
+		}
+
 	}
 
 	.itemAttribute-wrapper{
@@ -87,24 +118,6 @@
 
 	.cart-fieldset{
 		border:0;
-
-		.btn-remove{
-		  text-decoration: none;
-		  text-align: center;
-		  vertical-align: top;
-		  background-color: #474444;
-		  color: white;
-		  padding: 6% 15%;
-		  border-radius: 70%;
-		}
-	}
-
-	#shopping-cart-table .qty{
-		text-align: center;
-		font-size: 1em;
-		width:2em;
-		border:1px solid #b5b5b5;
-		padding:5px 2px;
 	}
 
 	.page-title  {
@@ -118,21 +131,6 @@
 		button{
 			margin-left:10px;
 		}
-	}
-
-	#shopping-cart-table .product-name{
-		font-size: 1.25em;
-		text-transform: uppercase;
-		font-weight: 300;
-		margin-bottom:15px;
-
-		&:hover{
-			font-weight: 400;
-		}
-	}
-	 
-	#shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1){
-		text-align: right;
 	}
 }
 
@@ -159,79 +157,93 @@
 // ------ CART - SMARTPHONE ------
 @include breakpoint($smartphone-breakpoint){
 	.cart {
-
 		.page-title button{
 			margin:10px 0px;
 			width:100%;
 			font-size: 0.75em;
 		}
 
+		#shopping-cart-table{
+			tbody{
+				display:table-cell;
+				width:100%;
+			}
+
+			tbody td:not(:last-child):before { 
+				content: attr(data-th); 
+				font-weight: bold;
+				display: inline-block;
+				text-align: right;  
+				margin-right:11%;
+			}
+
+			thead { 
+				display: none; 
+			}
+
+			tbody td { 
+			    display: block; 
+			    padding-top:10px; 
+			}
+
+			tbody tr td:first-child { 
+			    background-color: black; 
+			    color: white; 
+			    padding:10px 0px;
+			    margin:0px;
+			}
+
+			tbody tr{
+		      	border:1px solid #b4b4b4;
+		      	margin:10px 0px;
+		        display: block;
+			    width: 100%;
+			}
+
+			tbody tr td:last-child{
+				text-align: center;
+				background-color: white;
+				padding:1em 0em;
+			}
+				    
+			tbody tr td:first-child{
+				display: none;
+			}
+
+			.product-name{
+				margin:0;
+				padding:0;
+			}
+
+			tbody td:nth-child(2):before{
+				display: block;
+				width:100%;
+				text-align: center;
+			}
+
+			tbody tr td{
+				border:0;
+				padding:10px 0px;
+			}
+
+			.qty{
+				font-size: 0.8em;
+				width: 1.5em;
+				border: 1px solid #B5B5B5;
+				padding: 2px;
+			}
+
+			.btn-remove{
+				background:none;
+				border:2px solid #b4b4b4;
+				color: #b4b4b4;
+			}
+		}
+
 		#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button{
 			width:100%;
 			font-size: 0.75em;
 			margin:5px 0px;
-		}
-
-			table#shopping-cart-table tbody td:not(:last-child):before { 
-		    content: attr(data-th); 
-		    font-weight: bold;
-		    display: inline-block;
-		    text-align: right;  
-		    margin-right:11%;
-		}
-
-		table#shopping-cart-table thead { 
-		  	display: none; 
-		}
-
-		table#shopping-cart-table tbody td { 
-		    display: block; 
-		    padding-top:10px; 
-		}
-
-		table#shopping-cart-table tbody tr td:first-child { 
-		    background-color: black; 
-		    color: white; 
-		    padding:10px 0px;
-		    margin:0px;
-		}
-
-		table#shopping-cart-table tbody tr{
-	      	border:1px solid #b4b4b4;
-	      	margin-top:10px;
-	        display: table-cell;
-		    width: 100%;
-		}
-
-		table#shopping-cart-table tbody tr td:last-child{
-		    	text-align: center;
-		    	background-color: #b4b4b4;
-		    }
-		table#shopping-cart-table tbody tr td:first-child{
-			display: none;
-		}
-
-		#shopping-cart-table .product-name{
-			margin:0;
-			padding:0;
-		}
-
-		table#shopping-cart-table tbody td:nth-child(2):before{
-			display: block;
-			width:100%;
-			text-align: center;
-		}
-		
-		#shopping-cart-table tbody tr td{
-			border:0;
-			padding:5px 0px;
-		}
-
-		#shopping-cart-table .qty{
-		font-size: 0.8em;
-		width: 1.5em;
-		border: 1px solid #B5B5B5;
-		padding: 2px;
 		}
 	}
 }
