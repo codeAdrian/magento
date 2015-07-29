@@ -349,6 +349,13 @@
 				}
 			}
 		}
+
+	.product-shop{
+		#product-options-wrapper{
+			text-align:center;
+		}
+	}
+
 	}
 
 	#product-info-wrapper{
@@ -421,6 +428,8 @@
 
 	.product-banner{
 		border:0;
+		margin:0px auto;
+		padding:0px;
 	}
 
 	.product-name{
