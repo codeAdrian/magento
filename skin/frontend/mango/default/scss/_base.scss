@@ -67,32 +67,6 @@ body
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.main-container{
-	//margin:0px 7%;
-}
-
-
-
-
-
-
-/* NAV FIXED END*/
-
-
-/* MINI MENU */
-
-
-/* GRAY BUTTON HOVER AND ACTIVE */
-
-
-
-/* GRAY BUTTON HOVER AND ACTIVE END */
-
-/* RED BUTTON HOVER AND ACTIVE */
-
-
-/* RED BUTTON HOVER AND ACTIVE END */
-
 /* REGISTER PAGE AND LOGIN PAGE */
 
 #form-validate .fieldset{
@@ -242,23 +216,6 @@ text-transform: uppercase;
 	margin-bottom:25px;
 }
 
-
-/* PRODUCT CATEGORIES */
-
-
-
-
-/* CATEGORIES PAGE */
-
-
-/* CATEGORIES PAGE END */
-
-
-
-/* PRODUCT PAGE */
-
-
-/* PRODUCT PAGE END */
 
 /* MY ACCOUNT */
 
@@ -572,13 +529,6 @@ li.control label{
 /* ADDRESSES END */
 
 
-/* EDIT CART */
-
-
-
-
-/* EDIT CART END */
-
 /* EDIT ADDRESS */
 
 .my-account #form-validate{
@@ -631,17 +581,6 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input{
 
 /* ADD ADDRESS END */
 
-
-/* FORGOT PASSWORD */
-.forgot-pass-wrapper .buttons-set p, .forgot-pass-wrapper .buttons-set button{
-	/*display: inline-block;
-	width:45%;
-	text-align: center;
-	vertical-align: top;
-	margin:0px;*/
-}
-
-/* FORGOT PASSWORD END */
 
 /* CHECKOUT */
 
@@ -788,6 +727,7 @@ input.validation-failed select.validation-failed, .validation-failed{
 
 /* RESPONSIVE DESIGN - GENERAL */
 
+
 img{
     max-width:100% !important;
     height:auto;
@@ -820,15 +760,6 @@ img{
 		margin-top:20px;
 	}
 
-	/* CATEGORIES PAGE*/
-
-
-
-	/* PRODUCT PAGE */
-
-	
-	/* EDIT CART */
-
 	/* FORGOT PASSWORD */
 .account-create, .account-login-page, .forgot-pass-wrapper
 	{
@@ -854,7 +785,6 @@ img{
 	margin:30px 0px;
 	}
 
-	/* PRODUCT PAGE */
 
 	/* MY ACCOUNT */
 
@@ -1141,14 +1071,6 @@ img{
 			width:90%;
 			padding:20px;
 		}
-
-	/* CATEGORY VIEW */
-
-	/* PRODUCT PAGE */
-
-	
-	/* PRODUCT PAGE END */
-
 
 	/* MY ACCOUNT */
 	.my-account{
