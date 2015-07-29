@@ -3431,7 +3431,7 @@ nav ul li ul li a {
   width: 370px;
 }
 /* line 20, ../scss/pages/shared/_mini-menus.scss */
-#mini-menu-cart .product-details p, #mini-menu-cart .block-related .block-content .product-image p, .block-related .block-content #mini-menu-cart .product-image p, #mini-menu-cart .product-details a, #mini-menu-cart .block-related .block-content .product-image a, .block-related .block-content #mini-menu-cart .product-image a {
+#mini-menu-cart .product-details p, #mini-menu-cart .block-related .block-content .product-image p, .block-related .block-content #mini-menu-cart .product-image p, #mini-menu-cart .product-details a, #mini-menu-cart .block-related .block-content .product-image a, .block-related .block-content #mini-menu-cart .product-image a, #mini-menu-cart .amount a {
   font-size: 1em;
   padding: 0px 0px 5px;
 }
