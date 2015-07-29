@@ -46,8 +46,6 @@ jq(function() {
       jq('header').addClass('nav-fixed');
       jq('.logo').hide();
       jq('.links>li:first-child').hide();
-      jq('#mini-menu-account').css("top","62px");
-      jq('#mini-menu-cart').css("top","62px");
       jq('.form-search').css("border","0px");
       jq('.main-container').css("margin-top","123px");
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
@@ -58,8 +56,6 @@ jq(function() {
       jq('header').removeClass('nav-fixed');
       jq('.logo').show();
       jq('.links>li:first-child').show();
-      jq('#mini-menu-account').css("top","100px");
-      jq('#mini-menu-cart').css("top","100px");
       jq('.form-search').css("border","2px solid #474444");
       jq('.main-container').css("margin-top","0px");
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
@@ -73,8 +69,6 @@ jq(function() {
       jq('.form-search').addClass('form-search-mini').removeClass('form-search');
       jq('header').addClass('nav-fixed');
       jq('.links>li:first-child').hide();
-      jq('#mini-menu-account').css("top","60px");
-      jq('#mini-menu-cart').css("top","60px");
       jq('.main-container').css("margin-top","120px"); 
       jq('.form-search').css("border","2px solid #474444").show();
       jq('.logo').hide();
@@ -88,8 +82,6 @@ jq(function() {
       jq("header .links .first").css("display","inline-block");
       jq('header').removeClass('nav-fixed');
       jq('.links>li:first-child').show();
-      jq('#mini-menu-account').css("top","100px");
-      jq('#mini-menu-cart').css("top","100px");
       jq('.form-search').css("border","2px solid #474444");
       jq('.main-container').css("margin-top","0px");
       jq('.logo').show();
