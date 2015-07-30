@@ -249,7 +249,7 @@ padding:10px 0px 10px 30px;
 }
 // ----- MY ACCOUNT - MOBILE -----
 @include breakpoint($smartphone-breakpoint){
-		.my-account{
+	.my-account{
 		
 		.fieldset{
 		width:75%;
@@ -258,6 +258,16 @@ padding:10px 0px 10px 30px;
 
 		.buttons-set{
 		text-align: center;
+		}
+
+		.pager{
+			.amount{
+				width:25%;
+				display: inline-block;
+			}
+			.limiter{
+			 	width:70%;
+			}			
 		}
 	}
 
@@ -269,20 +279,22 @@ padding:10px 0px 10px 30px;
 	.box-info .col2-set .col-1, .box-info .col2-set .col-2{
 		display: block;
 		width:95%;
+		margin:20px auto;
 	}
 
-	.block-reorder .actions .btn-cart{
-		padding:5px 0px;
-		font-size: 1em;
+	.block-reorder{
+		.actions .btn-cart{
+				padding:5px 0px;
+				font-size: 1em;
+		}		
+		.block-content ol li a{
+			font-size:1em;
+		}
 	}
 
 	.my-account .box-head a, .block-reorder .view-all-link a{
 		padding:5px 0px;
 		font-size: 1em;
-	}
-
-	.block-reorder .block-content ol li a{
-		font-size:1em;
 	}
 
 	div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a{
@@ -292,21 +304,12 @@ padding:10px 0px 10px 30px;
 		text-align: center;
 	}
 
-	.my-account .pager .amount{
-	  	width:25%;
-	  	display: inline-block;
-	  }
-
-	  .my-account .pager .limiter{
-	  	width:70%;
-	  }
-
-	  .box-info a{
+	.box-info a{
 	  	padding:5px 0px;
 	  	font-size:1em;
 	  }
 
-	  .my-account-edit{
+	.my-account-edit{
 	  	width:100%;
 	  }
 

@@ -4699,37 +4699,46 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   .my-account .buttons-set {
     text-align: center;
   }
-
   /* line 264, ../scss/pages/dashboard/_account.scss */
+  .my-account .pager .amount {
+    width: 25%;
+    display: inline-block;
+  }
+  /* line 268, ../scss/pages/dashboard/_account.scss */
+  .my-account .pager .limiter {
+    width: 70%;
+  }
+
+  /* line 274, ../scss/pages/dashboard/_account.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding: 0px;
     margin: 20px auto;
   }
 
-  /* line 269, ../scss/pages/dashboard/_account.scss */
+  /* line 279, ../scss/pages/dashboard/_account.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: block;
     width: 95%;
+    margin: 20px auto;
   }
 
-  /* line 274, ../scss/pages/dashboard/_account.scss */
+  /* line 286, ../scss/pages/dashboard/_account.scss */
   .block-reorder .actions .btn-cart {
     padding: 5px 0px;
     font-size: 1em;
   }
+  /* line 290, ../scss/pages/dashboard/_account.scss */
+  .block-reorder .block-content ol li a {
+    font-size: 1em;
+  }
 
-  /* line 279, ../scss/pages/dashboard/_account.scss */
+  /* line 295, ../scss/pages/dashboard/_account.scss */
   .my-account .box-head a, .block-reorder .view-all-link a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 284, ../scss/pages/dashboard/_account.scss */
-  .block-reorder .block-content ol li a {
-    font-size: 1em;
-  }
-
-  /* line 288, ../scss/pages/dashboard/_account.scss */
+  /* line 300, ../scss/pages/dashboard/_account.scss */
   div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     width: 100%;
     padding: 5px 0px;
@@ -4737,24 +4746,13 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     text-align: center;
   }
 
-  /* line 295, ../scss/pages/dashboard/_account.scss */
-  .my-account .pager .amount {
-    width: 25%;
-    display: inline-block;
-  }
-
-  /* line 300, ../scss/pages/dashboard/_account.scss */
-  .my-account .pager .limiter {
-    width: 70%;
-  }
-
-  /* line 304, ../scss/pages/dashboard/_account.scss */
+  /* line 307, ../scss/pages/dashboard/_account.scss */
   .box-info a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 309, ../scss/pages/dashboard/_account.scss */
+  /* line 312, ../scss/pages/dashboard/_account.scss */
   .my-account-edit {
     width: 100%;
   }
