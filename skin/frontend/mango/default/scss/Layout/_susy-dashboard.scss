@@ -3,7 +3,7 @@ $susy:(
 	//debug: (image: show),
 );
 
-.my-account-edit .buttons-set, .customer-address-index .buttons-set{
+.my-account-edit .buttons-set, .customer-address-index .buttons-set, .my-account .buttons-set{
 	@include container();
 
 	.grid2{
@@ -16,7 +16,7 @@ $susy:(
 
 // ----- SMARTPHONE
 @include breakpoint($smartphone-breakpoint){
-	.my-account-edit .buttons-set{
+	.my-account-edit .buttons-set, .customer-address-index .buttons-set, .my-account .buttons-set{
 		@include container($susy-smartphone-grid2-columns);
 
 		.grid2{

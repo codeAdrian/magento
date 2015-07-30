@@ -1283,25 +1283,25 @@ footer .border-container .grid2:last-child {
   }
 }
 /* line 6, ../scss/layout/_susy-dashboard.scss */
-.my-account-edit .buttons-set, .customer-address-index .buttons-set {
+.my-account-edit .buttons-set, .customer-address-index .buttons-set, .my-account .buttons-set {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
-.my-account-edit .buttons-set:after, .customer-address-index .buttons-set:after {
+.my-account-edit .buttons-set:after, .customer-address-index .buttons-set:after, .my-account .buttons-set:after {
   content: " ";
   display: block;
   clear: both;
 }
 /* line 9, ../scss/layout/_susy-dashboard.scss */
-.my-account-edit .buttons-set .grid2, .customer-address-index .buttons-set .grid2 {
+.my-account-edit .buttons-set .grid2, .customer-address-index .buttons-set .grid2, .my-account .buttons-set .grid2 {
   width: 44.44444%;
   float: left;
   margin-right: 11.11111%;
 }
 /* line 11, ../scss/layout/_susy-dashboard.scss */
-.my-account-edit .buttons-set .grid2:last-child, .customer-address-index .buttons-set .grid2:last-child {
+.my-account-edit .buttons-set .grid2:last-child, .customer-address-index .buttons-set .grid2:last-child, .my-account .buttons-set .grid2:last-child {
   width: 44.44444%;
   float: right;
   margin-right: 0;
@@ -1309,19 +1309,19 @@ footer .border-container .grid2:last-child {
 
 @media (max-width: 625px) {
   /* line 19, ../scss/layout/_susy-dashboard.scss */
-  .my-account-edit .buttons-set {
+  .my-account-edit .buttons-set, .customer-address-index .buttons-set, .my-account .buttons-set {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
   /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
-  .my-account-edit .buttons-set:after {
+  .my-account-edit .buttons-set:after, .customer-address-index .buttons-set:after, .my-account .buttons-set:after {
     content: " ";
     display: block;
     clear: both;
   }
   /* line 22, ../scss/layout/_susy-dashboard.scss */
-  .my-account-edit .buttons-set .grid2 {
+  .my-account-edit .buttons-set .grid2, .customer-address-index .buttons-set .grid2, .my-account .buttons-set .grid2 {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -1329,7 +1329,7 @@ footer .border-container .grid2:last-child {
     float: none;
   }
   /* line 25, ../scss/layout/_susy-dashboard.scss */
-  .my-account-edit .buttons-set .grid2:last-child {
+  .my-account-edit .buttons-set .grid2:last-child, .customer-address-index .buttons-set .grid2:last-child, .my-account .buttons-set .grid2:last-child {
     width: 100%;
     float: right;
     margin-right: 0;
@@ -4762,6 +4762,10 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   }
 }
 @media (max-width: 625px) {
+  /* line 247, ../scss/pages/dashboard/_account.scss */
+  .my-account {
+    margin-left: 0%;
+  }
   /* line 249, ../scss/pages/dashboard/_account.scss */
   .my-account .fieldset {
     width: 75%;
@@ -4779,38 +4783,39 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   /* line 263, ../scss/pages/dashboard/_account.scss */
   .my-account .pager .limiter {
     width: 70%;
+    display: inline-block;
   }
 
-  /* line 269, ../scss/pages/dashboard/_account.scss */
+  /* line 270, ../scss/pages/dashboard/_account.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding: 0px;
     margin: 20px auto;
   }
 
-  /* line 274, ../scss/pages/dashboard/_account.scss */
+  /* line 275, ../scss/pages/dashboard/_account.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: block;
     width: 95%;
     margin: 20px auto;
   }
 
-  /* line 281, ../scss/pages/dashboard/_account.scss */
+  /* line 282, ../scss/pages/dashboard/_account.scss */
   .block-reorder .actions .btn-cart {
     padding: 5px 0px;
     font-size: 1em;
   }
-  /* line 285, ../scss/pages/dashboard/_account.scss */
+  /* line 286, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content ol li a {
     font-size: 1em;
   }
 
-  /* line 290, ../scss/pages/dashboard/_account.scss */
+  /* line 291, ../scss/pages/dashboard/_account.scss */
   .my-account .box-head a, .block-reorder .view-all-link a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 295, ../scss/pages/dashboard/_account.scss */
+  /* line 296, ../scss/pages/dashboard/_account.scss */
   div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     width: 100%;
     padding: 5px 0px;
@@ -4818,13 +4823,13 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     text-align: center;
   }
 
-  /* line 302, ../scss/pages/dashboard/_account.scss */
+  /* line 303, ../scss/pages/dashboard/_account.scss */
   .box-info a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 307, ../scss/pages/dashboard/_account.scss */
+  /* line 308, ../scss/pages/dashboard/_account.scss */
   .my-account-edit {
     width: 100%;
   }
@@ -4834,40 +4839,39 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
 .my-account .addresses-primary, .my-account .addresses-additional {
   line-height: 1.5em;
 }
-/* line 8, ../scss/pages/dashboard/_address-book.scss */
+/* line 7, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary h2, .my-account .addresses-primary .product-details-container .grid2 h1, .product-details-container .grid2 .my-account .addresses-primary h1, .my-account .addresses-additional h2, .my-account .addresses-additional .product-details-container .grid2 h1, .product-details-container .grid2 .my-account .addresses-additional h1 {
   margin: 5px 0px;
   text-transform: uppercase;
   font-weight: 300;
 }
-/* line 14, ../scss/pages/dashboard/_address-book.scss */
+/* line 13, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary h3, .my-account .addresses-additional h3 {
   font-weight: bold;
   line-height: 1.5em;
 }
-/* line 19, ../scss/pages/dashboard/_address-book.scss */
+/* line 18, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary .col-1 ol li address, .my-account .addresses-additional .col-1 ol li address {
   padding-left: 10px;
   line-height: 1.5em;
 }
-/* line 24, ../scss/pages/dashboard/_address-book.scss */
+/* line 23, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary .col-2 ol li address, .my-account .addresses-additional .col-2 ol li address {
   padding-left: 10px;
   line-height: 1.5em;
 }
-/* line 29, ../scss/pages/dashboard/_address-book.scss */
+/* line 28, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary p, .my-account .addresses-additional p {
   margin: 10px auto;
 }
 
-/* line 33, ../scss/pages/dashboard/_address-book.scss */
+/* line 32, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary ol, .my-account .addresses-additional ol {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-
-/* line 39, ../scss/pages/dashboard/_address-book.scss */
+/* line 37, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary ol li, .my-account .addresses-additional ol li {
   display: inline-block;
   width: 45%;
@@ -4875,51 +4879,63 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   vertical-align: top;
   padding-left: 10px;
 }
-
-/* line 46, ../scss/pages/dashboard/_address-book.scss */
-.my-account .addresses-additional ol .empty {
-  width: 100%;
-  display: block;
-}
-
-/* line 51, ../scss/pages/dashboard/_address-book.scss */
+/* line 44, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary ol li a, .my-account .addresses-additional ol li a {
   text-decoration: none;
   color: white;
   background-color: gray;
   padding: 5px 10px;
 }
-
-/* line 58, ../scss/pages/dashboard/_address-book.scss */
+/* line 50, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary ol li a:hover, .my-account .addresses-additional ol li a:hover {
   background-color: black;
   cursor: pointer;
 }
+/* line 57, ../scss/pages/dashboard/_address-book.scss */
+.my-account .addresses-primary ol.empty, .my-account .addresses-additional ol.empty {
+  width: 100%;
+  display: block;
+}
+
+/* line 63, ../scss/pages/dashboard/_address-book.scss */
+.my-account .company label {
+  color: black;
+  text-transform: none;
+}
+
+/* line 68, ../scss/pages/dashboard/_address-book.scss */
+.my-account .fieldset h2, .my-account .fieldset .product-details-container .grid2 h1, .product-details-container .grid2 .my-account .fieldset h1 {
+  margin: 5px 0px;
+}
 
 /* ADDRESSES END */
 /* EDIT ADDRESS */
-/* line 68, ../scss/pages/dashboard/_address-book.scss */
+/* line 77, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate {
   margin: 20px auto;
   border: 1px solid #b4b4b4;
   padding: 20px;
 }
-/* line 73, ../scss/pages/dashboard/_address-book.scss */
+/* line 82, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate .validation-advice {
   font-size: 1.25em;
 }
-/* line 77, ../scss/pages/dashboard/_address-book.scss */
+/* line 86, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate h2.legend, .my-account #form-validate .product-details-container .grid2 h1.legend, .product-details-container .grid2 .my-account #form-validate h1.legend {
   text-align: center;
   font-size: 1.25em;
   text-transform: uppercase;
 }
-/* line 83, ../scss/pages/dashboard/_address-book.scss */
+/* line 92, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate .fieldset {
   margin: 10px auto;
 }
+/* line 96, ../scss/pages/dashboard/_address-book.scss */
+.my-account #form-validate .customer-name div:first {
+  margin-right: 30px;
+}
 
-/* line 88, ../scss/pages/dashboard/_address-book.scss */
+/* line 101, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate .customer-name > div, .my-account ul.form-list:nth-child(5) > li:nth-child(3) > div,
 .my-account ul.form-list:nth-child(2) > li:nth-child(3) > div, ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(1),
 ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2), li.fields:nth-child(4) > div:nth-child(1), li.fields:nth-child(4) > div:nth-child(2) {
@@ -4931,39 +4947,30 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2), li.fields:nth-ch
   text-transform: none;
 }
 
-/* line 99, ../scss/pages/dashboard/_address-book.scss */
+/* line 112, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate .customer-name > div input, ul.form-list:nth-child(5) > li:nth-child(3) > div input,
 ul.form-list:nth-child(2) > li:nth-child(3) > div input, ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(1) input,
 ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   width: 85%;
 }
 
-/* line 105, ../scss/pages/dashboard/_address-book.scss */
-.my-account #form-validate .customer-name div:first {
-  margin-right: 30px;
+/* line 119, ../scss/pages/dashboard/_address-book.scss */
+.customer-address-form #country {
+  width: 75%;
 }
-
-/* line 109, ../scss/pages/dashboard/_address-book.scss */
-.my-account .company label {
-  color: black;
-  text-transform: none;
+/* line 123, ../scss/pages/dashboard/_address-book.scss */
+.customer-address-form #zip {
+  width: 85%;
 }
-
-/* line 114, ../scss/pages/dashboard/_address-book.scss */
-.wide-divider {
-  border-top: 1px solid #e5e5e5;
-  margin: 0px;
-  width: 90%;
-}
-
-/* line 120, ../scss/pages/dashboard/_address-book.scss */
-.my-account .fieldset h2, .my-account .fieldset .product-details-container .grid2 h1, .product-details-container .grid2 .my-account .fieldset h1 {
-  margin: 5px 0px;
+/* line 127, ../scss/pages/dashboard/_address-book.scss */
+.customer-address-form .fieldset input.checkbox {
+  width: auto;
+  margin-right: 10px;
 }
 
 /* ADD ADDRESS END */
 @media (max-width: 900px) {
-  /* line 131, ../scss/pages/dashboard/_address-book.scss */
+  /* line 140, ../scss/pages/dashboard/_address-book.scss */
   .my-account .addresses-list ol li {
     width: 100%;
     display: block;
@@ -4971,139 +4978,137 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   }
 }
 @media (max-width: 625px) {
-  /* line 141, ../scss/pages/dashboard/_address-book.scss */
+  /* line 150, ../scss/pages/dashboard/_address-book.scss */
   li.fields:nth-child(4) > div:nth-child(2) {
     width: 100%;
     display: block;
   }
 
-  /* line 146, ../scss/pages/dashboard/_address-book.scss */
+  /* line 155, ../scss/pages/dashboard/_address-book.scss */
   .my-account #form-validate {
     padding: 0px;
   }
 
-  /* line 150, ../scss/pages/dashboard/_address-book.scss */
+  /* line 159, ../scss/pages/dashboard/_address-book.scss */
   #newsletter-validate-detail .block-content .button {
     min-width: 25%;
   }
 }
-/* line 4, ../scss/pages/dashboard/_misc.scss */
-.my-account .pager .amount, .my-account .pager .limiter {
-  display: inline-block;
-  width: 49%;
-  text-align: left;
+/* line 5, ../scss/pages/dashboard/_misc.scss */
+.my-account .pager {
+  margin: 10px 0px;
 }
 
-/* line 10, ../scss/pages/dashboard/_misc.scss */
+/* line 8, ../scss/pages/dashboard/_misc.scss */
 .my-account .buttons-wrapper {
   text-align: center;
 }
 
-/* line 14, ../scss/pages/dashboard/_misc.scss */
+/* line 12, ../scss/pages/dashboard/_misc.scss */
 .my-account .pager .limiter {
   text-align: right;
 }
 
-/* line 18, ../scss/pages/dashboard/_misc.scss */
+/* line 16, ../scss/pages/dashboard/_misc.scss */
 .my-account #my-orders-table {
   width: 100%;
   text-align: center;
 }
 
-/* line 23, ../scss/pages/dashboard/_misc.scss */
+/* line 21, ../scss/pages/dashboard/_misc.scss */
 .my-account #my-orders-table thead tr {
   border-bottom: 1px solid black;
 }
 
-/* line 27, ../scss/pages/dashboard/_misc.scss */
+/* line 25, ../scss/pages/dashboard/_misc.scss */
 .my-account #my-orders-table thead tr th {
   width: 15%;
 }
 
-/* line 31, ../scss/pages/dashboard/_misc.scss */
+/* line 29, ../scss/pages/dashboard/_misc.scss */
 .my-account #my-orders-table thead tr th:last-child {
   width: 20%;
 }
 
-/* line 35, ../scss/pages/dashboard/_misc.scss */
+/* line 33, ../scss/pages/dashboard/_misc.scss */
 .my-account #my-orders-table tbody tr td {
   padding: 10px 0px;
   text-align: left;
 }
 
-/* line 40, ../scss/pages/dashboard/_misc.scss */
+/* line 38, ../scss/pages/dashboard/_misc.scss */
 .my-account #my-orders-table tbody tr td a {
   color: black;
   text-transform: uppercase;
   font-size: 0.75em;
 }
 
-/* line 51, ../scss/pages/dashboard/_misc.scss */
+/* line 49, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-info-box, .my-account .order-info, .my-account .order-date {
   width: 46%;
   display: inline-block;
   margin-left: 10px;
 }
 
-/* line 57, ../scss/pages/dashboard/_misc.scss */
+/* line 55, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-details #my-orders-table h3 {
   font-size: 1em;
   font-weight: 300;
 }
 
-/* line 62, ../scss/pages/dashboard/_misc.scss */
+/* line 60, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-details #my-orders-table .item-options dt, .my-account .order-details #my-orders-table .item-options #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .my-account .order-details #my-orders-table .item-options dd, .my-account .order-details #my-orders-table .item-options dd {
   display: block;
   float: left;
   margin-left: 15px;
 }
 
-/* line 68, ../scss/pages/dashboard/_misc.scss */
+/* line 66, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-details #my-orders-table tfoot {
   border-top: 1px solid black;
   text-align: right;
 }
 
-/* line 73, ../scss/pages/dashboard/_misc.scss */
+/* line 71, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-details #my-orders-table .item-options dt, .my-account .order-details #my-orders-table .item-options #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .my-account .order-details #my-orders-table .item-options dd {
   font-weight: bold;
   clear: both;
 }
 
-/* line 78, ../scss/pages/dashboard/_misc.scss */
+/* line 76, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-details #my-orders-table .item-options dd {
   margin-left: 5px;
   margin-right: auto;
 }
 
 @media (max-width: 900px) {
-  /* line 89, ../scss/pages/dashboard/_misc.scss */
+  /* line 87, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view #my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 93, ../scss/pages/dashboard/_misc.scss */
+  /* line 91, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view #my-orders-table colgroup {
     width: 100%;
   }
 
-  /* line 97, ../scss/pages/dashboard/_misc.scss */
+  /* line 95, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr td {
     width: 100%;
   }
 
-  /* line 103, ../scss/pages/dashboard/_misc.scss */
+  /* line 101, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table thead {
     display: none;
   }
 
-  /* line 106, ../scss/pages/dashboard/_misc.scss */
+  /* line 104, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 110, ../scss/pages/dashboard/_misc.scss */
+  /* line 108, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -5111,7 +5116,7 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     margin: 0px;
   }
 
-  /* line 117, ../scss/pages/dashboard/_misc.scss */
+  /* line 115, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -5119,7 +5124,7 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     width: 100%;
   }
 
-  /* line 124, ../scss/pages/dashboard/_misc.scss */
+  /* line 122, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table .item-options {
     margin: 0px;
     padding: 0px;
@@ -5129,13 +5134,13 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     margin: 0px 0px 70px 0px;
   }
 
-  /* line 133, ../scss/pages/dashboard/_misc.scss */
+  /* line 131, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     width: 30%;
     padding-right: 2em;
   }
 
-  /* line 138, ../scss/pages/dashboard/_misc.scss */
+  /* line 136, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table .item-options dt, .sales-order-view table#my-orders-table .item-options #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .sales-order-view table#my-orders-table .item-options dd, .sales-order-view table#my-orders-table .item-options dd {
     width: 45%;
     margin: 0px;
@@ -5144,13 +5149,13 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     color: black;
   }
 
-  /* line 146, ../scss/pages/dashboard/_misc.scss */
+  /* line 144, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr td:last-child {
     text-align: center;
     background-color: #b4b4b4;
   }
 
-  /* line 150, ../scss/pages/dashboard/_misc.scss */
+  /* line 148, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -5158,48 +5163,48 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     padding: 0px;
   }
 
-  /* line 156, ../scss/pages/dashboard/_misc.scss */
+  /* line 154, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table .product-name {
     margin: 0;
     padding: 0;
   }
 
-  /* line 161, ../scss/pages/dashboard/_misc.scss */
+  /* line 159, ../scss/pages/dashboard/_misc.scss */
   table#shopping-cart-table tbody td:nth-child(2):before {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  /* line 166, ../scss/pages/dashboard/_misc.scss */
+  /* line 164, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table tbody tr td {
     border: 0;
   }
 
-  /* line 173, ../scss/pages/dashboard/_misc.scss */
+  /* line 171, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 177, ../scss/pages/dashboard/_misc.scss */
+  /* line 175, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table thead {
     display: none;
   }
 
-  /* line 180, ../scss/pages/dashboard/_misc.scss */
+  /* line 178, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 184, ../scss/pages/dashboard/_misc.scss */
+  /* line 182, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
     padding: 10px 0px;
   }
 
-  /* line 190, ../scss/pages/dashboard/_misc.scss */
+  /* line 188, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -5207,12 +5212,12 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     width: 100%;
   }
 
-  /* line 197, ../scss/pages/dashboard/_misc.scss */
+  /* line 195, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody tr td:last-child {
     text-align: center;
   }
 
-  /* line 200, ../scss/pages/dashboard/_misc.scss */
+  /* line 198, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -5222,45 +5227,45 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     text-align: right;
   }
 
-  /* line 209, ../scss/pages/dashboard/_misc.scss */
+  /* line 207, ../scss/pages/dashboard/_misc.scss */
   .product-name a {
     font-size: 0.8em;
   }
 
-  /* line 212, ../scss/pages/dashboard/_misc.scss */
+  /* line 210, ../scss/pages/dashboard/_misc.scss */
   .my-account #my-orders-table {
     text-align: center;
     font-size: 1em;
   }
 
-  /* line 217, ../scss/pages/dashboard/_misc.scss */
+  /* line 215, ../scss/pages/dashboard/_misc.scss */
   .cart-fieldset .btn-remove {
     padding: 2px 6px;
   }
 
-  /* line 221, ../scss/pages/dashboard/_misc.scss */
+  /* line 219, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1) {
     text-align: center;
     padding: 0px;
   }
 
-  /* line 226, ../scss/pages/dashboard/_misc.scss */
+  /* line 224, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 230, ../scss/pages/dashboard/_misc.scss */
+  /* line 228, ../scss/pages/dashboard/_misc.scss */
   .cart-fieldset {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 234, ../scss/pages/dashboard/_misc.scss */
+  /* line 232, ../scss/pages/dashboard/_misc.scss */
   .cart .page-title {
     text-align: center;
   }
 
-  /* line 238, ../scss/pages/dashboard/_misc.scss */
+  /* line 236, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 30%;
   }

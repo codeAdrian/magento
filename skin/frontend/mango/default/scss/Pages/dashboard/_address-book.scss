@@ -3,7 +3,6 @@
 /* ADDRESSES */
 
 .my-account .addresses-primary, .my-account .addresses-additional {
-
 	line-height: 1.5em;
 	h2{
 		margin:5px 0px;
@@ -34,30 +33,40 @@
 	list-style: none;
 	margin:0px;
 	padding:0px;
+
+	li{
+		display: inline-block;
+		width: 45%;
+		border-left:2px solid #B4B4B4;
+		vertical-align: top;
+		padding-left:10px;		
+
+		a{
+			text-decoration: none;
+			color:white;
+			background-color: gray;
+			padding:5px 10px;		
+
+			&:hover{
+				background-color: black;
+				cursor: pointer;				
+			}
+		}
+	}
+
+	&.empty{
+		width:100%;
+		display: block;		
+	}
 }
 
-.my-account .addresses-primary ol li, .my-account .addresses-additional ol li{
-	display: inline-block;
-	width: 45%;
-	border-left:2px solid #B4B4B4;
-	vertical-align: top;
-	padding-left:10px;
-}
-.my-account .addresses-additional ol .empty{
-	width:100%;
-	display: block;
+.my-account .company label{
+	color:black;
+	text-transform: none;
 }
 
-.my-account .addresses-primary ol li a, .my-account .addresses-additional ol li a{
-	text-decoration: none;
-	color:white;
-	background-color: gray;
-	padding:5px 10px;
-}
-
-.my-account .addresses-primary ol li a:hover, .my-account .addresses-additional ol li a:hover{
-	background-color: black;
-	cursor: pointer;
+.my-account .fieldset h2{
+	margin:5px 0px;
 }
 
 /* ADDRESSES END */
@@ -83,6 +92,10 @@
 	.fieldset{
 		margin:10px auto;
 	}
+
+	.customer-name div:first{
+		margin-right:30px;
+	}
 }
 
 .my-account #form-validate .customer-name > div, .my-account ul.form-list:nth-child(5) > li:nth-child(3) > div, 
@@ -102,23 +115,19 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input{
 	width:85%;
 }
 
-.my-account #form-validate .customer-name div:first{
-	margin-right:30px;
-}
+.customer-address-form{
+	#country{
+		width:75%;
+	}
 
-.my-account .company label{
-	color:black;
-	text-transform: none;
-}
+	#zip{
+		width:85%;
+	}
 
-.wide-divider{
-	 	border-top: 1px solid #e5e5e5;
-	 	margin:0px;
-	 	width:90%;
-}
-
-.my-account .fieldset h2{
-	margin:5px 0px;
+	.fieldset input.checkbox{
+		width:auto;
+		margin-right:10px;
+	}
 }
 
 /* ADD ADDRESS END */

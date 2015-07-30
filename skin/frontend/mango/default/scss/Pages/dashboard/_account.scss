@@ -245,7 +245,7 @@ padding:10px 0px 10px 30px;
 // ----- MY ACCOUNT - MOBILE -----
 @include breakpoint($smartphone-breakpoint){
 	.my-account{
-		
+		margin-left:0%;
 		.fieldset{
 		width:75%;
 		margin:10px auto;
@@ -262,6 +262,7 @@ padding:10px 0px 10px 30px;
 			}
 			.limiter{
 			 	width:70%;
+			 	display: inline-block;
 			}			
 		}
 	}
