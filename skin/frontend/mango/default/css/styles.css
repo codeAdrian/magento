@@ -1615,87 +1615,81 @@ div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li
 }
 
 /* line 113, ../scss/_base.scss */
-ul.form-list:nth-child(3) > li:nth-child(1) {
-  margin: 0px;
-  padding: 0px;
-}
-
-/* line 118, ../scss/_base.scss */
 .customer-name, div.fieldset:nth-child(2) {
   text-transform: none;
 }
 
-/* line 122, ../scss/_base.scss */
+/* line 117, ../scss/_base.scss */
 .fieldset input {
   margin: 3px 0px 10px 0px;
   width: 88%;
 }
 
-/* line 127, ../scss/_base.scss */
+/* line 122, ../scss/_base.scss */
 #form-validate input {
   border: 2px solid #b5b5b5;
   padding: 5px;
 }
 
-/* line 132, ../scss/_base.scss */
+/* line 127, ../scss/_base.scss */
 .forgot-pass {
   text-align: center;
 }
 
-/* line 136, ../scss/_base.scss */
+/* line 131, ../scss/_base.scss */
 .account-login-page a.f-left {
   text-align: center;
 }
 
-/* line 140, ../scss/_base.scss */
+/* line 135, ../scss/_base.scss */
 .account-login-page a.f-left:hover {
   font-weight: bold;
 }
 
-/* line 144, ../scss/_base.scss */
+/* line 139, ../scss/_base.scss */
 #form-validate input:focus {
   border: 2px solid #e9e8e8;
 }
 
-/* line 149, ../scss/_base.scss */
+/* line 144, ../scss/_base.scss */
 #email_address {
   margin: 10px 0px 10px 0px;
 }
 
-/* line 153, ../scss/_base.scss */
+/* line 148, ../scss/_base.scss */
 ul.form-list:nth-child(3) > li:nth-child(2) > label:nth-child(1) {
   text-transform: none;
 }
 
-/* line 157, ../scss/_base.scss */
+/* line 152, ../scss/_base.scss */
 .field .required {
   text-transform: none;
 }
 
-/* line 161, ../scss/_base.scss */
+/* line 156, ../scss/_base.scss */
 p .control {
   list-style: none;
 }
 
-/* line 165, ../scss/_base.scss */
+/* line 160, ../scss/_base.scss */
 input#is_subscribed {
   width: auto;
   dispay: inline-block;
 }
 
-/* line 170, ../scss/_base.scss */
+/* line 165, ../scss/_base.scss */
 div.input-box:nth-child(3) {
   text-align: left;
   width: auto;
   display: inline-block;
 }
 
-/* line 176, ../scss/_base.scss */
+/* line 171, ../scss/_base.scss */
 .buttons-set button[title="Submit"] {
   background-color: #ad0202;
 }
 
-/* line 180, ../scss/_base.scss */
+/* line 175, ../scss/_base.scss */
 .buttons-set button[title="Submit"] span {
   color: white;
   text-transform: uppercase;
@@ -1704,14 +1698,14 @@ div.input-box:nth-child(3) {
 /* REGISTER PAGE END */
 /* MY CART PAGE END */
 /* SEARCH RESULTS PAGE */
-/* line 197, ../scss/_base.scss */
+/* line 192, ../scss/_base.scss */
 .catalogsearch-result-index .col-right-sidebar {
   float: left;
   display: inline-block;
   width: 25%;
 }
 
-/* line 203, ../scss/_base.scss */
+/* line 198, ../scss/_base.scss */
 .catalogsearch-results-index .col-wrapper {
   float: right;
   display: inline-block;
@@ -1719,32 +1713,32 @@ div.input-box:nth-child(3) {
 }
 
 /* CHECKOUT */
-/* line 212, ../scss/_base.scss */
+/* line 207, ../scss/_base.scss */
 #checkoutSteps {
   border: 1px solid #b4b4b4;
   width: 75%;
   margin: 10px auto;
 }
 
-/* line 218, ../scss/_base.scss */
+/* line 213, ../scss/_base.scss */
 #billing\:country_id {
   display: block;
   width: 100%;
 }
 
-/* line 223, ../scss/_base.scss */
+/* line 218, ../scss/_base.scss */
 #checkoutSteps fieldset {
   border: 0;
   padding: 0px 20px;
 }
 
-/* line 228, ../scss/_base.scss */
+/* line 223, ../scss/_base.scss */
 #checkoutSteps fieldset fieldset, #checkoutSteps #co-shipping-form {
   width: 95%;
   margin: 20px auto;
 }
 
-/* line 232, ../scss/_base.scss */
+/* line 227, ../scss/_base.scss */
 #checkoutSteps .step-title h2, #checkoutSteps .step-title .product-details-container .grid2 h1, .product-details-container .grid2 #checkoutSteps .step-title h1 {
   background-color: black;
   color: white;
@@ -1755,32 +1749,32 @@ div.input-box:nth-child(3) {
   font-weight: 300;
 }
 
-/* line 242, ../scss/_base.scss */
+/* line 237, ../scss/_base.scss */
 #checkoutSteps li:not(:last-child) .step-title h2, #checkoutSteps li:not(:last-child) .step-title .product-details-container .grid2 h1, .product-details-container .grid2 #checkoutSteps li:not(:last-child) .step-title h1 {
   border-bottom: 1px solid white;
 }
 
-/* line 246, ../scss/_base.scss */
+/* line 241, ../scss/_base.scss */
 .checkout-wrapper .please-wait {
   display: none;
 }
 
-/* line 250, ../scss/_base.scss */
+/* line 245, ../scss/_base.scss */
 #checkoutSteps .form-list li {
   padding: 3px 0px;
 }
 
-/* line 254, ../scss/_base.scss */
+/* line 249, ../scss/_base.scss */
 #checkoutSteps fieldset .input-box div {
   font-size: 1.25em;
 }
 
-/* line 258, ../scss/_base.scss */
+/* line 253, ../scss/_base.scss */
 #checkoutSteps #billing-address-select, #checkoutSteps #shipping-address-select {
   width: 80%;
 }
 
-/* line 262, ../scss/_base.scss */
+/* line 257, ../scss/_base.scss */
 .red-continue-button {
   margin: 0px auto;
   border: 0;
@@ -1788,7 +1782,7 @@ div.input-box:nth-child(3) {
   text-align: center;
 }
 
-/* line 268, ../scss/_base.scss */
+/* line 263, ../scss/_base.scss */
 .red-continue-button span span {
   color: white;
   text-align: center;
@@ -1797,7 +1791,7 @@ div.input-box:nth-child(3) {
 
 /* CHECKOUT END */
 /* REGISTRATION INPUT VALIDATION FAILED */
-/* line 280, ../scss/_base.scss */
+/* line 275, ../scss/_base.scss */
 #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
 #advice-required-entry-email_address, #advice-required-entry-password,
 #advice-required-entry-confirmation, #advice-validate-password-password,
@@ -1815,7 +1809,7 @@ div.input-box:nth-child(3) {
   font-weight: 600;
 }
 
-/* line 297, ../scss/_base.scss */
+/* line 292, ../scss/_base.scss */
 #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
 #advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
 #advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
@@ -1832,7 +1826,7 @@ div.input-box:nth-child(3) {
   font-weight: 600;
 }
 
-/* line 313, ../scss/_base.scss */
+/* line 308, ../scss/_base.scss */
 input.validation-failed select.validation-failed, .validation-failed {
   border: 2px solid #a51313 !important;
 }
@@ -1840,47 +1834,47 @@ input.validation-failed select.validation-failed, .validation-failed {
 /* VALIDATION FAILED END */
 /* RESPONSIVE DESIGN IPAD */
 @media (max-width: 900px) {
-  /* line 323, ../scss/_base.scss */
+  /* line 318, ../scss/_base.scss */
   li.level0 a:hover {
     cursor: pointer;
   }
 
-  /* line 327, ../scss/_base.scss */
+  /* line 322, ../scss/_base.scss */
   .mobileOnly {
     display: block;
   }
 
-  /* line 331, ../scss/_base.scss */
+  /* line 326, ../scss/_base.scss */
   .main-container {
     margin: 0px 1%;
   }
 
-  /* line 335, ../scss/_base.scss */
+  /* line 330, ../scss/_base.scss */
   .main-container {
     margin-top: 20px;
   }
 
   /* FORGOT PASSWORD */
-  /* line 340, ../scss/_base.scss */
+  /* line 335, ../scss/_base.scss */
   .account-create, .account-login-page, .forgot-pass-wrapper {
     width: 70%;
     padding: 25px 50px;
   }
 
-  /* line 346, ../scss/_base.scss */
+  /* line 341, ../scss/_base.scss */
   .account-login-page {
     width: 80%;
     padding: 25px;
   }
 
-  /* line 351, ../scss/_base.scss */
+  /* line 346, ../scss/_base.scss */
   .account-login-page .gray-button, .account-login-page .red-button {
     width: 100%;
     margin: 0px;
   }
 
   /* PAGE NOT FOUND */
-  /* line 358, ../scss/_base.scss */
+  /* line 353, ../scss/_base.scss */
   .page-not-found-wrapper .products-grid .item {
     width: 100%;
     display: block;
@@ -1890,22 +1884,22 @@ input.validation-failed select.validation-failed, .validation-failed {
 /* RESPONSIVE DESIGN IPAD END */
 /* RESPONSIVE DESIGN MOBILE */
 @media (max-width: 625px) {
-  /* line 371, ../scss/_base.scss */
+  /* line 366, ../scss/_base.scss */
   .main-container {
     margin: 0px 2%;
   }
 
-  /* line 375, ../scss/_base.scss */
+  /* line 370, ../scss/_base.scss */
   .block-subscribe {
     padding: 10px 0px;
   }
 
-  /* line 379, ../scss/_base.scss */
+  /* line 374, ../scss/_base.scss */
   #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
   }
 
-  /* line 383, ../scss/_base.scss */
+  /* line 378, ../scss/_base.scss */
   .subscribe-button {
     border: 1px solid black;
     margin: 0px;
@@ -1915,38 +1909,38 @@ input.validation-failed select.validation-failed, .validation-failed {
     height: 30px;
   }
 
-  /* line 393, ../scss/_base.scss */
+  /* line 388, ../scss/_base.scss */
   #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
 
-  /* line 398, ../scss/_base.scss */
+  /* line 393, ../scss/_base.scss */
   .smartphoneOnly {
     display: block;
   }
 
-  /* line 402, ../scss/_base.scss */
+  /* line 397, ../scss/_base.scss */
   .inlineSmartphoneOnly {
     display: inline-block;
   }
 
-  /* line 406, ../scss/_base.scss */
+  /* line 401, ../scss/_base.scss */
   .desktopOnly {
     display: none;
   }
 
-  /* line 410, ../scss/_base.scss */
+  /* line 405, ../scss/_base.scss */
   .desktopTabletOnly {
     display: none;
   }
 
-  /* line 414, ../scss/_base.scss */
+  /* line 409, ../scss/_base.scss */
   .forgot-pass-wrapper .page-title h1 {
     text-align: center;
   }
 
-  /* line 418, ../scss/_base.scss */
+  /* line 413, ../scss/_base.scss */
   .forgot-pass-wrapper {
     width: 90%;
     padding: 20px;
@@ -1954,7 +1948,7 @@ input.validation-failed select.validation-failed, .validation-failed {
 
   /* MY ACCOUNT */
   /* ADD NEW ADDRESS */
-  /* line 427, ../scss/_base.scss */
+  /* line 422, ../scss/_base.scss */
   #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
   #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
   #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
@@ -1971,7 +1965,7 @@ input.validation-failed select.validation-failed, .validation-failed {
   }
 
   /* CHECKOUT */
-  /* line 443, ../scss/_base.scss */
+  /* line 438, ../scss/_base.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -1979,29 +1973,29 @@ input.validation-failed select.validation-failed, .validation-failed {
     margin: 5px 2px;
   }
 
-  /* line 450, ../scss/_base.scss */
+  /* line 445, ../scss/_base.scss */
   #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
 
-  /* line 454, ../scss/_base.scss */
+  /* line 449, ../scss/_base.scss */
   #checkoutSteps {
     width: 100%;
   }
 
-  /* line 457, ../scss/_base.scss */
+  /* line 452, ../scss/_base.scss */
   #billing\:country_id {
     display: block;
     width: 100%;
   }
 
-  /* line 462, ../scss/_base.scss */
+  /* line 457, ../scss/_base.scss */
   #checkoutSteps fieldset, #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
 
-  /* line 468, ../scss/_base.scss */
+  /* line 463, ../scss/_base.scss */
   .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
     display: block;
     width: 100%;
@@ -5090,85 +5084,95 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   content: ":";
 }
 
-/* line 109, ../scss/pages/dashboard/_misc.scss */
+/* line 110, ../scss/pages/dashboard/_misc.scss */
+.newsletter-manage-index .control {
+  padding-top: 10px;
+}
+/* line 113, ../scss/pages/dashboard/_misc.scss */
+.newsletter-manage-index .fieldset input {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* line 119, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-details #my-orders-table .item-options dt, .my-account .order-details #my-orders-table .item-options #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .my-account .order-details #my-orders-table .item-options dd {
   font-weight: bold;
   clear: both;
 }
-/* line 113, ../scss/pages/dashboard/_misc.scss */
+/* line 123, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-details #my-orders-table .item-options dt:after, .my-account .order-details #my-orders-table .item-options #product-info-wrapper .product-shop #product-options-wrapper dl dd:after, #product-info-wrapper .product-shop #product-options-wrapper dl .my-account .order-details #my-orders-table .item-options dd:after {
   content: ":";
 }
 
-/* line 118, ../scss/pages/dashboard/_misc.scss */
+/* line 128, ../scss/pages/dashboard/_misc.scss */
 .my-account .order-details #my-orders-table .item-options dd {
   margin-left: 5px;
   margin-right: auto;
 }
 
 @media (max-width: 900px) {
-  /* line 127, ../scss/pages/dashboard/_misc.scss */
+  /* line 137, ../scss/pages/dashboard/_misc.scss */
   .col2-set.order-info-box, .my-account .order-info, .my-account .order-date {
     width: 100%;
     display: block;
     margin: 20px 0px 20px 10px;
   }
 
-  /* line 134, ../scss/pages/dashboard/_misc.scss */
+  /* line 144, ../scss/pages/dashboard/_misc.scss */
   .my-account .order-details #my-orders-table tbody {
     display: table-caption;
   }
-  /* line 138, ../scss/pages/dashboard/_misc.scss */
+  /* line 148, ../scss/pages/dashboard/_misc.scss */
   .my-account .order-details #my-orders-table tbody tr td {
     text-align: center;
   }
-  /* line 143, ../scss/pages/dashboard/_misc.scss */
+  /* line 153, ../scss/pages/dashboard/_misc.scss */
   .my-account .order-details #my-orders-table tbody dl {
     text-align: center;
   }
-  /* line 145, ../scss/pages/dashboard/_misc.scss */
+  /* line 155, ../scss/pages/dashboard/_misc.scss */
   .my-account .order-details #my-orders-table tbody dl dt, .my-account .order-details #my-orders-table tbody #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper .my-account .order-details #my-orders-table tbody dl dd {
     text-align: right;
     padding-right: 2em;
   }
-  /* line 150, ../scss/pages/dashboard/_misc.scss */
+  /* line 160, ../scss/pages/dashboard/_misc.scss */
   .my-account .order-details #my-orders-table tbody dl dd {
     text-align: left;
   }
 
-  /* line 157, ../scss/pages/dashboard/_misc.scss */
+  /* line 167, ../scss/pages/dashboard/_misc.scss */
   .my-account .order-details #my-orders-table tfoot {
     border: 0;
     padding: 20px auto;
   }
 
-  /* line 162, ../scss/pages/dashboard/_misc.scss */
+  /* line 172, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view #my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 166, ../scss/pages/dashboard/_misc.scss */
+  /* line 176, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view #my-orders-table colgroup {
     width: 100%;
   }
 
-  /* line 170, ../scss/pages/dashboard/_misc.scss */
+  /* line 180, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr td {
     width: 100%;
   }
 
-  /* line 176, ../scss/pages/dashboard/_misc.scss */
+  /* line 186, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table thead {
     display: none;
   }
 
-  /* line 179, ../scss/pages/dashboard/_misc.scss */
+  /* line 189, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 183, ../scss/pages/dashboard/_misc.scss */
+  /* line 193, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -5176,7 +5180,7 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     margin: 0px;
   }
 
-  /* line 190, ../scss/pages/dashboard/_misc.scss */
+  /* line 200, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -5184,7 +5188,7 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     width: 100%;
   }
 
-  /* line 197, ../scss/pages/dashboard/_misc.scss */
+  /* line 207, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table .item-options {
     margin: 0px;
     padding: 0px;
@@ -5194,14 +5198,14 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     margin: 0px 0px 70px 0px;
   }
 
-  /* line 206, ../scss/pages/dashboard/_misc.scss */
+  /* line 216, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     width: auto;
     float: none;
     padding-right: 2em;
   }
 
-  /* line 212, ../scss/pages/dashboard/_misc.scss */
+  /* line 222, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table .item-options dt, .sales-order-view table#my-orders-table .item-options #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .sales-order-view table#my-orders-table .item-options dd, .sales-order-view table#my-orders-table .item-options dd {
     width: 45%;
     margin: 0px;
@@ -5210,13 +5214,13 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     color: black;
   }
 
-  /* line 220, ../scss/pages/dashboard/_misc.scss */
+  /* line 230, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr td:last-child {
     text-align: center;
     background-color: #b4b4b4;
   }
 
-  /* line 224, ../scss/pages/dashboard/_misc.scss */
+  /* line 234, ../scss/pages/dashboard/_misc.scss */
   .sales-order-view table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
@@ -5224,46 +5228,46 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     padding: 0px;
   }
 
-  /* line 231, ../scss/pages/dashboard/_misc.scss */
+  /* line 241, ../scss/pages/dashboard/_misc.scss */
   table#shopping-cart-table tbody td:nth-child(2):before {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  /* line 236, ../scss/pages/dashboard/_misc.scss */
+  /* line 246, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table tbody tr td {
     border: 0;
   }
 
-  /* line 243, ../scss/pages/dashboard/_misc.scss */
+  /* line 253, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 247, ../scss/pages/dashboard/_misc.scss */
+  /* line 257, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table thead {
     display: none;
   }
 
-  /* line 250, ../scss/pages/dashboard/_misc.scss */
+  /* line 260, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
-  /* line 254, ../scss/pages/dashboard/_misc.scss */
+  /* line 264, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody td h3 {
     padding: 10px 0px;
   }
 
-  /* line 258, ../scss/pages/dashboard/_misc.scss */
+  /* line 268, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
     padding: 10px 0px;
   }
 
-  /* line 264, ../scss/pages/dashboard/_misc.scss */
+  /* line 274, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -5271,12 +5275,12 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     width: 100%;
   }
 
-  /* line 271, ../scss/pages/dashboard/_misc.scss */
+  /* line 281, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody tr td:last-child {
     text-align: center;
   }
 
-  /* line 274, ../scss/pages/dashboard/_misc.scss */
+  /* line 284, ../scss/pages/dashboard/_misc.scss */
   table#my-orders-table tbody td:not(:last-child):not(:first-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -5284,45 +5288,45 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
     text-align: right;
   }
 
-  /* line 281, ../scss/pages/dashboard/_misc.scss */
+  /* line 291, ../scss/pages/dashboard/_misc.scss */
   .product-name a {
     font-size: 0.8em;
   }
 
-  /* line 284, ../scss/pages/dashboard/_misc.scss */
+  /* line 294, ../scss/pages/dashboard/_misc.scss */
   .my-account #my-orders-table {
     text-align: center;
     font-size: 1em;
   }
 
-  /* line 289, ../scss/pages/dashboard/_misc.scss */
+  /* line 299, ../scss/pages/dashboard/_misc.scss */
   .cart-fieldset .btn-remove {
     padding: 2px 6px;
   }
 
-  /* line 293, ../scss/pages/dashboard/_misc.scss */
+  /* line 303, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1) {
     text-align: center;
     padding: 0px;
   }
 
-  /* line 298, ../scss/pages/dashboard/_misc.scss */
+  /* line 308, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 302, ../scss/pages/dashboard/_misc.scss */
+  /* line 312, ../scss/pages/dashboard/_misc.scss */
   .cart-fieldset {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 306, ../scss/pages/dashboard/_misc.scss */
+  /* line 316, ../scss/pages/dashboard/_misc.scss */
   .cart .page-title {
     text-align: center;
   }
 
-  /* line 310, ../scss/pages/dashboard/_misc.scss */
+  /* line 320, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 30%;
   }
