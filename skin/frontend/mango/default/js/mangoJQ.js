@@ -47,7 +47,7 @@ jq(function() {
       jq('.logo').hide();
       jq('.links>li:first-child').hide();
       jq('.form-search').css("border","0px");
-      jq('.main-container').css("margin-top","123px");
+      jq('.main-container').css("margin-top","98px");
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
       jq('.form-search').show();
     }
