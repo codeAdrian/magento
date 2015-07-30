@@ -132,28 +132,6 @@ label.required
 	font-weight: 300;
 }
 
-.back-link-button a{
-	background-color: #474444;;
-	color: white;
-	font-weight: bold;
-	font-size: 0.72em;
-	text-decoration: none;
-	padding: 10px 20px;
-	display: inline-block;
-	min-width: 100px;
-	text-transform: uppercase;
-	text-align: center;
-
-	&:hover{
-		background-color: black;
-	}
-
-	&:active{
-		background-color: #9b9a9a;
-	}
-}
-
-
 a.f-left{
 		margin:5px 0px;
 		display: block;

@@ -1,0 +1,308 @@
+// ----- MY ACCOUNT - DESKTOP ----- 
+
+.block-account .block-title, .block-reorder .block-title{
+	text-transform: uppercase;
+	color:white;
+	background-color: black;
+	text-align: center;
+	padding:5px 0px;
+}
+
+.block-account .block-content ul, .block-reorder .block-content ol{
+	list-style: none;
+	padding:0px 0px 0px 10px;
+	margin:10px 0px;
+
+	li{
+		padding:10px 0px;
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+	}
+}
+
+.block-reorder .block-content{
+	ol li a{
+		font-size:1em;
+	}	
+
+	.block-subtitle{
+		padding:0px 20px;
+		margin:5px 0px;
+		font-weight: bold;
+	}
+}
+
+.my-account .box-recent .view-all-link, .block-reorder .view-all-link{
+	display: block;
+}
+
+.my-account .box-head .view-all-link a:hover, .block-reorder .view-all-link a:hover{
+	background-color: black;
+	cursor: pointer;
+}
+
+.my-account .box-head a, .block-reorder .view-all-link a{
+	text-decoration: none;
+	display: block;
+	background-color:#474444;
+	color:white;
+	text-align: center;
+	padding:5px 0px;
+	text-transform: uppercase;
+	border-top:2px solid white;
+	width:100%;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a{
+	float: right;
+	min-width:150px;
+	padding:5px 10px;
+	margin-right:10px;
+	margin-left: auto;
+	width:15%;
+}
+
+.block-reorder .actions .btn-cart {
+	background-color:#ad0202;
+	border:0;
+	width:100%;
+	font-size: 0.75em;
+	min-width:auto;
+	color:white;
+	text-transform: uppercase;
+	padding:5px 0px;
+
+	&:hover{
+		cursor: pointer;
+		background-color: #790000;		
+	}
+}
+
+.block-reorder .block-content #cart-sidebar-reorder p{
+	display: inline-block;
+	padding:0px;
+	margin:0px;
+	font-size:0.75em;
+}
+
+.my-account{
+	margin-top:15px;
+	margin-bottom:20px;
+
+	.box-recent{
+		padding-left:30px;
+		padding-top:20px;
+		padding-bottom:20px;		
+	}
+
+	.buttons-wrapper a{
+			color:black;
+	}
+
+}
+
+.dashboard .welcome-msg, .dashboard .box-info{
+padding:10px 0px 10px 30px;
+
+	p{
+		line-height:1.5em;
+	}
+	.hello{
+		line-height:2em;
+	}
+}
+
+.box-info{
+	.col2-set .col-1, .col2-set .col-2{
+		padding:0px 5px 0px 10px;
+		width:45%;
+		margin:5px;
+		display: inline-block;
+		vertical-align: top;
+		border-left:2px solid #B4B4B4;
+	}
+
+	a{
+		text-decoration: none;
+		text-transform: uppercase;
+		color:white;
+		background-color: gray;
+		padding:5px;
+		margin:5px 0px;
+		width:200px;
+		display: block;
+		text-align: center;
+		font-size: 0.75em;
+	}
+	.box-head h2{
+		margin:5px 0px;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+}
+
+.box-title{
+	h3{
+		display: inline-block;
+		margin-right:3px;
+		margin-bottom:0px;
+	}	
+	a{
+		display: inline-block;
+		text-decoration: underline;
+		background-color:white;
+		padding:5px 0px;
+		color:black;
+		font-size: 1em;
+		text-transform: none;
+		width:50px;
+
+		&:hover{
+			font-weight: bold;
+		}
+	}
+}
+
+.box-content{
+	h4{
+		font-weight:bold;
+		line-height:1.5em;
+	}
+
+	.col-1{
+		padding-left:10px;
+		line-height:1.5em;
+	}
+
+	.col-2{
+		padding-left:10px;
+		line-height:1.5em;		
+	}
+}
+
+
+// ----- MY ACCOUNT - TABLET -----
+@include breakpoint($tablet-breakpoint){
+	.my-account{
+		margin-left:2%;
+
+		.addresses-primary ol li, .addresses-additional ol li{
+			display: block;
+			width:100%;
+		}
+
+		.order-info-box, .order-info, .order-date{
+			width:45%;
+		}
+	}
+
+	.dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent{
+		padding-left:10px;
+	}
+
+	.box-info a{
+		min-width:80px;
+		width:auto;
+
+		.col2-set .col-1, .col2-set .col-2{
+			display: inline-block;
+			width:45%;
+			margin:5px 0px;
+		}
+
+	}
+
+	.block-reorder .block-content {
+		text-align:center;
+		ol{
+			margin:0px;
+			padding:0px;
+		}		
+
+		li{
+			padding:10px 0px;
+			border-top:1px solid #b4b4b4;
+		}
+		input{
+			display: block;
+			margin:0px auto;
+		}
+		.block-subtitle{
+			font-size: 1em;
+			padding:0px 0px 0px 10px;
+		}
+	}
+}
+// ----- MY ACCOUNT - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+	.my-account{
+		margin-left:0%;
+		.fieldset{
+		width:75%;
+		margin:10px auto;
+		}
+
+		.buttons-set{
+		text-align: center;
+		}
+
+		.pager{
+			.amount{
+				width:25%;
+				display: inline-block;
+			}
+			.limiter{
+			 	width:70%;
+			 	display: inline-block;
+			}			
+		}
+	}
+
+	.dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent{
+		padding:0px;
+		margin:20px auto;
+	}
+
+	.box-info .col2-set .col-1, .box-info .col2-set .col-2{
+		display: block;
+		width:95%;
+		margin:20px auto;
+	}
+
+	.block-reorder{
+		.actions .btn-cart{
+				padding:5px 0px;
+				font-size: 1em;
+		}		
+		.block-content ol li a{
+			font-size:1em;
+		}
+	}
+
+	.my-account .box-head a, .block-reorder .view-all-link a{
+		padding:5px 0px;
+		font-size: 1em;
+	}
+
+	div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a{
+		width:100%;
+		padding:5px 0px;
+		float:none;
+		text-align: center;
+	}
+
+	.box-info a{
+	  	padding:5px 0px;
+	  	font-size:1em;
+	  }
+
+	.my-account-edit{
+	  	width:100%;
+	  }
+
+}

@@ -1,0 +1,31 @@
+$susy:(
+	columns:$susy-desktop-grid2-columns,
+	//debug: (image: show),
+);
+
+.my-account-edit .buttons-set, .customer-address-index .buttons-set, .my-account .buttons-set{
+	@include container();
+
+	.grid2{
+			@include span(1 of $susy-desktop-grid2-columns);
+			&:last-child{
+				@include span(last 1 of $susy-desktop-grid2-columns);
+			}		
+	}
+}
+
+// ----- SMARTPHONE
+@include breakpoint($smartphone-breakpoint){
+	.my-account-edit .buttons-set, .customer-address-index .buttons-set, .my-account .buttons-set{
+		@include container($susy-smartphone-grid2-columns);
+
+		.grid2{
+				@include span(1 of $susy-smartphone-grid2-columns);
+				float:none;
+				&:last-child{
+					@include span(last 1 of $susy-smartphone-grid2-columns);
+					float:none;
+				}		
+		}
+	}
+}

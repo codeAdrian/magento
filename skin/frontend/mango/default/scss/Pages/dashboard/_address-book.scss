@@ -1,0 +1,163 @@
+// ----- ADDRESS BOOK - DESKTOP ----- 
+
+/* ADDRESSES */
+
+.my-account .addresses-primary, .my-account .addresses-additional {
+	line-height: 1.5em;
+	h2{
+		margin:5px 0px;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+
+	h3{
+		font-weight:bold;
+		line-height:1.5em;
+	}
+
+	.col-1 ol li address{
+		padding-left:10px;
+		line-height:1.5em;
+	}
+
+	.col-2 ol li address{
+		padding-left:10px;
+		line-height:1.5em;		
+	}
+
+	p{
+		margin:10px auto;
+	}
+}
+.my-account .addresses-primary ol, .my-account .addresses-additional ol{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+
+	li{
+		display: inline-block;
+		width: 45%;
+		border-left:2px solid #B4B4B4;
+		vertical-align: top;
+		padding-left:10px;		
+
+		a{
+			text-decoration: none;
+			color:white;
+			background-color: gray;
+			padding:5px 10px;		
+
+			&:hover{
+				background-color: black;
+				cursor: pointer;				
+			}
+		}
+	}
+
+	&.empty{
+		width:100%;
+		display: block;		
+	}
+}
+
+.my-account .company label{
+	color:black;
+	text-transform: none;
+}
+
+.my-account .fieldset h2{
+	margin:5px 0px;
+}
+
+/* ADDRESSES END */
+
+
+/* EDIT ADDRESS */
+
+.my-account #form-validate{
+	margin:20px auto;
+	border:1px solid #b4b4b4;
+	padding:20px;
+
+	.validation-advice{
+		font-size:1.25em;
+	}
+
+	h2.legend{
+		text-align: center;
+		font-size: 1.25em;
+		text-transform: uppercase;
+	}
+
+	.fieldset{
+		margin:10px auto;
+	}
+
+	.customer-name div:first{
+		margin-right:30px;
+	}
+}
+
+.my-account #form-validate .customer-name > div, .my-account ul.form-list:nth-child(5) > li:nth-child(3) > div, 
+.my-account ul.form-list:nth-child(2) > li:nth-child(3) > div, ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(1), 
+ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2), li.fields:nth-child(4) > div:nth-child(1), li.fields:nth-child(4) > div:nth-child(2){
+	width:48%;
+	display: inline-block;
+	font-size: 1em;
+	margin:10px auto;
+	color:black;
+	text-transform: none;
+}
+
+.my-account #form-validate .customer-name > div input, ul.form-list:nth-child(5) > li:nth-child(3) > div input, 
+ul.form-list:nth-child(2) > li:nth-child(3) > div input, ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(1) input, 
+ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input{
+	width:85%;
+}
+
+.customer-address-form{
+	#country{
+		width:75%;
+	}
+
+	#zip{
+		width:85%;
+	}
+
+	.fieldset input.checkbox{
+		width:auto;
+		margin-right:10px;
+	}
+}
+
+/* ADD ADDRESS END */
+
+
+// ----- ADDRESS BOOK - DESKTOP  - TABLET -----
+@include breakpoint($tablet-breakpoint){
+	.my-account{
+		.addresses-list{
+			ol li{
+				width:100%;
+				display: block;
+				margin:20px 0px;
+			}
+		}
+	}
+}
+// ----- ADDRESS BOOK - DESKTOP - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+		li.fields:nth-child(4) > div:nth-child(2){
+		width:100%;
+		display:block;
+	}
+
+	.my-account #form-validate{
+		padding:0px;
+	}
+
+	#newsletter-validate-detail .block-content .button {
+		min-width:25%;
+	}	
+
+}
