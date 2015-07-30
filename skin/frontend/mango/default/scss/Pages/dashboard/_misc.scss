@@ -2,43 +2,50 @@
 
 // MY ORDERS PAGE
 
-.my-account .pager{
-	margin:10px 0px;
-}
-	.my-account .buttons-wrapper{
-		text-align: center;
+.my-account{
+	.pager{
+		margin:10px 0px;
+		.limiter{
+			text-align: right;
+		}
 	}
 
-.my-account .pager .limiter{
-	text-align: right;
-}
+	.buttons-wrapper{
+			text-align: center;
+	}
 
-.my-account #my-orders-table{
-	width:100%;
-	text-align: center;
-}
+	#my-orders-table{
+		width:100%;
+		text-align: center;
+		margin:20px auto;
 
-.my-account #my-orders-table thead tr{
-	border-bottom:1px solid black;
-}
+		thead tr{
+			border-bottom:1px solid black;
+			th{
+				width:15%;
 
-.my-account #my-orders-table thead tr th{
-	width:15%;
-}
+				&:last-child{
+					width:20%;
+				}
+			}
+		}
 
-.my-account #my-orders-table thead tr th:last-child{
-	width:20%;
-}
+		tbody tr td{
+			padding:10px 0px;
+			text-align:left;
 
-.my-account #my-orders-table tbody tr td{
-	padding:10px 0px;
-	text-align:left;
-}
+			a{
+				color:black;
+				text-transform: uppercase;
+				font-size: 0.75em;				
+			}
+		}
 
-.my-account #my-orders-table tbody tr td a{
-	color:black;
-	text-transform: uppercase;
-	font-size: 0.75em;
+	}
+		.order-details{
+			margin:10px auto;
+
+		}
 }
 
 // MY ORDERS PAGE END
@@ -46,10 +53,31 @@
 
 // VIEW ORDER
 
+.sales-order-view{
+	.col2-set{
+		line-height: 1.5em;
+
+		h2{
+			margin:5px 0px;
+			text-transform: uppercase;
+			font-weight: 300;			
+			text-decoration: underline;
+		}
+
+		.box-content{
+			border-left:2px solid #b4b4b4;
+			padding-left:10px;
+		}
+	}
+	.subtotal{
+		margin:5px 0px;
+	}
+}
+
 .my-account .order-info-box, .my-account .order-info, .my-account .order-date{
 	width:46%;
 	display: inline-block;
-	margin-left:10px;
+	margin:10px 0px 10px 10px;
 }
 
 .my-account .order-details #my-orders-table h3{
@@ -60,17 +88,31 @@
 .my-account .order-details #my-orders-table .item-options dt, .my-account .order-details #my-orders-table .item-options dd{
 	display: block;
 	float:left;
-	margin-left:15px;
+	margin:5px 0;
 }
 
 .my-account .order-details #my-orders-table tfoot{
 	border-top:1px solid black;
 	text-align: right;
+
+	tr td{
+		text-align: right;
+		padding:10px 0px;
+
+		&.a-right:not(.last):after{
+			content:":";
+		}
+
+	}
 }
 
 .my-account .order-details #my-orders-table .item-options dt{
 	font-weight: bold;
 	clear:both;
+
+	&:after{
+		content:":";
+	}
 }
 
 .my-account .order-details #my-orders-table .item-options dd{
@@ -82,7 +124,40 @@
 
 // ----- MISC - TABLET -----
 @include breakpoint($tablet-breakpoint){
+.col2-set.order-info-box, .my-account .order-info, .my-account .order-date{
+	width:100%;
+	display:block;
+	margin:20px 0px 20px 10px;
+}
 
+.my-account .order-details #my-orders-table{
+	tbody{
+		display: table-caption;
+
+		tr{
+			td{
+				text-align: center;
+			}
+		}
+
+		dl{
+			text-align: center;
+			dt{
+				text-align: right;
+				padding-right:2em;
+			}
+
+			dd{
+				text-align: left; 
+			}
+		}
+	}
+}
+
+.my-account .order-details #my-orders-table tfoot{
+	border:0;
+	padding:20px auto;
+}
 	// VIEW ORDER
 	.sales-order-view #my-orders-table colgroup col:not(:first-child){
 		display: none;
@@ -129,7 +204,8 @@
 	    }
 
 	    table#my-orders-table tbody td:not(:last-child):before{
-	    	width:30%;
+	    	width:auto;
+	    	float:none;
 	    	padding-right:2em;
 	    }
 
@@ -151,10 +227,6 @@
 		margin:0px;
 		padding:0px;
 			}
-	.sales-order-view table#my-orders-table .product-name{
-		margin:0;
-		padding:0;
-	}
 
 	table#shopping-cart-table tbody td:nth-child(2):before{
 		display: block;
@@ -178,6 +250,10 @@
   table#my-orders-table tbody td { 
     display: block; 
     padding-top:10px; 
+
+    h3{
+    	padding:10px 0px;
+    }
   }
   table#my-orders-table tbody tr td:first-child { 
     background-color: black; 
@@ -195,12 +271,10 @@
     table#my-orders-table tbody tr td:last-child{
     	text-align: center;
     }
-	table#my-orders-table tbody td:not(:last-child):before { 
+	table#my-orders-table tbody td:not(:last-child):not(:first-child):before { 
     content: attr(data-th); 
     font-weight: bold;
     display: inline-block;
-    width: 45%;
-    float:left;
     text-align: right;  
   }
 
