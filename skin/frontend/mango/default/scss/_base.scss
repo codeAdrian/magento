@@ -69,10 +69,6 @@ body
 
 /* REGISTER PAGE AND LOGIN PAGE */
 
-#form-validate .fieldset{
-	font-size: 0.75em;
-}
-
 .account-create, .account-login-page, .forgot-pass-wrapper{
 	width:40%;
 	margin:20px auto;
@@ -125,7 +121,6 @@ ul.form-list:nth-child(3) > li:nth-child(1){
 
 .fieldset input{
 	margin:3px 0px 10px 0px;
-	font-size: 1.75em;
 	width:88%;
 }
 
@@ -145,8 +140,6 @@ ul.form-list:nth-child(3) > li:nth-child(1){
 .account-login-page a.f-left:hover{
 	font-weight:bold;
 }
-
-
 
 #form-validate input:focus{
 	border:2px solid #e9e8e8;
@@ -296,10 +289,10 @@ border-bottom:1px solid white;
 #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password, 
 .my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
 #advice-required-entry-telephone{
-	width:6%;
+	width:auto;
 	margin:0px;
 	display:inline-block;
-	padding-left:3px;
+	padding-left:1px;
 	height:20px;
 	font-size:3em;
 	color:#a51313;
@@ -405,13 +398,6 @@ input.validation-failed select.validation-failed, .validation-failed{
 	#newsletter_banner{
 		padding:8px 0px;
 		font-size:0.75em;
-	}
-
-	.back-link-button a{
-		font-size: 1em;
-		margin: 0px;
-		padding: 5px 0px;
-		width:100%;
 	}
 
 	.smartphoneOnly{

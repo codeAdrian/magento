@@ -577,7 +577,30 @@ button {
     width: 100%;
   }
 }
-/* line 38, ../scss/_components.scss */
+/* line 36, ../scss/_components.scss */
+.back-link-button a {
+  background-color: #474444;
+  color: white;
+  font-weight: bold;
+  font-size: 0.72em;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  min-width: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0px;
+}
+/* line 49, ../scss/_components.scss */
+.back-link-button a:hover {
+  background-color: black;
+}
+/* line 53, ../scss/_components.scss */
+.back-link-button a:active {
+  background-color: #9b9a9a;
+}
+
+/* line 60, ../scss/_components.scss */
 #newsletter_banner {
   background-color: black;
   color: white;
@@ -588,12 +611,12 @@ button {
   margin-bottom: 15px;
   padding: 5px 10px;
 }
-/* line 48, ../scss/_components.scss */
+/* line 70, ../scss/_components.scss */
 #newsletter_banner p {
   padding: 2px 0px;
 }
 
-/* line 55, ../scss/_components.scss */
+/* line 77, ../scss/_components.scss */
 .category-title h1, .dashboard-page-title h1, .my-account .page-title h1, .checkout-wrapper .page-title h1 {
   text-align: center;
   text-transform: uppercase;
@@ -603,7 +626,7 @@ button {
   font-size: 2.5em;
 }
 
-/* line 66, ../scss/_components.scss */
+/* line 88, ../scss/_components.scss */
 .category-divider, .my-account-divider {
   margin: 0px;
   padding: 0px;
@@ -614,22 +637,22 @@ button {
 }
 
 @media (max-width: 625px) {
-  /* line 77, ../scss/_components.scss */
+  /* line 99, ../scss/_components.scss */
   .category-divider, .my-account-divider {
     margin: 2px;
   }
 }
-/* line 85, ../scss/_components.scss */
+/* line 107, ../scss/_components.scss */
 .breadcrumbs ul {
   list-style: none;
   margin: 0px 0px 0px 10px;
   font-size: 0.8em;
 }
-/* line 90, ../scss/_components.scss */
+/* line 112, ../scss/_components.scss */
 .breadcrumbs ul li {
   display: inline-block;
 }
-/* line 93, ../scss/_components.scss */
+/* line 115, ../scss/_components.scss */
 .breadcrumbs ul li a {
   text-decoration: none;
   color: black;
@@ -637,12 +660,12 @@ button {
 }
 
 @media (max-width: 900px) {
-  /* line 103, ../scss/_components.scss */
+  /* line 125, ../scss/_components.scss */
   .breadcrumbs {
     margin: 20px 0px 20px 0px;
   }
 }
-/* line 111, ../scss/_components.scss */
+/* line 133, ../scss/_components.scss */
 img {
   max-width: 100% !important;
   height: auto;
@@ -1259,6 +1282,60 @@ footer .border-container .grid2:last-child {
     margin-right: 0;
   }
 }
+/* line 6, ../scss/layout/_susy-dashboard.scss */
+.my-account-edit .buttons-set, .customer-address-index .buttons-set {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.my-account-edit .buttons-set:after, .customer-address-index .buttons-set:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 9, ../scss/layout/_susy-dashboard.scss */
+.my-account-edit .buttons-set .grid2, .customer-address-index .buttons-set .grid2 {
+  width: 44.44444%;
+  float: left;
+  margin-right: 11.11111%;
+}
+/* line 11, ../scss/layout/_susy-dashboard.scss */
+.my-account-edit .buttons-set .grid2:last-child, .customer-address-index .buttons-set .grid2:last-child {
+  width: 44.44444%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 625px) {
+  /* line 19, ../scss/layout/_susy-dashboard.scss */
+  .my-account-edit .buttons-set {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .my-account-edit .buttons-set:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 22, ../scss/layout/_susy-dashboard.scss */
+  .my-account-edit .buttons-set .grid2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  /* line 25, ../scss/layout/_susy-dashboard.scss */
+  .my-account-edit .buttons-set .grid2:last-child {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    float: none;
+  }
+}
 /* line 2, ../scss/layout/_page.scss */
 .page {
   max-width: 1280px;
@@ -1489,11 +1566,6 @@ body {
 
 /* REGISTER PAGE AND LOGIN PAGE */
 /* line 72, ../scss/_base.scss */
-#form-validate .fieldset {
-  font-size: 0.75em;
-}
-
-/* line 76, ../scss/_base.scss */
 .account-create, .account-login-page, .forgot-pass-wrapper {
   width: 40%;
   margin: 20px auto;
@@ -1501,136 +1573,135 @@ body {
   padding: 25px 100px;
 }
 
-/* line 83, ../scss/_base.scss */
+/* line 79, ../scss/_base.scss */
 .account-login-page .content, .forgot-pass-wrapper .fieldset {
   font-size: 0.75em;
 }
 
-/* line 87, ../scss/_base.scss */
+/* line 83, ../scss/_base.scss */
 .forgot-pass-wrapper .buttons-set {
   text-align: center;
 }
 
-/* line 91, ../scss/_base.scss */
+/* line 87, ../scss/_base.scss */
 .account-create input:focus, .account-login-page input:focus, .forgot-pass-wrapper input:focus {
   border: 2px solid #b5b5b5;
   padding: 3px;
 }
 
-/* line 96, ../scss/_base.scss */
+/* line 92, ../scss/_base.scss */
 .account-create .page-title h1, .account-login-page .page-title h1, .cart .page-title h1, .forgot-pass-wrapper .page-title h1, .search-results .page-title h1 {
   text-transform: uppercase;
   font-size: 1.5em;
   font-weight: 200;
 }
 
-/* line 102, ../scss/_base.scss */
+/* line 98, ../scss/_base.scss */
 .account-login-page input {
   font-size: 1.75em;
   border: 2px solid #B5B5B5;
   padding: 4px;
 }
 
-/* line 108, ../scss/_base.scss */
+/* line 104, ../scss/_base.scss */
 .account-login-page input:focus {
   border: 2px solid #E9E8E8;
   padding: 4px;
 }
 
-/* line 113, ../scss/_base.scss */
+/* line 109, ../scss/_base.scss */
 div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li {
   margin: 25px 0px;
 }
 
-/* line 117, ../scss/_base.scss */
+/* line 113, ../scss/_base.scss */
 ul.form-list:nth-child(3) > li:nth-child(1) {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 122, ../scss/_base.scss */
+/* line 118, ../scss/_base.scss */
 .customer-name, div.fieldset:nth-child(2) {
   text-transform: none;
 }
 
-/* line 126, ../scss/_base.scss */
+/* line 122, ../scss/_base.scss */
 .fieldset input {
   margin: 3px 0px 10px 0px;
-  font-size: 1.75em;
   width: 88%;
 }
 
-/* line 132, ../scss/_base.scss */
+/* line 127, ../scss/_base.scss */
 #form-validate input {
   border: 2px solid #b5b5b5;
   padding: 5px;
 }
 
-/* line 137, ../scss/_base.scss */
+/* line 132, ../scss/_base.scss */
 .forgot-pass {
   text-align: center;
 }
 
-/* line 141, ../scss/_base.scss */
+/* line 136, ../scss/_base.scss */
 .account-login-page a.f-left {
   text-align: center;
 }
 
-/* line 145, ../scss/_base.scss */
+/* line 140, ../scss/_base.scss */
 .account-login-page a.f-left:hover {
   font-weight: bold;
 }
 
-/* line 151, ../scss/_base.scss */
+/* line 144, ../scss/_base.scss */
 #form-validate input:focus {
   border: 2px solid #e9e8e8;
 }
 
-/* line 156, ../scss/_base.scss */
+/* line 149, ../scss/_base.scss */
 #email_address {
   margin: 10px 0px 10px 0px;
 }
 
-/* line 160, ../scss/_base.scss */
+/* line 153, ../scss/_base.scss */
 ul.form-list:nth-child(3) > li:nth-child(2) > label:nth-child(1) {
   text-transform: none;
 }
 
-/* line 164, ../scss/_base.scss */
+/* line 157, ../scss/_base.scss */
 .field .required {
   text-transform: none;
 }
 
-/* line 168, ../scss/_base.scss */
+/* line 161, ../scss/_base.scss */
 p .control {
   list-style: none;
 }
 
-/* line 172, ../scss/_base.scss */
+/* line 165, ../scss/_base.scss */
 input#is_subscribed {
   width: auto;
   dispay: inline-block;
 }
 
-/* line 177, ../scss/_base.scss */
+/* line 170, ../scss/_base.scss */
 div.input-box:nth-child(3) {
   text-align: left;
   width: auto;
   display: inline-block;
 }
 
-/* line 183, ../scss/_base.scss */
+/* line 176, ../scss/_base.scss */
 div.buttons-set:nth-child(5) {
   text-align: right;
   margin: 0px 8% 0px 0px;
 }
 
-/* line 188, ../scss/_base.scss */
+/* line 181, ../scss/_base.scss */
 .buttons-set button[title="Submit"] {
   background-color: #ad0202;
 }
 
-/* line 192, ../scss/_base.scss */
+/* line 185, ../scss/_base.scss */
 .buttons-set button[title="Submit"] span {
   color: white;
   text-transform: uppercase;
@@ -1639,14 +1710,14 @@ div.buttons-set:nth-child(5) {
 /* REGISTER PAGE END */
 /* MY CART PAGE END */
 /* SEARCH RESULTS PAGE */
-/* line 209, ../scss/_base.scss */
+/* line 202, ../scss/_base.scss */
 .catalogsearch-result-index .col-right-sidebar {
   float: left;
   display: inline-block;
   width: 25%;
 }
 
-/* line 215, ../scss/_base.scss */
+/* line 208, ../scss/_base.scss */
 .catalogsearch-results-index .col-wrapper {
   float: right;
   display: inline-block;
@@ -1654,32 +1725,32 @@ div.buttons-set:nth-child(5) {
 }
 
 /* CHECKOUT */
-/* line 224, ../scss/_base.scss */
+/* line 217, ../scss/_base.scss */
 #checkoutSteps {
   border: 1px solid #b4b4b4;
   width: 75%;
   margin: 10px auto;
 }
 
-/* line 230, ../scss/_base.scss */
+/* line 223, ../scss/_base.scss */
 #billing\:country_id {
   display: block;
   width: 100%;
 }
 
-/* line 235, ../scss/_base.scss */
+/* line 228, ../scss/_base.scss */
 #checkoutSteps fieldset {
   border: 0;
   padding: 0px 20px;
 }
 
-/* line 240, ../scss/_base.scss */
+/* line 233, ../scss/_base.scss */
 #checkoutSteps fieldset fieldset, #checkoutSteps #co-shipping-form {
   width: 95%;
   margin: 20px auto;
 }
 
-/* line 244, ../scss/_base.scss */
+/* line 237, ../scss/_base.scss */
 #checkoutSteps .step-title h2, #checkoutSteps .step-title .product-details-container .grid2 h1, .product-details-container .grid2 #checkoutSteps .step-title h1 {
   background-color: black;
   color: white;
@@ -1690,32 +1761,32 @@ div.buttons-set:nth-child(5) {
   font-weight: 300;
 }
 
-/* line 254, ../scss/_base.scss */
+/* line 247, ../scss/_base.scss */
 #checkoutSteps li:not(:last-child) .step-title h2, #checkoutSteps li:not(:last-child) .step-title .product-details-container .grid2 h1, .product-details-container .grid2 #checkoutSteps li:not(:last-child) .step-title h1 {
   border-bottom: 1px solid white;
 }
 
-/* line 258, ../scss/_base.scss */
+/* line 251, ../scss/_base.scss */
 .checkout-wrapper .please-wait {
   display: none;
 }
 
-/* line 262, ../scss/_base.scss */
+/* line 255, ../scss/_base.scss */
 #checkoutSteps .form-list li {
   padding: 3px 0px;
 }
 
-/* line 266, ../scss/_base.scss */
+/* line 259, ../scss/_base.scss */
 #checkoutSteps fieldset .input-box div {
   font-size: 1.25em;
 }
 
-/* line 270, ../scss/_base.scss */
+/* line 263, ../scss/_base.scss */
 #checkoutSteps #billing-address-select, #checkoutSteps #shipping-address-select {
   width: 80%;
 }
 
-/* line 274, ../scss/_base.scss */
+/* line 267, ../scss/_base.scss */
 .red-continue-button {
   margin: 0px auto;
   border: 0;
@@ -1723,7 +1794,7 @@ div.buttons-set:nth-child(5) {
   text-align: center;
 }
 
-/* line 280, ../scss/_base.scss */
+/* line 273, ../scss/_base.scss */
 .red-continue-button span span {
   color: white;
   text-align: center;
@@ -1732,7 +1803,7 @@ div.buttons-set:nth-child(5) {
 
 /* CHECKOUT END */
 /* REGISTRATION INPUT VALIDATION FAILED */
-/* line 292, ../scss/_base.scss */
+/* line 285, ../scss/_base.scss */
 #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
 #advice-required-entry-email_address, #advice-required-entry-password,
 #advice-required-entry-confirmation, #advice-validate-password-password,
@@ -1740,17 +1811,17 @@ div.buttons-set:nth-child(5) {
 #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password,
 .my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
 #advice-required-entry-telephone {
-  width: 6%;
+  width: auto;
   margin: 0px;
   display: inline-block;
-  padding-left: 3px;
+  padding-left: 1px;
   height: 20px;
   font-size: 3em;
   color: #a51313;
   font-weight: 600;
 }
 
-/* line 309, ../scss/_base.scss */
+/* line 302, ../scss/_base.scss */
 #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
 #advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
 #advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
@@ -1767,7 +1838,7 @@ div.buttons-set:nth-child(5) {
   font-weight: 600;
 }
 
-/* line 325, ../scss/_base.scss */
+/* line 318, ../scss/_base.scss */
 input.validation-failed select.validation-failed, .validation-failed {
   border: 2px solid #a51313 !important;
 }
@@ -1775,47 +1846,47 @@ input.validation-failed select.validation-failed, .validation-failed {
 /* VALIDATION FAILED END */
 /* RESPONSIVE DESIGN IPAD */
 @media (max-width: 900px) {
-  /* line 335, ../scss/_base.scss */
+  /* line 328, ../scss/_base.scss */
   li.level0 a:hover {
     cursor: pointer;
   }
 
-  /* line 339, ../scss/_base.scss */
+  /* line 332, ../scss/_base.scss */
   .mobileOnly {
     display: block;
   }
 
-  /* line 343, ../scss/_base.scss */
+  /* line 336, ../scss/_base.scss */
   .main-container {
     margin: 0px 1%;
   }
 
-  /* line 347, ../scss/_base.scss */
+  /* line 340, ../scss/_base.scss */
   .main-container {
     margin-top: 20px;
   }
 
   /* FORGOT PASSWORD */
-  /* line 352, ../scss/_base.scss */
+  /* line 345, ../scss/_base.scss */
   .account-create, .account-login-page, .forgot-pass-wrapper {
     width: 70%;
     padding: 25px 50px;
   }
 
-  /* line 358, ../scss/_base.scss */
+  /* line 351, ../scss/_base.scss */
   .account-login-page {
     width: 80%;
     padding: 25px;
   }
 
-  /* line 363, ../scss/_base.scss */
+  /* line 356, ../scss/_base.scss */
   .account-login-page .gray-button, .account-login-page .red-button {
     width: 100%;
     margin: 0px;
   }
 
   /* PAGE NOT FOUND */
-  /* line 370, ../scss/_base.scss */
+  /* line 363, ../scss/_base.scss */
   .page-not-found-wrapper .products-grid .item {
     width: 100%;
     display: block;
@@ -1825,22 +1896,22 @@ input.validation-failed select.validation-failed, .validation-failed {
 /* RESPONSIVE DESIGN IPAD END */
 /* RESPONSIVE DESIGN MOBILE */
 @media (max-width: 625px) {
-  /* line 383, ../scss/_base.scss */
+  /* line 376, ../scss/_base.scss */
   .main-container {
     margin: 0px 2%;
   }
 
-  /* line 387, ../scss/_base.scss */
+  /* line 380, ../scss/_base.scss */
   .block-subscribe {
     padding: 10px 0px;
   }
 
-  /* line 391, ../scss/_base.scss */
+  /* line 384, ../scss/_base.scss */
   #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
   }
 
-  /* line 395, ../scss/_base.scss */
+  /* line 388, ../scss/_base.scss */
   .subscribe-button {
     border: 1px solid black;
     margin: 0px;
@@ -1850,46 +1921,38 @@ input.validation-failed select.validation-failed, .validation-failed {
     height: 30px;
   }
 
-  /* line 405, ../scss/_base.scss */
+  /* line 398, ../scss/_base.scss */
   #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
 
-  /* line 410, ../scss/_base.scss */
-  .back-link-button a {
-    font-size: 1em;
-    margin: 0px;
-    padding: 5px 0px;
-    width: 100%;
-  }
-
-  /* line 417, ../scss/_base.scss */
+  /* line 403, ../scss/_base.scss */
   .smartphoneOnly {
     display: block;
   }
 
-  /* line 421, ../scss/_base.scss */
+  /* line 407, ../scss/_base.scss */
   .inlineSmartphoneOnly {
     display: inline-block;
   }
 
-  /* line 425, ../scss/_base.scss */
+  /* line 411, ../scss/_base.scss */
   .desktopOnly {
     display: none;
   }
 
-  /* line 429, ../scss/_base.scss */
+  /* line 415, ../scss/_base.scss */
   .desktopTabletOnly {
     display: none;
   }
 
-  /* line 433, ../scss/_base.scss */
+  /* line 419, ../scss/_base.scss */
   .forgot-pass-wrapper .page-title h1 {
     text-align: center;
   }
 
-  /* line 437, ../scss/_base.scss */
+  /* line 423, ../scss/_base.scss */
   .forgot-pass-wrapper {
     width: 90%;
     padding: 20px;
@@ -1897,7 +1960,7 @@ input.validation-failed select.validation-failed, .validation-failed {
 
   /* MY ACCOUNT */
   /* ADD NEW ADDRESS */
-  /* line 446, ../scss/_base.scss */
+  /* line 432, ../scss/_base.scss */
   #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
   #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
   #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
@@ -1914,7 +1977,7 @@ input.validation-failed select.validation-failed, .validation-failed {
   }
 
   /* CHECKOUT */
-  /* line 462, ../scss/_base.scss */
+  /* line 448, ../scss/_base.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -1922,29 +1985,29 @@ input.validation-failed select.validation-failed, .validation-failed {
     margin: 5px 2px;
   }
 
-  /* line 469, ../scss/_base.scss */
+  /* line 455, ../scss/_base.scss */
   #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
 
-  /* line 473, ../scss/_base.scss */
+  /* line 459, ../scss/_base.scss */
   #checkoutSteps {
     width: 100%;
   }
 
-  /* line 476, ../scss/_base.scss */
+  /* line 462, ../scss/_base.scss */
   #billing\:country_id {
     display: block;
     width: 100%;
   }
 
-  /* line 481, ../scss/_base.scss */
+  /* line 467, ../scss/_base.scss */
   #checkoutSteps fieldset, #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
 
-  /* line 487, ../scss/_base.scss */
+  /* line 473, ../scss/_base.scss */
   .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
     display: block;
     width: 100%;
@@ -2796,28 +2859,6 @@ label.required {
 }
 
 /* line 135, ../scss/pages/shared/_mini-menus.scss */
-.back-link-button a {
-  background-color: #474444;
-  color: white;
-  font-weight: bold;
-  font-size: 0.72em;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
-  min-width: 100px;
-  text-transform: uppercase;
-  text-align: center;
-}
-/* line 147, ../scss/pages/shared/_mini-menus.scss */
-.back-link-button a:hover {
-  background-color: black;
-}
-/* line 151, ../scss/pages/shared/_mini-menus.scss */
-.back-link-button a:active {
-  background-color: #9b9a9a;
-}
-
-/* line 157, ../scss/pages/shared/_mini-menus.scss */
 a.f-left {
   margin: 5px 0px;
   display: block;
@@ -2825,17 +2866,17 @@ a.f-left {
   color: black;
 }
 
-/* line 164, ../scss/pages/shared/_mini-menus.scss */
+/* line 142, ../scss/pages/shared/_mini-menus.scss */
 .registered-users hr {
   margin: 12px 0px;
 }
 
-/* line 168, ../scss/pages/shared/_mini-menus.scss */
+/* line 146, ../scss/pages/shared/_mini-menus.scss */
 #button_register {
   background-color: #ad0202;
   font-weight: bold;
 }
-/* line 172, ../scss/pages/shared/_mini-menus.scss */
+/* line 150, ../scss/pages/shared/_mini-menus.scss */
 #button_register span span {
   color: white;
   text-transform: uppercase;
@@ -2843,19 +2884,19 @@ a.f-left {
 
 /* LOGIN MINI MENU END */
 /* CART MINI MENU */
-/* line 182, ../scss/pages/shared/_mini-menus.scss */
+/* line 160, ../scss/pages/shared/_mini-menus.scss */
 #cart-sidebar {
   list-style: none;
   padding: 0px;
   margin: 10px auto;
 }
 
-/* line 188, ../scss/pages/shared/_mini-menus.scss */
+/* line 166, ../scss/pages/shared/_mini-menus.scss */
 .amount {
   font-size: 0.8em;
 }
 
-/* line 193, ../scss/pages/shared/_mini-menus.scss */
+/* line 171, ../scss/pages/shared/_mini-menus.scss */
 #mini_cart_checkout {
   color: white;
   background-color: #ad0202;
@@ -2871,7 +2912,7 @@ a.f-left {
   background-color: #df0303;
 }
 
-/* line 199, ../scss/pages/shared/_mini-menus.scss */
+/* line 177, ../scss/pages/shared/_mini-menus.scss */
 #mini_cart_edit {
   color: white;
   background-color: #474444;
@@ -2886,17 +2927,17 @@ a.f-left {
   background-color: #615d5d;
 }
 
-/* line 204, ../scss/pages/shared/_mini-menus.scss */
+/* line 182, ../scss/pages/shared/_mini-menus.scss */
 .product-image {
   vertical-align: middle;
   width: 30%;
 }
-/* line 208, ../scss/pages/shared/_mini-menus.scss */
+/* line 186, ../scss/pages/shared/_mini-menus.scss */
 .product-image img {
   margin: 0px auto;
 }
 
-/* line 213, ../scss/pages/shared/_mini-menus.scss */
+/* line 191, ../scss/pages/shared/_mini-menus.scss */
 .product-details, .block-related .block-content .product-image {
   display: inline-block;
   width: 50%;
@@ -2905,7 +2946,7 @@ a.f-left {
   font-size: 0.8em;
 }
 
-/* line 221, ../scss/pages/shared/_mini-menus.scss */
+/* line 199, ../scss/pages/shared/_mini-menus.scss */
 .btn-remove {
   text-decoration: none;
   text-align: center;
@@ -2919,11 +2960,11 @@ a.f-left {
   margin: 5px 0px auto 0px;
 }
 
-/* line 232, ../scss/pages/shared/_mini-menus.scss */
+/* line 210, ../scss/pages/shared/_mini-menus.scss */
 .product-name {
   margin: 7px 0px;
 }
-/* line 235, ../scss/pages/shared/_mini-menus.scss */
+/* line 213, ../scss/pages/shared/_mini-menus.scss */
 .product-name a {
   text-decoration: none;
   color: black;
@@ -2931,79 +2972,79 @@ a.f-left {
   text-transform: uppercase;
 }
 
-/* line 243, ../scss/pages/shared/_mini-menus.scss */
+/* line 221, ../scss/pages/shared/_mini-menus.scss */
 .content-cart hr {
   border: 0;
   border-top: 1px solid #b0b0b0;
   color: #b0b0b0;
 }
 
-/* line 248, ../scss/pages/shared/_mini-menus.scss */
+/* line 226, ../scss/pages/shared/_mini-menus.scss */
 .subtotal {
   font-weight: bold;
 }
 
 /* CART MINI MENU END */
 @media (max-width: 900px) {
-  /* line 257, ../scss/pages/shared/_mini-menus.scss */
+  /* line 235, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
   }
 
-  /* line 261, ../scss/pages/shared/_mini-menus.scss */
+  /* line 239, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     right: 2%;
   }
 }
 @media (max-width: 625px) {
-  /* line 267, ../scss/pages/shared/_mini-menus.scss */
+  /* line 245, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-account, #mini-menu-cart {
     top: 50px;
     right: 4%;
   }
-  /* line 270, ../scss/pages/shared/_mini-menus.scss */
+  /* line 248, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-account .content-account, #mini-menu-cart .content-account {
     padding: 0.5em 0em;
   }
-  /* line 275, ../scss/pages/shared/_mini-menus.scss */
+  /* line 253, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-account .input-box input, #mini-menu-cart .input-box input {
     width: 100%;
   }
-  /* line 279, ../scss/pages/shared/_mini-menus.scss */
+  /* line 257, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-account .registered-users, #mini-menu-cart .registered-users {
     padding: 0em 1em;
   }
 
-  /* line 284, ../scss/pages/shared/_mini-menus.scss */
+  /* line 262, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart {
     right: 0%;
     top: 50px;
     width: 300px;
   }
-  /* line 289, ../scss/pages/shared/_mini-menus.scss */
+  /* line 267, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart .product-image {
     width: 30%;
     display: inline-block;
   }
-  /* line 294, ../scss/pages/shared/_mini-menus.scss */
+  /* line 272, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart .grid2 {
     margin: 5px auto;
   }
-  /* line 298, ../scss/pages/shared/_mini-menus.scss */
+  /* line 276, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart .btn-remove {
     padding: 1% 2.25%;
   }
-  /* line 302, ../scss/pages/shared/_mini-menus.scss */
+  /* line 280, ../scss/pages/shared/_mini-menus.scss */
   #mini-menu-cart .buttons-container {
     margin: 0em 1em;
   }
 
-  /* line 308, ../scss/pages/shared/_mini-menus.scss */
+  /* line 286, ../scss/pages/shared/_mini-menus.scss */
   #mini_cart_checkout, #mini_cart_edit {
     width: 100%;
   }
 
-  /* line 312, ../scss/pages/shared/_mini-menus.scss */
+  /* line 290, ../scss/pages/shared/_mini-menus.scss */
   .content-cart {
     padding: 5px 0px;
   }
@@ -4398,39 +4439,74 @@ footer .footer .grid4 ul li a:visited {
     margin: 5px 0px;
   }
 }
-/* line 3, ../scss/pages/dashboard/_information.scss */
+/* line 4, ../scss/pages/dashboard/_information.scss */
+.my-account #form-validate {
+  width: 65%;
+}
+/* line 8, ../scss/pages/dashboard/_information.scss */
+.my-account p.required {
+  font-size: 0.75em;
+  margin: 10px auto;
+}
+
+/* line 14, ../scss/pages/dashboard/_information.scss */
 .my-account-edit {
   width: 90%;
   margin: 0px auto;
 }
-
-/* line 8, ../scss/pages/dashboard/_information.scss */
-li.control input {
+/* line 18, ../scss/pages/dashboard/_information.scss */
+.my-account-edit li.control {
+  margin: 10px auto;
+}
+/* line 21, ../scss/pages/dashboard/_information.scss */
+.my-account-edit li.control input {
   display: inline-block;
   width: 20px;
 }
-
-/* line 13, ../scss/pages/dashboard/_information.scss */
-li.control label {
+/* line 26, ../scss/pages/dashboard/_information.scss */
+.my-account-edit li.control label {
   display: inline-block;
 }
-
-/* line 17, ../scss/pages/dashboard/_information.scss */
-.no-display {
+/* line 31, ../scss/pages/dashboard/_information.scss */
+.my-account-edit .no-display {
   display: none;
 }
-
-/* line 21, ../scss/pages/dashboard/_information.scss */
-.my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
+/* line 35, ../scss/pages/dashboard/_information.scss */
+.my-account-edit .my-account-edit .customer-name .field, .my-account-edit #checkoutSteps .customer-name .field, .my-account-edit #checkoutSteps .fields .field {
   width: 40%;
   display: inline-block;
 }
-
-/* line 26, ../scss/pages/dashboard/_information.scss */
-.my-account-edit .customer-name .field div {
+/* line 40, ../scss/pages/dashboard/_information.scss */
+.my-account-edit .my-account-edit .customer-name .field div {
   display: inline-block;
 }
 
+@media (max-width: 900px) {
+  /* line 48, ../scss/pages/dashboard/_information.scss */
+  .my-account #form-validate {
+    width: 90%;
+  }
+  /* line 52, ../scss/pages/dashboard/_information.scss */
+  .my-account .back-link-button a {
+    margin: 0px;
+  }
+  /* line 56, ../scss/pages/dashboard/_information.scss */
+  .my-account .page-title h1 {
+    font-size: 1.75em;
+  }
+}
+@media (max-width: 625px) {
+  /* line 63, ../scss/pages/dashboard/_information.scss */
+  .back-link-button a {
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  /* line 68, ../scss/pages/dashboard/_information.scss */
+  .my-account #form-validate {
+    width: 100%;
+  }
+}
 /* line 3, ../scss/pages/dashboard/_account.scss */
 .block-account .block-title, .block-reorder .block-title {
   text-transform: uppercase;
@@ -4586,13 +4662,13 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   font-weight: 300;
 }
 
-/* line 151, ../scss/pages/dashboard/_account.scss */
+/* line 150, ../scss/pages/dashboard/_account.scss */
 .box-title h3 {
   display: inline-block;
   margin-right: 3px;
   margin-bottom: 0px;
 }
-/* line 156, ../scss/pages/dashboard/_account.scss */
+/* line 155, ../scss/pages/dashboard/_account.scss */
 .box-title a {
   display: inline-block;
   text-decoration: underline;
@@ -4603,142 +4679,138 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   text-transform: none;
   width: 50px;
 }
-/* line 166, ../scss/pages/dashboard/_account.scss */
+/* line 165, ../scss/pages/dashboard/_account.scss */
 .box-title a:hover {
   font-weight: bold;
 }
 
-/* line 173, ../scss/pages/dashboard/_account.scss */
+/* line 172, ../scss/pages/dashboard/_account.scss */
 .box-content h4 {
   font-weight: bold;
   line-height: 1.5em;
 }
-/* line 178, ../scss/pages/dashboard/_account.scss */
+/* line 177, ../scss/pages/dashboard/_account.scss */
 .box-content .col-1 {
   padding-left: 10px;
   line-height: 1.5em;
 }
-/* line 183, ../scss/pages/dashboard/_account.scss */
+/* line 182, ../scss/pages/dashboard/_account.scss */
 .box-content .col-2 {
   padding-left: 10px;
   line-height: 1.5em;
 }
 
 @media (max-width: 900px) {
-  /* line 192, ../scss/pages/dashboard/_account.scss */
+  /* line 191, ../scss/pages/dashboard/_account.scss */
   .my-account {
     margin-left: 2%;
   }
-  /* line 195, ../scss/pages/dashboard/_account.scss */
+  /* line 194, ../scss/pages/dashboard/_account.scss */
   .my-account #my-orders-table {
     font-size: 0.8em;
   }
-  /* line 199, ../scss/pages/dashboard/_account.scss */
-  .my-account #form-validate {
-    padding: 0px 10px;
-  }
-  /* line 203, ../scss/pages/dashboard/_account.scss */
+  /* line 198, ../scss/pages/dashboard/_account.scss */
   .my-account .addresses-primary ol li, .my-account .addresses-additional ol li {
     display: block;
     width: 100%;
   }
-  /* line 208, ../scss/pages/dashboard/_account.scss */
+  /* line 203, ../scss/pages/dashboard/_account.scss */
   .my-account .order-info-box, .my-account .order-info, .my-account .order-date {
     width: 45%;
   }
 
-  /* line 213, ../scss/pages/dashboard/_account.scss */
+  /* line 208, ../scss/pages/dashboard/_account.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding-left: 10px;
   }
 
-  /* line 217, ../scss/pages/dashboard/_account.scss */
+  /* line 212, ../scss/pages/dashboard/_account.scss */
   .box-info a {
     min-width: 80px;
     width: auto;
   }
-  /* line 221, ../scss/pages/dashboard/_account.scss */
+  /* line 216, ../scss/pages/dashboard/_account.scss */
   .box-info a .col2-set .col-1, .box-info a .col2-set .col-2 {
     display: inline-block;
     width: 45%;
     margin: 5px 0px;
   }
 
-  /* line 229, ../scss/pages/dashboard/_account.scss */
+  /* line 224, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content {
     text-align: center;
   }
-  /* line 231, ../scss/pages/dashboard/_account.scss */
+  /* line 226, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content ol {
     margin: 0px;
     padding: 0px;
   }
-  /* line 236, ../scss/pages/dashboard/_account.scss */
+  /* line 231, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content li {
     padding: 10px 0px;
     border-top: 1px solid #b4b4b4;
   }
-  /* line 240, ../scss/pages/dashboard/_account.scss */
+  /* line 235, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content input {
     display: block;
     margin: 0px auto;
   }
-  /* line 244, ../scss/pages/dashboard/_account.scss */
+  /* line 239, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content .block-subtitle {
     font-size: 1em;
     padding: 0px 0px 0px 10px;
   }
 }
 @media (max-width: 625px) {
-  /* line 254, ../scss/pages/dashboard/_account.scss */
+  /* line 249, ../scss/pages/dashboard/_account.scss */
   .my-account .fieldset {
     width: 75%;
     margin: 10px auto;
   }
-  /* line 259, ../scss/pages/dashboard/_account.scss */
+  /* line 254, ../scss/pages/dashboard/_account.scss */
   .my-account .buttons-set {
     text-align: center;
   }
-  /* line 264, ../scss/pages/dashboard/_account.scss */
+  /* line 259, ../scss/pages/dashboard/_account.scss */
   .my-account .pager .amount {
     width: 25%;
     display: inline-block;
   }
-  /* line 268, ../scss/pages/dashboard/_account.scss */
+  /* line 263, ../scss/pages/dashboard/_account.scss */
   .my-account .pager .limiter {
     width: 70%;
   }
 
-  /* line 274, ../scss/pages/dashboard/_account.scss */
+  /* line 269, ../scss/pages/dashboard/_account.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding: 0px;
     margin: 20px auto;
   }
 
-  /* line 279, ../scss/pages/dashboard/_account.scss */
+  /* line 274, ../scss/pages/dashboard/_account.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: block;
     width: 95%;
     margin: 20px auto;
   }
 
-  /* line 286, ../scss/pages/dashboard/_account.scss */
+  /* line 281, ../scss/pages/dashboard/_account.scss */
   .block-reorder .actions .btn-cart {
     padding: 5px 0px;
     font-size: 1em;
   }
-  /* line 290, ../scss/pages/dashboard/_account.scss */
+  /* line 285, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content ol li a {
     font-size: 1em;
   }
 
-  /* line 295, ../scss/pages/dashboard/_account.scss */
+  /* line 290, ../scss/pages/dashboard/_account.scss */
   .my-account .box-head a, .block-reorder .view-all-link a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 300, ../scss/pages/dashboard/_account.scss */
+  /* line 295, ../scss/pages/dashboard/_account.scss */
   div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     width: 100%;
     padding: 5px 0px;
@@ -4746,26 +4818,56 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     text-align: center;
   }
 
-  /* line 307, ../scss/pages/dashboard/_account.scss */
+  /* line 302, ../scss/pages/dashboard/_account.scss */
   .box-info a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 312, ../scss/pages/dashboard/_account.scss */
+  /* line 307, ../scss/pages/dashboard/_account.scss */
   .my-account-edit {
     width: 100%;
   }
 }
 /* ADDRESSES */
-/* line 4, ../scss/pages/dashboard/_address-book.scss */
+/* line 5, ../scss/pages/dashboard/_address-book.scss */
+.my-account .addresses-primary, .my-account .addresses-additional {
+  line-height: 1.5em;
+}
+/* line 8, ../scss/pages/dashboard/_address-book.scss */
+.my-account .addresses-primary h2, .my-account .addresses-primary .product-details-container .grid2 h1, .product-details-container .grid2 .my-account .addresses-primary h1, .my-account .addresses-additional h2, .my-account .addresses-additional .product-details-container .grid2 h1, .product-details-container .grid2 .my-account .addresses-additional h1 {
+  margin: 5px 0px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* line 14, ../scss/pages/dashboard/_address-book.scss */
+.my-account .addresses-primary h3, .my-account .addresses-additional h3 {
+  font-weight: bold;
+  line-height: 1.5em;
+}
+/* line 19, ../scss/pages/dashboard/_address-book.scss */
+.my-account .addresses-primary .col-1 ol li address, .my-account .addresses-additional .col-1 ol li address {
+  padding-left: 10px;
+  line-height: 1.5em;
+}
+/* line 24, ../scss/pages/dashboard/_address-book.scss */
+.my-account .addresses-primary .col-2 ol li address, .my-account .addresses-additional .col-2 ol li address {
+  padding-left: 10px;
+  line-height: 1.5em;
+}
+/* line 29, ../scss/pages/dashboard/_address-book.scss */
+.my-account .addresses-primary p, .my-account .addresses-additional p {
+  margin: 10px auto;
+}
+
+/* line 33, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary ol, .my-account .addresses-additional ol {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-/* line 10, ../scss/pages/dashboard/_address-book.scss */
+/* line 39, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary ol li, .my-account .addresses-additional ol li {
   display: inline-block;
   width: 45%;
@@ -4774,13 +4876,13 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   padding-left: 10px;
 }
 
-/* line 17, ../scss/pages/dashboard/_address-book.scss */
+/* line 46, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-additional ol .empty {
   width: 100%;
   display: block;
 }
 
-/* line 22, ../scss/pages/dashboard/_address-book.scss */
+/* line 51, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary ol li a, .my-account .addresses-additional ol li a {
   text-decoration: none;
   color: white;
@@ -4788,7 +4890,7 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   padding: 5px 10px;
 }
 
-/* line 29, ../scss/pages/dashboard/_address-book.scss */
+/* line 58, ../scss/pages/dashboard/_address-book.scss */
 .my-account .addresses-primary ol li a:hover, .my-account .addresses-additional ol li a:hover {
   background-color: black;
   cursor: pointer;
@@ -4796,12 +4898,28 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
 
 /* ADDRESSES END */
 /* EDIT ADDRESS */
-/* line 39, ../scss/pages/dashboard/_address-book.scss */
+/* line 68, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate {
-  padding: 0px 30px;
+  margin: 20px auto;
+  border: 1px solid #b4b4b4;
+  padding: 20px;
+}
+/* line 73, ../scss/pages/dashboard/_address-book.scss */
+.my-account #form-validate .validation-advice {
+  font-size: 1.25em;
+}
+/* line 77, ../scss/pages/dashboard/_address-book.scss */
+.my-account #form-validate h2.legend, .my-account #form-validate .product-details-container .grid2 h1.legend, .product-details-container .grid2 .my-account #form-validate h1.legend {
+  text-align: center;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+/* line 83, ../scss/pages/dashboard/_address-book.scss */
+.my-account #form-validate .fieldset {
+  margin: 10px auto;
 }
 
-/* line 43, ../scss/pages/dashboard/_address-book.scss */
+/* line 88, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate .customer-name > div, .my-account ul.form-list:nth-child(5) > li:nth-child(3) > div,
 .my-account ul.form-list:nth-child(2) > li:nth-child(3) > div, ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(1),
 ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2), li.fields:nth-child(4) > div:nth-child(1), li.fields:nth-child(4) > div:nth-child(2) {
@@ -4813,61 +4931,58 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2), li.fields:nth-ch
   text-transform: none;
 }
 
-/* line 54, ../scss/pages/dashboard/_address-book.scss */
+/* line 99, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate .customer-name > div input, ul.form-list:nth-child(5) > li:nth-child(3) > div input,
 ul.form-list:nth-child(2) > li:nth-child(3) > div input, ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(1) input,
 ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
-  width: 82%;
+  width: 85%;
 }
 
-/* line 60, ../scss/pages/dashboard/_address-book.scss */
+/* line 105, ../scss/pages/dashboard/_address-book.scss */
 .my-account #form-validate .customer-name div:first {
   margin-right: 30px;
 }
 
-/* line 64, ../scss/pages/dashboard/_address-book.scss */
-.my-account #form-validate input {
-  font-size: 1.25em;
-}
-
-/* line 68, ../scss/pages/dashboard/_address-book.scss */
-.my-account .input-box > div {
-  font-size: 1.75em !important;
-}
-
-/* line 72, ../scss/pages/dashboard/_address-book.scss */
+/* line 109, ../scss/pages/dashboard/_address-book.scss */
 .my-account .company label {
   color: black;
   text-transform: none;
 }
 
-/* line 77, ../scss/pages/dashboard/_address-book.scss */
+/* line 114, ../scss/pages/dashboard/_address-book.scss */
 .wide-divider {
   border-top: 1px solid #e5e5e5;
   margin: 0px;
   width: 90%;
 }
 
-/* line 83, ../scss/pages/dashboard/_address-book.scss */
+/* line 120, ../scss/pages/dashboard/_address-book.scss */
 .my-account .fieldset h2, .my-account .fieldset .product-details-container .grid2 h1, .product-details-container .grid2 .my-account .fieldset h1 {
   margin: 5px 0px;
 }
 
 /* ADD ADDRESS END */
+@media (max-width: 900px) {
+  /* line 131, ../scss/pages/dashboard/_address-book.scss */
+  .my-account .addresses-list ol li {
+    width: 100%;
+    display: block;
+    margin: 20px 0px;
+  }
+}
 @media (max-width: 625px) {
-  /* line 96, ../scss/pages/dashboard/_address-book.scss */
+  /* line 141, ../scss/pages/dashboard/_address-book.scss */
   li.fields:nth-child(4) > div:nth-child(2) {
     width: 100%;
     display: block;
   }
 
-  /* line 101, ../scss/pages/dashboard/_address-book.scss */
+  /* line 146, ../scss/pages/dashboard/_address-book.scss */
   .my-account #form-validate {
     padding: 0px;
-    margin: 0px;
   }
 
-  /* line 106, ../scss/pages/dashboard/_address-book.scss */
+  /* line 150, ../scss/pages/dashboard/_address-book.scss */
   #newsletter-validate-detail .block-content .button {
     min-width: 25%;
   }
