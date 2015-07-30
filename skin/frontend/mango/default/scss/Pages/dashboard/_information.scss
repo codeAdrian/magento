@@ -1,0 +1,37 @@
+// ----- ACCOUNT INFORMATION - DESKTOP ----- 
+
+.my-account-edit{
+	width:90%;
+	margin:0px auto;
+}
+
+li.control input{
+	display: inline-block;
+	width:20px;
+}
+
+li.control label{
+	display: inline-block;
+}
+
+.no-display{
+	display: none;
+}
+
+.my-account-edit .customer-name .field, #checkoutSteps .customer-name .field,  #checkoutSteps .fields .field{
+	width:40%;
+	display: inline-block;
+}
+
+.my-account-edit .customer-name .field div{
+	display: inline-block;
+}
+
+
+// ----- ACCOUNT INFORMATION - TABLET -----
+@include breakpoint($tablet-breakpoint){
+
+}
+// ----- ACCOUNT INFORMATION - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+}

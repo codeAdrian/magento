@@ -77,6 +77,8 @@
 @include breakpoint($tablet-breakpoint){
 	.col2-left-layout .col-left{
 		padding-top:10px;
+		margin-left:0px;
+		width:28%;
 
 		#narrow-by-list dt{
 			text-align: center;

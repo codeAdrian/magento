@@ -1,0 +1,242 @@
+// ----- MISC - DESKTOP ----- 
+
+// MY ORDERS PAGE
+.my-account .pager .amount, .my-account .pager .limiter{
+	display: inline-block;
+	width:49%;
+	text-align: left;
+}
+
+	.my-account .buttons-wrapper{
+		text-align: center;
+	}
+
+.my-account .pager .limiter{
+	text-align: right;
+}
+
+.my-account #my-orders-table{
+	width:100%;
+	text-align: center;
+}
+
+.my-account #my-orders-table thead tr{
+	border-bottom:1px solid black;
+}
+
+.my-account #my-orders-table thead tr th{
+	width:15%;
+}
+
+.my-account #my-orders-table thead tr th:last-child{
+	width:20%;
+}
+
+.my-account #my-orders-table tbody tr td{
+	padding:10px 0px;
+	text-align:left;
+}
+
+.my-account #my-orders-table tbody tr td a{
+	color:black;
+	text-transform: uppercase;
+	font-size: 0.75em;
+}
+
+// MY ORDERS PAGE END
+
+
+// VIEW ORDER
+
+.my-account .order-info-box, .my-account .order-info, .my-account .order-date{
+	width:46%;
+	display: inline-block;
+	margin-left:10px;
+}
+
+.my-account .order-details #my-orders-table h3{
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.my-account .order-details #my-orders-table .item-options dt, .my-account .order-details #my-orders-table .item-options dd{
+	display: block;
+	float:left;
+	margin-left:15px;
+}
+
+.my-account .order-details #my-orders-table tfoot{
+	border-top:1px solid black;
+	text-align: right;
+}
+
+.my-account .order-details #my-orders-table .item-options dt{
+	font-weight: bold;
+	clear:both;
+}
+
+.my-account .order-details #my-orders-table .item-options dd{
+	margin-left:5px;
+	margin-right:auto;
+}
+
+// VIEW ORDER END
+
+// ----- MISC - TABLET -----
+@include breakpoint($tablet-breakpoint){
+
+	// VIEW ORDER
+	.sales-order-view #my-orders-table colgroup col:not(:first-child){
+		display: none;
+
+	}
+		.sales-order-view #my-orders-table colgroup {
+			width:100%;
+		}
+
+	.sales-order-view table#my-orders-table tbody tr td{
+		width:100%;
+	}
+
+
+
+		.sales-order-view table#my-orders-table thead { 
+	  	display: none; 
+	  }
+	  .sales-order-view table#my-orders-table tbody td { 
+	    display: block; 
+	    padding-top:10px; 
+	  }
+	  .sales-order-view table#my-orders-table tbody tr td:first-child { 
+	    background-color: black; 
+	    color: white; 
+	    padding:10px 0px;
+	    margin:0px;
+	  }
+
+	      .sales-order-view table#my-orders-table tbody tr{
+	      	border:1px solid #b4b4b4;
+	      	margin-top:10px;
+	      	display: block;
+	      	width:100%;
+	      }
+
+	    .sales-order-view table#my-orders-table .item-options {
+	    	margin:0px;
+	    	padding:0px;
+	    	width:100%;
+	    	background-color: black;
+	    	color:white;
+	    	margin:0px 0px 70px 0px;
+	    }
+
+	    table#my-orders-table tbody td:not(:last-child):before{
+	    	width:30%;
+	    	padding-right:2em;
+	    }
+
+	    .sales-order-view table#my-orders-table .item-options dt, .sales-order-view table#my-orders-table .item-options dd{
+	    	width:45%;
+	    	margin:0px;
+	    	padding:0px;
+	    	display: inline-block;
+	    	color:black;
+	    }
+
+	.sales-order-view table#my-orders-table tbody tr td:last-child{
+	    	text-align: center;
+	    	background-color: #b4b4b4;
+	    }
+	.sales-order-view table#my-orders-table tbody tr td:first-child{
+		background-color: black;
+		color:white;
+		margin:0px;
+		padding:0px;
+			}
+	.sales-order-view table#my-orders-table .product-name{
+		margin:0;
+		padding:0;
+	}
+
+	table#shopping-cart-table tbody td:nth-child(2):before{
+		display: block;
+		width:100%;
+		text-align: center;
+	}
+	#shopping-cart-table tbody tr td{
+		border:0;
+	}
+
+
+// RESPONSIVE MYPAGE TABLE
+
+	table#my-orders-table colgroup col:not(:first-child){
+	display: none;
+	}
+
+  table#my-orders-table thead { 
+  	display: none; 
+  }
+  table#my-orders-table tbody td { 
+    display: block; 
+    padding-top:10px; 
+  }
+  table#my-orders-table tbody tr td:first-child { 
+    background-color: black; 
+    color: white; 
+    padding:10px 0px;
+  }
+
+      table#my-orders-table tbody tr{
+      	border:1px solid #b4b4b4;
+      	margin-top:10px;
+      	display: block;
+      	width:100%;
+      }
+
+    table#my-orders-table tbody tr td:last-child{
+    	text-align: center;
+    }
+	table#my-orders-table tbody td:not(:last-child):before { 
+    content: attr(data-th); 
+    font-weight: bold;
+    display: inline-block;
+    width: 45%;
+    float:left;
+    text-align: right;  
+  }
+
+.product-name a{
+	font-size: 0.8em;
+}
+.my-account #my-orders-table{
+	text-align: center;
+	font-size: 1em;
+}
+
+.cart-fieldset .btn-remove {
+    padding: 2px 6px;
+}
+
+#shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1){
+	text-align: center;
+	padding:0px;
+}
+
+#shopping-cart-table colgroup col:not(:first-child){
+	display: none;
+}
+
+.cart-fieldset{
+	margin:0px;
+	padding:0px;
+}
+.cart .page-title{
+	text-align: center;
+}
+
+#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button{
+	width:30%;
+}
+
+}
