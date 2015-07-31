@@ -33,15 +33,23 @@
 		margin:5px 0px;
 		font-weight: bold;
 	}
+
+	#cart-sidebar-reorder p{
+		display: inline-block;
+		padding:0px;
+		margin:0px;
+		font-size:0.75em;
+	}
+	
 }
 
 .my-account .box-recent .view-all-link, .block-reorder .view-all-link{
 	display: block;
-}
 
-.my-account .box-head .view-all-link a:hover, .block-reorder .view-all-link a:hover{
-	background-color: black;
-	cursor: pointer;
+	&:hover{
+		background-color: black;
+		cursor: pointer;		
+	}
 }
 
 .my-account .box-head a, .block-reorder .view-all-link a{
@@ -81,13 +89,6 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a{
 		cursor: pointer;
 		background-color: #790000;		
 	}
-}
-
-.block-reorder .block-content #cart-sidebar-reorder p{
-	display: inline-block;
-	padding:0px;
-	margin:0px;
-	font-size:0.75em;
 }
 
 .my-account{

@@ -4623,19 +4623,25 @@ footer .footer .grid4 ul li a:visited {
   margin: 5px 0px;
   font-weight: bold;
 }
+/* line 37, ../scss/pages/dashboard/_account.scss */
+.block-reorder .block-content #cart-sidebar-reorder p {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.75em;
+}
 
-/* line 38, ../scss/pages/dashboard/_account.scss */
+/* line 46, ../scss/pages/dashboard/_account.scss */
 .my-account .box-recent .view-all-link, .block-reorder .view-all-link {
   display: block;
 }
-
-/* line 42, ../scss/pages/dashboard/_account.scss */
-.my-account .box-head .view-all-link a:hover, .block-reorder .view-all-link a:hover {
+/* line 49, ../scss/pages/dashboard/_account.scss */
+.my-account .box-recent .view-all-link:hover, .block-reorder .view-all-link:hover {
   background-color: black;
   cursor: pointer;
 }
 
-/* line 47, ../scss/pages/dashboard/_account.scss */
+/* line 55, ../scss/pages/dashboard/_account.scss */
 .my-account .box-head a, .block-reorder .view-all-link a {
   text-decoration: none;
   display: block;
@@ -4650,7 +4656,7 @@ footer .footer .grid4 ul li a:visited {
   font-weight: bold;
 }
 
-/* line 61, ../scss/pages/dashboard/_account.scss */
+/* line 69, ../scss/pages/dashboard/_account.scss */
 div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   float: right;
   min-width: 150px;
@@ -4660,7 +4666,7 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   width: 15%;
 }
 
-/* line 70, ../scss/pages/dashboard/_account.scss */
+/* line 78, ../scss/pages/dashboard/_account.scss */
 .block-reorder .actions .btn-cart {
   background-color: #ad0202;
   border: 0;
@@ -4671,50 +4677,42 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   text-transform: uppercase;
   padding: 5px 0px;
 }
-/* line 80, ../scss/pages/dashboard/_account.scss */
+/* line 88, ../scss/pages/dashboard/_account.scss */
 .block-reorder .actions .btn-cart:hover {
   cursor: pointer;
   background-color: #790000;
 }
 
-/* line 86, ../scss/pages/dashboard/_account.scss */
-.block-reorder .block-content #cart-sidebar-reorder p {
-  display: inline-block;
-  padding: 0px;
-  margin: 0px;
-  font-size: 0.75em;
-}
-
-/* line 93, ../scss/pages/dashboard/_account.scss */
+/* line 94, ../scss/pages/dashboard/_account.scss */
 .my-account {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-/* line 97, ../scss/pages/dashboard/_account.scss */
+/* line 98, ../scss/pages/dashboard/_account.scss */
 .my-account .box-recent {
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 103, ../scss/pages/dashboard/_account.scss */
+/* line 104, ../scss/pages/dashboard/_account.scss */
 .my-account .buttons-wrapper a {
   color: black;
 }
 
-/* line 109, ../scss/pages/dashboard/_account.scss */
+/* line 110, ../scss/pages/dashboard/_account.scss */
 .dashboard .welcome-msg, .dashboard .box-info {
   padding: 10px 0px 10px 30px;
 }
-/* line 112, ../scss/pages/dashboard/_account.scss */
+/* line 113, ../scss/pages/dashboard/_account.scss */
 .dashboard .welcome-msg p, .dashboard .box-info p {
   line-height: 1.5em;
 }
-/* line 115, ../scss/pages/dashboard/_account.scss */
+/* line 116, ../scss/pages/dashboard/_account.scss */
 .dashboard .welcome-msg .hello, .dashboard .box-info .hello {
   line-height: 2em;
 }
 
-/* line 121, ../scss/pages/dashboard/_account.scss */
+/* line 122, ../scss/pages/dashboard/_account.scss */
 .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
   padding: 0px 5px 0px 10px;
   width: 45%;
@@ -4723,7 +4721,7 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   vertical-align: top;
   border-left: 2px solid #B4B4B4;
 }
-/* line 130, ../scss/pages/dashboard/_account.scss */
+/* line 131, ../scss/pages/dashboard/_account.scss */
 .box-info a {
   text-decoration: none;
   text-transform: uppercase;
@@ -4736,20 +4734,20 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   text-align: center;
   font-size: 0.75em;
 }
-/* line 142, ../scss/pages/dashboard/_account.scss */
+/* line 143, ../scss/pages/dashboard/_account.scss */
 .box-info .box-head h2, .box-info .box-head .product-details-container .grid2 h1, .product-details-container .grid2 .box-info .box-head h1 {
   margin: 5px 0px;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-/* line 150, ../scss/pages/dashboard/_account.scss */
+/* line 151, ../scss/pages/dashboard/_account.scss */
 .box-title h3 {
   display: inline-block;
   margin-right: 3px;
   margin-bottom: 0px;
 }
-/* line 155, ../scss/pages/dashboard/_account.scss */
+/* line 156, ../scss/pages/dashboard/_account.scss */
 .box-title a {
   display: inline-block;
   text-decoration: underline;
@@ -4760,139 +4758,139 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
   text-transform: none;
   width: 50px;
 }
-/* line 165, ../scss/pages/dashboard/_account.scss */
+/* line 166, ../scss/pages/dashboard/_account.scss */
 .box-title a:hover {
   font-weight: bold;
 }
 
-/* line 172, ../scss/pages/dashboard/_account.scss */
+/* line 173, ../scss/pages/dashboard/_account.scss */
 .box-content h4 {
   font-weight: bold;
   line-height: 1.5em;
 }
-/* line 177, ../scss/pages/dashboard/_account.scss */
+/* line 178, ../scss/pages/dashboard/_account.scss */
 .box-content .col-1 {
   padding-left: 10px;
   line-height: 1.5em;
 }
-/* line 182, ../scss/pages/dashboard/_account.scss */
+/* line 183, ../scss/pages/dashboard/_account.scss */
 .box-content .col-2 {
   padding-left: 10px;
   line-height: 1.5em;
 }
 
 @media (max-width: 900px) {
-  /* line 191, ../scss/pages/dashboard/_account.scss */
+  /* line 192, ../scss/pages/dashboard/_account.scss */
   .my-account {
     margin-left: 2%;
   }
-  /* line 194, ../scss/pages/dashboard/_account.scss */
+  /* line 195, ../scss/pages/dashboard/_account.scss */
   .my-account .addresses-primary ol li, .my-account .addresses-additional ol li {
     display: block;
     width: 100%;
   }
-  /* line 199, ../scss/pages/dashboard/_account.scss */
+  /* line 200, ../scss/pages/dashboard/_account.scss */
   .my-account .order-info-box, .my-account .order-info, .my-account .order-date {
     width: 45%;
   }
 
-  /* line 204, ../scss/pages/dashboard/_account.scss */
+  /* line 205, ../scss/pages/dashboard/_account.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding-left: 10px;
   }
 
-  /* line 208, ../scss/pages/dashboard/_account.scss */
+  /* line 209, ../scss/pages/dashboard/_account.scss */
   .box-info a {
     min-width: 80px;
     width: auto;
   }
-  /* line 212, ../scss/pages/dashboard/_account.scss */
+  /* line 213, ../scss/pages/dashboard/_account.scss */
   .box-info a .col2-set .col-1, .box-info a .col2-set .col-2 {
     display: inline-block;
     width: 45%;
     margin: 5px 0px;
   }
 
-  /* line 220, ../scss/pages/dashboard/_account.scss */
+  /* line 221, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content {
     text-align: center;
   }
-  /* line 222, ../scss/pages/dashboard/_account.scss */
+  /* line 223, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content ol {
     margin: 0px;
     padding: 0px;
   }
-  /* line 227, ../scss/pages/dashboard/_account.scss */
+  /* line 228, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content li {
     padding: 10px 0px;
     border-top: 1px solid #b4b4b4;
   }
-  /* line 231, ../scss/pages/dashboard/_account.scss */
+  /* line 232, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content input {
     display: block;
     margin: 0px auto;
   }
-  /* line 235, ../scss/pages/dashboard/_account.scss */
+  /* line 236, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content .block-subtitle {
     font-size: 1em;
     padding: 0px 0px 0px 10px;
   }
 }
 @media (max-width: 625px) {
-  /* line 243, ../scss/pages/dashboard/_account.scss */
+  /* line 244, ../scss/pages/dashboard/_account.scss */
   .my-account {
     margin-left: 0%;
   }
-  /* line 245, ../scss/pages/dashboard/_account.scss */
+  /* line 246, ../scss/pages/dashboard/_account.scss */
   .my-account .fieldset {
     width: 75%;
     margin: 10px auto;
   }
-  /* line 250, ../scss/pages/dashboard/_account.scss */
+  /* line 251, ../scss/pages/dashboard/_account.scss */
   .my-account .buttons-set {
     text-align: center;
   }
-  /* line 255, ../scss/pages/dashboard/_account.scss */
+  /* line 256, ../scss/pages/dashboard/_account.scss */
   .my-account .pager .amount {
     width: 25%;
     display: inline-block;
   }
-  /* line 259, ../scss/pages/dashboard/_account.scss */
+  /* line 260, ../scss/pages/dashboard/_account.scss */
   .my-account .pager .limiter {
     width: 70%;
     display: inline-block;
   }
 
-  /* line 266, ../scss/pages/dashboard/_account.scss */
+  /* line 267, ../scss/pages/dashboard/_account.scss */
   .dashboard .welcome-msg, .dashboard .box-info, .my-account .box-recent {
     padding: 0px;
     margin: 20px auto;
   }
 
-  /* line 271, ../scss/pages/dashboard/_account.scss */
+  /* line 272, ../scss/pages/dashboard/_account.scss */
   .box-info .col2-set .col-1, .box-info .col2-set .col-2 {
     display: block;
     width: 95%;
     margin: 20px auto;
   }
 
-  /* line 278, ../scss/pages/dashboard/_account.scss */
+  /* line 279, ../scss/pages/dashboard/_account.scss */
   .block-reorder .actions .btn-cart {
     padding: 5px 0px;
     font-size: 1em;
   }
-  /* line 282, ../scss/pages/dashboard/_account.scss */
+  /* line 283, ../scss/pages/dashboard/_account.scss */
   .block-reorder .block-content ol li a {
     font-size: 1em;
   }
 
-  /* line 287, ../scss/pages/dashboard/_account.scss */
+  /* line 288, ../scss/pages/dashboard/_account.scss */
   .my-account .box-head a, .block-reorder .view-all-link a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 292, ../scss/pages/dashboard/_account.scss */
+  /* line 293, ../scss/pages/dashboard/_account.scss */
   div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     width: 100%;
     padding: 5px 0px;
@@ -4900,13 +4898,13 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a {
     text-align: center;
   }
 
-  /* line 299, ../scss/pages/dashboard/_account.scss */
+  /* line 300, ../scss/pages/dashboard/_account.scss */
   .box-info a {
     padding: 5px 0px;
     font-size: 1em;
   }
 
-  /* line 304, ../scss/pages/dashboard/_account.scss */
+  /* line 305, ../scss/pages/dashboard/_account.scss */
   .my-account-edit {
     width: 100%;
   }
