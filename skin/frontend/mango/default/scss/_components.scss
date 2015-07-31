@@ -17,7 +17,7 @@ button{
 	
 }
 
-#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, .checkout-wrapper .buttons-set button, #send2{
+#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, #send2{
 	margin:10px 0px;
 	@include m-mango-buttons(#474444);
 }
@@ -28,9 +28,19 @@ button{
 		
 	}
 
-	#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, .checkout-wrapper .buttons-set button, #send2{
+	#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, #send2{
 		width:100%;
 	}
+}
+
+.red-continue-button{
+	margin:0px auto;
+	border:0;
+	background-color:#ad0202;
+	text-align: center;
+	color:white;
+	text-align: center;
+	text-decoration: none;
 }
 
 .back-link-button a{
@@ -52,6 +62,15 @@ button{
 
 	&:active{
 		background-color: #9b9a9a;
+	}
+}
+
+@include breakpoint($smartphone-breakpoint){
+	.red-continue-button{
+		width: 100%;
+		font-size: 1em;
+		padding: 5px 0px;
+		margin:5px 2px;
 	}
 }
 
