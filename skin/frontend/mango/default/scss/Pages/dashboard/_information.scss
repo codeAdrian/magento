@@ -1,0 +1,71 @@
+// ----- ACCOUNT INFORMATION - DESKTOP ----- 
+
+.my-account{
+		#form-validate{
+		width:65%;
+	}
+
+	p.required{
+		font-size:0.75em;
+		margin:10px auto;
+	}
+}
+
+.my-account-edit{
+	width:90%;
+	margin:0px auto;
+
+	li.control{
+		margin:10px auto;
+
+		input{
+			display: inline-block;
+			width:20px;
+		}
+
+		label{
+			display: inline-block;			
+		}
+	}
+
+	.no-display{
+		display: none;
+	}
+
+	.my-account-edit .customer-name .field, #checkoutSteps .customer-name .field,  #checkoutSteps .fields .field{
+		width:40%;
+		display: inline-block;
+	}
+
+	.my-account-edit .customer-name .field div{
+		display: inline-block;
+	}
+}
+
+// ----- ACCOUNT INFORMATION - TABLET -----
+@include breakpoint($tablet-breakpoint){
+.my-account{
+	#form-validate{
+		width:90%;
+	}
+
+	.back-link-button a{
+		margin:0px;
+	}
+
+	.page-title h1{
+		font-size:1.75em;
+	}
+}
+}
+// ----- ACCOUNT INFORMATION - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+	.back-link-button a{
+		width:100%;
+		padding:10px 0px;
+	}
+
+	.my-account #form-validate{
+		width:100%;
+	}
+}

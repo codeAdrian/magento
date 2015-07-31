@@ -2,36 +2,41 @@
 @import "susy";
 @import "breakpoint";
 @import "compass";
+@import "compass/reset";
 
 // BASE IMPORTS
-@import "Base/normalize";
-@import "Base/reset";
-@import "Base/typography";
+@import "base/normalize";
+@import "base/typography";
 
 //HELPERS IMPORTS
-@import "Helpers/variables";
-@import "Helpers/vendor-prefixes";
+@import "helpers/variables";
+@import "helpers/vendor-prefixes";
+@import "helpers/component-mixins";
+@import "helpers/responsive-show-hide";
 @import "components";
 
 // LAYOUT IMPORTS
-@import "Layout/susy-header";
-@import "Layout/susy-footer";
-@import "Layout/susy-newsletter";
-@import "Layout/susy-homepage";
-@import "Layout/susy-mini-menu";
-@import "Layout/susy-product";
-@import "Layout/page";
+@import "layout/susy-header";
+@import "layout/susy-footer";
+@import "layout/susy-newsletter";
+@import "layout/susy-homepage";
+@import "layout/susy-mini-menu";
+@import "layout/susy-product";
+@import "layout/susy-cart";
+@import "layout/susy-dashboard";
+@import "layout/susy-account-management";
+@import "layout/susy-checkout";
+@import "layout/page";
 
 // PAGE IMPORTS //
-@import "base";
-@import "Pages/Shared/header";
-@import "Pages/Shared/nav";
-@import "Pages/Shared/mini-menus";
-@import "Pages/Homepage/homepage";
-@import "Pages/Shared/footer";
-@import "Pages/Category/category";
-@import "Pages/Product/product";
-
+@import "pages/shared/shared";
+@import "pages/homepage/homepage";
+@import "pages/category/category";
+@import "pages/product/product";
+@import "pages/cart/cart";
+@import "pages/dashboard/dashboard";
+@import "pages/account-management/account-management";
+@import "pages/misc/misc";
 
 
 

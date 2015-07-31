@@ -32,12 +32,12 @@
  */
 ?>
 <div class="account-create">
-<p><?php echo $this->__('Why create an account?') ?></p>
-       <p><b><?php echo $this->__('All registered customers get 5% discount on a new collection') ?></b></p>
+<p class="flavor-text"><?php echo $this->__('Why create an account?') ?></p>
+       <p class="flavor-text"><b><?php echo $this->__('All registered customers get 5% discount on a new collection') ?></b></p>
     <div class="page-title">
         <h1><?php echo $this->__('Create an Account') ?></h1>
     </div>
-    <p><?php echo $this->__('* Required fields') ?></p>
+    <p class="required"><?php echo $this->__('* Required fields') ?></p>
     <?php echo $this->getChildHtml('form_fields_before')?>
     <?php echo $this->getMessagesBlock()->toHtml() ?>
     <?php /* Extensions placeholder */ ?>

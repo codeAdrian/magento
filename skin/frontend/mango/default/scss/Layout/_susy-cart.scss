@@ -1,0 +1,34 @@
+// ----- DESKTOP
+$susy:(
+	columns:$susy-desktop-cart-columns,
+	gutters:5%/33%,
+	//debug: (image: show),
+);
+
+	.cart{
+		.cart-totals-wrapper{
+			@include container($susy-desktop-cart-columns);
+			.shipping, .cart-collaterals{
+				@include span(1 of $susy-desktop-cart-columns);
+			}
+			.totals{
+				@include span(last 1 of $susy-desktop-cart-columns);			
+			}
+		}
+}
+
+
+// ----- TABLET
+@include breakpoint($tablet-breakpoint){
+	.cart{
+		.cart-totals-wrapper{
+			@include container($susy-tablet-cart-columns);
+			.shipping, .cart-collaterals{
+				@include span(1 of $susy-tablet-cart-columns);
+			}
+			.totals{
+				@include span(last 1 of $susy-tablet-cart-columns);			
+			}
+		}
+	}
+}

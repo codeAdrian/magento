@@ -1,0 +1,41 @@
+// ----- DESKTOP
+$susy:(
+	columns:$susy-desktop-grid2-columns,
+	gutters:5%/50%,
+	//debug: (image: show),
+);
+
+.checkout-onepage-index{
+	#shipping-buttons-container{
+		@include container($susy-desktop-grid2-columns);
+		margin-bottom:20px;
+		&>.grid2{
+			@include span(1 of $susy-desktop-grid2-columns);
+			p, a{
+				margin:0;
+			}
+			&:last-child{
+				@include span(last 1 of $susy-desktop-grid2-columns);
+				margin: 0;
+			}
+			margin:0;
+		}
+	}
+}
+
+
+// ----- TABLET
+@include breakpoint($tablet-breakpoint){
+	.checkout-onepage-index{
+		#shipping-buttons-container{
+			@include container($susy-smartphone-grid2-columns);
+			.grid2{
+				@include span(1 of $susy-smartphone-grid2-columns);
+
+				&:last-child{
+					@include span(last 1 of $susy-smartphone-grid2-columns);	
+				}
+			}
+		}
+	}
+}

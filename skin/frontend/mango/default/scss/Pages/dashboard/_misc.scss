@@ -1,0 +1,245 @@
+// ----- MISC - DESKTOP ----- 
+
+// MY ORDERS PAGE
+
+.my-account{
+	.pager{
+		margin:10px 0px;
+		.limiter{
+			text-align: right;
+		}
+	}
+
+	.buttons-wrapper{
+			text-align: center;
+	}
+
+	#my-orders-table{
+		width:100%;
+		text-align: center;
+		margin:20px auto;
+
+		thead tr{
+			border-bottom:1px solid black;
+			th{
+				width:15%;
+
+				&:last-child{
+					width:20%;
+				}
+			}
+		}
+
+		tbody tr td{
+			padding:10px 0px;
+			text-align:left;
+
+			a{
+				color:black;
+				text-transform: uppercase;
+				font-size: 0.75em;				
+			}
+		}
+
+	}
+		.order-details{
+			margin:10px auto;
+
+		}
+}
+
+// MY ORDERS PAGE END
+
+
+// VIEW ORDER
+
+.sales-order-view{
+	.col2-set{
+		line-height: 1.5em;
+
+		h2{
+			margin:5px 0px;
+			text-transform: uppercase;
+			font-weight: 300;			
+			text-decoration: underline;
+		}
+
+		.box-content{
+			border-left:2px solid #b4b4b4;
+			padding-left:10px;
+		}
+	}
+	.subtotal{
+		margin:5px 0px;
+	}
+}
+
+.my-account .order-info-box, .my-account .order-info, .my-account .order-date{
+	width:46%;
+	display: inline-block;
+	margin:10px 0px 10px 10px;
+}
+
+.my-account .order-details #my-orders-table h3{
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.my-account .order-details #my-orders-table .item-options dt, .my-account .order-details #my-orders-table .item-options dd{
+	display: block;
+	float:left;
+	margin:5px 0;
+}
+
+.my-account .order-details #my-orders-table tfoot{
+	border-top:1px solid black;
+	text-align: right;
+
+	tr td{
+		text-align: right;
+		padding:10px 0px;
+
+		&.a-right:not(.last):after{
+			content:":";
+		}
+
+	}
+}
+
+.newsletter-manage-index{
+	.control{
+		padding-top:10px;
+	}
+	.fieldset input{
+		width:auto;
+		margin-right:10px;
+	}
+ }
+
+.my-account .order-details #my-orders-table .item-options dt{
+	font-weight: bold;
+	clear:both;
+
+	&:after{
+		content:":";
+	}
+}
+
+.my-account .order-details #my-orders-table .item-options dd{
+	margin-left:5px;
+	margin-right:auto;
+}
+
+// VIEW ORDER END
+
+// ----- MISC - TABLET -----
+@include breakpoint($tablet-breakpoint){
+.col2-set.order-info-box, .my-account .order-info, .my-account .order-date{
+	width:100%;
+	display:block;
+	margin:20px 0px 20px 10px;
+}
+
+.my-account #my-orders-table tbody tr td {
+	text-align:center;
+}
+
+.my-account .order-details #my-orders-table{
+	tbody{
+		display: table-caption;
+
+		tr{
+			td{
+				text-align: center;
+			}
+		}
+
+		dl{
+			text-align: center;
+			dt{
+				text-align: right;
+				padding-right:2em;
+			}
+
+			dd{
+				text-align: left; 
+			}
+		}
+	}
+
+	tfoot{
+		border:0;
+		padding:20px auto;
+	}
+
+}
+
+.sales-order-view #my-orders-table{
+	colgroup {
+		width:100%;
+
+		col:not(:first-child){
+			display: none;
+		}
+	}
+
+	tbody tr {
+	    border:1px solid #b4b4b4;
+	    margin-top:10px;
+	    display: block;
+	    width:100%;
+		td{
+			width:100%;
+			display: block; 
+		    padding-top:10px; 
+
+		    &:first-child{
+			    background-color: black; 
+			    color: white; 
+			    padding:10px 0px;
+			    margin:0px;	    	
+		    }
+
+		    &:not(:last-child):before{
+		    	width:auto;
+		    	float:none;
+		    	padding-right:2em;
+	  	  }
+
+	  	  &:last-child{
+		    	text-align: center;
+		    	background-color: #b4b4b4;	  	  	
+	  	  }
+
+		}
+	}
+	thead { 
+	  	display: none; 
+	}
+
+	.item-options {
+		margin:0px;
+		padding:0px;
+		width:100%;
+		background-color: black;
+		color:white;
+		margin:0px 0px 70px 0px;
+		dt, dd{
+	    	width:45%;
+	    	margin:0px;
+	    	padding:0px;
+	    	display: inline-block;
+	    	color:black;			
+		}
+	}
+}
+
+	table#shopping-cart-table tbody td:nth-child(2):before{
+		display: block;
+		width:100%;
+		text-align: center;
+	}
+	#shopping-cart-table tbody tr td{
+		border:0;
+	}
+}

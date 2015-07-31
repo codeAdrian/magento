@@ -46,10 +46,8 @@ jq(function() {
       jq('header').addClass('nav-fixed');
       jq('.logo').hide();
       jq('.links>li:first-child').hide();
-      jq('#mini-menu-account').css("top","62px");
-      jq('#mini-menu-cart').css("top","62px");
       jq('.form-search').css("border","0px");
-      jq('.main-container').css("margin-top","123px");
+      jq('.main-container').css("margin-top","98px");
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
       jq('.form-search').show();
     }
@@ -58,12 +56,9 @@ jq(function() {
       jq('header').removeClass('nav-fixed');
       jq('.logo').show();
       jq('.links>li:first-child').show();
-      jq('#mini-menu-account').css("top","100px");
-      jq('#mini-menu-cart').css("top","100px");
       jq('.form-search').css("border","2px solid #474444");
       jq('.main-container').css("margin-top","0px");
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
-      jq('#search_mini_form').css("width","auto");
 
     }
   }
@@ -73,8 +68,6 @@ jq(function() {
       jq('.form-search').addClass('form-search-mini').removeClass('form-search');
       jq('header').addClass('nav-fixed');
       jq('.links>li:first-child').hide();
-      jq('#mini-menu-account').css("top","60px");
-      jq('#mini-menu-cart').css("top","60px");
       jq('.main-container').css("margin-top","120px"); 
       jq('.form-search').css("border","2px solid #474444").show();
       jq('.logo').hide();
@@ -88,14 +81,11 @@ jq(function() {
       jq("header .links .first").css("display","inline-block");
       jq('header').removeClass('nav-fixed');
       jq('.links>li:first-child').show();
-      jq('#mini-menu-account').css("top","100px");
-      jq('#mini-menu-cart').css("top","100px");
       jq('.form-search').css("border","2px solid #474444");
       jq('.main-container').css("margin-top","0px");
       jq('.logo').show();
       //jq('.searchMiniIcon').show();
       jq('.search-wrapper').css("display","inline-block");
-      jq('.search-wrapper').css("display","inline-block").css("width","auto");
       jq('#search_mini_form').css("width","");
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
       jq('#search_mini_form').css("width","100%").css("display","inline-block").css("float","none"); 
@@ -246,4 +236,23 @@ jq(function(){
     e.stopPropagation();
   });
 }
+});
+
+/* RESPONSIVE TABLE */
+jq(function(){
+  if (jq(".data-table").length ){
+    var headertext = [],
+    headers = document.querySelectorAll(".data-table th"),
+    tablebody = document.querySelector(".data-table tbody");
+
+    for(var i = 0; i < headers.length; i++) {
+      var current = headers[i];
+      headertext.push(current.textContent.replace(/\r?\n|\r/,""));
+    } 
+    for (var i = 0, row; row = tablebody.rows[i]; i++) {
+      for (var j = 0, col; col = row.cells[j]; j++) {
+        col.setAttribute("data-th", headertext[j]);
+      } 
+    }
+  }
 });

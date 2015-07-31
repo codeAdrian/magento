@@ -1,0 +1,34 @@
+// ----- DESKTOP
+$susy:(
+	columns:$susy-desktop-management-columns,
+	gutters:5%/33%,
+	//debug: (image: show),
+);
+
+	.customer-account-login{
+		.login-page-buttons{
+			@include container($susy-desktop-management-columns);
+			.grid2{
+				@include span(1 of $susy-desktop-management-columns);
+			}
+			.grid2:last-child{
+				@include span(last 1 of $susy-desktop-management-columns);			
+			}
+		}
+}
+
+
+// ----- SMARTPHONE
+@include breakpoint($smartphone-breakpoint){
+		.customer-account-login{
+			.login-page-buttons{
+				@include container($susy-smartphone-management-columns);
+				.grid2{
+					@include span(1 of $susy-smartphone-management-columns);
+				}
+				.grid2:last-child{
+					@include span(last 1 of $susy-smartphone-management-columns);			
+				}
+			}
+	}
+}

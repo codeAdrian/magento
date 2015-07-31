@@ -1,10 +1,9 @@
 $susy:(
 	columns:$susy-desktop-header-columns,
 	//debug: (image: show),
-	global-box-sizing:border-box
 );
 
-#header_wrapper{
+.header_wrapper{
 	// HEADER GRID - DESKTOP
 	@include container();
 	.search_column{
