@@ -1429,6 +1429,58 @@ footer .border-container .grid2:last-child {
     float: none;
   }
 }
+/* line 9, ../scss/layout/_susy-account-management.scss */
+.customer-account-login .login-page-buttons {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.customer-account-login .login-page-buttons:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 11, ../scss/layout/_susy-account-management.scss */
+.customer-account-login .login-page-buttons .grid2 {
+  width: 46.47887%;
+  float: left;
+  margin-right: 7.04225%;
+}
+/* line 14, ../scss/layout/_susy-account-management.scss */
+.customer-account-login .login-page-buttons .grid2:last-child {
+  width: 46.47887%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (max-width: 625px) {
+  /* line 24, ../scss/layout/_susy-account-management.scss */
+  .customer-account-login .login-page-buttons {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .customer-account-login .login-page-buttons:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 26, ../scss/layout/_susy-account-management.scss */
+  .customer-account-login .login-page-buttons .grid2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 29, ../scss/layout/_susy-account-management.scss */
+  .customer-account-login .login-page-buttons .grid2:last-child {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
 /* line 2, ../scss/layout/_page.scss */
 .page {
   max-width: 1280px;
@@ -1657,148 +1709,16 @@ body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-/* REGISTER PAGE AND LOGIN PAGE */
-/* line 72, ../scss/_base.scss */
-.account-create, .account-login-page, .forgot-pass-wrapper {
-  width: 40%;
-  margin: 20px auto;
-  border: 1px solid #b5b5b5;
-  padding: 25px 100px;
-}
-
-/* line 79, ../scss/_base.scss */
-.account-login-page .content, .forgot-pass-wrapper .fieldset {
-  font-size: 0.75em;
-}
-
-/* line 83, ../scss/_base.scss */
-.forgot-pass-wrapper .buttons-set {
-  text-align: center;
-}
-
-/* line 87, ../scss/_base.scss */
-.account-create input:focus, .account-login-page input:focus, .forgot-pass-wrapper input:focus {
-  border: 2px solid #b5b5b5;
-  padding: 3px;
-}
-
-/* line 92, ../scss/_base.scss */
-.account-create .page-title h1, .account-login-page .page-title h1, .cart .page-title h1, .forgot-pass-wrapper .page-title h1, .search-results .page-title h1 {
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: 200;
-}
-
-/* line 98, ../scss/_base.scss */
-.account-login-page input {
-  font-size: 1.75em;
-  border: 2px solid #B5B5B5;
-  padding: 4px;
-}
-
-/* line 104, ../scss/_base.scss */
-.account-login-page input:focus {
-  border: 2px solid #E9E8E8;
-  padding: 4px;
-}
-
-/* line 109, ../scss/_base.scss */
-div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li {
-  margin: 25px 0px;
-}
-
-/* line 113, ../scss/_base.scss */
-.customer-name, div.fieldset:nth-child(2) {
-  text-transform: none;
-}
-
-/* line 117, ../scss/_base.scss */
-.fieldset input {
-  margin: 3px 0px 10px 0px;
-  width: 88%;
-}
-
-/* line 122, ../scss/_base.scss */
-#form-validate input {
-  border: 2px solid #b5b5b5;
-  padding: 5px;
-}
-
-/* line 127, ../scss/_base.scss */
-.forgot-pass {
-  text-align: center;
-}
-
-/* line 131, ../scss/_base.scss */
-.account-login-page a.f-left {
-  text-align: center;
-}
-
-/* line 135, ../scss/_base.scss */
-.account-login-page a.f-left:hover {
-  font-weight: bold;
-}
-
-/* line 139, ../scss/_base.scss */
-#form-validate input:focus {
-  border: 2px solid #e9e8e8;
-}
-
-/* line 144, ../scss/_base.scss */
-#email_address {
-  margin: 10px 0px 10px 0px;
-}
-
-/* line 148, ../scss/_base.scss */
-ul.form-list:nth-child(3) > li:nth-child(2) > label:nth-child(1) {
-  text-transform: none;
-}
-
-/* line 152, ../scss/_base.scss */
-.field .required {
-  text-transform: none;
-}
-
-/* line 156, ../scss/_base.scss */
-p .control {
-  list-style: none;
-}
-
-/* line 160, ../scss/_base.scss */
-input#is_subscribed {
-  width: auto;
-  dispay: inline-block;
-}
-
-/* line 165, ../scss/_base.scss */
-div.input-box:nth-child(3) {
-  text-align: left;
-  width: auto;
-  display: inline-block;
-}
-
-/* line 171, ../scss/_base.scss */
-.buttons-set button[title="Submit"] {
-  background-color: #ad0202;
-}
-
-/* line 175, ../scss/_base.scss */
-.buttons-set button[title="Submit"] span {
-  color: white;
-  text-transform: uppercase;
-}
-
-/* REGISTER PAGE END */
 /* MY CART PAGE END */
 /* SEARCH RESULTS PAGE */
-/* line 192, ../scss/_base.scss */
+/* line 82, ../scss/_base.scss */
 .catalogsearch-result-index .col-right-sidebar {
   float: left;
   display: inline-block;
   width: 25%;
 }
 
-/* line 198, ../scss/_base.scss */
+/* line 88, ../scss/_base.scss */
 .catalogsearch-results-index .col-wrapper {
   float: right;
   display: inline-block;
@@ -1806,32 +1726,32 @@ div.input-box:nth-child(3) {
 }
 
 /* CHECKOUT */
-/* line 207, ../scss/_base.scss */
+/* line 97, ../scss/_base.scss */
 #checkoutSteps {
   border: 1px solid #b4b4b4;
   width: 75%;
   margin: 10px auto;
 }
 
-/* line 213, ../scss/_base.scss */
+/* line 103, ../scss/_base.scss */
 #billing\:country_id {
   display: block;
   width: 100%;
 }
 
-/* line 218, ../scss/_base.scss */
+/* line 108, ../scss/_base.scss */
 #checkoutSteps fieldset {
   border: 0;
   padding: 0px 20px;
 }
 
-/* line 223, ../scss/_base.scss */
+/* line 113, ../scss/_base.scss */
 #checkoutSteps fieldset fieldset, #checkoutSteps #co-shipping-form {
   width: 95%;
   margin: 20px auto;
 }
 
-/* line 227, ../scss/_base.scss */
+/* line 117, ../scss/_base.scss */
 #checkoutSteps .step-title h2, #checkoutSteps .step-title .product-details-container .grid2 h1, .product-details-container .grid2 #checkoutSteps .step-title h1 {
   background-color: black;
   color: white;
@@ -1842,32 +1762,32 @@ div.input-box:nth-child(3) {
   font-weight: 300;
 }
 
-/* line 237, ../scss/_base.scss */
+/* line 127, ../scss/_base.scss */
 #checkoutSteps li:not(:last-child) .step-title h2, #checkoutSteps li:not(:last-child) .step-title .product-details-container .grid2 h1, .product-details-container .grid2 #checkoutSteps li:not(:last-child) .step-title h1 {
   border-bottom: 1px solid white;
 }
 
-/* line 241, ../scss/_base.scss */
+/* line 131, ../scss/_base.scss */
 .checkout-wrapper .please-wait {
   display: none;
 }
 
-/* line 245, ../scss/_base.scss */
+/* line 135, ../scss/_base.scss */
 #checkoutSteps .form-list li {
   padding: 3px 0px;
 }
 
-/* line 249, ../scss/_base.scss */
+/* line 139, ../scss/_base.scss */
 #checkoutSteps fieldset .input-box div {
   font-size: 1.25em;
 }
 
-/* line 253, ../scss/_base.scss */
+/* line 143, ../scss/_base.scss */
 #checkoutSteps #billing-address-select, #checkoutSteps #shipping-address-select {
   width: 80%;
 }
 
-/* line 257, ../scss/_base.scss */
+/* line 147, ../scss/_base.scss */
 .red-continue-button {
   margin: 0px auto;
   border: 0;
@@ -1875,7 +1795,7 @@ div.input-box:nth-child(3) {
   text-align: center;
 }
 
-/* line 263, ../scss/_base.scss */
+/* line 153, ../scss/_base.scss */
 .red-continue-button span span {
   color: white;
   text-align: center;
@@ -1884,7 +1804,7 @@ div.input-box:nth-child(3) {
 
 /* CHECKOUT END */
 /* REGISTRATION INPUT VALIDATION FAILED */
-/* line 275, ../scss/_base.scss */
+/* line 165, ../scss/_base.scss */
 #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
 #advice-required-entry-email_address, #advice-required-entry-password,
 #advice-required-entry-confirmation, #advice-validate-password-password,
@@ -1902,7 +1822,7 @@ div.input-box:nth-child(3) {
   font-weight: 600;
 }
 
-/* line 292, ../scss/_base.scss */
+/* line 182, ../scss/_base.scss */
 #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
 #advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
 #advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
@@ -1919,7 +1839,7 @@ div.input-box:nth-child(3) {
   font-weight: 600;
 }
 
-/* line 308, ../scss/_base.scss */
+/* line 198, ../scss/_base.scss */
 input.validation-failed select.validation-failed, .validation-failed {
   border: 2px solid #a51313 !important;
 }
@@ -1927,47 +1847,28 @@ input.validation-failed select.validation-failed, .validation-failed {
 /* VALIDATION FAILED END */
 /* RESPONSIVE DESIGN IPAD */
 @media (max-width: 900px) {
-  /* line 318, ../scss/_base.scss */
+  /* line 208, ../scss/_base.scss */
   li.level0 a:hover {
     cursor: pointer;
   }
 
-  /* line 322, ../scss/_base.scss */
+  /* line 212, ../scss/_base.scss */
   .mobileOnly {
     display: block;
   }
 
-  /* line 326, ../scss/_base.scss */
+  /* line 216, ../scss/_base.scss */
   .main-container {
     margin: 0px 1%;
   }
 
-  /* line 330, ../scss/_base.scss */
+  /* line 220, ../scss/_base.scss */
   .main-container {
     margin-top: 20px;
   }
 
-  /* FORGOT PASSWORD */
-  /* line 335, ../scss/_base.scss */
-  .account-create, .account-login-page, .forgot-pass-wrapper {
-    width: 70%;
-    padding: 25px 50px;
-  }
-
-  /* line 341, ../scss/_base.scss */
-  .account-login-page {
-    width: 80%;
-    padding: 25px;
-  }
-
-  /* line 346, ../scss/_base.scss */
-  .account-login-page .gray-button, .account-login-page .red-button {
-    width: 100%;
-    margin: 0px;
-  }
-
   /* PAGE NOT FOUND */
-  /* line 353, ../scss/_base.scss */
+  /* line 226, ../scss/_base.scss */
   .page-not-found-wrapper .products-grid .item {
     width: 100%;
     display: block;
@@ -1977,22 +1878,22 @@ input.validation-failed select.validation-failed, .validation-failed {
 /* RESPONSIVE DESIGN IPAD END */
 /* RESPONSIVE DESIGN MOBILE */
 @media (max-width: 625px) {
-  /* line 366, ../scss/_base.scss */
+  /* line 239, ../scss/_base.scss */
   .main-container {
     margin: 0px 2%;
   }
 
-  /* line 370, ../scss/_base.scss */
+  /* line 243, ../scss/_base.scss */
   .block-subscribe {
     padding: 10px 0px;
   }
 
-  /* line 374, ../scss/_base.scss */
+  /* line 247, ../scss/_base.scss */
   #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
   }
 
-  /* line 378, ../scss/_base.scss */
+  /* line 251, ../scss/_base.scss */
   .subscribe-button {
     border: 1px solid black;
     margin: 0px;
@@ -2002,38 +1903,38 @@ input.validation-failed select.validation-failed, .validation-failed {
     height: 30px;
   }
 
-  /* line 388, ../scss/_base.scss */
+  /* line 261, ../scss/_base.scss */
   #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
 
-  /* line 393, ../scss/_base.scss */
+  /* line 266, ../scss/_base.scss */
   .smartphoneOnly {
     display: block;
   }
 
-  /* line 397, ../scss/_base.scss */
+  /* line 270, ../scss/_base.scss */
   .inlineSmartphoneOnly {
     display: inline-block;
   }
 
-  /* line 401, ../scss/_base.scss */
+  /* line 274, ../scss/_base.scss */
   .desktopOnly {
     display: none;
   }
 
-  /* line 405, ../scss/_base.scss */
+  /* line 278, ../scss/_base.scss */
   .desktopTabletOnly {
     display: none;
   }
 
-  /* line 409, ../scss/_base.scss */
+  /* line 282, ../scss/_base.scss */
   .forgot-pass-wrapper .page-title h1 {
     text-align: center;
   }
 
-  /* line 413, ../scss/_base.scss */
+  /* line 286, ../scss/_base.scss */
   .forgot-pass-wrapper {
     width: 90%;
     padding: 20px;
@@ -2041,7 +1942,7 @@ input.validation-failed select.validation-failed, .validation-failed {
 
   /* MY ACCOUNT */
   /* ADD NEW ADDRESS */
-  /* line 422, ../scss/_base.scss */
+  /* line 295, ../scss/_base.scss */
   #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
   #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
   #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
@@ -2058,7 +1959,7 @@ input.validation-failed select.validation-failed, .validation-failed {
   }
 
   /* CHECKOUT */
-  /* line 438, ../scss/_base.scss */
+  /* line 311, ../scss/_base.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -2066,29 +1967,29 @@ input.validation-failed select.validation-failed, .validation-failed {
     margin: 5px 2px;
   }
 
-  /* line 445, ../scss/_base.scss */
+  /* line 318, ../scss/_base.scss */
   #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
 
-  /* line 449, ../scss/_base.scss */
+  /* line 322, ../scss/_base.scss */
   #checkoutSteps {
     width: 100%;
   }
 
-  /* line 452, ../scss/_base.scss */
+  /* line 325, ../scss/_base.scss */
   #billing\:country_id {
     display: block;
     width: 100%;
   }
 
-  /* line 457, ../scss/_base.scss */
+  /* line 330, ../scss/_base.scss */
   #checkoutSteps fieldset, #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
 
-  /* line 463, ../scss/_base.scss */
+  /* line 336, ../scss/_base.scss */
   .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
     display: block;
     width: 100%;
@@ -5308,6 +5209,191 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   /* line 242, ../scss/pages/dashboard/_misc.scss */
   #shopping-cart-table tbody tr td {
     border: 0;
+  }
+}
+/* line 3, ../scss/pages/account-management/_login-register.scss */
+.account-create, .account-login-page, .forgot-pass-wrapper {
+  width: 40%;
+  margin: 20px auto;
+  border: 1px solid #b5b5b5;
+  padding: 25px 100px;
+}
+/* line 9, ../scss/pages/account-management/_login-register.scss */
+.account-create p.required, .account-login-page p.required, .forgot-pass-wrapper p.required {
+  font-size: 0.75em;
+  margin: 20px 0px;
+}
+/* line 14, ../scss/pages/account-management/_login-register.scss */
+.account-create p.flavor-text, .account-login-page p.flavor-text, .forgot-pass-wrapper p.flavor-text {
+  margin: 10px 0px;
+}
+/* line 18, ../scss/pages/account-management/_login-register.scss */
+.account-create .input-box #is_subscribed, .account-create label, .account-create .buttons-set, .account-login-page .input-box #is_subscribed, .account-login-page label, .account-login-page .buttons-set, .forgot-pass-wrapper .input-box #is_subscribed, .forgot-pass-wrapper label, .forgot-pass-wrapper .buttons-set {
+  margin: 10px 0px;
+}
+
+/* line 23, ../scss/pages/account-management/_login-register.scss */
+.forgot-pass-wrapper .buttons-set {
+  text-align: center;
+}
+
+/* line 27, ../scss/pages/account-management/_login-register.scss */
+.account-create input:focus, .account-login-page input:focus, .forgot-pass-wrapper input:focus {
+  border: 2px solid #b5b5b5;
+  padding: 3px;
+}
+
+/* line 32, ../scss/pages/account-management/_login-register.scss */
+.account-create .page-title h1, .account-login-page .page-title h1, .cart .page-title h1, .forgot-pass-wrapper .page-title h1, .search-results .page-title h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+/* line 38, ../scss/pages/account-management/_login-register.scss */
+.account-login-page input {
+  border: 2px solid #B5B5B5;
+  padding: 4px;
+}
+
+/* line 43, ../scss/pages/account-management/_login-register.scss */
+.account-login-page input:focus {
+  border: 2px solid #E9E8E8;
+  padding: 4px;
+}
+
+/* line 48, ../scss/pages/account-management/_login-register.scss */
+div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li {
+  margin: 25px 0px;
+}
+
+/* line 52, ../scss/pages/account-management/_login-register.scss */
+.customer-name, div.fieldset:nth-child(2) {
+  text-transform: none;
+}
+
+/* line 56, ../scss/pages/account-management/_login-register.scss */
+.fieldset input {
+  margin: 3px 0px 10px 0px;
+  width: 88%;
+}
+
+/* line 61, ../scss/pages/account-management/_login-register.scss */
+#form-validate input {
+  border: 2px solid #b5b5b5;
+  padding: 5px;
+}
+
+/* line 66, ../scss/pages/account-management/_login-register.scss */
+.forgot-pass {
+  text-align: center;
+}
+
+/* line 70, ../scss/pages/account-management/_login-register.scss */
+.account-login-page a.f-left {
+  text-align: center;
+}
+
+/* line 74, ../scss/pages/account-management/_login-register.scss */
+.account-login-page a.f-left:hover {
+  font-weight: bold;
+}
+
+/* line 78, ../scss/pages/account-management/_login-register.scss */
+#form-validate input:focus {
+  border: 2px solid #e9e8e8;
+}
+
+/* line 83, ../scss/pages/account-management/_login-register.scss */
+#email_address {
+  margin: 3px 0px 10px 0px;
+}
+
+/* line 87, ../scss/pages/account-management/_login-register.scss */
+ul.form-list:nth-child(3) > li:nth-child(2) > label:nth-child(1) {
+  text-transform: none;
+}
+
+/* line 91, ../scss/pages/account-management/_login-register.scss */
+.field .required {
+  text-transform: none;
+}
+
+/* line 95, ../scss/pages/account-management/_login-register.scss */
+p .control {
+  list-style: none;
+}
+
+/* line 99, ../scss/pages/account-management/_login-register.scss */
+input#is_subscribed {
+  width: auto;
+  dispay: inline-block;
+}
+
+/* line 104, ../scss/pages/account-management/_login-register.scss */
+div.input-box:nth-child(3) {
+  text-align: left;
+  width: auto;
+  display: inline-block;
+}
+
+/* line 110, ../scss/pages/account-management/_login-register.scss */
+.buttons-set button[title="Submit"] {
+  background-color: #ad0202;
+}
+
+/* line 114, ../scss/pages/account-management/_login-register.scss */
+.buttons-set button[title="Submit"] span {
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  /* line 123, ../scss/pages/account-management/_login-register.scss */
+  .customer-account-login .login-page-buttons .red-button {
+    margin: 10px auto;
+  }
+  /* line 128, ../scss/pages/account-management/_login-register.scss */
+  .customer-account-login a.f-left {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 625px) {
+  /* line 138, ../scss/pages/account-management/_login-register.scss */
+  .customer-account-login .login-page-buttons .red-button, .customer-account-login .login-page-buttons .grid2 {
+    margin: 0px auto;
+  }
+}
+/* line 3, ../scss/pages/account-management/_recover-password.scss */
+.form-list {
+  margin: 20px 0px;
+}
+
+@media (max-width: 900px) {
+  /* line 11, ../scss/pages/account-management/_recover-password.scss */
+  .account-create, .account-login-page, .forgot-pass-wrapper {
+    width: 70%;
+    padding: 20px;
+  }
+  /* line 16, ../scss/pages/account-management/_recover-password.scss */
+  .account-create input, .account-login-page input, .forgot-pass-wrapper input {
+    width: 95%;
+  }
+  /* line 20, ../scss/pages/account-management/_recover-password.scss */
+  .account-create .form-list, .account-login-page .form-list, .forgot-pass-wrapper .form-list {
+    margin: 20px 0px;
+  }
+
+  /* line 25, ../scss/pages/account-management/_recover-password.scss */
+  .account-login-page {
+    width: 80%;
+    padding: 25px;
+  }
+
+  /* line 30, ../scss/pages/account-management/_recover-password.scss */
+  .account-login-page .gray-button, .account-login-page .red-button {
+    width: 100%;
+    margin: 0px;
   }
 }
 /* ------------------------------------------- TEMPLATE

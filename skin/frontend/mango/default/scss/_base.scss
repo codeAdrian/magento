@@ -67,117 +67,7 @@ body
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-/* REGISTER PAGE AND LOGIN PAGE */
 
-.account-create, .account-login-page, .forgot-pass-wrapper{
-	width:40%;
-	margin:20px auto;
-	border:1px solid #b5b5b5;
-	padding:25px 100px;
-}
-
-.account-login-page .content, .forgot-pass-wrapper .fieldset{
-	font-size: 0.75em;
-}
-
-.forgot-pass-wrapper .buttons-set{
-	text-align: center;
-}
-
-.account-create input:focus, .account-login-page input:focus, .forgot-pass-wrapper input:focus{
-	border:2px solid #b5b5b5;
-	padding:3px;
-}
-
-.account-create .page-title h1, .account-login-page .page-title h1, .cart .page-title h1, .forgot-pass-wrapper .page-title h1, .search-results .page-title h1{
-	text-transform: uppercase;
-	font-size: 1.5em;
-	font-weight:200;
-}
-
-.account-login-page input{
-	font-size: 1.75em;
-	border: 2px solid #B5B5B5;
-	padding:4px;
-}
-
-.account-login-page input:focus{
-    border: 2px solid #E9E8E8;
-    padding:4px;
-}
-
-div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li{
-	margin:25px 0px;
-}
-
-.customer-name, div.fieldset:nth-child(2){
-	text-transform: none;
-}
-
-.fieldset input{
-	margin:3px 0px 10px 0px;
-	width:88%;
-}
-
-#form-validate input{
-	border:2px solid #b5b5b5;
-	padding:5px;
-}
-
-.forgot-pass{
-	text-align: center;
-}
-
-.account-login-page a.f-left{
-	text-align: center;
-}
-
-.account-login-page a.f-left:hover{
-	font-weight:bold;
-}
-
-#form-validate input:focus{
-	border:2px solid #e9e8e8;
-}
-
-
-#email_address{
-	margin:10px 0px 10px 0px;
-}
-
-ul.form-list:nth-child(3) > li:nth-child(2) > label:nth-child(1){
-		text-transform: none;
-}
-
-.field .required{
-	text-transform: none;
-}
-
-p .control{
-	list-style: none;
-}
-
-input#is_subscribed{
-	width:auto;
-	dispay:inline-block;
-}
-
-div.input-box:nth-child(3){
-	text-align: left;
-	width:auto;
-	display:inline-block;
-}
-
-.buttons-set button[title="Submit"]{
-	background-color: #ad0202;
-}
-
-.buttons-set button[title="Submit"] span{
-color:white;
-text-transform: uppercase;
-}
-
-/* REGISTER PAGE END */
 
 
 
@@ -330,24 +220,7 @@ input.validation-failed select.validation-failed, .validation-failed{
 	.main-container{
 		margin-top:20px;
 	}
-
-	/* FORGOT PASSWORD */
-.account-create, .account-login-page, .forgot-pass-wrapper
-	{
-		width:70%;
-		padding:25px 50px;
-	}
-
-	.account-login-page{
-		width:80%;
-		padding:25px;
-	}
-
-	.account-login-page .gray-button, .account-login-page .red-button{
-		width:100%;
-		margin:0px;
-	}
-
+	
 	/* PAGE NOT FOUND */
 
 	.page-not-found-wrapper .products-grid .item{
