@@ -2,8 +2,8 @@
 
 #mini-menu-account {
 	position: absolute;
-	right:0%;
-	top: 50px;
+	right:5%;
+	top: 45px;
 	width: 250px;
 	p,ul,a{
 		font-size:0.75em;
@@ -11,11 +11,15 @@
 }
 
 #mini-menu-cart {
-	@extend #mini-menu-account;
+	position: absolute;
+	top: 45px;
 	font-size:1em;
 	right:0%;
-	top: 50px;
 	width:370px;
+
+	p,ul,a{
+		font-size:0.75em;
+	}
 
 	.product-details p,.product-details a, .amount a{
 		font-size: 1em;
@@ -233,18 +237,20 @@ a.f-left{
 // ----- MINI MENU - TABLET -----
 @include breakpoint($tablet-breakpoint){
 	#mini-menu-cart{
-		right:0%;
+		right:10%;
+		top:50px;
 	}
 
 	#mini-menu-account{
-		right:2%;
+		right:13%;
+		top:50px;
 	}
 }
 // ----- MINI MENU - MOBILE -----
 @include breakpoint($smartphone-breakpoint){
 	#mini-menu-account{
-		top:50px;
-		right:4%;
+		top:45px;
+		right:7%;
 		.content-account{
 			padding:0.5em 0em;
 		}
@@ -260,8 +266,8 @@ a.f-left{
 	}
 
 	#mini-menu-cart{
-		right:0%;
-		top:50px;
+		right:7%;
+		top:45px;
 		width:300px;
 
 		.product-image{
@@ -285,6 +291,10 @@ a.f-left{
 
 	#mini_cart_checkout, #mini_cart_edit{
 		width:100%;
+	}
+
+	#login-form > div:nth-child(3) > div.col-1.new-users{
+		padding:0em 1em;
 	}
 
 	.content-cart{

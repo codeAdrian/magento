@@ -59,7 +59,6 @@ jq(function() {
       jq('.form-search').css("border","2px solid #474444");
       jq('.main-container').css("margin-top","0px");
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
-      jq('#search_mini_form').css("width","auto");
 
     }
   }
@@ -87,7 +86,6 @@ jq(function() {
       jq('.logo').show();
       //jq('.searchMiniIcon').show();
       jq('.search-wrapper').css("display","inline-block");
-      jq('.search-wrapper').css("display","inline-block").css("width","auto");
       jq('#search_mini_form').css("width","");
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
       jq('#search_mini_form').css("width","100%").css("display","inline-block").css("float","none"); 

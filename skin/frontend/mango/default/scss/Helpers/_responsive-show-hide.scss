@@ -41,4 +41,20 @@
 	.mobileOnly{
 		display: block;
 	}
+	.smartphoneOnly{
+		display: block;
+	}
+
+	.inlineSmartphoneOnly{
+		display: inline-block;
+	}
+
+	.desktopOnly{
+		display: none;
+	}
+
+	.desktopTabletOnly{
+		display: none;
+	}
+
 }

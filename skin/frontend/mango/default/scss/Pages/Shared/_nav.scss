@@ -114,6 +114,10 @@ nav ul li ul
     padding-top:20px;
     max-width:$desktop-page-width;
     width:100%;
+
+    right: 0;
+    left: 0;
+    width: 50%;
     }
 
 
@@ -265,11 +269,21 @@ nav ul li ul
 	    height:50px;
 	
 	     .header_wrapper .search_column{
-	    	width: 100%;
 			position:fixed;
 			margin-right: 3.44828%;
 			text-align: center;
 			margin: 0px auto;
+			right: 0;
+		    left: 0;
+		    width: 50%;
+
+		    #search_mini_form{
+		    	margin:0px auto;
+		    }
+
+		    .search-wrapper{
+		    	width:100%;
+		    }
     	}
 
     	.form-search-mini{
@@ -283,6 +297,7 @@ nav ul li ul
     	nav{
     		padding:0px;
     		margin:0px;
+    		width:100%;
     	}
 	}
 }

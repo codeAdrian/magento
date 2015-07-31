@@ -30,24 +30,6 @@
 }
 
 /* PAGE NOT FOUND END */
-.messages{
-position:fixed;
-top:0px;
-left:0px;
-text-align: center;
-margin: 0px auto;
-width: 100%;
-height:65px;
-background-color: white;
-list-style:none;
-padding:20px 0px 0px 0px;
-z-index:300;
-}
-
-/* MY CART PAGE END */
-
-
-
 
 
 /* SEARCH RESULTS PAGE */
@@ -154,58 +136,8 @@ border-bottom:1px solid white;
 /* RESPONSIVE DESIGN MOBILE */
 
 @include breakpoint($smartphone-breakpoint){
-		.main-container{
-		margin:0px 2%;
-	}
 
-	.block-subscribe{
-		padding:10px 0px;
-	}
-
-	#newsletter-validate-detail .block-content #newsletter{
-		padding:5px;
-	}
-
-	.subscribe-button{
-		
-		border:1px solid black;
-		margin:0px;
-		background-color: black;
-		padding:3px;
-		min-width:100px;
-		height:30px;
-	}
-
-	#newsletter_banner{
-		padding:8px 0px;
-		font-size:0.75em;
-	}
-
-	.smartphoneOnly{
-		display: block;
-	}
-
-	.inlineSmartphoneOnly{
-		display: inline-block;
-	}
-
-	.desktopOnly{
-		display: none;
-	}
-
-	.desktopTabletOnly{
-		display: none;
-	}
-
-		.forgot-pass-wrapper .page-title h1{
-			text-align: center;
-		}
-
-		.forgot-pass-wrapper{
-			width:90%;
-			padding:20px;
-		}
-
+	
 	/* MY ACCOUNT */
 
 	/* ADD NEW ADDRESS */
