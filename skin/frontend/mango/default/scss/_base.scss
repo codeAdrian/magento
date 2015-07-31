@@ -1,19 +1,5 @@
 
 
-
-.mobileOnly, .smartphoneOnly, .inlineSmartphoneOnly{
-	display: none; 
-}
-
-.desktopOnly{
-	display: block;
-}
-
-.desktopTabletOnly{
-	display: block;
-}
-
-
 /* PAGE NOT FOUND */
 
 .page-not-found-wrapper{
@@ -57,20 +43,6 @@ list-style:none;
 padding:20px 0px 0px 0px;
 z-index:300;
 }
-
-
-body
-{
-	margin:0px;
-	background-color: white;
-	color:black;
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-
-
-
-
 
 /* MY CART PAGE END */
 
@@ -166,22 +138,6 @@ border-bottom:1px solid white;
 /* RESPONSIVE DESIGN IPAD */
 
 @include breakpoint($tablet-breakpoint){
-
-	li.level0 a:hover{
-		cursor:pointer;
-	}
-
-	.mobileOnly{
-		display: block;
-	}
-	
-	.main-container{
-		margin:0px 1%;
-	}
-	
-	.main-container{
-		margin-top:20px;
-	}
 	
 	/* PAGE NOT FOUND */
 
