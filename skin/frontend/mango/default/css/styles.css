@@ -1631,6 +1631,65 @@ footer .border-container .grid2:last-child {
     margin-right: 0;
   }
 }
+/* line 9, ../scss/layout/_susy-checkout.scss */
+.checkout-onepage-index #shipping-buttons-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.checkout-onepage-index #shipping-buttons-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 12, ../scss/layout/_susy-checkout.scss */
+.checkout-onepage-index #shipping-buttons-container > .grid2 {
+  width: 47.61905%;
+  float: left;
+  margin-right: 4.7619%;
+  margin: 0;
+}
+/* line 14, ../scss/layout/_susy-checkout.scss */
+.checkout-onepage-index #shipping-buttons-container > .grid2 p, .checkout-onepage-index #shipping-buttons-container > .grid2 a {
+  margin: 0;
+}
+/* line 17, ../scss/layout/_susy-checkout.scss */
+.checkout-onepage-index #shipping-buttons-container > .grid2:last-child {
+  width: 47.61905%;
+  float: right;
+  margin-right: 0;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  /* line 30, ../scss/layout/_susy-checkout.scss */
+  .checkout-onepage-index #shipping-buttons-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .checkout-onepage-index #shipping-buttons-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 32, ../scss/layout/_susy-checkout.scss */
+  .checkout-onepage-index #shipping-buttons-container .grid2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 35, ../scss/layout/_susy-checkout.scss */
+  .checkout-onepage-index #shipping-buttons-container .grid2:last-child {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
 /* line 3, ../scss/layout/_page.scss */
 body {
   background-color: white;
@@ -5350,20 +5409,23 @@ div.input-box:nth-child(3) {
   margin: 10px 0px;
 }
 /* line 31, ../scss/pages/misc/_checkout.scss */
-.checkout-onepage-index #checkoutSteps fieldset {
+.checkout-onepage-index #checkoutSteps fieldset, .checkout-onepage-index #checkoutSteps form {
   border: 0;
   padding: 0px 20px;
 }
 /* line 34, ../scss/pages/misc/_checkout.scss */
-.checkout-onepage-index #checkoutSteps fieldset .input-box div {
+.checkout-onepage-index #checkoutSteps fieldset .input-box div, .checkout-onepage-index #checkoutSteps form .input-box div {
   font-size: 1.25em;
 }
 /* line 39, ../scss/pages/misc/_checkout.scss */
+.checkout-onepage-index #checkoutSteps fieldset fieldset, .checkout-onepage-index #checkoutSteps form fieldset {
+  padding: 0px;
+}
+/* line 43, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index #checkoutSteps fieldset fieldset, .checkout-onepage-index #checkoutSteps #co-shipping-form {
   width: 100%;
-  padding: 0;
 }
-/* line 44, ../scss/pages/misc/_checkout.scss */
+/* line 47, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index #checkoutSteps .step-title h2, .checkout-onepage-index #checkoutSteps .step-title .product-details-container .grid2 h1, .product-details-container .grid2 .checkout-onepage-index #checkoutSteps .step-title h1 {
   background-color: black;
   color: white;
@@ -5373,58 +5435,58 @@ div.input-box:nth-child(3) {
   margin: 0px;
   font-weight: 300;
 }
-/* line 54, ../scss/pages/misc/_checkout.scss */
+/* line 57, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index #checkoutSteps li:not(:last-child) .step-title h2, .checkout-onepage-index #checkoutSteps li:not(:last-child) .step-title .product-details-container .grid2 h1, .product-details-container .grid2 .checkout-onepage-index #checkoutSteps li:not(:last-child) .step-title h1 {
   border-bottom: 1px solid white;
 }
-/* line 57, ../scss/pages/misc/_checkout.scss */
+/* line 60, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index #checkoutSteps .form-list li {
   padding: 3px 0px;
 }
-/* line 60, ../scss/pages/misc/_checkout.scss */
+/* line 63, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index #checkoutSteps .form-list li.control {
   margin: 10px 0px;
   width: 30%;
   display: inline-block;
 }
-/* line 65, ../scss/pages/misc/_checkout.scss */
+/* line 68, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index #checkoutSteps .form-list li.control input {
   margin-right: 5px;
 }
-/* line 72, ../scss/pages/misc/_checkout.scss */
+/* line 75, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index #billing\:country_id {
   display: inline-block;
   width: auto;
 }
-/* line 77, ../scss/pages/misc/_checkout.scss */
+/* line 80, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index .checkout-wrapper {
   margin-top: 20px;
 }
-/* line 80, ../scss/pages/misc/_checkout.scss */
+/* line 83, ../scss/pages/misc/_checkout.scss */
 .checkout-onepage-index .checkout-wrapper .please-wait {
   display: none;
 }
 
 @media (max-width: 625px) {
-  /* line 90, ../scss/pages/misc/_checkout.scss */
+  /* line 93, ../scss/pages/misc/_checkout.scss */
   .checkout-onepage-index #checkoutSteps {
     width: 100%;
   }
-  /* line 92, ../scss/pages/misc/_checkout.scss */
+  /* line 95, ../scss/pages/misc/_checkout.scss */
   .checkout-onepage-index #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
-  /* line 96, ../scss/pages/misc/_checkout.scss */
+  /* line 99, ../scss/pages/misc/_checkout.scss */
   .checkout-onepage-index #checkoutSteps fieldset, .checkout-onepage-index #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
-  /* line 101, ../scss/pages/misc/_checkout.scss */
+  /* line 104, ../scss/pages/misc/_checkout.scss */
   .checkout-onepage-index #billing\:country_id {
     display: block;
     width: 100%;
   }
-  /* line 106, ../scss/pages/misc/_checkout.scss */
+  /* line 109, ../scss/pages/misc/_checkout.scss */
   .checkout-onepage-index .my-account-edit .customer-name .field, .checkout-onepage-index #checkoutSteps .customer-name .field, .checkout-onepage-index #checkoutSteps .fields .field {
     display: block;
     width: 100%;
