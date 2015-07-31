@@ -70,6 +70,7 @@ header{
 	    border-color: white;
 	    background-color:transparent;
 	    border: 0px solid;
+	    will-change: transform;
 
 	    &:focus {
 		border-color: white;
