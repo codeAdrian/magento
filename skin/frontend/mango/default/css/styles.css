@@ -1797,6 +1797,208 @@ body {
     margin: 0px 2%;
   }
 }
+/* line 3, ../scss/pages/shared/_footer.scss */
+.block-related .block-title {
+  margin: 10px auto;
+}
+
+/* line 7, ../scss/pages/shared/_footer.scss */
+footer {
+  clear: both;
+}
+/* line 10, ../scss/pages/shared/_footer.scss */
+footer strong {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+/* line 15, ../scss/pages/shared/_footer.scss */
+footer .form-container {
+  margin: 0px;
+  padding: 5px 0px;
+}
+/* line 20, ../scss/pages/shared/_footer.scss */
+footer .border-container {
+  margin: 15px auto;
+  width: 98%;
+  padding: 30px 0px;
+  line-height: 1.5em;
+}
+/* line 27, ../scss/pages/shared/_footer.scss */
+footer #newsletter-validate-detail {
+  text-align: center;
+  margin: 0px auto;
+}
+/* line 31, ../scss/pages/shared/_footer.scss */
+footer #newsletter-validate-detail .block-content {
+  width: 350px;
+}
+/* line 36, ../scss/pages/shared/_footer.scss */
+footer #newsletter-validate-detail .block-content #newsletter, footer #newsletter-validate-detail .block-content .button {
+  float: right;
+  min-width: 30%;
+}
+/* line 41, ../scss/pages/shared/_footer.scss */
+footer #newsletter-validate-detail .block-content #newsletter {
+  width: 60%;
+  border: 1px solid black;
+  font-size: 1em;
+  text-align: center;
+  height: 18px;
+}
+/* line 49, ../scss/pages/shared/_footer.scss */
+footer .block-subscribe {
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 53, ../scss/pages/shared/_footer.scss */
+footer .block-subscribe #newsletter-validate-detail, footer .block-subscribe #newsletter-validate-detail .block-content {
+  width: 100%;
+}
+/* line 58, ../scss/pages/shared/_footer.scss */
+footer .subscribe-button {
+  border: 1px solid black;
+  margin: 0px;
+  background-color: black;
+  padding: 0px;
+  min-width: 100px;
+  height: 22px;
+}
+/* line 67, ../scss/pages/shared/_footer.scss */
+footer .subscribe-button span {
+  color: white;
+  font-weight: bold;
+  vertical-align: top;
+}
+/* line 74, ../scss/pages/shared/_footer.scss */
+footer #newsletter-validate-detail .block-content {
+  margin: 0px auto;
+}
+/* line 78, ../scss/pages/shared/_footer.scss */
+footer .footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* line 83, ../scss/pages/shared/_footer.scss */
+footer .grid4 {
+  vertical-align: top;
+  text-align: left;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 90, ../scss/pages/shared/_footer.scss */
+footer .grid4 .grid4-wrapper {
+  display: inline-block;
+  margin: 0px auto;
+  text-align: left;
+}
+/* line 96, ../scss/pages/shared/_footer.scss */
+footer .grid4 ul {
+  list-style: none;
+  padding: 0px;
+}
+/* line 99, ../scss/pages/shared/_footer.scss */
+footer .grid4 ul li {
+  padding: 5px 0px;
+}
+/* line 106, ../scss/pages/shared/_footer.scss */
+footer .footer .grid4 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+}
+/* line 111, ../scss/pages/shared/_footer.scss */
+footer .footer .grid4 ul li a:hover {
+  font-weight: bold;
+}
+/* line 115, ../scss/pages/shared/_footer.scss */
+footer .footer .grid4 ul li a:visited {
+  color: #969696;
+}
+
+@media (max-width: 625px) {
+  /* line 126, ../scss/pages/shared/_footer.scss */
+  footer .grid4-wrapper {
+    text-align: center;
+    width: 45%;
+    margin: 0px auto;
+    font-size: 1.25em;
+  }
+  /* line 132, ../scss/pages/shared/_footer.scss */
+  footer .grid4-wrapper div, footer .grid4-wrapper ul {
+    text-align: left;
+  }
+  /* line 137, ../scss/pages/shared/_footer.scss */
+  footer .footer-mango-icon {
+    display: inline-block;
+    font-family: mango-font-icons;
+  }
+  /* line 143, ../scss/pages/shared/_footer.scss */
+  footer .footer .border-container {
+    border: 3px solid #8A8A8A;
+    margin: 2px auto;
+  }
+  /* line 147, ../scss/pages/shared/_footer.scss */
+  footer .footer .border-container .grid2 {
+    border: 0px;
+  }
+  /* line 150, ../scss/pages/shared/_footer.scss */
+  footer .footer .border-container .grid2 #newsletter-validate-detail {
+    display: inline-block;
+  }
+  /* line 155, ../scss/pages/shared/_footer.scss */
+  footer .footer .grid4 {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0px;
+  }
+  /* line 160, ../scss/pages/shared/_footer.scss */
+  footer .footer .grid4 ul {
+    display: none;
+  }
+  /* line 162, ../scss/pages/shared/_footer.scss */
+  footer .footer .grid4 ul li {
+    padding: 8px 0px 8px 30px;
+  }
+  /* line 164, ../scss/pages/shared/_footer.scss */
+  footer .footer .grid4 ul li a:hover {
+    font-weight: normal;
+  }
+  /* line 169, ../scss/pages/shared/_footer.scss */
+  footer .footer .form-container {
+    padding: 5px 0px;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  /* line 176, ../scss/pages/shared/_footer.scss */
+  footer .block-subscribe {
+    padding: 10px 0px;
+  }
+  /* line 180, ../scss/pages/shared/_footer.scss */
+  footer #newsletter-validate-detail .block-content #newsletter {
+    padding: 5px;
+    width: 70%;
+  }
+  /* line 185, ../scss/pages/shared/_footer.scss */
+  footer .subscribe-button {
+    border: 1px solid black;
+    margin: 0px;
+    background-color: black;
+    padding: 3px;
+    min-width: 30%;
+    height: 30px !important;
+  }
+  /* line 196, ../scss/pages/shared/_footer.scss */
+  footer #newsletter_banner {
+    padding: 8px 0px;
+    font-size: 0.75em;
+  }
+  /* line 201, ../scss/pages/shared/_footer.scss */
+  footer #newsletter-validate-detail .block-content .button {
+    min-width: 25%;
+  }
+}
 /* line 2, ../scss/pages/shared/_header.scss */
 header {
   text-align: center;
@@ -2160,352 +2362,6 @@ header .top-link-cart span {
   /* line 361, ../scss/pages/shared/_header.scss */
   header .links li {
     margin-left: 0;
-  }
-}
-/* line 2, ../scss/pages/shared/_nav.scss */
-nav {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px 0px 0px;
-  will-change: transform;
-}
-/* line 10, ../scss/pages/shared/_nav.scss */
-nav ul {
-  list-style: none;
-  padding: 0px;
-}
-/* line 14, ../scss/pages/shared/_nav.scss */
-nav ul li {
-  display: inline-block;
-  margin-right: 40px;
-}
-/* line 18, ../scss/pages/shared/_nav.scss */
-nav ul li.last {
-  margin-right: 0px;
-}
-/* line 22, ../scss/pages/shared/_nav.scss */
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-/* line 29, ../scss/pages/shared/_nav.scss */
-nav ul li > a:hover:not(:last-child) {
-  border-bottom: 1px solid #b4b4b4;
-}
-
-/* line 36, ../scss/pages/shared/_nav.scss */
-.mobile-opened-closed {
-  display: none;
-}
-
-/* line 41, ../scss/pages/shared/_nav.scss */
-.level0 > a span:hover {
-  border-bottom: 2px solid #646060;
-}
-
-/* DROPDOWN MENU */
-/* line 48, ../scss/pages/shared/_nav.scss */
-nav ul li ul {
-  display: none;
-  position: absolute;
-  padding: 0px;
-  z-index: 200;
-}
-/* line 55, ../scss/pages/shared/_nav.scss */
-nav ul li ul > li:hover {
-  background-color: #e4e3e3;
-  border: 0px;
-  z-index: 200;
-}
-/* line 61, ../scss/pages/shared/_nav.scss */
-nav ul li ul li > a {
-  border: 0px;
-  z-index: 200;
-}
-/* line 66, ../scss/pages/shared/_nav.scss */
-nav ul li ul li {
-  width: 120px;
-  float: none;
-  display: list-item;
-  position: relative;
-  text-align: left;
-  background-color: white;
-  padding: 10px 0px;
-  z-index: 200;
-}
-/* line 76, ../scss/pages/shared/_nav.scss */
-nav ul li ul li a {
-  padding: 15px 10px;
-  text-transform: initial;
-}
-
-/* line 83, ../scss/pages/shared/_nav.scss */
-.dropdown {
-  display: block;
-  z-index: 200;
-}
-
-/* DROPDOWN END*/
-/* NAV FIXED */
-/* line 93, ../scss/pages/shared/_nav.scss */
-.nav-fixed {
-  top: 0;
-  z-index: 100;
-  position: fixed;
-  margin: 0 auto;
-  background-color: white;
-  padding-top: 10px;
-  height: 45px;
-  max-width: 1280px;
-  width: 100%;
-  text-align: center;
-}
-/* line 106, ../scss/pages/shared/_nav.scss */
-.nav-fixed .logo_column {
-  display: none;
-}
-/* line 110, ../scss/pages/shared/_nav.scss */
-.nav-fixed nav {
-  top: 0;
-  z-index: 100;
-  position: fixed;
-  margin: 0 auto;
-  padding-top: 20px;
-  max-width: 1280px;
-  width: 100%;
-  right: 0;
-  left: 0;
-  width: 50%;
-}
-
-@media (max-width: 900px) {
-  /* line 130, ../scss/pages/shared/_nav.scss */
-  .nav-element-opened {
-    display: block;
-    width: 100%;
-    border-bottom: 1px solid #B4B4B4;
-    padding: 7px 0px 10px 0px;
-  }
-  /* line 136, ../scss/pages/shared/_nav.scss */
-  .nav-element-opened:hover {
-    border-bottom: 1px solid #B4B4B4;
-  }
-
-  /* line 142, ../scss/pages/shared/_nav.scss */
-  nav ul li .has-children:hover {
-    border: 0 !important;
-  }
-
-  /* line 145, ../scss/pages/shared/_nav.scss */
-  nav ul li ul li {
-    font-size: 0.75em;
-    width: 100%;
-    font-weight: normal;
-  }
-  /* line 150, ../scss/pages/shared/_nav.scss */
-  nav ul li ul li:hover {
-    background-color: white;
-    border: 0;
-  }
-
-  /* line 156, ../scss/pages/shared/_nav.scss */
-  nav .navTitle, nav .navClose {
-    border: 0;
-    display: inline-block;
-    width: 40%;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    font-weight: 300;
-  }
-
-  /* line 165, ../scss/pages/shared/_nav.scss */
-  nav .navClose {
-    text-align: right;
-  }
-  /* line 169, ../scss/pages/shared/_nav.scss */
-  nav .navClose span {
-    background-color: black;
-    color: white;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0.1em 0em;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 0.5em;
-    max-width: 1.5em;
-    width: 1.25em;
-  }
-  /* line 181, ../scss/pages/shared/_nav.scss */
-  nav .navClose span:hover {
-    cursor: pointer;
-  }
-
-  /* line 187, ../scss/pages/shared/_nav.scss */
-  nav {
-    display: none;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    padding: 0px;
-    z-index: 999;
-  }
-  /* line 198, ../scss/pages/shared/_nav.scss */
-  nav ul {
-    background-color: white;
-    width: 40%;
-    height: 100%;
-    opacity: 1.0;
-    margin: 0px;
-  }
-  /* line 205, ../scss/pages/shared/_nav.scss */
-  nav ul li {
-    display: block;
-  }
-  /* line 208, ../scss/pages/shared/_nav.scss */
-  nav ul li a {
-    font-weight: 400;
-    font-size: 0.75em;
-  }
-  /* line 213, ../scss/pages/shared/_nav.scss */
-  nav ul li ul {
-    position: relative;
-    width: 93%;
-    text-align: left;
-  }
-  /* line 218, ../scss/pages/shared/_nav.scss */
-  nav ul li ul li {
-    margin-left: 15px;
-  }
-  /* line 223, ../scss/pages/shared/_nav.scss */
-  nav ul li.last {
-    margin: 0px auto;
-  }
-
-  /* line 230, ../scss/pages/shared/_nav.scss */
-  nav ul li {
-    padding: 10px 0px;
-    border-bottom: 1px solid #b4b4b4;
-    width: 90%;
-    font-weight: bold;
-    text-align: left;
-    font-size: 1.5em;
-    margin: 0px auto;
-  }
-  /* line 239, ../scss/pages/shared/_nav.scss */
-  nav ul li ul li:last-child {
-    border: 0 !important;
-  }
-  /* line 242, ../scss/pages/shared/_nav.scss */
-  nav ul li ul li:last-child:hover {
-    border: 0 !important;
-  }
-  /* line 246, ../scss/pages/shared/_nav.scss */
-  nav ul li ul li:not(:last-child) {
-    border-bottom: 1px solid #B4B4B4;
-  }
-  /* line 248, ../scss/pages/shared/_nav.scss */
-  nav ul li ul li:not(:last-child):hover {
-    border-bottom: 1px solid #B4B4B4;
-  }
-
-  /* line 254, ../scss/pages/shared/_nav.scss */
-  header nav ul li.mobileOnlyAddition a {
-    margin-left: 25px;
-  }
-
-  /* line 258, ../scss/pages/shared/_nav.scss */
-  .level0 > a span:hover {
-    border-bottom: 0;
-  }
-
-  /* line 262, ../scss/pages/shared/_nav.scss */
-  .nav-fixed {
-    padding-top: 10px;
-    top: 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    height: 50px;
-  }
-  /* line 272, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .header_wrapper .search_column {
-    position: fixed;
-    margin-right: 3.44828%;
-    text-align: center;
-    margin: 0px auto;
-    right: 0;
-    left: 0;
-    width: 50%;
-  }
-  /* line 281, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .header_wrapper .search_column #search_mini_form {
-    margin: 0px auto;
-  }
-  /* line 285, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .header_wrapper .search_column .search-wrapper {
-    width: 100%;
-  }
-  /* line 290, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .form-search-mini {
-    display: block;
-  }
-  /* line 294, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .searchMiniIcon {
-    display: none;
-  }
-  /* line 298, ../scss/pages/shared/_nav.scss */
-  .nav-fixed nav {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-  }
-}
-@media (max-width: 625px) {
-  /* line 308, ../scss/pages/shared/_nav.scss */
-  nav ul {
-    width: 80%;
-  }
-
-  /* line 312, ../scss/pages/shared/_nav.scss */
-  .header_wrapper .search_column .form-search-mini {
-    display: none;
-  }
-
-  /* line 316, ../scss/pages/shared/_nav.scss */
-  .header_wrapper .searchMiniIcon {
-    display: block;
-  }
-
-  /* line 321, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .header_wrapper {
-    background-color: white;
-    padding-top: 5px;
-  }
-  /* line 326, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .search_column .form-search-mini {
-    display: none;
-  }
-  /* line 330, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .searchMiniIcon {
-    display: block;
-  }
-  /* line 334, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .smartphoneLogo {
-    display: none;
-  }
-  /* line 338, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .search_column {
-    width: auto !important;
-    position: initial !important;
   }
 }
 /* line 3, ../scss/pages/shared/_mini-menus.scss */
@@ -2875,6 +2731,352 @@ a.f-left {
     padding: 5px 0px;
   }
 }
+/* line 2, ../scss/pages/shared/_nav.scss */
+nav {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0px 0px;
+  will-change: transform;
+}
+/* line 10, ../scss/pages/shared/_nav.scss */
+nav ul {
+  list-style: none;
+  padding: 0px;
+}
+/* line 14, ../scss/pages/shared/_nav.scss */
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* line 18, ../scss/pages/shared/_nav.scss */
+nav ul li.last {
+  margin-right: 0px;
+}
+/* line 22, ../scss/pages/shared/_nav.scss */
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+/* line 29, ../scss/pages/shared/_nav.scss */
+nav ul li > a:hover:not(:last-child) {
+  border-bottom: 1px solid #b4b4b4;
+}
+
+/* line 36, ../scss/pages/shared/_nav.scss */
+.mobile-opened-closed {
+  display: none;
+}
+
+/* line 41, ../scss/pages/shared/_nav.scss */
+.level0 > a span:hover {
+  border-bottom: 2px solid #646060;
+}
+
+/* DROPDOWN MENU */
+/* line 48, ../scss/pages/shared/_nav.scss */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  padding: 0px;
+  z-index: 200;
+}
+/* line 55, ../scss/pages/shared/_nav.scss */
+nav ul li ul > li:hover {
+  background-color: #e4e3e3;
+  border: 0px;
+  z-index: 200;
+}
+/* line 61, ../scss/pages/shared/_nav.scss */
+nav ul li ul li > a {
+  border: 0px;
+  z-index: 200;
+}
+/* line 66, ../scss/pages/shared/_nav.scss */
+nav ul li ul li {
+  width: 120px;
+  float: none;
+  display: list-item;
+  position: relative;
+  text-align: left;
+  background-color: white;
+  padding: 10px 0px;
+  z-index: 200;
+}
+/* line 76, ../scss/pages/shared/_nav.scss */
+nav ul li ul li a {
+  padding: 15px 10px;
+  text-transform: initial;
+}
+
+/* line 83, ../scss/pages/shared/_nav.scss */
+.dropdown {
+  display: block;
+  z-index: 200;
+}
+
+/* DROPDOWN END*/
+/* NAV FIXED */
+/* line 93, ../scss/pages/shared/_nav.scss */
+.nav-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  margin: 0 auto;
+  background-color: white;
+  padding-top: 10px;
+  height: 45px;
+  max-width: 1280px;
+  width: 100%;
+  text-align: center;
+}
+/* line 106, ../scss/pages/shared/_nav.scss */
+.nav-fixed .logo_column {
+  display: none;
+}
+/* line 110, ../scss/pages/shared/_nav.scss */
+.nav-fixed nav {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 1280px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  /* line 130, ../scss/pages/shared/_nav.scss */
+  .nav-element-opened {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #B4B4B4;
+    padding: 7px 0px 10px 0px;
+  }
+  /* line 136, ../scss/pages/shared/_nav.scss */
+  .nav-element-opened:hover {
+    border-bottom: 1px solid #B4B4B4;
+  }
+
+  /* line 142, ../scss/pages/shared/_nav.scss */
+  nav ul li .has-children:hover {
+    border: 0 !important;
+  }
+
+  /* line 145, ../scss/pages/shared/_nav.scss */
+  nav ul li ul li {
+    font-size: 0.75em;
+    width: 100%;
+    font-weight: normal;
+  }
+  /* line 150, ../scss/pages/shared/_nav.scss */
+  nav ul li ul li:hover {
+    background-color: white;
+    border: 0;
+  }
+
+  /* line 156, ../scss/pages/shared/_nav.scss */
+  nav .navTitle, nav .navClose {
+    border: 0;
+    display: inline-block;
+    width: 40%;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  /* line 165, ../scss/pages/shared/_nav.scss */
+  nav .navClose {
+    text-align: right;
+  }
+  /* line 169, ../scss/pages/shared/_nav.scss */
+  nav .navClose span {
+    background-color: black;
+    color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0.1em 0em;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.5em;
+    max-width: 1.5em;
+    width: 1.25em;
+  }
+  /* line 181, ../scss/pages/shared/_nav.scss */
+  nav .navClose span:hover {
+    cursor: pointer;
+  }
+
+  /* line 187, ../scss/pages/shared/_nav.scss */
+  nav {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 0px;
+    z-index: 999;
+  }
+  /* line 198, ../scss/pages/shared/_nav.scss */
+  nav ul {
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    opacity: 1.0;
+    margin: 0px;
+  }
+  /* line 205, ../scss/pages/shared/_nav.scss */
+  nav ul li {
+    display: block;
+  }
+  /* line 208, ../scss/pages/shared/_nav.scss */
+  nav ul li a {
+    font-weight: 400;
+    font-size: 0.75em;
+  }
+  /* line 213, ../scss/pages/shared/_nav.scss */
+  nav ul li ul {
+    position: relative;
+    width: 93%;
+    text-align: left;
+  }
+  /* line 218, ../scss/pages/shared/_nav.scss */
+  nav ul li ul li {
+    margin-left: 15px;
+  }
+  /* line 223, ../scss/pages/shared/_nav.scss */
+  nav ul li.last {
+    margin: 0px auto;
+  }
+
+  /* line 230, ../scss/pages/shared/_nav.scss */
+  nav ul li {
+    padding: 10px 0px;
+    border-bottom: 1px solid #b4b4b4;
+    width: 90%;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0px auto;
+  }
+  /* line 239, ../scss/pages/shared/_nav.scss */
+  nav ul li ul li:last-child {
+    border: 0 !important;
+  }
+  /* line 242, ../scss/pages/shared/_nav.scss */
+  nav ul li ul li:last-child:hover {
+    border: 0 !important;
+  }
+  /* line 246, ../scss/pages/shared/_nav.scss */
+  nav ul li ul li:not(:last-child) {
+    border-bottom: 1px solid #B4B4B4;
+  }
+  /* line 248, ../scss/pages/shared/_nav.scss */
+  nav ul li ul li:not(:last-child):hover {
+    border-bottom: 1px solid #B4B4B4;
+  }
+
+  /* line 254, ../scss/pages/shared/_nav.scss */
+  header nav ul li.mobileOnlyAddition a {
+    margin-left: 25px;
+  }
+
+  /* line 258, ../scss/pages/shared/_nav.scss */
+  .level0 > a span:hover {
+    border-bottom: 0;
+  }
+
+  /* line 262, ../scss/pages/shared/_nav.scss */
+  .nav-fixed {
+    padding-top: 10px;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+  }
+  /* line 272, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .header_wrapper .search_column {
+    position: fixed;
+    margin-right: 3.44828%;
+    text-align: center;
+    margin: 0px auto;
+    right: 0;
+    left: 0;
+    width: 50%;
+  }
+  /* line 281, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .header_wrapper .search_column #search_mini_form {
+    margin: 0px auto;
+  }
+  /* line 285, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .header_wrapper .search_column .search-wrapper {
+    width: 100%;
+  }
+  /* line 290, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .form-search-mini {
+    display: block;
+  }
+  /* line 294, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .searchMiniIcon {
+    display: none;
+  }
+  /* line 298, ../scss/pages/shared/_nav.scss */
+  .nav-fixed nav {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 625px) {
+  /* line 308, ../scss/pages/shared/_nav.scss */
+  nav ul {
+    width: 80%;
+  }
+
+  /* line 312, ../scss/pages/shared/_nav.scss */
+  .header_wrapper .search_column .form-search-mini {
+    display: none;
+  }
+
+  /* line 316, ../scss/pages/shared/_nav.scss */
+  .header_wrapper .searchMiniIcon {
+    display: block;
+  }
+
+  /* line 321, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .header_wrapper {
+    background-color: white;
+    padding-top: 5px;
+  }
+  /* line 326, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .search_column .form-search-mini {
+    display: none;
+  }
+  /* line 330, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .searchMiniIcon {
+    display: block;
+  }
+  /* line 334, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .smartphoneLogo {
+    display: none;
+  }
+  /* line 338, ../scss/pages/shared/_nav.scss */
+  .nav-fixed .search_column {
+    width: auto !important;
+    position: initial !important;
+  }
+}
 /* line 3, ../scss/pages/homepage/_homepage.scss */
 .border-container {
   padding: 10px 0px;
@@ -2934,208 +3136,6 @@ a.f-left {
   #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
-  }
-}
-/* line 3, ../scss/pages/shared/_footer.scss */
-.block-related .block-title {
-  margin: 10px auto;
-}
-
-/* line 7, ../scss/pages/shared/_footer.scss */
-footer {
-  clear: both;
-}
-/* line 10, ../scss/pages/shared/_footer.scss */
-footer strong {
-  font-weight: bold;
-  padding-bottom: 5px;
-}
-/* line 15, ../scss/pages/shared/_footer.scss */
-footer .form-container {
-  margin: 0px;
-  padding: 5px 0px;
-}
-/* line 20, ../scss/pages/shared/_footer.scss */
-footer .border-container {
-  margin: 15px auto;
-  width: 98%;
-  padding: 30px 0px;
-  line-height: 1.5em;
-}
-/* line 27, ../scss/pages/shared/_footer.scss */
-footer #newsletter-validate-detail {
-  text-align: center;
-  margin: 0px auto;
-}
-/* line 31, ../scss/pages/shared/_footer.scss */
-footer #newsletter-validate-detail .block-content {
-  width: 350px;
-}
-/* line 36, ../scss/pages/shared/_footer.scss */
-footer #newsletter-validate-detail .block-content #newsletter, footer #newsletter-validate-detail .block-content .button {
-  float: right;
-  min-width: 30%;
-}
-/* line 41, ../scss/pages/shared/_footer.scss */
-footer #newsletter-validate-detail .block-content #newsletter {
-  width: 60%;
-  border: 1px solid black;
-  font-size: 1em;
-  text-align: center;
-  height: 18px;
-}
-/* line 49, ../scss/pages/shared/_footer.scss */
-footer .block-subscribe {
-  width: 90%;
-  display: inline-block;
-  vertical-align: middle;
-}
-/* line 53, ../scss/pages/shared/_footer.scss */
-footer .block-subscribe #newsletter-validate-detail, footer .block-subscribe #newsletter-validate-detail .block-content {
-  width: 100%;
-}
-/* line 58, ../scss/pages/shared/_footer.scss */
-footer .subscribe-button {
-  border: 1px solid black;
-  margin: 0px;
-  background-color: black;
-  padding: 0px;
-  min-width: 100px;
-  height: 22px;
-}
-/* line 67, ../scss/pages/shared/_footer.scss */
-footer .subscribe-button span {
-  color: white;
-  font-weight: bold;
-  vertical-align: top;
-}
-/* line 74, ../scss/pages/shared/_footer.scss */
-footer #newsletter-validate-detail .block-content {
-  margin: 0px auto;
-}
-/* line 78, ../scss/pages/shared/_footer.scss */
-footer .footer {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-/* line 83, ../scss/pages/shared/_footer.scss */
-footer .grid4 {
-  vertical-align: top;
-  text-align: left;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-/* line 90, ../scss/pages/shared/_footer.scss */
-footer .grid4 .grid4-wrapper {
-  display: inline-block;
-  margin: 0px auto;
-  text-align: left;
-}
-/* line 96, ../scss/pages/shared/_footer.scss */
-footer .grid4 ul {
-  list-style: none;
-  padding: 0px;
-}
-/* line 99, ../scss/pages/shared/_footer.scss */
-footer .grid4 ul li {
-  padding: 5px 0px;
-}
-/* line 106, ../scss/pages/shared/_footer.scss */
-footer .footer .grid4 ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 0.9em;
-}
-/* line 111, ../scss/pages/shared/_footer.scss */
-footer .footer .grid4 ul li a:hover {
-  font-weight: bold;
-}
-/* line 115, ../scss/pages/shared/_footer.scss */
-footer .footer .grid4 ul li a:visited {
-  color: #969696;
-}
-
-@media (max-width: 625px) {
-  /* line 126, ../scss/pages/shared/_footer.scss */
-  footer .grid4-wrapper {
-    text-align: center;
-    width: 45%;
-    margin: 0px auto;
-    font-size: 1.25em;
-  }
-  /* line 132, ../scss/pages/shared/_footer.scss */
-  footer .grid4-wrapper div, footer .grid4-wrapper ul {
-    text-align: left;
-  }
-  /* line 137, ../scss/pages/shared/_footer.scss */
-  footer .footer-mango-icon {
-    display: inline-block;
-    font-family: mango-font-icons;
-  }
-  /* line 143, ../scss/pages/shared/_footer.scss */
-  footer .footer .border-container {
-    border: 3px solid #8A8A8A;
-    margin: 2px auto;
-  }
-  /* line 147, ../scss/pages/shared/_footer.scss */
-  footer .footer .border-container .grid2 {
-    border: 0px;
-  }
-  /* line 150, ../scss/pages/shared/_footer.scss */
-  footer .footer .border-container .grid2 #newsletter-validate-detail {
-    display: inline-block;
-  }
-  /* line 155, ../scss/pages/shared/_footer.scss */
-  footer .footer .grid4 {
-    width: 100%;
-    display: inline-block;
-    margin: 10px 0px;
-  }
-  /* line 160, ../scss/pages/shared/_footer.scss */
-  footer .footer .grid4 ul {
-    display: none;
-  }
-  /* line 162, ../scss/pages/shared/_footer.scss */
-  footer .footer .grid4 ul li {
-    padding: 8px 0px 8px 30px;
-  }
-  /* line 164, ../scss/pages/shared/_footer.scss */
-  footer .footer .grid4 ul li a:hover {
-    font-weight: normal;
-  }
-  /* line 169, ../scss/pages/shared/_footer.scss */
-  footer .footer .form-container {
-    padding: 5px 0px;
-    width: 95%;
-    margin-bottom: 10px;
-  }
-  /* line 176, ../scss/pages/shared/_footer.scss */
-  footer .block-subscribe {
-    padding: 10px 0px;
-  }
-  /* line 180, ../scss/pages/shared/_footer.scss */
-  footer #newsletter-validate-detail .block-content #newsletter {
-    padding: 5px;
-    width: 70%;
-  }
-  /* line 185, ../scss/pages/shared/_footer.scss */
-  footer .subscribe-button {
-    border: 1px solid black;
-    margin: 0px;
-    background-color: black;
-    padding: 3px;
-    min-width: 30%;
-    height: 30px !important;
-  }
-  /* line 196, ../scss/pages/shared/_footer.scss */
-  footer #newsletter_banner {
-    padding: 8px 0px;
-    font-size: 0.75em;
-  }
-  /* line 201, ../scss/pages/shared/_footer.scss */
-  footer #newsletter-validate-detail .block-content .button {
-    min-width: 25%;
   }
 }
 /* line 1, ../scss/pages/category/_color-swatches.scss */
