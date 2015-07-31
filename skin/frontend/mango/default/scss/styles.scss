@@ -28,11 +28,8 @@
 @import "layout/page";
 
 // PAGE IMPORTS //
-@import "pages/shared/header";
-@import "pages/shared/nav";
-@import "pages/shared/mini-menus";
+@import "pages/shared/shared";
 @import "pages/homepage/homepage";
-@import "pages/shared/footer";
 @import "pages/category/category";
 @import "pages/product/product";
 @import "pages/cart/cart";
