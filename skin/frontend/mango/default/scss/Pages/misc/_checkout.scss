@@ -1,0 +1,96 @@
+// ----- CHECKOUT- DESKTOP ----- 
+
+#checkoutSteps{
+	border:1px solid #b4b4b4;
+	width:75%;
+	margin:10px auto;
+}
+
+	#billing\:country_id{
+		display: block;
+		width: 100%;
+	}
+
+#checkoutSteps fieldset{
+	border: 0;
+	padding:0px 20px;
+}
+
+#checkoutSteps fieldset fieldset, #checkoutSteps #co-shipping-form{
+	width:95%;
+	margin: 20px auto;
+}
+#checkoutSteps .step-title h2{
+background-color: black;
+color:white;
+text-transform: uppercase;
+font-size: 1em;
+padding:5px 20px;
+margin:0px;
+font-weight: 300;
+}
+
+#checkoutSteps li:not(:last-child) .step-title h2{
+border-bottom:1px solid white;
+}
+
+.checkout-wrapper .please-wait{
+	display: none;
+}
+
+#checkoutSteps .form-list li{
+	padding:3px 0px;
+}
+
+#checkoutSteps fieldset .input-box div{
+	font-size: 1.25em;
+}
+
+#checkoutSteps #billing-address-select, #checkoutSteps #shipping-address-select{
+	width:80%;
+}
+
+.red-continue-button{
+	margin:0px auto;
+	border:0;
+	background-color:#ad0202;
+	text-align: center;
+}
+.red-continue-button span span{
+	color:white;
+	text-align: center;
+	text-decoration: none;
+}
+
+// ----- CHECKOUT - MOBILE -----
+@include breakpoint($smartphone-breakpoint){
+	.red-continue-button{
+	width: 100%;
+	font-size: 1em;
+	padding: 5px 0px;
+	margin:5px 2px;
+	}
+
+	#checkoutSteps li #billing-buttons-container{
+		margin:10px 0px;
+	}
+
+	#checkoutSteps{
+		width:100%;
+	}
+	#billing\:country_id{
+		display: block;
+		width: 100%;
+	}
+
+	#checkoutSteps fieldset, #checkoutSteps fieldset fieldset{
+		margin:0px;
+		padding:10px;
+	}
+
+
+	.my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field{
+		display: block;
+		width:100%;
+	}
+}

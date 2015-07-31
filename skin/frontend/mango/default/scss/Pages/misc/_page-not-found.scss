@@ -1,0 +1,55 @@
+// ------ PAGE NOT FOUND - DESKTOP ----- 
+
+.cms-no-route{
+	.page-not-found-wrapper{
+		width:80%;
+		margin:20px auto;
+		padding:10px;
+
+		a{
+			color:black;
+
+			&:hover{
+				font-weight: bold;	
+			}
+		}
+
+		.products-grid .item{
+			width:30%;
+			display:inline-block;
+			text-align: center;
+			margin:10px auto;
+		}
+	}
+
+	.page-not-found-header{
+		background-color: black;
+		color:white;
+		text-align: center;
+		padding:10px;
+		margin:0;
+		text-transform: uppercase;
+	}
+
+	.widget-new-products{
+		border:1px solid #b4b4b4;
+		margin:0px auto 20px auto !important;
+		ul{
+			text-align: center;
+		}
+	}
+}
+
+
+
+
+// ----- PAGE NOT FOUND - TABLET -----
+@include breakpoint($tablet-breakpoint){
+	.cms-no-route{
+		.page-not-found-wrapper .products-grid .item{
+		width:100%;
+		display: block;
+		margin:30px 0px;
+		}
+	}
+}
