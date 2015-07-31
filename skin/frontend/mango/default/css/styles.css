@@ -765,6 +765,63 @@ img {
     width: 30%;
   }
 }
+/* line 220, ../scss/_components.scss */
+#advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
+#advice-required-entry-email_address, #advice-required-entry-password,
+#advice-required-entry-confirmation, #advice-validate-password-password,
+#advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
+#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password,
+.my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
+#advice-required-entry-telephone {
+  width: auto;
+  margin: 0px;
+  display: inline-block;
+  padding-left: 1px;
+  height: 20px;
+  font-size: 3em;
+  color: #a51313;
+  font-weight: 600;
+}
+
+/* line 237, ../scss/_components.scss */
+#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
+#advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
+#advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
+#advice-required-entry-billing\:postcode, #advice-validate-select-billing\:country_id,
+#advice-required-entry-shipping\:telephone, #advice-required-entry-shipping\:firstname,
+#advice-required-entry-shipping\:lastname, #advice-required-entry-shipping\:street1, #advice-required-entry-shipping\:city,
+#advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id {
+  width: 4%;
+  margin: 0px;
+  display: inline-block;
+  padding-left: 3px;
+  font-size: 2em;
+  color: #a51313;
+  font-weight: 600;
+}
+
+/* line 253, ../scss/_components.scss */
+input.validation-failed select.validation-failed, .validation-failed {
+  border: 2px solid #a51313 !important;
+}
+
+@media (max-width: 625px) {
+  /* line 260, ../scss/_components.scss */
+  #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
+  #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
+  #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
+  #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password,
+  .my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
+  #advice-required-entry-telephone, #advice-required-entry-coupon_code, #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
+  #advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
+  #advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
+  #advice-required-entry-billing\:postcode, #advice-validate-select-billing\:country_id,
+  #advice-required-entry-shipping\:telephone, #advice-required-entry-shipping\:firstname,
+  #advice-required-entry-shipping\:lastname, #advice-required-entry-shipping\:street1, #advice-required-entry-shipping\:city,
+  #advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id {
+    display: none;
+  }
+}
 /* line 6, ../scss/layout/_susy-header.scss */
 .header_wrapper {
   max-width: 100%;
@@ -1803,72 +1860,30 @@ body {
 }
 
 /* CHECKOUT END */
-/* REGISTRATION INPUT VALIDATION FAILED */
-/* line 165, ../scss/_base.scss */
-#advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
-#advice-required-entry-email_address, #advice-required-entry-password,
-#advice-required-entry-confirmation, #advice-validate-password-password,
-#advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
-#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password,
-.my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
-#advice-required-entry-telephone {
-  width: auto;
-  margin: 0px;
-  display: inline-block;
-  padding-left: 1px;
-  height: 20px;
-  font-size: 3em;
-  color: #a51313;
-  font-weight: 600;
-}
-
-/* line 182, ../scss/_base.scss */
-#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
-#advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
-#advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
-#advice-required-entry-billing\:postcode, #advice-validate-select-billing\:country_id,
-#advice-required-entry-shipping\:telephone, #advice-required-entry-shipping\:firstname,
-#advice-required-entry-shipping\:lastname, #advice-required-entry-shipping\:street1, #advice-required-entry-shipping\:city,
-#advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id {
-  width: 4%;
-  margin: 0px;
-  display: inline-block;
-  padding-left: 3px;
-  font-size: 2em;
-  color: #a51313;
-  font-weight: 600;
-}
-
-/* line 198, ../scss/_base.scss */
-input.validation-failed select.validation-failed, .validation-failed {
-  border: 2px solid #a51313 !important;
-}
-
-/* VALIDATION FAILED END */
 /* RESPONSIVE DESIGN IPAD */
 @media (max-width: 900px) {
-  /* line 208, ../scss/_base.scss */
+  /* line 170, ../scss/_base.scss */
   li.level0 a:hover {
     cursor: pointer;
   }
 
-  /* line 212, ../scss/_base.scss */
+  /* line 174, ../scss/_base.scss */
   .mobileOnly {
     display: block;
   }
 
-  /* line 216, ../scss/_base.scss */
+  /* line 178, ../scss/_base.scss */
   .main-container {
     margin: 0px 1%;
   }
 
-  /* line 220, ../scss/_base.scss */
+  /* line 182, ../scss/_base.scss */
   .main-container {
     margin-top: 20px;
   }
 
   /* PAGE NOT FOUND */
-  /* line 226, ../scss/_base.scss */
+  /* line 188, ../scss/_base.scss */
   .page-not-found-wrapper .products-grid .item {
     width: 100%;
     display: block;
@@ -1878,22 +1893,22 @@ input.validation-failed select.validation-failed, .validation-failed {
 /* RESPONSIVE DESIGN IPAD END */
 /* RESPONSIVE DESIGN MOBILE */
 @media (max-width: 625px) {
-  /* line 239, ../scss/_base.scss */
+  /* line 201, ../scss/_base.scss */
   .main-container {
     margin: 0px 2%;
   }
 
-  /* line 243, ../scss/_base.scss */
+  /* line 205, ../scss/_base.scss */
   .block-subscribe {
     padding: 10px 0px;
   }
 
-  /* line 247, ../scss/_base.scss */
+  /* line 209, ../scss/_base.scss */
   #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
   }
 
-  /* line 251, ../scss/_base.scss */
+  /* line 213, ../scss/_base.scss */
   .subscribe-button {
     border: 1px solid black;
     margin: 0px;
@@ -1903,38 +1918,38 @@ input.validation-failed select.validation-failed, .validation-failed {
     height: 30px;
   }
 
-  /* line 261, ../scss/_base.scss */
+  /* line 223, ../scss/_base.scss */
   #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
 
-  /* line 266, ../scss/_base.scss */
+  /* line 228, ../scss/_base.scss */
   .smartphoneOnly {
     display: block;
   }
 
-  /* line 270, ../scss/_base.scss */
+  /* line 232, ../scss/_base.scss */
   .inlineSmartphoneOnly {
     display: inline-block;
   }
 
-  /* line 274, ../scss/_base.scss */
+  /* line 236, ../scss/_base.scss */
   .desktopOnly {
     display: none;
   }
 
-  /* line 278, ../scss/_base.scss */
+  /* line 240, ../scss/_base.scss */
   .desktopTabletOnly {
     display: none;
   }
 
-  /* line 282, ../scss/_base.scss */
+  /* line 244, ../scss/_base.scss */
   .forgot-pass-wrapper .page-title h1 {
     text-align: center;
   }
 
-  /* line 286, ../scss/_base.scss */
+  /* line 248, ../scss/_base.scss */
   .forgot-pass-wrapper {
     width: 90%;
     padding: 20px;
@@ -1942,24 +1957,8 @@ input.validation-failed select.validation-failed, .validation-failed {
 
   /* MY ACCOUNT */
   /* ADD NEW ADDRESS */
-  /* line 295, ../scss/_base.scss */
-  #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
-  #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
-  #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
-  #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password,
-  .my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
-  #advice-required-entry-telephone, #advice-required-entry-coupon_code, #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
-  #advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
-  #advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
-  #advice-required-entry-billing\:postcode, #advice-validate-select-billing\:country_id,
-  #advice-required-entry-shipping\:telephone, #advice-required-entry-shipping\:firstname,
-  #advice-required-entry-shipping\:lastname, #advice-required-entry-shipping\:street1, #advice-required-entry-shipping\:city,
-  #advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id {
-    display: none;
-  }
-
   /* CHECKOUT */
-  /* line 311, ../scss/_base.scss */
+  /* line 259, ../scss/_base.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -1967,29 +1966,29 @@ input.validation-failed select.validation-failed, .validation-failed {
     margin: 5px 2px;
   }
 
-  /* line 318, ../scss/_base.scss */
+  /* line 266, ../scss/_base.scss */
   #checkoutSteps li #billing-buttons-container {
     margin: 10px 0px;
   }
 
-  /* line 322, ../scss/_base.scss */
+  /* line 270, ../scss/_base.scss */
   #checkoutSteps {
     width: 100%;
   }
 
-  /* line 325, ../scss/_base.scss */
+  /* line 273, ../scss/_base.scss */
   #billing\:country_id {
     display: block;
     width: 100%;
   }
 
-  /* line 330, ../scss/_base.scss */
+  /* line 278, ../scss/_base.scss */
   #checkoutSteps fieldset, #checkoutSteps fieldset fieldset {
     margin: 0px;
     padding: 10px;
   }
 
-  /* line 336, ../scss/_base.scss */
+  /* line 284, ../scss/_base.scss */
   .my-account-edit .customer-name .field, #checkoutSteps .customer-name .field, #checkoutSteps .fields .field {
     display: block;
     width: 100%;
@@ -5231,10 +5230,9 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
 .account-create .input-box #is_subscribed, .account-create label, .account-create .buttons-set, .account-login-page .input-box #is_subscribed, .account-login-page label, .account-login-page .buttons-set, .forgot-pass-wrapper .input-box #is_subscribed, .forgot-pass-wrapper label, .forgot-pass-wrapper .buttons-set {
   margin: 10px 0px;
 }
-
-/* line 23, ../scss/pages/account-management/_login-register.scss */
-.forgot-pass-wrapper .buttons-set {
-  text-align: center;
+/* line 22, ../scss/pages/account-management/_login-register.scss */
+.account-create .input-box div.validation-advice, .account-login-page .input-box div.validation-advice, .forgot-pass-wrapper .input-box div.validation-advice {
+  font-size: 1.5em !important;
 }
 
 /* line 27, ../scss/pages/account-management/_login-register.scss */
@@ -5255,8 +5253,7 @@ ul.form-list:nth-child(3) > li:nth-child(3) > div:nth-child(2) input {
   border: 2px solid #B5B5B5;
   padding: 4px;
 }
-
-/* line 43, ../scss/pages/account-management/_login-register.scss */
+/* line 42, ../scss/pages/account-management/_login-register.scss */
 .account-login-page input:focus {
   border: 2px solid #E9E8E8;
   padding: 4px;
@@ -5283,83 +5280,80 @@ div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li
   border: 2px solid #b5b5b5;
   padding: 5px;
 }
-
-/* line 66, ../scss/pages/account-management/_login-register.scss */
-.forgot-pass {
-  text-align: center;
-}
-
-/* line 70, ../scss/pages/account-management/_login-register.scss */
-.account-login-page a.f-left {
-  text-align: center;
-}
-
-/* line 74, ../scss/pages/account-management/_login-register.scss */
-.account-login-page a.f-left:hover {
-  font-weight: bold;
-}
-
-/* line 78, ../scss/pages/account-management/_login-register.scss */
+/* line 65, ../scss/pages/account-management/_login-register.scss */
 #form-validate input:focus {
   border: 2px solid #e9e8e8;
 }
 
-/* line 83, ../scss/pages/account-management/_login-register.scss */
+/* line 70, ../scss/pages/account-management/_login-register.scss */
+.forgot-pass {
+  text-align: center;
+}
+
+/* line 74, ../scss/pages/account-management/_login-register.scss */
+.account-login-page a.f-left {
+  text-align: center;
+}
+/* line 77, ../scss/pages/account-management/_login-register.scss */
+.account-login-page a.f-left:hover {
+  font-weight: bold;
+}
+
+/* line 82, ../scss/pages/account-management/_login-register.scss */
 #email_address {
   margin: 3px 0px 10px 0px;
 }
 
-/* line 87, ../scss/pages/account-management/_login-register.scss */
+/* line 86, ../scss/pages/account-management/_login-register.scss */
 ul.form-list:nth-child(3) > li:nth-child(2) > label:nth-child(1) {
   text-transform: none;
 }
 
-/* line 91, ../scss/pages/account-management/_login-register.scss */
+/* line 90, ../scss/pages/account-management/_login-register.scss */
 .field .required {
   text-transform: none;
 }
 
-/* line 95, ../scss/pages/account-management/_login-register.scss */
+/* line 94, ../scss/pages/account-management/_login-register.scss */
 p .control {
   list-style: none;
 }
 
-/* line 99, ../scss/pages/account-management/_login-register.scss */
+/* line 98, ../scss/pages/account-management/_login-register.scss */
 input#is_subscribed {
   width: auto;
   dispay: inline-block;
 }
 
-/* line 104, ../scss/pages/account-management/_login-register.scss */
+/* line 103, ../scss/pages/account-management/_login-register.scss */
 div.input-box:nth-child(3) {
   text-align: left;
   width: auto;
   display: inline-block;
 }
 
-/* line 110, ../scss/pages/account-management/_login-register.scss */
+/* line 109, ../scss/pages/account-management/_login-register.scss */
 .buttons-set button[title="Submit"] {
   background-color: #ad0202;
 }
-
-/* line 114, ../scss/pages/account-management/_login-register.scss */
+/* line 112, ../scss/pages/account-management/_login-register.scss */
 .buttons-set button[title="Submit"] span {
   color: white;
   text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
-  /* line 123, ../scss/pages/account-management/_login-register.scss */
+  /* line 122, ../scss/pages/account-management/_login-register.scss */
   .customer-account-login .login-page-buttons .red-button {
     margin: 10px auto;
   }
-  /* line 128, ../scss/pages/account-management/_login-register.scss */
+  /* line 127, ../scss/pages/account-management/_login-register.scss */
   .customer-account-login a.f-left {
     margin-top: 20px;
   }
 }
 @media (max-width: 625px) {
-  /* line 138, ../scss/pages/account-management/_login-register.scss */
+  /* line 137, ../scss/pages/account-management/_login-register.scss */
   .customer-account-login .login-page-buttons .red-button, .customer-account-login .login-page-buttons .grid2 {
     margin: 0px auto;
   }

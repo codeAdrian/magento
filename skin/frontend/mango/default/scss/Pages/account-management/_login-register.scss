@@ -18,10 +18,10 @@
 	.input-box #is_subscribed, label, .buttons-set{
 		margin:10px 0px;
 	}
-}
 
-.forgot-pass-wrapper .buttons-set{
-	text-align: center;
+	.input-box div.validation-advice{
+		font-size:1.5em !important;
+	}
 }
 
 .account-create input:focus, .account-login-page input:focus, .forgot-pass-wrapper input:focus{
@@ -38,11 +38,11 @@
 .account-login-page input{
 	border: 2px solid #B5B5B5;
 	padding:4px;
-}
 
-.account-login-page input:focus{
-    border: 2px solid #E9E8E8;
-    padding:4px;
+	&:focus{
+	    border: 2px solid #E9E8E8;
+	    padding:4px;		
+	}
 }
 
 div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li{
@@ -61,6 +61,10 @@ div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li
 #form-validate input{
 	border:2px solid #b5b5b5;
 	padding:5px;
+
+	&:focus{
+		border:2px solid #e9e8e8;
+	}
 }
 
 .forgot-pass{
@@ -69,16 +73,11 @@ div.page-title:nth-child(3) > h1:nth-child(1), .account-login-page .form-list li
 
 .account-login-page a.f-left{
 	text-align: center;
-}
 
-.account-login-page a.f-left:hover{
-	font-weight:bold;
+	&:hover{
+		font-weight:bold;
+	}
 }
-
-#form-validate input:focus{
-	border:2px solid #e9e8e8;
-}
-
 
 #email_address{
 	margin: 3px 0px 10px 0px;
@@ -109,11 +108,11 @@ div.input-box:nth-child(3){
 
 .buttons-set button[title="Submit"]{
 	background-color: #ad0202;
-}
 
-.buttons-set button[title="Submit"] span{
-color:white;
-text-transform: uppercase;
+	span{
+		color:white;
+		text-transform: uppercase;		
+	}
 }
 
 // ----- LOGIN AND REGISTER PAGE - TABLET -----
