@@ -28,7 +28,7 @@
 			margin:10px 0px;
 		}
 
-		fieldset{
+		fieldset, form{
 			border: 0;
 			padding:0px 20px;
 			.input-box div{
@@ -36,9 +36,12 @@
 			}		
 		}
 
+		fieldset fieldset, form fieldset{
+			padding:0px;
+		}
+
 		fieldset fieldset, #co-shipping-form{
 			width:100%;
-			padding:0;
 		}
 
 		.step-title h2{
