@@ -2014,33 +2014,41 @@ footer .footer .grid4 ul li a:visited {
     margin: 10px 0px;
   }
   /* line 160, ../scss/pages/shared/_footer.scss */
+  footer .footer .grid4 .block-title:hover, footer .footer .grid4 ul li:hover {
+    cursor: pointer;
+  }
+  /* line 164, ../scss/pages/shared/_footer.scss */
+  footer .footer .grid4 ul.footer-visible {
+    display: block;
+  }
+  /* line 168, ../scss/pages/shared/_footer.scss */
   footer .footer .grid4 ul {
     display: none;
   }
-  /* line 162, ../scss/pages/shared/_footer.scss */
+  /* line 170, ../scss/pages/shared/_footer.scss */
   footer .footer .grid4 ul li {
     padding: 8px 0px 8px 30px;
   }
-  /* line 164, ../scss/pages/shared/_footer.scss */
+  /* line 172, ../scss/pages/shared/_footer.scss */
   footer .footer .grid4 ul li a:hover {
     font-weight: normal;
   }
-  /* line 169, ../scss/pages/shared/_footer.scss */
+  /* line 177, ../scss/pages/shared/_footer.scss */
   footer .footer .form-container {
     padding: 5px 0px;
     width: 95%;
     margin-bottom: 10px;
   }
-  /* line 176, ../scss/pages/shared/_footer.scss */
+  /* line 184, ../scss/pages/shared/_footer.scss */
   footer .block-subscribe {
     padding: 10px 0px;
   }
-  /* line 180, ../scss/pages/shared/_footer.scss */
+  /* line 188, ../scss/pages/shared/_footer.scss */
   footer #newsletter-validate-detail .block-content #newsletter {
     padding: 5px;
     width: 70%;
   }
-  /* line 185, ../scss/pages/shared/_footer.scss */
+  /* line 193, ../scss/pages/shared/_footer.scss */
   footer .subscribe-button {
     border: 1px solid black;
     margin: 0px;
@@ -2049,12 +2057,12 @@ footer .footer .grid4 ul li a:visited {
     min-width: 30%;
     height: 30px !important;
   }
-  /* line 196, ../scss/pages/shared/_footer.scss */
+  /* line 204, ../scss/pages/shared/_footer.scss */
   footer #newsletter_banner {
     padding: 8px 0px;
     font-size: 0.75em;
   }
-  /* line 201, ../scss/pages/shared/_footer.scss */
+  /* line 209, ../scss/pages/shared/_footer.scss */
   footer #newsletter-validate-detail .block-content .button {
     min-width: 25%;
   }
@@ -2390,7 +2398,7 @@ header .top-link-cart span {
   /* line 337, ../scss/pages/shared/_header.scss */
   header .form-search {
     width: 95%;
-    top: 70px;
+    top: 140px;
     border: 2px solid #474444;
   }
   /* line 342, ../scss/pages/shared/_header.scss */
@@ -3173,13 +3181,13 @@ nav ul li:hover > a:not(:last-child) {
   }
 
   /* line 392, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .form-search {
+  .nav-fixed .search-wrapper .form-search {
     width: 95%;
-    top: 70px;
+    top: 60px;
     border: 2px solid #474444;
   }
   /* line 397, ../scss/pages/shared/_nav.scss */
-  .nav-fixed .form-search:before {
+  .nav-fixed .search-wrapper .form-search:before {
     z-index: -10;
     content: '';
     width: 0;

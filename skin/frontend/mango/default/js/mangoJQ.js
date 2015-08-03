@@ -84,7 +84,6 @@ jq(function(){
 });
 
 // INCREMENT AND DECREMENT QUANTITY
-
 function incrementQty(){document.getElementById('qty').value=parseInt(document.getElementById('qty').value)+1;}
 
 function decrementQty(){
@@ -141,9 +140,13 @@ jq(".searchMiniIcon").click(function (e) {
   });
 });
 
-// IPAD CATEGORIES ON CLICK (OFFCANVAS)
-
-
+// IPHONE FOOTER LINKS
+jq(function(){
+        jq('footer').find('.grid4').click(function(){
+            jq("footer").find(".footer-visible").toggleClass("footer-visible");
+            jq(this).find("ul").toggleClass("footer-visible");
+        });
+});
 
 /* RESPONSIVE TABLE */
 jq(function(){
