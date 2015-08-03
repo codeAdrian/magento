@@ -6,6 +6,7 @@ nav
 	text-align: center;
 	padding:10px 0px 0px;
 	will-change: transform;
+	display:block;
 
 	ul{
 		list-style: none;
@@ -14,8 +15,9 @@ nav
 		li{
 			display:inline-block;
 			margin-right:40px;
+			position:relative;
 
-			&.last{
+			&>.last{
 				margin-right:0px;
 			}
 
@@ -80,6 +82,28 @@ nav ul li ul
 	}
 }
 
+nav{
+	display:block;
+
+	ul li > a:hover{
+		cursor: pointer;
+	}
+}
+
+nav ul li:hover{
+	&>ul{
+		display: block;
+		z-index:200;
+		position:absolute;
+		top:20px;
+	}
+
+	& > a:not(:last-child){
+		border-bottom:1px solid #b4b4b4;
+	}
+}
+
+
 .dropdown
 {
   display:block;
@@ -107,6 +131,12 @@ nav ul li ul
     	display: none;
     }
 
+    .search-wrapper{
+    	.form-search{
+    		border:0;
+    	}
+    }
+
     nav {
     top: 0;
     z-index: 100;
@@ -121,31 +151,77 @@ nav ul li ul
     width: 50%;
     }
 
-
+	button[title="Search"]{
+		display:none;
+	}
 }
 
 // ----- NAV - TABLET -----
 @include breakpoint($tablet-breakpoint){
+	nav{
+		display:none;
+	}
+.offcanvas{
+		display:block;
+		position: fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		background-color: rgba(0,0,0,0.5);
+		height:100%;
+		padding:0px;
+		z-index:999;
+
+		ul > li.level0:before{
+			font-family:mango-font-icons;
+			content:" ";
+		}
+
+		ul li ul{
+			display: none;
+		}
 
 	.nav-element-opened{
-		display: block;
-		width:100%;
-		border-bottom:1px solid #B4B4B4;
-		padding:7px 0px 10px 0px;
+		&:before{
+			font-family:mango-font-icons;
+			content:" " !important;
+		}
 
-		&:hover{
-			border-bottom:1px solid #B4B4B4;
+		ul{
+			display: block !important;
+			width:100%;
+			padding:7px 0px 0px 0px;
+
+			&:hover{
+				display:block;
+			}
 		}
 
 	}
 
-	nav ul li .has-children:hover{
+	ul li:hover{
+
+		&>ul{
+			position:relative;
+			top:0;
+			display:none;
+		}
+
+		& > a:not(:last-child){
+			border-bottom:0;
+		}
+
+	}
+
+	ul li .has-children:hover{
 		border:0 !important;
 	}
-	nav ul li ul li{
+	ul li ul li{
 		font-size: 0.75em;
-		width:100%;
+		width:95%;
 		font-weight: normal;
+		position:relative;
+		top:0;
 
 		&:hover{
 			background-color:white;
@@ -153,7 +229,7 @@ nav ul li ul
 		}
 	}
 
-	nav .navTitle{
+	.navTitle{
 		border:0;
 		display: inline-block;
 		width:40%;
@@ -162,9 +238,10 @@ nav ul li ul
 		font-weight: 300;
 	}
 
-	nav .navClose{
+	#navClose{
 		@extend .navTitle;
 		text-align: right;
+		z-index:150;
 
 		span{
 			background-color: black;
@@ -176,7 +253,8 @@ nav ul li ul
 			text-align: center;
 			font-size: 0.5em;
 			max-width: 1.5em;
-			width: 1.25em;		
+			width: 1.25em;	
+			z-index:200;	
 
 			&:hover{
 				cursor: pointer;
@@ -184,50 +262,39 @@ nav ul li ul
 		}
 	}
 
-	nav{
-		display: none;
-		position: fixed;
-		left:0px;
-		top:0px;
-		width:100%;
-		background-color: rgba(0,0,0,0.5);
+	ul {
+		background-color: white;
+		width:40%;
 		height:100%;
-		padding:0px;
-		z-index:999;
+		opacity: 1.0;
+		margin:0px;
 
-		ul {
-			background-color: white;
-			width:40%;
-			height:100%;
-			opacity: 1.0;
-			margin:0px;
+		li{
+			display:block;
 
-			li{
-				display:block;
+			a{
+				font-weight: 400;
+				font-size: 0.75em;
+			}
 
-				a{
-					font-weight: 400;
-					font-size: 0.75em;
-				}
-
-				ul{
-					position:relative;
-					width:93%;
-					text-align: left;	
+			ul{
+				position:relative;
+				width:93%;
+				text-align: left;	
 					
-					li{
-						margin-left:15px;
-					}		
-				}
+				li{
+					margin-left:15px;
+				}		
+			}
 
-				&.last{
-					margin:0px auto;
-				}
+			&>.last{
+				margin:0px auto;
 			}
 		}
 	}
 
-	nav ul li{
+
+	ul li{
 		padding:10px 0px;
 		border-bottom:1px solid #b4b4b4;
 		width:90%;
@@ -250,6 +317,9 @@ nav ul li ul
 			}
 		}
 	}
+
+}
+
 
 	header nav ul li.mobileOnlyAddition a{
 		margin-left:25px;
@@ -289,7 +359,7 @@ nav ul li ul
 
     	.form-search-mini{
     		display: block;
-    	}
+    	} 
 
     	.searchMiniIcon{
     		display: none;
@@ -305,7 +375,7 @@ nav ul li ul
 
 // ----- NAV - MOBILE -----
 @include breakpoint($smartphone-breakpoint){
-	nav ul{
+	.offcanvas ul{
 		width:80%;
 	}
 
@@ -318,6 +388,19 @@ nav ul li ul
 	}
 
 	.nav-fixed{
+
+		.form-search{
+			width:95%;
+			top:70px;
+			border:2px solid #474444;
+
+			&:before{
+		 		@include m-mini-menu-box(10px, 0px, 5px, 5px);
+				left: 135px;
+				top: -10px;		
+			}
+		}
+
 		.header_wrapper{
 			background-color:white;
 			padding-top:5px;

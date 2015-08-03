@@ -61,7 +61,7 @@ header{
 	}
 
 	#search{
-		width:75%;
+		width:85%;
 		font-size: 0.8em;
 		text-align: center;
 		font-family: arial;
@@ -80,7 +80,7 @@ header{
 	    }
 	}
 
-	.form-search button[title="Search"]{
+	button[title="Search"]{
 		display:none;
 	}
 
@@ -336,7 +336,8 @@ header{
 
 		.form-search{
 			width:95%;
-			top:140px;
+			top:70px;
+			border:2px solid #474444;
 
 			&:before{
 		 		@include m-mini-menu-box(10px, 0px, 5px, 5px);
