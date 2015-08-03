@@ -52,17 +52,17 @@ nav ul li ul
 	display: none;
 	position: absolute; 
 	padding:0px;
-	z-index:200;
+	z-index:99;
 
 	&>li:hover{
 		background-color: #e4e3e3;
 		border: 0px;
-		z-index:200;		
+		z-index:99;		
 	}
 
 	li > a{
 	border:0px;
-	z-index:200;
+	z-index:99;
 	}
 
 	li{
@@ -73,7 +73,7 @@ nav ul li ul
 		text-align: left;
 		background-color: white;
 		padding:10px 0px;
-		z-index:200;
+		z-index:99;
 		
 		a{
 			padding:15px 10px;
@@ -93,7 +93,7 @@ nav{
 nav ul li:hover{
 	&>ul{
 		display: block;
-		z-index:200;
+		z-index:99;
 		position:absolute;
 		top:20px;
 	}
@@ -103,13 +103,6 @@ nav ul li:hover{
 	}
 }
 
-
-.dropdown
-{
-  display:block;
-  z-index:200;
-}
-
 /* DROPDOWN END*/
 
 
@@ -117,7 +110,7 @@ nav ul li:hover{
 .nav-fixed
 {
     top: 0;
-    z-index: 100;
+    z-index: 98;
     position: fixed;
     margin:0 auto;
     background-color: white;
@@ -139,7 +132,7 @@ nav ul li:hover{
 
     nav {
     top: 0;
-    z-index: 100;
+    z-index: 98;
     position: fixed;
     margin:0 auto;
     padding-top:20px;
@@ -170,7 +163,7 @@ nav ul li:hover{
 		background-color: rgba(0,0,0,0.5);
 		height:100%;
 		padding:0px;
-		z-index:999;
+		z-index:99;
 
 		ul > li.level0:before{
 			font-family:mango-font-icons;
@@ -241,7 +234,7 @@ nav ul li:hover{
 	#navClose{
 		@extend .navTitle;
 		text-align: right;
-		z-index:150;
+		z-index:100;
 
 		span{
 			background-color: black;
@@ -254,7 +247,7 @@ nav ul li:hover{
 			font-size: 0.5em;
 			max-width: 1.5em;
 			width: 1.25em;	
-			z-index:200;	
+			z-index:100;	
 
 			&:hover{
 				cursor: pointer;
@@ -333,7 +326,7 @@ nav ul li:hover{
 	{
 		padding-top:10px;
 	    top:0;
-	    z-index: 100;
+	    z-index: 99;
 	    position: fixed;
 	    width: 100%;
 	    background-color: white;
@@ -393,12 +386,17 @@ nav ul li:hover{
 			width:95%;
 			top:60px;
 			border:2px solid #474444;
+			display:none;
 
 			&:before{
 		 		@include m-mini-menu-box(10px, 0px, 5px, 5px);
 				left: 135px;
 				top: -10px;		
 			}
+		}
+
+		.search-wrapper .search-visible{
+			display: block;
 		}
 
 		.header_wrapper{

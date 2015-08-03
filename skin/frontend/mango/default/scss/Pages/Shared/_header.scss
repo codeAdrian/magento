@@ -15,7 +15,7 @@ header{
 	background-color: white;
 	list-style:none;
 	padding:20px 0px 0px 0px;
-	z-index:300;
+	z-index:110;
 
 		li ul{
 			list-style: none;
@@ -183,6 +183,10 @@ header{
 		.search-wrapper{
 			float:none;
 			margin:0px auto;
+
+			.search-visible{
+				display:block;
+			}
 		}
 
 		.header_wrapper{
@@ -234,7 +238,7 @@ header{
 			top:90px;
 			left:5px;
 			background-color: white;
-			z-index:5;
+			z-index:99;
 			width:98%;
 			float:none;
 

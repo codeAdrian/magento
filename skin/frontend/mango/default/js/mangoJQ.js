@@ -26,15 +26,12 @@ jq(function() {
 
   else{
     if (jq(window).scrollTop() > 75) {
-      jq('.form-search').addClass('form-search-mini').show().removeClass('form-search');
+      jq('.form-search').addClass('form-search-mini').removeClass('form-search');
       jq('header').addClass('nav-fixed');
     }
     else {
       jq('header').removeClass('nav-fixed');
       jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
-    }
-    if(jq(window).width()<625){
-      jq('.form-search-mini').hide();
     }
   }
 });
@@ -42,16 +39,83 @@ jq(function() {
 
 // MINI MENU
 jq(function () {
-    jq(".top-account>.textLink,#mini-menu-account,.top-account-a").click(function (e) {
+    jq(".top-account>.textLink, .top-account-a").click(function (e) {
         jq('#mini-menu-account').toggle();
         jq('#mini-menu-cart').hide();
     });
 
-      jq('.top-link-cart,#mini-menu-cart').click(function (e) {
+      jq('.top-link-cart').click(function (e) {
         jq('#mini-menu-cart').toggle();
         jq('#mini-menu-account').hide();
     });
 
+});
+
+// IPAD MENU HIDE
+jq(function(){
+  jq("#navClose").click(function(e){
+    jq('.offcanvas').removeClass("offcanvas");
+  });
+});
+
+
+jq(function(){
+  jq("#navMenuButton").click(function (e) {
+        jq('nav').addClass("offcanvas");
+        jq("li.level0 > a").removeAttr("href"); 
+        jq('#mini-menu-account').hide();
+        jq('#mini-menu-cart').hide();
+
+        jq('.offcanvas').find('ul > li').click(function(){
+          if (jq(this).is(".level0") ){
+            jq("nav > ul > li").removeClass("nav-element-opened");
+            jq(this).toggleClass("nav-element-opened");
+            }
+        });
+      });
+});
+
+// IPAD SHOW SEARCH
+jq(function(){
+jq(".searchMiniIcon").click(function (e) {
+  if(jq(window).scrollTop() < 75 && jq(window).width()<900 && jq(window).width()>625){
+    jq(".form-search").toggleClass("search-visible");
+    jq('#mini-menu-account').hide();
+    jq('#mini-menu-cart').hide();
+  }
+
+  if(jq(window).width()<625){
+    jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
+    jq(".form-search").toggleClass("search-visible");
+  }
+  });
+});
+
+// IPHONE FOOTER LINKS
+jq(function(){
+        jq('footer').find('.grid4').click(function(){
+            jq("footer").find(".footer-visible").toggleClass("footer-visible");
+            jq(this).find("ul").toggleClass("footer-visible");
+        });
+});
+
+/* RESPONSIVE TABLE */
+jq(function(){
+  if (jq(".data-table").length ){
+    var headertext = [],
+    headers = document.querySelectorAll(".data-table th"),
+    tablebody = document.querySelector(".data-table tbody");
+
+    for(var i = 0; i < headers.length; i++) {
+      var current = headers[i];
+      headertext.push(current.textContent.replace(/\r?\n|\r/,""));
+    } 
+    for (var i = 0, row; row = tablebody.rows[i]; i++) {
+      for (var j = 0, col; col = row.cells[j]; j++) {
+        col.setAttribute("data-th", headertext[j]);
+      } 
+    }
+  }
 });
 
 // CART PRICE
@@ -83,6 +147,7 @@ jq(function(){
 
 });
 
+
 // INCREMENT AND DECREMENT QUANTITY
 function incrementQty(){document.getElementById('qty').value=parseInt(document.getElementById('qty').value)+1;}
 
@@ -97,72 +162,5 @@ jq(function(){
   jq(".messages").slideDown().delay(3000).slideUp(function(){
         jq(".subtext-message").slideDown();
       });
-  }
-});
-
-// IPAD MENU HIDE
-jq(function(){
-  jq("#navClose").click(function(e){
-    jq('.offcanvas').removeClass("offcanvas");
-  });
-});
-
-
-jq(function(){
-  jq("#navMenuButton").click(function (e) {
-        jq('nav').addClass("offcanvas");
-        jq("li.level0 > a").removeAttr("href"); 
-        jq('#mini-menu-account').hide();
-        jq('#mini-menu-cart').hide();
-
-        jq('.offcanvas').find('ul > li').click(function(){
-          if (jq(this).is(".level0") ){
-            jq("nav > ul > li").removeClass("nav-element-opened");
-            jq(this).toggleClass("nav-element-opened");
-            }
-        });
-      });
-});
-
-// IPAD SHOW SEARCH
-jq(function(){
-jq(".searchMiniIcon").click(function (e) {
-  if(jq(window).scrollTop() < 75 && jq(window).width()<900 && jq(window).width()>625){
-    jq(".form-search").toggle();
-    jq('#mini-menu-account').hide();
-    jq('#mini-menu-cart').hide();
-  }
-
-  if(jq(window).width()<625){
-    jq('.form-search-mini').addClass('form-search').removeClass('form-search-mini');
-    jq(".form-search").toggle();
-  }
-  });
-});
-
-// IPHONE FOOTER LINKS
-jq(function(){
-        jq('footer').find('.grid4').click(function(){
-            jq("footer").find(".footer-visible").toggleClass("footer-visible");
-            jq(this).find("ul").toggleClass("footer-visible");
-        });
-});
-
-/* RESPONSIVE TABLE */
-jq(function(){
-  if (jq(".data-table").length ){
-    var headertext = [],
-    headers = document.querySelectorAll(".data-table th"),
-    tablebody = document.querySelector(".data-table tbody");
-
-    for(var i = 0; i < headers.length; i++) {
-      var current = headers[i];
-      headertext.push(current.textContent.replace(/\r?\n|\r/,""));
-    } 
-    for (var i = 0, row; row = tablebody.rows[i]; i++) {
-      for (var j = 0, col; col = row.cells[j]; j++) {
-        col.setAttribute("data-th", headertext[j]);
-      } 
-    }
   }
 });
