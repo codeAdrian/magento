@@ -26,7 +26,7 @@ jq(function() {
 
   else{
     if (jq(window).scrollTop() > 75) {
-      jq('.form-search').addClass('form-search-mini').removeClass('form-search');
+      if(jq(window).width()> 625) jq('.form-search').addClass('form-search-mini').removeClass('form-search');
       jq('header').addClass('nav-fixed');
     }
     else {
