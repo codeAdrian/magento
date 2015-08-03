@@ -48,7 +48,6 @@ nav
 
 nav ul li ul
 {
-	display: none;
 	position: absolute; 
 	padding:0px;
 	z-index:99;
@@ -89,9 +88,17 @@ nav{
 	}
 }
 
+nav ul li ul{
+	transition:all 0.2s ease;
+	opacity:0;
+	visibility: hidden;
+}
+
 nav ul li:hover{
 	&>ul{
-		display: block;
+		//display: block;
+		opacity: 1;
+		visibility: visible;
 		z-index:99;
 		position:absolute;
 		top:20px;
@@ -153,23 +160,38 @@ nav ul li:hover{
 	nav{
 		display:none;
 	}
+
+@keyframes menu-slide{
+	from{left:-100%;}
+	to{left:0%;
+		position:relative;}
+}
+
+@keyframes menu-background{
+	from{background-color: rgba(0,0,0,0);}
+	to{background-color: rgba(0,0,0,0.5);}
+}
+
 .offcanvas{
 		display:block;
 		position: fixed;
 		left:0px;
 		top:0px;
 		width:100%;
-		background-color: rgba(0,0,0,0.5);
 		height:100%;
 		padding:0px;
 		z-index:99;
+		animation-name:menu-background;
+		animation-duration:0.5s;
+		animation-iteration:1;
+		background-color: rgba(0,0,0,0.5);
 
 		ul > li.level0:before{
 			font-family:mango-font-icons;
 			content:" ";
 		}
 
-		ul > li.last{
+		& > ul > li.last{
 			margin:0px auto;
 		}
 
@@ -185,6 +207,7 @@ nav ul li:hover{
 
 		ul{
 			display: block !important;
+			visibility: visible;
 			width:100%;
 			padding:7px 0px 0px 0px;
 
@@ -232,6 +255,7 @@ nav ul li:hover{
 		font-size: 2.5em;
 		text-transform: uppercase;
 		font-weight: 300;
+
 	}
 
 	#navClose{
@@ -258,12 +282,16 @@ nav ul li:hover{
 		}
 	}
 
-	ul {
+	&>ul {
 		background-color: white;
 		width:40%;
 		height:100%;
 		opacity: 1.0;
 		margin:0px;
+		animation-name: menu-slide;
+		animation-duration: 0.5s;
+		animation-iteration-count: 1;
+		position:absolute;
 
 		li{
 			display:block;
@@ -277,6 +305,7 @@ nav ul li:hover{
 				position:relative;
 				width:93%;
 				text-align: left;	
+				opacity:1;
 					
 				li{
 					margin-left:15px;
@@ -315,6 +344,8 @@ nav ul li:hover{
 	}
 
 }
+
+
 
 
 	header nav ul li.mobileOnlyAddition a{
