@@ -37,6 +37,17 @@ jq(function() {
 });
 });
 
+// HIDE ALL POPUP MENUS ON HIDDEN LAYER CLICK - WIP
+/*
+jq(function(){
+  jq("#click-layer").click(function (e) {
+        jq('#mini-menu-cart').hide(); 
+        jq('#mini-menu-account').hide();   
+        jq('.offcanvas').removeClass("offcanvas");
+        jq(".form-search").removeleClass("search-visible");
+  });
+});*/
+
 // MINI MENU
 jq(function () {
     jq(".top-account>.textLink, .top-account-a").click(function (e) {

@@ -89,7 +89,7 @@ nav{
 }
 
 nav ul li ul{
-	transition:all 0.2s ease;
+	@include m-transition(all 0.2s ease);
 	opacity:0;
 	visibility: hidden;
 }
@@ -116,7 +116,7 @@ nav ul li:hover{
 .nav-fixed
 {
     top: 0;
-    z-index: 98;
+    z-index: 100;
     position: fixed;
     margin:0 auto;
     background-color: white;
@@ -161,13 +161,13 @@ nav ul li:hover{
 		display:none;
 	}
 
-@keyframes menu-slide{
+@include m-keyframes (menu-slide){
 	from{left:-100%;}
 	to{left:0%;
 		position:relative;}
 }
 
-@keyframes menu-background{
+@include m-keyframes (menu-background){
 	from{background-color: rgba(0,0,0,0);}
 	to{background-color: rgba(0,0,0,0.5);}
 }
@@ -181,9 +181,7 @@ nav ul li:hover{
 		height:100%;
 		padding:0px;
 		z-index:99;
-		animation-name:menu-background;
-		animation-duration:0.5s;
-		animation-iteration:1;
+		@include m-animation('menu-background 0.5s 1');
 		background-color: rgba(0,0,0,0.5);
 
 		ul > li.level0:before{
@@ -288,9 +286,7 @@ nav ul li:hover{
 		height:100%;
 		opacity: 1.0;
 		margin:0px;
-		animation-name: menu-slide;
-		animation-duration: 0.5s;
-		animation-iteration-count: 1;
+		@include m-animation('menu-slide 0.5s 1');
 		position:absolute;
 
 		li{

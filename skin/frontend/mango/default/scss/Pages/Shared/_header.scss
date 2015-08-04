@@ -163,6 +163,20 @@ header{
 
 }
 
+#click-layer{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	//background: red; // For debugging
+	opacity: 0;
+	filter:Alpha(opacity=0);
+	pointer-events:none;
+	z-index:89;
+}
 
 // ----- HEADER - TABLET -----  */
 @include breakpoint($tablet-breakpoint){
@@ -183,6 +197,8 @@ header{
 		.search-wrapper{
 			float:none;
 			margin:0px auto;
+
+
 
 			.search-visible{
 				display:block;
