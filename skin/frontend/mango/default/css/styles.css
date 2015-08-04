@@ -2939,7 +2939,39 @@ nav ul li:hover > a:not(:last-child) {
 
 /* DROPDOWN END*/
 /* NAV FIXED */
-/* line 116, ../scss/pages/shared/_nav.scss */
+@-webkit-keyframes fixed-nav-animation {
+  from {
+    top: -10%;
+  }
+  to {
+    top: 0%;
+  }
+}
+@-moz-keyframes fixed-nav-animation {
+  from {
+    top: -10%;
+  }
+  to {
+    top: 0%;
+  }
+}
+@-o-keyframes fixed-nav-animation {
+  from {
+    top: -10%;
+  }
+  to {
+    top: 0%;
+  }
+}
+@keyframes fixed-nav-animation {
+  from {
+    top: -10%;
+  }
+  to {
+    top: 0%;
+  }
+}
+/* line 126, ../scss/pages/shared/_nav.scss */
 .nav-fixed {
   top: 0;
   z-index: 100;
@@ -2951,16 +2983,20 @@ nav ul li:hover > a:not(:last-child) {
   max-width: 1280px;
   width: 100%;
   text-align: center;
+  -webkit-animation: fixed-nav-animation 0.5s 1;
+  -moz-animation: fixed-nav-animation 0.5s 1;
+  -o-animation: fixed-nav-animation 0.5s 1;
+  animation: fixed-nav-animation 0.5s 1;
 }
-/* line 129, ../scss/pages/shared/_nav.scss */
+/* line 140, ../scss/pages/shared/_nav.scss */
 .nav-fixed .logo_column {
   display: none;
 }
-/* line 134, ../scss/pages/shared/_nav.scss */
+/* line 145, ../scss/pages/shared/_nav.scss */
 .nav-fixed .search-wrapper .form-search {
   border: 0;
 }
-/* line 139, ../scss/pages/shared/_nav.scss */
+/* line 150, ../scss/pages/shared/_nav.scss */
 .nav-fixed nav {
   top: 0;
   z-index: 98;
@@ -2969,17 +3005,20 @@ nav ul li:hover > a:not(:last-child) {
   padding-top: 20px;
   max-width: 1280px;
   width: 100%;
+  -moz-animation: fixed-nav-animation 0.5s 1;
+  -webkit-animation: fixed-nav-animation 0.5s 1;
+  animation: fixed-nav-animation 0.5s 1;
   right: 0;
   left: 0;
   width: 50%;
 }
-/* line 153, ../scss/pages/shared/_nav.scss */
+/* line 165, ../scss/pages/shared/_nav.scss */
 .nav-fixed button[title="Search"] {
   display: none;
 }
 
 @media (max-width: 900px) {
-  /* line 160, ../scss/pages/shared/_nav.scss */
+  /* line 172, ../scss/pages/shared/_nav.scss */
   nav {
     display: none;
   }
@@ -3092,7 +3131,7 @@ nav ul li:hover > a:not(:last-child) {
       opacity: 1;
     }
   }
-  /* line 187, ../scss/pages/shared/_nav.scss */
+  /* line 199, ../scss/pages/shared/_nav.scss */
   .offcanvas {
     display: block;
     position: fixed;
@@ -3108,25 +3147,25 @@ nav ul li:hover > a:not(:last-child) {
     animation: menu-background 0.5s 1;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  /* line 199, ../scss/pages/shared/_nav.scss */
+  /* line 211, ../scss/pages/shared/_nav.scss */
   .offcanvas ul > li.level0:before {
     font-family: mango-font-icons;
     content: " ";
   }
-  /* line 204, ../scss/pages/shared/_nav.scss */
+  /* line 216, ../scss/pages/shared/_nav.scss */
   .offcanvas > ul > li.last {
     margin: 0px auto;
   }
-  /* line 208, ../scss/pages/shared/_nav.scss */
+  /* line 220, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li ul {
     display: none;
   }
-  /* line 213, ../scss/pages/shared/_nav.scss */
+  /* line 225, ../scss/pages/shared/_nav.scss */
   .offcanvas .nav-element-opened:before {
     font-family: mango-font-icons;
     content: " " !important;
   }
-  /* line 218, ../scss/pages/shared/_nav.scss */
+  /* line 230, ../scss/pages/shared/_nav.scss */
   .offcanvas .nav-element-opened ul {
     display: block !important;
     visibility: visible;
@@ -3140,25 +3179,25 @@ nav ul li:hover > a:not(:last-child) {
     -o-animation: scale-fadein 0.25s 1;
     animation: scale-fadein 0.25s 1;
   }
-  /* line 226, ../scss/pages/shared/_nav.scss */
+  /* line 238, ../scss/pages/shared/_nav.scss */
   .offcanvas .nav-element-opened ul:hover {
     display: block;
   }
-  /* line 235, ../scss/pages/shared/_nav.scss */
+  /* line 247, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li:hover > ul {
     position: relative;
     top: 0;
     display: none;
   }
-  /* line 241, ../scss/pages/shared/_nav.scss */
+  /* line 253, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li:hover > a:not(:last-child) {
     border-bottom: 0;
   }
-  /* line 247, ../scss/pages/shared/_nav.scss */
+  /* line 259, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li .has-children:hover {
     border: 0 !important;
   }
-  /* line 250, ../scss/pages/shared/_nav.scss */
+  /* line 262, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li ul li {
     font-size: 0.75em;
     width: 95%;
@@ -3166,12 +3205,12 @@ nav ul li:hover > a:not(:last-child) {
     position: relative;
     top: 0;
   }
-  /* line 257, ../scss/pages/shared/_nav.scss */
+  /* line 269, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li ul li:hover {
     background-color: white;
     border: 0;
   }
-  /* line 263, ../scss/pages/shared/_nav.scss */
+  /* line 275, ../scss/pages/shared/_nav.scss */
   .offcanvas .navTitle, .offcanvas #navClose {
     border: 0;
     display: inline-block;
@@ -3180,12 +3219,12 @@ nav ul li:hover > a:not(:last-child) {
     text-transform: uppercase;
     font-weight: 300;
   }
-  /* line 273, ../scss/pages/shared/_nav.scss */
+  /* line 285, ../scss/pages/shared/_nav.scss */
   .offcanvas #navClose {
     text-align: right;
     z-index: 100;
   }
-  /* line 278, ../scss/pages/shared/_nav.scss */
+  /* line 290, ../scss/pages/shared/_nav.scss */
   .offcanvas #navClose span {
     background-color: black;
     color: white;
@@ -3201,11 +3240,11 @@ nav ul li:hover > a:not(:last-child) {
     width: 1.25em;
     z-index: 100;
   }
-  /* line 291, ../scss/pages/shared/_nav.scss */
+  /* line 303, ../scss/pages/shared/_nav.scss */
   .offcanvas #navClose span:hover {
     cursor: pointer;
   }
-  /* line 297, ../scss/pages/shared/_nav.scss */
+  /* line 309, ../scss/pages/shared/_nav.scss */
   .offcanvas > ul {
     background-color: white;
     width: 40%;
@@ -3218,31 +3257,31 @@ nav ul li:hover > a:not(:last-child) {
     animation: menu-slide 0.5s 1;
     position: absolute;
   }
-  /* line 306, ../scss/pages/shared/_nav.scss */
+  /* line 318, ../scss/pages/shared/_nav.scss */
   .offcanvas > ul li {
     display: block;
   }
-  /* line 309, ../scss/pages/shared/_nav.scss */
+  /* line 321, ../scss/pages/shared/_nav.scss */
   .offcanvas > ul li a {
     font-weight: 400;
     font-size: 0.75em;
   }
-  /* line 314, ../scss/pages/shared/_nav.scss */
+  /* line 326, ../scss/pages/shared/_nav.scss */
   .offcanvas > ul li ul {
     position: relative;
     width: 93%;
     text-align: left;
     opacity: 1;
   }
-  /* line 320, ../scss/pages/shared/_nav.scss */
+  /* line 332, ../scss/pages/shared/_nav.scss */
   .offcanvas > ul li ul li {
     margin-left: 15px;
   }
-  /* line 325, ../scss/pages/shared/_nav.scss */
+  /* line 337, ../scss/pages/shared/_nav.scss */
   .offcanvas > ul li > .last {
     margin: 0px auto;
   }
-  /* line 332, ../scss/pages/shared/_nav.scss */
+  /* line 344, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li {
     padding: 10px 0px;
     border-bottom: 1px solid #b4b4b4;
@@ -3252,34 +3291,34 @@ nav ul li:hover > a:not(:last-child) {
     font-size: 1.5em;
     margin: 0px auto;
   }
-  /* line 341, ../scss/pages/shared/_nav.scss */
+  /* line 353, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li ul li:last-child {
     border: 0 !important;
   }
-  /* line 344, ../scss/pages/shared/_nav.scss */
+  /* line 356, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li ul li:last-child:hover {
     border: 0 !important;
   }
-  /* line 348, ../scss/pages/shared/_nav.scss */
+  /* line 360, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li ul li:not(:last-child) {
     border-bottom: 1px solid #B4B4B4;
   }
-  /* line 350, ../scss/pages/shared/_nav.scss */
+  /* line 362, ../scss/pages/shared/_nav.scss */
   .offcanvas ul li ul li:not(:last-child):hover {
     border-bottom: 1px solid #B4B4B4;
   }
 
-  /* line 361, ../scss/pages/shared/_nav.scss */
+  /* line 373, ../scss/pages/shared/_nav.scss */
   header nav ul li.mobileOnlyAddition a {
     margin-left: 25px;
   }
 
-  /* line 365, ../scss/pages/shared/_nav.scss */
+  /* line 377, ../scss/pages/shared/_nav.scss */
   .level0 > a span:hover {
     border-bottom: 0;
   }
 
-  /* line 369, ../scss/pages/shared/_nav.scss */
+  /* line 381, ../scss/pages/shared/_nav.scss */
   .nav-fixed {
     padding-top: 10px;
     top: 0;
@@ -3289,7 +3328,7 @@ nav ul li:hover > a:not(:last-child) {
     background-color: white;
     height: 50px;
   }
-  /* line 379, ../scss/pages/shared/_nav.scss */
+  /* line 391, ../scss/pages/shared/_nav.scss */
   .nav-fixed .header_wrapper .search_column {
     position: fixed;
     margin-right: 3.44828%;
@@ -3299,23 +3338,23 @@ nav ul li:hover > a:not(:last-child) {
     left: 0;
     width: 50%;
   }
-  /* line 388, ../scss/pages/shared/_nav.scss */
+  /* line 400, ../scss/pages/shared/_nav.scss */
   .nav-fixed .header_wrapper .search_column #search_mini_form {
     margin: 0px auto;
   }
-  /* line 392, ../scss/pages/shared/_nav.scss */
+  /* line 404, ../scss/pages/shared/_nav.scss */
   .nav-fixed .header_wrapper .search_column .search-wrapper {
     width: 100%;
   }
-  /* line 397, ../scss/pages/shared/_nav.scss */
+  /* line 409, ../scss/pages/shared/_nav.scss */
   .nav-fixed .form-search-mini {
     display: block;
   }
-  /* line 401, ../scss/pages/shared/_nav.scss */
+  /* line 413, ../scss/pages/shared/_nav.scss */
   .nav-fixed .searchMiniIcon {
     display: none;
   }
-  /* line 405, ../scss/pages/shared/_nav.scss */
+  /* line 417, ../scss/pages/shared/_nav.scss */
   .nav-fixed nav {
     padding: 0px;
     margin: 0px;
@@ -3323,29 +3362,29 @@ nav ul li:hover > a:not(:last-child) {
   }
 }
 @media (max-width: 625px) {
-  /* line 415, ../scss/pages/shared/_nav.scss */
+  /* line 427, ../scss/pages/shared/_nav.scss */
   .offcanvas ul {
     width: 80%;
   }
 
-  /* line 419, ../scss/pages/shared/_nav.scss */
+  /* line 431, ../scss/pages/shared/_nav.scss */
   .header_wrapper .search_column .form-search-mini {
     display: none;
   }
 
-  /* line 423, ../scss/pages/shared/_nav.scss */
+  /* line 435, ../scss/pages/shared/_nav.scss */
   .header_wrapper .searchMiniIcon {
     display: block;
   }
 
-  /* line 429, ../scss/pages/shared/_nav.scss */
+  /* line 441, ../scss/pages/shared/_nav.scss */
   .nav-fixed .search-wrapper .form-search {
     width: 95%;
     top: 60px;
     border: 2px solid #474444;
     display: none;
   }
-  /* line 435, ../scss/pages/shared/_nav.scss */
+  /* line 447, ../scss/pages/shared/_nav.scss */
   .nav-fixed .search-wrapper .form-search:before {
     z-index: -10;
     content: '';
@@ -3359,28 +3398,28 @@ nav ul li:hover > a:not(:last-child) {
     left: 30%;
     top: -10px;
   }
-  /* line 442, ../scss/pages/shared/_nav.scss */
+  /* line 454, ../scss/pages/shared/_nav.scss */
   .nav-fixed .search-wrapper .search-visible {
     display: block;
   }
-  /* line 446, ../scss/pages/shared/_nav.scss */
+  /* line 458, ../scss/pages/shared/_nav.scss */
   .nav-fixed .header_wrapper {
     background-color: white;
     padding-top: 5px;
   }
-  /* line 451, ../scss/pages/shared/_nav.scss */
+  /* line 463, ../scss/pages/shared/_nav.scss */
   .nav-fixed .search_column .form-search-mini {
     display: none;
   }
-  /* line 455, ../scss/pages/shared/_nav.scss */
+  /* line 467, ../scss/pages/shared/_nav.scss */
   .nav-fixed .searchMiniIcon {
     display: block;
   }
-  /* line 459, ../scss/pages/shared/_nav.scss */
+  /* line 471, ../scss/pages/shared/_nav.scss */
   .nav-fixed .smartphoneLogo {
     display: none;
   }
-  /* line 463, ../scss/pages/shared/_nav.scss */
+  /* line 475, ../scss/pages/shared/_nav.scss */
   .nav-fixed .search_column {
     width: auto !important;
     position: initial !important;

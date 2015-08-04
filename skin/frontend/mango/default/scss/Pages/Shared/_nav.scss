@@ -113,6 +113,16 @@ nav ul li:hover{
 
 
 /* NAV FIXED */
+
+@include m-keyframes(fixed-nav-animation){
+	from{
+		top:-10%;
+	}
+
+	to{
+		top:0%;
+	}
+}
 .nav-fixed
 {
     top: 0;
@@ -125,6 +135,7 @@ nav ul li:hover{
     max-width:$desktop-page-width;
     width:100%;
     text-align: center;
+    @include m-animation(fixed-nav-animation 0.5s 1);
 
     .logo_column{
     	display: none;
@@ -144,6 +155,7 @@ nav ul li:hover{
     padding-top:20px;
     max-width:$desktop-page-width;
     width:100%;
+    @include animation(fixed-nav-animation 0.5s 1);
 
     right: 0;
     left: 0;
