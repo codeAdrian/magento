@@ -135,7 +135,7 @@ nav ul li:hover{
     max-width:$desktop-page-width;
     width:100%;
     text-align: center;
-    @include m-animation(fixed-nav-animation 0.5s 1);
+    @include m-animation(fixed-nav-animation 0.2s 1);
 
     .logo_column{
     	display: none;
@@ -155,7 +155,7 @@ nav ul li:hover{
     padding-top:20px;
     max-width:$desktop-page-width;
     width:100%;
-    @include animation(fixed-nav-animation 0.5s 1);
+    @include animation(fixed-nav-animation 0.2s 1);
 
     right: 0;
     left: 0;
@@ -366,9 +366,6 @@ nav ul li:hover{
 	}
 
 }
-
-
-
 
 	header nav ul li.mobileOnlyAddition a{
 		margin-left:25px;
