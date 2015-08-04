@@ -1,0 +1,164 @@
+/* line 1, ../scss/email-inline.scss */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-weight: 300;
+  background: white;
+  color: black !important;
+  max-width: 720px;
+  margin: 10px auto;
+  padding: 1em;
+}
+
+/* line 18, ../scss/email-inline.scss */
+a {
+  color: black;
+}
+
+/* line 22, ../scss/email-inline.scss */
+.logo-container {
+  width: 100%;
+}
+/* line 24, ../scss/email-inline.scss */
+.logo-container .logo-link-image {
+  text-align: center;
+  display: block;
+}
+/* line 27, ../scss/email-inline.scss */
+.logo-container .logo-link-image img {
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+}
+
+/* line 36, ../scss/email-inline.scss */
+.email-heading h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+/* line 41, ../scss/email-inline.scss */
+.email-heading p {
+  padding-right: 20px;
+}
+
+/* line 46, ../scss/email-inline.scss */
+.store-info {
+  font-size: 0.9em;
+  width: 30%;
+}
+/* line 49, ../scss/email-inline.scss */
+.store-info h4 {
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 200;
+  border-left: 2px solid #b4b4b4;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+/* line 58, ../scss/email-inline.scss */
+.store-info a {
+  color: black;
+}
+/* line 63, ../scss/email-inline.scss */
+.store-info p {
+  margin: 0px !important;
+  border-left: 2px solid #b4b4b4;
+  padding-left: 5px;
+  line-height: 1.5em;
+}
+
+/* line 71, ../scss/email-inline.scss */
+.order-details {
+  border: 1px solid black;
+}
+/* line 73, ../scss/email-inline.scss */
+.order-details h3 {
+  background: black;
+  color: white !important;
+  padding: 5px;
+  margin-top: 0;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+/* line 79, ../scss/email-inline.scss */
+.order-details p {
+  padding: 5px;
+}
+
+/* line 85, ../scss/email-inline.scss */
+.action-content h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+/* line 90, ../scss/email-inline.scss */
+.action-content ul li {
+  padding: 0.25em 0em;
+}
+
+/* line 95, ../scss/email-inline.scss */
+.account-info {
+  background: black;
+  color: white !important;
+  padding: 5px;
+  margin-top: 0;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 20px auto 0px auto;
+  max-width: 450px;
+  border: 1px solid black;
+}
+
+/* line 104, ../scss/email-inline.scss */
+.highlighted-text {
+  border: 1px solid black;
+  margin: 0px auto;
+  padding: 5px;
+  line-height: 2em;
+  max-width: 450px;
+}
+
+/* line 112, ../scss/email-inline.scss */
+.order-information {
+  font-size: 1em;
+}
+/* line 114, ../scss/email-inline.scss */
+.order-information h6 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  color: black !important;
+  font-size: 0.8em;
+  margin: 15px 0px;
+}
+
+/* line 122, ../scss/email-inline.scss */
+.closing-text {
+  border-top: 1px solid #b4b4b4;
+  padding-top: 10px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  color: black !important;
+  font-weight: normal;
+}
+
+@media (max-width: 560px) {
+  /* line 131, ../scss/email-inline.scss */
+  td {
+    display: block;
+    width: 100% !important;
+  }
+
+  /* line 135, ../scss/email-inline.scss */
+  .store-info {
+    border: 0 !important;
+    padding: 20px 0px;
+    font-size: 1em;
+    width: 100%;
+  }
+  /* line 141, ../scss/email-inline.scss */
+  .store-info a, .store-info p, .store-info h4 {
+    border: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  /* line 147, ../scss/email-inline.scss */
+  .account-info {
+    font-size: 0.75em;
+  }
+}
