@@ -62,3 +62,9 @@
     -o-transition:      $transition;
     transition:         $transition;
 }
+
+@mixin m-transform-origin($origin){
+   -webkit-transform-origin: $origin;
+       -ms-transform-origin: $origin;
+           transform-origin: $origin;
+}

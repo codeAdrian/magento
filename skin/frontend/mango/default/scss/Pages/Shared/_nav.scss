@@ -172,6 +172,18 @@ nav ul li:hover{
 	to{background-color: rgba(0,0,0,0.5);}
 }
 
+@include m-keyframes(scale-fadein){
+	from{
+		transform:scale(1,0);
+		opacity:0;
+	}
+
+	to{
+		transform:scale(1,1);
+		opacity:1;
+	}
+}
+
 .offcanvas{
 		display:block;
 		position: fixed;
@@ -208,6 +220,8 @@ nav ul li:hover{
 			visibility: visible;
 			width:100%;
 			padding:7px 0px 0px 0px;
+			@include m-transform-origin(center top);
+			@include m-animation(scale-fadein 0.25s 1);
 
 			&:hover{
 				display:block;
@@ -420,7 +434,7 @@ nav ul li:hover{
 
 			&:before{
 		 		@include m-mini-menu-box(10px, 0px, 5px, 5px);
-				left: 135px;
+				left: 30%;
 				top: -10px;		
 			}
 		}
