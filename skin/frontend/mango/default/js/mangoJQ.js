@@ -110,6 +110,17 @@ jq(function(){
         });
 });
 
+// SHOW FILTERS
+jq(function(){
+        jq('#showFilters').click(function(){
+            jq(".filterList").toggleClass("filters-visible");
+        });
+
+        jq('#narrow-by-list').find("dt").click(function(){
+            jq(this).next("dd").toggleClass("filter-group-visible");
+        });
+});
+
 /* RESPONSIVE TABLE */
 jq(function(){
   if (jq(".data-table").length ){
