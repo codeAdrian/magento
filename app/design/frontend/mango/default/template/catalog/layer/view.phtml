@@ -37,15 +37,15 @@
     <div class="block-title category-title smartphoneOnly">
     <h1><?php echo $this->getLayer()->getCurrentCategory()->getName() ?></h1>
     <hr class="category-divider"/>
-    <p id="showFilters"><span class="inlineSmartphoneOnly"> &nbsp;</span><?php echo $this->__("Filters") ?></p>
+    <p id="showFilters"><span class="inlineSmartphoneOnly"></span><?php echo $this->__("Filters") ?></p>
     </div>
-    <div class="block-content desktopOnly filterList">
+    <div class="block-content desktopTabletOnly filterList">
         <?php if($this->canShowOptions()): ?>
             <dl id="narrow-by-list">
                 <?php $_filters = $this->getFilters() ?>
                 <?php foreach ($_filters as $_filter): ?>
                 <?php if($_filter->getItemsCount()): ?>
-                    <dt> <span class="inlineSmartphoneOnly"> &nbsp;</span> <?php echo $this->__($_filter->getName()) ?></dt>
+                    <dt> <span class="inlineSmartphoneOnly"></span> <?php echo $this->__($_filter->getName()) ?></dt>
                     <dd <?php if (!is_null($_filter->attribute_model)) {echo ' id="' . $this->__($_filter->attribute_model->attribute_code) . '" ';} ?>><?php echo $_filter->getHtml() ?></dd>
                 <?php endif; ?>
                 <?php endforeach; ?>

@@ -1,0 +1,151 @@
+body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; 
+    font-weight: 300;
+    background:white;
+    color:black !important;
+    max-width:720px;
+    margin:10px auto;
+    padding:1em;
+}
+
+@mixin m-bordered-container{
+        background:black;
+        color:white !important;
+        padding:5px;
+        margin-top:0;     
+}
+
+a{
+    color:black;
+}
+
+.logo-container{
+    width:100%;
+    .logo-link-image{
+        text-align: center;
+        display:block;
+        img{
+            margin:0px auto;
+            width:auto;
+            height:auto;
+        }
+    }
+}
+
+.email-heading{
+    h3{
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    p{
+        padding-right:20px;
+    }
+}
+
+.store-info{
+    font-size:0.9em;
+    width:30%;
+    h4{ 
+        margin:0px; 
+        text-transform: uppercase;
+        font-weight: 200;
+        border-left:2px solid #b4b4b4;
+        padding-left:5px;
+        padding-bottom:5px;
+    }
+
+    a{
+        color:black;
+
+    }
+
+    p{
+        margin:0px !important;
+        border-left:2px solid #b4b4b4;
+        padding-left:5px;
+        line-height: 1.5em;
+    }
+}
+
+.order-details{
+    border:1px solid black;
+    h3{
+        @include m-bordered-container; 
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+
+    p{
+        padding:5px;
+    }
+}
+
+.action-content{
+    h3{
+        font-weight: 200;
+        text-transform: uppercase;       
+    }
+
+    ul li{
+        padding:0.25em 0em;
+    }
+}
+
+.account-info{
+    @include m-bordered-container; 
+    font-weight: 200;
+    text-transform: uppercase;
+    margin:20px auto 0px auto;
+    max-width:450px;
+    border:1px solid black;
+}
+
+.highlighted-text{
+    border:1px solid black;
+    margin:0px auto;
+    padding:5px;
+    line-height: 2em;
+    max-width:450px;
+}
+
+.order-information{
+    font-size:1em;
+    h6{
+         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; 
+         color:black !important;
+         font-size:0.8em;
+         margin:15px 0px;
+    }
+}
+
+.closing-text{
+        border-top:1px solid #b4b4b4;
+        padding-top:10px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; 
+        color:black !important;
+        font-weight: normal;
+}
+
+@media(max-width:560px){
+    td{
+        display: block;
+        width:100% !important;
+    }
+    .store-info{
+        border:0 !important;
+        padding:20px 0px;
+        font-size:1em;
+        width:100%;
+
+        a,p,h4{
+            border:0 !important;
+            padding-left:0 !important;
+        }
+    }
+
+    .account-info{
+        font-size: 0.75em;
+    }
+
+}
