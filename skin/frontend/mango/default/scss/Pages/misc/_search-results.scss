@@ -1,0 +1,55 @@
+// ----- SEARCH RESULTS - DESKTOP ----- 
+
+ .catalogsearch-result-index{
+	.col-wrapper{
+	 	float:right;
+	 	display: inline-block;
+	 	text-align: left;
+	 	width:100%;
+	 	margin:10px auto;
+	 }
+
+	 h1{
+	 	text-align: center;
+	 }
+
+	 .item{
+	 	width:30%;
+	 	display:inline-block;
+	 	margin:20px 5px;
+	 	position:relative;
+	 	padding:10px;
+
+	 	.product-name, .price-box{
+	 		text-align: center;
+	 	}
+
+	 	.price-box{
+	 		margin:10px 0px;
+	 	}
+	 }
+
+	 .sidebar{
+	 	display:none;
+	 }
+
+	 #category-sort-by{
+	 	margin:20px 0px;
+
+	 	select{
+	 		width:150px;
+	 		margin-right:10px;
+	 	}
+	 }
+ }
+
+ // ----- SEARCH RESULTS - TABLET -----
+@include breakpoint($tablet-breakpoint){
+	 .catalogsearch-result-index{
+		  .item{
+		 	width:75%;
+		 	display:block;
+		 	margin:30px auto;
+		 }
+	 }
+}

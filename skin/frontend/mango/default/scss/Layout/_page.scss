@@ -1,4 +1,11 @@
 // ------ DESKTOP
+
+body
+{
+	background-color: white;
+	color:black;
+}
+
 .page{
 	max-width:$desktop-page-width;
 	margin:0 auto;
@@ -11,7 +18,7 @@
 	margin:0 auto;
 
 	p{
-		margin-left:20%;
+		margin-left:10%;
 		margin-right:auto;
 		font-size: 1em;
 		text-align: left;		
@@ -31,6 +38,27 @@
 		padding:5px 0px;		
 	}
 }
+
+.main
+{
+	width:100%;
+	clear:both;
+}
+
+.border-container
+{
+	border:3px solid #8a8a8a;
+	width:100%;
+	margin:5px auto;
+	text-align: center;
+}
+
+.form-container
+{
+	vertical-align: middle;
+	margin-bottom:25px;
+}
+
 
 // ----- TABLET
 @include breakpoint($tablet-breakpoint){
@@ -80,5 +108,52 @@
 			text-align: center;
 			margin:0px auto;			
 		}
+	}
+}
+
+// --------- COL2 LAYOUT ----------
+.sidebar .block-account, .sidebar .block-reorder {
+	border:1px solid #B4B4B4;
+	margin:20px 20px 10px 0px;
+}
+
+.sidebar .block-account, div.block:nth-child(2), .sidebar .block-reorder, div.block:nth-child(2){
+	margin:10px 0px 10px 0px;
+}
+
+.col2-left-layout .col-left{
+	margin-left:10px;
+}
+
+
+@include breakpoint($tablet-breakpoint){
+	.col2-left-layout {
+		margin:0px 1%;
+	}
+	.customer-account-index .col2-left-layout{
+		margin:0px 4%;
+	}
+
+	.col2-left-layout .col-left{
+		width:30%;
+		margin-left:0px;
+	}
+
+	.col2-left-layout .col-main{
+		width:72%;
+	}
+}
+
+@include breakpoint($smartphone-breakpoint){
+	.col2-left-layout .col-main{
+		width:100%;
+	}
+
+	.col2-left-layout .sidebar{
+		width:100%;
+	}
+
+	.main-container{
+		margin:0px 2%;
 	}
 }

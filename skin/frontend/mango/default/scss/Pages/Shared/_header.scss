@@ -4,11 +4,26 @@ header{
 	margin:0px auto;
 	padding:0px;
 
-	.messages li ul{
-	list-style: none;
-	margin: 0px;
-	padding: 0px 0px;
-	vertical-align: middle;
+	.messages{
+	position:fixed;
+	top:0px;
+	left:0px;
+	text-align: center;
+	margin: 0px auto;
+	width: 100%;
+	height:65px;
+	background-color: white;
+	list-style:none;
+	padding:20px 0px 0px 0px;
+	z-index:110;
+
+		li ul{
+			list-style: none;
+			margin: 0px;
+			padding: 0px 0px;
+			vertical-align: middle;	
+		}
+
 	}
 
 	#navMenuButton{
@@ -22,7 +37,7 @@ header{
 		}
 	}
 	
-	 #header_wrapper .top-link-checkout {
+	 .header_wrapper .top-link-checkout {
 	 	display: none;
 	 }
 
@@ -30,10 +45,6 @@ header{
 		text-align: center;
 		margin:0 auto;	 	
 	 }
-
-	#smartphoneLogo{
-
-	}
 
 	.top-help-a{
 		margin-right:10px;
@@ -50,7 +61,7 @@ header{
 	}
 
 	#search{
-		width:75%;
+		width:85%;
 		font-size: 0.8em;
 		text-align: center;
 		font-family: arial;
@@ -59,6 +70,7 @@ header{
 	    border-color: white;
 	    background-color:transparent;
 	    border: 0px solid;
+	    will-change: transform;
 
 	    &:focus {
 		border-color: white;
@@ -68,14 +80,18 @@ header{
 	    }
 	}
 
-	.form-search button[title="Search"]{
+	button[title="Search"]{
 		display:none;
 	}
 
 	#search_mini_form{
 		text-align:center;
-		margin:0px auto;
+		margin: 0px auto 0px 10px;
 		max-width:15em;
+	}
+
+	.logo_column h1{
+		margin:5px auto;
 	}
 
 	.links{
@@ -121,6 +137,7 @@ header{
 		background-size: contain;
 		background-position: right bottom;
 		padding:10px 20px 5px 0px;
+		margin-right:10px;
 
 		&:hover{
 			cursor:pointer;
@@ -146,6 +163,20 @@ header{
 
 }
 
+#click-layer{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	//background: red; // For debugging
+	opacity: 0;
+	filter:Alpha(opacity=0);
+	pointer-events:none;
+	z-index:89;
+}
 
 // ----- HEADER - TABLET -----  */
 @include breakpoint($tablet-breakpoint){
@@ -166,9 +197,15 @@ header{
 		.search-wrapper{
 			float:none;
 			margin:0px auto;
+
+
+
+			.search-visible{
+				display:block;
+			}
 		}
 
-		#header_wrapper{
+		.header_wrapper{
 			margin:0px;
 		}
 
@@ -217,7 +254,7 @@ header{
 			top:90px;
 			left:5px;
 			background-color: white;
-			z-index:5;
+			z-index:99;
 			width:98%;
 			float:none;
 
@@ -292,9 +329,18 @@ header{
 			display: block;
 			width:100%;
 			clear:both;
+
+			h1{
+				margin:3px auto;
+			}
 		}
 
-		#header_wrapper {
+		#navMenuButton{
+			min-width:45px;
+			padding:8px 10px;
+		}
+
+		.header_wrapper {
 
 			padding-top:10px;
 			background-color:white;		
@@ -316,16 +362,17 @@ header{
 		.form-search{
 			width:95%;
 			top:140px;
+			border:2px solid #474444;
 
 			&:before{
 		 		@include m-mini-menu-box(10px, 0px, 5px, 5px);
-				left: 135px;
+				left: 30%;
 				top: -10px;		
 			}
 		}
 
 		.links{
-			margin:-6px 15px 0px 5px;
+			margin:-6px 5px 0px 5px;
 		}
 
 		#search{

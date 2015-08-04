@@ -1,0 +1,60 @@
+.desktopTabletOnly{
+	display: block;
+}
+
+.mobileOnly, .smartphoneOnly, .inlineSmartphoneOnly{
+	display: none; 
+}
+
+.desktopOnly{
+	display: block;
+}
+
+.desktopTabletOnly{
+	display: block;
+}
+
+@include breakpoint($tablet-breakpoint){
+	li.level0 a:hover{
+		cursor:pointer;
+	}
+	
+	.main-container{
+		margin:0px 1%;
+		margin-top:20px;
+	}
+	
+	.desktopTabletOnly{
+	display: block;
+	}
+	.mobileOnly{
+		display: none;
+	}
+
+	.desktopOnly{
+		display: none;
+	}
+
+}
+
+@include breakpoint($smartphone-breakpoint){
+	.mobileOnly{
+		display: block;
+	}
+	.smartphoneOnly{
+		display: block;
+	}
+
+	.inlineSmartphoneOnly{
+		display: inline-block;
+	}
+
+	.desktopOnly{
+		display: none;
+	}
+
+	.desktopTabletOnly{
+		display: none;
+	}
+
+}

@@ -1,5 +1,9 @@
 // ----- FOOTER - DESKTOP ----- 
-
+.block-related{
+	.block-title{
+		margin:10px auto;
+	}
+}
 footer{
 	clear:both;
 
@@ -16,7 +20,8 @@ footer{
 	.border-container{
 		margin:15px auto;
 		width:98%;
-		padding:10px 0px;
+		padding:30px 0px;
+		line-height:1.5em;
 	}
 
 	#newsletter-validate-detail {
@@ -43,6 +48,8 @@ footer{
 
 	.block-subscribe{
 		width:90%;
+		display: inline-block;
+		vertical-align: middle;
 		#newsletter-validate-detail, #newsletter-validate-detail .block-content{
 			width:100%;
 		}
@@ -60,6 +67,7 @@ footer{
 		span{
 			color:white;
 			font-weight: bold;			
+			vertical-align: top;
 		}
 	}
 
@@ -68,14 +76,16 @@ footer{
 	}
 
 	.footer{
-		margin:30px 0 20px;
-		text-align: center;
+		max-width: 1280px;
+    	margin: 0 auto;
 	}
 
 	.grid4{
 		vertical-align: top;
 		text-align: left;
 		text-align:center;
+		margin-top:20px;
+		margin-bottom:20px;
 
 		.grid4-wrapper{
 			display:inline-block;
@@ -147,6 +157,14 @@ footer{
 			display: inline-block;
 			margin:10px 0px;	
 
+			.block-title:hover, ul li:hover{
+				cursor: pointer;
+			}
+
+			ul.footer-visible{
+				display:block;
+			}
+
 			ul{
 				display: none;
 				li{
@@ -154,6 +172,12 @@ footer{
 					a:hover{font-weight:normal;}
 				}
 			}	
+		}
+
+		.form-container{
+			padding:5px 0px;
+			width:95%;
+			margin-bottom:10px;
 		}
 	}
 
@@ -163,6 +187,7 @@ footer{
 
 		#newsletter-validate-detail .block-content #newsletter{
 			padding:5px;
+			width:70%;
 		}
 
 		.subscribe-button{
@@ -171,8 +196,9 @@ footer{
 			margin:0px;
 			background-color: black;
 			padding:3px;
-			min-width:100px;
+			min-width:30%;
 			height:30px !important;
+
 		}
 
 		#newsletter_banner{

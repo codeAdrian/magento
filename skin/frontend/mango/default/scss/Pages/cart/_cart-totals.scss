@@ -1,0 +1,118 @@
+// ----- CART TOTALS - DESKTOP ----- 
+.cart-totals-wrapper{
+		text-align: center;
+		margin:10px auto;
+
+	.cart-collaterals .input-box{
+		display:block;
+		width:100%;
+	}
+
+	.shipping-form{
+		p{
+			margin:10px 0px;
+		}
+		select{
+		 	width:75%;
+	 		font-size: 1.5em;	
+	 		margin:5px 0px 10px;		
+		}
+
+		.form-list li{
+			padding:5px 0px;
+		}
+
+		input{
+			margin:5px 0px 10px;
+		}
+	}
+
+	.totals, .cart-collaterals, .shipping{
+		@include m-box-sizing(border-box);
+		text-transform: none;
+		vertical-align: top;
+		text-align: left;
+		border:1px solid #B4B4B4;
+	}
+
+	.discount-form, .shipping-form, .totals>div{
+		padding:10px;
+	}
+
+	.page-title button{
+		margin-left:15px;
+	}
+	.totals{
+		text-align: right;
+
+		table{
+			margin-left:auto;
+			margin-right:0px;	
+
+			tr td{
+				padding:5px 20px 10px 0px;
+				width:100%;
+			}
+
+			tfoot tr td{
+				padding:10px 0px 10px;
+				border-top:1px solid #B4B4B4;
+			}		
+		}
+	}
+
+	.totals button, .discount-form .buttons-set button{
+		margin:5px 15px 5px 0px;
+	}
+
+	.discount h2, .shipping h2, .totals h2{
+		margin:0px;
+		padding:3px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 300;
+		color:white;
+		background-color: black;
+	}
+
+	#coupon_code{
+		font-size: 1em;
+		padding:2px;
+		margin:10px 0px;
+	}
+
+	#advice-required-entry-coupon_code{
+		font-size:1.3em;
+	}
+
+	.sp-methods dt{
+	font-weight: bold;
+	padding-right:10px;
+	margin-top:5px;
+	}
+
+	.sp-methods{
+		text-align: left;
+		padding-left:1em;
+	}
+}
+
+
+// ----- CART TOTALS - TABLET -----
+@include breakpoint($tablet-breakpoint){
+	.cart-totals-wrapper{
+		.totals table{
+				width:100%;
+		}
+
+		.input-box input{
+				width:98%;
+		}
+
+		.sp-methods{
+			text-align: center;
+	    	border: 1px solid black;
+	    	margin-left:0;
+		}
+	}
+}

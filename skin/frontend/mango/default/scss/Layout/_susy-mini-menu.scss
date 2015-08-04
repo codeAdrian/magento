@@ -1,0 +1,36 @@
+// ----- DESKTOP
+$susy:(
+	columns:$susy-desktop-buttons-columns,
+	//debug: (image: show),
+);
+
+#mini-menu-cart{
+	.buttons-container{
+		@include container($susy-desktop-buttons-columns);
+	}
+
+	.grid2{
+		@include span(1 of $susy-desktop-buttons-columns);
+
+		&:last-child{
+			@include span(last 1 of $susy-desktop-buttons-columns);
+		}
+	}
+}
+
+// ----- SMARTPHONE
+@include breakpoint($smartphone-breakpoint){
+	#mini-menu-cart{
+		.buttons-container{
+			@include container($susy-smartphone-buttons-columns);
+		}
+
+		.grid2{
+			@include span(1 of $susy-smartphone-buttons-columns);
+
+			&:last-child{
+				@include span(last 1 of $susy-smartphone-buttons-columns);
+			}
+		}
+	}
+}

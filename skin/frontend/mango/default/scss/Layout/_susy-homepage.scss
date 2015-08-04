@@ -3,7 +3,6 @@
 $susy:(
 	columns:$susy-desktop-grid3-columns,
 	//debug: (image: show),
-	global-box-sizing:border-box
 );
 
 .homepage-product-grid{
@@ -38,7 +37,6 @@ $susy:(
 $susy:(
 	columns:$susy-desktop-grid2-columns,
 	//debug: (image: show),
-	global-box-sizing:border-box
 );
 
 .border-container{
@@ -74,7 +72,6 @@ $susy:(
 	columns:$susy-desktop-grid2-columns,
 	//debug: (image: show),
 	gutters:1%/50%,
-	global-box-sizing:border-box
 );
 
 .image-container{

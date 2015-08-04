@@ -17,3 +17,54 @@
        -moz-border-radius: $radius;
             border-radius: $radius;
 }
+
+@mixin m-user-select($property){
+    -webkit-user-select: $property;      
+       -moz-user-select: $property; 
+        -ms-user-select: $property;  
+}
+
+@mixin m-animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin m-keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin m-transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    transition:         $transition;
+}
+
+@mixin m-transform-origin($origin){
+   -webkit-transform-origin: $origin;
+       -ms-transform-origin: $origin;
+           transform-origin: $origin;
+}
