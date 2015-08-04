@@ -157,6 +157,14 @@ footer{
 			display: inline-block;
 			margin:10px 0px;	
 
+			.block-title:hover, ul li:hover{
+				cursor: pointer;
+			}
+
+			ul.footer-visible{
+				display:block;
+			}
+
 			ul{
 				display: none;
 				li{

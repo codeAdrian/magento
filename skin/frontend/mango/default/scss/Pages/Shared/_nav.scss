@@ -6,18 +6,20 @@ nav
 	text-align: center;
 	padding:10px 0px 0px;
 	will-change: transform;
+	display:block;
 
 	ul{
 		list-style: none;
 		padding:0px;	
 
+		&>li.last{
+			margin-right:0px;
+		}
+
 		li{
 			display:inline-block;
 			margin-right:40px;
-
-			&.last{
-				margin-right:0px;
-			}
+			position:relative;
 
 			a{
 				text-decoration: none;
@@ -37,7 +39,6 @@ nav
 	display: none;
 }
 
-
 .level0 > a span:hover
 {
 	border-bottom:2px solid #646060;
@@ -47,20 +48,19 @@ nav
 
 nav ul li ul
 {
-	display: none;
 	position: absolute; 
 	padding:0px;
-	z-index:200;
+	z-index:99;
 
 	&>li:hover{
 		background-color: #e4e3e3;
 		border: 0px;
-		z-index:200;		
+		z-index:99;		
 	}
 
 	li > a{
 	border:0px;
-	z-index:200;
+	z-index:99;
 	}
 
 	li{
@@ -71,7 +71,7 @@ nav ul li ul
 		text-align: left;
 		background-color: white;
 		padding:10px 0px;
-		z-index:200;
+		z-index:99;
 		
 		a{
 			padding:15px 10px;
@@ -80,10 +80,33 @@ nav ul li ul
 	}
 }
 
-.dropdown
-{
-  display:block;
-  z-index:200;
+nav{
+	display:block;
+
+	ul li > a:hover{
+		cursor: pointer;
+	}
+}
+
+nav ul li ul{
+	@include m-transition(all 0.2s ease);
+	opacity:0;
+	visibility: hidden;
+}
+
+nav ul li:hover{
+	&>ul{
+		//display: block;
+		opacity: 1;
+		visibility: visible;
+		z-index:99;
+		position:absolute;
+		top:20px;
+	}
+
+	& > a:not(:last-child){
+		border-bottom:1px solid #b4b4b4;
+	}
 }
 
 /* DROPDOWN END*/
@@ -107,9 +130,15 @@ nav ul li ul
     	display: none;
     }
 
+    .search-wrapper{
+    	.form-search{
+    		border:0;
+    	}
+    }
+
     nav {
     top: 0;
-    z-index: 100;
+    z-index: 98;
     position: fixed;
     margin:0 auto;
     padding-top:20px;
@@ -121,31 +150,109 @@ nav ul li ul
     width: 50%;
     }
 
-
+	button[title="Search"]{
+		display:none;
+	}
 }
 
 // ----- NAV - TABLET -----
 @include breakpoint($tablet-breakpoint){
+	nav{
+		display:none;
+	}
+
+@include m-keyframes (menu-slide){
+	from{left:-100%;}
+	to{left:0%;
+		position:relative;}
+}
+
+@include m-keyframes (menu-background){
+	from{background-color: rgba(0,0,0,0);}
+	to{background-color: rgba(0,0,0,0.5);}
+}
+
+@include m-keyframes(scale-fadein){
+	from{
+		transform:scale(1,0);
+		opacity:0;
+	}
+
+	to{
+		transform:scale(1,1);
+		opacity:1;
+	}
+}
+
+.offcanvas{
+		display:block;
+		position: fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		padding:0px;
+		z-index:99;
+		@include m-animation('menu-background 0.5s 1');
+		background-color: rgba(0,0,0,0.5);
+
+		ul > li.level0:before{
+			font-family:mango-font-icons;
+			content:" ";
+		}
+
+		& > ul > li.last{
+			margin:0px auto;
+		}
+
+		ul li ul{
+			display: none;
+		}
 
 	.nav-element-opened{
-		display: block;
-		width:100%;
-		border-bottom:1px solid #B4B4B4;
-		padding:7px 0px 10px 0px;
+		&:before{
+			font-family:mango-font-icons;
+			content:" " !important;
+		}
 
-		&:hover{
-			border-bottom:1px solid #B4B4B4;
+		ul{
+			display: block !important;
+			visibility: visible;
+			width:100%;
+			padding:7px 0px 0px 0px;
+			@include m-transform-origin(center top);
+			@include m-animation(scale-fadein 0.25s 1);
+
+			&:hover{
+				display:block;
+			}
 		}
 
 	}
 
-	nav ul li .has-children:hover{
+	ul li:hover{
+
+		&>ul{
+			position:relative;
+			top:0;
+			display:none;
+		}
+
+		& > a:not(:last-child){
+			border-bottom:0;
+		}
+
+	}
+
+	ul li .has-children:hover{
 		border:0 !important;
 	}
-	nav ul li ul li{
+	ul li ul li{
 		font-size: 0.75em;
-		width:100%;
+		width:95%;
 		font-weight: normal;
+		position:relative;
+		top:0;
 
 		&:hover{
 			background-color:white;
@@ -153,18 +260,20 @@ nav ul li ul
 		}
 	}
 
-	nav .navTitle{
+	.navTitle{
 		border:0;
 		display: inline-block;
 		width:40%;
 		font-size: 2.5em;
 		text-transform: uppercase;
 		font-weight: 300;
+
 	}
 
-	nav .navClose{
+	#navClose{
 		@extend .navTitle;
 		text-align: right;
+		z-index:100;
 
 		span{
 			background-color: black;
@@ -176,7 +285,8 @@ nav ul li ul
 			text-align: center;
 			font-size: 0.5em;
 			max-width: 1.5em;
-			width: 1.25em;		
+			width: 1.25em;	
+			z-index:100;	
 
 			&:hover{
 				cursor: pointer;
@@ -184,50 +294,42 @@ nav ul li ul
 		}
 	}
 
-	nav{
-		display: none;
-		position: fixed;
-		left:0px;
-		top:0px;
-		width:100%;
-		background-color: rgba(0,0,0,0.5);
+	&>ul {
+		background-color: white;
+		width:40%;
 		height:100%;
-		padding:0px;
-		z-index:999;
+		opacity: 1.0;
+		margin:0px;
+		@include m-animation('menu-slide 0.5s 1');
+		position:absolute;
 
-		ul {
-			background-color: white;
-			width:40%;
-			height:100%;
-			opacity: 1.0;
-			margin:0px;
+		li{
+			display:block;
 
-			li{
-				display:block;
+			a{
+				font-weight: 400;
+				font-size: 0.75em;
+			}
 
-				a{
-					font-weight: 400;
-					font-size: 0.75em;
-				}
-
-				ul{
-					position:relative;
-					width:93%;
-					text-align: left;	
+			ul{
+				position:relative;
+				width:93%;
+				text-align: left;	
+				opacity:1;
 					
-					li{
-						margin-left:15px;
-					}		
-				}
+				li{
+					margin-left:15px;
+				}		
+			}
 
-				&.last{
-					margin:0px auto;
-				}
+			&>.last{
+				margin:0px auto;
 			}
 		}
 	}
 
-	nav ul li{
+
+	ul li{
 		padding:10px 0px;
 		border-bottom:1px solid #b4b4b4;
 		width:90%;
@@ -251,6 +353,11 @@ nav ul li ul
 		}
 	}
 
+}
+
+
+
+
 	header nav ul li.mobileOnlyAddition a{
 		margin-left:25px;
 	}
@@ -262,8 +369,8 @@ nav ul li ul
 	.nav-fixed
 	{
 		padding-top:10px;
-	    top: 0;
-	    z-index: 100;
+	    top:0;
+	    z-index: 99;
 	    position: fixed;
 	    width: 100%;
 	    background-color: white;
@@ -289,7 +396,7 @@ nav ul li ul
 
     	.form-search-mini{
     		display: block;
-    	}
+    	} 
 
     	.searchMiniIcon{
     		display: none;
@@ -305,7 +412,7 @@ nav ul li ul
 
 // ----- NAV - MOBILE -----
 @include breakpoint($smartphone-breakpoint){
-	nav ul{
+	.offcanvas ul{
 		width:80%;
 	}
 
@@ -318,6 +425,24 @@ nav ul li ul
 	}
 
 	.nav-fixed{
+
+		.search-wrapper .form-search{
+			width:95%;
+			top:60px;
+			border:2px solid #474444;
+			display:none;
+
+			&:before{
+		 		@include m-mini-menu-box(10px, 0px, 5px, 5px);
+				left: 30%;
+				top: -10px;		
+			}
+		}
+
+		.search-wrapper .search-visible{
+			display: block;
+		}
+
 		.header_wrapper{
 			background-color:white;
 			padding-top:5px;
