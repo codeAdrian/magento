@@ -114,13 +114,17 @@
 		width:100%;
 	}
 
+	.open-close-filters:before{
+		content:"- " !important;
+	}
+
 	.col-left{
 
 		.filters-visible{
-			display:block ;
+			display:block;
 
-			.filter-group-visible{
-				display:block !important;
+			 #narrow-by-list .filter-group-visible{
+				display:block;
 			}
 		}
 		#showFilters{
@@ -128,6 +132,11 @@
 			font-size: 1.2em;
 			text-transform: uppercase;
 			display: inline-block;
+
+			&:before{
+				content:" ";
+				font-family:mango-font-icons;
+			}
 
 			&:hover{
 				cursor: pointer;
@@ -146,6 +155,11 @@
 				padding:0px;
 				margin:0px 0px 5px 40px;
 				text-align:left;
+
+			&:before{
+				content:" ";
+				font-family:mango-font-icons;
+			}
 
 				&:hover{
 					cursor: pointer;

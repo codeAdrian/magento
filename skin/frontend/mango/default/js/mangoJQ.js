@@ -113,10 +113,12 @@ jq(function(){
 // SHOW FILTERS
 jq(function(){
         jq('#showFilters').click(function(){
+            jq(this).toggleClass("open-close-filters");
             jq(".filterList").toggleClass("filters-visible");
         });
 
         jq('#narrow-by-list').find("dt").click(function(){
+            jq(this).toggleClass("open-close-filters");
             jq(this).next("dd").toggleClass("filter-group-visible");
         });
 });
