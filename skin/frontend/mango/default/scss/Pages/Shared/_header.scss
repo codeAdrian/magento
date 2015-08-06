@@ -15,7 +15,7 @@ header{
 	background-color: white;
 	list-style:none;
 	padding:20px 0px 0px 0px;
-	z-index:300;
+	z-index:110;
 
 		li ul{
 			list-style: none;
@@ -61,7 +61,7 @@ header{
 	}
 
 	#search{
-		width:75%;
+		width:85%;
 		font-size: 0.8em;
 		text-align: center;
 		font-family: arial;
@@ -80,7 +80,7 @@ header{
 	    }
 	}
 
-	.form-search button[title="Search"]{
+	button[title="Search"]{
 		display:none;
 	}
 
@@ -163,6 +163,20 @@ header{
 
 }
 
+#click-layer{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	//background: red; // For debugging
+	opacity: 0;
+	filter:Alpha(opacity=0);
+	pointer-events:none;
+	z-index:89;
+}
 
 // ----- HEADER - TABLET -----  */
 @include breakpoint($tablet-breakpoint){
@@ -183,6 +197,12 @@ header{
 		.search-wrapper{
 			float:none;
 			margin:0px auto;
+
+
+
+			.search-visible{
+				display:block;
+			}
 		}
 
 		.header_wrapper{
@@ -234,7 +254,7 @@ header{
 			top:90px;
 			left:5px;
 			background-color: white;
-			z-index:5;
+			z-index:99;
 			width:98%;
 			float:none;
 
@@ -315,6 +335,11 @@ header{
 			}
 		}
 
+		#navMenuButton{
+			min-width:45px;
+			padding:8px 10px;
+		}
+
 		.header_wrapper {
 
 			padding-top:10px;
@@ -337,16 +362,17 @@ header{
 		.form-search{
 			width:95%;
 			top:140px;
+			border:2px solid #474444;
 
 			&:before{
 		 		@include m-mini-menu-box(10px, 0px, 5px, 5px);
-				left: 135px;
+				left: 30%;
 				top: -10px;		
 			}
 		}
 
 		.links{
-			margin:-6px 15px 0px 5px;
+			margin:-6px 5px 0px 5px;
 		}
 
 		#search{
