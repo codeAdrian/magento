@@ -7,6 +7,75 @@
  			margin:0;
  		}
 
+ 		.back-link-button{
+ 			text-align: center;
+ 		}
+
+ 		#checkout-step-payment, #checkout-review-load{
+ 			padding:0px 20px;
+
+ 			table{
+ 				margin-top:10px;
+ 				width:100%;
+
+ 				.item-options{
+ 					dt{
+ 						width:auto;
+ 						display:inline-block;
+ 						font-weight: bold;
+
+ 						&:after{
+ 							content:": "
+ 						}
+ 					}
+
+ 					dd{
+ 						display: inline-block;
+ 						width:auto;
+ 					}
+
+ 					dt+dd{
+ 						display: block;
+ 					}
+ 				}
+
+ 				thead th{
+ 					text-transform: uppercase;
+ 					background-color: black;
+ 					color:white;
+ 					padding:5px 10px;
+ 					width:40%;
+ 				}
+
+ 				tbody{
+ 					 h3{
+ 						text-transform: uppercase;
+ 					}
+
+		 			tr{
+		 					border-bottom:1px solid #b4b4b4;
+
+		 					td{
+		 						padding:10px;
+		 					}
+		 				}
+ 				}
+
+ 				tfoot{
+ 					tr:first-child{
+ 						td{
+ 							border-top:1px solid black;
+ 							padding-top:1.5em;
+ 						}
+ 					}
+
+ 					tr{
+ 						td{padding-bottom:0.5em;}
+ 					}
+ 				}
+ 			}
+ 		}
+
  		#co-shipping-method-form{
 
  			.grid3{
@@ -26,30 +95,18 @@
  		}
 
  		.gift-messages{
- 			h3{
- 				font-weight: bold;
- 				margin:0.5em 0;
- 			}
-
- 			.control{
- 				margin:0.5em 0;
- 			}
+ 			display:none;
 
  		}
 
- 	 		.inner-box{
- 			padding-left:0.5em;
- 			margin-left:0.5em;
- 			border-left:2px solid #b4b4b4;
-
- 			h4{
- 				margin:0.5em 0;
- 			}
-
- 			p{
- 				margin:0.5em 0;
- 			}
+ 		.sp-methods{
+ 			margin:1em auto;
+ 			text-align: center;
+	 		 input{
+	 			width:auto;
+	 		}
  		}
+
  	}
 
  	.please-wait{
@@ -64,6 +121,14 @@
  		height:90%;
  		right:0;
  		margin-bottom:1em;
+
+ 		a{
+ 			text-decoration: none;
+ 			color:black;
+ 			&:hover{
+ 				font-weight: bold;
+ 			}
+ 		}
 
  		h1{
  			text-transform: uppercase;
@@ -175,6 +240,24 @@
 
 		.please-wait{
 			display: none;
+		}
+	}
+}
+
+@include breakpoint($tablet-breakpoint){
+	.checkout-onepage-index {
+		.grid3{
+				width:100%;
+				display:block;
+				margin:1.5em auto;
+				text-align: center;
+			}
+
+		.buttons-set .grid2{
+				width:100%;
+				display:block;
+				margin:1em auto;
+				text-align: center;
 		}
 	}
 }
