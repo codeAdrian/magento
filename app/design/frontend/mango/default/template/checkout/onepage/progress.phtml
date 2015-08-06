@@ -26,32 +26,32 @@
 ?>
 <div class="block block-progress opc-block-progress<?php if (!$this->isCustomerLoggedIn()/* && !$this->getCheckout()->getStepData('billing', 'is_show')*/): ?> opc-block-progress-step-login<?php endif; ?>">
     <div class="block-title">
-        <strong><span><?php echo $this->__('Your Checkout Progress') ?></span></strong>
+       <h2><?php echo $this->__('Your Checkout Progress') ?></h2>
     </div>
     <div class="block-content">
         <dl>
             <?php if ($this->getCheckout()->getStepData('billing', 'is_show')): ?>
-            <div id="billing-progress-opcheckout">
+            <h3 id="billing-progress-opcheckout">
                 <?php echo $this->getChildHtml('billing.progress') ?>
-            </div>
+            </h3>
             <?php endif; ?>
 
             <?php if ($this->getCheckout()->getStepData('shipping', 'is_show')): ?>
-            <div id="shipping-progress-opcheckout">
+            <h3 id="shipping-progress-opcheckout">
                 <?php echo $this->getChildHtml('shipping.progress') ?>
-            </div>
+            </h3>
             <?php endif; ?>
 
             <?php if ($this->getCheckout()->getStepData('shipping_method', 'is_show')): ?>
-            <div id="shipping_method-progress-opcheckout">
+            <h3 id="shipping_method-progress-opcheckout">
                 <?php echo $this->getChildHtml('shippingmethod.progress') ?>
-            </div>
+            </h3>
             <?php endif; ?>
 
             <?php if ($this->getCheckout()->getStepData('payment', 'is_show')): ?>
-            <div id="payment-progress-opcheckout">
+            <h3 id="payment-progress-opcheckout">
                 <?php echo $this->getChildHtml('payment.progress') ?>
-            </div>
+            </h3>
             <?php endif; ?>
         </dl>
     </div>

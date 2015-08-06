@@ -1,5 +1,94 @@
 // ----- CHECKOUT- DESKTOP ----- 
  .checkout-onepage-index{
+ 	.main-container{
+ 		padding:1em;
+
+ 		.red-button{
+ 			margin:0;
+ 		}
+
+ 		#co-shipping-method-form{
+
+ 			.grid3{
+ 				width:45%;
+ 				text-transform: none;
+ 			}
+ 			dl{
+ 				dt{
+ 					font-weight: bold;
+ 					margin-top:0.5em;
+ 				}
+
+ 				dd{
+ 					margin:0.5em 0;
+ 				}
+ 			}
+ 		}
+
+ 		.gift-messages{
+ 			h3{
+ 				font-weight: bold;
+ 				margin:0.5em 0;
+ 			}
+
+ 			.control{
+ 				margin:0.5em 0;
+ 			}
+
+ 		}
+
+ 	 		.inner-box{
+ 			padding-left:0.5em;
+ 			margin-left:0.5em;
+ 			border-left:2px solid #b4b4b4;
+
+ 			h4{
+ 				margin:0.5em 0;
+ 			}
+
+ 			p{
+ 				margin:0.5em 0;
+ 			}
+ 		}
+ 	}
+
+ 	.please-wait{
+ 		display: none;
+ 	}
+
+
+ 	.sidebar{
+ 		@include m-box-sizing(border-box);
+ 		border-left:2px solid #b4b4b4;
+ 		padding-left:0.5em;
+ 		height:90%;
+ 		right:0;
+ 		margin-bottom:1em;
+
+ 		h1{
+ 			text-transform: uppercase;
+ 		}
+
+ 		h2{
+ 			font-size:1.25em;
+ 			text-transform: uppercase;
+ 			margin:1em 0em;
+ 		}
+
+ 		h3{
+ 			font-size:1em;
+ 			margin:1em 0em;
+ 		}
+
+ 		dt{
+  			font-size:1em;
+ 			margin:1em 0em;	
+ 			font-weight: bold;
+ 			span{
+ 				font-weight: normal;
+ 			}		
+ 		}
+ 	}
  	p.required{
  		font-size:0.75em;
  		margin:10px 0px;
@@ -20,7 +109,7 @@
 
 	 #checkoutSteps{
 		border:1px solid #b4b4b4;
-		width:75%;
+
 		margin:10px auto;
 
 		#billing-address-select, #shipping-address-select{
@@ -57,12 +146,16 @@
 		li:not(:last-child) .step-title h2{
 			border-bottom:1px solid white;
 		}
+
+		.form-list{
+			margin:5px 0px;
+		}
 		.form-list li{
 			padding:3px 0px;
 
 			&.control{
 				margin:10px 0px;
-				width:30%;
+				width:100%;
 				display:inline-block;
 
 				input{
@@ -90,6 +183,13 @@
 // ----- CHECKOUT - MOBILE -----
 @include breakpoint($smartphone-breakpoint){
  .checkout-onepage-index{
+
+ 	.sidebar{
+ 		position:relative;
+ 		height:auto;
+ 		border:0;
+ 		padding-left:0;
+ 	}
 		#checkoutSteps{
 			width:100%;
 			li #billing-buttons-container{
