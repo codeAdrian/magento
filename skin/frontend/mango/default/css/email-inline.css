@@ -184,7 +184,7 @@ a {
 /* line 176, ../scss/email-inline.scss */
 .order-information table tr dd {
   display: inline-block;
-  margin-right: 80%;
+  margin-right: 75%;
 }
 /* line 183, ../scss/email-inline.scss */
 .order-information thead th {
