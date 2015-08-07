@@ -1,4 +1,18 @@
 // ----- CHECKOUT- DESKTOP ----- 
+ .checkout-onepage-success{
+ 	.main{
+ 		padding:1em;
+ 		text-align: center;
+ 		p{
+ 			margin:30px 0px;
+ 		}
+
+ 		a{
+ 			color:black;
+ 		}
+ 	}
+ }
+
  .checkout-onepage-index{
  	.main-container{
  		padding:1em;
@@ -265,6 +279,11 @@
 
 // ----- CHECKOUT - MOBILE -----
 @include breakpoint($smartphone-breakpoint){
+.checkout-onepage-success{
+ 	.main{
+ 		padding:0em;
+ 	}
+ }
  .checkout-onepage-index{
 
  	.sidebar{

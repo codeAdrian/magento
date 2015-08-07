@@ -1,5 +1,15 @@
 // ----------- BUTTONS -----------
 
+ul.message{
+	position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    right: 0;
+    text-align: center;
+    padding: 5px;
+}
+
 button{
 	border: 0;
 	padding:10px 10px;
