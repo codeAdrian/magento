@@ -1,0 +1,52 @@
+.no-mq {
+
+}
+
+.no-rgba {
+
+}
+
+.no-flexbox{
+
+	.grid2{
+		width:38% !important;
+	}
+	.grid3{
+		width:25% !important;
+		display:inline;
+	}
+
+	.grid4{
+		width:19% !important;
+	}
+
+	nav ul li{
+		display: inline;
+	}
+
+	.mobileOnly{
+		display: none;
+	}
+
+	.links li, .links .first{
+		display: inline;
+	}
+
+	.nav-fixed{
+		nav{
+			margin-left:25%;
+		}
+	}
+}
+
+.no-backgroundsize{
+	.TopNavIcon{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='images/shopping_bag.png',
+	sizingMethod='scale');
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='images/shopping_bag.png',
+	sizingMethod='scale')";
+	}
+}
