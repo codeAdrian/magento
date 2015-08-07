@@ -1,7 +1,7 @@
 // ----- PRODUCT LIST - DESKTOP -----
 
 .col2-left-layout .col-main{
-	float:right;
+	display:inline-block;
 	width:72%;
 
 	.products-grid{
@@ -155,6 +155,8 @@ padding:15px 0px;
 @include breakpoint($tablet-breakpoint){
 
 .col2-left-layout .col-main{
+
+	width:70%;
 
 	.products-grid{
 			display: inline;

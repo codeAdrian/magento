@@ -3627,15 +3627,16 @@ nav ul li:hover > a:not(:last-child) {
 
 /* line 3, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left {
-  float: left;
+  display: inline-block;
   width: 25%;
   padding-top: 30px;
+  vertical-align: top;
 }
-/* line 8, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 9, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left #narrow-by-list {
   margin-left: 10px;
 }
-/* line 11, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 12, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left #narrow-by-list dt, .col2-left-layout .col-left #narrow-by-list #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .col2-left-layout .col-left #narrow-by-list dd {
   background-color: black;
   color: white;
@@ -3644,43 +3645,43 @@ nav ul li:hover > a:not(:last-child) {
   padding: 10px 10px 10px 40px;
   font-size: 0.8em;
 }
-/* line 20, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 21, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left #narrow-by-list dd {
   border: 1px solid #b4b4b4;
   margin: 0px;
   margin-bottom: 25px;
 }
-/* line 28, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 29, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left dd#apparel_type ol, .col2-left-layout .col-left dd#price ol, .col2-left-layout .col-left dd#color ol, .col2-left-layout .col-left dd#bed_bath_type ol, .col2-left-layout .col-left dd#decor_type ol, .col2-left-layout .col-left dd#home_decor_type ol, .col2-left-layout .col-left dd#material ol {
   list-style: none;
   padding-left: 40px;
 }
-/* line 34, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 35, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left dd#apparel_type ol li, .col2-left-layout .col-left dd#price ol li, .col2-left-layout .col-left dd#color ol li, .col2-left-layout .col-left dd#bed_bath_type ol li, .col2-left-layout .col-left dd#decor_type ol li, .col2-left-layout .col-left dd#home_decor_type ol li, .col2-left-layout .col-left dd#material ol li {
   padding: 5px 0px;
 }
-/* line 38, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 39, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left dd#apparel_type li a, .col2-left-layout .col-left dd#price li a, .col2-left-layout .col-left dd#color li a, .col2-left-layout .col-left dd#bed_bath_type ol li a, .col2-left-layout .col-left dd#decor_type ol li a, .col2-left-layout .col-left dd#home_decor_type ol li a, .col2-left-layout .col-left dd#material ol li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   font-size: 0.8em;
 }
-/* line 45, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 46, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left #size {
   text-align: center;
 }
-/* line 48, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 49, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left #size ol {
   list-style: none;
   padding: 2px 0px 2px 30px;
 }
-/* line 52, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 53, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left #size ol li {
   display: inline-block;
   margin: 10px 15% 10px 0px;
 }
-/* line 56, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 57, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left #size ol li a {
   text-decoration: none;
   font-size: 1em;
@@ -3691,52 +3692,52 @@ nav ul li:hover > a:not(:last-child) {
   height: 20px;
   padding: 2px 3px;
 }
-/* line 65, ../scss/Pages/Category/_left-sidebar.scss */
+/* line 66, ../scss/Pages/Category/_left-sidebar.scss */
 .col2-left-layout .col-left #size ol li a:hover {
   color: white;
   background-color: black;
 }
 
 @media (max-width: 900px) {
-  /* line 78, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 79, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left {
     padding-top: 10px;
     margin-left: 0px;
     width: 28%;
   }
-  /* line 83, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 84, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list dt, .col2-left-layout .col-left #narrow-by-list #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .col2-left-layout .col-left #narrow-by-list dd {
     text-align: center;
     padding: 10px;
   }
-  /* line 90, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 91, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #size ol {
     padding: 0px;
     margin: 2px auto;
   }
-  /* line 93, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 94, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #size ol li {
     margin-right: 12%;
   }
-  /* line 99, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 100, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left dd#apparel_type ol li, .col2-left-layout .col-left dd#price ol li, .col2-left-layout .col-left dd#color ol li, .col2-left-layout .col-left dd#bed_bath_type ol li, .col2-left-layout .col-left dd#decor_type ol li, .col2-left-layout .col-left dd#home_decor_type ol li, .col2-left-layout .col-left dd#material ol li {
     padding: 10px 0px;
   }
-  /* line 103, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 104, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left dd#apparel_type ol, .col2-left-layout .col-left dd#price ol, .col2-left-layout .col-left dd#color ol, .col2-left-layout .col-left dd#bed_bath_type ol, .col2-left-layout .col-left dd#decor_type ol, .col2-left-layout .col-left dd#home_decor_type ol, .col2-left-layout .col-left dd#material ol {
     padding: 5px 0px 5px 5px;
   }
 }
 @media (max-width: 625px) {
-  /* line 113, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 114, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .sidebar {
     width: 100%;
   }
-  /* line 117, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 118, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .open-close-filters:before {
     content: "- " !important;
   }
-  /* line 123, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 124, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left .filters-visible {
     display: block;
     -webkit-transform-origin: center top;
@@ -3747,7 +3748,7 @@ nav ul li:hover > a:not(:last-child) {
     -o-animation: scale-fadein 0.25s 1;
     animation: scale-fadein 0.25s 1;
   }
-  /* line 128, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 129, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left .filters-visible #narrow-by-list .filter-group-visible {
     display: block;
     -webkit-transform-origin: center top;
@@ -3758,27 +3759,27 @@ nav ul li:hover > a:not(:last-child) {
     -o-animation: scale-fadein 0.25s 1;
     animation: scale-fadein 0.25s 1;
   }
-  /* line 134, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 135, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #showFilters {
     margin: 10px 2px 10px 20px;
     font-size: 1.2em;
     text-transform: uppercase;
     display: inline-block;
   }
-  /* line 140, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 141, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #showFilters:before {
     content: " ";
     font-family: mango-font-icons;
   }
-  /* line 145, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 146, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #showFilters:hover {
     cursor: pointer;
   }
-  /* line 150, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 151, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list {
     margin: 0px;
   }
-  /* line 154, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 155, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list dt, .col2-left-layout .col-left #narrow-by-list #product-info-wrapper .product-shop #product-options-wrapper dl dd, #product-info-wrapper .product-shop #product-options-wrapper dl .col2-left-layout .col-left #narrow-by-list dd {
     background-color: white;
     font-weight: normal;
@@ -3788,54 +3789,54 @@ nav ul li:hover > a:not(:last-child) {
     margin: 0px 0px 5px 40px;
     text-align: left;
   }
-  /* line 163, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 164, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list dt:before, .col2-left-layout .col-left #narrow-by-list #product-info-wrapper .product-shop #product-options-wrapper dl dd:before, #product-info-wrapper .product-shop #product-options-wrapper dl .col2-left-layout .col-left #narrow-by-list dd:before {
     content: " ";
     font-family: mango-font-icons;
   }
-  /* line 168, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 169, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list dt:hover, .col2-left-layout .col-left #narrow-by-list #product-info-wrapper .product-shop #product-options-wrapper dl dd:hover, #product-info-wrapper .product-shop #product-options-wrapper dl .col2-left-layout .col-left #narrow-by-list dd:hover {
     cursor: pointer;
   }
-  /* line 173, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 174, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list dd#apparel_type ol li, .col2-left-layout .col-left #narrow-by-list dd#price ol li, .col2-left-layout .col-left #narrow-by-list dd#color ol li, .col2-left-layout .col-left #narrow-by-list dd#bed_bath_type ol li, .col2-left-layout .col-left #narrow-by-list dd#decor_type ol li, .col2-left-layout .col-left #narrow-by-list dd#home_decor_type ol li, .col2-left-layout .col-left #narrow-by-list dd#material ol li {
     margin: 0px;
     padding: 5px 0px;
   }
-  /* line 178, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 179, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list dd#apparel_type li a, .col2-left-layout .col-left #narrow-by-list dd#price li a, .col2-left-layout .col-left #narrow-by-list dd#color li a, .col2-left-layout .col-left #narrow-by-list dd#bed_bath_type ol li a, .col2-left-layout .col-left #narrow-by-list dd#decor_type ol li a, .col2-left-layout .col-left #narrow-by-list dd#home_decor_type ol li a, .col2-left-layout .col-left #narrow-by-list dd#material ol li a {
     margin: 0px;
     padding: 0px;
     font-size: 1.2em;
     text-transform: none;
   }
-  /* line 185, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 186, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list #size ol li a {
     font-size: 1.2em;
     padding: 5px;
   }
-  /* line 189, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 190, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list #size ol {
     text-align: left;
   }
-  /* line 192, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 193, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list #size ol li {
     margin: 15px 15% 15px 0px;
   }
-  /* line 197, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 198, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #narrow-by-list dd {
     margin-left: 70px;
     border: 0px;
     display: none;
   }
-  /* line 204, ../scss/Pages/Category/_left-sidebar.scss */
+  /* line 205, ../scss/Pages/Category/_left-sidebar.scss */
   .col2-left-layout .col-left #showFilters span, .col2-left-layout .col-left .filterList #narrow-by-list dt span, .col2-left-layout .col-left .filterList #narrow-by-list #product-info-wrapper .product-shop #product-options-wrapper dl dd span, #product-info-wrapper .product-shop #product-options-wrapper dl .col2-left-layout .col-left .filterList #narrow-by-list dd span {
     font-family: mango-font-icons;
   }
 }
 /* line 3, ../scss/Pages/Category/_product-list.scss */
 .col2-left-layout .col-main {
-  float: right;
+  display: inline-block;
   width: 72%;
 }
 /* line 7, ../scss/Pages/Category/_product-list.scss */
@@ -4033,24 +4034,28 @@ nav ul li:hover > a:not(:last-child) {
 }
 
 @media (max-width: 900px) {
-  /* line 159, ../scss/Pages/Category/_product-list.scss */
+  /* line 157, ../scss/Pages/Category/_product-list.scss */
+  .col2-left-layout .col-main {
+    width: 70%;
+  }
+  /* line 161, ../scss/Pages/Category/_product-list.scss */
   .col2-left-layout .col-main .products-grid {
     display: inline;
   }
-  /* line 161, ../scss/Pages/Category/_product-list.scss */
+  /* line 163, ../scss/Pages/Category/_product-list.scss */
   .col2-left-layout .col-main .products-grid .item {
     width: 45%;
     margin: 10px 1.5%;
   }
 
-  /* line 168, ../scss/Pages/Category/_product-list.scss */
+  /* line 170, ../scss/Pages/Category/_product-list.scss */
   .toolbar-bottom .link-return-to-top {
     display: block;
     width: 100%;
     text-align: center;
     margin: 0px 0px 25px 0px;
   }
-  /* line 174, ../scss/Pages/Category/_product-list.scss */
+  /* line 176, ../scss/Pages/Category/_product-list.scss */
   .toolbar-bottom .link-return-to-top a {
     text-decoration: none;
     color: black;
@@ -4061,7 +4066,7 @@ nav ul li:hover > a:not(:last-child) {
   }
 }
 @media (max-width: 625px) {
-  /* line 187, ../scss/Pages/Category/_product-list.scss */
+  /* line 189, ../scss/Pages/Category/_product-list.scss */
   .col2-left-layout .col-left, .col2-left-layout .col-main {
     width: 100%;
     display: block;

@@ -117,7 +117,16 @@ jq(function(){
         });
 });
 
-/* RESPONSIVE TABLE */
+// HIDE ON OFF-CLICK
+jq(function(){
+        jq('.main-container').click(function(){
+          jq(".form-search").removeClass("search-visible");
+          jq('#mini-menu-account').hide();
+          jq('#mini-menu-cart').hide();          
+        });
+});
+
+// RESPONSIVE TABLE
 jq(function(){
   if (jq(".data-table").length ){
     var headertext = [],
@@ -164,7 +173,6 @@ jq(function(){
     }
 
 });
-
 
 // INCREMENT AND DECREMENT QUANTITY
 function incrementQty(){document.getElementById('qty').value=parseInt(document.getElementById('qty').value)+1;}
