@@ -163,6 +163,8 @@ footer{
 
 			ul.footer-visible{
 				display:block;
+				@include m-transform-origin(center top);
+				@include m-animation(scale-fadein 0.25s 1);
 			}
 
 			ul{
