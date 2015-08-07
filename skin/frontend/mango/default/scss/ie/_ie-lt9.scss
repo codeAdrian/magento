@@ -8,11 +8,22 @@
 
 .no-flexbox{
 
+	.homepage-product-grid, .image-container{
+		text-align: center;
+	}
+
 	.grid2{
 		width:38% !important;
+		margin:0;
+	}
+
+	.image-container{
+		.grid2{
+			width:48% !important;
+		}
 	}
 	.grid3{
-		width:25% !important;
+		width:26% !important;
 		display:inline;
 	}
 
@@ -22,6 +33,15 @@
 
 	nav ul li{
 		display: inline;
+
+		ul{
+			left:0px;
+			top:0.75em !important;
+			.last{
+				margin-left:0px !important;
+				left:0px !important;
+			}
+		}
 	}
 
 	.mobileOnly{
