@@ -54,12 +54,28 @@
 	.out-of-stock{
 		border:1px solid #cfcfcf;
 	}
+
 	.discounted-price{
 		border:1px solid #ed1c24;
+		@include m-animation(glow-animation 2s infinite);
 	}	
 
 	.new-product{
 		border:1px solid black;
+	}
+}
+
+@include m-keyframes (glow-animation){
+	0%{
+		box-shadow: 0 0 0 #ed1c24;
+	}
+
+	50%{
+		box-shadow:0 0 3px #ed1c24;
+	}
+
+	100%{
+		box-shadow: 0 0 0 #ed1c24;
 	}
 }
 

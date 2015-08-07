@@ -1,5 +1,159 @@
 // ----- CHECKOUT- DESKTOP ----- 
  .checkout-onepage-index{
+ 	.main-container{
+ 		padding:1em;
+
+ 		.red-button{
+ 			margin:0;
+ 		}
+
+ 		.back-link-button{
+ 			text-align: center;
+ 		}
+
+ 		#checkout-step-payment, #checkout-review-load{
+ 			padding:0px 20px;
+
+ 			table{
+ 				margin-top:10px;
+ 				width:100%;
+
+ 				.item-options{
+ 					dt{
+ 						width:auto;
+ 						display:inline-block;
+ 						font-weight: bold;
+
+ 						&:after{
+ 							content:": "
+ 						}
+ 					}
+
+ 					dd{
+ 						display: inline-block;
+ 						width:auto;
+ 					}
+
+ 					dt+dd{
+ 						display: block;
+ 					}
+ 				}
+
+ 				thead th{
+ 					text-transform: uppercase;
+ 					background-color: black;
+ 					color:white;
+ 					padding:5px 10px;
+ 					width:40%;
+ 				}
+
+ 				tbody{
+ 					 h3{
+ 						text-transform: uppercase;
+ 					}
+
+		 			tr{
+		 					border-bottom:1px solid #b4b4b4;
+
+		 					td{
+		 						padding:10px;
+		 					}
+		 				}
+ 				}
+
+ 				tfoot{
+ 					tr:first-child{
+ 						td{
+ 							border-top:1px solid black;
+ 							padding-top:1.5em;
+ 						}
+ 					}
+
+ 					tr{
+ 						td{padding-bottom:0.5em;}
+ 					}
+ 				}
+ 			}
+ 		}
+
+ 		#co-shipping-method-form{
+
+ 			.grid3{
+ 				width:45%;
+ 				text-transform: none;
+ 			}
+ 			dl{
+ 				dt{
+ 					font-weight: bold;
+ 					margin-top:0.5em;
+ 				}
+
+ 				dd{
+ 					margin:0.5em 0;
+ 				}
+ 			}
+ 		}
+
+ 		.gift-messages{
+ 			display:none;
+
+ 		}
+
+ 		.sp-methods{
+ 			margin:1em auto;
+ 			text-align: center;
+	 		 input{
+	 			width:auto;
+	 		}
+ 		}
+
+ 	}
+
+ 	.please-wait{
+ 		display: none;
+ 	}
+
+
+ 	.sidebar{
+ 		@include m-box-sizing(border-box);
+ 		border-left:2px solid #b4b4b4;
+ 		padding-left:0.5em;
+ 		height:90%;
+ 		right:0;
+ 		margin-bottom:1em;
+
+ 		a{
+ 			text-decoration: none;
+ 			color:black;
+ 			&:hover{
+ 				font-weight: bold;
+ 			}
+ 		}
+
+ 		h1{
+ 			text-transform: uppercase;
+ 		}
+
+ 		h2{
+ 			font-size:1.25em;
+ 			text-transform: uppercase;
+ 			margin:1em 0em;
+ 		}
+
+ 		h3{
+ 			font-size:1em;
+ 			margin:1em 0em;
+ 		}
+
+ 		dt{
+  			font-size:1em;
+ 			margin:1em 0em;	
+ 			font-weight: bold;
+ 			span{
+ 				font-weight: normal;
+ 			}		
+ 		}
+ 	}
  	p.required{
  		font-size:0.75em;
  		margin:10px 0px;
@@ -20,7 +174,7 @@
 
 	 #checkoutSteps{
 		border:1px solid #b4b4b4;
-		width:75%;
+
 		margin:10px auto;
 
 		#billing-address-select, #shipping-address-select{
@@ -57,12 +211,16 @@
 		li:not(:last-child) .step-title h2{
 			border-bottom:1px solid white;
 		}
+
+		.form-list{
+			margin:5px 0px;
+		}
 		.form-list li{
 			padding:3px 0px;
 
 			&.control{
 				margin:10px 0px;
-				width:30%;
+				width:100%;
 				display:inline-block;
 
 				input{
@@ -86,10 +244,35 @@
 	}
 }
 
+@include breakpoint($tablet-breakpoint){
+	.checkout-onepage-index {
+		.grid3{
+				width:100%;
+				display:block;
+				margin:1.5em auto;
+				text-align: center;
+			}
+
+		.buttons-set .grid2{
+				width:100%;
+				display:block;
+				margin:1em auto;
+				text-align: center;
+		}
+	}
+}
+
 
 // ----- CHECKOUT - MOBILE -----
 @include breakpoint($smartphone-breakpoint){
  .checkout-onepage-index{
+
+ 	.sidebar{
+ 		position:relative;
+ 		height:auto;
+ 		border:0;
+ 		padding-left:0;
+ 	}
 		#checkoutSteps{
 			width:100%;
 			li #billing-buttons-container{
