@@ -81,7 +81,7 @@ a {
 }
 /* line 79, ../scss/email-inline.scss */
 .order-details p {
-  padding: 5px;
+  padding: 3px;
 }
 
 /* line 85, ../scss/email-inline.scss */
@@ -94,7 +94,22 @@ a {
   padding: 0.25em 0em;
 }
 
-/* line 95, ../scss/email-inline.scss */
+/* line 96, ../scss/email-inline.scss */
+.top-content table {
+  width: 100%;
+}
+/* line 99, ../scss/email-inline.scss */
+.top-content table h6 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* line 106, ../scss/email-inline.scss */
+.message-container {
+  margin: 20px auto;
+}
+
+/* line 110, ../scss/email-inline.scss */
 .account-info {
   background: black;
   color: white !important;
@@ -107,7 +122,7 @@ a {
   border: 1px solid black;
 }
 
-/* line 104, ../scss/email-inline.scss */
+/* line 119, ../scss/email-inline.scss */
 .highlighted-text {
   border: 1px solid black;
   margin: 0px auto;
@@ -116,19 +131,91 @@ a {
   max-width: 450px;
 }
 
-/* line 112, ../scss/email-inline.scss */
+/* line 127, ../scss/email-inline.scss */
 .order-information {
   font-size: 1em;
 }
-/* line 114, ../scss/email-inline.scss */
+/* line 130, ../scss/email-inline.scss */
+.order-information table {
+  background-color: white !important;
+  color: black;
+  border-color: black;
+}
+/* line 136, ../scss/email-inline.scss */
 .order-information h6 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   color: black !important;
   font-size: 0.8em;
   margin: 15px 0px;
 }
+/* line 143, ../scss/email-inline.scss */
+.order-information table {
+  margin-top: 10px;
+}
+/* line 146, ../scss/email-inline.scss */
+.order-information table dl {
+  padding-left: 1em;
+  font-size: 11px;
+}
+/* line 151, ../scss/email-inline.scss */
+.order-information table tbody tr td, .order-information table tr dt, .order-information table tr dd {
+  font-size: 1em !important;
+  vertical-align: middle;
+}
+/* line 157, ../scss/email-inline.scss */
+.order-information table tbody tr td strong, .order-information table tbody tr td dd {
+  font-size: 1.25em !important;
+}
+/* line 160, ../scss/email-inline.scss */
+.order-information table tbody tr td strong em, .order-information table tbody tr td dd em {
+  text-transform: none;
+}
+/* line 165, ../scss/email-inline.scss */
+.order-information table tr td strong {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/* line 170, ../scss/email-inline.scss */
+.order-information table tr dt {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: none !important;
+}
+/* line 176, ../scss/email-inline.scss */
+.order-information table tr dd {
+  display: inline-block;
+  margin-right: 75%;
+}
+/* line 183, ../scss/email-inline.scss */
+.order-information thead th {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  width: 55%;
+}
+/* line 192, ../scss/email-inline.scss */
+.order-information td > table > tbody > tr > td {
+  font-size: 1em !important;
+}
+/* line 196, ../scss/email-inline.scss */
+.order-information tbody {
+  background-color: white;
+  color: black;
+}
+/* line 202, ../scss/email-inline.scss */
+.order-information .method-info p strong {
+  font-size: 1em !important;
+  text-transform: none !important;
+}
 
-/* line 122, ../scss/email-inline.scss */
+/* line 210, ../scss/email-inline.scss */
+.subtotal td, .shipping td, .grand_total td {
+  text-transform: none;
+  font-size: 0.75em;
+}
+
+/* line 216, ../scss/email-inline.scss */
 .closing-text {
   border-top: 1px solid #b4b4b4;
   padding-top: 10px;
@@ -138,27 +225,70 @@ a {
 }
 
 @media (max-width: 560px) {
-  /* line 131, ../scss/email-inline.scss */
+  /* line 225, ../scss/email-inline.scss */
   td {
     display: block;
     width: 100% !important;
   }
 
-  /* line 135, ../scss/email-inline.scss */
+  /* line 229, ../scss/email-inline.scss */
   .store-info {
     border: 0 !important;
     padding: 20px 0px;
     font-size: 1em;
     width: 100%;
   }
-  /* line 141, ../scss/email-inline.scss */
+  /* line 235, ../scss/email-inline.scss */
   .store-info a, .store-info p, .store-info h4 {
     border: 0 !important;
     padding-left: 0 !important;
   }
 
-  /* line 147, ../scss/email-inline.scss */
+  /* line 241, ../scss/email-inline.scss */
   .account-info {
     font-size: 0.75em;
+  }
+
+  /* line 244, ../scss/email-inline.scss */
+  .order-information {
+    font-size: 1em;
+  }
+  /* line 246, ../scss/email-inline.scss */
+  .order-information td {
+    display: table-cell !important;
+    width: auto !important;
+  }
+  /* line 251, ../scss/email-inline.scss */
+  .order-information .address-details, .order-information .method-info {
+    width: 100% !important;
+    display: block !important;
+  }
+  /* line 256, ../scss/email-inline.scss */
+  .order-information h6 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    color: black !important;
+    font-size: 0.8em;
+    margin: 15px 0px;
+  }
+  /* line 263, ../scss/email-inline.scss */
+  .order-information table {
+    margin-top: 10px;
+  }
+  /* line 266, ../scss/email-inline.scss */
+  .order-information table tr td strong {
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  /* line 271, ../scss/email-inline.scss */
+  .order-information table tr dt {
+    display: block;
+    margin: 0;
+    font-weight: bold;
+    text-transform: none !important;
+  }
+  /* line 278, ../scss/email-inline.scss */
+  .order-information table tr dd {
+    display: block;
+    margin: 0;
   }
 }

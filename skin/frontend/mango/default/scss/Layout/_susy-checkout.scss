@@ -6,7 +6,7 @@ $susy:(
 );
 
 .checkout-onepage-index{
-	#shipping-buttons-container{
+	.buttons-set{
 		@include container($susy-desktop-grid2-columns);
 		margin-bottom:20px;
 		&>.grid2{
@@ -21,6 +21,19 @@ $susy:(
 			margin:0;
 		}
 	}
+
+	.main{
+		@include container($susy-desktop-checkout-columns);
+		margin-bottom:20px;
+		.col-main{
+			@include span(2 of $susy-desktop-checkout-columns);
+		}
+
+		.sidebar{
+			@include span(last 1 of $susy-desktop-checkout-columns);
+		}
+	}
+
 }
 
 
@@ -34,6 +47,23 @@ $susy:(
 
 				&:last-child{
 					@include span(last 1 of $susy-smartphone-grid2-columns);	
+				}
+			}
+		}
+}
+
+// ------ SMARTHPHONE
+
+@include breakpoint($smartphone-breakpoint){
+	.checkout-onepage-index{
+		.main{
+			@include container($susy-desktop-checkout-columns);
+			margin-bottom:20px;
+			.col-main{
+				@include span(1 of $susy-smartphone-checkout-columns);
+			}
+			.sidebar{
+				@include span(last 1 of $susy-smartphone-checkout-columns);
 				}
 			}
 		}

@@ -77,7 +77,7 @@ a{
     }
 
     p{
-        padding:5px;
+        padding:3px;
     }
 }
 
@@ -90,6 +90,21 @@ a{
     ul li{
         padding:0.25em 0em;
     }
+}
+
+.top-content{
+    table{
+        width:100%;
+
+        h6{
+            font-size:1em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.message-container{
+    margin:20px auto;
 }
 
 .account-info{
@@ -111,11 +126,90 @@ a{
 
 .order-information{
     font-size:1em;
+
+    table{
+        background-color: white !important;
+        color:black;
+        border-color: black;
+    }
+
     h6{
          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; 
          color:black !important;
          font-size:0.8em;
          margin:15px 0px;
+    }
+
+    table{
+        margin-top:10px;
+
+        dl{
+            padding-left:1em;
+            font-size: 11px;
+        }
+
+        tbody tr td, tr dt, tr dd{
+            font-size: 1em !important;
+            vertical-align: middle;
+        }
+
+
+        tbody tr td strong, tbody tr td dd{
+            font-size:1.25em !important;
+
+            em{
+                text-transform: none;
+            }
+        }
+
+        tr td strong{
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        tr dt{
+            display:inline-block;
+            font-weight: bold;
+            text-transform: none !important;
+        }
+
+        tr dd{
+            display:inline-block;
+            margin-right:75%;
+        }
+    }
+
+    thead{
+        th{
+            background-color: black;
+            color:white;
+            padding:5px 10px;
+            text-transform: uppercase;
+            width:55%;
+        }
+    }
+
+    td > table > tbody > tr > td{
+        font-size: 1em !important;
+    }
+
+    tbody{
+        background-color: white;
+        color:black;
+    }
+
+    .method-info{
+        p strong{
+            font-size: 1em !important;
+            text-transform: none !important;
+        }
+    }
+}
+
+.subtotal, .shipping, .grand_total{
+    td{
+        text-transform: none;
+        font-size: 0.75em;
     }
 }
 
@@ -147,5 +241,44 @@ a{
     .account-info{
         font-size: 0.75em;
     }
+    .order-information{
 
+        td{
+            display: table-cell !important;
+            width:auto !important;
+        }
+
+        .address-details, .method-info{
+            width:100% !important;
+            display: block !important; 
+        }
+        font-size:1em;
+        h6{
+             font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; 
+             color:black !important;
+             font-size:0.8em;
+             margin:15px 0px;
+        }
+
+        table{
+            margin-top:10px;
+
+            tr td strong{
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+
+            tr dt{
+                display:block;
+                margin:0;
+                font-weight: bold;
+                text-transform: none !important;
+            }
+
+            tr dd{
+                display:block;
+                margin:0;
+            }
+        }
+    }
 }

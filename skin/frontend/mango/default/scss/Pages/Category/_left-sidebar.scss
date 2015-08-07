@@ -1,9 +1,10 @@
 // ----- LEFT SIDEBAR - DESKTOP -----
 
 .col2-left-layout .col-left{
-	float:left;
+	display: inline-block;
 	width:25%;
 	padding-top:30px;
+	vertical-align: top;
 
 #narrow-by-list{
 	margin-left:10px;
@@ -122,9 +123,13 @@
 
 		.filters-visible{
 			display:block;
+			@include m-transform-origin(center top);
+			@include m-animation(scale-fadein 0.25s 1);
 
 			 #narrow-by-list .filter-group-visible{
 				display:block;
+				@include m-transform-origin(center top);
+				@include m-animation(scale-fadein 0.25s 1);
 			}
 		}
 		#showFilters{

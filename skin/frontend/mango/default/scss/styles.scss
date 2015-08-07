@@ -15,6 +15,9 @@
 @import "helpers/responsive-show-hide";
 @import "components";
 
+// IE COMPATIBILITY
+@import "ie/ie";
+
 // LAYOUT IMPORTS
 @import "layout/susy-header";
 @import "layout/susy-footer";

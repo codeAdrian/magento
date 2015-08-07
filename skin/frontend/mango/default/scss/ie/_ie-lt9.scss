@@ -1,0 +1,72 @@
+.no-mq {
+
+}
+
+.no-rgba {
+
+}
+
+.no-flexbox{
+
+	.homepage-product-grid, .image-container{
+		text-align: center;
+	}
+
+	.grid2{
+		width:38% !important;
+		margin:0;
+	}
+
+	.image-container{
+		.grid2{
+			width:48% !important;
+		}
+	}
+	.grid3{
+		width:26% !important;
+		display:inline;
+	}
+
+	.grid4{
+		width:19% !important;
+	}
+
+	nav ul li{
+		display: inline;
+
+		ul{
+			left:0px;
+			top:0.75em !important;
+			.last{
+				margin-left:0px !important;
+				left:0px !important;
+			}
+		}
+	}
+
+	.mobileOnly{
+		display: none;
+	}
+
+	.links li, .links .first{
+		display: inline;
+	}
+
+	.nav-fixed{
+		nav{
+			margin-left:25%;
+		}
+	}
+}
+
+.no-backgroundsize{
+	.TopNavIcon{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='images/shopping_bag.png',
+	sizingMethod='scale');
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='images/shopping_bag.png',
+	sizingMethod='scale')";
+	}
+}
