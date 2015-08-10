@@ -1,12 +1,23 @@
-.no-mq {
+// ---------- LAYOUT AND ELEMENT DISPLAY FIX ----------
+.no-flexbox, .no-flexboxlegacy{
 
-}
+	input.checkbox{
+		border:0 !important;
+	}
 
-.no-rgba {
+// ----- GLOBAL FIXES AND HOMEPAGE
 
-}
+	header{
+		.top-link-cart{
+			padding-top:15px !important;
+		}
+	}
 
-.no-flexbox{
+	footer{
+		.border-container{
+			display:block !important;
+		}
+	}
 
 	.homepage-product-grid, .image-container{
 		text-align: center;
@@ -24,7 +35,46 @@
 	}
 	.grid3{
 		width:26% !important;
-		display:inline;
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
+	}
+
+	.validation-advice{
+		display: none !important;
+	}
+
+	.mini-menu{
+
+		.content-cart:before{
+			border:0 !important;
+		}
+
+		.content-account:before{
+			border:0 !important;
+		}
+
+		li.item{
+			width:100%;
+			&>div, &>a{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;				
+			}
+		}
+
+		.product-image, .product-details, .btn-remove{
+			display: inline;
+		}
+
+		.empty + #cart-free-delivery{
+			display: none !important;
+		}
+
+		.buttons-container button{
+			margin:0 auto;
+			min-width:120px;
+		}
 	}
 
 	.grid4{
@@ -32,14 +82,17 @@
 	}
 
 	nav ul li{
-		display: inline;
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
 
 		ul{
 			left:0px;
-			top:0.75em !important;
+			top:1em !important;
 			.last{
 				margin-left:0px !important;
 				left:0px !important;
+				margin-right:40px !important;
 			}
 		}
 	}
@@ -57,10 +110,165 @@
 			margin-left:25%;
 		}
 	}
+
+	.breadcrumbs ul li{
+		display: inline-block !important;
+		*zoom: 1 !important;
+		*display: inline !important;
+	}
+
+	.products-grid .item, .mini-products-list .item{
+		display: inline-block !important;
+		*zoom: 1 !important;
+		*display: inline !important;
+
+		.old-price, .special-price{
+			display: inline-block !important;
+			*zoom: 1 !important;
+			*display: inline !important;
+		}
+	}
+
+	.col2-left-layout, .col2-right-layout{
+		.sidebar, .col-main{
+				display: inline-block;
+				*zoom:1;
+				*display: inline;
+		}
+
+		#size ol li{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+		}
+	}
+// ------- PRODUCT PAGE 
+
+	.catalog-product-view{
+		.qty-control{
+			background:black;
+			color:white !important;
+		}
+
+		.product-options{
+			dt,dd{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+			}
+		}
+	}
+
+	.more-views{
+		li{
+			display: inline-block !important;
+			*zoom: 1 !important;
+			*display: inline !important;
+			min-width:20%;
+			text-align: center;
+
+			img{
+				margin:0 auto;
+			}
+		}
+	}
+
+// ------ EDIT CART
+	.cart-totals-wrapper{
+		.cart-collaterals, .shipping, .totals{
+			display: inline-block !important;
+			*zoom: 1 !important;
+			*display: inline !important;
+			width:30% !important;
+		}
+	}
+
+	.checkout-cart-index, .customer-account-index{
+
+		.cart-table, .data-table{
+			th{
+				padding:5px 0px;
+				width:25% !important;
+				font-weight:bold;
+				background:black;
+				color:white;
+				text-transform: uppercase;
+				text-align: center;
+			}
+		}
+
+		tfoot button{
+			margin:10px !important;
+		}
+
+		.colorSwatches span{
+			display: block !important;
+		}
+		.item-options{
+			.itemAttribute-wrapper{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+			}
+		}
+	}
+
+// ----- CHECKOUT PAGE
+
+	.checkout-onepage-index{
+
+		.col2-right-layout{
+			.sidebar, .col-main{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+			}
+
+			.sidebar{
+				width:30% !important;
+			}
+		}
+
+		form{
+			.wide, .fields{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+			}
+		}
+
+		.grid2{
+			width:48% !important;
+		}
+	}
+
+// ------ DASHBOARD
+
+	.my-account{
+		.view-all-link{
+			max-width:200px;
+			margin-left:auto;
+			margin-right:0px;
+		}
+	}
+
+	.my-account-edit{
+		.control input.checkbox{
+			width:auto !important;
+			border:0 !important;
+		}
+	}
+
+	.col2-set{
+			display: inline-block !important;
+			*zoom: 1 !important;
+			*display: inline !important;
+			width:100%;
+	}
 }
 
 .no-backgroundsize{
-	.TopNavIcon{
+	.topNavIcon{
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
 	src='images/shopping_bag.png',
 	sizingMethod='scale');
