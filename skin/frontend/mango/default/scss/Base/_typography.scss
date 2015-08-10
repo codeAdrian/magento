@@ -1,6 +1,9 @@
 @font-face {
     font-family: "mango-font-icons";
-    src: url("fonts/mango-font-icons.woff") format('woff');
+	 src: url('fonts/mango-font-icons.eot');
+	 src: url('fonts/mango-font-icons.eot?iefix') format('opentype'),
+	      url('fonts/mango-font-icons.woff') format('woff'),
+	      url('fonts/mango-font-icons.ttf') format('truetype');
 	speak: none;
 	font-style: normal;
 	font-weight: normal;

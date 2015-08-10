@@ -27,6 +27,18 @@
 		display:inline;
 	}
 
+	.mini-menu{
+		.product-image, .product-details, .btn-remove{
+			display: inline;
+		}
+
+		#free-delivery-outline{
+			text-align: left;
+			margin-left:0;
+			margin-right:auto;
+		}
+	}
+
 	.grid4{
 		width:19% !important;
 	}
@@ -40,6 +52,7 @@
 			.last{
 				margin-left:0px !important;
 				left:0px !important;
+				margin-right:40px !important;
 			}
 		}
 	}
@@ -55,6 +68,28 @@
 	.nav-fixed{
 		nav{
 			margin-left:25%;
+		}
+	}
+
+	.breadcrumbs ul li{
+		display: inline !important;
+	}
+
+	.products-grid .item, .mini-products-list .item{
+		display: inline !important;
+
+		.old-price, .special-price{
+			display: inline !important;
+		}
+	}
+
+	.col2-left-layout{
+		.sidebar, .col-main{
+			display: inline;
+		}
+
+		#size ol li{
+			display: inline !important;
 		}
 	}
 }

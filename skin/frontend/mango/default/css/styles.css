@@ -504,7 +504,8 @@ th {
 
 @font-face {
   font-family: "mango-font-icons";
-  src: url("fonts/mango-font-icons.woff") format("woff");
+  src: url("fonts/mango-font-icons.eot");
+  src: url("fonts/mango-font-icons.eot?iefix") format("opentype"), url("fonts/mango-font-icons.woff") format("woff"), url("fonts/mango-font-icons.ttf") format("truetype");
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -513,13 +514,13 @@ th {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-/* line 13, ../scss/Base/_typography.scss */
+/* line 16, ../scss/Base/_typography.scss */
 .mangoIcon {
   font-family: mango-font-icons;
   padding: 0px 5px;
 }
 
-/* line 18, ../scss/Base/_typography.scss */
+/* line 21, ../scss/Base/_typography.scss */
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
@@ -938,38 +939,69 @@ input.validation-failed select.validation-failed, .validation-failed {
   width: 26% !important;
   display: inline;
 }
-/* line 30, ../scss/ie/_ie-lt9.scss */
+/* line 31, ../scss/ie/_ie-lt9.scss */
+.no-flexbox .mini-menu .product-image, .no-flexbox .mini-menu .product-details, .no-flexbox .mini-menu .block-related .block-content .product-image, .block-related .block-content .no-flexbox .mini-menu .product-image, .no-flexbox .mini-menu .btn-remove {
+  display: inline;
+}
+/* line 35, ../scss/ie/_ie-lt9.scss */
+.no-flexbox .mini-menu #free-delivery-outline {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+/* line 42, ../scss/ie/_ie-lt9.scss */
 .no-flexbox .grid4 {
   width: 19% !important;
 }
-/* line 34, ../scss/ie/_ie-lt9.scss */
+/* line 46, ../scss/ie/_ie-lt9.scss */
 .no-flexbox nav ul li {
   display: inline;
 }
-/* line 37, ../scss/ie/_ie-lt9.scss */
+/* line 49, ../scss/ie/_ie-lt9.scss */
 .no-flexbox nav ul li ul {
   left: 0px;
   top: 0.75em !important;
 }
-/* line 40, ../scss/ie/_ie-lt9.scss */
+/* line 52, ../scss/ie/_ie-lt9.scss */
 .no-flexbox nav ul li ul .last {
   margin-left: 0px !important;
   left: 0px !important;
+  margin-right: 40px !important;
 }
-/* line 47, ../scss/ie/_ie-lt9.scss */
+/* line 60, ../scss/ie/_ie-lt9.scss */
 .no-flexbox .mobileOnly {
   display: none;
 }
-/* line 51, ../scss/ie/_ie-lt9.scss */
+/* line 64, ../scss/ie/_ie-lt9.scss */
 .no-flexbox .links li, .no-flexbox .links .first {
   display: inline;
 }
-/* line 56, ../scss/ie/_ie-lt9.scss */
+/* line 69, ../scss/ie/_ie-lt9.scss */
 .no-flexbox .nav-fixed nav {
   margin-left: 25%;
 }
+/* line 74, ../scss/ie/_ie-lt9.scss */
+.no-flexbox .breadcrumbs ul li {
+  display: inline !important;
+}
+/* line 78, ../scss/ie/_ie-lt9.scss */
+.no-flexbox .products-grid .item, .no-flexbox .mini-products-list .item {
+  display: inline !important;
+}
+/* line 81, ../scss/ie/_ie-lt9.scss */
+.no-flexbox .products-grid .item .old-price, .no-flexbox .products-grid .item .special-price, .no-flexbox .products-grid .item #product-info-wrapper .price-qty-wrapper .price, #product-info-wrapper .price-qty-wrapper .no-flexbox .products-grid .item .price, .no-flexbox .mini-products-list .item .old-price, .no-flexbox .mini-products-list .item .special-price, .no-flexbox .mini-products-list .item #product-info-wrapper .price-qty-wrapper .price, #product-info-wrapper .price-qty-wrapper .no-flexbox .mini-products-list .item .price {
+  display: inline !important;
+}
+/* line 87, ../scss/ie/_ie-lt9.scss */
+.no-flexbox .col2-left-layout .sidebar, .no-flexbox .col2-left-layout .col-main {
+  display: inline;
+}
+/* line 91, ../scss/ie/_ie-lt9.scss */
+.no-flexbox .col2-left-layout #size ol li {
+  display: inline !important;
+}
 
-/* line 63, ../scss/ie/_ie-lt9.scss */
+/* line 98, ../scss/ie/_ie-lt9.scss */
 .no-backgroundsize .TopNavIcon {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/shopping_bag.png', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(\a 	src='images/shopping_bag.png',\a 	sizingMethod='scale')";
