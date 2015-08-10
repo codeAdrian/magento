@@ -84,6 +84,33 @@ button{
 	}
 }
 
+// ----------- MESSAGES ---------
+.messages{
+	position:fixed;
+	top:0px;
+	left:0px;
+	text-align: center;		
+	margin: 0px auto;
+	width: 100%;
+	background-color: white;
+	list-style:none;
+	z-index:110;
+
+	li ul{
+		list-style: none;
+		margin: 0px;
+		padding: 0px 0px;
+		vertical-align: middle;	
+		height:20px;
+		padding:5px 0px;
+	}
+
+	.error-msg{
+		background-color:#ad0202;
+		color:white;
+	}
+}
+
 // ----------- NEWSLETTER BANNER ---------
 
 #newsletter_banner{
@@ -246,35 +273,13 @@ img{
 // --------- FORM VALIDATION FAILED ----------
 
 // ----- DESKTOP
-#advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
-#advice-required-entry-email_address, #advice-required-entry-password, 
-#advice-required-entry-confirmation, #advice-validate-password-password,
-#advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
-#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password, 
-.my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
-#advice-required-entry-telephone{
+.validation-advice{
 	width:auto;
 	margin:0px;
 	display:inline-block;
 	padding-left:1px;
 	height:20px;
-	font-size:3em;
-	color:#a51313;
-	font-weight:600;
-}
-
-#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode, 
-#advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname, 
-#advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city, 
-#advice-required-entry-billing\:postcode, #advice-validate-select-billing\:country_id, 
-#advice-required-entry-shipping\:telephone, #advice-required-entry-shipping\:firstname, 
-#advice-required-entry-shipping\:lastname, #advice-required-entry-shipping\:street1, #advice-required-entry-shipping\:city, 
-#advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id{
-	width:4%;
-	margin:0px;
-	display:inline-block;
-	padding-left:3px;
-	font-size:2em;
+	font-size:1.5em;
 	color:#a51313;
 	font-weight:600;
 }
@@ -286,18 +291,7 @@ input.validation-failed select.validation-failed, .validation-failed{
 // ----- SMARTPHONE
 @include breakpoint($smartphone-breakpoint){
 
-#advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city, 
-	#advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation, 
-	#advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address, 
-	#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password, 
-	.my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip, 
-	#advice-required-entry-telephone, #advice-required-entry-coupon_code, #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode, 
-	#advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname, 
-	#advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city, 
-	#advice-required-entry-billing\:postcode, #advice-validate-select-billing\:country_id, 
-	#advice-required-entry-shipping\:telephone, #advice-required-entry-shipping\:firstname, 
-	#advice-required-entry-shipping\:lastname, #advice-required-entry-shipping\:street1, #advice-required-entry-shipping\:city, 
-	#advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id{
+.validation-advice{
 		display: none;
 	}	
 }
