@@ -266,15 +266,3 @@
 			width:100%;
 	}
 }
-
-.no-backgroundsize{
-	.topNavIcon{
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-	src='images/shopping_bag.png',
-	sizingMethod='scale');
-
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-	src='images/shopping_bag.png',
-	sizingMethod='scale')";
-	}
-}

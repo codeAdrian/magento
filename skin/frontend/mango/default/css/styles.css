@@ -1144,12 +1144,6 @@ input.validation-failed select.validation-failed, .validation-failed {
   width: 100%;
 }
 
-/* line 271, ../scss/ie/_ie-lt9.scss */
-.no-backgroundsize .topNavIcon {
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/shopping_bag.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(\a 	src='images/shopping_bag.png',\a 	sizingMethod='scale')";
-}
-
 /* line 6, ../scss/Layout/_susy-header.scss */
 .header_wrapper {
   max-width: 100%;
