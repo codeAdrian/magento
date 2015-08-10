@@ -1,5 +1,12 @@
 var jq = $.noConflict();
 
+// Corners
+jq(function(){
+  jq(".mini-menu").find(".btn-remove").corner("10px");
+  jq(".cart-table").find(".btn-remove").corner("15px");
+  jq(".qty-control").corner("15px");
+});
+
 // FIX NAV AND SEARCH ON MEDIA WIDTH CHANGE
 
 jq(function(){
@@ -126,25 +133,6 @@ jq(function(){
         });
 });
 
-// RESPONSIVE TABLE
-jq(function(){
-  if (jq(".data-table").length ){
-    var headertext = [],
-    headers = document.querySelectorAll(".data-table th"),
-    tablebody = document.querySelector(".data-table tbody");
-
-    for(var i = 0; i < headers.length; i++) {
-      var current = headers[i];
-      headertext.push(current.textContent.replace(/\r?\n|\r/,""));
-    } 
-    for (var i = 0, row; row = tablebody.rows[i]; i++) {
-      for (var j = 0, col; col = row.cells[j]; j++) {
-        col.setAttribute("data-th", headertext[j]);
-      } 
-    }
-  }
-});
-
 // CART PRICE
 jq(function(){
     jq('#cart-free-delivery').show();
@@ -188,5 +176,24 @@ jq(function(){
   jq(".messages").slideDown().delay(3000).slideUp(function(){
         jq(".subtext-message").slideDown();
       });
+  }
+});
+
+// RESPONSIVE TABLE
+jq(function(){
+  if (jq(".data-table").length ){
+    var headertext = [],
+    headers = document.querySelectorAll(".data-table th"),
+    tablebody = document.querySelector(".data-table tbody");
+
+    for(var i = 0; i < headers.length; i++) {
+      var current = headers[i];
+      headertext.push(current.textContent.replace(/\r?\n|\r/,""));
+    } 
+    for (var i = 0, row; row = tablebody.rows[i]; i++) {
+      for (var j = 0, col; col = row.cells[j]; j++) {
+        col.setAttribute("data-th", headertext[j]);
+      } 
+    }
   }
 });

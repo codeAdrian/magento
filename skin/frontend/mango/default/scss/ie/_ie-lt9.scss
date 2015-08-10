@@ -6,7 +6,27 @@
 
 }
 
-.no-flexbox{
+
+// ---------- LAYOUT AND ELEMENT DISPLAY FIX ----------
+.no-flexbox, .no-flexboxlegacy{
+
+	input.checkbox{
+		border:0 !important;
+	}
+
+// ----- GLOBAL FIXES AND HOMEPAGE
+
+	header{
+		.top-link-cart{
+			padding-top:15px !important;
+		}
+	}
+
+	footer{
+		.border-container{
+			display:block !important;
+		}
+	}
 
 	.homepage-product-grid, .image-container{
 		text-align: center;
@@ -24,10 +44,35 @@
 	}
 	.grid3{
 		width:26% !important;
-		display:inline;
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
+	}
+
+	.validation-advice{
+		display: none !important;
 	}
 
 	.mini-menu{
+
+		.content-cart:before{
+			border:0 !important;
+		}
+
+		.content-account:before{
+			border:0 !important;
+		}
+
+		li.item{
+			width:100%;
+			&>div, &>a{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;				
+			}
+		}
+
+
 		z-index:500 !important;
 		background          : url(#);
 		.product-image, .product-details, .btn-remove{
@@ -53,10 +98,12 @@
 	}
 
 	nav ul li{
-		display: inline;
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
 
 		ul{
-			left:0px;
+			left:10px;
 			top:0.75em !important;
 			.last{
 				margin-left:0px !important;
@@ -81,48 +128,82 @@
 	}
 
 	.breadcrumbs ul li{
-		display: inline !important;
+		display: inline-block !important;
+		*zoom: 1 !important;
+		*display: inline !important;
 	}
 
 	.products-grid .item, .mini-products-list .item{
-		display: inline !important;
+		display: inline-block !important;
+		*zoom: 1 !important;
+		*display: inline !important;
 
 		.old-price, .special-price{
-			display: inline !important;
+			display: inline-block !important;
+			*zoom: 1 !important;
+			*display: inline !important;
 		}
 	}
 
-	.col2-left-layout{
+	.col2-left-layout, .col2-right-layout{
 		.sidebar, .col-main{
-			display: inline;
+				display: inline-block;
+				*zoom:1;
+				*display: inline;
 		}
 
 		#size ol li{
-			display: inline !important;
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+		}
+	}
+// ------- PRODUCT PAGE 
+
+	.catalog-product-view{
+		.qty-control{
+			background:black;
+			color:white !important;
+		}
+
+		.product-options{
+			dt,dd{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+			}
 		}
 	}
 
 	.more-views{
 		li{
-			display: inline !important;
+			display: inline-block !important;
+			*zoom: 1 !important;
+			*display: inline !important;
+			min-width:20%;
+			text-align: center;
+
+			img{
+				margin:0 auto;
+			}
 		}
 	}
 
-	.validation-advice{
-		display: none !important;
-	}
-
+// ------ EDIT CART
 	.cart-totals-wrapper{
 		.cart-collaterals, .shipping, .totals{
-			display: inline !important;
+			display: inline-block !important;
+			*zoom: 1 !important;
+			*display: inline !important;
 			width:30% !important;
 		}
 	}
 
-	.checkout-cart-index{
+	.checkout-cart-index, .customer-account-index{
 
-		.cart-table{
+		.cart-table, .data-table{
 			th{
+				padding:5px 0px;
 				width:25% !important;
 				font-weight:bold;
 				background:black;
@@ -141,14 +222,61 @@
 		}
 		.item-options{
 			.itemAttribute-wrapper{
-				display: inline !important;
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
 			}
 		}
+	}
+
+// ----- CHECKOUT PAGE
+
+	.checkout-onepage-index{
+
+		.col2-right-layout{
+			.sidebar, .col-main{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+			}
+
+			.sidebar{
+				width:30% !important;
+			}
+		}
+
+		form{
+			.wide, .fields{
+				display: inline-block !important;
+				*zoom: 1 !important;
+				*display: inline !important;
+			}
+		}
+
+		.grid2{
+			width:48% !important;
+		}
+	}
+
+// ------ DASHBOARD
+
+	.my-account-edit{
+		.control input.checkbox{
+			width:auto !important;
+			border:0 !important;
+		}
+	}
+
+	.col2-set{
+			display: inline-block !important;
+			*zoom: 1 !important;
+			*display: inline !important;
+			width:100%;
 	}
 }
 
 .no-backgroundsize{
-	.TopNavIcon{
+	.topNavIcon{
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
 	src='images/shopping_bag.png',
 	sizingMethod='scale');
