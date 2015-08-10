@@ -637,7 +637,7 @@ button {
   background-color: #df0303;
 }
 
-/* line 30, ../scss/_components.scss */
+/* line 29, ../scss/_components.scss */
 #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, #send2 {
   margin: 10px 0px;
   background-color: #474444;
@@ -653,17 +653,17 @@ button {
 }
 
 @media (max-width: 625px) {
-  /* line 36, ../scss/_components.scss */
+  /* line 35, ../scss/_components.scss */
   .red-button, .btn-checkout, #button_register {
     width: 100%;
   }
 
-  /* line 41, ../scss/_components.scss */
+  /* line 39, ../scss/_components.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, #send2 {
     width: 100%;
   }
 }
-/* line 46, ../scss/_components.scss */
+/* line 44, ../scss/_components.scss */
 .red-continue-button {
   margin: 0px auto;
   border: 0;
@@ -674,7 +674,7 @@ button {
   text-decoration: none;
 }
 
-/* line 56, ../scss/_components.scss */
+/* line 54, ../scss/_components.scss */
 .back-link-button a {
   background-color: #474444;
   color: white;
@@ -688,17 +688,17 @@ button {
   text-align: center;
   margin: 10px 0px;
 }
-/* line 69, ../scss/_components.scss */
+/* line 67, ../scss/_components.scss */
 .back-link-button a:hover {
   background-color: black;
 }
-/* line 73, ../scss/_components.scss */
+/* line 71, ../scss/_components.scss */
 .back-link-button a:active {
   background-color: #9b9a9a;
 }
 
 @media (max-width: 625px) {
-  /* line 79, ../scss/_components.scss */
+  /* line 77, ../scss/_components.scss */
   .red-continue-button {
     width: 100%;
     font-size: 1em;
@@ -706,7 +706,7 @@ button {
     margin: 5px 2px;
   }
 }
-/* line 88, ../scss/_components.scss */
+/* line 86, ../scss/_components.scss */
 .messages {
   position: fixed;
   top: 0px;
@@ -718,7 +718,7 @@ button {
   list-style: none;
   z-index: 110;
 }
-/* line 99, ../scss/_components.scss */
+/* line 97, ../scss/_components.scss */
 .messages li ul {
   list-style: none;
   margin: 0px;
@@ -727,13 +727,13 @@ button {
   height: 20px;
   padding: 5px 0px;
 }
-/* line 108, ../scss/_components.scss */
+/* line 106, ../scss/_components.scss */
 .messages .error-msg {
   background-color: #ad0202;
   color: white;
 }
 
-/* line 116, ../scss/_components.scss */
+/* line 114, ../scss/_components.scss */
 #newsletter_banner {
   background-color: black;
   color: white;
@@ -744,12 +744,12 @@ button {
   margin-bottom: 15px;
   padding: 5px 10px;
 }
-/* line 126, ../scss/_components.scss */
+/* line 124, ../scss/_components.scss */
 #newsletter_banner p {
   padding: 2px 0px;
 }
 
-/* line 133, ../scss/_components.scss */
+/* line 131, ../scss/_components.scss */
 .category-title h1, .dashboard-page-title h1, .my-account .page-title h1, .checkout-wrapper .page-title h1 {
   text-align: center;
   text-transform: uppercase;
@@ -759,7 +759,7 @@ button {
   font-size: 2.5em;
 }
 
-/* line 144, ../scss/_components.scss */
+/* line 142, ../scss/_components.scss */
 .category-divider, .my-account-divider {
   margin: 0px;
   padding: 0px;
@@ -770,22 +770,22 @@ button {
 }
 
 @media (max-width: 625px) {
-  /* line 155, ../scss/_components.scss */
+  /* line 153, ../scss/_components.scss */
   .category-divider, .my-account-divider {
     margin: 2px;
   }
 }
-/* line 163, ../scss/_components.scss */
+/* line 161, ../scss/_components.scss */
 .breadcrumbs ul {
   list-style: none;
   margin: 0px 0px 0px 10px;
   font-size: 0.8em;
 }
-/* line 168, ../scss/_components.scss */
+/* line 166, ../scss/_components.scss */
 .breadcrumbs ul li {
   display: inline-block;
 }
-/* line 171, ../scss/_components.scss */
+/* line 169, ../scss/_components.scss */
 .breadcrumbs ul li a {
   text-decoration: none;
   color: black;
@@ -793,12 +793,12 @@ button {
 }
 
 @media (max-width: 900px) {
-  /* line 181, ../scss/_components.scss */
+  /* line 179, ../scss/_components.scss */
   .breadcrumbs {
     margin: 20px 0px 20px 0px;
   }
 }
-/* line 189, ../scss/_components.scss */
+/* line 187, ../scss/_components.scss */
 img {
   max-width: 100% !important;
   height: auto;
@@ -806,34 +806,34 @@ img {
 }
 
 @media (max-width: 900px) {
-  /* line 199, ../scss/_components.scss */
+  /* line 197, ../scss/_components.scss */
   table#my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 203, ../scss/_components.scss */
+  /* line 201, ../scss/_components.scss */
   table#my-orders-table thead {
     display: none;
   }
 
-  /* line 206, ../scss/_components.scss */
+  /* line 204, ../scss/_components.scss */
   table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
-  /* line 210, ../scss/_components.scss */
+  /* line 208, ../scss/_components.scss */
   table#my-orders-table tbody td h3 {
     padding: 10px 0px;
   }
 
-  /* line 214, ../scss/_components.scss */
+  /* line 212, ../scss/_components.scss */
   table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
     padding: 10px 0px;
   }
 
-  /* line 220, ../scss/_components.scss */
+  /* line 218, ../scss/_components.scss */
   table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -841,12 +841,12 @@ img {
     width: 100%;
   }
 
-  /* line 227, ../scss/_components.scss */
+  /* line 225, ../scss/_components.scss */
   table#my-orders-table tbody tr td:last-child {
     text-align: center;
   }
 
-  /* line 230, ../scss/_components.scss */
+  /* line 229, ../scss/_components.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -855,50 +855,50 @@ img {
     margin-right: 2em;
   }
 
-  /* line 238, ../scss/_components.scss */
+  /* line 237, ../scss/_components.scss */
   .product-name a {
     font-size: 0.8em;
   }
 
-  /* line 241, ../scss/_components.scss */
+  /* line 240, ../scss/_components.scss */
   .my-account #my-orders-table {
     text-align: center;
     font-size: 1em;
   }
 
-  /* line 246, ../scss/_components.scss */
+  /* line 245, ../scss/_components.scss */
   .cart-fieldset .btn-remove {
     padding: 2px 6px;
   }
 
-  /* line 250, ../scss/_components.scss */
+  /* line 249, ../scss/_components.scss */
   #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1) {
     text-align: center;
     padding: 0px;
   }
 
-  /* line 255, ../scss/_components.scss */
+  /* line 254, ../scss/_components.scss */
   #shopping-cart-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 259, ../scss/_components.scss */
+  /* line 258, ../scss/_components.scss */
   .cart-fieldset {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 263, ../scss/_components.scss */
+  /* line 262, ../scss/_components.scss */
   .cart .page-title {
     text-align: center;
   }
 
-  /* line 267, ../scss/_components.scss */
+  /* line 266, ../scss/_components.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 30%;
   }
 }
-/* line 276, ../scss/_components.scss */
+/* line 275, ../scss/_components.scss */
 .validation-advice {
   width: auto;
   margin: 0px;
@@ -910,13 +910,13 @@ img {
   font-weight: 600;
 }
 
-/* line 287, ../scss/_components.scss */
+/* line 286, ../scss/_components.scss */
 input.validation-failed select.validation-failed, .validation-failed {
   border: 2px solid #a51313 !important;
 }
 
 @media (max-width: 625px) {
-  /* line 294, ../scss/_components.scss */
+  /* line 293, ../scss/_components.scss */
   .validation-advice {
     display: none;
   }
@@ -2192,11 +2192,11 @@ footer .block-subscribe {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 53, ../scss/Pages/Shared/_footer.scss */
+/* line 54, ../scss/Pages/Shared/_footer.scss */
 footer .block-subscribe #newsletter-validate-detail, footer .block-subscribe #newsletter-validate-detail .block-content {
   width: 100%;
 }
-/* line 58, ../scss/Pages/Shared/_footer.scss */
+/* line 59, ../scss/Pages/Shared/_footer.scss */
 footer .subscribe-button {
   border: 1px solid black;
   margin: 0px;
@@ -2516,53 +2516,53 @@ header .top-link-cart span {
     float: none;
     margin: 0px auto;
   }
-  /* line 167, ../scss/Pages/Shared/_header.scss */
+  /* line 165, ../scss/Pages/Shared/_header.scss */
   header .search-wrapper .search-visible {
     display: block;
   }
-  /* line 172, ../scss/Pages/Shared/_header.scss */
+  /* line 170, ../scss/Pages/Shared/_header.scss */
   header .header_wrapper {
     margin: 0px;
   }
-  /* line 176, ../scss/Pages/Shared/_header.scss */
+  /* line 174, ../scss/Pages/Shared/_header.scss */
   header .topNavIcon span {
     display: block;
     font-size: 2.75em;
     margin-right: 25%;
   }
-  /* line 182, ../scss/Pages/Shared/_header.scss */
+  /* line 180, ../scss/Pages/Shared/_header.scss */
   header .searchMiniIcon span {
     font-size: 2.25em;
   }
-  /* line 186, ../scss/Pages/Shared/_header.scss */
+  /* line 184, ../scss/Pages/Shared/_header.scss */
   header .textLink, header .top-help-a {
     display: none;
   }
-  /* line 190, ../scss/Pages/Shared/_header.scss */
+  /* line 188, ../scss/Pages/Shared/_header.scss */
   header .top-link-cart {
     background-size: contain;
     background-position: top;
     padding: 20px 0px 0px 20px;
   }
-  /* line 196, ../scss/Pages/Shared/_header.scss */
+  /* line 194, ../scss/Pages/Shared/_header.scss */
   header .top-link-cart span {
     top: 2px;
     left: -25px;
   }
-  /* line 202, ../scss/Pages/Shared/_header.scss */
+  /* line 200, ../scss/Pages/Shared/_header.scss */
   header .links {
     margin: 0px 15px 0px 0px;
     text-align: right;
   }
-  /* line 206, ../scss/Pages/Shared/_header.scss */
+  /* line 204, ../scss/Pages/Shared/_header.scss */
   header .links li {
     margin-right: 10px;
   }
-  /* line 209, ../scss/Pages/Shared/_header.scss */
+  /* line 207, ../scss/Pages/Shared/_header.scss */
   header .links li:nth-child(1) {
     display: none;
   }
-  /* line 215, ../scss/Pages/Shared/_header.scss */
+  /* line 213, ../scss/Pages/Shared/_header.scss */
   header .form-search {
     display: none;
     position: absolute;
@@ -2573,7 +2573,7 @@ header .top-link-cart span {
     width: 98%;
     float: none;
   }
-  /* line 225, ../scss/Pages/Shared/_header.scss */
+  /* line 223, ../scss/Pages/Shared/_header.scss */
   header .form-search:before {
     z-index: -10;
     content: '';
@@ -2587,16 +2587,16 @@ header .top-link-cart span {
     left: 180px;
     top: -10px;
   }
-  /* line 231, ../scss/Pages/Shared/_header.scss */
+  /* line 229, ../scss/Pages/Shared/_header.scss */
   header .form-search .input-text {
     width: 90%;
     padding: 10px 0px;
   }
-  /* line 236, ../scss/Pages/Shared/_header.scss */
+  /* line 234, ../scss/Pages/Shared/_header.scss */
   header .form-search .form-search .mangoIcon {
     font-size: 1.25em;
   }
-  /* line 242, ../scss/Pages/Shared/_header.scss */
+  /* line 240, ../scss/Pages/Shared/_header.scss */
   header #navMenuButton {
     display: inline-block;
     padding: 8px 20px;
@@ -2608,22 +2608,22 @@ header .top-link-cart span {
     margin: 0px 20px 0px 5px;
     font-weight: bold;
   }
-  /* line 253, ../scss/Pages/Shared/_header.scss */
+  /* line 251, ../scss/Pages/Shared/_header.scss */
   header #navMenuButton:hover {
     cursor: pointer;
   }
-  /* line 258, ../scss/Pages/Shared/_header.scss */
+  /* line 256, ../scss/Pages/Shared/_header.scss */
   header .form-search-mini {
     display: block;
     border: 2px solid #474444;
     padding: 2px;
     width: 100%;
   }
-  /* line 265, ../scss/Pages/Shared/_header.scss */
+  /* line 263, ../scss/Pages/Shared/_header.scss */
   header .form-search-mini button {
     display: none;
   }
-  /* line 269, ../scss/Pages/Shared/_header.scss */
+  /* line 267, ../scss/Pages/Shared/_header.scss */
   header .form-search-mini .input-text {
     width: 80%;
     font-size: 0.8em;
@@ -2638,46 +2638,46 @@ header .top-link-cart span {
   }
 }
 @media (max-width: 625px) {
-  /* line 291, ../scss/Pages/Shared/_header.scss */
+  /* line 289, ../scss/Pages/Shared/_header.scss */
   header .smartphoneLogo {
     text-align: center;
     display: block;
     width: 100%;
     clear: both;
   }
-  /* line 297, ../scss/Pages/Shared/_header.scss */
+  /* line 295, ../scss/Pages/Shared/_header.scss */
   header .smartphoneLogo h1 {
     margin: 3px auto;
   }
-  /* line 302, ../scss/Pages/Shared/_header.scss */
+  /* line 300, ../scss/Pages/Shared/_header.scss */
   header #navMenuButton {
     min-width: 45px;
     padding: 8px 10px;
   }
-  /* line 307, ../scss/Pages/Shared/_header.scss */
+  /* line 305, ../scss/Pages/Shared/_header.scss */
   header .header_wrapper {
     padding-top: 10px;
     background-color: white;
   }
-  /* line 312, ../scss/Pages/Shared/_header.scss */
+  /* line 310, ../scss/Pages/Shared/_header.scss */
   header .header_wrapper .search_column {
     display: block;
   }
-  /* line 316, ../scss/Pages/Shared/_header.scss */
+  /* line 314, ../scss/Pages/Shared/_header.scss */
   header .header_wrapper .logo {
     display: none;
   }
-  /* line 322, ../scss/Pages/Shared/_header.scss */
+  /* line 320, ../scss/Pages/Shared/_header.scss */
   header .form-search {
     width: 95%;
     top: 140px;
     border: 2px solid #474444;
   }
-  /* line 327, ../scss/Pages/Shared/_header.scss */
+  /* line 325, ../scss/Pages/Shared/_header.scss */
   header .form-search .input-text {
     width: 80%;
   }
-  /* line 331, ../scss/Pages/Shared/_header.scss */
+  /* line 329, ../scss/Pages/Shared/_header.scss */
   header .form-search:before {
     z-index: -10;
     content: '';
@@ -2691,16 +2691,16 @@ header .top-link-cart span {
     left: 30%;
     top: -10px;
   }
-  /* line 338, ../scss/Pages/Shared/_header.scss */
+  /* line 336, ../scss/Pages/Shared/_header.scss */
   header .links {
     margin: -6px 5px 0px 5px;
   }
-  /* line 342, ../scss/Pages/Shared/_header.scss */
+  /* line 340, ../scss/Pages/Shared/_header.scss */
   header .form-search > span.mangoIcon {
     font-size: 1.75em;
     float: left;
   }
-  /* line 347, ../scss/Pages/Shared/_header.scss */
+  /* line 345, ../scss/Pages/Shared/_header.scss */
   header .links li {
     margin-left: 0;
   }

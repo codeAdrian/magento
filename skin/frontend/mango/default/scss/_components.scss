@@ -24,7 +24,6 @@ button{
 .red-button, .btn-checkout, #button_register{
 	margin:10px 0px;
 	@include m-mango-buttons(#ad0202);
-	
 }
 
 #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, #send2{
@@ -35,7 +34,6 @@ button{
 @include breakpoint($smartphone-breakpoint){
 	.red-button, .btn-checkout, #button_register{
 		width:100%;
-		
 	}
 
 	#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button, .cart .cart-collaterals .buttons-set button, .gray-button, #send2{
@@ -227,13 +225,14 @@ img{
 	    table#my-orders-table tbody tr td:last-child{
 	    	text-align: center;
 	    }
+		
 		table#my-orders-table tbody td:not(:last-child):before { 
-	    content: attr(data-th); 
-	    font-weight: bold;
-	    display: inline-block;
-	    text-align: right;  
-	    margin-right:2em;
-	  }
+		    content: attr(data-th); 
+		    font-weight: bold;
+		    display: inline-block;
+		    text-align: right;  
+		    margin-right:2em;
+	 	}
 
 	.product-name a{
 		font-size: 0.8em;
