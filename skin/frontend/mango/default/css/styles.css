@@ -705,7 +705,34 @@ button {
     margin: 5px 2px;
   }
 }
-/* line 89, ../scss/_components.scss */
+/* line 88, ../scss/_components.scss */
+.messages {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  margin: 0px auto;
+  width: 100%;
+  background-color: white;
+  list-style: none;
+  z-index: 110;
+}
+/* line 99, ../scss/_components.scss */
+.messages li ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 0px;
+  vertical-align: middle;
+  height: 20px;
+  padding: 5px 0px;
+}
+/* line 108, ../scss/_components.scss */
+.messages .error-msg {
+  background-color: #ad0202;
+  color: white;
+}
+
+/* line 116, ../scss/_components.scss */
 #newsletter_banner {
   background-color: black;
   color: white;
@@ -716,12 +743,12 @@ button {
   margin-bottom: 15px;
   padding: 5px 10px;
 }
-/* line 99, ../scss/_components.scss */
+/* line 126, ../scss/_components.scss */
 #newsletter_banner p {
   padding: 2px 0px;
 }
 
-/* line 106, ../scss/_components.scss */
+/* line 133, ../scss/_components.scss */
 .category-title h1, .dashboard-page-title h1, .my-account .page-title h1, .checkout-wrapper .page-title h1 {
   text-align: center;
   text-transform: uppercase;
@@ -731,7 +758,7 @@ button {
   font-size: 2.5em;
 }
 
-/* line 117, ../scss/_components.scss */
+/* line 144, ../scss/_components.scss */
 .category-divider, .my-account-divider {
   margin: 0px;
   padding: 0px;
@@ -742,22 +769,22 @@ button {
 }
 
 @media (max-width: 625px) {
-  /* line 128, ../scss/_components.scss */
+  /* line 155, ../scss/_components.scss */
   .category-divider, .my-account-divider {
     margin: 2px;
   }
 }
-/* line 136, ../scss/_components.scss */
+/* line 163, ../scss/_components.scss */
 .breadcrumbs ul {
   list-style: none;
   margin: 0px 0px 0px 10px;
   font-size: 0.8em;
 }
-/* line 141, ../scss/_components.scss */
+/* line 168, ../scss/_components.scss */
 .breadcrumbs ul li {
   display: inline-block;
 }
-/* line 144, ../scss/_components.scss */
+/* line 171, ../scss/_components.scss */
 .breadcrumbs ul li a {
   text-decoration: none;
   color: black;
@@ -765,12 +792,12 @@ button {
 }
 
 @media (max-width: 900px) {
-  /* line 154, ../scss/_components.scss */
+  /* line 181, ../scss/_components.scss */
   .breadcrumbs {
     margin: 20px 0px 20px 0px;
   }
 }
-/* line 162, ../scss/_components.scss */
+/* line 189, ../scss/_components.scss */
 img {
   max-width: 100% !important;
   height: auto;
@@ -778,34 +805,34 @@ img {
 }
 
 @media (max-width: 900px) {
-  /* line 172, ../scss/_components.scss */
+  /* line 199, ../scss/_components.scss */
   table#my-orders-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 176, ../scss/_components.scss */
+  /* line 203, ../scss/_components.scss */
   table#my-orders-table thead {
     display: none;
   }
 
-  /* line 179, ../scss/_components.scss */
+  /* line 206, ../scss/_components.scss */
   table#my-orders-table tbody td {
     display: block;
     padding-top: 10px;
   }
-  /* line 183, ../scss/_components.scss */
+  /* line 210, ../scss/_components.scss */
   table#my-orders-table tbody td h3 {
     padding: 10px 0px;
   }
 
-  /* line 187, ../scss/_components.scss */
+  /* line 214, ../scss/_components.scss */
   table#my-orders-table tbody tr td:first-child {
     background-color: black;
     color: white;
     padding: 10px 0px;
   }
 
-  /* line 193, ../scss/_components.scss */
+  /* line 220, ../scss/_components.scss */
   table#my-orders-table tbody tr {
     border: 1px solid #b4b4b4;
     margin-top: 10px;
@@ -813,12 +840,12 @@ img {
     width: 100%;
   }
 
-  /* line 200, ../scss/_components.scss */
+  /* line 227, ../scss/_components.scss */
   table#my-orders-table tbody tr td:last-child {
     text-align: center;
   }
 
-  /* line 203, ../scss/_components.scss */
+  /* line 230, ../scss/_components.scss */
   table#my-orders-table tbody td:not(:last-child):before {
     content: attr(data-th);
     font-weight: bold;
@@ -827,103 +854,69 @@ img {
     margin-right: 2em;
   }
 
-  /* line 211, ../scss/_components.scss */
+  /* line 238, ../scss/_components.scss */
   .product-name a {
     font-size: 0.8em;
   }
 
-  /* line 214, ../scss/_components.scss */
+  /* line 241, ../scss/_components.scss */
   .my-account #my-orders-table {
     text-align: center;
     font-size: 1em;
   }
 
-  /* line 219, ../scss/_components.scss */
+  /* line 246, ../scss/_components.scss */
   .cart-fieldset .btn-remove {
     padding: 2px 6px;
   }
 
-  /* line 223, ../scss/_components.scss */
+  /* line 250, ../scss/_components.scss */
   #shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1) {
     text-align: center;
     padding: 0px;
   }
 
-  /* line 228, ../scss/_components.scss */
+  /* line 255, ../scss/_components.scss */
   #shopping-cart-table colgroup col:not(:first-child) {
     display: none;
   }
 
-  /* line 232, ../scss/_components.scss */
+  /* line 259, ../scss/_components.scss */
   .cart-fieldset {
     margin: 0px;
     padding: 0px;
   }
 
-  /* line 236, ../scss/_components.scss */
+  /* line 263, ../scss/_components.scss */
   .cart .page-title {
     text-align: center;
   }
 
-  /* line 240, ../scss/_components.scss */
+  /* line 267, ../scss/_components.scss */
   #shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button {
     width: 30%;
   }
 }
-/* line 249, ../scss/_components.scss */
-#advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
-#advice-required-entry-email_address, #advice-required-entry-password,
-#advice-required-entry-confirmation, #advice-validate-password-password,
-#advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
-#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password,
-.my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
-#advice-required-entry-telephone {
+/* line 276, ../scss/_components.scss */
+.validation-advice {
   width: auto;
   margin: 0px;
   display: inline-block;
   padding-left: 1px;
   height: 20px;
-  font-size: 3em;
+  font-size: 1.5em;
   color: #a51313;
   font-weight: 600;
 }
 
-/* line 266, ../scss/_components.scss */
-#advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
-#advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
-#advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
-#advice-required-entry-billing\:postcode, #advice-validate-select-billing\:country_id,
-#advice-required-entry-shipping\:telephone, #advice-required-entry-shipping\:firstname,
-#advice-required-entry-shipping\:lastname, #advice-required-entry-shipping\:street1, #advice-required-entry-shipping\:city,
-#advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id {
-  width: 4%;
-  margin: 0px;
-  display: inline-block;
-  padding-left: 3px;
-  font-size: 2em;
-  color: #a51313;
-  font-weight: 600;
-}
-
-/* line 282, ../scss/_components.scss */
+/* line 287, ../scss/_components.scss */
 input.validation-failed select.validation-failed, .validation-failed {
   border: 2px solid #a51313 !important;
 }
 
 @media (max-width: 625px) {
-  /* line 289, ../scss/_components.scss */
-  #advice-required-entry-firstname, #advice-required-entry-lastname, #advice-required-entry-city,
-  #advice-required-entry-email_address, #advice-required-entry-password, #advice-required-entry-confirmation,
-  #advice-validate-password-password, #advice-validate-cpassword-confirmation, #advice-validate-email-email_address,
-  #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-current_password,
-  .my-account .input-box #advice-required-entry-email, #advice-required-entry-street_1, #advice-required-entry-zip,
-  #advice-required-entry-telephone, #advice-required-entry-coupon_code, #advice-required-entry-email, #advice-required-entry-pass, #advice-required-entry-coupon_code, #advice-required-entry-postcode,
-  #advice-validate-select-country, #advice-required-entry-billing\:telephone, #advice-required-entry-billing\:firstname,
-  #advice-required-entry-billing\:lastname, #advice-required-entry-billing\:street1, #advice-required-entry-billing\:city,
-  #advice-required-entry-billing\:postcode, #advice-validate-select-billing\:country_id,
-  #advice-required-entry-shipping\:telephone, #advice-required-entry-shipping\:firstname,
-  #advice-required-entry-shipping\:lastname, #advice-required-entry-shipping\:street1, #advice-required-entry-shipping\:city,
-  #advice-required-entry-shipping\:postcode, #advice-validate-select-shipping\:country_id {
+  /* line 294, ../scss/_components.scss */
+  .validation-advice {
     display: none;
   }
 }
@@ -2200,60 +2193,39 @@ header {
   padding: 0px;
 }
 /* line 7, ../scss/Pages/Shared/_header.scss */
-header .messages {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  text-align: center;
-  margin: 0px auto;
-  width: 100%;
-  height: 65px;
-  background-color: white;
-  list-style: none;
-  padding: 20px 0px 0px 0px;
-  z-index: 110;
-}
-/* line 20, ../scss/Pages/Shared/_header.scss */
-header .messages li ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px 0px;
-  vertical-align: middle;
-}
-/* line 29, ../scss/Pages/Shared/_header.scss */
 header #navMenuButton {
   display: none;
 }
-/* line 34, ../scss/Pages/Shared/_header.scss */
-header .TopNavIcon span {
+/* line 12, ../scss/Pages/Shared/_header.scss */
+header .topNavIcon span {
   font-family: mango-font-icons;
   display: none;
 }
-/* line 40, ../scss/Pages/Shared/_header.scss */
+/* line 18, ../scss/Pages/Shared/_header.scss */
 header .header_wrapper .top-link-checkout {
   display: none;
 }
-/* line 44, ../scss/Pages/Shared/_header.scss */
+/* line 22, ../scss/Pages/Shared/_header.scss */
 header .smartphoneLogo img, header .logo_column a img {
   text-align: center;
   margin: 0 auto;
 }
-/* line 49, ../scss/Pages/Shared/_header.scss */
+/* line 27, ../scss/Pages/Shared/_header.scss */
 header .top-help-a {
   margin-right: 10px;
 }
-/* line 53, ../scss/Pages/Shared/_header.scss */
+/* line 31, ../scss/Pages/Shared/_header.scss */
 header .form-search-mini .mangoIcon {
   float: left;
   font-size: 1.25em;
 }
-/* line 58, ../scss/Pages/Shared/_header.scss */
+/* line 36, ../scss/Pages/Shared/_header.scss */
 header .form-search {
   border: 2px solid #474444;
   padding: 2px;
 }
-/* line 63, ../scss/Pages/Shared/_header.scss */
-header #search {
+/* line 40, ../scss/Pages/Shared/_header.scss */
+header .form-search .input-text {
   width: 85%;
   font-size: 0.8em;
   text-align: center;
@@ -2265,28 +2237,28 @@ header #search {
   border: 0px solid;
   will-change: transform;
 }
-/* line 75, ../scss/Pages/Shared/_header.scss */
-header #search:focus {
+/* line 52, ../scss/Pages/Shared/_header.scss */
+header .form-search .input-text:focus {
   border-color: white;
   outline: none;
   background-color: transparent;
   border: 0px solid;
 }
-/* line 83, ../scss/Pages/Shared/_header.scss */
-header button[title="Search"] {
+/* line 61, ../scss/Pages/Shared/_header.scss */
+header .form-search .mini-search-button {
   display: none;
 }
-/* line 87, ../scss/Pages/Shared/_header.scss */
+/* line 66, ../scss/Pages/Shared/_header.scss */
 header #search_mini_form {
   text-align: center;
   margin: 0px auto 0px 10px;
   max-width: 15em;
 }
-/* line 93, ../scss/Pages/Shared/_header.scss */
+/* line 72, ../scss/Pages/Shared/_header.scss */
 header .logo_column h1 {
   margin: 5px auto;
 }
-/* line 97, ../scss/Pages/Shared/_header.scss */
+/* line 76, ../scss/Pages/Shared/_header.scss */
 header .links {
   display: block;
   list-style: none;
@@ -2296,34 +2268,34 @@ header .links {
   width: 100%;
   float: right;
 }
-/* line 106, ../scss/Pages/Shared/_header.scss */
+/* line 85, ../scss/Pages/Shared/_header.scss */
 header .links .first {
   display: inline-block;
 }
-/* line 110, ../scss/Pages/Shared/_header.scss */
+/* line 89, ../scss/Pages/Shared/_header.scss */
 header .links > li:nth-child(1) {
   /* HELP TOPMENU LINK */
   display: inline-block;
 }
-/* line 114, ../scss/Pages/Shared/_header.scss */
+/* line 93, ../scss/Pages/Shared/_header.scss */
 header .links li {
   display: inline-block;
   padding: 0px;
 }
-/* line 118, ../scss/Pages/Shared/_header.scss */
+/* line 97, ../scss/Pages/Shared/_header.scss */
 header .links li a {
   text-decoration: none;
   color: black;
 }
-/* line 122, ../scss/Pages/Shared/_header.scss */
+/* line 101, ../scss/Pages/Shared/_header.scss */
 header .links li a:hover {
   cursor: pointer;
 }
-/* line 127, ../scss/Pages/Shared/_header.scss */
+/* line 106, ../scss/Pages/Shared/_header.scss */
 header .links li:nth-child(3) {
   margin: 0px;
 }
-/* line 133, ../scss/Pages/Shared/_header.scss */
+/* line 112, ../scss/Pages/Shared/_header.scss */
 header .top-link-cart {
   background: url("../images/shopping_bag.png");
   background-repeat: no-repeat;
@@ -2332,11 +2304,11 @@ header .top-link-cart {
   padding: 10px 20px 5px 0px;
   margin-right: 10px;
 }
-/* line 142, ../scss/Pages/Shared/_header.scss */
+/* line 121, ../scss/Pages/Shared/_header.scss */
 header .top-link-cart:hover {
   cursor: pointer;
 }
-/* line 146, ../scss/Pages/Shared/_header.scss */
+/* line 125, ../scss/Pages/Shared/_header.scss */
 header .top-link-cart span {
   display: inline-block;
   position: relative;
@@ -2356,87 +2328,72 @@ header .top-link-cart span {
   width: 1.5em;
 }
 
-/* line 166, ../scss/Pages/Shared/_header.scss */
-#click-layer {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  filter: Alpha(opacity=0);
-  pointer-events: none;
-  z-index: 89;
-}
-
 @media (max-width: 900px) {
-  /* line 184, ../scss/Pages/Shared/_header.scss */
+  /* line 148, ../scss/Pages/Shared/_header.scss */
   header .searchMiniIcon span {
     font-size: 2.25em;
   }
-  /* line 187, ../scss/Pages/Shared/_header.scss */
+  /* line 151, ../scss/Pages/Shared/_header.scss */
   header .searchMiniIcon span:hover {
     cursor: pointer;
   }
-  /* line 192, ../scss/Pages/Shared/_header.scss */
+  /* line 156, ../scss/Pages/Shared/_header.scss */
   header .mobile-opened-closed {
     display: inline-block;
     font-family: mango-font-icons;
   }
-  /* line 197, ../scss/Pages/Shared/_header.scss */
+  /* line 161, ../scss/Pages/Shared/_header.scss */
   header .search-wrapper {
     float: none;
     margin: 0px auto;
   }
-  /* line 203, ../scss/Pages/Shared/_header.scss */
+  /* line 167, ../scss/Pages/Shared/_header.scss */
   header .search-wrapper .search-visible {
     display: block;
   }
-  /* line 208, ../scss/Pages/Shared/_header.scss */
+  /* line 172, ../scss/Pages/Shared/_header.scss */
   header .header_wrapper {
     margin: 0px;
   }
-  /* line 212, ../scss/Pages/Shared/_header.scss */
-  header .TopNavIcon span {
+  /* line 176, ../scss/Pages/Shared/_header.scss */
+  header .topNavIcon span {
     display: block;
     font-size: 2.75em;
     margin-right: 25%;
   }
-  /* line 218, ../scss/Pages/Shared/_header.scss */
+  /* line 182, ../scss/Pages/Shared/_header.scss */
   header .searchMiniIcon span {
     font-size: 2.25em;
   }
-  /* line 222, ../scss/Pages/Shared/_header.scss */
+  /* line 186, ../scss/Pages/Shared/_header.scss */
   header .textLink, header .top-help-a {
     display: none;
   }
-  /* line 226, ../scss/Pages/Shared/_header.scss */
+  /* line 190, ../scss/Pages/Shared/_header.scss */
   header .top-link-cart {
     background-size: contain;
     background-position: top;
     padding: 20px 0px 0px 20px;
   }
-  /* line 232, ../scss/Pages/Shared/_header.scss */
+  /* line 196, ../scss/Pages/Shared/_header.scss */
   header .top-link-cart span {
     top: 2px;
     left: -25px;
   }
-  /* line 238, ../scss/Pages/Shared/_header.scss */
+  /* line 202, ../scss/Pages/Shared/_header.scss */
   header .links {
     margin: 0px 15px 0px 0px;
     text-align: right;
   }
-  /* line 242, ../scss/Pages/Shared/_header.scss */
+  /* line 206, ../scss/Pages/Shared/_header.scss */
   header .links li {
     margin-right: 10px;
   }
-  /* line 245, ../scss/Pages/Shared/_header.scss */
+  /* line 209, ../scss/Pages/Shared/_header.scss */
   header .links li:nth-child(1) {
     display: none;
   }
-  /* line 251, ../scss/Pages/Shared/_header.scss */
+  /* line 215, ../scss/Pages/Shared/_header.scss */
   header .form-search {
     display: none;
     position: absolute;
@@ -2447,7 +2404,7 @@ header .top-link-cart span {
     width: 98%;
     float: none;
   }
-  /* line 261, ../scss/Pages/Shared/_header.scss */
+  /* line 225, ../scss/Pages/Shared/_header.scss */
   header .form-search:before {
     z-index: -10;
     content: '';
@@ -2461,16 +2418,16 @@ header .top-link-cart span {
     left: 180px;
     top: -10px;
   }
-  /* line 267, ../scss/Pages/Shared/_header.scss */
-  header .form-search #search {
+  /* line 231, ../scss/Pages/Shared/_header.scss */
+  header .form-search .input-text {
     width: 90%;
     padding: 10px 0px;
   }
-  /* line 272, ../scss/Pages/Shared/_header.scss */
+  /* line 236, ../scss/Pages/Shared/_header.scss */
   header .form-search .form-search .mangoIcon {
     font-size: 1.25em;
   }
-  /* line 278, ../scss/Pages/Shared/_header.scss */
+  /* line 242, ../scss/Pages/Shared/_header.scss */
   header #navMenuButton {
     display: inline-block;
     padding: 8px 20px;
@@ -2482,23 +2439,23 @@ header .top-link-cart span {
     margin: 0px 20px 0px 5px;
     font-weight: bold;
   }
-  /* line 289, ../scss/Pages/Shared/_header.scss */
+  /* line 253, ../scss/Pages/Shared/_header.scss */
   header #navMenuButton:hover {
     cursor: pointer;
   }
-  /* line 294, ../scss/Pages/Shared/_header.scss */
+  /* line 258, ../scss/Pages/Shared/_header.scss */
   header .form-search-mini {
     display: block;
     border: 2px solid #474444;
     padding: 2px;
     width: 100%;
   }
-  /* line 301, ../scss/Pages/Shared/_header.scss */
+  /* line 265, ../scss/Pages/Shared/_header.scss */
   header .form-search-mini button {
     display: none;
   }
-  /* line 305, ../scss/Pages/Shared/_header.scss */
-  header .form-search-mini #search {
+  /* line 269, ../scss/Pages/Shared/_header.scss */
+  header .form-search-mini .input-text {
     width: 80%;
     font-size: 0.8em;
     text-align: center;
@@ -2512,46 +2469,46 @@ header .top-link-cart span {
   }
 }
 @media (max-width: 625px) {
-  /* line 327, ../scss/Pages/Shared/_header.scss */
+  /* line 291, ../scss/Pages/Shared/_header.scss */
   header .smartphoneLogo {
     text-align: center;
     display: block;
     width: 100%;
     clear: both;
   }
-  /* line 333, ../scss/Pages/Shared/_header.scss */
+  /* line 297, ../scss/Pages/Shared/_header.scss */
   header .smartphoneLogo h1 {
     margin: 3px auto;
   }
-  /* line 338, ../scss/Pages/Shared/_header.scss */
+  /* line 302, ../scss/Pages/Shared/_header.scss */
   header #navMenuButton {
     min-width: 45px;
     padding: 8px 10px;
   }
-  /* line 343, ../scss/Pages/Shared/_header.scss */
+  /* line 307, ../scss/Pages/Shared/_header.scss */
   header .header_wrapper {
     padding-top: 10px;
     background-color: white;
   }
-  /* line 348, ../scss/Pages/Shared/_header.scss */
+  /* line 312, ../scss/Pages/Shared/_header.scss */
   header .header_wrapper .search_column {
     display: block;
   }
-  /* line 352, ../scss/Pages/Shared/_header.scss */
+  /* line 316, ../scss/Pages/Shared/_header.scss */
   header .header_wrapper .logo {
     display: none;
   }
-  /* line 358, ../scss/Pages/Shared/_header.scss */
-  header .form-search #search {
-    width: 85%;
-  }
-  /* line 362, ../scss/Pages/Shared/_header.scss */
+  /* line 322, ../scss/Pages/Shared/_header.scss */
   header .form-search {
     width: 95%;
     top: 140px;
     border: 2px solid #474444;
   }
-  /* line 367, ../scss/Pages/Shared/_header.scss */
+  /* line 327, ../scss/Pages/Shared/_header.scss */
+  header .form-search .input-text {
+    width: 80%;
+  }
+  /* line 331, ../scss/Pages/Shared/_header.scss */
   header .form-search:before {
     z-index: -10;
     content: '';
@@ -2565,20 +2522,16 @@ header .top-link-cart span {
     left: 30%;
     top: -10px;
   }
-  /* line 374, ../scss/Pages/Shared/_header.scss */
+  /* line 338, ../scss/Pages/Shared/_header.scss */
   header .links {
     margin: -6px 5px 0px 5px;
   }
-  /* line 378, ../scss/Pages/Shared/_header.scss */
-  header #search {
-    width: 80%;
-  }
-  /* line 382, ../scss/Pages/Shared/_header.scss */
+  /* line 342, ../scss/Pages/Shared/_header.scss */
   header .form-search > span.mangoIcon {
     font-size: 1.75em;
     float: left;
   }
-  /* line 387, ../scss/Pages/Shared/_header.scss */
+  /* line 347, ../scss/Pages/Shared/_header.scss */
   header .links li {
     margin-left: 0;
   }
@@ -2893,60 +2846,56 @@ a.f-left {
   }
 }
 @media (max-width: 625px) {
-  /* line 251, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-account {
+  /* line 252, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-account {
     top: 45px;
     right: 7%;
   }
-  /* line 254, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-account .content-account {
+  /* line 256, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-account .content-account {
     padding: 0.5em 0em;
   }
-  /* line 259, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-account .input-box input {
+  /* line 261, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-account .input-box input {
     width: 100%;
   }
-  /* line 263, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-account .registered-users {
+  /* line 265, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-account .registered-users {
     padding: 0em 1em;
   }
-
-  /* line 268, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-cart {
+  /* line 270, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-cart {
     right: 7%;
     top: 45px;
     width: 300px;
   }
-  /* line 273, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-cart .product-image {
+  /* line 275, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-cart .product-image {
     width: 30%;
     display: inline-block;
   }
-  /* line 278, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-cart .grid2 {
+  /* line 280, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-cart .grid2 {
     margin: 5px auto;
   }
-  /* line 282, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-cart .btn-remove {
+  /* line 284, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-cart .btn-remove {
     padding: 1% 2.25%;
   }
-  /* line 286, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini-menu-cart .buttons-container {
+  /* line 288, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini-menu-cart .buttons-container {
     margin: 0em 1em;
   }
-
-  /* line 292, ../scss/Pages/Shared/_mini-menus.scss */
-  #mini_cart_checkout, #mini_cart_edit {
+  /* line 293, ../scss/Pages/Shared/_mini-menus.scss */
+  header #mini_cart_checkout, header #mini_cart_edit {
     width: 100%;
   }
-
-  /* line 296, ../scss/Pages/Shared/_mini-menus.scss */
-  #login-form > div:nth-child(3) > div.col-1.new-users {
+  /* line 297, ../scss/Pages/Shared/_mini-menus.scss */
+  header #login-form > div:nth-child(3) > div.col-1.new-users {
     padding: 0em 1em;
   }
-
-  /* line 300, ../scss/Pages/Shared/_mini-menus.scss */
-  .content-cart {
+  /* line 301, ../scss/Pages/Shared/_mini-menus.scss */
+  header .content-cart {
     padding: 5px 0px;
   }
 }
@@ -3035,13 +2984,12 @@ nav ul li ul li a {
 nav {
   display: block;
 }
-/* line 86, ../scss/Pages/Shared/_nav.scss */
+/* line 88, ../scss/Pages/Shared/_nav.scss */
 nav ul li > a:hover {
   cursor: pointer;
 }
-
-/* line 91, ../scss/Pages/Shared/_nav.scss */
-nav ul li ul {
+/* line 92, ../scss/Pages/Shared/_nav.scss */
+nav ul ul {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -3049,8 +2997,7 @@ nav ul li ul {
   opacity: 0;
   visibility: hidden;
 }
-
-/* line 98, ../scss/Pages/Shared/_nav.scss */
+/* line 99, ../scss/Pages/Shared/_nav.scss */
 nav ul li:hover > ul {
   opacity: 1;
   visibility: visible;
@@ -3097,7 +3044,7 @@ nav ul li:hover > a:not(:last-child) {
     top: 0%;
   }
 }
-/* line 126, ../scss/Pages/Shared/_nav.scss */
+/* line 128, ../scss/Pages/Shared/_nav.scss */
 .nav-fixed {
   top: 0;
   z-index: 100;
@@ -3114,15 +3061,15 @@ nav ul li:hover > a:not(:last-child) {
   -o-animation: fixed-nav-animation 0.2s 1;
   animation: fixed-nav-animation 0.2s 1;
 }
-/* line 140, ../scss/Pages/Shared/_nav.scss */
+/* line 142, ../scss/Pages/Shared/_nav.scss */
 .nav-fixed .logo_column {
   display: none;
 }
-/* line 145, ../scss/Pages/Shared/_nav.scss */
+/* line 147, ../scss/Pages/Shared/_nav.scss */
 .nav-fixed .search-wrapper .form-search {
   border: 0;
 }
-/* line 150, ../scss/Pages/Shared/_nav.scss */
+/* line 152, ../scss/Pages/Shared/_nav.scss */
 .nav-fixed nav {
   top: 0;
   z-index: 98;
@@ -3138,13 +3085,13 @@ nav ul li:hover > a:not(:last-child) {
   left: 0;
   width: 50%;
 }
-/* line 165, ../scss/Pages/Shared/_nav.scss */
-.nav-fixed button[title="Search"] {
+/* line 166, ../scss/Pages/Shared/_nav.scss */
+.nav-fixed .mini-search-button {
   display: none;
 }
 
 @media (max-width: 900px) {
-  /* line 172, ../scss/Pages/Shared/_nav.scss */
+  /* line 173, ../scss/Pages/Shared/_nav.scss */
   nav {
     display: none;
   }
@@ -3257,7 +3204,7 @@ nav ul li:hover > a:not(:last-child) {
       opacity: 1;
     }
   }
-  /* line 199, ../scss/Pages/Shared/_nav.scss */
+  /* line 202, ../scss/Pages/Shared/_nav.scss */
   .offcanvas {
     display: block;
     position: fixed;
@@ -3273,25 +3220,25 @@ nav ul li:hover > a:not(:last-child) {
     animation: menu-background 0.5s 1;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  /* line 211, ../scss/Pages/Shared/_nav.scss */
+  /* line 214, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul > li.level0:before {
     font-family: mango-font-icons;
     content: " ";
   }
-  /* line 216, ../scss/Pages/Shared/_nav.scss */
+  /* line 219, ../scss/Pages/Shared/_nav.scss */
   .offcanvas > ul > li.last {
     margin: 0px auto;
   }
-  /* line 220, ../scss/Pages/Shared/_nav.scss */
+  /* line 223, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li ul {
     display: none;
   }
-  /* line 225, ../scss/Pages/Shared/_nav.scss */
+  /* line 228, ../scss/Pages/Shared/_nav.scss */
   .offcanvas .nav-element-opened:before {
     font-family: mango-font-icons;
     content: " " !important;
   }
-  /* line 230, ../scss/Pages/Shared/_nav.scss */
+  /* line 233, ../scss/Pages/Shared/_nav.scss */
   .offcanvas .nav-element-opened ul {
     display: block !important;
     visibility: visible;
@@ -3305,25 +3252,25 @@ nav ul li:hover > a:not(:last-child) {
     -o-animation: scale-fadein 0.25s 1;
     animation: scale-fadein 0.25s 1;
   }
-  /* line 238, ../scss/Pages/Shared/_nav.scss */
+  /* line 241, ../scss/Pages/Shared/_nav.scss */
   .offcanvas .nav-element-opened ul:hover {
     display: block;
   }
-  /* line 247, ../scss/Pages/Shared/_nav.scss */
+  /* line 250, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li:hover > ul {
     position: relative;
     top: 0;
     display: none;
   }
-  /* line 253, ../scss/Pages/Shared/_nav.scss */
+  /* line 256, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li:hover > a:not(:last-child) {
     border-bottom: 0;
   }
-  /* line 259, ../scss/Pages/Shared/_nav.scss */
+  /* line 262, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li .has-children:hover {
     border: 0 !important;
   }
-  /* line 262, ../scss/Pages/Shared/_nav.scss */
+  /* line 265, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li ul li {
     font-size: 0.75em;
     width: 95%;
@@ -3331,12 +3278,12 @@ nav ul li:hover > a:not(:last-child) {
     position: relative;
     top: 0;
   }
-  /* line 269, ../scss/Pages/Shared/_nav.scss */
+  /* line 272, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li ul li:hover {
     background-color: white;
     border: 0;
   }
-  /* line 275, ../scss/Pages/Shared/_nav.scss */
+  /* line 278, ../scss/Pages/Shared/_nav.scss */
   .offcanvas .navTitle, .offcanvas #navClose {
     border: 0;
     display: inline-block;
@@ -3345,12 +3292,12 @@ nav ul li:hover > a:not(:last-child) {
     text-transform: uppercase;
     font-weight: 300;
   }
-  /* line 285, ../scss/Pages/Shared/_nav.scss */
+  /* line 288, ../scss/Pages/Shared/_nav.scss */
   .offcanvas #navClose {
     text-align: right;
     z-index: 100;
   }
-  /* line 290, ../scss/Pages/Shared/_nav.scss */
+  /* line 293, ../scss/Pages/Shared/_nav.scss */
   .offcanvas #navClose span {
     background-color: black;
     color: white;
@@ -3366,11 +3313,11 @@ nav ul li:hover > a:not(:last-child) {
     width: 1.25em;
     z-index: 100;
   }
-  /* line 303, ../scss/Pages/Shared/_nav.scss */
+  /* line 306, ../scss/Pages/Shared/_nav.scss */
   .offcanvas #navClose span:hover {
     cursor: pointer;
   }
-  /* line 309, ../scss/Pages/Shared/_nav.scss */
+  /* line 312, ../scss/Pages/Shared/_nav.scss */
   .offcanvas > ul {
     background-color: white;
     width: 40%;
@@ -3383,31 +3330,31 @@ nav ul li:hover > a:not(:last-child) {
     animation: menu-slide 0.5s 1;
     position: absolute;
   }
-  /* line 318, ../scss/Pages/Shared/_nav.scss */
+  /* line 321, ../scss/Pages/Shared/_nav.scss */
   .offcanvas > ul li {
     display: block;
   }
-  /* line 321, ../scss/Pages/Shared/_nav.scss */
+  /* line 324, ../scss/Pages/Shared/_nav.scss */
   .offcanvas > ul li a {
     font-weight: 400;
     font-size: 0.75em;
   }
-  /* line 326, ../scss/Pages/Shared/_nav.scss */
+  /* line 329, ../scss/Pages/Shared/_nav.scss */
   .offcanvas > ul li ul {
     position: relative;
     width: 93%;
     text-align: left;
     opacity: 1;
   }
-  /* line 332, ../scss/Pages/Shared/_nav.scss */
+  /* line 335, ../scss/Pages/Shared/_nav.scss */
   .offcanvas > ul li ul li {
     margin-left: 15px;
   }
-  /* line 337, ../scss/Pages/Shared/_nav.scss */
+  /* line 340, ../scss/Pages/Shared/_nav.scss */
   .offcanvas > ul li > .last {
     margin: 0px auto;
   }
-  /* line 344, ../scss/Pages/Shared/_nav.scss */
+  /* line 347, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li {
     padding: 10px 0px;
     border-bottom: 1px solid #b4b4b4;
@@ -3417,34 +3364,34 @@ nav ul li:hover > a:not(:last-child) {
     font-size: 1.5em;
     margin: 0px auto;
   }
-  /* line 353, ../scss/Pages/Shared/_nav.scss */
+  /* line 356, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li ul li:last-child {
     border: 0 !important;
   }
-  /* line 356, ../scss/Pages/Shared/_nav.scss */
+  /* line 359, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li ul li:last-child:hover {
     border: 0 !important;
   }
-  /* line 360, ../scss/Pages/Shared/_nav.scss */
+  /* line 363, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li ul li:not(:last-child) {
     border-bottom: 1px solid #B4B4B4;
   }
-  /* line 362, ../scss/Pages/Shared/_nav.scss */
+  /* line 365, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul li ul li:not(:last-child):hover {
     border-bottom: 1px solid #B4B4B4;
   }
 
-  /* line 370, ../scss/Pages/Shared/_nav.scss */
+  /* line 373, ../scss/Pages/Shared/_nav.scss */
   header nav ul li.mobileOnlyAddition a {
     margin-left: 25px;
   }
 
-  /* line 374, ../scss/Pages/Shared/_nav.scss */
+  /* line 377, ../scss/Pages/Shared/_nav.scss */
   .level0 > a span:hover {
     border-bottom: 0;
   }
 
-  /* line 378, ../scss/Pages/Shared/_nav.scss */
+  /* line 381, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed {
     padding-top: 10px;
     top: 0;
@@ -3454,7 +3401,7 @@ nav ul li:hover > a:not(:last-child) {
     background-color: white;
     height: 50px;
   }
-  /* line 388, ../scss/Pages/Shared/_nav.scss */
+  /* line 391, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .header_wrapper .search_column {
     position: fixed;
     margin-right: 3.44828%;
@@ -3464,23 +3411,23 @@ nav ul li:hover > a:not(:last-child) {
     left: 0;
     width: 50%;
   }
-  /* line 397, ../scss/Pages/Shared/_nav.scss */
+  /* line 400, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .header_wrapper .search_column #search_mini_form {
     margin: 0px auto;
   }
-  /* line 401, ../scss/Pages/Shared/_nav.scss */
+  /* line 404, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .header_wrapper .search_column .search-wrapper {
     width: 100%;
   }
-  /* line 406, ../scss/Pages/Shared/_nav.scss */
+  /* line 409, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .form-search-mini {
     display: block;
   }
-  /* line 410, ../scss/Pages/Shared/_nav.scss */
+  /* line 413, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .searchMiniIcon {
     display: none;
   }
-  /* line 414, ../scss/Pages/Shared/_nav.scss */
+  /* line 417, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed nav {
     padding: 0px;
     margin: 0px;
@@ -3492,29 +3439,29 @@ nav ul li:hover > a:not(:last-child) {
   }
 }
 @media (max-width: 625px) {
-  /* line 425, ../scss/Pages/Shared/_nav.scss */
+  /* line 428, ../scss/Pages/Shared/_nav.scss */
   .offcanvas ul {
     width: 80%;
   }
 
-  /* line 429, ../scss/Pages/Shared/_nav.scss */
+  /* line 432, ../scss/Pages/Shared/_nav.scss */
   .header_wrapper .search_column .form-search-mini {
     display: none;
   }
 
-  /* line 433, ../scss/Pages/Shared/_nav.scss */
+  /* line 436, ../scss/Pages/Shared/_nav.scss */
   .header_wrapper .searchMiniIcon {
     display: block;
   }
 
-  /* line 439, ../scss/Pages/Shared/_nav.scss */
+  /* line 442, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .search-wrapper .form-search {
     width: 95%;
     top: 60px;
     border: 2px solid #474444;
     display: none;
   }
-  /* line 445, ../scss/Pages/Shared/_nav.scss */
+  /* line 448, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .search-wrapper .form-search:before {
     z-index: -10;
     content: '';
@@ -3528,28 +3475,28 @@ nav ul li:hover > a:not(:last-child) {
     left: 30%;
     top: -10px;
   }
-  /* line 452, ../scss/Pages/Shared/_nav.scss */
+  /* line 455, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .search-wrapper .search-visible {
     display: block;
   }
-  /* line 456, ../scss/Pages/Shared/_nav.scss */
+  /* line 459, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .header_wrapper {
     background-color: white;
     padding-top: 5px;
   }
-  /* line 461, ../scss/Pages/Shared/_nav.scss */
+  /* line 464, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .search_column .form-search-mini {
     display: none;
   }
-  /* line 465, ../scss/Pages/Shared/_nav.scss */
+  /* line 468, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .searchMiniIcon {
     display: block;
   }
-  /* line 469, ../scss/Pages/Shared/_nav.scss */
+  /* line 472, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .smartphoneLogo {
     display: none;
   }
-  /* line 473, ../scss/Pages/Shared/_nav.scss */
+  /* line 476, ../scss/Pages/Shared/_nav.scss */
   .nav-fixed .search_column {
     width: auto !important;
     position: initial !important;
