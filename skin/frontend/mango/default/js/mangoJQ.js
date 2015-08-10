@@ -4,6 +4,8 @@ var jq = $.noConflict();
 jq(function(){
   jq(".mini-menu").find(".btn-remove").corner("10px");
   jq(".cart-table").find(".btn-remove").corner("15px");
+  jq("#free-delivery-outline").corner("6px");
+  jq("#free-delivery-inside").corner("6px");
   jq(".qty-control").corner("15px");
 });
 

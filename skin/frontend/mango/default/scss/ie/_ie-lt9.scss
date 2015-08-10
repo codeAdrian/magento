@@ -1,12 +1,3 @@
-.no-mq {
-
-}
-
-.no-rgba {
-
-}
-
-
 // ---------- LAYOUT AND ELEMENT DISPLAY FIX ----------
 .no-flexbox, .no-flexboxlegacy{
 
@@ -72,9 +63,6 @@
 			}
 		}
 
-
-		z-index:500 !important;
-		background          : url(#);
 		.product-image, .product-details, .btn-remove{
 			display: inline;
 		}
@@ -83,13 +71,9 @@
 			display: none !important;
 		}
 
-		#free-delivery-outline, #free-delivery-text{
-			display:none;
-		}
-
 		.buttons-container button{
 			margin:0 auto;
-			min-width:140px;
+			min-width:120px;
 		}
 	}
 
@@ -103,8 +87,8 @@
 		*display: inline;
 
 		ul{
-			left:10px;
-			top:0.75em !important;
+			left:0px;
+			top:1em !important;
 			.last{
 				margin-left:0px !important;
 				left:0px !important;
@@ -259,6 +243,14 @@
 	}
 
 // ------ DASHBOARD
+
+	.my-account{
+		.view-all-link{
+			max-width:200px;
+			margin-left:auto;
+			margin-right:0px;
+		}
+	}
 
 	.my-account-edit{
 		.control input.checkbox{
