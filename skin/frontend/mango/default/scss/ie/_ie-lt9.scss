@@ -173,7 +173,7 @@
 		}
 	}
 
-// ------ EDIT CART
+// ------ EDIT CART TABLES AND DASHBOARD TABLES
 	.cart-totals-wrapper{
 		.cart-collaterals, .shipping, .totals{
 			display: inline-block !important;
@@ -183,12 +183,11 @@
 		}
 	}
 
-	.checkout-cart-index, .customer-account-index{
+	.checkout-cart-index, .customer-account-index,.sales-order-view, .sales-order-history{
 
 		.cart-table, .data-table{
 			th{
 				padding:5px 0px;
-				width:25% !important;
 				font-weight:bold;
 				background:black;
 				color:white;
@@ -210,6 +209,19 @@
 				*zoom: 1 !important;
 				*display: inline !important;
 			}
+		}
+	}
+
+	.customer-account-index,.sales-order-view, .sales-order-history{
+		.data-table th{
+			text-align: left;
+			padding:5px;
+		}
+	}
+
+	.checkout-cart-index{
+		.data-table th{
+			width:25% !important;
 		}
 	}
 
