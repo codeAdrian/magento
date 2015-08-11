@@ -14,6 +14,19 @@ $susy:(
 	}
 }
 
+.sales-order-print{
+	.col2-set{
+		@include container($susy-desktop-grid2-columns);
+		&>.col-1{
+			@include span(1 of $susy-desktop-grid2-columns);
+		}
+
+		&>.col-2{
+			@include span(last 1 of $susy-desktop-grid2-columns);
+		}
+	}
+}
+
 // ----- SMARTPHONE
 @include breakpoint($smartphone-breakpoint){
 	.my-account-edit .buttons-set, .customer-address-index .buttons-set, .my-account .buttons-set{
