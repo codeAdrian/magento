@@ -94,6 +94,7 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a{
 .my-account{
 	margin-top:15px;
 	margin-bottom:20px;
+	padding:0em 1em;
 
 	.box-recent{
 		padding-left:30px;
@@ -102,7 +103,7 @@ div.box-account:nth-child(3) > div:nth-child(1) > div:nth-child(2) a{
 	}
 
 	.buttons-wrapper a{
-			color:black;
+		color:black;
 	}
 
 }
@@ -244,12 +245,12 @@ padding:10px 0px 10px 30px;
 	.my-account{
 		margin-left:0%;
 		.fieldset{
-		width:75%;
-		margin:10px auto;
+			width:75%;
+			margin:10px auto;
 		}
 
 		.buttons-set{
-		text-align: center;
+			text-align: center;
 		}
 
 		.pager{

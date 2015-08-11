@@ -34,8 +34,8 @@ footer{
 	}
 
 	#newsletter-validate-detail .block-content #newsletter, #newsletter-validate-detail .block-content .button{
-	float:right;
-	min-width: 30%;
+		float:right;
+		min-width: 30%;
 	}
 
 	#newsletter-validate-detail .block-content #newsletter{
@@ -50,13 +50,13 @@ footer{
 		width:90%;
 		display: inline-block;
 		vertical-align: middle;
+		
 		#newsletter-validate-detail, #newsletter-validate-detail .block-content{
 			width:100%;
 		}
 	}
 
 	.subscribe-button{
-		
 		border:1px solid black;
 		margin:0px;
 		background-color: black;
@@ -157,14 +157,29 @@ footer{
 			display: inline-block;
 			margin:10px 0px;	
 
+			.block-title:before{
+				content:" ";
+				font-family: mango-font-icons;
+			}
+
 			.block-title:hover, ul li:hover{
 				cursor: pointer;
 			}
 
-			ul.footer-visible{
+			.footer-visible:before{
+				content:" ";
+				font-family: mango-font-icons;
+			}
+
+			.footer-visible + ul{
 				display:block;
 				@include m-transform-origin(center top);
 				@include m-animation(scale-fadein 0.25s 1);
+
+				li{
+					padding-left:0;
+					margin-left:0;
+				}
 			}
 
 			ul{

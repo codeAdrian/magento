@@ -1,17 +1,23 @@
 var jq = $.noConflict();
 
-// FIX NAV AND SEARCH ON MEDIA WIDTH CHANGE
-
+// ADD CORNERS AND ROUND OBJECTS (IE 8 ONLY)
 jq(function(){
-      jq(".top-account>.textLink").removeAttr("href").css("cursor","pointer"); // remove href on load
+  jq(".mini-menu").find(".btn-remove").corner("10px");
+  jq(".cart-table").find(".btn-remove").corner("15px");
+  jq("#free-delivery-outline").corner("6px");
+  jq("#free-delivery-inside").corner("6px");
+  jq(".qty-control").corner("15px");
+});
+
+// FIX NAV AND SEARCH ON MEDIA WIDTH CHANGE
+jq(function(){
+      jq(".top-account>.textLink").removeAttr("href").css("cursor","pointer");
       jq(".top-link-cart").removeAttr("href");
 });
 
 // FIXED NAV ON SCROLL
-
 jq(function() {
   jq(window).scroll(function () {  
-    //console.log(jq(window).scrollTop())
     if (jq(window).width()> 900){
     if (jq(window).scrollTop() > 75) {
       jq('header').addClass('nav-fixed');
@@ -100,7 +106,7 @@ jq(".searchMiniIcon").click(function (e) {
 jq(function(){
         jq('footer').find('.grid4').click(function(){
             jq("footer").find(".footer-visible").toggleClass("footer-visible");
-            jq(this).find("ul").toggleClass("footer-visible");
+            jq(this).find(".block-title").toggleClass("footer-visible");
         });
 });
 
@@ -124,25 +130,6 @@ jq(function(){
           jq('#mini-menu-account').hide();
           jq('#mini-menu-cart').hide();          
         });
-});
-
-// RESPONSIVE TABLE
-jq(function(){
-  if (jq(".data-table").length ){
-    var headertext = [],
-    headers = document.querySelectorAll(".data-table th"),
-    tablebody = document.querySelector(".data-table tbody");
-
-    for(var i = 0; i < headers.length; i++) {
-      var current = headers[i];
-      headertext.push(current.textContent.replace(/\r?\n|\r/,""));
-    } 
-    for (var i = 0, row; row = tablebody.rows[i]; i++) {
-      for (var j = 0, col; col = row.cells[j]; j++) {
-        col.setAttribute("data-th", headertext[j]);
-      } 
-    }
-  }
 });
 
 // CART PRICE
@@ -188,5 +175,26 @@ jq(function(){
   jq(".messages").slideDown().delay(3000).slideUp(function(){
         jq(".subtext-message").slideDown();
       });
+  }
+});
+
+// RESPONSIVE TABLE
+jq(function(){
+  if (!jq("body").hasClass("page-print")) {
+    if (jq(".data-table").length ){
+      var headertext = [],
+      headers = document.querySelectorAll(".data-table th"),
+      tablebody = document.querySelector(".data-table tbody");
+
+      for(var i = 0; i < headers.length; i++) {
+        var current = headers[i];
+        headertext.push(current.textContent.replace(/\r?\n|\r/,""));
+      } 
+      for (var i = 0, row; row = tablebody.rows[i]; i++) {
+        for (var j = 0, col; col = row.cells[j]; j++) {
+          col.setAttribute("data-th", headertext[j]);
+        } 
+      }
+    }
   }
 });

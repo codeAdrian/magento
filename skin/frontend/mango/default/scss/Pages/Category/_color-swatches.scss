@@ -5,6 +5,8 @@
 		padding:1px 10px;
 		font-size: 5px;
 		margin:0px 3px;		
+		min-width:10px;
+		min-height:2px;
 	}
 
 	.Black{
@@ -68,5 +70,4 @@
 	.Yellow{
 		background-color:$c-yellow; 
 	}
-
 }

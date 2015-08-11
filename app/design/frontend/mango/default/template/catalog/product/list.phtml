@@ -142,9 +142,9 @@
 
 
  </div>
-
                 <div class="colorSwatches">
                                 <?php
+                                if ($_product->isConfigurable()){
                                 $attrs  = $_product->getTypeInstance(true)->getConfigurableAttributesAsArray($_product);
                                 foreach($attrs as $attr) {
                                     if(0 == strcmp("color", $attr['attribute_code'])) {
@@ -155,9 +155,9 @@
                               }
                             }
                         }  
+                      }
                 ?>
                 </div>
-
             </li>
         <?php if ($i%$_columnCount==0 || $i==$_collectionSize): ?>
         </ul>

@@ -9,6 +9,7 @@
 		margin-bottom: 50px;
 		text-align: center;
 		padding-left:2%;
+
 		li{
 			display:inline-block;
 			width:30%;
@@ -96,26 +97,29 @@
 .pages{
 	text-align: center;
 	margin:0px auto;
-		ol{
-		list-style: none;
-			li{
-				display: inline;
-				margin:0px;
-				padding:5px 10px;
-				border: 1px solid black;
 
-				a {
-				text-decoration: none;
-				background-color:white;
-				color:black;
-				}
-			}
+	ol{
+	list-style: none;
+	margin:20px 0px;
 
-			.current{
-			background-color:black;
-			color:white;
+		li{
+			display: inline;
+			margin:0px;
+			padding:5px 10px;
+			border: 1px solid black;
+
+			a {
+			text-decoration: none;
+			background-color:white;
+			color:black;
 			}
 		}
+
+		.current{
+		background-color:black;
+		color:white;
+		}
+	}
 }
 
 .product-short-description{
@@ -123,16 +127,17 @@
 }
 
 #category-sort-by{
-text-align: right;
-margin-right:10px;
-padding:15px 0px; 	
-	select{
-		border:1px solid black;
-		text-transform: uppercase;
-		margin-left:10px;
-		width:100px;
-		font-size: 0.9em;		
-	}
+	text-align: right;
+	margin-right:10px;
+	padding:15px 0px; 	
+
+		select{
+			border:1px solid black;
+			text-transform: uppercase;
+			margin-left:10px;
+			width:100px;
+			font-size: 0.9em;		
+		}
 }
 
 .toolbar-bottom{
@@ -160,6 +165,7 @@ padding:15px 0px;
 
 	.products-grid{
 			display: inline;
+			
 			.item{
 			width:45%;
 			margin:10px 1.5%;
