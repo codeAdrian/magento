@@ -22,28 +22,26 @@
 		border:1px solid #b4b4b4;
 		margin:0px;
 		margin-bottom:25px;
-	}
 
+		ol{
+			padding-left:40px;
+
+			li{
+				padding:5px 0px;
+			}
+		}
+
+		a{
+			text-decoration: none;
+			color:black;
+			text-transform: uppercase;
+			font-size: 0.8em;
+		}
+	}
 }
-	
-	dd#apparel_type ol, dd#price ol, dd#color ol, dd#bed_bath_type ol, dd#decor_type ol, dd#home_decor_type ol, dd#material ol{
-		list-style: none;
-		padding-left:40px;
 
-	}
 
-	dd#apparel_type ol li, dd#price ol li, dd#color ol li, dd#bed_bath_type ol li, dd#decor_type ol li, dd#home_decor_type ol li, dd#material ol li{
-		padding:5px 0px;
-	}
-
-	dd#apparel_type li a, dd#price li a, dd#color li a, dd#bed_bath_type ol li a, dd#decor_type ol li a, dd#home_decor_type ol li a, dd#material ol li a{
-		text-decoration: none;
-		color:black;
-		text-transform: uppercase;
-		font-size: 0.8em;
-	}
-
-	#size{
+	#size, #shoe_size{
 		text-align: center;
 
 		ol{
