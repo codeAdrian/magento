@@ -1151,6 +1151,10 @@ input.validation-failed select.validation-failed, .validation-failed {
   *display: inline !important;
   width: 100%;
 }
+/* line 282, ../scss/ie/_ie-lt9.scss */
+.no-flexbox .customer-account-edit .my-account-edit, .no-flexboxlegacy .customer-account-edit .my-account-edit {
+  height: 600px;
+}
 
 /* line 6, ../scss/Layout/_susy-header.scss */
 .header_wrapper {
