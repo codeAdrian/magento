@@ -13,7 +13,36 @@
  	}
  }
 
+
  .checkout-onepage-index{
+
+ 	#checkout-step-login{
+ 		h3{
+ 			font-size:1.5em;
+ 			text-transform: uppercase;
+ 			margin:20px 0px;
+ 		}
+
+		  .checkout-login{
+		  	@include m-box-sizing(border-box);
+		 	border-left:1px solid #b4b4b4;
+		 	margin:10px auto;
+
+		 	button{
+		 		margin:0px auto;
+		 	}
+
+		 	h3{
+		 		font-size: 1.5em;
+		 		text-transform: uppercase;
+		 		margin:10px 20px;
+		 	}
+
+		 	.form-list li{
+		 		padding:10px 0px;
+		 	}
+		 }
+ 	}
  	.main-container{
  		padding:1em;
 
@@ -25,7 +54,7 @@
  			text-align: center;
  		}
 
- 		#checkout-step-payment, #checkout-review-load{
+ 		#checkout-step-payment, #checkout-review-load, #checkout-step-login{
  			padding:0px 20px;
 
  			table{
