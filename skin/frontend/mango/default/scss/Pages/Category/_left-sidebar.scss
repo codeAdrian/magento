@@ -36,6 +36,10 @@
 			color:black;
 			text-transform: uppercase;
 			font-size: 0.8em;
+
+			&:hover{
+				font-weight: bold;
+			}
 		}
 	}
 }
@@ -64,6 +68,7 @@
 					&:hover{
 						color:white;
 						background-color: black;
+						font-weight: normal;
 					}
 				}		
 			}	

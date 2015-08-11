@@ -17,6 +17,11 @@
 		.border-container{
 			display:block !important;
 		}
+
+		ul li{
+			padding-left:0;
+			margin-left:0;
+		}
 	}
 
 	.homepage-product-grid, .image-container{
@@ -89,6 +94,9 @@
 		ul{
 			left:0px;
 			top:1em !important;
+			li a{
+				text-transform: none;
+			}
 			.last{
 				margin-left:0px !important;
 				left:0px !important;
@@ -173,6 +181,14 @@
 		}
 	}
 
+// LOGIN
+
+	.customer-account-login{
+		ul li{
+			padding:10px 0px;
+		}
+	}
+
 // ------ EDIT CART TABLES AND DASHBOARD TABLES
 	.cart-totals-wrapper{
 		.cart-collaterals, .shipping, .totals{
@@ -182,6 +198,7 @@
 			width:30% !important;
 		}
 	}
+
 
 	.checkout-cart-index, .customer-account-index,.sales-order-view, .sales-order-history{
 
@@ -249,7 +266,7 @@
 			}
 		}
 
-		.grid2{
+		.col2-main .grid2{
 			width:48% !important;
 		}
 	}
