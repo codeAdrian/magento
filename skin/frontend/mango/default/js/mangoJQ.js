@@ -109,7 +109,7 @@ jq(".searchMiniIcon").click(function (e) {
 jq(function(){
         jq('footer').find('.grid4').click(function(){
             jq("footer").find(".footer-visible").toggleClass("footer-visible");
-            jq(this).find("ul").toggleClass("footer-visible");
+            jq(this).find(".block-title").toggleClass("footer-visible");
         });
 });
 

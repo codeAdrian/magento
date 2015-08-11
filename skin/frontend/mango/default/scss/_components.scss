@@ -192,81 +192,105 @@ img{
 
 // ---------- RESPONSIVE TABLE -----------
 
-@include breakpoint($tablet-breakpoint){
-.my-account, .checkout-cart-index, .sales-order-view{
-	table#my-orders-table colgroup col:not(:first-child){
-	display: none;
-	}
-
-	  table#my-orders-table thead { 
-	  	display: none; 
-	  }
-	  table#my-orders-table tbody td { 
-	    display: block; 
-	    padding-top:10px; 
-
-	    h3{
-	    	padding:10px 0px;
-	    }
-	  }
-	  table#my-orders-table tbody tr td:first-child { 
-	    background-color: black; 
-	    color: white; 
-	    padding:10px 0px;
-	  }
-
-	      table#my-orders-table tbody tr{
-	      	border:1px solid #b4b4b4;
-	      	margin-top:10px;
-	      	display: block;
-	      	width:100%;
-	      }
-
-	    table#my-orders-table tbody tr td:last-child{
-	    	text-align: center;
-	    }
-		
-		table#my-orders-table tbody td:not(:last-child):before { 
-		    content: attr(data-th); 
-		    font-weight: bold;
-		    display: inline-block;
-		    text-align: right;  
-		    margin-right:2em;
-	 	}
-
-	.product-name a{
-		font-size: 0.8em;
-	}
-	 #my-orders-table{
-		text-align: center;
-		font-size: 1em;
-	}
-
-	.cart-fieldset .btn-remove {
-	    padding: 2px 6px;
-	}
-
-	#shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1){
-		text-align: center;
-		padding:0px;
-	}
-
-	#shopping-cart-table colgroup col:not(:first-child){
+	@include breakpoint($tablet-breakpoint){
+	.customer-account-index, .sales-order-history, .checkout-cart-index, .sales-order-view{
+		table#my-orders-table colgroup col:not(:first-child){
 		display: none;
+		}
+
+		  table#my-orders-table thead { 
+		  	display: none; 
+		  }
+		  table#my-orders-table tbody td { 
+		    display: block; 
+		    padding-top:10px; 
+
+		    h3{
+		    	padding:10px 0px;
+		    }
+		  }
+		  table#my-orders-table tbody tr td:first-child { 
+		    background-color: black; 
+		    color: white; 
+		    padding:10px 0px;
+		  }
+
+		      table#my-orders-table tbody tr{
+		      	border:1px solid #b4b4b4;
+		      	margin-top:10px;
+		      	display: block;
+		      	width:100%;
+		      }
+
+		    table#my-orders-table tbody tr td:last-child{
+		    	text-align: center;
+		    }
+			
+			table#my-orders-table tbody td:not(:last-child):before { 
+			    content: attr(data-th); 
+			    font-weight: bold;
+			    display: inline-block;
+			    text-align: right;  
+			    margin-right:2em;
+		 	}
+
+		.product-name a{
+			font-size: 0.8em;
+		}
+		 #my-orders-table{
+			text-align: center;
+			font-size: 1em;
+		}
+
+		.cart-fieldset .btn-remove {
+		    padding: 2px 6px;
+		}
+
+		#shopping-cart-table > tfoot:nth-child(3) > tr:nth-child(1){
+			text-align: center;
+			padding:0px;
+		}
+
+		#shopping-cart-table colgroup col:not(:first-child){
+			display: none;
+		}
+
+		.cart-fieldset{
+			margin:0px;
+			padding:0px;
+		}
+		.cart .page-title{
+			text-align: center;
+		}
+
+		#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button{
+			width:30%;
+		}
 	}
 
-	.cart-fieldset{
-		margin:0px;
-		padding:0px;
-	}
-	.cart .page-title{
-		text-align: center;
+	.sales-order-view{
+		.order-details #my-orders-table{
+			tbody{
+				display:table-caption;
+				width:100%;
+
+				tr{
+					margin-bottom:10px;
+				}
+
+				.item-options{
+					padding-bottom:50px;
+					text-align: center;
+
+					dt{
+						margin-left:40%;
+
+					}
+				}
+			}
+		}
 	}
 
-	#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button{
-		width:30%;
-	}
-}
 }
 
 

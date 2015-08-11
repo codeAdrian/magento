@@ -157,14 +157,29 @@ footer{
 			display: inline-block;
 			margin:10px 0px;	
 
+			.block-title:before{
+				content:" ";
+				font-family: mango-font-icons;
+			}
+
 			.block-title:hover, ul li:hover{
 				cursor: pointer;
 			}
 
-			ul.footer-visible{
+			.footer-visible:before{
+				content:" ";
+				font-family: mango-font-icons;
+			}
+
+			.footer-visible + ul{
 				display:block;
 				@include m-transform-origin(center top);
 				@include m-animation(scale-fadein 0.25s 1);
+
+				li{
+					padding-left:0;
+					margin-left:0;
+				}
 			}
 
 			ul{
