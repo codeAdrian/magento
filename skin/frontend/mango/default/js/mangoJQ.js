@@ -1,6 +1,6 @@
 var jq = $.noConflict();
 
-// Corners
+// ADD CORNERS AND ROUND OBJECTS (IE 8 ONLY)
 jq(function(){
   jq(".mini-menu").find(".btn-remove").corner("10px");
   jq(".cart-table").find(".btn-remove").corner("15px");
@@ -10,17 +10,14 @@ jq(function(){
 });
 
 // FIX NAV AND SEARCH ON MEDIA WIDTH CHANGE
-
 jq(function(){
-      jq(".top-account>.textLink").removeAttr("href").css("cursor","pointer"); // remove href on load
+      jq(".top-account>.textLink").removeAttr("href").css("cursor","pointer");
       jq(".top-link-cart").removeAttr("href");
 });
 
 // FIXED NAV ON SCROLL
-
 jq(function() {
   jq(window).scroll(function () {  
-    //console.log(jq(window).scrollTop())
     if (jq(window).width()> 900){
     if (jq(window).scrollTop() > 75) {
       jq('header').addClass('nav-fixed');
@@ -182,7 +179,6 @@ jq(function(){
 });
 
 // RESPONSIVE TABLE
-
 jq(function(){
   if (!jq("body").hasClass("page-print")) {
     if (jq(".data-table").length ){
