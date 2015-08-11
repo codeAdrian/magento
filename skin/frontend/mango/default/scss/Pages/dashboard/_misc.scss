@@ -1,5 +1,104 @@
 // ----- MISC - DESKTOP ----- 
 
+// PRINT ORDER
+.sales-order-print{
+	.col2-set{
+		h2{
+			text-transform: uppercase;
+			margin:20px 0px 5px;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		strong{
+			font-weight:normal;
+		}
+	}
+
+	h1{
+		float:right;
+		font-size:1.5em;
+		margin-bottom:0;
+	}
+
+	.print-head{
+		float:left;
+	}
+
+	h2{
+		font-size: 1.25em;
+		text-transform: uppercase;
+		margin:20px 0px 10px;	
+		text-align: center;	
+	}
+
+	.order-date{
+		clear:both;
+	}
+
+	table{
+		width:100%;
+
+		th{
+			color:black;
+			font-weight: bold;
+			text-transform: uppercase;
+			width:22%;
+			&:last-child{
+				width:12%;
+			}
+		}
+
+		tr{
+			border-bottom:1px solid black;
+			td{
+
+				.product-name{
+					text-transform: uppercase;
+				}
+
+				dt,dd{
+					display: inline-block;
+				}
+
+				dt{
+					float:left;
+					clear:left;
+					font-weight: bold;
+				}
+
+				dd{
+					margin-left:5%;
+					float:left;
+				}
+
+			}
+		}
+
+		tfoot{
+			border-bottom:1px solid black;
+			tr{
+				border:0;
+				td{
+					text-align: right;
+					padding:5px;
+				}
+			}
+		}
+	}
+
+	button{
+		background-color: black;
+		color:white;
+	}
+
+	@media print{
+		button{
+			display: none;
+		}
+	}
+}
+
 // MY ORDERS PAGE
 
 .my-account{

@@ -193,7 +193,7 @@ img{
 // ---------- RESPONSIVE TABLE -----------
 
 @include breakpoint($tablet-breakpoint){
-
+.my-account, .checkout-cart-index, .sales-order-view{
 	table#my-orders-table colgroup col:not(:first-child){
 	display: none;
 	}
@@ -237,7 +237,7 @@ img{
 	.product-name a{
 		font-size: 0.8em;
 	}
-	.my-account #my-orders-table{
+	 #my-orders-table{
 		text-align: center;
 		font-size: 1em;
 	}
@@ -266,6 +266,7 @@ img{
 	#shopping-cart-table .btn-continue, #shopping-cart-table .btn-update, #shopping-cart-table #empty_cart_button{
 		width:30%;
 	}
+}
 }
 
 
