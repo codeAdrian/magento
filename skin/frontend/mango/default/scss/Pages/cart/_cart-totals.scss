@@ -14,7 +14,6 @@
 		}
 		select{
 		 	width:75%;
-	 		font-size: 1.5em;	
 	 		margin:5px 0px 10px;		
 		}
 
@@ -86,9 +85,9 @@
 	}
 
 	.sp-methods dt{
-	font-weight: bold;
-	padding-right:10px;
-	margin-top:5px;
+		font-weight: bold;
+		padding-right:10px;
+		margin-top:5px;
 	}
 
 	.sp-methods{
@@ -102,11 +101,11 @@
 @include breakpoint($tablet-breakpoint){
 	.cart-totals-wrapper{
 		.totals table{
-				width:100%;
+			width:100%;
 		}
 
 		.input-box input{
-				width:98%;
+			width:98%;
 		}
 
 		.sp-methods{

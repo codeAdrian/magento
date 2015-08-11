@@ -34,8 +34,8 @@ footer{
 	}
 
 	#newsletter-validate-detail .block-content #newsletter, #newsletter-validate-detail .block-content .button{
-	float:right;
-	min-width: 30%;
+		float:right;
+		min-width: 30%;
 	}
 
 	#newsletter-validate-detail .block-content #newsletter{
@@ -50,13 +50,13 @@ footer{
 		width:90%;
 		display: inline-block;
 		vertical-align: middle;
+		
 		#newsletter-validate-detail, #newsletter-validate-detail .block-content{
 			width:100%;
 		}
 	}
 
 	.subscribe-button{
-		
 		border:1px solid black;
 		margin:0px;
 		background-color: black;
