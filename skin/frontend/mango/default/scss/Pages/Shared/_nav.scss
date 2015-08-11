@@ -59,8 +59,8 @@ nav ul li ul
 	}
 
 	li > a{
-	border:0px;
-	z-index:99;
+		border:0px;
+		z-index:99;
 	}
 
 	li{
@@ -175,7 +175,9 @@ nav{
 	}
 
 	@include m-keyframes (menu-slide){
-		from{left:-100%;}
+		from{
+			left:-100%;
+		}
 		to{
 			left:0%;
 			position:relative;
@@ -183,8 +185,13 @@ nav{
 	}
 
 	@include m-keyframes (menu-background){
-		from{background-color: rgba(0,0,0,0);}
-		to{background-color: rgba(0,0,0,0.5);}
+		from{
+			background-color: rgba(0,0,0,0);
+		}
+
+		to{
+			background-color: rgba(0,0,0,0.5);
+		}
 	}
 
 	@include m-keyframes(scale-fadein){
@@ -466,7 +473,7 @@ nav{
 		}
 
 		.searchMiniIcon{
-				display: block;
+			display: block;
 		}
 
 		.smartphoneLogo{

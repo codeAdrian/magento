@@ -65,6 +65,7 @@
 					width:30px;
 					height:20px;
 					padding:2px 3px;
+
 					&:hover{
 						color:white;
 						background-color: black;
@@ -94,6 +95,7 @@
 			ol{
 				padding:0px;
 				margin:2px auto;	
+
 				li{
 					margin-right:12%;
 				}
@@ -135,6 +137,7 @@
 				@include m-animation(scale-fadein 0.25s 1);
 			}
 		}
+
 		#showFilters{
 			margin:10px 2px 10px 20px;
 			font-size: 1.2em;
@@ -152,7 +155,6 @@
 		}
 
 		#narrow-by-list{
-
 			margin:0px;
 
 			dt{

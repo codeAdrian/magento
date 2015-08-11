@@ -3,6 +3,7 @@
  	.main{
  		padding:1em;
  		text-align: center;
+
  		p{
  			margin:30px 0px;
  		}
@@ -202,6 +203,7 @@
  		margin:10px 0px;
  	}
 	#billing-new-address-form, #checkout-step-shipping{
+		
 	 	.fields,.wide{
 	 		width:45%;
 	 		display:inline-block;
@@ -323,6 +325,7 @@
  	}
 		#checkoutSteps{
 			width:100%;
+
 			li #billing-buttons-container{
 				margin:10px 0px;
 			}
