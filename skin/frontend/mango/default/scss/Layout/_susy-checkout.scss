@@ -34,6 +34,19 @@ $susy:(
 		}
 	}
 
+	#checkout-step-login{
+		.col2-set{
+			@include container($susy-desktop-grid2-columns);
+			&>.col-1{
+				@include span(1 of $susy-desktop-grid2-columns);
+			}
+
+			&>.col-2{
+				@include span(last 1 of $susy-desktop-grid2-columns);
+			}
+		}
+	}
+
 }
 
 
@@ -50,6 +63,19 @@ $susy:(
 				}
 			}
 		}
+
+		#checkout-step-login{
+		.col2-set{
+			@include container($susy-smartphone-grid2-columns);
+			&>.col-1{
+				@include span(1 of $susy-smartphone-grid2-columns);
+			}
+
+			&>.col-2{
+				@include span(last 1 of $susy-smartphone-grid2-columns);
+			}
+		}
+	}
 }
 
 // ------ SMARTHPHONE
